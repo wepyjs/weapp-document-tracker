@@ -1,0 +1,15 @@
+{
+  "name": "weapp-document-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gcaufy",
+  "license": "MIT",
+  "dependencies": {
+    "crawler": "^1.0.5",
+    "to-markdown": "^3.0.4"
+  }
+}
