@@ -488,7 +488,7 @@
 
 > 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
-显示 loading 提示框, 需主动调用 [wx.hideLoading](wxhideloading) 才能关闭提示框
+显示 loading 提示框, 需主动调用 [wx.hideLoading](#wxhideloading) 才能关闭提示框
 
 **OBJECT参数说明：**
 

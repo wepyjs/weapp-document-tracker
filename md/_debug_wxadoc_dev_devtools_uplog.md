@@ -210,7 +210,7 @@
 12.  `A` 新增 API `wx.hideShareMenu` `wx.showShareMenu` [详情](../api/share.html)
 13.  `A` 新增 API `CanvasContext.setTextAlign` 文字的对齐 API [详情](../api/canvas/set-text-align.html)
 14.  `U` 更新 API `wx.getSystemInfo` 返回 `screenWidth`、`screenHeight` `SDKVersion` [详情](../api/systeminfo.html)
-15.  `U` 更新 API `wx.showModal` 在用户点击取消情况下的返回值 [详情](../api/api-react#wxshowmodal)
+15.  `U` 更新 API `wx.showModal` 在用户点击取消情况下的返回值 [详情](../api/api-react.html#wxshowmodal)
 16.  `U` 更新 API `wx.showToast` 支持 `image` 参数自定义提示框图片 [详情](../api/api-react.html#wxshowtoastobject)
 17.  `U` 更新 API `wx.getUserInfo` 增加参数 `withCredentials` [详情](../api/open.html)
 18.  `F` 修复 API `wx.showNavigationBarLoading` 在 `iOS` 下首次调用可能失败的问题
