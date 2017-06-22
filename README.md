@@ -3,8 +3,10 @@
 When weapp document changed, send me a notice for the diffs.
 
 
-### Useage
+### Usage
 
-```
+```bash
+crontab -e
+
 0 0 * * * node /opt/weapp-document-tracker/index.js > /var/log/tracker.log
 ```
