@@ -8,11 +8,11 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=201769)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=201769)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=201769)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=201769)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=201769)
+*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017621)
+*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017621)
+*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017621)
+*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017621)
+*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017621)
 
 </div>
 
@@ -106,10 +106,13 @@
 
 ## 二维码跳转规则
 
+注意：从2017年5月开始，微信客户端支持二维码规则根据“子路径匹配”。如原有现在二维码链接为 `http://www.qq.com/a/123456` ,其中12345为业务参数，则可配置规则 `http://www.qq.com/a/` 实现扫码打开小程序。
+
 微信客户端扫码将按以下匹配规则控制跳转：
 
-1.  二维码链接的协议、域名、路径与已配置的二维码规则一致。
-2.  如果二维码规则包含参数，链接“？”后为参数部分，参数要求前缀匹配
+1.  二维码链接的协议、域名与已配置的二维码规则一致。
+2.  二维码链接属于后台配置的二维码规则的子路径。(如需支持子路径匹配，请确认后台配置的二维码规则以“/”结尾)
+3.  如果二维码规则包含参数，链接“？”后为参数部分，参数要求前缀匹配
 
 常见匹配错误类型：
 
@@ -135,7 +138,7 @@
 
 <td style="text-align:center">[http://www.qq.com/a/b](http://www.qq.com/a/b)</td>
 
-<td style="text-align:center">[https://www.qq.com/a/b/c](https://www.qq.com/a/b/c)</td>
+<td style="text-align:center">[https://www.qq.com/a/b](https://www.qq.com/a/b)</td>
 
 <td>协议不一致</td>
 
@@ -147,17 +150,7 @@
 
 <td style="text-align:center">[https://www.weixin.qq.com/a/b](https://www.weixin.qq.com/a/b)</td>
 
-<td>域名不一致</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:center">[https://www.qq.com/a/b](https://www.qq.com/a/b)</td>
-
-<td style="text-align:center">[https://www.qq.com/a/b/c](https://www.qq.com/a/b/c)</td>
-
-<td>路径不一致</td>
+<td>域名不一</td>
 
 </tr>
 
@@ -168,6 +161,26 @@
 <td style="text-align:center">[https://www.qq.com/a/b?id=132](https://www.qq.com/a/b?id=132)</td>
 
 <td>参数不满足前缀匹配</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:center">[https://www.qq.com/a/b](https://www.qq.com/a/b)</td>
+
+<td style="text-align:center">[https://www.qq.com/a/bc](https://www.qq.com/a/bc)</td>
+
+<td>不属于子路径</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:center">[https://www.qq.com/a/b](https://www.qq.com/a/b)</td>
+
+<td style="text-align:center">[https://www.qq.com/a/b/123](https://www.qq.com/a/b/123)</td>
+
+<td>规则没有以“/”结尾，不支持子路径匹配</td>
 
 </tr>
 
@@ -185,9 +198,9 @@
 
 登录小程序后台，进入“设置-开发设置-扫普通链接二维码打开小程序”，开启功能后即可配置二维码规则。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qrcode0.png?t=201769)
+![](image/qrcode0.png)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qrcode1.png?t=201769)
+![](image/qrcode1.png)
 
 ### 二维码规则
 
@@ -207,7 +220,7 @@
 
 如：若开发者A配置二维码规则：[https://wx.qq.com/mp?id=123，并选择“占用所有子规则“，其他开发者将不可以配置满足前缀匹配的子规则如https://wx.qq.com/mp?id=1234。](https://wx.qq.com/mp?id=123，并选择“占用所有子规则“，其他开发者将不可以配置满足前缀匹配的子规则如https://wx.qq.com/mp?id=1234。)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qrcode5.png?t=201769)
+![](image/qrcode5.png)
 
 如提示“此规则已被占用”，请联系对应小程序开发者沟通解决。
 
@@ -217,7 +230,7 @@
 
 验证文件放置规则： 放置于URL中声明的最后一级子目录下，若无子目录，则放置于host所属服务器的顶层目录下。请根据页面提示将验证文件放置在指定的目录下。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qrcode3.png?t=201769)
+![](image/qrcode3.png)
 
 ### 小程序功能页面
 
@@ -233,7 +246,7 @@
 
 开发者可根据开发进度选择在开发板/体验版/线上版本测试“普通二维码跳转小程序”的功能。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qrcode7.png?t=201769)
+![](image/qrcode7.png)
 
 #### 测试链接
 
@@ -245,7 +258,7 @@
 
 测试完成后开发者可将二维码跳转规则发布现网，发布后扫描所有符合匹配规则的二维码，将跳转至指定的小程序页面。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qrcode4.png?t=201769)
+![](image/qrcode4.png)
 
 为确保用户体验，小程序必须先发布代码才可以发布二维码跳转规则。
 
@@ -280,7 +293,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=201769)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017621)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

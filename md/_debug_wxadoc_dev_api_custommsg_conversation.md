@@ -8,11 +8,11 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017616)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017616)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017616)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017616)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017616)
+*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017621)
+*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017621)
+*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017621)
+*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017621)
+*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017621)
 
 </div>
 
@@ -277,6 +277,7 @@
             *   [图片消息](receive.html#图片消息)
             *   [进入会话事件](receive.html#进入会话事件)
         *   [发送客服消息](conversation.html)
+        *   [转发消息](trans.html)
         *   [临时素材接口](material.html)
             *   [获取临时素材](material.html#获取临时素材)
             *   [新增临时素材](material.html#新增临时素材)
@@ -300,6 +301,9 @@
         *   [wx.getSetting](../setting.html#wxgetsettingobject)
     *   [微信运动](../we-run.html)
         *   [wx.getWeRunData](../we-run.html#wxgetwerundataobject)
+    *   [打开小程序](../navigateToMiniProgram.html)
+        *   [wx.navigateToMiniProgram](../navigateToMiniProgram.html)
+        *   [wx.navigateBackMiniProgram](../navigateBackMiniProgram.html)
 *   [数据](../analysis.html)
     *   [常规分析](../analysis.html)
         *   [概况](../analysis.html#概况)
@@ -411,6 +415,23 @@
         {
           "media_id":"MEDIA_ID"
         }
+    }
+
+##### 发送图文链接
+
+每次可以发送一个图文链接
+
+    {
+
+        "touser": "OPENID",
+        "msgtype": "link",
+        "link": {
+              "title": "Happy Day",
+              "description": "Is Really A Happy Day",
+              "url": "URL",
+              "thumb_url": "THUMB_URL"
+        }
+    }
 
 ##### 参数说明
 
@@ -420,7 +441,7 @@
 
 <tr>
 
-<th style="text-align:left">参数</th>
+<th>参数</th>
 
 <th>是否必须</th>
 
@@ -434,7 +455,7 @@
 
 <tr>
 
-<td style="text-align:left">access_token</td>
+<td>access_token</td>
 
 <td>是</td>
 
@@ -444,7 +465,7 @@
 
 <tr>
 
-<td style="text-align:left">touser</td>
+<td>touser</td>
 
 <td>是</td>
 
@@ -454,17 +475,17 @@
 
 <tr>
 
-<td style="text-align:left">msgtype</td>
+<td>msgtype</td>
 
 <td>是</td>
 
-<td>消息类型，文本为text，图片为image</td>
+<td>消息类型，文本为text，图文链接为link</td>
 
 </tr>
 
 <tr>
 
-<td style="text-align:left">content</td>
+<td>content</td>
 
 <td>是</td>
 
@@ -474,11 +495,51 @@
 
 <tr>
 
-<td style="text-align:left">media_id</td>
+<td>media_id</td>
 
 <td>是</td>
 
-<td>发送的图片的媒体ID，通过[新增素材接口](material.html)上传图片文件获得。</td>
+<td>发送的图片的媒体ID，通过[新增素材接口](https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/material.html?t=2017621)上传图片文件获得。</td>
+
+</tr>
+
+<tr>
+
+<td>title</td>
+
+<td>是</td>
+
+<td>图文链接消息标题</td>
+
+</tr>
+
+<tr>
+
+<td>description</td>
+
+<td>是</td>
+
+<td>图文链接消息</td>
+
+</tr>
+
+<tr>
+
+<td>url</td>
+
+<td>是</td>
+
+<td>图文链接消息被点击后跳转的链接</td>
+
+</tr>
+
+<tr>
+
+<td>picurl</td>
+
+<td>是</td>
+
+<td>图文链接消息的图片链接，支持 JPG、PNG 格式，较好的效果为大图 640_320，小图 80_80</td>
 
 </tr>
 
@@ -524,7 +585,7 @@
 
 <td style="text-align:left">40001</td>
 
-<td>获取access_token时AppSecret错误，或者access_token无效。请开发者认真比对AppSecret的正确性，或查看是否正在为恰当的小程序调用接口</td>
+<td>获取 access_token 时 AppSecret 错误，或者 access_token 无效。请开发者认真比对 AppSecret 的正确性，或查看是否正在为恰当的小程序调用接口</td>
 
 </tr>
 
@@ -540,7 +601,7 @@
 
 <td style="text-align:left">40003</td>
 
-<td>不合法的OpenID，请开发者确认OpenID否是其他小程序的OpenID</td>
+<td>不合法的 OpenID，请开发者确认OpenID否是其他小程序的 OpenID</td>
 
 </tr>
 
@@ -601,7 +662,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017616)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017621)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
@@ -611,6 +672,6 @@
 
 </div>
 
-[](receive.html#进入会话事件)[](material.html)</div>
+[](receive.html#进入会话事件)[](trans.html)</div>
 
 </div>

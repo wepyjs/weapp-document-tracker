@@ -8,11 +8,11 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017616)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017616)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017616)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017616)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017616)
+*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017621)
+*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017621)
+*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017621)
+*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017621)
+*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017621)
 
 </div>
 
@@ -277,6 +277,7 @@
             *   [图片消息](custommsg/receive.html#图片消息)
             *   [进入会话事件](custommsg/receive.html#进入会话事件)
         *   [发送客服消息](custommsg/conversation.html)
+        *   [转发消息](custommsg/trans.html)
         *   [临时素材接口](custommsg/material.html)
             *   [获取临时素材](custommsg/material.html#获取临时素材)
             *   [新增临时素材](custommsg/material.html#新增临时素材)
@@ -300,6 +301,9 @@
         *   [wx.getSetting](setting.html#wxgetsettingobject)
     *   [微信运动](we-run.html)
         *   [wx.getWeRunData](we-run.html#wxgetwerundataobject)
+    *   [打开小程序](navigateToMiniProgram.html)
+        *   [wx.navigateToMiniProgram](navigateToMiniProgram.html)
+        *   [wx.navigateBackMiniProgram](navigateBackMiniProgram.html)
 *   [数据](analysis.html)
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
@@ -1012,9 +1016,9 @@
 1.  含义清晰：明确、一目了然的图形按钮，将为用户减少理解的时间。在我们的资源下载中心，你可以找到这样的按钮素材并直接使用。或者你可以根据自己业务的设计风格，灵活设计含义清晰的按钮的样式。当然，你也可以直接使用带文案的按钮，“转发给好友”，它也足够明确。
 2.  方便点击：按钮点击热区不宜过小，亦不宜过大。同时，转发按钮与其他按钮一样，热区也不宜过密，以免用户误操作。
 3.  按需出现：并非所有页面都适合放置转发按钮，涉及用户隐私的非公开内容，或可能打断用户完成当前操作体验的场景，该功能并不推荐使用。同时，由于转发过程中，我们将截取用户屏幕图像作为配图，因此，需要注意帮助用户屏蔽个人信息。
-4.  尊重意愿：理所当然，并非所有的用户，都喜欢与朋友分享你的小程序。因此，它不应该成为一个诱导或强制行为，如转发后才能解锁某项功能等。请注意，这类做法不仅不被推荐，还可能违反我们的[《运营规范》](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017616)，我们强烈建议你在使用前阅读这部分内容。
+4.  尊重意愿：理所当然，并非所有的用户，都喜欢与朋友分享你的小程序。因此，它不应该成为一个诱导或强制行为，如转发后才能解锁某项功能等。请注意，这类做法不仅不被推荐，还可能违反我们的[《运营规范》](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017621)，我们强烈建议你在使用前阅读这部分内容。
 
-以上，我们陈列了最重要的几点，如果你有时间，可以完整浏览[《设计指南》](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017616)，相信会有更多的收获。
+以上，我们陈列了最重要的几点，如果你有时间，可以完整浏览[《设计指南》](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017621)，相信会有更多的收获。
 
 #### Bug & Tip
 
@@ -1053,7 +1057,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017616)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017621)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

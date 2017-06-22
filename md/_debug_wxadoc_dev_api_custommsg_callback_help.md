@@ -8,11 +8,11 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017616)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017616)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017616)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017616)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017616)
+*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017621)
+*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017621)
+*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017621)
+*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017621)
+*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017621)
 
 </div>
 
@@ -277,6 +277,7 @@
             *   [图片消息](receive.html#图片消息)
             *   [进入会话事件](receive.html#进入会话事件)
         *   [发送客服消息](conversation.html)
+        *   [转发消息](trans.html)
         *   [临时素材接口](material.html)
             *   [获取临时素材](material.html#获取临时素材)
             *   [新增临时素材](material.html#新增临时素材)
@@ -300,6 +301,9 @@
         *   [wx.getSetting](../setting.html#wxgetsettingobject)
     *   [微信运动](../we-run.html)
         *   [wx.getWeRunData](../we-run.html#wxgetwerundataobject)
+    *   [打开小程序](../navigateToMiniProgram.html)
+        *   [wx.navigateToMiniProgram](../navigateToMiniProgram.html)
+        *   [wx.navigateBackMiniProgram](../navigateBackMiniProgram.html)
 *   [数据](../analysis.html)
     *   [常规分析](../analysis.html)
         *   [概况](../analysis.html#概况)
@@ -356,7 +360,7 @@ URL是开发者用来接收微信消息和事件的接口URL。 Token可由开�
 
 模式的选择与服务器配置在提交后都会立即生效，请开发者谨慎填写及选择。切换加密方式和数据格式需要提前配置好相关代码，详情请参考[消息加解密说明](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419318479&token=&lang=zh_CN)。
 
-![填写服务器配置](https://mp.weixin.qq.com/debug/wxadoc/dev/image/callback_help.png?t=2017616)
+![填写服务器配置](https://mp.weixin.qq.com/debug/wxadoc/dev/image/callback_help.png?t=2017621)
 
 #### 第二步：验证消息的确来自微信服务器
 
@@ -474,7 +478,7 @@ PHP示例代码下载：[下载](https://wximg.gtimg.com/shake_tv/mpwiki/cryptoD
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017616)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017621)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

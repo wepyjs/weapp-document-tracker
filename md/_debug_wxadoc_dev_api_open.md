@@ -8,11 +8,11 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017616)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017616)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017616)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017616)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017616)
+*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017621)
+*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017621)
+*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017621)
+*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017621)
+*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017621)
 
 </div>
 
@@ -277,6 +277,7 @@
             *   [图片消息](custommsg/receive.html#图片消息)
             *   [进入会话事件](custommsg/receive.html#进入会话事件)
         *   [发送客服消息](custommsg/conversation.html)
+        *   [转发消息](custommsg/trans.html)
         *   [临时素材接口](custommsg/material.html)
             *   [获取临时素材](custommsg/material.html#获取临时素材)
             *   [新增临时素材](custommsg/material.html#新增临时素材)
@@ -300,6 +301,9 @@
         *   [wx.getSetting](setting.html#wxgetsettingobject)
     *   [微信运动](we-run.html)
         *   [wx.getWeRunData](we-run.html#wxgetwerundataobject)
+    *   [打开小程序](navigateToMiniProgram.html)
+        *   [wx.navigateToMiniProgram](navigateToMiniProgram.html)
+        *   [wx.navigateBackMiniProgram](navigateBackMiniProgram.html)
 *   [数据](analysis.html)
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
@@ -540,13 +544,13 @@ encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](
 
 登录微信开放平台(open.weixin.qq.com) – 帐号中心 – 开发者资质认证
 
-![img](https://mp.weixin.qq.com/debug/wxadoc/dev/image/open.png?t=2017616)
+![img](https://mp.weixin.qq.com/debug/wxadoc/dev/image/open.png?t=2017621)
 
 绑定流程：
 
 登录微信开放平台（open.weixin.qq.com）—管理中心—公众帐号—绑定公众帐号
 
-![img](https://mp.weixin.qq.com/debug/wxadoc/dev/image/union_bind.png?t=2017616)
+![img](https://mp.weixin.qq.com/debug/wxadoc/dev/image/union_bind.png?t=2017621)
 
 #### Bug & Tip
 
@@ -581,7 +585,7 @@ encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017616)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017621)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

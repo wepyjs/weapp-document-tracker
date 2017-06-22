@@ -8,11 +8,11 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017616)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017616)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017616)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017616)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017616)
+*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017621)
+*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017621)
+*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017621)
+*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017621)
+*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017621)
 
 </div>
 
@@ -277,6 +277,7 @@
             *   [图片消息](custommsg/receive.html#图片消息)
             *   [进入会话事件](custommsg/receive.html#进入会话事件)
         *   [发送客服消息](custommsg/conversation.html)
+        *   [转发消息](custommsg/trans.html)
         *   [临时素材接口](custommsg/material.html)
             *   [获取临时素材](custommsg/material.html#获取临时素材)
             *   [新增临时素材](custommsg/material.html#新增临时素材)
@@ -300,6 +301,9 @@
         *   [wx.getSetting](setting.html#wxgetsettingobject)
     *   [微信运动](we-run.html)
         *   [wx.getWeRunData](we-run.html#wxgetwerundataobject)
+    *   [打开小程序](navigateToMiniProgram.html)
+        *   [wx.navigateToMiniProgram](navigateToMiniProgram.html)
+        *   [wx.navigateBackMiniProgram](navigateBackMiniProgram.html)
 *   [数据](analysis.html)
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
@@ -348,7 +352,7 @@
 
 登录[https://mp.weixin.qq.com](https://mp.weixin.qq.com)获取模板，如果没有合适的模板，可以申请添加新模板，审核通过后可使用，详见[模板审核说明](#审核说明)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/mp-notice.png?t=2017616)
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/mp-notice.png?t=2017621)
 
 1.  页面的 [`<form/>`](../component/form.html) 组件，属性`report-submit`为`true`时，可以声明为需发模板消息，此时点击按钮提交表单可以获取`formId`，用于发送模板消息。或者当用户完成[支付行为](api-pay.html)，可以获取`prepay_id`用于发送模板消息。
 
@@ -683,7 +687,7 @@ access_token 是全局唯一接口调用凭据，开发者调用各接口时都�
 
 **使用效果：**
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/notice.png?t=2017616)
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/notice.png?t=2017621)
 
 ### 下发条件说明
 
@@ -781,7 +785,7 @@ access_token 是全局唯一接口调用凭据，开发者调用各接口时都�
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017616)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017621)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

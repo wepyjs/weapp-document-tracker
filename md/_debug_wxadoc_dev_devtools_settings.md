@@ -8,11 +8,11 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017616)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017616)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017616)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017616)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017616)
+*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017621)
+*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017621)
+*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017621)
+*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017621)
+*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017621)
 
 </div>
 
@@ -104,7 +104,7 @@
 
 菜单栏上点击设置可以打开设置页。设置页侧边栏分别是编辑器、代理和通知的配置。
 
-![main](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_main.png?t=2017616)
+![main](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_main.png?t=2017621)
 
 ## 编辑器配置
 
@@ -117,7 +117,7 @@
 *   字号
 *   行距
 
-![appearance](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_appearance.png?t=2017616)
+![appearance](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_appearance.png?t=2017621)
 
 ### 编辑配置支持
 
@@ -128,19 +128,19 @@
 *   用空格代替 Tab
 *   Tab 大小
 
-![edit](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_edit.png?t=2017616)
+![edit](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_edit.png?t=2017621)
 
 ## 代理配置
 
 可以配置不使用代理，或使用系统代理，或使用自定义代理。
 
-![proxy](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_proxy.png?t=2017616)
+![proxy](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_proxy.png?t=2017621)
 
 ## 通知配置
 
 可以配置系统消息和开发者社区消息通知。
 
-![bbs](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_bbs.png?t=2017616)
+![bbs](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_bbs.png?t=2017621)
 
 </section>
 
@@ -171,7 +171,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017616)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017621)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
