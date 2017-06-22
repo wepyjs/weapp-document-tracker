@@ -8,11 +8,11 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017621)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017621)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017621)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017621)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017621)
+*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
 </div>
 
@@ -410,79 +410,79 @@ mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。
 
 ##### 原图
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/0.jpg?t=2017621)
+![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/0.jpg)
 
 ##### scaleToFill
 
 不保持纵横比缩放图片，使图片完全适应
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/1.png?t=2017621)
+![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/1.png)
 
 ##### aspectFit
 
 保持纵横比缩放图片，使图片的长边能完全显示出来
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/2.png?t=2017621)
+![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/2.png)
 
 ##### aspectFill
 
 保持纵横比缩放图片，只保证图片的短边能完全显示出来
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/3.png?t=2017621)
+![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/3.png)
 
 ##### top
 
 不缩放图片，只显示图片的顶部区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/4.png?t=2017621)
+![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/4.png)
 
 ##### bottom
 
 不缩放图片，只显示图片的底部区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/5.png?t=2017621)
+![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/5.png)
 
 ##### center
 
 不缩放图片，只显示图片的中间区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/6.png?t=2017621)
+![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/6.png)
 
 ##### left
 
 不缩放图片，只显示图片的左边区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/7.png?t=2017621)
+![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/7.png)
 
 ##### right
 
 不缩放图片，只显示图片的右边边区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/8.png?t=2017621)
+![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/8.png)
 
 ##### top left
 
 不缩放图片，只显示图片的左上边区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/9.png?t=2017621)
+![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/9.png)
 
 ##### top right
 
 不缩放图片，只显示图片的右上边区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/10.png?t=2017621)
+![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/10.png)
 
 ##### bottom left
 
 不缩放图片，只显示图片的左下边区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/11.png?t=2017621)
+![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/11.png)
 
 ##### bottom right
 
 不缩放图片，只显示图片的右下边区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/12.png?t=2017621)
+![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/12.png)
 
 </section>
 
@@ -513,7 +513,7 @@ mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017621)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

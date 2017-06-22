@@ -4,15 +4,15 @@
 
 <div class="head_box">
 
-# [](javascript:;?t=2017118 "_('微信公众平台 小程序')")
+# [](javascript:; "_('微信公众平台 小程序')")
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017118)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017118)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017118)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017118)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017118)
+*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
 </div>
 
@@ -34,7 +34,7 @@
 
 </div>
 
-*   [微信小程序设计指南](./?t=2017118)
+*   [微信小程序设计指南](./)
 
 </div>
 
@@ -54,25 +54,25 @@
 
 <nav role="navigation">
 
-*   [友好礼貌](./?t=2017118#友好礼貌)
-    *   [重点突出](./?t=2017118#重点突出)
-    *   [流程明确](./?t=2017118#流程明确)
-*   [清晰明确](./?t=2017118#清晰明确)
-    *   [导航明确，来去自如](./?t=2017118#导航明确，来去自如)
-    *   [减少等待，反馈及时](./?t=2017118#减少等待，反馈及时)
-    *   [异常可控，有路可退](./?t=2017118#异常可控，有路可退)
-*   [便捷优雅](./?t=2017118#便捷优雅)
-    *   [减少输入](./?t=2017118#减少输入)
-    *   [避免误操作](./?t=2017118#避免误操作)
-    *   [利用接口提升性能](./?t=2017118#利用接口提升性能)
-*   [统一稳定](./?t=2017118#统一稳定)
-*   [视觉规范](./?t=2017118#视觉规范)
-    *   [字体规范](./?t=2017118#字体规范)
-    *   [列表视觉规范](./?t=2017118#列表视觉规范)
-    *   [表单输入视觉规范](./?t=2017118#表单输入视觉规范)
-    *   [按钮使用原则](./?t=2017118#按钮使用原则)
-    *   [图标使用原则](./?t=2017118#图标使用原则)
-*   [资源下载](./?t=2017118#资源下载)
+*   [友好礼貌](./#友好礼貌)
+    *   [重点突出](./#重点突出)
+    *   [流程明确](./#流程明确)
+*   [清晰明确](./#清晰明确)
+    *   [导航明确，来去自如](./#导航明确，来去自如)
+    *   [减少等待，反馈及时](./#减少等待，反馈及时)
+    *   [异常可控，有路可退](./#异常可控，有路可退)
+*   [便捷优雅](./#便捷优雅)
+    *   [减少输入](./#减少输入)
+    *   [避免误操作](./#避免误操作)
+    *   [利用接口提升性能](./#利用接口提升性能)
+*   [统一稳定](./#统一稳定)
+*   [视觉规范](./#视觉规范)
+    *   [字体规范](./#字体规范)
+    *   [列表视觉规范](./#列表视觉规范)
+    *   [表单输入视觉规范](./#表单输入视觉规范)
+    *   [按钮使用原则](./#按钮使用原则)
+    *   [图标使用原则](./#图标使用原则)
+*   [资源下载](./#资源下载)
 
 </nav>
 
@@ -108,25 +108,25 @@
 
 此页面的主题是查询，却添加了诸多与查询不相关的业务入口，与用户的目标无关，易造成用户的迷失。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/1emphasis.dont.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/1emphasis.dont.png)
 
 #### 纠正示意
 
 去掉任何与用户目标不相关的内容，明确页面主题，在技术和页面控件允许的前提下提供有助于用户决策和操作的帮助内容，比如最近搜索词等。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/1emphasis.do.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/1emphasis.do.png)
 
 #### 反例示意
 
 操作没有主次，让用户无从选择。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/1emphasis.dont2.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/1emphasis.dont2.png)
 
 #### 纠正示意
 
 首先要避免并列过多操作让用户选择，在不得不并列多个操作时，需区分操作主次，减轻用户的选择难度。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/1emphasis.do2.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/1emphasis.do2.png)
 
 ### 流程明确
 
@@ -136,7 +136,7 @@
 
 用户本打算进行搜索，在进入页面时却被突如其来的模态抽奖框所打断；对于抽奖没有兴趣的用户是非常不友好的干扰； 而即便有部分用户确实被“诱人”的抽奖活动所吸引，离开主流程去抽奖之后可能就遗忘了原本的目标，进而失去了对产品真正价值的利用和认识。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/2flow.dont.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/2flow.dont.png)
 
 ## 清晰明确
 
@@ -156,17 +156,17 @@
 
 微信进入小程序的第一个页面，导航区通常只有一个操作——“返回”，即返回进入小程序前的微信页面。 进入小程序后的次级页面，导航区的操作为——“返回” 和“关闭”。 “返回”，即返回上一级小程序界面或微信界面。“关闭”，即在当前界面直接退出小程序，回到进入小程序前的微信页面。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.iOS.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.iOS.png)
 
 #### 导航区（Android）
 
 导航区仅存在唯一操作——直接退出小程序，回到进入小程序前的微信或系统桌面，安卓手机自带的硬件返回键执行返回上一级页面的操作。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.android.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.android.png)
 
 安卓导航存在一类特殊情况：当用户通过操作区的菜单将小程序添加至安卓桌面，并从安卓桌面打开小程序时，小程序的首页，不展示导航按钮。仅展示小程序标题和操作区。小程序次级页面，导航区只有返回上一级页面的操作，而点击安卓手机自带的硬件返回键也起到相同作用。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.android.special.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.android.special.png)
 
 #### 微信导航栏自定义颜色规则（iOS和Android）
 
@@ -174,7 +174,7 @@
 
 选色方案示例
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.color.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.color.png)
 
 #### 页面内导航
 
@@ -184,13 +184,13 @@
 
 其中小程序首页可选择微信提供的原生底部标签分页样式，该样式仅供小程序首页使用。开发时可自定义图标样式、标签文案以及文案颜色等，具体设置项如图标尺寸等参考可参考开发文档和WeUI基础控件库。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.page.bottom.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.page.bottom.png)
 
 顶部标签分页栏颜色可自定义。在自定义颜色选择中，务必注意保持分页栏标签的可用性、可视性和可操作性。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.page.top.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.page.top.png)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.page.top.dont.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.page.top.dont.png)
 
 ### 减少等待，反馈及时
 
@@ -200,31 +200,31 @@
 
 小程序启动页是小程序在微信内一定程度上展现品牌特征的页面之一。本页面将突出展示小程序品牌特征和加载状态。启动页除品牌标志（Logo）展示外，页面上的其他所有元素如加载进度指示，均由微信统一提供且不能更改，无需开发者开发。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/4miniapploading.jpg?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/4miniapploading.jpg)
 
 #### 页面下拉刷新加载
 
 在微信小程序内，微信提供标准的页面下拉刷新加载能力和样式，开发者无需自行开发。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/4pull-to-refresh.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/4pull-to-refresh.png)
 
 #### 页面内加载反馈
 
 开发者可在小程序里自定义页面内容的加载样式。建议不管是使用在局部还是全局加载，自定义加载样式都应该尽可能简洁，并使用简单动画告知用户加载过程。 开发者也可以使用微信提供的，统一的页面加载样式，如图中例所示。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/4loading.page.feedback.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/4loading.page.feedback.png)
 
 #### 模态加载
 
 模态的加载样式将覆盖整个页面的，由于无法明确告知具体加载的位置或内容将可能引起用户的焦虑感，因此应谨慎使用。除了在某些全局性操作下不要使用模态的加载。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/4loading.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/4loading.png)
 
 #### 局部加载反馈
 
 局部加载反馈即只在触发加载的页面局部进行反馈，这样的反馈机制更加有针对性，页面跳动小，是微信推荐的反馈方式。例如：
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/4loading.feedback.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/4loading.feedback.png)
 
 #### 加载反馈注意事项
 
@@ -240,25 +240,25 @@
 
 对于页面局部的操作，可在操作区域予以直接反馈，例如点击多选控件前后如下图。对于常用控件，微信设计中心将提供控件库，其中的控件都已提供完整操作反馈。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/5local.feedback.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/5local.feedback.png)
 
 #### 页面全局操作结果——弹出式提示（Toast）
 
 弹出式提示（Toast）适用于轻量级的成功提示，1.5秒后自动消失，并不打断流程，对用户影响较小，适用于不需要强调的操作提醒，例如成功提示。特别注意该形式不适用于错误提示，因为错误提示需明确告知用户，因而不适合使用一闪而过的弹出式提示。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/5global.toast.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/5global.toast.png)
 
 #### 页面全局操作结果——模态对话框
 
 对于需要用户明确知晓的操作结果状态可通过模态对话框来提示，并可附带下一步操作指引。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/5global.popup.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/5global.popup.png)
 
 #### 页面全局操作结果—结果页
 
 对于操作结果已经是当前流程的终结的情况，可使用操作结果页来反馈。这种方式最为强烈和明确的告知用户操作已经完成，并可根据实际情况给出下一步操作的指引。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/5global.result.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/5global.result.png)
 
 ### 异常可控，有路可退
 
@@ -270,7 +270,7 @@
 
 表单报错，在表单顶部告知错误原因，并标识出错误字段提示用户修改。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/6error.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/6error.png)
 
 ## 便捷优雅
 
@@ -282,11 +282,11 @@
 
 例如下图中，在添加银行卡时，采用摄像头识别接口来帮助用户输入。除此之外微信团队还对外开放例如地理位置接口等多种微信小程序接口 ，充分利用这些接口将大大提高用户输入的效率和准确性，进而优化体验。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/7less-input.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/7less-input.png)
 
 除了利用接口外，在不得不让用户进行手动输入时，应尽量让用户做选择而不是键盘输入。一方面，回忆易于记忆，让用户在有限的选项中做选择通常来说是容易于完全靠记忆输入；另一方面，仍然是考虑到手机键盘密集的单键输入极易造成输入错误。 例如图中，在用户搜索时提供搜索历史快捷选项将帮助用户快速进行搜索，而减少或避免不必要是键盘输入。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/7less-input2.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/7less-input2.png)
 
 ### 避免误操作
 
@@ -308,35 +308,35 @@
 
 微信内字体的使用与所运行的系统字体保持一致，常用字号为20, 18, 17, 16,14 13, 11(pt)，使用场景具体如下：
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/8Font.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/8Font.png)
 
 #### 字体颜色
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/8Font.color.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/8Font.color.png)
 
 主内容 Black 黑色，次要内容 Grey 灰色；时间戳与表单缺省值 Light 灰色；大段的说明内容而且属于主要内容用 Semi 黑。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/8Font.color2.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/8Font.color2.png)
 
 蓝色为链接用色，绿色为完成字样色，红色为出错用色 Press 与 Disable 状态分别降低透明度为20%与10%。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/8Font.color3.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/8Font.color3.png)
 
 ### 列表视觉规范
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/9List.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/9List.png)
 
 ### 表单输入视觉规范
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/10Input.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/10Input.png)
 
 ### 按钮使用原则
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/11button.png?t=2017118) ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/11button2.png?t=2017118) ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/11button3.png?t=2017118) ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/11button4.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/11button.png) ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/11button2.png) ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/11button3.png) ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/11button4.png)
 
 ### 图标使用原则
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/12icon.png?t=2017118)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/12icon.png)
 
 ## 资源下载
 
@@ -379,16 +379,16 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017118)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
-*   [联系邮箱](mailto:weixinmp@qq.com?t=2017118)
+*   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
 </div>
 
 </div>
 
-[](./?t=2017118#友好礼貌)</div>
+[](./#友好礼貌)</div>
 
 </div>

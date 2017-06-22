@@ -8,11 +8,11 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017621)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017621)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017621)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017621)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017621)
+*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
 </div>
 
@@ -97,7 +97,7 @@
 
 客服消息会话入口有两个：
 
-1、小程序内：开发者在小程序内添加[客服消息按钮组件](https://mp.weixin.qq.com/debug/wxadoc/dev/component/contact-button.html?t=2017621)，用户可在小程序内唤起客服会话页面，给小程序发消息；
+1、小程序内：开发者在小程序内添加[客服消息按钮组件](https://mp.weixin.qq.com/debug/wxadoc/dev/component/contact-button.html)，用户可在小程序内唤起客服会话页面，给小程序发消息；
 
 2、已使用过的小程序客服消息会聚合显示在微信会话“小程序客服消息”内，用户可以在小程序外查看历史客服消息，并给小程序客服发消息。
 
@@ -179,7 +179,7 @@
 
 ### 接口调用
 
-[小程序客服消息API文档](https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html?t=2017621)
+[小程序客服消息API文档](https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html)
 
 ## 网页版客服工具
 
@@ -229,7 +229,7 @@
 
 ## 使用规范
 
-小程序客服消息使用除必须遵守[微信小程序平台运营规范](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017621)外，还不能违反以下规则，包括但不限于：
+小程序客服消息使用除必须遵守[微信小程序平台运营规范](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)外，还不能违反以下规则，包括但不限于：
 
 1.  不允许恶意诱导用户进行可能触发客服消息下发的操作，以达到可向用户下发客服消息目的
 2.  不允许恶意骚扰，下发与用户发送的消息没有关联的、对用户造成骚扰的消息
@@ -265,7 +265,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017621)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

@@ -8,11 +8,11 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017621)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017621)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017621)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017621)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017621)
+*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
 </div>
 
@@ -490,7 +490,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017621)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

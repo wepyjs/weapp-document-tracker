@@ -8,11 +8,11 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017526)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017526)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017526)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017526)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017526)
+*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
 </div>
 
@@ -93,13 +93,13 @@
 
 **用户画像：**提供小程序的用户画像数据，包括用户年龄、性别、地区、终端及机型分布。
 
-详情查看[常规分析](https://mp.weixin.qq.com/debug/wxadoc/analysis/regular/?t=2017526)
+详情查看[常规分析](https://mp.weixin.qq.com/debug/wxadoc/analysis/regular/)
 
 ## 自定义分析
 
 **自定义分析：**配置自定义上报，精细跟踪用户在小程序内的行为，结合用户属性、系统属性、事件属性进行灵活多维的事件分析和漏斗分析，满足小程序的个性化分析需求。
 
-详情查看[自定义分析](https://mp.weixin.qq.com/debug/wxadoc/analysis/custom/?t=2017526)
+详情查看[自定义分析](https://mp.weixin.qq.com/debug/wxadoc/analysis/custom/)
 
 # 名词解释
 
@@ -186,7 +186,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017526)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

@@ -8,11 +8,11 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017621)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017621)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017621)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017621)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017621)
+*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
 </div>
 
@@ -352,7 +352,7 @@
 
 登录[https://mp.weixin.qq.com](https://mp.weixin.qq.com)获取模板，如果没有合适的模板，可以申请添加新模板，审核通过后可使用，详见[模板审核说明](#审核说明)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/mp-notice.png?t=2017621)
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/mp-notice.png)
 
 1.  页面的 [`<form/>`](../component/form.html) 组件，属性`report-submit`为`true`时，可以声明为需发模板消息，此时点击按钮提交表单可以获取`formId`，用于发送模板消息。或者当用户完成[支付行为](api-pay.html)，可以获取`prepay_id`用于发送模板消息。
 
@@ -687,7 +687,7 @@ access_token 是全局唯一接口调用凭据，开发者调用各接口时都�
 
 **使用效果：**
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/notice.png?t=2017621)
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/notice.png)
 
 ### 下发条件说明
 
@@ -785,7 +785,7 @@ access_token 是全局唯一接口调用凭据，开发者调用各接口时都�
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017621)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

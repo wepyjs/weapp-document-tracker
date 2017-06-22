@@ -8,11 +8,11 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017526)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017526)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017526)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017526)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017526)
+*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
 </div>
 
@@ -82,13 +82,13 @@
 
 “小程序数据助手”是微信公众平台发布的官方小程序，支持相关的开发和运营人员查看自身小程序的运营数据，扫描下面小程序码可立即体验。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/a0.png?t=2017526)
+![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/a0.png)
 
 “小程序数据助手”当前功能模块包括数据概况、访问分析、实时统计、用户画像，数据与小程序后台常规分析一致。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/a1.png?t=2017526)
+![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/a1.png)
 
-数据详细说明参见[常规分析](https://mp.weixin.qq.com/debug/wxadoc/analysis/regular/?t=2017526)
+数据详细说明参见[常规分析](https://mp.weixin.qq.com/debug/wxadoc/analysis/regular/)
 
 ## 使用说明
 
@@ -100,14 +100,14 @@
 2.  在搜索框中输入微信号查询，或“从小程序开发者/体验者中选择”，点击“授权”；
 3.  授权成功后，被授权用户将接收到模板消息通知；
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/a2.jpg?t=2017526)
+![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/a2.jpg)
 
 **管理员取消授权**
 
 1.  进入小程序数据概况页，点击小程序头像，选择“授权”；
 2.  在已授权用户列表中，左滑取消授权。取消授权后，用户不再有查看该小程序数据的权限。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/a3.png?t=2017526)
+![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/a3.png)
 
 > 目前小程序最多可授权60位用户查看数据，如果超过上限，可以取消已授权用户后再进行操作。
 
@@ -118,7 +118,7 @@
 1.  首次打开“小程序数据助手”，直接从列表中选择；
 2.  在任意小程序的数据概况页，点击小程序头像，选择“切换小程序”，从列表中重新选择。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/a4.png?t=2017526)
+![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/a4.png)
 
 </section>
 
@@ -149,7 +149,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017526)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

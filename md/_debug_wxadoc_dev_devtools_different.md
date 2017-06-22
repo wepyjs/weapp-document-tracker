@@ -8,11 +8,11 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2017621)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2017621)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017621)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2017621)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2017621)
+*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
 </div>
 
@@ -124,19 +124,19 @@
 
 调用 `wx.showShareMenu` 的参数 `withShareTicket` 为 `true` 时，点击模拟器右上角菜单后出现的转发按钮，会出现一个测试群列表，如图：
 
-![withShareTicket](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/4.png?t=2017621)
+![withShareTicket](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/4.png)
 
 开发者点击选取任何一个群，可以通过接口的回包获取到 `shareTicket` ，通过调用 `wx.getShareInfo` 可以获取到相关转发的信息
 
 当开发者需要调试从某一个群点开，并且带有 `shareTicket` 的场景时，可以使用自定义编译中的 `1044:群聊会话中的小程序消息卡片（带 shareTicket）` 同时可以选择任一模拟测试群，如图
 
-![withShareTicket](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/5.png?t=2017621)
+![withShareTicket](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/5.png)
 
 ## 进入场景值
 
 在微信客户端中，用户可能在各个场景下打开小程序 [详情](../framework/app-service/scene.html#场景值) 然而在开发者工具中是没有真实的环境去模拟这些场景的。开发者可以通过条件编译的方式来达到调试不同场景的目的。
 
-![sence](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/1.png?t=2017621)
+![sence](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/1.png)
 
 ## 启动使用自定义参数
 
@@ -144,7 +144,7 @@
 
 例如下图是选择进入页面是 `pages/name/name` `参数` 是 `name=linchao`
 
-![args](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/2.png?t=2017621)
+![args](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/2.png)
 
 ## 预览使用自定义参数
 
@@ -152,7 +152,7 @@
 
 例如下图是选择进入页面是 `pages/name/name` `参数` 是 `name=linchao`
 
-![uplodfortest](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/3.png?t=2017621)
+![uplodfortest](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/3.png)
 
 </section>
 
@@ -183,7 +183,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&t=2017621)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
