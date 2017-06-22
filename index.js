@@ -64,9 +64,13 @@ class Tracker {
     }
 
     complete () {
+        process.chdir(__dirname);
+        
         if (!Git.diff()) {
             console.log('NO UPDATES');
             return;
+        } else {
+            console.log('UPDATES FOUND.')
         }
         let date = new Date();
 
