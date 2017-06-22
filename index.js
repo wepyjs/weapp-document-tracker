@@ -30,6 +30,10 @@ const Git = {
         return n > 0
     },
 
+    add () {
+        execSync(`git add --all`);
+    },
+
     commit (msg) {
         execSync(`git commit -am "${msg}" >/dev/null 2>&1`);
     },
@@ -65,7 +69,8 @@ class Tracker {
         }
         let date = new Date();
 
-        Git.commit(`[${date.getFullYear()}-${(date.getMonth() + 1)}-${date.getDate()}] UPDATE FOUNDS`);
+        Git.add();
+        Git.commit(`[${date.getFullYear()}-${(date.getMonth() + 1)}-${date.getDate()}] UPDATE FOUNDS - @Gcaufy`);
         Git.push();
     }
 }
@@ -88,12 +93,15 @@ var c = new Crawler({
             if (typeof($) !== 'function') {
                 console.log(uri);
                 return
-                debugger;
             }
             let body = $('body');
             body.find('script').remove();
             let html = body.html();
-            let md = toMarkdown(body.html());
+
+            // removed version update
+            html = html.replace(/\?{0,1}t=20\d{2}\d{2,4}/ig, '');
+            
+            let md = toMarkdown(html);
             let urlObj = url.parse(uri);
             let name = urlObj.pathname.replace(/\//g, '_');
             if (!/\.html$/.test(name)) {
@@ -101,8 +109,8 @@ var c = new Crawler({
             }
             let mdName = name.replace(/\.html$/g, '.md');
 
-            writeFileSync('html/' + name, html);
-            writeFileSync('md/' + mdName, md);
+            writeFileSync(path.join(__dirname, 'html', name), html);
+            writeFileSync(path.join(__dirname, 'md', mdName), md);
 
             let links = [];
             body.find('a').each(function () {
