@@ -154,6 +154,24 @@
 
 ![uplodfortest](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/3.png)
 
+## 小程序跳转的调试支持
+
+小程序跳转开发调试可以分为两个部分
+
+### 调试小程序是否能够正确的跳转
+
+出于小程序代码的安全考虑，在工具上调用 `wx.navigateToMiniProgram` 的时候，开发者工具不会真实的打开和跳转到另外的小程序，但是工具会判断当前小程序与需要跳转的小程序之间的绑定关系，输出相关信息给到开发者。开发者可以根据成功或者失败的回调函数来判断调用是否成功。
+
+### 调试被打开的小程序时候正确的接收参数
+
+选择 **自定义编译** 进入场景选择 **1037 从小程序进入** 可以调试小程序被打开时候是否接收到了正确的参数并做了相关处理。
+
+![navigateToMiniProgram](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/6.png)
+
+选择 **自定义编译** 进入场景选择 **1038 从小程序返回** 可以调试小程序返回时候是否接收到了正确的参数并做了相关处理。
+
+![navigateToMiniProgram](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/7.png)
+
 </section>
 
 </div>

@@ -100,9 +100,14 @@
 
 ## 下载地址
 
-### 最新版本 2017.06.21 (0.18.182100)
+### 最新版本 2017.06.22 (0.18.182200)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
+
+### 2017.06.22 更新日志
+
+1.  `F` 修复 开发工具中　`wx.uploadFile` header　设置无效的问题[详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&docid=19f5b374735b2b4a0cbb8d649d469652)
+2.  `F` 修复 开发者工具打开公众号网页报项目属性获取失败错误的问题
 
 ### 2017.06.21 更新日志
 
