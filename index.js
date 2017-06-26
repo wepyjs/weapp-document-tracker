@@ -40,7 +40,7 @@ const Git = {
     },
 
     push () {
-        execSync('git push >/dev/null 2>&1');
+        execSync('git pull --rebase && git push >/dev/null 2>&1');
     }
 }
 
