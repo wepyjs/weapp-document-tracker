@@ -10,3 +10,7 @@ crontab -e
 
 0 0 * * * node /opt/weapp-document-tracker/index.js > /var/log/tracker.log
 ```
+
+### Reference
+
+[webwx-app-tracker](https://github.com/Chatie/webwx-app-tracker)
