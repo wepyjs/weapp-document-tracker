@@ -104,9 +104,9 @@
 
 ### wx:for
 
-在组件上使用`wx:for`控制属性绑定一个数组，即可使用数组中各项的数据重复渲染该组件。
+在组件上使用 `wx:for` 控制属性绑定一个数组，即可使用数组中各项的数据重复渲染该组件。
 
-默认数组的当前项的下标变量名默认为`index`，数组当前项的变量名默认为`item`
+默认数组的当前项的下标变量名默认为 `index`，数组当前项的变量名默认为 `item`
 
     <view wx:for="{{array}}">
       {{index}}: {{item.message}}
@@ -130,7 +130,7 @@
       {{idx}}: {{itemName.message}}
     </view>
 
-`wx:for`也可以嵌套，下边是一个九九乘法表
+`wx:for` 也可以嵌套，下边是一个九九乘法表
 
     <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
       <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j">
@@ -142,7 +142,7 @@
 
 ### block wx:for
 
-类似`block wx:if`，也可以将`wx:for`用在`<block/>`标签上，以渲染一个包含多节点的结构块。例如：
+类似 `block wx:if`，也可以将 `wx:for` 用在`<block/>`标签上，以渲染一个包含多节点的结构块。例如：
 
     <block wx:for="{{[1, 2, 3]}}">
       <view> {{index}}: </view>
@@ -210,6 +210,20 @@
         })
       }
     })
+
+**注意：**
+
+当 `wx:for` 的值为字符串时，会将字符串解析成字符串数组
+
+    <view wx:for="array">
+      {{item}}
+    </view>
+
+等同于
+
+    <view wx:for="{{['a','r','r','a','y']}}">
+      {{item}}
+    </view>
 
 </section>
 
