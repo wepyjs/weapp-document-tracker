@@ -308,7 +308,7 @@
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
             *   [概况趋势](analysis.html#概况趋势)
-        *   [访问分析](analysis-visit.html#访问分析)
+        *   [访问分析](analysis-visit.html)
             *   [访问趋势](analysis-visit.html#访问趋势)
             *   [访问分布](analysis-visit.html#访问分布)
             *   [访问留存](analysis-visit.html#访问留存)
@@ -374,7 +374,7 @@
 
 <td>是</td>
 
-<td>需要添加的卡券列表</td>
+<td>需要添加的卡券列表，列表内对象说明请参见[请求对象说明](#请求对象说明)</td>
 
 </tr>
 
@@ -418,11 +418,177 @@
 
 </table>
 
-了解更多信息，请查看[微信卡券接口文档](https://mp.weixin.qq.com/cgi-bin/announce?action=getannouncement&key=1490190158&version=1&lang=zh_CN&platform=2)
+#### **请求对象说明**
 
-#### Tip
+<table>
 
-1.  目前只有认证小程序才能使用卡券接口，可参考[指引](https://mp.weixin.qq.com/debug/wxadoc/product/renzheng.html)进行认证
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>cardId</td>
+
+<td>String</td>
+
+<td>卡券 Id</td>
+
+</tr>
+
+<tr>
+
+<td>cardExt</td>
+
+<td>String</td>
+
+<td>卡券的扩展参数</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**cardExt 说明**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>类型</th>
+
+<th>必填</th>
+
+<th>是否参与签名</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>code</td>
+
+<td>String</td>
+
+<td>否</td>
+
+<td>是</td>
+
+<td>用户领取的 code，仅自定义 code 模式的卡券须填写，非自定义 code 模式卡券不可填写，[详情](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1451025056)</td>
+
+</tr>
+
+<tr>
+
+<td>openid</td>
+
+<td>String</td>
+
+<td>否</td>
+
+<td>是</td>
+
+<td>指定领取者的openid，只有该用户能领取。 bind_openid 字段为 true 的卡券必须填写，bind_openid 字段为 false 不可填写。</td>
+
+</tr>
+
+<tr>
+
+<td>timestamp</td>
+
+<td>Number</td>
+
+<td>是</td>
+
+<td>是</td>
+
+<td>时间戳，东八区时间,UTC+8，单位为秒</td>
+
+</tr>
+
+<tr>
+
+<td>nonce_str</td>
+
+<td>String</td>
+
+<td>否</td>
+
+<td>是</td>
+
+<td>随机字符串，由开发者设置传入，加强安全性（若不填写可能被重放请求）。随机字符串，不长于 32 位。推荐使用大小写字母和数字，不同添加请求的 nonce_str 须动态生成，若重复将会导致领取失败。</td>
+
+</tr>
+
+<tr>
+
+<td>fixed_begintimestamp</td>
+
+<td>Number</td>
+
+<td>否</td>
+
+<td>否</td>
+
+<td>卡券在第三方系统的实际领取时间，为东八区时间戳（UTC+8,精确到秒）。当卡券的有效期类为 DATE_TYPE_FIX_TERM 时专用，标识卡券的实际生效时间，用于解决商户系统内起始时间和领取微信卡券时间不同步的问题。</td>
+
+</tr>
+
+<tr>
+
+<td>outer_str</td>
+
+<td>String</td>
+
+<td>否</td>
+
+<td>否</td>
+
+<td>领取渠道参数，用于标识本次领取的渠道值。</td>
+
+</tr>
+
+<tr>
+
+<td>signature</td>
+
+<td>String</td>
+
+<td>是</td>
+
+<td>-</td>
+
+<td>签名，商户将接口列表中的参数按照指定方式进行签名,签名方式使用 SHA1，具体签名方案参见：[卡券签名](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421141115)</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**注：cardExt 需进行 JSON 序列化为字符串传入**
 
 **回调结果：**
 
@@ -504,7 +670,71 @@
 
 <td>ObjectArray</td>
 
-<td>卡券添加结果</td>
+<td>卡券添加结果列表，列表内对象说明请详见[返回对象说明](#返回对象说明)</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+#### **返回对象说明**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>code</td>
+
+<td>String</td>
+
+<td>加密 code，为用户领取到卡券的code加密后的字符串，解密请参照：[code 解码接口](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1451025239)</td>
+
+</tr>
+
+<tr>
+
+<td>cardId</td>
+
+<td>String</td>
+
+<td>用户领取到卡券的Id</td>
+
+</tr>
+
+<tr>
+
+<td>cardExt</td>
+
+<td>String</td>
+
+<td>用户领取到卡券的扩展参数，与调用时传入的参数相同</td>
+
+</tr>
+
+<tr>
+
+<td>isSuccess</td>
+
+<td>Boolean</td>
+
+<td>是否成功</td>
 
 </tr>
 
@@ -565,7 +795,7 @@
 
 <td>是</td>
 
-<td>需要打开的卡券列表</td>
+<td>需要打开的卡券列表，列表内参数详见[openCard 请求对象说明](#opencard-请求对象说明)</td>
 
 </tr>
 
@@ -609,7 +839,49 @@
 
 </table>
 
-了解更多信息，请查看[微信卡券接口文档](https://mp.weixin.qq.com/cgi-bin/announce?action=getannouncement&key=1490190158&version=1&lang=zh_CN&platform=2)
+#### **openCard 请求对象说明**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>cardId</td>
+
+<td>String</td>
+
+<td>需要打开的卡券 Id</td>
+
+</tr>
+
+<tr>
+
+<td>code</td>
+
+<td>String</td>
+
+<td>由 addCard 的返回对象中的加密 code 通过解密后得到，解密请参照：[code 解码接口](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1451025239)</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 **示例代码：**
 
@@ -626,6 +898,11 @@
       success: function(res) {
       }
     })
+
+#### Tip
+
+1.  `tip`: 目前只有认证小程序才能使用卡券接口，可参考[指引](https://mp.weixin.qq.com/debug/wxadoc/product/renzheng.html)进行认证。
+2.  `tip`: 了解更多信息，请查看[微信卡券接口文档](https://mp.weixin.qq.com/cgi-bin/announce?action=getannouncement&key=1490190158&version=1&lang=zh_CN&platform=2)
 
 </section>
 

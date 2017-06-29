@@ -157,6 +157,10 @@
       }
     })
 
+### Tips
+
+1.  `tip`: require 暂时不支持绝对路径
+
 </section>
 
 </div>
