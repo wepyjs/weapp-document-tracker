@@ -308,7 +308,7 @@
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
             *   [概况趋势](analysis.html#概况趋势)
-        *   [访问分析](analysis-visit.html#访问分析)
+        *   [访问分析](analysis-visit.html)
             *   [访问趋势](analysis-visit.html#访问趋势)
             *   [访问分布](analysis-visit.html#访问分布)
             *   [访问留存](analysis-visit.html#访问留存)
@@ -495,7 +495,7 @@
     wx.navigateToMiniProgram({
       appId: '',
       path: 'pages/index/index?id=123',
-      extarData: {
+      extraData: {
         foo: 'bar'
       },
       envVersion: 'develop',
