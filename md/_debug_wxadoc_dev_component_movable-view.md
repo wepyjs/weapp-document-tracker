@@ -64,9 +64,11 @@
     *   [scroll-view](scroll-view.html)
     *   [swiper](swiper.html)
     *   [movable-view](movable-view.html)
+    *   [cover-view](cover-view.html)
 *   [基础内容](icon.html)
     *   [icon](icon.html)
     *   [text](text.html)
+    *   [rich-text](rich-text.html)
     *   [progress](progress.html)
 *   [表单组件](button.html)
     *   [button](button.html)
@@ -90,6 +92,8 @@
     *   [map](map.html#map)
 *   [画布](canvas.html)
     *   [canvas](canvas.html#canvas)
+*   [开放数据](open-data.html)
+    *   [open-data](open-data.html)
 *   [客服会话](contact-button.html)
     *   [contact-button](contact-button.html)
 
@@ -233,7 +237,11 @@
 
 </table>
 
-> movable-view 必须设置width和height属性，不设置默认为10px movable-view 默认为绝对定位，top和left属性为0px 当movable-view小于movable-area时，movable-view的移动范围是在movable-area内；当movable-view大于movable-area时，movable-view的移动范围必须包含movable-area（x轴方向和y轴方向分开考虑）
+> movable-view 必须设置width和height属性，不设置默认为10px
+> 
+> movable-view 默认为绝对定位，top和left属性为0px
+> 
+> 当movable-view小于movable-area时，movable-view的移动范围是在movable-area内；当movable-view大于movable-area时，movable-view的移动范围必须包含movable-area（x轴方向和y轴方向分开考虑）
 
 **注意**：movable-view必须在`<movable-area/>`组件中，并且必须是直接子节点，否则不能移动。
 
@@ -242,14 +250,14 @@
     <view class="section">
       <view class="section__title">movable-view区域小于movable-area</view>
       <movable-area style="height: 200px;width: 200px;background: red;">
-        <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}">
+        <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all">
         </movable-view>
       </movable-area>
       <view class="btn-area">
         <button size="mini" bindtap="tap">click me to move to (30px, 30px)</button>
       </view>
       <view class="section__title">movable-view区域大于movable-area</view>
-      <movable-area style="height: 100px;width: 100px;background: red;">
+      <movable-area style="height: 100px;width: 100px;background: red;" direction="all">
         <movable-view style="height: 200px; width: 200px; background: blue;">
         </movable-view>
       </movable-area>
@@ -307,6 +315,6 @@
 
 </div>
 
-[](swiper.html)[](icon.html)</div>
+[](swiper.html)[](cover-view.html)</div>
 
 </div>

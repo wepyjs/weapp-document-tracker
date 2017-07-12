@@ -106,6 +106,7 @@
         *   [wx.createVideoContext](api-video.html#wxcreatevideocontextvideoid)
 *   [文件](file.html)
     *   [wx.saveFile](file.html#wxsavefileobject)
+    *   [wx.getFileInfo](getFileInfo.html)
     *   [wx.getSavedFileList](file.html#wxgetsavedfilelistobject)
     *   [wx.getSavedFileInfo](file.html#wxgetsavedfileinfoobject)
     *   [wx.removeSavedFile](file.html#wxremovesavedfileobject)
@@ -171,6 +172,7 @@
         *   [wx.notifyBLECharacteristicValueChange](bluetooth.html#wxnotifyblecharacteristicvaluechangeobject)
         *   [wx.onBLEConnectionStateChange](bluetooth.html#wxonbleconnectionstatechangecallback)
         *   [wx.onBLECharacteristicValueChange](bluetooth.html#wxonblecharacteristicvaluechangecallback)
+        *   [错误码](bluetooth.html#蓝牙错误码errcode列表)
     *   [iBeacon](iBeacon.html)
         *   [wx.startBeaconDiscovery](iBeacon.html#wxstartbeacondiscoveryobject)
         *   [wx.stopBeaconDiscovery](iBeacon.html#wxstopbeacondiscoveryobject)
@@ -180,6 +182,11 @@
     *   [屏幕亮度](device.html#wxsetscreenbrightnessobject)
         *   [wx.setScreenBrightness](device.html#wxsetscreenbrightnessobject)
         *   [wx.getScreenBrightness](device.html#wxgetscreenbrightnessobject)
+        *   [wx.setKeepScreenOn](setKeepScreenOn.html)
+    *   [截屏](captureScreen.html)
+        *   [wx.captureScreen](captureScreen.html)
+    *   [用户截屏事件](onUserCaptureScreen.html)
+        *   [wx.onUserCaptureScreen](onUserCaptureScreen.html)
     *   [振动](device.html#wxvibratelongobject)
         *   [wx.vibrateLong](device.html#wxvibratelongobject)
         *   [wx.vibrateShort](device.html#wxvibrateshortobject)
@@ -197,6 +204,7 @@
         *   [wx.setNavigationBarTitle](ui.html#wxsetnavigationbartitleobject)
         *   [wx.showNavigationBarLoading](ui.html#wxshownavigationbarloading)
         *   [wx.hideNavigationBarLoading](ui.html#wxhidenavigationbarloading)
+        *   [wx.setNavigationBarColor](setNavigationBarColor.html)
     *   [导航](ui-navigate.html)
         *   [wx.navigateTo](ui-navigate.html#wxnavigatetoobject)
         *   [wx.redirectTo](ui-navigate.html#wxredirecttoobject)
@@ -205,6 +213,9 @@
         *   [wx.reLaunch](ui-navigate.html#wxrelaunchobject)
     *   [动画](api-animation.html)
         *   [wx.createAnimation](api-animation.html#wxcreateanimationobject)
+    *   [位置](scroll.html)
+        *   [wx.pageScrollTo](scroll.html)
+        *   [wx.createSelectorQuery](wxml-nodes-info.html)
     *   [绘图](canvas/reference.html)
         *   [intro](canvas/intro.html)
         *   [coordinates](canvas/coordinates.html)
@@ -244,6 +255,7 @@
         *   [setFontSize](canvas/set-font-size.html)
         *   [fillText](canvas/fill-text.html)
         *   [setTextAlign](canvas/set-text-align.html)
+        *   [set-text-baseline](canvas/set-text-baseline.html)
         *   [drawImage](canvas/draw-image.html)
         *   [setGlobalAlpha](canvas/set-global-alpha.html)
         *   [save](canvas/save-restore.html)
@@ -254,6 +266,15 @@
     *   [下拉刷新](pulldown.html)
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
         *   [wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)
+*   [WXML节点信息](wxml-nodes-info.html)
+    *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
+    *   [selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)
+    *   [selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)
+    *   [selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)
+    *   [nodesRef.boundingClientRect](wxml-nodes-info.html#nodesrefboundingclientrectcallback)
+    *   [nodesRef.scrollOffset](wxml-nodes-info.html#nodesrefscrolloffsetcallback)
+    *   [nodesRef.fields](wxml-nodes-info.html#nodesreffieldsfieldscallback)
+    *   [selectorQuery.exec](wxml-nodes-info.html#selectorqueryexeccallback)
 *   [第三方平台](ext-api.html)
     *   [wx.getExtConfig](ext-api.html#wxgetextconfigobject)
     *   [wx.getExtConfigSync](ext-api.html#wxgetextconfigsync)
@@ -308,7 +329,7 @@
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
             *   [概况趋势](analysis.html#概况趋势)
-        *   [访问分析](analysis-visit.html#访问分析)
+        *   [访问分析](analysis-visit.html)
             *   [访问趋势](analysis-visit.html#访问趋势)
             *   [访问分布](analysis-visit.html#访问分布)
             *   [访问留存](analysis-visit.html#访问留存)
@@ -319,6 +340,8 @@
 *   [拓展接口](api-util.html)
     *   [wx.arrayBufferToBase64](api-util.html#wxarraybuffertobase64arraybuffer)
     *   [wx.base64ToArrayBuffer](api-util.html#wxbase64toarraybufferbase64)
+*   [调试接口](setEnableDebug.html)
+    *   [打开/关闭调试](setEnableDebug.html)
 
 </nav>
 
@@ -528,6 +551,141 @@
       }
     })
 
+**返回值：**
+
+> 基础库 1.4.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+
+返回一个 `uploadTask` 对象，通过 `uploadTask`，可监听上传进度变化事件，以及取消上传任务。
+
+#### uploadTask
+
+**uploadTask 对象的方法列表：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>方法</th>
+
+<th>参数</th>
+
+<th>说明</th>
+
+<th>最低版本</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>onProgressUpdate</td>
+
+<td>callback</td>
+
+<td>监听上传进度变化</td>
+
+<td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>abort</td>
+
+<td></td>
+
+<td>中断上传任务</td>
+
+<td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**onProgressUpdate 返回参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>progress</td>
+
+<td>Number</td>
+
+<td>上传进度百分比</td>
+
+</tr>
+
+<tr>
+
+<td>totalBytesSent</td>
+
+<td>Number</td>
+
+<td>已经上传的数据长度，单位 Bytes</td>
+
+</tr>
+
+<tr>
+
+<td>totalBytesExpectedToSend</td>
+
+<td>Number</td>
+
+<td>预期需要上传的数据总长度，单位 Bytes</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**示例代码：**
+
+    const uploadTask = wx.uploadFile({
+        url: 'http://example.weixin.qq.com/upload', //仅为示例，非真实的接口地址
+        filePath: tempFilePaths[0],
+        name: 'file',
+        formData:{
+            'user': 'test'
+        },
+        success: function(res){
+            var data = res.data
+            //do something
+        }
+    })
+
+    uploadTask.onProgressUpdate((res) => {
+        console.log('上传进度', res.progress)
+        console.log('已经上传的数据长度', res.totalBytesSent)
+        console.log('预期需要上传的数据总长度', res.totalBytesExpectedToSend)
+    })
+
+    uploadTask.abort() // 取消上传任务
+
 #### Bug & Tip
 
 1.  `tip`: 最大并发限制是 10 个
@@ -635,6 +793,137 @@
         })
       }
     })
+
+**返回值：**
+
+> 基础库 1.4.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+
+返回一个 `downloadTask` 对象，通过 `downloadTask`，可监听下载进度变化事件，以及取消下载任务。
+
+#### downloadTask
+
+**downloadTask 对象的方法列表：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>方法</th>
+
+<th>参数</th>
+
+<th>说明</th>
+
+<th>最低版本</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>onProgressUpdate</td>
+
+<td>callback</td>
+
+<td>监听下载进度变化</td>
+
+<td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>abort</td>
+
+<td></td>
+
+<td>中断下载任务</td>
+
+<td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**onProgressUpdate 返回参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>progress</td>
+
+<td>Number</td>
+
+<td>下载进度百分比</td>
+
+</tr>
+
+<tr>
+
+<td>totalBytesWritten</td>
+
+<td>Number</td>
+
+<td>已经下载的数据长度，单位 Bytes</td>
+
+</tr>
+
+<tr>
+
+<td>totalBytesExpectedToWrite</td>
+
+<td>Number</td>
+
+<td>预期需要下载的数据总长度，单位 Bytes</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**示例代码：**
+
+    const downloadTask = wx.downloadFile({
+        url: 'http://example.com/audio/123', //仅为示例，并非真实的资源
+        success: function(res) {
+            wx.playVoice({
+                filePath: res.tempFilePath
+            })
+        }
+    })
+
+    downloadTask.onProgressUpdate((res) => {
+        console.log('下载进度', res.progress)
+        console.log('已经下载的数据长度', res.totalBytesWritten)
+        console.log('预期需要下载的数据总长度', res.totalBytesExpectedToWrite)
+    })
+
+    downloadTask.abort() // 取消下载任务
 
 #### Bug & Tip
 

@@ -64,9 +64,11 @@
     *   [scroll-view](scroll-view.html)
     *   [swiper](swiper.html)
     *   [movable-view](movable-view.html)
+    *   [cover-view](cover-view.html)
 *   [基础内容](icon.html)
     *   [icon](icon.html)
     *   [text](text.html)
+    *   [rich-text](rich-text.html)
     *   [progress](progress.html)
 *   [表单组件](button.html)
     *   [button](button.html)
@@ -90,6 +92,8 @@
     *   [map](map.html#map)
 *   [画布](canvas.html)
     *   [canvas](canvas.html#canvas)
+*   [开放数据](open-data.html)
+    *   [open-data](open-data.html)
 *   [客服会话](contact-button.html)
     *   [contact-button](contact-button.html)
 
@@ -272,6 +276,22 @@
 <td>70</td>
 
 <td>手指松开后点击态保留时间，单位毫秒</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>session-from</td>
+
+<td>String</td>
+
+<td></td>
+
+<td>open-type="contact"时有效：用户从该按钮进入会话时，开发者将收到带上本参数的事件推送。本参数可用于区分用户进入客服会话的来源。</td>
+
+<td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

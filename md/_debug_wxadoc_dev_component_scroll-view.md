@@ -64,9 +64,11 @@
     *   [scroll-view](scroll-view.html)
     *   [swiper](swiper.html)
     *   [movable-view](movable-view.html)
+    *   [cover-view](cover-view.html)
 *   [基础内容](icon.html)
     *   [icon](icon.html)
     *   [text](text.html)
+    *   [rich-text](rich-text.html)
     *   [progress](progress.html)
 *   [表单组件](button.html)
     *   [button](button.html)
@@ -90,6 +92,8 @@
     *   [map](map.html#map)
 *   [画布](canvas.html)
     *   [canvas](canvas.html#canvas)
+*   [开放数据](open-data.html)
+    *   [open-data](open-data.html)
 *   [客服会话](contact-button.html)
     *   [contact-button](contact-button.html)
 
@@ -345,7 +349,7 @@
 
 ![scroll-view](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/scroll-view.png)
 
-#### Bug & Tip
+##### Bug & Tip
 
 1.  `tip`: 请勿在 `scroll-view` 中使用 `textarea`、`map`、`canvas`、`video` 组件
 2.  `tip`: `scroll-into-view` 的优先级高于 `scroll-top`

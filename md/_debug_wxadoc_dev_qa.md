@@ -86,10 +86,9 @@
 
 ## 怎么获取用户输入
 
-能够获取用户输入的组件，需要使用组件的属性`bindchange`将用户的输入内容同步到 AppService。
+能够获取用户输入的组件，需要使用组件的属性`bindblur`将用户的输入内容同步到 AppService。
 
-    <input id="myInput" bindchange="bindChange" />
-    <checkbox id="myCheckbox" bindchange="bindChange" />
+    <input id="myInput" bindblur="bindBlur" />
 
     var inputContent = {}
 
@@ -97,7 +96,7 @@
       data: {
         inputContent: {}
       },
-      bindChange: function(e) {
+      bindBlur: function(e) {
         inputContent[e.currentTarget.id] = e.detail.value
       }
     })
@@ -145,7 +144,8 @@ WXSS支持以`.`开始的类选择器。如：
 
 ## HTTPS 请求不成功
 
-tls 仅支持 1.2 及以上版本
+1.  tls 仅支持 1.2 及以上版本
+2.  部分 Android 机型需要 tls1.0 或者 tls1.1，所以请确保服务器的 tls 版本为 1.0、1.1、1.2
 
 ## 网络请求的 referer
 

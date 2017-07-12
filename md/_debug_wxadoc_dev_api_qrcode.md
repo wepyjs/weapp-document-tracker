@@ -106,6 +106,7 @@
         *   [wx.createVideoContext](api-video.html#wxcreatevideocontextvideoid)
 *   [文件](file.html)
     *   [wx.saveFile](file.html#wxsavefileobject)
+    *   [wx.getFileInfo](getFileInfo.html)
     *   [wx.getSavedFileList](file.html#wxgetsavedfilelistobject)
     *   [wx.getSavedFileInfo](file.html#wxgetsavedfileinfoobject)
     *   [wx.removeSavedFile](file.html#wxremovesavedfileobject)
@@ -171,6 +172,7 @@
         *   [wx.notifyBLECharacteristicValueChange](bluetooth.html#wxnotifyblecharacteristicvaluechangeobject)
         *   [wx.onBLEConnectionStateChange](bluetooth.html#wxonbleconnectionstatechangecallback)
         *   [wx.onBLECharacteristicValueChange](bluetooth.html#wxonblecharacteristicvaluechangecallback)
+        *   [错误码](bluetooth.html#蓝牙错误码errcode列表)
     *   [iBeacon](iBeacon.html)
         *   [wx.startBeaconDiscovery](iBeacon.html#wxstartbeacondiscoveryobject)
         *   [wx.stopBeaconDiscovery](iBeacon.html#wxstopbeacondiscoveryobject)
@@ -180,6 +182,11 @@
     *   [屏幕亮度](device.html#wxsetscreenbrightnessobject)
         *   [wx.setScreenBrightness](device.html#wxsetscreenbrightnessobject)
         *   [wx.getScreenBrightness](device.html#wxgetscreenbrightnessobject)
+        *   [wx.setKeepScreenOn](setKeepScreenOn.html)
+    *   [截屏](captureScreen.html)
+        *   [wx.captureScreen](captureScreen.html)
+    *   [用户截屏事件](onUserCaptureScreen.html)
+        *   [wx.onUserCaptureScreen](onUserCaptureScreen.html)
     *   [振动](device.html#wxvibratelongobject)
         *   [wx.vibrateLong](device.html#wxvibratelongobject)
         *   [wx.vibrateShort](device.html#wxvibrateshortobject)
@@ -197,6 +204,7 @@
         *   [wx.setNavigationBarTitle](ui.html#wxsetnavigationbartitleobject)
         *   [wx.showNavigationBarLoading](ui.html#wxshownavigationbarloading)
         *   [wx.hideNavigationBarLoading](ui.html#wxhidenavigationbarloading)
+        *   [wx.setNavigationBarColor](setNavigationBarColor.html)
     *   [导航](ui-navigate.html)
         *   [wx.navigateTo](ui-navigate.html#wxnavigatetoobject)
         *   [wx.redirectTo](ui-navigate.html#wxredirecttoobject)
@@ -205,6 +213,9 @@
         *   [wx.reLaunch](ui-navigate.html#wxrelaunchobject)
     *   [动画](api-animation.html)
         *   [wx.createAnimation](api-animation.html#wxcreateanimationobject)
+    *   [位置](scroll.html)
+        *   [wx.pageScrollTo](scroll.html)
+        *   [wx.createSelectorQuery](wxml-nodes-info.html)
     *   [绘图](canvas/reference.html)
         *   [intro](canvas/intro.html)
         *   [coordinates](canvas/coordinates.html)
@@ -244,6 +255,7 @@
         *   [setFontSize](canvas/set-font-size.html)
         *   [fillText](canvas/fill-text.html)
         *   [setTextAlign](canvas/set-text-align.html)
+        *   [set-text-baseline](canvas/set-text-baseline.html)
         *   [drawImage](canvas/draw-image.html)
         *   [setGlobalAlpha](canvas/set-global-alpha.html)
         *   [save](canvas/save-restore.html)
@@ -254,6 +266,15 @@
     *   [下拉刷新](pulldown.html)
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
         *   [wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)
+*   [WXML节点信息](wxml-nodes-info.html)
+    *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
+    *   [selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)
+    *   [selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)
+    *   [selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)
+    *   [nodesRef.boundingClientRect](wxml-nodes-info.html#nodesrefboundingclientrectcallback)
+    *   [nodesRef.scrollOffset](wxml-nodes-info.html#nodesrefscrolloffsetcallback)
+    *   [nodesRef.fields](wxml-nodes-info.html#nodesreffieldsfieldscallback)
+    *   [selectorQuery.exec](wxml-nodes-info.html#selectorqueryexeccallback)
 *   [第三方平台](ext-api.html)
     *   [wx.getExtConfig](ext-api.html#wxgetextconfigobject)
     *   [wx.getExtConfigSync](ext-api.html#wxgetextconfigsync)
@@ -308,7 +329,7 @@
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
             *   [概况趋势](analysis.html#概况趋势)
-        *   [访问分析](analysis-visit.html#访问分析)
+        *   [访问分析](analysis-visit.html)
             *   [访问趋势](analysis-visit.html#访问趋势)
             *   [访问分布](analysis-visit.html#访问分布)
             *   [访问留存](analysis-visit.html#访问留存)
@@ -319,6 +340,8 @@
 *   [拓展接口](api-util.html)
     *   [wx.arrayBufferToBase64](api-util.html#wxarraybuffertobase64arraybuffer)
     *   [wx.base64ToArrayBuffer](api-util.html#wxbase64toarraybufferbase64)
+*   [调试接口](setEnableDebug.html)
+    *   [打开/关闭调试](setEnableDebug.html)
 
 </nav>
 
@@ -512,12 +535,13 @@
 
 </table>
 
-**注意：通过该接口生成的小程序码，永久有效，数量暂无限制。用户扫描该码进入小程序后，将统一打开首页，开发者需在首页根据获取的码中 scene 字段的值，再做处理逻辑。使用如下代码可以获取到二维码中的 scene 字段的值，调试阶段可以使用开发工具的条件编译自定义参数 scene=xxxx 进行模拟**
+**注意：通过该接口生成的小程序码，永久有效，数量暂无限制。用户扫描该码进入小程序后，将统一打开首页，开发者需在首页根据获取的码中 scene 字段的值，再做处理逻辑。使用如下代码可以获取到二维码中的 scene 字段的值。调试阶段可以使用开发工具的条件编译自定义参数 scene=xxxx 进行模拟，开发工具模拟时的 scene 的参数值需要进行 urlencode**
 
     // 这是首页的 js
     Page({
       onLoad: function(options) {
-        var scene = options.scene
+        // options 中的 scene 需要使用 decodeURIComponent 才能获取到生成二维码时传入的 scene
+        var scene = decodeURIComponent(options.scene)
       }
     })
 

@@ -64,9 +64,11 @@
     *   [scroll-view](scroll-view.html)
     *   [swiper](swiper.html)
     *   [movable-view](movable-view.html)
+    *   [cover-view](cover-view.html)
 *   [基础内容](icon.html)
     *   [icon](icon.html)
     *   [text](text.html)
+    *   [rich-text](rich-text.html)
     *   [progress](progress.html)
 *   [表单组件](button.html)
     *   [button](button.html)
@@ -90,6 +92,8 @@
     *   [map](map.html#map)
 *   [画布](canvas.html)
     *   [canvas](canvas.html#canvas)
+*   [开放数据](open-data.html)
+    *   [open-data](open-data.html)
 *   [客服会话](contact-button.html)
     *   [contact-button](contact-button.html)
 
@@ -151,15 +155,85 @@
 
 </tr>
 
+<tr>
+
+<td>space</td>
+
+<td>String</td>
+
+<td>false</td>
+
+<td>显示连续空格</td>
+
+<td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>decode</td>
+
+<td>Boolean</td>
+
+<td>false</td>
+
+<td>是否解码</td>
+
+<td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
 </tbody>
 
 </table>
 
-支持转义符"\"。
+**space 有效值：**
 
-`<text/>` 组件内只支持 `<text/>` 嵌套。
+<table>
 
-除了文本节点以外的其他节点都无法长按选中。
+<thead>
+
+<tr>
+
+<th>值</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>ensp</td>
+
+<td>中文字符空格一半大小</td>
+
+</tr>
+
+<tr>
+
+<td>emsp</td>
+
+<td>中文字符空格大小</td>
+
+</tr>
+
+<tr>
+
+<td>nbsp</td>
+
+<td>根据字体设置的空格大小</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**Tips:** decode可以解析的有 `&nbsp;` `&lt;` `&gt;` `&amp;` `&apos;` `&ensp;` `&emsp;` **Tips:** 各个操作系统的空格标准并不一致。 **Tips:** `<text/>` 组件内只支持 `<text/>` 嵌套。 **Tips:** 除了文本节点以外的其他节点都无法长按选中。
 
 **示例：**
 
@@ -195,7 +269,7 @@
 
 ![text](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/text.png)
 
-#### Bug & Tip
+##### Bug & Tip
 
 1.  `tip`: `text` 的长按复制功能尚未实现。
 
@@ -238,6 +312,6 @@
 
 </div>
 
-[](icon.html)[](progress.html)</div>
+[](icon.html)[](rich-text.html)</div>
 
 </div>

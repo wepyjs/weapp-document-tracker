@@ -64,9 +64,11 @@
     *   [scroll-view](scroll-view.html)
     *   [swiper](swiper.html)
     *   [movable-view](movable-view.html)
+    *   [cover-view](cover-view.html)
 *   [基础内容](icon.html)
     *   [icon](icon.html)
     *   [text](text.html)
+    *   [rich-text](rich-text.html)
     *   [progress](progress.html)
 *   [表单组件](button.html)
     *   [button](button.html)
@@ -90,6 +92,8 @@
     *   [map](map.html#map)
 *   [画布](canvas.html)
     *   [canvas](canvas.html#canvas)
+*   [开放数据](open-data.html)
+    *   [open-data](open-data.html)
 *   [客服会话](contact-button.html)
     *   [contact-button](contact-button.html)
 
@@ -251,19 +255,39 @@
 
 <tr>
 
+<td>vertical</td>
+
+<td>Boolean</td>
+
+<td>false</td>
+
+<td>滑动方向是否为纵向</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
 <td>bindchange</td>
 
 <td>EventHandle</td>
 
 <td></td>
 
-<td>current 改变时会触发 change 事件，event.detail = {current: current}</td>
+<td>current 改变时会触发 change 事件，event.detail = {current: current, source: source}</td>
 
 </tr>
 
 </tbody>
 
 </table>
+
+从公共库v1.4.0开始，`change`事件返回`detail`中包含一个`source`字段，表示导致变更的原因，可能值如下：
+
+*   `autoplay` 自动播放导致swiper变化；
+*   `touch` 用户划动引起swiper变化；
+*   其他原因将用空字符串表示。
 
 **注意**：其中只可放置`<swiper-item/>`组件，否则会导致未定义的行为。
 

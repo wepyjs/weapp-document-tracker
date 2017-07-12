@@ -145,6 +145,6 @@
 
 </div>
 
-[](../api/api-util.html#wxbase64toarraybufferbase64)[](devtools.html)</div>
+[](../api/setEnableDebug.html)[](devtools.html)</div>
 
 </div>

@@ -106,6 +106,7 @@
         *   [wx.createVideoContext](api-video.html#wxcreatevideocontextvideoid)
 *   [文件](file.html)
     *   [wx.saveFile](file.html#wxsavefileobject)
+    *   [wx.getFileInfo](getFileInfo.html)
     *   [wx.getSavedFileList](file.html#wxgetsavedfilelistobject)
     *   [wx.getSavedFileInfo](file.html#wxgetsavedfileinfoobject)
     *   [wx.removeSavedFile](file.html#wxremovesavedfileobject)
@@ -171,6 +172,7 @@
         *   [wx.notifyBLECharacteristicValueChange](bluetooth.html#wxnotifyblecharacteristicvaluechangeobject)
         *   [wx.onBLEConnectionStateChange](bluetooth.html#wxonbleconnectionstatechangecallback)
         *   [wx.onBLECharacteristicValueChange](bluetooth.html#wxonblecharacteristicvaluechangecallback)
+        *   [错误码](bluetooth.html#蓝牙错误码errcode列表)
     *   [iBeacon](iBeacon.html)
         *   [wx.startBeaconDiscovery](iBeacon.html#wxstartbeacondiscoveryobject)
         *   [wx.stopBeaconDiscovery](iBeacon.html#wxstopbeacondiscoveryobject)
@@ -180,6 +182,11 @@
     *   [屏幕亮度](device.html#wxsetscreenbrightnessobject)
         *   [wx.setScreenBrightness](device.html#wxsetscreenbrightnessobject)
         *   [wx.getScreenBrightness](device.html#wxgetscreenbrightnessobject)
+        *   [wx.setKeepScreenOn](setKeepScreenOn.html)
+    *   [截屏](captureScreen.html)
+        *   [wx.captureScreen](captureScreen.html)
+    *   [用户截屏事件](onUserCaptureScreen.html)
+        *   [wx.onUserCaptureScreen](onUserCaptureScreen.html)
     *   [振动](device.html#wxvibratelongobject)
         *   [wx.vibrateLong](device.html#wxvibratelongobject)
         *   [wx.vibrateShort](device.html#wxvibrateshortobject)
@@ -197,6 +204,7 @@
         *   [wx.setNavigationBarTitle](ui.html#wxsetnavigationbartitleobject)
         *   [wx.showNavigationBarLoading](ui.html#wxshownavigationbarloading)
         *   [wx.hideNavigationBarLoading](ui.html#wxhidenavigationbarloading)
+        *   [wx.setNavigationBarColor](setNavigationBarColor.html)
     *   [导航](ui-navigate.html)
         *   [wx.navigateTo](ui-navigate.html#wxnavigatetoobject)
         *   [wx.redirectTo](ui-navigate.html#wxredirecttoobject)
@@ -205,6 +213,9 @@
         *   [wx.reLaunch](ui-navigate.html#wxrelaunchobject)
     *   [动画](api-animation.html)
         *   [wx.createAnimation](api-animation.html#wxcreateanimationobject)
+    *   [位置](scroll.html)
+        *   [wx.pageScrollTo](scroll.html)
+        *   [wx.createSelectorQuery](wxml-nodes-info.html)
     *   [绘图](canvas/reference.html)
         *   [intro](canvas/intro.html)
         *   [coordinates](canvas/coordinates.html)
@@ -244,6 +255,7 @@
         *   [setFontSize](canvas/set-font-size.html)
         *   [fillText](canvas/fill-text.html)
         *   [setTextAlign](canvas/set-text-align.html)
+        *   [set-text-baseline](canvas/set-text-baseline.html)
         *   [drawImage](canvas/draw-image.html)
         *   [setGlobalAlpha](canvas/set-global-alpha.html)
         *   [save](canvas/save-restore.html)
@@ -254,6 +266,15 @@
     *   [下拉刷新](pulldown.html)
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
         *   [wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)
+*   [WXML节点信息](wxml-nodes-info.html)
+    *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
+    *   [selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)
+    *   [selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)
+    *   [selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)
+    *   [nodesRef.boundingClientRect](wxml-nodes-info.html#nodesrefboundingclientrectcallback)
+    *   [nodesRef.scrollOffset](wxml-nodes-info.html#nodesrefscrolloffsetcallback)
+    *   [nodesRef.fields](wxml-nodes-info.html#nodesreffieldsfieldscallback)
+    *   [selectorQuery.exec](wxml-nodes-info.html#selectorqueryexeccallback)
 *   [第三方平台](ext-api.html)
     *   [wx.getExtConfig](ext-api.html#wxgetextconfigobject)
     *   [wx.getExtConfigSync](ext-api.html#wxgetextconfigsync)
@@ -308,7 +329,7 @@
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
             *   [概况趋势](analysis.html#概况趋势)
-        *   [访问分析](analysis-visit.html#访问分析)
+        *   [访问分析](analysis-visit.html)
             *   [访问趋势](analysis-visit.html#访问趋势)
             *   [访问分布](analysis-visit.html#访问分布)
             *   [访问留存](analysis-visit.html#访问留存)
@@ -319,6 +340,8 @@
 *   [拓展接口](api-util.html)
     *   [wx.arrayBufferToBase64](api-util.html#wxarraybuffertobase64arraybuffer)
     *   [wx.base64ToArrayBuffer](api-util.html#wxbase64toarraybufferbase64)
+*   [调试接口](setEnableDebug.html)
+    *   [打开/关闭调试](setEnableDebug.html)
 
 </nav>
 
@@ -591,55 +614,9 @@
 
 <tr>
 
-<td>adapterState</td>
-
-<td>object</td>
-
-<td>蓝牙适配器信息</td>
-
-</tr>
-
-<tr>
-
-<td>errMsg</td>
-
-<td>string</td>
-
-<td>成功：ok，错误：详细信息</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-#### adapterState
-
-蓝牙适配器状态信息
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>参数</th>
-
-<th>类型</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
 <td>discovering</td>
 
-<td>boolean</td>
+<td>Boolean</td>
 
 <td>是否正在搜索设备</td>
 
@@ -649,9 +626,19 @@
 
 <td>available</td>
 
-<td>boolean</td>
+<td>Boolean</td>
 
 <td>蓝牙适配器是否可用</td>
+
+</tr>
+
+<tr>
+
+<td>errMsg</td>
+
+<td>String</td>
+
+<td>成功：ok，错误：详细信息</td>
 
 </tr>
 
@@ -1066,18 +1053,6 @@
 </thead>
 
 <tbody>
-
-<tr>
-
-<td>services</td>
-
-<td>Array</td>
-
-<td>否</td>
-
-<td>蓝牙设备主 service 的 uuid 列表</td>
-
-</tr>
 
 <tr>
 

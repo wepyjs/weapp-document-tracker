@@ -64,9 +64,11 @@
     *   [scroll-view](scroll-view.html)
     *   [swiper](swiper.html)
     *   [movable-view](movable-view.html)
+    *   [cover-view](cover-view.html)
 *   [基础内容](icon.html)
     *   [icon](icon.html)
     *   [text](text.html)
+    *   [rich-text](rich-text.html)
     *   [progress](progress.html)
 *   [表单组件](button.html)
     *   [button](button.html)
@@ -90,6 +92,8 @@
     *   [map](map.html#map)
 *   [画布](canvas.html)
     *   [canvas](canvas.html#canvas)
+*   [开放数据](open-data.html)
+    *   [open-data](open-data.html)
 *   [客服会话](contact-button.html)
     *   [contact-button](contact-button.html)
 
@@ -155,7 +159,7 @@
 
 <td>false</td>
 
-<td>当在 canvas 中移动时，禁止屏幕滚动以及下拉刷新</td>
+<td>当在 canvas 中移动时且有绑定手势事件时，禁止屏幕滚动以及下拉刷新</td>
 
 </tr>
 
@@ -279,7 +283,7 @@
 
 相关api：[wx.createCanvasContext](../api/canvas/create-canvas-context.html)
 
-#### Bug & Tip
+##### Bug & Tip
 
 1.  `tip`: `canvas` 组件是由客户端创建的原生组件，它的层级是最高的。
 2.  `tip`: 请勿在 `scroll-view` 中使用 `canvas` 组件。

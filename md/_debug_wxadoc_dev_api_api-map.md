@@ -106,6 +106,7 @@
         *   [wx.createVideoContext](api-video.html#wxcreatevideocontextvideoid)
 *   [文件](file.html)
     *   [wx.saveFile](file.html#wxsavefileobject)
+    *   [wx.getFileInfo](getFileInfo.html)
     *   [wx.getSavedFileList](file.html#wxgetsavedfilelistobject)
     *   [wx.getSavedFileInfo](file.html#wxgetsavedfileinfoobject)
     *   [wx.removeSavedFile](file.html#wxremovesavedfileobject)
@@ -171,6 +172,7 @@
         *   [wx.notifyBLECharacteristicValueChange](bluetooth.html#wxnotifyblecharacteristicvaluechangeobject)
         *   [wx.onBLEConnectionStateChange](bluetooth.html#wxonbleconnectionstatechangecallback)
         *   [wx.onBLECharacteristicValueChange](bluetooth.html#wxonblecharacteristicvaluechangecallback)
+        *   [错误码](bluetooth.html#蓝牙错误码errcode列表)
     *   [iBeacon](iBeacon.html)
         *   [wx.startBeaconDiscovery](iBeacon.html#wxstartbeacondiscoveryobject)
         *   [wx.stopBeaconDiscovery](iBeacon.html#wxstopbeacondiscoveryobject)
@@ -180,6 +182,11 @@
     *   [屏幕亮度](device.html#wxsetscreenbrightnessobject)
         *   [wx.setScreenBrightness](device.html#wxsetscreenbrightnessobject)
         *   [wx.getScreenBrightness](device.html#wxgetscreenbrightnessobject)
+        *   [wx.setKeepScreenOn](setKeepScreenOn.html)
+    *   [截屏](captureScreen.html)
+        *   [wx.captureScreen](captureScreen.html)
+    *   [用户截屏事件](onUserCaptureScreen.html)
+        *   [wx.onUserCaptureScreen](onUserCaptureScreen.html)
     *   [振动](device.html#wxvibratelongobject)
         *   [wx.vibrateLong](device.html#wxvibratelongobject)
         *   [wx.vibrateShort](device.html#wxvibrateshortobject)
@@ -197,6 +204,7 @@
         *   [wx.setNavigationBarTitle](ui.html#wxsetnavigationbartitleobject)
         *   [wx.showNavigationBarLoading](ui.html#wxshownavigationbarloading)
         *   [wx.hideNavigationBarLoading](ui.html#wxhidenavigationbarloading)
+        *   [wx.setNavigationBarColor](setNavigationBarColor.html)
     *   [导航](ui-navigate.html)
         *   [wx.navigateTo](ui-navigate.html#wxnavigatetoobject)
         *   [wx.redirectTo](ui-navigate.html#wxredirecttoobject)
@@ -205,6 +213,9 @@
         *   [wx.reLaunch](ui-navigate.html#wxrelaunchobject)
     *   [动画](api-animation.html)
         *   [wx.createAnimation](api-animation.html#wxcreateanimationobject)
+    *   [位置](scroll.html)
+        *   [wx.pageScrollTo](scroll.html)
+        *   [wx.createSelectorQuery](wxml-nodes-info.html)
     *   [绘图](canvas/reference.html)
         *   [intro](canvas/intro.html)
         *   [coordinates](canvas/coordinates.html)
@@ -244,6 +255,7 @@
         *   [setFontSize](canvas/set-font-size.html)
         *   [fillText](canvas/fill-text.html)
         *   [setTextAlign](canvas/set-text-align.html)
+        *   [set-text-baseline](canvas/set-text-baseline.html)
         *   [drawImage](canvas/draw-image.html)
         *   [setGlobalAlpha](canvas/set-global-alpha.html)
         *   [save](canvas/save-restore.html)
@@ -254,6 +266,15 @@
     *   [下拉刷新](pulldown.html)
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
         *   [wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)
+*   [WXML节点信息](wxml-nodes-info.html)
+    *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
+    *   [selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)
+    *   [selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)
+    *   [selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)
+    *   [nodesRef.boundingClientRect](wxml-nodes-info.html#nodesrefboundingclientrectcallback)
+    *   [nodesRef.scrollOffset](wxml-nodes-info.html#nodesrefscrolloffsetcallback)
+    *   [nodesRef.fields](wxml-nodes-info.html#nodesreffieldsfieldscallback)
+    *   [selectorQuery.exec](wxml-nodes-info.html#selectorqueryexeccallback)
 *   [第三方平台](ext-api.html)
     *   [wx.getExtConfig](ext-api.html#wxgetextconfigobject)
     *   [wx.getExtConfigSync](ext-api.html#wxgetextconfigsync)
@@ -308,7 +329,7 @@
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
             *   [概况趋势](analysis.html#概况趋势)
-        *   [访问分析](analysis-visit.html#访问分析)
+        *   [访问分析](analysis-visit.html)
             *   [访问趋势](analysis-visit.html#访问趋势)
             *   [访问分布](analysis-visit.html#访问分布)
             *   [访问留存](analysis-visit.html#访问留存)
@@ -319,6 +340,8 @@
 *   [拓展接口](api-util.html)
     *   [wx.arrayBufferToBase64](api-util.html#wxarraybuffertobase64arraybuffer)
     *   [wx.base64ToArrayBuffer](api-util.html#wxbase64toarraybufferbase64)
+*   [调试接口](setEnableDebug.html)
+    *   [打开/关闭调试](setEnableDebug.html)
 
 </nav>
 
@@ -413,6 +436,30 @@
 <td>缩放视野展示所有经纬度</td>
 
 <td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>getRegion</td>
+
+<td>OBJECT</td>
+
+<td>获取当前地图的视野范围</td>
+
+<td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>getScale</td>
+
+<td>OBJECT</td>
+
+<td>获取当前地图的缩放级别</td>
+
+<td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -542,6 +589,18 @@
 
 <tr>
 
+<td>rotate</td>
+
+<td>Number</td>
+
+<td>是</td>
+
+<td>marker的旋转角度</td>
+
+</tr>
+
+<tr>
+
 <td>duration</td>
 
 <td>Number</td>
@@ -561,6 +620,18 @@
 <td>否</td>
 
 <td>动画结束回调函数</td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>Function</td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数</td>
 
 </tr>
 
@@ -611,6 +682,130 @@
 <td>否</td>
 
 <td>坐标点形成的矩形边缘到地图边缘的距离，单位像素。格式为[上,右,下,左]，安卓上只能识别数组第一项，上下左右的padding一致。开发者工具暂不支持padding参数。</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**getRegion 的 OBJECT 参数列表**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>类型</th>
+
+<th>必填</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>success</td>
+
+<td>Function</td>
+
+<td>否</td>
+
+<td>接口调用成功的回调函数，res = {southwest, northeast}，西南角与东北角的经纬度</td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>Function</td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数</td>
+
+</tr>
+
+<tr>
+
+<td>complete</td>
+
+<td>Function</td>
+
+<td>否</td>
+
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**getScale 的 OBJECT 参数列表**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>类型</th>
+
+<th>必填</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>success</td>
+
+<td>Function</td>
+
+<td>否</td>
+
+<td>接口调用成功的回调函数，res = {scale}</td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>Function</td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数</td>
+
+</tr>
+
+<tr>
+
+<td>complete</td>
+
+<td>Function</td>
+
+<td>否</td>
+
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
 </tr>
 

@@ -64,9 +64,11 @@
     *   [scroll-view](scroll-view.html)
     *   [swiper](swiper.html)
     *   [movable-view](movable-view.html)
+    *   [cover-view](cover-view.html)
 *   [基础内容](icon.html)
     *   [icon](icon.html)
     *   [text](text.html)
+    *   [rich-text](rich-text.html)
     *   [progress](progress.html)
 *   [表单组件](button.html)
     *   [button](button.html)
@@ -90,6 +92,8 @@
     *   [map](map.html#map)
 *   [画布](canvas.html)
     *   [canvas](canvas.html#canvas)
+*   [开放数据](open-data.html)
+    *   [open-data](open-data.html)
 *   [客服会话](contact-button.html)
     *   [contact-button](contact-button.html)
 
@@ -237,6 +241,34 @@
 
 <tr>
 
+<td>loop</td>
+
+<td>Boolean</td>
+
+<td>false</td>
+
+<td>是否循环播放</td>
+
+<td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>muted</td>
+
+<td>Boolean</td>
+
+<td>false</td>
+
+<td>是否静音播放</td>
+
+<td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>bindplay</td>
 
 <td>EventHandle</td>
@@ -288,6 +320,20 @@
 <td>播放进度变化时触发，event.detail = {currentTime: '当前播放时间'} 。触发频率应该在 250ms 一次</td>
 
 <td></td>
+
+</tr>
+
+<tr>
+
+<td>bindfullscreenchange</td>
+
+<td>EventHandle</td>
+
+<td></td>
+
+<td>当视频进入和退出全屏是触发，event.detail = {fullScreen: '当前全屏状态'}</td>
+
+<td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -398,7 +444,7 @@ video标签认宽度300px、高度225px，设置宽高需要通过wxss设置widt
 
 相关api：[wx.createVideoContext](../api/api-video.html)
 
-#### Bug & Tip
+##### Bug & Tip
 
 1.  `tip`: `video` 组件是由客户端创建的原生组件，它的层级是最高的。
 2.  `tip`: 请勿在 `scroll-view` 中使用 `video` 组件。

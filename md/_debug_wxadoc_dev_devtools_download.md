@@ -100,54 +100,99 @@
 
 ## 下载地址
 
-### 最新版本 2017.06.22 (0.18.182200)
+### 最新版本 2017.07.11 (0.19.191100)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
 
-### 2017.06.22 更新日志
+### 更新概述
 
-1.  `F` 修复 开发工具中　`wx.uploadFile` header　设置无效的问题[详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&docid=19f5b374735b2b4a0cbb8d649d469652)
-2.  `F` 修复 开发者工具打开公众号网页报项目属性获取失败错误的问题
+*   新增 7 个全新 API 包括获取页面布局，页面滚动，监听截图事件等
+*   新增 `<cover-view />` 可以覆盖在原生组件之上
+*   新增 `<open-data />` 可以展示微信开放数据
+*   新增 `<rich-text />` 可以展示富文本
+*   优化小程序启动逻辑
 
-### 2017.06.21 更新日志
+### 基础库更新 (1.4.0)
 
-### 基础库更新 (1.3.0)
+1.  `A` 新增 API `createSelectorQuery` 获取元素布局信息 [详情](../api/wxml-nodes-info.html#wxcreateselectorquery)
+2.  `A` 新增 API `getFileInfo` 获取文件信息 [详情](../api/getFileInfo.html)
+3.  `A` 新增 API `onUserCaptureScreen` 监听用户进行截屏事件 [详情](../api/onUserCaptureScreen.html#wxonusercapturescreen)
+4.  `A` 新增 API `pageScrollTo` 使页面滚动到指定位置 [详情](../api/scroll.html)
+5.  `A` 新增 API `setNavigationBarColor` 支持小程序修改标题栏颜色 [详情](../api/setNavigationBarColor.html)
+6.  `A` 新增 API `setEnableDebug` 控制线上版本 vConsole 的打开关闭 [详情](../api/setEnableDebug.html)
+7.  `A` 新增 API `setKeepScreenOn` 允许小程序设置屏幕保持常亮 [详情](../api/setKeepScreenOn.html)
+8.  `U` 更新 API `closeSocket` 新增 code, reason 参数 [详情](../api/network-socket.html#wxclosesocketobject)
+9.  `U` 更新 API `connectSocket` 接口增加 支持 protocols 参数定义子协议 [详情](../api/network-socket.html)
+10.  `U` 更新 API `getUserInfo` 增加 lang 参数指定返回用户信息语言 [详情](../api/open.html)
+11.  `U` 更新 API `openDocument` 增加 fileType 参数用于指定文件类型 [详情](../api/file.html#wxopendocumentobject)
+12.  `U` 更新 API `request` 超过并发限制做队列处理
+13.  `U` 更新 API `request` 返回 requestTask 支持 abort 操作 [详情](../api/network-request.html#返回值)
+14.  `U` 更新 API `uploadFile` `downloadFile` 返回 uploadTask/downloadTask 支持监听进度更新及 abort 操作 [详情](../api/network-file.html#返回值)
+15.  `F` 修复 API `canvasToTempFilePath` 在 iOS 下保存图片不清晰的问题
+16.  `F` 修复 API `chooseLocation` 直接选第一个默认地址，成功后返回信息为空的问题
+17.  `F` 修复 API `chooseVideo` 当录制视频超过 10s 时，播放结束会导致进度条错误的问题
+18.  `F` 修复 API `getSystemInfo` 在 App 的 onLaunch 和 onShow 中返回不正确的 windowHeight 的问题
+19.  `F` 修复 API `onBluetoothDeviceFound` 返回数据格式不正确的问题
+20.  `F` 修复 API `reLaunch` 在客户端上跳转不成功的问题
+21.  `F` 修复 API `request` 在 Android Http 状态码是 302 时异常的问题
+22.  `F` 修复 API `showToast` 在 iOS 上页面滚动时出现会随着页面滚动的问题
+23.  `A` 新增 canvas 上下文 `setTextBaseline` 接口 设置绘制文本时的文本基线 [详情](../api/canvas/set-text-baseline.html)
+24.  `F` 修复 canvas 上下文 `setTextAlign` iOS 中文字过长时 center 对齐方式失效的问题
+25.  `F` 修复 canvas 上下文 `disable-scroll` 在客户端上设置失败的问题
+26.  `F` 修复 canvas 上下文 `drawImage` 在工具中同时多次绘制相同图片时只生效一个的问题
+27.  `A` 新增 map 上下文 `translateMarker` 增加 rotate 参数 [详情](../api/api-map.html)
+28.  `A` 新增 map 上下文 `getScale` `getRegion` 接口 支持返回当前缩放级别和视野范围 [详情](../api/api-map.html)
+29.  `F` 修复 map 上下文 `translateMarker` 接口自动旋转计算出错的问题
+30.  `F` 修复 map 上下文 `includeMapPoint` 接口的 padding 参数单位错误的问题
+31.  `A` 新增 video 上下文 `requestFullScreen` `exitFullScreen` 接口 支持全屏 [详情](../api/api-video.html)
+32.  `A` 新增 video 上下文 `playbackRate` 接口 支持倍速播放 [详情](../api/api-video.html)
+33.  `F` 修复 video 上下文 `seek` 接口 在播放前设置无效的问题
+34.  `A` 新增 组件 `<cover-view />` 原生组件上显示基础原生视图 [详情](../component/cover-view.html)
+35.  `A` 新增 组件 `<open-data>` 实现展示微信开放数据 [详情](../component/open-data.html)
+36.  `A` 新增 组件 `<rich-text />` 支持富文本 [详情](../component/rich-text.html)
+37.  `U` 更新 组件 `<map />` 改变 scale 时增加动画过渡效果
+38.  `U` 更新 组件 `<picker />` 新增多列模式和省市区类型 [详情](../component/picker.html)
+39.  `U` 更新 组件 `<swiper />` 在 change 事件的返回值中增加 `source` 字段表示引起变化的原因
+40.  `U` 更新 组件 `<text />` 增加 space 属性支持多空格显示 [详情](../component/text.html)
+41.  `U` 更新 组件 `<text />` 增加 decode 属性支持将 `&nbsp;` 转成对应字符 [详情](../component/text.html)
+42.  `U` 更新 组件 `<textarea />` 增加支持 `line-height` 的wxss设置
+43.  `U` 更新 组件 `<video />` 增加 loop 属性支持循环播放 [详情](../component/video.html)
+44.  `U` 更新 组件 `<video />` 增加 muted 属性支持静音播放 [详情](../component/video.html)
+45.  `U` 更新 组件 `<video />` 增加 bindfullscreenchange 事件监听视频全屏变化 [详情](../component/video.html)
+46.  `U` 更新 组件 `<video />` 支持手势操作控制音量和亮度
+47.  `U` 更新 组件 `<video />` 支持视频拖动增加 icon 提示
+48.  `U` 更新 组件 `<video />` 在 Android 下切换成原生播放器
+49.  `F` 修复 组件 `<canvas />` 在 Devtools 中 disable-scroll 和文档描述不符的问题
+50.  `F` 修复 组件 `<input />` 在 Android 中收起键盘同时 update 会更新失败的问题
+51.  `F` 修复 组件 `<input />` 在 bindfocus 时更新 value 失效的问题
+52.  `F` 修复 组件 `<map />` longitude latitude scale 属性更新后地图没有变化的问题
+53.  `F` 修复 组件 `<map />` 事件没有带上 target 等信息的问题
+54.  `F` 修复 组件 `<scroll-view />` 同时更新列表与 scroll-top 参数时，scroll-top 不立即生效的问题
+55.  `F` 修复 组件 `<swpier />` 在 Android 和 Devtools 中的渲染延迟问题
+56.  `F` 修复 组件 `<swiper />` 圆点区域滑动无效问题
+57.  `F` 修复 组件 `<switch />` 因 label 点击而改变时没有触发 change 事件的问题
+58.  `F` 修复 组件 `<textarea />` 设置了 auto-height 后底部出现多余空白的问题
+59.  `F` 修复 组件 `<textarea />` disabled 变为 false 后更新不生效的问题
+60.  `F` 修复 组件 `<video />` 视频续播退出后，位置不对的问题
+61.  `F` 修复 组件 `<video />` 弹幕重叠问题
+62.  `A` 新增 性能分析 开发者工具增加 Trace 功能 [详情](../framework/performance/tools.html)
+63.  `A` 新增 性能建议文档 [详情](../framework/performance/tips.html)
+64.  `A` 增加 页面事件 `onPageScroll` 监听页面滚动事件 [详情](../framework/app-service/page.html)
+65.  `U` 更新 框架 小程序运行机制 [详情](../framework/operating-mechanism.html)
+66.  `F` 修复 框架 app.json 中 backgroundColor 在 Android 设置错误问题
+67.  `F` 修复 框架 背景音频播放在打开多个小程序时会被 kill 的问题
+68.  `A` 新增 vConsole 加入 WXML 面板
 
-1.  `A` 新增 `wx.navigateToMiniProgram` 从一个小程序打开另一个小程序[详情](../api/navigateToMiniProgram.html)
-2.  `A` 新增 `wx.navigateBackMiniProgram` 返回到上一个小程序[详情](../api/navigateBackMiniProgram.html)
+### 工具更新 (0.19.191100)
 
-### 工具更新 (0.18.182100)
-
-1.  `A` 新增 基础库 1.3.0 调试支持
-2.  `A` 新增 编辑器状态栏显示文件大小
-3.  `A` 新增 编辑器增加跳转到左边 / 右边文件的快捷键 `Ctrl(Command) + PageUp` 和 `Ctrl(Command) + PageDown`
-4.  `A` 新增 显示图片时状态栏右侧会给出图片大小信息
-5.  `U` 优化 编辑器中删除文件不会硬盘删除而是移到回收站
-6.  `U` 优化 上传代码的交互，去除扫码确认，并给予默认 `项目备注`
-7.  `F` 修复 `tabbar` 图标工具上错误支持了 svg 图片的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=97aadd788150cc951c46099914169882)
-8.  `F` 修复 windows 设置 http_proxy 环境变量可能导致无法登陆问题
-9.  `F` 修复 新建 `Page` 时 `app.json` 中路径添加出错的问题[详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&docid=63f8b1d685aa8c57f962b4e50c160c65)
-10.  `F` 修复 `wx.uploadFile` `wx.downloadFile` 设置 networkTimeout 无效的问题
-11.  `F` 修复 提交预览或者上传时，检查 `tabbar` icon 超过 40kb 返回的错误码有误的问题[详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&docid=7606af9c39030997693f53be8d30e182)
-12.  `F` 修复 开启自动保存后 app.json 修改后立刻关闭再打开后内容被置空的问题的问题
-13.  `F` 修复 开发者工具中可以使用 `Image` 但是移动设备中无法使用的问题
-14.  `F` 修复 某些情况下上传代码会出现二维码无效提示的问题
-15.  `F` 修复 上传成功后没有提示的问题
-
-### 2017.05.26 更新日志
-
-### 工具更新
-
-1.  `A` 新增 基础库 1.2.2 调试支持
-2.  `F` 修复 基础库切换导致异常的问题
-3.  `F` 修复 页面内分享会调用两次 Page.onShareAppMessage 的问题
-4.  `F` 修复 工具外部修改代码文件或文件夹时出现编译异常的问题
-5.  `F` 修复 `wx.uploadFile` 网络状态码不为 200 回调 fail 与客户端不一致的问题
-
-### 基础库更新(1.2.2)
-
-1.  `F` 修复 API `wx.getBackgroundAudioPlayerState` 在开发工具音乐开始播放后也回调 fail 的问题
-2.  `F` 修复 API `mapContext.getCenterLocation` 在开发者工具上无 success 回调问题
+1.  `A` 新增 基础库 1.4.0 调试支持
+2.  `A` 新增 性能 Trace 工具 [详情](../framework/performance/tools.html)
+3.  `A` 新增 Win 菜单栏 hover 时改变背景色 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=618904619&docid=663d3f9fe7791717faa67df5728ce424)
+4.  `F` 修复 全局搜索结果页切换标签回来滚动位置不应回到顶部的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0f9c6e3dfe3bfa4e011c94fccf7e692c&highline=%E5%85%A8%E5%B1%80%E6%90%9C%E7%B4%A2&token=1433672993&lang=zh_CN)
+5.  `F` 修复 文件大小写不一致问题导致部分文件系统大小写敏感用户开启工具白屏的问题
+6.  `F` 修复 WXML 和 WXSS 代码格式化时缩进没有依据配置
+7.  `F` 修复 微信授权窗口没有设置缺省头像的问题
+8.  `F` 修复 使用 `button` 触发分享时候工具会有两次 `onShareAppMessage` 事件的问题
 
 ## 历史更新日志
 

@@ -80,7 +80,10 @@
     *   [组件](view/component.html)
 *   [基础库](client-lib.html)
 *   [兼容](compatibility.html)
-*   [性能](performance.html)
+*   [运行机制](operating-mechanism.html)
+*   [性能](performance/)
+    *   [优化建议](performance/tips.html)
+    *   [分析工具](performance/tools.html)
 
 </nav>
 
@@ -188,6 +191,6 @@
 
 </div>
 
-[](client-lib.html)[](performance.html)</div>
+[](client-lib.html)[](operating-mechanism.html)</div>
 
 </div>

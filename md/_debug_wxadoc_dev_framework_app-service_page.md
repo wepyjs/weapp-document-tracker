@@ -80,7 +80,10 @@
     *   [组件](../view/component.html)
 *   [基础库](../client-lib.html)
 *   [兼容](../compatibility.html)
-*   [性能](../performance.html)
+*   [运行机制](../operating-mechanism.html)
+*   [性能](../performance/)
+    *   [优化建议](../performance/tips.html)
+    *   [分析工具](../performance/tools.html)
 
 </nav>
 
@@ -216,11 +219,11 @@
 
 <tr>
 
-<td>route</td>
+<td>onPageScroll</td>
 
-<td>String</td>
+<td>Function</td>
 
-<td>当前页面的路径</td>
+<td>页面滚动触发事件的处理函数</td>
 
 </tr>
 
@@ -268,6 +271,9 @@
       },
       onShareAppMessage: function () {
        // return custom share data when user share.
+      },
+      onPageScroll: function() {
+        // Do something when page scroll
       },
       // Event handler.
       viewTap: function() {
@@ -352,9 +358,49 @@
 ### 页面相关事件处理函数
 
 *   `onPullDownRefresh`: 下拉刷新
+
     *   监听用户下拉刷新事件。
     *   需要在`config`的[`window`](../config.html#window)选项中开启`enablePullDownRefresh`。
     *   当处理完数据刷新后，[`wx.stopPullDownRefresh`](../../api/pulldown.html#wxstoppulldownrefresh)可以停止当前页面的下拉刷新。
+*   `onReachBottom`: 上拉触底
+
+    *   监听用户下拉触底事件。
+*   `onPageScroll`: 页面滚动
+
+    *   监听用户滑动页面事件。
+    *   参数为 Object，包含以下字段：
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>字段</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>scrollTop</td>
+
+<td>Number</td>
+
+<td>页面在垂直方向已滚动的距离（单位px）</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 *   `onShareAppMessage`: 用户转发
     *   只有定义了此事件处理函数，右上角菜单才会显示“转发”按钮
@@ -429,6 +475,10 @@
         console.log('view tap')
       }
     })
+
+### Page.prototype.route
+
+`route` 字段可以获取到当前页面的路径。
 
 ### Page.prototype.setData()
 
