@@ -234,7 +234,7 @@
     <progress percent="60" color="pink" />
     <progress percent="80" active />
 
-![progress](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/progress.png)
+![progress](../image/pic/progress.png)
 
 </section>
 

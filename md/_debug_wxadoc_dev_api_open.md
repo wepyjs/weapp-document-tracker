@@ -183,8 +183,6 @@
         *   [wx.setScreenBrightness](device.html#wxsetscreenbrightnessobject)
         *   [wx.getScreenBrightness](device.html#wxgetscreenbrightnessobject)
         *   [wx.setKeepScreenOn](setKeepScreenOn.html)
-    *   [截屏](captureScreen.html)
-        *   [wx.captureScreen](captureScreen.html)
     *   [用户截屏事件](onUserCaptureScreen.html)
         *   [wx.onUserCaptureScreen](onUserCaptureScreen.html)
     *   [振动](device.html#wxvibratelongobject)
@@ -581,13 +579,13 @@ encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](
 
 登录微信开放平台(open.weixin.qq.com) – 帐号中心 – 开发者资质认证
 
-![img](https://mp.weixin.qq.com/debug/wxadoc/dev/image/open.png)
+![img](../image/open.png)
 
 绑定流程：
 
 登录微信开放平台（open.weixin.qq.com）—管理中心—公众帐号—绑定公众帐号
 
-![img](https://mp.weixin.qq.com/debug/wxadoc/dev/image/union_bind.png)
+![img](../image/union_bind.png)
 
 #### Bug & Tip
 

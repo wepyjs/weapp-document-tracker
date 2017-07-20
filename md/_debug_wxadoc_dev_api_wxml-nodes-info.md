@@ -183,8 +183,6 @@
         *   [wx.setScreenBrightness](device.html#wxsetscreenbrightnessobject)
         *   [wx.getScreenBrightness](device.html#wxgetscreenbrightnessobject)
         *   [wx.setKeepScreenOn](setKeepScreenOn.html)
-    *   [截屏](captureScreen.html)
-        *   [wx.captureScreen](captureScreen.html)
     *   [用户截屏事件](onUserCaptureScreen.html)
         *   [wx.onUserCaptureScreen](onUserCaptureScreen.html)
     *   [振动](device.html#wxvibratelongobject)
@@ -596,6 +594,16 @@
 
 </tr>
 
+<tr>
+
+<td>properties</td>
+
+<td>`[]`</td>
+
+<td>指定属性名列表，返回节点对应属性名的当前属性值（只能获得组件文档中标注的常规属性值， `id` `class` `style` 和事件绑定的属性值不可获取）</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -607,13 +615,16 @@
         wx.createSelectorQuery().select('#the-id').fields({
           dataset: true,
           size: true,
-          scrollOffset: true
+          scrollOffset: true,
+          properties: ['scrollX', 'scrollY']
         }, function(res){
           res.dataset    // 节点的dataset
           res.width      // 节点的宽度
           res.height     // 节点的高度
           res.scrollLeft // 节点的水平滚动位置
           res.scrollTop  // 节点的竖直滚动位置
+          res.scrollX    // 节点 scroll-x 属性的当前值
+          res.scrollY    // 节点 scroll-x 属性的当前值
         }).exec()
       }
     })

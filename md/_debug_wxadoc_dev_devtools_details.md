@@ -71,6 +71,7 @@
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [小程序操作区](debug.html#小程序操作区)
+    *   [自定义数据上报](debug.html#自定义数据上报)
 *   [特殊 API 的调试](different.html)
 *   [代码编辑](edit.html)
 *   [设置](settings.html)

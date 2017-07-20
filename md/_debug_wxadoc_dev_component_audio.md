@@ -377,7 +377,7 @@
       }
     })
 
-![audio](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/audio.png)
+![audio](../image/pic/audio.png)
 
 相关api：[wx.createAudioContext](../api/api-audio.html)
 

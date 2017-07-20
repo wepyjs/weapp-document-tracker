@@ -183,8 +183,6 @@
         *   [wx.setScreenBrightness](../device.html#wxsetscreenbrightnessobject)
         *   [wx.getScreenBrightness](../device.html#wxgetscreenbrightnessobject)
         *   [wx.setKeepScreenOn](../setKeepScreenOn.html)
-    *   [截屏](../captureScreen.html)
-        *   [wx.captureScreen](../captureScreen.html)
     *   [用户截屏事件](../onUserCaptureScreen.html)
         *   [wx.onUserCaptureScreen](../onUserCaptureScreen.html)
     *   [振动](../device.html#wxvibratelongobject)
@@ -473,7 +471,7 @@
 
     ctx.draw()
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/canvas/quadratic-curve-to.png)
+![](../../image/canvas/quadratic-curve-to.png)
 
 针对 `moveTo(20, 20)` `quadraticCurveTo(20, 100, 200, 20)` 的三个关键坐标如下：
 

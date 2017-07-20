@@ -71,6 +71,7 @@
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [小程序操作区](debug.html#小程序操作区)
+    *   [自定义数据上报](debug.html#自定义数据上报)
 *   [特殊 API 的调试](different.html)
 *   [代码编辑](edit.html)
 *   [设置](settings.html)
@@ -104,7 +105,7 @@
 
 菜单栏上点击设置可以打开设置页。设置页侧边栏分别是编辑器、代理和通知的配置。
 
-![main](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_main.png)
+![main](../image/devtools/settings_main.png)
 
 ## 编辑器配置
 
@@ -117,7 +118,7 @@
 *   字号
 *   行距
 
-![appearance](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_appearance.png)
+![appearance](../image/devtools/settings_appearance.png)
 
 ### 编辑配置支持
 
@@ -128,19 +129,19 @@
 *   用空格代替 Tab
 *   Tab 大小
 
-![edit](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_edit.png)
+![edit](../image/devtools/settings_edit.png)
 
 ## 代理配置
 
 可以配置不使用代理，或使用系统代理，或使用自定义代理。
 
-![proxy](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_proxy.png)
+![proxy](../image/devtools/settings_proxy.png)
 
 ## 通知配置
 
 可以配置系统消息和开发者社区消息通知。
 
-![bbs](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_bbs.png)
+![bbs](../image/devtools/settings_bbs.png)
 
 </section>
 

@@ -414,79 +414,79 @@ mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。
 
 ##### 原图
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/0.jpg)
+![image](../image/cat/0.jpg)
 
 ##### scaleToFill
 
 不保持纵横比缩放图片，使图片完全适应
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/1.png)
+![image](../image/cat/1.png)
 
 ##### aspectFit
 
 保持纵横比缩放图片，使图片的长边能完全显示出来
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/2.png)
+![image](../image/cat/2.png)
 
 ##### aspectFill
 
 保持纵横比缩放图片，只保证图片的短边能完全显示出来
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/3.png)
+![image](../image/cat/3.png)
 
 ##### top
 
 不缩放图片，只显示图片的顶部区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/4.png)
+![image](../image/cat/4.png)
 
 ##### bottom
 
 不缩放图片，只显示图片的底部区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/5.png)
+![image](../image/cat/5.png)
 
 ##### center
 
 不缩放图片，只显示图片的中间区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/6.png)
+![image](../image/cat/6.png)
 
 ##### left
 
 不缩放图片，只显示图片的左边区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/7.png)
+![image](../image/cat/7.png)
 
 ##### right
 
 不缩放图片，只显示图片的右边边区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/8.png)
+![image](../image/cat/8.png)
 
 ##### top left
 
 不缩放图片，只显示图片的左上边区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/9.png)
+![image](../image/cat/9.png)
 
 ##### top right
 
 不缩放图片，只显示图片的右上边区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/10.png)
+![image](../image/cat/10.png)
 
 ##### bottom left
 
 不缩放图片，只显示图片的左下边区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/11.png)
+![image](../image/cat/11.png)
 
 ##### bottom right
 
 不缩放图片，只显示图片的右下边区域
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/12.png)
+![image](../image/cat/12.png)
 
 </section>
 

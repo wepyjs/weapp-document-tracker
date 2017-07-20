@@ -183,8 +183,6 @@
         *   [wx.setScreenBrightness](../device.html#wxsetscreenbrightnessobject)
         *   [wx.getScreenBrightness](../device.html#wxgetscreenbrightnessobject)
         *   [wx.setKeepScreenOn](../setKeepScreenOn.html)
-    *   [截屏](../captureScreen.html)
-        *   [wx.captureScreen](../captureScreen.html)
     *   [用户截屏事件](../onUserCaptureScreen.html)
         *   [wx.onUserCaptureScreen](../onUserCaptureScreen.html)
     *   [振动](../device.html#wxvibratelongobject)
@@ -383,7 +381,7 @@ URL是开发者用来接收微信消息和事件的接口URL。 Token可由开�
 
 模式的选择与服务器配置在提交后都会立即生效，请开发者谨慎填写及选择。切换加密方式和数据格式需要提前配置好相关代码，详情请参考[消息加解密说明](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419318479&token=&lang=zh_CN)。
 
-![填写服务器配置](https://mp.weixin.qq.com/debug/wxadoc/dev/image/callback_help.png)
+![填写服务器配置](../../image/callback_help.png)
 
 #### 第二步：验证消息的确来自微信服务器
 

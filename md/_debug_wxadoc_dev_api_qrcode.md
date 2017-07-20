@@ -183,8 +183,6 @@
         *   [wx.setScreenBrightness](device.html#wxsetscreenbrightnessobject)
         *   [wx.getScreenBrightness](device.html#wxgetscreenbrightnessobject)
         *   [wx.setKeepScreenOn](setKeepScreenOn.html)
-    *   [截屏](captureScreen.html)
-        *   [wx.captureScreen](captureScreen.html)
     *   [用户截屏事件](onUserCaptureScreen.html)
         *   [wx.onUserCaptureScreen](onUserCaptureScreen.html)
     *   [振动](device.html#wxvibratelongobject)
@@ -365,7 +363,7 @@
 
 通过后台接口可以获取小程序任意页面的二维码，扫描该二维码可以直接进入小程序对应的页面。目前微信支持两种二维码，小程序码（左），小程序二维码（右），如下所示：
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qrcode/qrcode.png)
+![](../image/qrcode/qrcode.png)
 
 ### 获取小程序码
 

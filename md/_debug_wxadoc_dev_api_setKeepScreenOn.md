@@ -183,8 +183,6 @@
         *   [wx.setScreenBrightness](device.html#wxsetscreenbrightnessobject)
         *   [wx.getScreenBrightness](device.html#wxgetscreenbrightnessobject)
         *   [wx.setKeepScreenOn](setKeepScreenOn.html)
-    *   [截屏](captureScreen.html)
-        *   [wx.captureScreen](captureScreen.html)
     *   [用户截屏事件](onUserCaptureScreen.html)
         *   [wx.onUserCaptureScreen](onUserCaptureScreen.html)
     *   [振动](device.html#wxvibratelongobject)
@@ -521,6 +519,6 @@
 
 </div>
 
-[](device.html#wxgetscreenbrightnessobject)[](captureScreen.html)</div>
+[](device.html#wxgetscreenbrightnessobject)[](onUserCaptureScreen.html)</div>
 
 </div>

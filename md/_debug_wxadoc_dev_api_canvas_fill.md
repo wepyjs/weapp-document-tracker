@@ -183,8 +183,6 @@
         *   [wx.setScreenBrightness](../device.html#wxsetscreenbrightnessobject)
         *   [wx.getScreenBrightness](../device.html#wxgetscreenbrightnessobject)
         *   [wx.setKeepScreenOn](../setKeepScreenOn.html)
-    *   [截屏](../captureScreen.html)
-        *   [wx.captureScreen](../captureScreen.html)
     *   [用户截屏事件](../onUserCaptureScreen.html)
         *   [wx.onUserCaptureScreen](../onUserCaptureScreen.html)
     *   [振动](../device.html#wxvibratelongobject)
@@ -380,7 +378,7 @@
     ctx.fill()
     ctx.draw()
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/canvas/fill-line.png)
+![](../../image/canvas/fill-line.png)
 
     const ctx = wx.createCanvasContext('myCanvas')
     // begin path
@@ -403,7 +401,7 @@
     ctx.fill()
     ctx.draw()
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/canvas/fill-path.png)
+![](../../image/canvas/fill-path.png)
 
 </section>
 

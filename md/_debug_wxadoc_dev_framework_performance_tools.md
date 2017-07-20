@@ -117,13 +117,13 @@
 
 > 可以通过 `adb devices` 命令确定设备是否已和 PC 建立起连接
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/performance/trace-tool.png)
+![image](../../image/performance/trace-tool.png)
 
 # 性能面板
 
 从微信 6.5.8 开始，我们提供了性能面板让开发者了解小程序的性能。开发者可以在开发版小程序下打开性能面板，打开方法：进入开发版小程序，进入右上角更多按钮，点击「显示性能窗口」。
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/performance/panel.jpg)
+![image](../../image/performance/panel.jpg)
 
 ## 性能面板指标说明
 

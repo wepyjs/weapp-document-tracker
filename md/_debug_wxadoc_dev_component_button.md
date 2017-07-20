@@ -527,7 +527,7 @@
 
     Page(pageObject)
 
-![button](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/button.png)
+![button](../image/pic/button.png)
 
 </section>
 

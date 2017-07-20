@@ -250,7 +250,7 @@
       }
     })
 
-![picker_view](https://mp.weixin.qq.com/debug/wxadoc/dev/image/picker_view.png)
+![picker_view](../image/picker_view.png)
 
 #### Tips
 

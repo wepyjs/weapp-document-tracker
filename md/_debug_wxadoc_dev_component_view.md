@@ -198,7 +198,7 @@
       </view>
     </view>
 
-![view](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/view.png)
+![view](../image/pic/view.png)
 
 ##### Bug & Tip
 

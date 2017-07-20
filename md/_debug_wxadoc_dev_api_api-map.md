@@ -183,8 +183,6 @@
         *   [wx.setScreenBrightness](device.html#wxsetscreenbrightnessobject)
         *   [wx.getScreenBrightness](device.html#wxgetscreenbrightnessobject)
         *   [wx.setKeepScreenOn](setKeepScreenOn.html)
-    *   [截屏](captureScreen.html)
-        *   [wx.captureScreen](captureScreen.html)
     *   [用户截屏事件](onUserCaptureScreen.html)
         *   [wx.onUserCaptureScreen](onUserCaptureScreen.html)
     *   [振动](device.html#wxvibratelongobject)
@@ -848,7 +846,7 @@
           destination: {
             latitude:23.10229,
             longitude:113.3345211,
-          }
+          },
           animationEnd() {
             console.log('animation end')
           }

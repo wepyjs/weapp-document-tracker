@@ -572,7 +572,7 @@
       }
     })
 
-![input](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/input.png)
+![input](../image/pic/input.png)
 
 #### Bug & Tip
 

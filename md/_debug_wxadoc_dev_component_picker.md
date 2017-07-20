@@ -806,7 +806,7 @@
       }
     })
 
-![picker](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/picker.png)
+![picker](../image/pic/picker.png)
 
 </section>
 

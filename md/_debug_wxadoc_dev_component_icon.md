@@ -211,7 +211,7 @@
       }
     })
 
-![icon](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/icon.png)
+![icon](../image/pic/icon.png)
 
 </section>
 

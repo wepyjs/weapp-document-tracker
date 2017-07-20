@@ -368,7 +368,7 @@
       }
     }
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/config.jpg)
+![](../image/config.jpg)
 
 ### tabBar
 
@@ -377,7 +377,7 @@
 **Tip：**
 
 1.  当设置 position 为 top 时，将不会显示 icon
-2.  tabBar 是一个数组，**只能配置最少2个、最多5个 tab**，tab 按数组的顺序排序。
+2.  tabBar 中的 list 是一个数组，**只能配置最少2个、最多5个 tab**，tab 按数组的顺序排序。
 
 **属性说明：**
 
@@ -565,7 +565,7 @@
 
 </table>
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/tabbar.png)
+![](../image/tabbar.png)
 
 ### networkTimeout
 

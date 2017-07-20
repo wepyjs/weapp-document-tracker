@@ -183,8 +183,6 @@
         *   [wx.setScreenBrightness](../device.html#wxsetscreenbrightnessobject)
         *   [wx.getScreenBrightness](../device.html#wxgetscreenbrightnessobject)
         *   [wx.setKeepScreenOn](../setKeepScreenOn.html)
-    *   [截屏](../captureScreen.html)
-        *   [wx.captureScreen](../captureScreen.html)
     *   [用户截屏事件](../onUserCaptureScreen.html)
         *   [wx.onUserCaptureScreen](../onUserCaptureScreen.html)
     *   [振动](../device.html#wxvibratelongobject)
@@ -424,7 +422,7 @@
     ctx.stroke()
     ctx.draw()
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/canvas/move-to.png)
+![](../../image/canvas/move-to.png)
 
 </section>
 

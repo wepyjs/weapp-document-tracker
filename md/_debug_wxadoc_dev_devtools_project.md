@@ -71,6 +71,7 @@
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [小程序操作区](debug.html#小程序操作区)
+    *   [自定义数据上报](debug.html#自定义数据上报)
 *   [特殊 API 的调试](different.html)
 *   [代码编辑](edit.html)
 *   [设置](settings.html)
@@ -135,13 +136,13 @@
 
 开启此选项，开发工具将不会校验安全域名，以及 TLS 版本，帮助在开发过程中更好的完成调试工作。
 
-![edit](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/edit/project1.png)
+![edit](../image/devtools/edit/project1.png)
 
 ### 基础库版本切换
 
 开发者可以在此选择任意基础库版本，用于开发和调试旧版本兼容。
 
-![project](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/project/1.png)
+![project](../image/devtools/project/1.png)
 
 </section>
 

@@ -233,7 +233,12 @@
 
 </table>
 
-**Tips:** decode可以解析的有 `&nbsp;` `&lt;` `&gt;` `&amp;` `&apos;` `&ensp;` `&emsp;` **Tips:** 各个操作系统的空格标准并不一致。 **Tips:** `<text/>` 组件内只支持 `<text/>` 嵌套。 **Tips:** 除了文本节点以外的其他节点都无法长按选中。
+##### Tips
+
+*   decode可以解析的有 `&nbsp;` `&lt;` `&gt;` `&amp;` `&apos;` `&ensp;` `&emsp;`
+*   各个操作系统的空格标准并不一致。
+*   `<text/>` 组件内只支持 `<text/>` 嵌套。
+*   除了文本节点以外的其他节点都无法长按选中。
 
 **示例：**
 
@@ -267,7 +272,7 @@
       }
     })
 
-![text](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/text.png)
+![text](../image/pic/text.png)
 
 ##### Bug & Tip
 

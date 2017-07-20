@@ -183,8 +183,6 @@
         *   [wx.setScreenBrightness](../device.html#wxsetscreenbrightnessobject)
         *   [wx.getScreenBrightness](../device.html#wxgetscreenbrightnessobject)
         *   [wx.setKeepScreenOn](../setKeepScreenOn.html)
-    *   [截屏](../captureScreen.html)
-        *   [wx.captureScreen](../captureScreen.html)
     *   [用户截屏事件](../onUserCaptureScreen.html)
         *   [wx.onUserCaptureScreen](../onUserCaptureScreen.html)
     *   [振动](../device.html#wxvibratelongobject)
@@ -413,7 +411,7 @@ canvas 是在一个二维的网格当中。
 
 当你把手指放到 canvas 中，就会在下边显示出触碰点的坐标：
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/canvas/coordinates.gif)
+![](../../image/canvas/coordinates.gif)
 
 </section>
 

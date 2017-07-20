@@ -205,7 +205,7 @@
       }
     })
 
-![switch](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/switch.png)
+![switch](../image/pic/switch.png)
 
 ##### Tips
 

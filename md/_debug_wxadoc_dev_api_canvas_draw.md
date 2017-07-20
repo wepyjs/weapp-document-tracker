@@ -183,8 +183,6 @@
         *   [wx.setScreenBrightness](../device.html#wxsetscreenbrightnessobject)
         *   [wx.getScreenBrightness](../device.html#wxgetscreenbrightnessobject)
         *   [wx.setKeepScreenOn](../setKeepScreenOn.html)
-    *   [截屏](../captureScreen.html)
-        *   [wx.captureScreen](../captureScreen.html)
     *   [用户截屏事件](../onUserCaptureScreen.html)
         *   [wx.onUserCaptureScreen](../onUserCaptureScreen.html)
     *   [振动](../device.html#wxvibratelongobject)
@@ -413,7 +411,7 @@
     ctx.fillRect(50, 50, 150, 100)
     ctx.draw()
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/canvas/un-reserve.png)
+![](../../image/canvas/un-reserve.png)
 
 ### 例子
 
@@ -425,7 +423,7 @@
     ctx.fillRect(50, 50, 150, 100)
     ctx.draw(true)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/canvas/reserve.png)
+![](../../image/canvas/reserve.png)
 
 </section>
 

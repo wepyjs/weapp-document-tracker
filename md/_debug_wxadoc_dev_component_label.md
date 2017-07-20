@@ -284,7 +284,7 @@
         margin-top: 15px;
     }
 
-![label](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/label.png)
+![label](../image/pic/label.png)
 
 </section>
 

@@ -71,6 +71,7 @@
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [小程序操作区](debug.html#小程序操作区)
+    *   [自定义数据上报](debug.html#自定义数据上报)
 *   [特殊 API 的调试](different.html)
 *   [代码编辑](edit.html)
 *   [设置](settings.html)
@@ -100,7 +101,7 @@
 
 为了帮助开发者简单和高效地开发微信小程序，我们推出了全新的 [开发者工具](download.html) ，集成了开发调试、代码编辑及程序发布等功能。
 
-![devtools](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/1.png)
+![devtools](../image/devtools/1.png)
 
 ### 扫码登录
 

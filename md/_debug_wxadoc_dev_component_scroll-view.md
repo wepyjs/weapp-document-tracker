@@ -347,7 +347,7 @@
       }
     })
 
-![scroll-view](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/scroll-view.png)
+![scroll-view](../image/pic/scroll-view.png)
 
 ##### Bug & Tip
 

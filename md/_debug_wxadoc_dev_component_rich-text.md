@@ -151,7 +151,7 @@
 
 <td>[]</td>
 
-<td>结点列表 / HTML String</td>
+<td>节点列表 / HTML String</td>
 
 <td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -167,9 +167,9 @@
 
 ##### nodes
 
-现支持两种结点，通过type来区分，分别是元素结点和文本结点，默认是元素结点，在富文本区域里显示的HTML结点
+现支持两种节点，通过type来区分，分别是元素节点和文本节点，默认是元素节点，在富文本区域里显示的HTML节点
 
-**元素结点：type = node**
+**元素节点：type = node**
 
 <table>
 
@@ -203,7 +203,7 @@
 
 <td>是</td>
 
-<td>支持部分受信任的HTML结点</td>
+<td>支持部分受信任的HTML节点</td>
 
 </tr>
 
@@ -225,7 +225,7 @@
 
 <td>children</td>
 
-<td>子结点列表</td>
+<td>子节点列表</td>
 
 <td>Array</td>
 
@@ -239,7 +239,7 @@
 
 </table>
 
-**文本结点：type = text**
+**文本节点：type = text**
 
 <table>
 
@@ -281,7 +281,7 @@
 
 </table>
 
-##### 受信任的HTML结点及属性
+##### 受信任的HTML节点及属性
 
 全局支持class和style属性，**不支持id属性**。
 
@@ -291,7 +291,7 @@
 
 <tr>
 
-<th>结点</th>
+<th>节点</th>
 
 <th>属性</th>
 
@@ -675,10 +675,10 @@
 ##### Bug & Tip
 
 1.  `tip`: nodes 不推荐使用 String 类型，性能会有所下降。
-2.  `tip`: `rich-text` 组件内屏蔽所有结点的事件。
+2.  `tip`: `rich-text` 组件内屏蔽所有节点的事件。
 3.  `tip`: attrs 属性不支持 id ，支持 class 。
 4.  `tip`: name 属性大小写不敏感。
-5.  `tip`: 如果使用了不受信任的HTML结点，该结点及其所有子结点将会被移除。
+5.  `tip`: 如果使用了不受信任的HTML节点，该节点及其所有子节点将会被移除。
 6.  `tip`: img 标签仅支持网络图片。
 
 </section>
