@@ -368,7 +368,7 @@
       }
     }
 
-![](../image/config.jpg)
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/config.jpg)
 
 ### tabBar
 
@@ -565,7 +565,7 @@
 
 </table>
 
-![](../image/tabbar.png)
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/tabbar.png)
 
 ### networkTimeout
 

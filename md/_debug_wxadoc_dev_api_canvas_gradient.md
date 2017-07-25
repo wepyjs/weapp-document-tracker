@@ -203,6 +203,8 @@
         *   [wx.showNavigationBarLoading](../ui.html#wxshownavigationbarloading)
         *   [wx.hideNavigationBarLoading](../ui.html#wxhidenavigationbarloading)
         *   [wx.setNavigationBarColor](../setNavigationBarColor.html)
+    *   [设置置顶信息](../ui.html#wxsettopbartextobject)
+        *   [wx.setTopBarText](../ui.html#wxsettopbartextobject)
     *   [导航](../ui-navigate.html)
         *   [wx.navigateTo](../ui-navigate.html#wxnavigatetoobject)
         *   [wx.redirectTo](../ui-navigate.html#wxredirecttoobject)
@@ -289,7 +291,8 @@
         *   [wx.requestPayment](../api-pay.html#wxrequestpaymentobject)
     *   [模板消息](../notice.html)
         *   [使用说明](../notice.html#使用说明)
-        *   [接口说明](../notice.html#接口说明)
+        *   [模版消息管理](../notice.html#模版消息管理)
+        *   [发送模板消息](../notice.html#发送模板消息)
     *   [客服消息](../custommsg/receive.html)
         *   [接收消息和事件](../custommsg/receive.html#接收消息和事件)
             *   [文本消息](../custommsg/receive.html#文本消息)
@@ -388,7 +391,7 @@
     ctx.fillRect(10, 10, 150, 80)
     ctx.draw()
 
-![](../../image/canvas/linear-gradient.png)
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/canvas/linear-gradient.png)
 
 ### 使用 createCircularGradient()
 
@@ -404,7 +407,7 @@
     ctx.fillRect(10, 10, 150, 80)
     ctx.draw()
 
-![](../../image/canvas/circular-gradient.png)
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/canvas/circular-gradient.png)
 
 </section>
 

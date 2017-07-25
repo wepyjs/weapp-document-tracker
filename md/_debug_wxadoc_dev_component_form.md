@@ -224,7 +224,7 @@
       }
     })
 
-![form](../image/pic/form.png)
+![form](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/form.png)
 
 </section>
 

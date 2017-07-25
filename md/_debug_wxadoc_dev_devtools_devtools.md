@@ -101,7 +101,7 @@
 
 为了帮助开发者简单和高效地开发微信小程序，我们推出了全新的 [开发者工具](download.html) ，集成了开发调试、代码编辑及程序发布等功能。
 
-![devtools](../image/devtools/1.png)
+![devtools](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/1.png)
 
 ### 扫码登录
 

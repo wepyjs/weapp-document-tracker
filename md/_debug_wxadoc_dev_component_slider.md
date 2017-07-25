@@ -315,7 +315,7 @@
     }
     Page(pageData)
 
-![slider](../image/pic/slider.png)
+![slider](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/slider.png)
 
 </section>
 

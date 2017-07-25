@@ -203,6 +203,8 @@
         *   [wx.showNavigationBarLoading](ui.html#wxshownavigationbarloading)
         *   [wx.hideNavigationBarLoading](ui.html#wxhidenavigationbarloading)
         *   [wx.setNavigationBarColor](setNavigationBarColor.html)
+    *   [设置置顶信息](ui.html#wxsettopbartextobject)
+        *   [wx.setTopBarText](ui.html#wxsettopbartextobject)
     *   [导航](ui-navigate.html)
         *   [wx.navigateTo](ui-navigate.html#wxnavigatetoobject)
         *   [wx.redirectTo](ui-navigate.html#wxredirecttoobject)
@@ -289,7 +291,8 @@
         *   [wx.requestPayment](api-pay.html#wxrequestpaymentobject)
     *   [模板消息](notice.html)
         *   [使用说明](notice.html#使用说明)
-        *   [接口说明](notice.html#接口说明)
+        *   [模版消息管理](notice.html#模版消息管理)
+        *   [发送模板消息](notice.html#发送模板消息)
     *   [客服消息](custommsg/receive.html)
         *   [接收消息和事件](custommsg/receive.html#接收消息和事件)
             *   [文本消息](custommsg/receive.html#文本消息)
@@ -369,17 +372,632 @@
 
 ## 使用说明
 
-1.  获取模板 id
+步骤一：获取模板ID
 
-登录[https://mp.weixin.qq.com](https://mp.weixin.qq.com)获取模板，如果没有合适的模板，可以申请添加新模板，审核通过后可使用，详见[模板审核说明](#审核说明)
+有两个方法可以获取模版ID
 
-![](../image/mp-notice.png)
+1.  通过模版消息管理接口获取模版ID（详见[模版消息管理](#模版消息管理)）
+2.  在微信公众平台手动配置获取模版ID
 
-1.  页面的 [`<form/>`](../component/form.html) 组件，属性`report-submit`为`true`时，可以声明为需发模板消息，此时点击按钮提交表单可以获取`formId`，用于发送模板消息。或者当用户完成[支付行为](api-pay.html)，可以获取`prepay_id`用于发送模板消息。
+登录[https://mp.weixin.qq.com](https://mp.weixin.qq.com) 获取模板，如果没有合适的模板，可以申请添加新模板，审核通过后可使用，详见[模板审核说明](#审核说明)
 
-2.  调用接口下发模板消息（详见[接口说明](#接口说明)）
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/mp-notice.png)
 
-## 接口说明
+步骤二：页面的 [`<form/>`](../component/form.html) 组件，属性`report-submit`为`true`时，可以声明为需发模板消息，此时点击按钮提交表单可以获取`formId`，用于发送模板消息。或者当用户完成[支付行为](api-pay.html)，可以获取`prepay_id`用于发送模板消息。
+
+步骤三：调用接口下发模板消息（详见[发送模版消息](#发送模版消息)）
+
+## 模版消息管理
+
+### 1.获取小程序模板库标题列表
+
+**接口地址**
+
+    https://api.weixin.qq.com/cgi-bin/wxopen/template/library/list?access_token=ACCESS_TOKEN
+
+**HTTP请求方式：**
+
+    POST
+
+**POST参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>必填</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>access_token</td>
+
+<td>是</td>
+
+<td>接口调用凭证</td>
+
+</tr>
+
+<tr>
+
+<td>offset</td>
+
+<td>是</td>
+
+<td>offset和count用于分页，表示从offset开始，拉取count条记录，offset从0开始，count最大为20。</td>
+
+</tr>
+
+<tr>
+
+<td>count</td>
+
+<td>是</td>
+
+<td>offset和count用于分页，表示从offset开始，拉取count条记录，offset从0开始，count最大为20。</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+##### 示例：
+
+    {
+    "offset":0,
+    "count":5
+    }
+
+**返回码说明：**
+
+在调用模板消息接口后，会返回JSON数据包。
+
+正常时的返回JSON数据包示例：
+
+    {
+    "errcode":0,
+    "errmsg":"ok",
+    "list":[
+    {"id":"AT0002","title":"购买成功通知"},
+    {"id":"AT0003","title":"购买失败通知"},
+    {"id":"AT0004","title":"交易提醒"},
+    {"id":"AT0005","title":"付款成功通知"},
+    {"id":"AT0006","title":"付款失败通知"}
+    ],
+    "total_count":599
+    }
+
+**返回参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>id</td>
+
+<td>模板标题id（获取模板标题下的关键词库时需要）</td>
+
+</tr>
+
+<tr>
+
+<td>title</td>
+
+<td>模板标题内容</td>
+
+</tr>
+
+<tr>
+
+<td>total_count</td>
+
+<td>模板库标题总数</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+### 2.获取模板库某个模板标题下关键词库
+
+**接口地址**
+
+    https://api.weixin.qq.com/cgi-bin/wxopen/template/library/get?access_token=ACCESS_TOKEN
+
+**HTTP请求方式：**
+
+    POST
+
+**POST参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>必填</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>access_token</td>
+
+<td>是</td>
+
+<td>接口调用凭证</td>
+
+</tr>
+
+<tr>
+
+<td>id</td>
+
+<td>是</td>
+
+<td>模板标题id，可通过接口获取，也可登录小程序后台查看获取</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+##### 示例：
+
+    {
+    "id":"AT0002"
+    }
+
+**返回码说明：**
+
+在调用模板消息接口后，会返回JSON数据包。
+
+正常时的返回JSON数据包示例：
+
+    {
+        "errcode": 0,
+        "errmsg": "ok",
+        "id": "AT0002",
+        "title": "购买成功通知",
+        "keyword_list": [
+            {
+                "keyword_id": 3,
+                "name": "购买地点",
+                "example": "TIT造舰厂"
+            },
+            {
+                "keyword_id": 4,
+                "name": "购买时间",
+                "example": "2016年6月6日"
+            },
+            {
+                "keyword_id": 5,
+                "name": "物品名称",
+                "example": "咖啡"
+            }
+        ]
+    }
+
+**返回参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>keyword_id</td>
+
+<td>关键词id，添加模板时需要</td>
+
+</tr>
+
+<tr>
+
+<td>name</td>
+
+<td>关键词内容</td>
+
+</tr>
+
+<tr>
+
+<td>example</td>
+
+<td>关键词内容对应的示例</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+### 3.组合模板并添加至帐号下的个人模板库
+
+**接口地址**
+
+    https://api.weixin.qq.com/cgi-bin/wxopen/template/add?access_token=ACCESS_TOKEN
+
+**HTTP请求方式：**
+
+    POST
+
+**POST参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>必填</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>access_token</td>
+
+<td>是</td>
+
+<td>接口调用凭证</td>
+
+</tr>
+
+<tr>
+
+<td>id</td>
+
+<td>是</td>
+
+<td>模板标题id，可通过接口获取，也可登录小程序后台查看获取</td>
+
+</tr>
+
+<tr>
+
+<td>keyword_id_list</td>
+
+<td>是</td>
+
+<td>开发者自行组合好的模板关键词列表，关键词顺序可以自由搭配（例如[3,5,4]或[4,5,3]），最多支持10个关键词组合</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+##### 示例：
+
+    {
+    "id":"AT0002", 
+    "keyword_id_list":[3,4,5] 
+    }
+
+**返回码说明：**
+
+在调用模板消息接口后，会返回JSON数据包。
+
+正常时的返回JSON数据包示例：
+
+    {
+    "errcode": 0,
+    "errmsg": "ok",
+    "template_id": "wDYzYZVxobJivW9oMpSCpuvACOfJXQIoKUm0PY397Tc"
+    }
+
+**返回参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>template_id</td>
+
+<td>添加至帐号下的模板id，发送小程序模板消息时所需</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+### 4.获取帐号下已存在的模板列表
+
+**接口地址**
+
+    https://api.weixin.qq.com/cgi-bin/wxopen/template/list?access_token=ACCESS_TOKEN
+
+**HTTP请求方式：**
+
+    POST
+
+**POST参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>必填</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>access_token</td>
+
+<td>是</td>
+
+<td>接口调用凭证</td>
+
+</tr>
+
+<tr>
+
+<td>offset</td>
+
+<td>是</td>
+
+<td>offset和count用于分页，表示从offset开始，拉取count条记录，offset从0开始，count最大为20。最后一页的list长度可能小于请求的count</td>
+
+</tr>
+
+<tr>
+
+<td>count</td>
+
+<td>是</td>
+
+<td>offset和count用于分页，表示从offset开始，拉取count条记录，offset从0开始，count最大为20。最后一页的list长度可能小于请求的count</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+##### 示例：
+
+    {
+    "offset":0,
+    "count":1
+    }
+
+**返回码说明：**
+
+在调用模板消息接口后，会返回JSON数据包。
+
+正常时的返回JSON数据包示例：
+
+    {
+    "errcode": 0,
+    "errmsg": "ok",
+    "list": [
+            {
+                "template_id": "wDYzYZVxobJivW9oMpSCpuvACOfJXQIoKUm0PY397Tc",
+                "title": "购买成功通知",
+                "content": "购买地点{{keyword1.DATA}}\n购买时间{{keyword2.DATA}}\n物品名称{{keyword3.DATA}}\n",
+                "example": "购买地点：TIT造舰厂\n购买时间：2016年6月6日\n物品名称：咖啡\n"
+            }
+        ]
+    }
+
+**返回参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>list</td>
+
+<td>帐号下的模板列表</td>
+
+</tr>
+
+<tr>
+
+<td>template_id</td>
+
+<td>添加至帐号下的模板id，发送小程序模板消息时所需</td>
+
+</tr>
+
+<tr>
+
+<td>title</td>
+
+<td>模板标题</td>
+
+</tr>
+
+<tr>
+
+<td>content</td>
+
+<td>模板内容</td>
+
+</tr>
+
+<tr>
+
+<td>example</td>
+
+<td>模板内容示例</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+### 5.删除帐号下的某个模板
+
+**接口地址**
+
+    https://api.weixin.qq.com/cgi-bin/wxopen/template/del?access_token=ACCESS_TOKEN
+
+**HTTP请求方式：**
+
+    POST
+
+**POST参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>必填</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>access_token</td>
+
+<td>是</td>
+
+<td>接口调用凭证</td>
+
+</tr>
+
+<tr>
+
+<td>template_id</td>
+
+<td>是</td>
+
+<td>要删除的模板id</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+##### 示例：
+
+    {
+    "template_id":"wDYzYZVxobJivW9oMpSCpuvACOfJXQIoKUm0PY397Tc"
+    }
+
+**返回码说明：**
+
+在调用模板消息接口后，会返回JSON数据包。
+
+正常时的返回JSON数据包示例：
+
+    {
+    "errcode": 0,
+    "errmsg": "ok"
+    }
+
+## 发送模版消息
 
 ### 1\. 获取 access_token
 
@@ -501,7 +1119,7 @@ access_token 是全局唯一接口调用凭据，开发者调用各接口时都�
 
     {"errcode": 40013, "errmsg": "invalid appid"}
 
-### 2\. 发送模板消息
+### 发送模板消息
 
 **接口地址：(ACCESS_TOKEN 需换成上文获取到的 access_token)**
 
@@ -641,7 +1259,7 @@ access_token 是全局唯一接口调用凭据，开发者调用各接口时都�
 
     {
       "errcode": 0,
-      "errmsg": "ok",
+      "errmsg": "ok"
     }
 
 错误时会返回错误码信息，说明如下：
@@ -708,7 +1326,7 @@ access_token 是全局唯一接口调用凭据，开发者调用各接口时都�
 
 **使用效果：**
 
-![](../image/notice.png)
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/notice.png)
 
 ### 下发条件说明
 

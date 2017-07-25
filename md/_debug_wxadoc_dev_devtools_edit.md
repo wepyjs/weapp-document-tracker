@@ -109,7 +109,7 @@
 
 如果设置中开启了“文件保存时自动编译小程序”（位置在：设置 - 编辑 - 文件保存时自动编译小程序），那么当 js, json, wxml 或 wxss 文件修改时，可以通过模拟器实时预览编辑的情况：
 
-![edit](../image/devtools/edit/edit1.png)
+![edit](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/edit/edit1.png)
 
 ## 自动保存
 
@@ -125,19 +125,19 @@
 
 js 补全
 
-![3](../image/devtools/edit1_1.gif)
+![3](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/edit1_1.gif)
 
 代码模板支持
 
-![3](../image/devtools/edit1_2.gif)
+![3](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/edit1_2.gif)
 
 json 补全
 
-![3](../image/devtools/edit3.gif)
+![3](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/edit3.gif)
 
 wxml 补全
 
-![3](../image/devtools/edit4.gif)
+![3](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/edit4.gif)
 
 ## 快捷键
 

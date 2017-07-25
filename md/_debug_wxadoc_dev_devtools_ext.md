@@ -120,7 +120,7 @@
 
 对于第三方平台小程序，可以在项目页卡查看到相关的 open3rd 信息以及当前的第三方的 3rdMiniProgramAppid ，如若项目配置了相关的 extAppid ，那么项目页卡中也会有相关信息。
 
-![ext](../image/devtools/ext1.png)
+![ext](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/ext1.png)
 
 ## 小程序模板开发
 

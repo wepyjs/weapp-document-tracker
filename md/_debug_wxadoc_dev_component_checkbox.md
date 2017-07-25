@@ -255,7 +255,7 @@
       }
     })
 
-![checkbox](../image/pic/checkbox.png)
+![checkbox](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/checkbox.png)
 
 </section>
 

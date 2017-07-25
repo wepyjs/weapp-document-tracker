@@ -105,7 +105,7 @@
 
 菜单栏上点击设置可以打开设置页。设置页侧边栏分别是编辑器、代理和通知的配置。
 
-![main](../image/devtools/settings_main.png)
+![main](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_main.png)
 
 ## 编辑器配置
 
@@ -118,7 +118,7 @@
 *   字号
 *   行距
 
-![appearance](../image/devtools/settings_appearance.png)
+![appearance](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_appearance.png)
 
 ### 编辑配置支持
 
@@ -129,19 +129,19 @@
 *   用空格代替 Tab
 *   Tab 大小
 
-![edit](../image/devtools/settings_edit.png)
+![edit](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_edit.png)
 
 ## 代理配置
 
 可以配置不使用代理，或使用系统代理，或使用自定义代理。
 
-![proxy](../image/devtools/settings_proxy.png)
+![proxy](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_proxy.png)
 
 ## 通知配置
 
 可以配置系统消息和开发者社区消息通知。
 
-![bbs](../image/devtools/settings_bbs.png)
+![bbs](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_bbs.png)
 
 </section>
 

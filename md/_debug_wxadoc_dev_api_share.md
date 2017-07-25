@@ -203,6 +203,8 @@
         *   [wx.showNavigationBarLoading](ui.html#wxshownavigationbarloading)
         *   [wx.hideNavigationBarLoading](ui.html#wxhidenavigationbarloading)
         *   [wx.setNavigationBarColor](setNavigationBarColor.html)
+    *   [设置置顶信息](ui.html#wxsettopbartextobject)
+        *   [wx.setTopBarText](ui.html#wxsettopbartextobject)
     *   [导航](ui-navigate.html)
         *   [wx.navigateTo](ui-navigate.html#wxnavigatetoobject)
         *   [wx.redirectTo](ui-navigate.html#wxredirecttoobject)
@@ -289,7 +291,8 @@
         *   [wx.requestPayment](api-pay.html#wxrequestpaymentobject)
     *   [模板消息](notice.html)
         *   [使用说明](notice.html#使用说明)
-        *   [接口说明](notice.html#接口说明)
+        *   [模版消息管理](notice.html#模版消息管理)
+        *   [发送模板消息](notice.html#发送模板消息)
     *   [客服消息](custommsg/receive.html)
         *   [接收消息和事件](custommsg/receive.html#接收消息和事件)
             *   [文本消息](custommsg/receive.html#文本消息)
@@ -1030,7 +1033,7 @@
 
 ## 获取更多转发信息
 
-通常开发者希望转发出去的小程序被二次打开的时候能够获取到一些信息，例如群的标识。现在通过调用 `wx.showShareMenu` 并且设置 `withShareTicket` 为 `true` ，当用户将小程序转发到任一群聊之后，可以获取到此次转发的 `shareTicket`，此转发卡片在群聊中被其他用户打开时，可以在 [App.onLaunch()](../framework/app-service/app.html) 获取到另一个 `shareTicket`。这两步获取到的 `shareTicket` 均可通过 [wx.getShareInfo()](#wxgetshareinfoobject) 接口可以获取到相同的转发信息。
+通常开发者希望转发出去的小程序被二次打开的时候能够获取到一些信息，例如群的标识。现在通过调用 `wx.showShareMenu` 并且设置 `withShareTicket` 为 `true` ，当用户将小程序转发到任一群聊之后，可以获取到此次转发的 `shareTicket`，此转发卡片在群聊中被其他用户打开时，可以在 [App.onLaunch()](../framework/app-service/app.html) 或 [App.onShow](../framework/app-service/app.html) 获取到另一个 `shareTicket`。这两步获取到的 `shareTicket` 均可通过 [wx.getShareInfo()](#wxgetshareinfoobject) 接口可以获取到相同的转发信息。
 
 ## 页面内发起转发
 

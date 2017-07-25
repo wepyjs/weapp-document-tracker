@@ -203,6 +203,8 @@
         *   [wx.showNavigationBarLoading](ui.html#wxshownavigationbarloading)
         *   [wx.hideNavigationBarLoading](ui.html#wxhidenavigationbarloading)
         *   [wx.setNavigationBarColor](setNavigationBarColor.html)
+    *   [设置置顶信息](ui.html#wxsettopbartextobject)
+        *   [wx.setTopBarText](ui.html#wxsettopbartextobject)
     *   [导航](ui-navigate.html)
         *   [wx.navigateTo](ui-navigate.html#wxnavigatetoobject)
         *   [wx.redirectTo](ui-navigate.html#wxredirecttoobject)
@@ -289,7 +291,8 @@
         *   [wx.requestPayment](api-pay.html#wxrequestpaymentobject)
     *   [模板消息](notice.html)
         *   [使用说明](notice.html#使用说明)
-        *   [接口说明](notice.html#接口说明)
+        *   [模版消息管理](notice.html#模版消息管理)
+        *   [发送模板消息](notice.html#发送模板消息)
     *   [客服消息](custommsg/receive.html)
         *   [接收消息和事件](custommsg/receive.html#接收消息和事件)
             *   [文本消息](custommsg/receive.html#文本消息)
@@ -361,7 +364,7 @@
 
 ### wx.getUserInfo(OBJECT)
 
-获取用户信息，需要先调用 [wx.login](api-login.html#wxloginobject) 接口。
+获取用户信息，withCredentials 为 true 时需要先调用 [wx.login](api-login.html#wxloginobject) 接口。
 
 **OBJECT参数说明：**
 
@@ -579,13 +582,13 @@ encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](
 
 登录微信开放平台(open.weixin.qq.com) – 帐号中心 – 开发者资质认证
 
-![img](../image/open.png)
+![img](https://mp.weixin.qq.com/debug/wxadoc/dev/image/open.png)
 
 绑定流程：
 
 登录微信开放平台（open.weixin.qq.com）—管理中心—公众帐号—绑定公众帐号
 
-![img](../image/union_bind.png)
+![img](https://mp.weixin.qq.com/debug/wxadoc/dev/image/union_bind.png)
 
 #### Bug & Tip
 

@@ -101,9 +101,13 @@
 
 ## 下载地址
 
-### 最新版本 2017.07.11 (0.19.191100)
+### 最新版本 2017.07.20 (0.20.191900)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
+
+### 基础库更新（1.4.3）
+
+1.  `A` 新增 API `setTopBarText` 设置置顶信息 [详情](../api/ui.html#wxsettopbartextobject)
 
 ### 基础库更新 (1.4.2)
 

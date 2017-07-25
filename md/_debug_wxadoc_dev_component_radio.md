@@ -253,7 +253,7 @@
       }
     })
 
-![radio](../image/pic/radio.png)
+![radio](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/radio.png)
 
 </section>
 

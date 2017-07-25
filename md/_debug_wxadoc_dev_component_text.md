@@ -272,7 +272,7 @@
       }
     })
 
-![text](../image/pic/text.png)
+![text](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/text.png)
 
 ##### Bug & Tip
 

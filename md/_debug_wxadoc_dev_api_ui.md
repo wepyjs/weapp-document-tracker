@@ -203,6 +203,8 @@
         *   [wx.showNavigationBarLoading](ui.html#wxshownavigationbarloading)
         *   [wx.hideNavigationBarLoading](ui.html#wxhidenavigationbarloading)
         *   [wx.setNavigationBarColor](setNavigationBarColor.html)
+    *   [设置置顶信息](ui.html#wxsettopbartextobject)
+        *   [wx.setTopBarText](ui.html#wxsettopbartextobject)
     *   [导航](ui-navigate.html)
         *   [wx.navigateTo](ui-navigate.html#wxnavigatetoobject)
         *   [wx.redirectTo](ui-navigate.html#wxredirecttoobject)
@@ -289,7 +291,8 @@
         *   [wx.requestPayment](api-pay.html#wxrequestpaymentobject)
     *   [模板消息](notice.html)
         *   [使用说明](notice.html#使用说明)
-        *   [接口说明](notice.html#接口说明)
+        *   [模版消息管理](notice.html#模版消息管理)
+        *   [发送模板消息](notice.html#发送模板消息)
     *   [客服消息](custommsg/receive.html)
         *   [接收消息和事件](custommsg/receive.html#接收消息和事件)
             *   [文本消息](custommsg/receive.html#文本消息)
@@ -358,6 +361,92 @@
 <div class="search-noresults">
 
 <section class="normal markdown-section">
+
+### wx.setTopBarText(OBJECT)
+
+> 基础库 1.4.3 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+
+动设置置顶栏文字内容，只有当前小程序被置顶时能生效，如果当前小程序没有被置顶，也能调用成功，但是不会立即生效，只有在用户将这个小程序置顶后才换上设置的文字内容。**注意：调用成功后，需间隔 5s 才能再次调用此接口，如果在 5s 内再次调用此接口，会回调 fail，errMsg："setTopBarText: fail invoke too frequently"**
+
+**OBJECT参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>类型</th>
+
+<th>必填</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>text</td>
+
+<td>String</td>
+
+<td>是</td>
+
+<td>置顶栏文字内容</td>
+
+</tr>
+
+<tr>
+
+<td>success</td>
+
+<td>Function</td>
+
+<td>否</td>
+
+<td>接口调用成功的回调函数</td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>Function</td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数</td>
+
+</tr>
+
+<tr>
+
+<td>complete</td>
+
+<td>Function</td>
+
+<td>否</td>
+
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**示例代码：**
+
+    wx.setTopBarText({
+      text: 'hello, world!'
+    })
 
 ### wx.setNavigationBarTitle(OBJECT)
 

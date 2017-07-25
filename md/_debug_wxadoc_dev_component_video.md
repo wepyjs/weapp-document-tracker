@@ -440,7 +440,7 @@ video标签认宽度300px、高度225px，设置宽高需要通过wxss设置widt
       }
     })
 
-![video](../image/pic/video.png)
+![video](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/video.png)
 
 相关api：[wx.createVideoContext](../api/api-video.html)
 

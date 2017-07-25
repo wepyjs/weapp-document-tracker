@@ -203,6 +203,8 @@
         *   [wx.showNavigationBarLoading](../ui.html#wxshownavigationbarloading)
         *   [wx.hideNavigationBarLoading](../ui.html#wxhidenavigationbarloading)
         *   [wx.setNavigationBarColor](../setNavigationBarColor.html)
+    *   [设置置顶信息](../ui.html#wxsettopbartextobject)
+        *   [wx.setTopBarText](../ui.html#wxsettopbartextobject)
     *   [导航](../ui-navigate.html)
         *   [wx.navigateTo](../ui-navigate.html#wxnavigatetoobject)
         *   [wx.redirectTo](../ui-navigate.html#wxredirecttoobject)
@@ -289,7 +291,8 @@
         *   [wx.requestPayment](../api-pay.html#wxrequestpaymentobject)
     *   [模板消息](../notice.html)
         *   [使用说明](../notice.html#使用说明)
-        *   [接口说明](../notice.html#接口说明)
+        *   [模版消息管理](../notice.html#模版消息管理)
+        *   [发送模板消息](../notice.html#发送模板消息)
     *   [客服消息](receive.html)
         *   [接收消息和事件](receive.html#接收消息和事件)
             *   [文本消息](receive.html#文本消息)
@@ -381,7 +384,7 @@ URL是开发者用来接收微信消息和事件的接口URL。 Token可由开�
 
 模式的选择与服务器配置在提交后都会立即生效，请开发者谨慎填写及选择。切换加密方式和数据格式需要提前配置好相关代码，详情请参考[消息加解密说明](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419318479&token=&lang=zh_CN)。
 
-![填写服务器配置](../../image/callback_help.png)
+![填写服务器配置](https://mp.weixin.qq.com/debug/wxadoc/dev/image/callback_help.png)
 
 #### 第二步：验证消息的确来自微信服务器
 

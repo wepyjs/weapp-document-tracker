@@ -555,7 +555,7 @@
 
 下图说明了 Page 实例的生命周期。
 
-![](../../image/mina-lifecycle.png)
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/mina-lifecycle.png)
 
 </section>
 
