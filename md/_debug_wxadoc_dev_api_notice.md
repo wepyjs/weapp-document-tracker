@@ -255,7 +255,7 @@
         *   [setFontSize](canvas/set-font-size.html)
         *   [fillText](canvas/fill-text.html)
         *   [setTextAlign](canvas/set-text-align.html)
-        *   [set-text-baseline](canvas/set-text-baseline.html)
+        *   [setTextBaseline](canvas/set-text-baseline.html)
         *   [drawImage](canvas/draw-image.html)
         *   [setGlobalAlpha](canvas/set-global-alpha.html)
         *   [save](canvas/save-restore.html)
@@ -287,6 +287,7 @@
         *   [wx.authorize](authorize.html#wxauthorizeobject)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
+        *   [UnionID机制说明](uinionID.html)
     *   [微信支付](api-pay.html)
         *   [wx.requestPayment](api-pay.html#wxrequestpaymentobject)
     *   [模板消息](notice.html)
@@ -1375,7 +1376,6 @@ access_token 是全局唯一接口调用凭据，开发者调用各接口时都�
 1.  不允许恶意诱导用户进行触发操作，以达到可向用户下发模板目的
 2.  不允许恶意骚扰，下发对用户造成骚扰的模板
 3.  不允许恶意营销，下发营销目的模板
-4.  不允许通过服务号下发模板来告知用户在小程序内触发的服务相关内容
 
 ## 处罚说明
 

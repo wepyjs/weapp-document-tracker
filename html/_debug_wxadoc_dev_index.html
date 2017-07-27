@@ -237,31 +237,40 @@
 <pre><code class="lang-javascript"><span class="hljs-comment">//app.js</span>
 App({
   onLaunch: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-    <span class="hljs-comment">//&#x8C03;&#x7528;API&#x4ECE;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x4E2D;&#x83B7;&#x53D6;&#x6570;&#x636E;</span>
+    <span class="hljs-comment">// &#x5C55;&#x793A;&#x672C;&#x5730;&#x5B58;&#x50A8;&#x80FD;&#x529B;</span>
     <span class="hljs-keyword">var</span> logs = wx.getStorageSync(<span class="hljs-string">&apos;logs&apos;</span>) || []
     logs.unshift(<span class="hljs-built_in">Date</span>.now())
     wx.setStorageSync(<span class="hljs-string">&apos;logs&apos;</span>, logs)
-  },
-  getUserInfo:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">cb</span>)</span>{
-    <span class="hljs-keyword">var</span> that = <span class="hljs-keyword">this</span>;
-    <span class="hljs-keyword">if</span>(<span class="hljs-keyword">this</span>.globalData.userInfo){
-      <span class="hljs-keyword">typeof</span> cb == <span class="hljs-string">&quot;function&quot;</span> &amp;&amp; cb(<span class="hljs-keyword">this</span>.globalData.userInfo)
-    }<span class="hljs-keyword">else</span>{
-      <span class="hljs-comment">//&#x8C03;&#x7528;&#x767B;&#x5F55;&#x63A5;&#x53E3;</span>
-      wx.login({
-        success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+
+    <span class="hljs-comment">// &#x767B;&#x5F55;</span>
+    wx.login({
+      success: res =&gt; {
+        <span class="hljs-comment">// &#x53D1;&#x9001; res.code &#x5230;&#x540E;&#x53F0;&#x6362;&#x53D6; openId, sessionKey, unionId</span>
+      }
+    })
+    <span class="hljs-comment">// &#x83B7;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;</span>
+    wx.getSetting({
+      success: res =&gt; {
+        <span class="hljs-keyword">if</span> (res.authSetting[<span class="hljs-string">&apos;scope.userInfo&apos;</span>]) {
+          <span class="hljs-comment">// &#x5DF2;&#x7ECF;&#x6388;&#x6743;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8C03;&#x7528; getUserInfo &#x83B7;&#x53D6;&#x5934;&#x50CF;&#x6635;&#x79F0;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F39;&#x6846;</span>
           wx.getUserInfo({
-            success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
-              that.globalData.userInfo = res.userInfo;
-              <span class="hljs-keyword">typeof</span> cb == <span class="hljs-string">&quot;function&quot;</span> &amp;&amp; cb(that.globalData.userInfo)
+            success: res =&gt; {
+              <span class="hljs-comment">// &#x53EF;&#x4EE5;&#x5C06; res &#x53D1;&#x9001;&#x7ED9;&#x540E;&#x53F0;&#x89E3;&#x7801;&#x51FA; unionId</span>
+              <span class="hljs-keyword">this</span>.globalData.userInfo = res.userInfo
+
+              <span class="hljs-comment">// &#x7531;&#x4E8E; getUserInfo &#x662F;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5728; Page.onLoad &#x4E4B;&#x540E;&#x624D;&#x8FD4;&#x56DE;</span>
+              <span class="hljs-comment">// &#x6240;&#x4EE5;&#x6B64;&#x5904;&#x52A0;&#x5165; callback &#x4EE5;&#x9632;&#x6B62;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;</span>
+              <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.userInfoReadyCallback) {
+                <span class="hljs-keyword">this</span>.userInfoReadyCallback(res)
+              }
             }
           })
         }
-      });
-    }
+      }
+    })
   },
-  globalData:{
-    userInfo:<span class="hljs-literal">null</span>
+  globalData: {
+    userInfo: <span class="hljs-literal">null</span>
   }
 })
 </code></pre>
@@ -297,9 +306,12 @@ App({
 <p>index.wxml &#x662F;&#x9875;&#x9762;&#x7684;&#x7ED3;&#x6784;&#x6587;&#x4EF6;&#xFF1A;</p>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!--index.wxml--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">view</span>  <span class="hljs-attr">bindtap</span>=<span class="hljs-string">&quot;bindViewTap&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;userinfo&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">image</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;userinfo-avatar&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;{{userInfo.avatarUrl}}&quot;</span> <span class="hljs-attr">background-size</span>=<span class="hljs-string">&quot;cover&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">image</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;userinfo-nickname&quot;</span>&gt;</span>{{userInfo.nickName}}<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;userinfo&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">block</span> <span class="hljs-attr">wx:if</span>=<span class="hljs-string">&quot;{{hasUserInfo}}&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">image</span> <span class="hljs-attr">bindtap</span>=<span class="hljs-string">&quot;bindViewTap&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;userinfo-avatar&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;{{userInfo.avatarUrl}}&quot;</span> <span class="hljs-attr">background-size</span>=<span class="hljs-string">&quot;cover&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">image</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;userinfo-nickname&quot;</span>&gt;</span>{{userInfo.nickName}}<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">block</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">wx:else</span> <span class="hljs-attr">open-type</span>=<span class="hljs-string">&quot;getUserInfo&quot;</span> <span class="hljs-attr">bindgetuserinfo</span>=<span class="hljs-string">&quot;getUserInfo&quot;</span>&gt;</span> &#x83B7;&#x53D6;&#x5934;&#x50CF;&#x6635;&#x79F0; <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;usermotto&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;user-motto&quot;</span>&gt;</span>{{motto}}<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
@@ -310,11 +322,13 @@ App({
 <p>index.js &#x662F;&#x9875;&#x9762;&#x7684;&#x811A;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76D1;&#x542C;&#x5E76;&#x5904;&#x7406;&#x9875;&#x9762;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;&#x3001;&#x83B7;&#x53D6;&#x5C0F;&#x7A0B;&#x5E8F;&#x5B9E;&#x4F8B;&#xFF0C;&#x58F0;&#x660E;&#x5E76;&#x5904;&#x7406;&#x6570;&#x636E;&#xFF0C;&#x54CD;&#x5E94;&#x9875;&#x9762;&#x4EA4;&#x4E92;&#x4E8B;&#x4EF6;&#x7B49;&#x3002;</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">//index.js</span>
 <span class="hljs-comment">//&#x83B7;&#x53D6;&#x5E94;&#x7528;&#x5B9E;&#x4F8B;</span>
-<span class="hljs-keyword">var</span> app = getApp()
+<span class="hljs-keyword">const</span> app = getApp()
+
 Page({
   data: {
     motto: <span class="hljs-string">&apos;Hello World&apos;</span>,
-    userInfo: {}
+    userInfo: {},
+    hasUserInfo: <span class="hljs-literal">false</span>
   },
   <span class="hljs-comment">//&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x51FD;&#x6570;</span>
   bindViewTap: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
@@ -323,14 +337,26 @@ Page({
     })
   },
   onLoad: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;onLoad&apos;</span>)
-    <span class="hljs-keyword">var</span> that = <span class="hljs-keyword">this</span>
-    <span class="hljs-comment">//&#x8C03;&#x7528;&#x5E94;&#x7528;&#x5B9E;&#x4F8B;&#x7684;&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5168;&#x5C40;&#x6570;&#x636E;</span>
-    app.getUserInfo(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">userInfo</span>)</span>{
-      <span class="hljs-comment">//&#x66F4;&#x65B0;&#x6570;&#x636E;</span>
-      that.setData({
-        userInfo:userInfo
+    <span class="hljs-keyword">if</span> (app.globalData.userInfo) {
+      <span class="hljs-keyword">this</span>.setData({
+        userInfo: app.globalData.userInfo,
+        hasUserInfo: <span class="hljs-literal">true</span>
       })
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-comment">// &#x7531;&#x4E8E; getUserInfo &#x662F;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5728; Page.onLoad &#x4E4B;&#x540E;&#x624D;&#x8FD4;&#x56DE;</span>
+      <span class="hljs-comment">// &#x6240;&#x4EE5;&#x6B64;&#x5904;&#x52A0;&#x5165; callback &#x4EE5;&#x9632;&#x6B62;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;</span>
+      app.userInfoReadyCallback = res =&gt; {
+        <span class="hljs-keyword">this</span>.setData({
+          userInfo: res.userInfo,
+          hasUserInfo: <span class="hljs-literal">true</span>
+        })
+      }
+    }
+  },
+  getUserInfo: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-keyword">this</span>.setData({
+      userInfo: e.detail.userInfo,
+      hasUserInfo: <span class="hljs-literal">true</span>
     })
   }
 })
@@ -371,14 +397,15 @@ Page({
 </code></pre>
 <p>logs &#x9875;&#x9762;&#x4F7F;&#x7528; <a href="framework/view/wxml/list.html#block-wxfor"><code>&lt;block/&gt;</code></a> &#x63A7;&#x5236;&#x6807;&#x7B7E;&#x6765;&#x7EC4;&#x7EC7;&#x4EE3;&#x7801;&#xFF0C;&#x5728; <code>&lt;block/&gt;</code> &#x4E0A;&#x4F7F;&#x7528; <a href="framework/view/wxml/list.html#block-wxfor"><code>wx:for</code></a> &#x7ED1;&#x5B9A; <code>logs</code> &#x6570;&#x636E;&#xFF0C;&#x5E76;&#x5C06; <code>logs</code> &#x6570;&#x636E;&#x5FAA;&#x73AF;&#x5C55;&#x5F00;&#x8282;&#x70B9;</p>
 <pre><code class="lang-js"><span class="hljs-comment">//logs.js</span>
-<span class="hljs-keyword">var</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;../../utils/util.js&apos;</span>)
+<span class="hljs-keyword">const</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;../../utils/util.js&apos;</span>)
+
 Page({
   data: {
     logs: []
   },
   onLoad: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">this</span>.setData({
-      logs: (wx.getStorageSync(<span class="hljs-string">&apos;logs&apos;</span>) || []).map(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">log</span>) </span>{
+      logs: (wx.getStorageSync(<span class="hljs-string">&apos;logs&apos;</span>) || []).map(log =&gt; {
         <span class="hljs-keyword">return</span> util.formatTime(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(log))
       })
     })

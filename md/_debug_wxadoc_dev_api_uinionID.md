@@ -363,217 +363,27 @@
 
 <section class="normal markdown-section">
 
-### wx.getUserInfo(OBJECT)
+#### UnionID机制说明
 
-获取用户信息，withCredentials 为 true 时需要先调用 [wx.login](api-login.html#wxloginobject) 接口。
+如果开发者拥有多个移动应用、网站应用、和公众帐号（包括小程序），可通过unionid来区分用户的唯一性，因为只要是同一个微信开放平台帐号下的移动应用、网站应用和公众帐号（包括小程序），用户的unionid是唯一的。换句话说，同一用户，对同一个微信开放平台下的不同应用，unionid是相同的。
 
-**OBJECT参数说明：**
+**同一个微信开放平台下的相同主体的App、公众号、小程序，如果用户已经关注公众号，或者曾经登录过App或公众号，则用户打开小程序时，开发者可以直接通过[wx.login](api-login.html#wx.login)获取到该用户UnionID，无须用户再次授权。**
 
-<table>
+#### 微信开放平台绑定小程序流程
 
-<thead>
+前提：微信开放平台帐号必须已完成开发者资质认证
 
-<tr>
+开发者资质认证流程：
 
-<th>参数名</th>
+登录微信开放平台(open.weixin.qq.com) – 帐号中心 – 开发者资质认证
 
-<th>类型</th>
+![img](https://mp.weixin.qq.com/debug/wxadoc/dev/image/open.png)
 
-<th>必填</th>
+绑定流程：
 
-<th>说明</th>
+登录微信开放平台（open.weixin.qq.com）—管理中心—公众帐号—绑定公众帐号
 
-<th>最低版本</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>withCredentials</td>
-
-<td>Boolean</td>
-
-<td>否</td>
-
-<td>是否带上登录态信息</td>
-
-<td>[1.1.0](../framework/compatibility.html "基础库 1.1.0 开始支持，低版本需做兼容处理。")</td>
-
-</tr>
-
-<tr>
-
-<td>lang</td>
-
-<td>String</td>
-
-<td>否</td>
-
-<td>指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文</td>
-
-<td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
-
-</tr>
-
-<tr>
-
-<td>success</td>
-
-<td>Function</td>
-
-<td>否</td>
-
-<td>接口调用成功的回调函数</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>fail</td>
-
-<td>Function</td>
-
-<td>否</td>
-
-<td>接口调用失败的回调函数</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>complete</td>
-
-<td>Function</td>
-
-<td>否</td>
-
-<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**注：当 withCredentials 为 true 时，要求此前有调用过 wx.login 且登录态尚未过期，此时返回的数据会包含 encryptedData, iv 等敏感信息；当 withCredentials 为 false 时，不要求有登录态，返回的数据不包含 encryptedData, iv 等敏感信息。**
-
-**success返回参数说明：**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>参数</th>
-
-<th>类型</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>userInfo</td>
-
-<td>OBJECT</td>
-
-<td>用户信息对象，不包含 openid 等敏感信息</td>
-
-</tr>
-
-<tr>
-
-<td>rawData</td>
-
-<td>String</td>
-
-<td>不包括敏感信息的原始数据字符串，用于计算签名。</td>
-
-</tr>
-
-<tr>
-
-<td>signature</td>
-
-<td>String</td>
-
-<td>使用 sha1( rawData + sessionkey ) 得到字符串，用于校验用户信息，参考文档 [signature](signature.html)。</td>
-
-</tr>
-
-<tr>
-
-<td>encryptedData</td>
-
-<td>String</td>
-
-<td>包括敏感数据在内的完整用户信息的加密数据，详细见[加密数据解密算法](signature.html#加密数据解密算法)</td>
-
-</tr>
-
-<tr>
-
-<td>iv</td>
-
-<td>String</td>
-
-<td>加密算法的初始向量，详细见[加密数据解密算法](signature.html#加密数据解密算法)</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**示例代码：**
-
-    wx.getUserInfo({
-      success: function(res) {
-        var userInfo = res.userInfo
-        var nickName = userInfo.nickName
-        var avatarUrl = userInfo.avatarUrl
-        var gender = userInfo.gender //性别 0：未知、1：男、2：女
-        var province = userInfo.province
-        var city = userInfo.city
-        var country = userInfo.country
-      }
-    })
-
-encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](signature.html#加密数据解密算法)
-
-    {
-        "openId": "OPENID",
-        "nickName": "NICKNAME",
-        "gender": GENDER,
-        "city": "CITY",
-        "province": "PROVINCE",
-        "country": "COUNTRY",
-        "avatarUrl": "AVATARURL",
-        "unionId": "UNIONID",
-        "watermark":
-        {
-            "appid":"APPID",
-        "timestamp":TIMESTAMP
-        }
-    }
-
-#### Bug & Tip
-
-1.  `tip`: `wx.getUserInfo` 接口需要用户授权，请兼容用户拒绝授权的场景。
+![img](https://mp.weixin.qq.com/debug/wxadoc/dev/image/union_bind.png)
 
 </section>
 
@@ -614,6 +424,6 @@ encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](
 
 </div>
 
-[](authorize.html#wxauthorizeobject)[](open.html#wxgetuserinfoobject)</div>
+[](open.html#wxgetuserinfoobject)[](api-pay.html)</div>
 
 </div>

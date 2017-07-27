@@ -255,7 +255,7 @@
         *   [setFontSize](canvas/set-font-size.html)
         *   [fillText](canvas/fill-text.html)
         *   [setTextAlign](canvas/set-text-align.html)
-        *   [set-text-baseline](canvas/set-text-baseline.html)
+        *   [setTextBaseline](canvas/set-text-baseline.html)
         *   [drawImage](canvas/draw-image.html)
         *   [setGlobalAlpha](canvas/set-global-alpha.html)
         *   [save](canvas/save-restore.html)
@@ -287,6 +287,7 @@
         *   [wx.authorize](authorize.html#wxauthorizeobject)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
+        *   [UnionID机制说明](uinionID.html)
     *   [微信支付](api-pay.html)
         *   [wx.requestPayment](api-pay.html#wxrequestpaymentobject)
     *   [模板消息](notice.html)
@@ -498,6 +499,18 @@
 
 <tr>
 
+<td>page</td>
+
+<td>String</td>
+
+<td></td>
+
+<td>必须是已经发布的小程序页面，例如 "pages/index/index" ,如果不填写这个字段，默认跳主页面</td>
+
+</tr>
+
+<tr>
+
 <td>width</td>
 
 <td>Int</td>
@@ -536,7 +549,7 @@
 
 </table>
 
-**注意：通过该接口生成的小程序码，永久有效，数量暂无限制。用户扫描该码进入小程序后，将统一打开首页，开发者需在首页根据获取的码中 scene 字段的值，再做处理逻辑。使用如下代码可以获取到二维码中的 scene 字段的值。调试阶段可以使用开发工具的条件编译自定义参数 scene=xxxx 进行模拟，开发工具模拟时的 scene 的参数值需要进行 urlencode**
+**注意：通过该接口生成的小程序码，永久有效，数量暂无限制。用户扫描该码进入小程序后，将统一打开首页，开发者需在对应页面根据获取的码中 scene 字段的值，再做处理逻辑。使用如下代码可以获取到二维码中的 scene 字段的值。调试阶段可以使用开发工具的条件编译自定义参数 scene=xxxx 进行模拟，开发工具模拟时的 scene 的参数值需要进行 urlencode**
 
     // 这是首页的 js
     Page({

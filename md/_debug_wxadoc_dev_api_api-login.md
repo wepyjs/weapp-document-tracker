@@ -255,7 +255,7 @@
         *   [setFontSize](canvas/set-font-size.html)
         *   [fillText](canvas/fill-text.html)
         *   [setTextAlign](canvas/set-text-align.html)
-        *   [set-text-baseline](canvas/set-text-baseline.html)
+        *   [setTextBaseline](canvas/set-text-baseline.html)
         *   [drawImage](canvas/draw-image.html)
         *   [setGlobalAlpha](canvas/set-global-alpha.html)
         *   [save](canvas/save-restore.html)
@@ -287,6 +287,7 @@
         *   [wx.authorize](authorize.html#wxauthorizeobject)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
+        *   [UnionID机制说明](uinionID.html)
     *   [微信支付](api-pay.html)
         *   [wx.requestPayment](api-pay.html#wxrequestpaymentobject)
     *   [模板消息](notice.html)
@@ -601,6 +602,14 @@
 
 </tr>
 
+<tr>
+
+<td style="text-align:left">unionid</td>
+
+<td>用户在开放平台的唯一标识符。本字段在满足一定条件的情况下才返回。具体参看[UnionID机制说明](uinionID.html)</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -610,7 +619,8 @@
     //正常返回的JSON数据包
     {
           "openid": "OPENID",
-          "session_key": "SESSIONKEY"
+          "session_key": "SESSIONKEY",
+          "unionid": "UNIONID"
     }
     //错误时返回JSON数据包(示例为Code无效)
     {

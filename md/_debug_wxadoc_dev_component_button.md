@@ -295,6 +295,20 @@
 
 </tr>
 
+<tr>
+
+<td>bindgetuserinfo</td>
+
+<td>Handler</td>
+
+<td></td>
+
+<td>open-type="getUserInfo"时有效：用户点击该按钮时，会返回获取到的用户信息，从返回参数的detail中获取到的值同[wx.getUserInfo](../api/open.html#wxgetuserinfoobject)</td>
+
+<td>[1.3.0](../framework/compatibility.html "基础库 1.3.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -456,6 +470,16 @@
 <td>触发用户转发，使用前建议先阅读[使用指引](../api/share.html#使用指引)</td>
 
 <td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>getUserInfo</td>
+
+<td>获取用户信息，可以从bindgetuserinfo回调中获取到用户信息</td>
+
+<td>[1.3.0](../framework/compatibility.html "基础库 1.3.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
