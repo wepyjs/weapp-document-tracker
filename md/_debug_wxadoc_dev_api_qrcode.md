@@ -459,7 +459,7 @@
 
 接口地址：
 
-    http://api.weixin.qq.com/wxa/getwxacodeunlimit?access_token=ACCESS_TOKEN
+    https://api.weixin.qq.com/wxa/getwxacodeunlimit?access_token=ACCESS_TOKEN
 
 获取 access_token 详见[文档](https://mp.weixin.qq.com/wiki?id=mp1421140183)
 
@@ -549,7 +549,7 @@
 
 </table>
 
-**注意：通过该接口生成的小程序码，永久有效，数量暂无限制。用户扫描该码进入小程序后，将统一打开首页，开发者需在对应页面根据获取的码中 scene 字段的值，再做处理逻辑。使用如下代码可以获取到二维码中的 scene 字段的值。调试阶段可以使用开发工具的条件编译自定义参数 scene=xxxx 进行模拟，开发工具模拟时的 scene 的参数值需要进行 urlencode**
+**注意：通过该接口生成的小程序码，永久有效，数量暂无限制。用户扫描该码进入小程序后，开发者需在对应页面获取的码中 scene 字段的值，再做处理逻辑。使用如下代码可以获取到二维码中的 scene 字段的值。调试阶段可以使用开发工具的条件编译自定义参数 scene=xxxx 进行模拟，开发工具模拟时的 scene 的参数值需要进行 urlencode**
 
     // 这是首页的 js
     Page({
