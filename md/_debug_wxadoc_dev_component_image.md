@@ -133,6 +133,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -149,6 +151,8 @@
 
 <td>图片资源地址</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -161,6 +165,22 @@
 
 <td>图片裁剪、缩放的模式</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>lazy-load</td>
+
+<td>Boolean</td>
+
+<td>false</td>
+
+<td>图片懒加载。只针对page与scroll-view下的image有效</td>
+
+<td>[1.5.0](../framework/compatibility.html "基础库 1.5.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 <tr>
@@ -172,6 +192,8 @@
 <td></td>
 
 <td>当错误发生时，发布到 AppService 的事件名，事件对象event.detail = {errMsg: 'something wrong'}</td>
+
+<td></td>
 
 </tr>
 

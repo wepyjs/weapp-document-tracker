@@ -265,6 +265,7 @@
         *   [clearActions](../canvas/clear-actions.html)
     *   [下拉刷新](../pulldown.html)
         *   [Page.onPullDownRefresh](../pulldown.html#onpulldownrefresh)
+        *   [wx.startPullDownRefresh](../pulldown.html#wxstartpulldownrefresh)
         *   [wx.stopPullDownRefresh](../pulldown.html#wxstoppulldownrefresh)
 *   [WXML节点信息](../wxml-nodes-info.html)
     *   [wx.createSelectorQuery](../wxml-nodes-info.html#wxcreateselectorquery)
@@ -287,6 +288,7 @@
         *   [wx.authorize](../authorize.html#wxauthorizeobject)
     *   [用户信息](../open.html)
         *   [wx.getUserInfo](../open.html#wxgetuserinfoobject)
+        *   [getPhoneNumber](../getPhoneNumber.html)
         *   [UnionID机制说明](../uinionID.html)
     *   [微信支付](../api-pay.html)
         *   [wx.requestPayment](../api-pay.html#wxrequestpaymentobject)
@@ -298,12 +300,14 @@
         *   [接收消息和事件](receive.html#接收消息和事件)
             *   [文本消息](receive.html#文本消息)
             *   [图片消息](receive.html#图片消息)
+            *   [小程序卡片消息](receive.html#小程序卡片消息)
             *   [进入会话事件](receive.html#进入会话事件)
         *   [发送客服消息](conversation.html)
         *   [转发消息](trans.html)
         *   [临时素材接口](material.html)
             *   [获取临时素材](material.html#获取临时素材)
             *   [新增临时素材](material.html#新增临时素材)
+        *   [客服输入状态](typing.html)
         *   [接入指引](callback_help.html)
     *   [转发](../share.html)
         *   [Page.onShareAppMessage](../share.html#onshareappmessage)
@@ -327,6 +331,11 @@
     *   [打开小程序](../navigateToMiniProgram.html)
         *   [wx.navigateToMiniProgram](../navigateToMiniProgram.html)
         *   [wx.navigateBackMiniProgram](../navigateBackMiniProgram.html)
+    *   [获取发票抬头](../chooseInvoiceTitle.html)
+        *   [wx.chooseInvoiceTitle](../chooseInvoiceTitle.html)
+    *   [生物认证](../checkIsSupportSoterAuthentication.html)
+        *   [wx.checkIsSupportSoterAuthentication](../checkIsSupportSoterAuthentication.html)
+        *   [wx.startSoterAuthentication](../startSoterAuthentication.html)
 *   [数据](../analysis.html)
     *   [常规分析](../analysis.html)
         *   [概况](../analysis.html#概况)
@@ -458,6 +467,18 @@
         }
     }
 
+##### 发送小程序卡片
+
+    {
+        "touser":"OPENID",
+        "msgtype":"miniprogrampage",
+        "miniprogrampage":{
+            "title":"title",
+            "pagepath":"pagepath",
+            "thumb_media_id":"thumb_media_id"
+        }
+    }
+
 ##### 参数说明
 
 <table>
@@ -534,7 +555,7 @@
 
 <td>是</td>
 
-<td>图文链接消息标题</td>
+<td>消息标题</td>
 
 </tr>
 
@@ -568,11 +589,31 @@
 
 </tr>
 
+<tr>
+
+<td>pagepath</td>
+
+<td>是</td>
+
+<td>小程序的页面路径，跟app.json对齐，支持参数，比如pages/index/index?foo=bar</td>
+
+</tr>
+
+<tr>
+
+<td>thumb_media_id</td>
+
+<td>是</td>
+
+<td>小程序消息卡片的封面， image类型的media_id，通过[新增素材接口](https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/material.html)上传图片文件获得，建议大小为520*416</td>
+
+</tr>
+
 </tbody>
 
 </table>
 
-#### 返回码说明
+##### 返回码说明
 
 <table>
 

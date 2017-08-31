@@ -265,6 +265,7 @@
         *   [clearActions](canvas/clear-actions.html)
     *   [下拉刷新](pulldown.html)
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
+        *   [wx.startPullDownRefresh](pulldown.html#wxstartpulldownrefresh)
         *   [wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)
 *   [WXML节点信息](wxml-nodes-info.html)
     *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
@@ -287,6 +288,7 @@
         *   [wx.authorize](authorize.html#wxauthorizeobject)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
+        *   [getPhoneNumber](getPhoneNumber.html)
         *   [UnionID机制说明](uinionID.html)
     *   [微信支付](api-pay.html)
         *   [wx.requestPayment](api-pay.html#wxrequestpaymentobject)
@@ -298,12 +300,14 @@
         *   [接收消息和事件](custommsg/receive.html#接收消息和事件)
             *   [文本消息](custommsg/receive.html#文本消息)
             *   [图片消息](custommsg/receive.html#图片消息)
+            *   [小程序卡片消息](custommsg/receive.html#小程序卡片消息)
             *   [进入会话事件](custommsg/receive.html#进入会话事件)
         *   [发送客服消息](custommsg/conversation.html)
         *   [转发消息](custommsg/trans.html)
         *   [临时素材接口](custommsg/material.html)
             *   [获取临时素材](custommsg/material.html#获取临时素材)
             *   [新增临时素材](custommsg/material.html#新增临时素材)
+        *   [客服输入状态](custommsg/typing.html)
         *   [接入指引](custommsg/callback_help.html)
     *   [转发](share.html)
         *   [Page.onShareAppMessage](share.html#onshareappmessage)
@@ -327,6 +331,11 @@
     *   [打开小程序](navigateToMiniProgram.html)
         *   [wx.navigateToMiniProgram](navigateToMiniProgram.html)
         *   [wx.navigateBackMiniProgram](navigateBackMiniProgram.html)
+    *   [获取发票抬头](chooseInvoiceTitle.html)
+        *   [wx.chooseInvoiceTitle](chooseInvoiceTitle.html)
+    *   [生物认证](checkIsSupportSoterAuthentication.html)
+        *   [wx.checkIsSupportSoterAuthentication](checkIsSupportSoterAuthentication.html)
+        *   [wx.startSoterAuthentication](startSoterAuthentication.html)
 *   [数据](analysis.html)
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
@@ -369,6 +378,112 @@
 
 *   需要在 `config` 的[`window`](../framework/config.html#window)选项中开启 `enablePullDownRefresh`。
 *   当处理完数据刷新后，[`wx.stopPullDownRefresh`](#wxstoppulldownrefresh)可以停止当前页面的下拉刷新。
+
+### wx.startPullDownRefresh(OBJECT)
+
+> 基础库 1.5.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+
+开始下拉刷新，调用后触发下拉刷新动画，效果与用户手动下拉刷新一致
+
+**Object参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>类型</th>
+
+<th>必填</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>success</td>
+
+<td>Function</td>
+
+<td>否</td>
+
+<td>接口调用成功的回调函数</td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>Function</td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数</td>
+
+</tr>
+
+<tr>
+
+<td>complete</td>
+
+<td>Function</td>
+
+<td>否</td>
+
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**success返回参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数名</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>errMsg</td>
+
+<td>String</td>
+
+<td>接口调用结果</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**示例代码：**
+
+    wx.startPullDownRefresh()
 
 ### wx.stopPullDownRefresh()
 

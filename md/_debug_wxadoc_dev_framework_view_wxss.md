@@ -76,6 +76,14 @@
         *   [模板](wxml/template.html)
         *   [事件](wxml/event.html)
         *   [引用](wxml/import.html)
+    *   [WXS](wxs/)
+        *   [模块](wxs/01wxs-module.html)
+        *   [变量](wxs/02variate.html)
+        *   [注释](wxs/03annotation.html)
+        *   [运算符](wxs/04operator.html)
+        *   [语句](wxs/05statement.html)
+        *   [数据类型](wxs/06datatype.html)
+        *   [基础类库](wxs/07basiclibrary.html)
     *   [WXSS](wxss.html)
     *   [组件](component.html)
 *   [基础库](../client-lib.html)
@@ -332,6 +340,6 @@ WXSS 用来决定 WXML 的组件应该怎么显示。
 
 </div>
 
-[](wxml/import.html)[](component.html)</div>
+[](wxs/07basiclibrary.html)[](component.html)</div>
 
 </div>

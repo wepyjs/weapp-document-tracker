@@ -325,13 +325,27 @@
 
 <tr>
 
+<td>cursor</td>
+
+<td>Number</td>
+
+<td></td>
+
+<td>指定focus时的光标位置</td>
+
+<td>[1.5.0](../framework/compatibility.html "基础库 1.5.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>bindinput</td>
 
 <td>EventHandle</td>
 
 <td></td>
 
-<td>当键盘输入时，触发input事件，event.detail = {value: value}，处理函数可以直接 return 一个字符串，将替换输入框的内容。</td>
+<td>当键盘输入时，触发input事件，event.detail = {value, cursor}，处理函数可以直接 return 一个字符串，将替换输入框的内容。</td>
 
 <td></td>
 

@@ -76,6 +76,14 @@
         *   [模板](view/wxml/template.html)
         *   [事件](view/wxml/event.html)
         *   [引用](view/wxml/import.html)
+    *   [WXS](view/wxs/)
+        *   [模块](view/wxs/01wxs-module.html)
+        *   [变量](view/wxs/02variate.html)
+        *   [注释](view/wxs/03annotation.html)
+        *   [运算符](view/wxs/04operator.html)
+        *   [语句](view/wxs/05statement.html)
+        *   [数据类型](view/wxs/06datatype.html)
+        *   [基础类库](view/wxs/07basiclibrary.html)
     *   [WXSS](view/wxss.html)
     *   [组件](view/component.html)
 *   [基础库](client-lib.html)
@@ -249,7 +257,7 @@
 
     {
       "pages":[
-        "pages/index/index"
+        "pages/index/index",
         "pages/logs/logs"
       ]
     }
@@ -347,6 +355,18 @@
 <td>false</td>
 
 <td>是否开启下拉刷新，详见[页面相关事件处理函数](app-service/page.html#页面相关事件处理函数)。</td>
+
+</tr>
+
+<tr>
+
+<td>onReachBottomDistance</td>
+
+<td>Number</td>
+
+<td>50</td>
+
+<td>页面上拉触底事件触发时距页面底部距离，单位为px</td>
 
 </tr>
 
@@ -756,6 +776,18 @@
 <td>false</td>
 
 <td>设置为 true 则页面整体不能上下滚动；只在 page.json 中有效，无法在 app.json 中设置该项</td>
+
+</tr>
+
+<tr>
+
+<td>onReachBottomDistance</td>
+
+<td>Number</td>
+
+<td>50</td>
+
+<td>页面上拉触底事件触发时距页面底部距离，单位为px</td>
 
 </tr>
 

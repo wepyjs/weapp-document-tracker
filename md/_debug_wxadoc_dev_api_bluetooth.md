@@ -265,6 +265,7 @@
         *   [clearActions](canvas/clear-actions.html)
     *   [下拉刷新](pulldown.html)
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
+        *   [wx.startPullDownRefresh](pulldown.html#wxstartpulldownrefresh)
         *   [wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)
 *   [WXML节点信息](wxml-nodes-info.html)
     *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
@@ -287,6 +288,7 @@
         *   [wx.authorize](authorize.html#wxauthorizeobject)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
+        *   [getPhoneNumber](getPhoneNumber.html)
         *   [UnionID机制说明](uinionID.html)
     *   [微信支付](api-pay.html)
         *   [wx.requestPayment](api-pay.html#wxrequestpaymentobject)
@@ -298,12 +300,14 @@
         *   [接收消息和事件](custommsg/receive.html#接收消息和事件)
             *   [文本消息](custommsg/receive.html#文本消息)
             *   [图片消息](custommsg/receive.html#图片消息)
+            *   [小程序卡片消息](custommsg/receive.html#小程序卡片消息)
             *   [进入会话事件](custommsg/receive.html#进入会话事件)
         *   [发送客服消息](custommsg/conversation.html)
         *   [转发消息](custommsg/trans.html)
         *   [临时素材接口](custommsg/material.html)
             *   [获取临时素材](custommsg/material.html#获取临时素材)
             *   [新增临时素材](custommsg/material.html#新增临时素材)
+        *   [客服输入状态](custommsg/typing.html)
         *   [接入指引](custommsg/callback_help.html)
     *   [转发](share.html)
         *   [Page.onShareAppMessage](share.html#onshareappmessage)
@@ -327,6 +331,11 @@
     *   [打开小程序](navigateToMiniProgram.html)
         *   [wx.navigateToMiniProgram](navigateToMiniProgram.html)
         *   [wx.navigateBackMiniProgram](navigateBackMiniProgram.html)
+    *   [获取发票抬头](chooseInvoiceTitle.html)
+        *   [wx.chooseInvoiceTitle](chooseInvoiceTitle.html)
+    *   [生物认证](checkIsSupportSoterAuthentication.html)
+        *   [wx.checkIsSupportSoterAuthentication](checkIsSupportSoterAuthentication.html)
+        *   [wx.startSoterAuthentication](startSoterAuthentication.html)
 *   [数据](analysis.html)
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
@@ -1174,6 +1183,16 @@
 
 <tr>
 
+<td>localName</td>
+
+<td>string</td>
+
+<td>低功耗设备广播名称，某些设备可能没有</td>
+
+</tr>
+
+<tr>
+
 <td>deviceId</td>
 
 <td>string</td>
@@ -1296,6 +1315,16 @@
 <td>string</td>
 
 <td>蓝牙设备名称，参考 device 对象</td>
+
+</tr>
+
+<tr>
+
+<td>localName</td>
+
+<td>string</td>
+
+<td>低功耗设备广播名称，某些设备可能没有</td>
 
 </tr>
 
@@ -1642,6 +1671,10 @@
         console.log(res)
       }
     })
+
+#### Bug & Tip
+
+1.  `tip`: 安卓手机上如果多次调用create创建连接，有可能导致系统持有同一设备多个连接的实例，导致调用close的时候并不能真正的断开与设备的连接。因此请保证尽量成对的调用create和close接口
 
 ### wx.closeBLEConnection(OBJECT)
 
@@ -3046,6 +3079,16 @@ _tips: 并行调用多次读写接口存在读写失败的可能性_
 <td>no descriptor</td>
 
 <td>没有找到指定描述符</td>
+
+</tr>
+
+<tr>
+
+<td>10011</td>
+
+<td>location not turned</td>
+
+<td>Android6.0以上系统因未打开定位导致搜寻蓝牙设备（startBluetoothDevicesDiscovery ）失败</td>
 
 </tr>
 

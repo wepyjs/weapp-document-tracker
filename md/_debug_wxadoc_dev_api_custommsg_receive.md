@@ -265,6 +265,7 @@
         *   [clearActions](../canvas/clear-actions.html)
     *   [下拉刷新](../pulldown.html)
         *   [Page.onPullDownRefresh](../pulldown.html#onpulldownrefresh)
+        *   [wx.startPullDownRefresh](../pulldown.html#wxstartpulldownrefresh)
         *   [wx.stopPullDownRefresh](../pulldown.html#wxstoppulldownrefresh)
 *   [WXML节点信息](../wxml-nodes-info.html)
     *   [wx.createSelectorQuery](../wxml-nodes-info.html#wxcreateselectorquery)
@@ -287,6 +288,7 @@
         *   [wx.authorize](../authorize.html#wxauthorizeobject)
     *   [用户信息](../open.html)
         *   [wx.getUserInfo](../open.html#wxgetuserinfoobject)
+        *   [getPhoneNumber](../getPhoneNumber.html)
         *   [UnionID机制说明](../uinionID.html)
     *   [微信支付](../api-pay.html)
         *   [wx.requestPayment](../api-pay.html#wxrequestpaymentobject)
@@ -298,12 +300,14 @@
         *   [接收消息和事件](receive.html#接收消息和事件)
             *   [文本消息](receive.html#文本消息)
             *   [图片消息](receive.html#图片消息)
+            *   [小程序卡片消息](receive.html#小程序卡片消息)
             *   [进入会话事件](receive.html#进入会话事件)
         *   [发送客服消息](conversation.html)
         *   [转发消息](trans.html)
         *   [临时素材接口](material.html)
             *   [获取临时素材](material.html#获取临时素材)
             *   [新增临时素材](material.html#新增临时素材)
+        *   [客服输入状态](typing.html)
         *   [接入指引](callback_help.html)
     *   [转发](../share.html)
         *   [Page.onShareAppMessage](../share.html#onshareappmessage)
@@ -327,6 +331,11 @@
     *   [打开小程序](../navigateToMiniProgram.html)
         *   [wx.navigateToMiniProgram](../navigateToMiniProgram.html)
         *   [wx.navigateBackMiniProgram](../navigateBackMiniProgram.html)
+    *   [获取发票抬头](../chooseInvoiceTitle.html)
+        *   [wx.chooseInvoiceTitle](../chooseInvoiceTitle.html)
+    *   [生物认证](../checkIsSupportSoterAuthentication.html)
+        *   [wx.checkIsSupportSoterAuthentication](../checkIsSupportSoterAuthentication.html)
+        *   [wx.startSoterAuthentication](../startSoterAuthentication.html)
 *   [数据](../analysis.html)
     *   [常规分析](../analysis.html)
         *   [概况](../analysis.html#概况)
@@ -580,6 +589,142 @@
 <td style="text-align:left">MsgId</td>
 
 <td>消息id，64位整型</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+### 小程序卡片消息
+
+用户在客服会话中发送小程序卡片消息时将产生如下数据包：
+
+#### XML 格式
+
+    <xml>
+        <ToUserName><![CDATA[toUser]]></ToUserName>
+        <FromUserName><![CDATA[fromUser]]></FromUserName>
+        <CreateTime>1482048670</CreateTime>
+        <MsgType><![CDATA[miniprogrampage]]></MsgType>
+        <MsgId>1234567890123456</MsgId>
+        <Title><![CDATA[Title]]></Title>
+        <AppId><![CDATA[AppId]]></AppId>
+        <PagePath><![CDATA[PagePath]]></PagePath>
+        <ThumbUrl><![CDATA[ThumbUrl]]></ThumbUrl>
+        <ThumbMediaId><![CDATA[ThumbMediaId]]></ThumbMediaId>
+    </xml>
+
+#### JSON 格式
+
+    {
+        "ToUserName": "toUser",
+        "FromUserName": "fromUser",
+        "CreateTime": 1482048670,
+        "MsgType": "miniprogrampage",
+        "MsgId": 1234567890123456,
+        "Title":"title",
+        "AppId":"appid",
+        "PagePath":"path",
+        "ThumbUrl":"",
+        "ThumbMediaId":""
+    }
+
+#### 参数说明
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>ToUserName</td>
+
+<td>小程序的原始ID</td>
+
+</tr>
+
+<tr>
+
+<td>FromUserName</td>
+
+<td>发送者的openid</td>
+
+</tr>
+
+<tr>
+
+<td>CreateTime</td>
+
+<td>消息创建时间(整型）</td>
+
+</tr>
+
+<tr>
+
+<td>MsgType</td>
+
+<td>miniprogrampage</td>
+
+</tr>
+
+<tr>
+
+<td>MsgId</td>
+
+<td>消息id，64位整型</td>
+
+</tr>
+
+<tr>
+
+<td>Title</td>
+
+<td>标题</td>
+
+</tr>
+
+<tr>
+
+<td>AppId</td>
+
+<td>小程序appid</td>
+
+</tr>
+
+<tr>
+
+<td>PagePath</td>
+
+<td>小程序页面路径</td>
+
+</tr>
+
+<tr>
+
+<td>ThumbUrl</td>
+
+<td>封面图片的临时cdn链接</td>
+
+</tr>
+
+<tr>
+
+<td>ThumbMediaId</td>
+
+<td>封面图片的临时素材id</td>
 
 </tr>
 

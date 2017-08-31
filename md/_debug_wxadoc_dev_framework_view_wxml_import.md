@@ -76,6 +76,14 @@
         *   [模板](template.html)
         *   [事件](event.html)
         *   [引用](import.html)
+    *   [WXS](../wxs/)
+        *   [模块](../wxs/01wxs-module.html)
+        *   [变量](../wxs/02variate.html)
+        *   [注释](../wxs/03annotation.html)
+        *   [运算符](../wxs/04operator.html)
+        *   [语句](../wxs/05statement.html)
+        *   [数据类型](../wxs/06datatype.html)
+        *   [基础类库](../wxs/07basiclibrary.html)
     *   [WXSS](../wxss.html)
     *   [组件](../component.html)
 *   [基础库](../../client-lib.html)
@@ -199,6 +207,6 @@ import 有作用域的概念，即只会 import 目标文件中定义的 templat
 
 </div>
 
-[](event.html)[](../wxss.html)</div>
+[](event.html)[](../wxs/)</div>
 
 </div>

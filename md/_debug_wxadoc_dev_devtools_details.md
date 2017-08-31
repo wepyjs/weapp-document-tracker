@@ -60,8 +60,31 @@
 <nav role="navigation">
 
 *   [概览](devtools.html)
-*   [程序调试](debug.html)
+*   [云测试](monkey-test.html)
+*   [界面](page.html)
+    *   [启动页](page.html#启动页)
+    *   [菜单栏](page.html#菜单栏)
+    *   [工具栏](page.html#工具栏)
+    *   [模拟器](page.html#模拟器)
+    *   [设置](settings.html)
+        *   [外观设置](settings.html#外观设置)
+        *   [通知设置](settings.html#通知设置)
+        *   [编辑设置](settings.html#编辑设置)
+        *   [代理设置](settings.html#代理设置)
+    *   [项目页卡](project.html)
+        *   [项目设置](project.html#项目设置)
+        *   [域名信息](project.html#域名信息)
+        *   [腾讯云状态](project.html#腾讯云状态)
+*   [快捷键](shortcut.html)
+*   [代码编辑](edit.html)
+    *   [文件格式](edit.html#文件格式)
+    *   [文件类型](edit.html#文件支持)
+    *   [自动补全](edit.html#自动补全)
+    *   [项目配置文件](edit.html#项目配置文件)
+*   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
+    *   [自定义编译](debug.html#自定义编译)
+    *   [前后台切换](debug.html#前后台切换)
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
@@ -70,15 +93,14 @@
         *   [Storage Panel](debug.html#storage-panel)
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
-    *   [小程序操作区](debug.html#小程序操作区)
     *   [自定义数据上报](debug.html#自定义数据上报)
-*   [特殊 API 的调试](different.html)
-*   [代码编辑](edit.html)
-*   [设置](settings.html)
-*   [项目预览](project.html)
+    *   [特殊场景调试](different.html)
 *   [第三方平台](ext.html)
+*   [实现差异](details.html)
+    *   [运行环境差异](details.html#运行环境差异)
+    *   [ES6 支持情况](details.html#客户端es6-api-支持情况)
+    *   [API 实现差异](notsupport.html)
 *   [下载](download.html)
-*   [细节点](details.html)
 *   [历史更新日志](uplog.html)
 
 </nav>
@@ -99,7 +121,7 @@
 
 <section class="normal markdown-section">
 
-## javascript && wxss
+## 运行环境差异
 
 微信小程序运行在三端：iOS、Android 和 用于调试的开发者工具。
 
@@ -111,19 +133,11 @@
 
 尽管三端的环境是十分相似的，但是还是有些许区别：
 
-*   `ES6` 语法支持不一致 语法上开发者可以通过开启 `ES6` 转 `ES5` 的功能来规避。[详情](project.html#ES6-转-ES5)
+*   `ES6` 语法支持不一致 语法上开发者可以通过开启 `ES6` 转 `ES5` 的功能来规避。[详情](project.html#es6-转-es5)
 
 *   `wxss` 渲染表现不一致 尽管可以通过开启样式补全来规避大部分的问题 [详情](project.html#样式补全)，还是建议开发者需要在 iOS 和 Android 上检查小程序的真实表现。
 
-## 客户端可信域名校验
-
-开发者使用手机扫码调试的场景下，打开调试模式之后，最新版的客户端将不检查可信域名。
-
-## 代码文件必须 UTF8 编码
-
-iOS下仅支持 **UTF8** 编码格式，最新版本的开发者工具会在上传代码时候对代码文件做一次编码格式校验。
-
-### ES6 API 支持情况
+### 客户端ES6 API 支持情况
 
 微信小程序已经支持了绝大部分的 ES6 API 具体表格如下：
 
@@ -1058,6 +1072,6 @@ iOS下仅支持 **UTF8** 编码格式，最新版本的开发者工具会在上�
 
 </div>
 
-[](download.html)[](uplog.html)</div>
+[](ext.html)[](details.html#运行环境差异)</div>
 
 </div>

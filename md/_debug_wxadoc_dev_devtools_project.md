@@ -60,8 +60,31 @@
 <nav role="navigation">
 
 *   [概览](devtools.html)
-*   [程序调试](debug.html)
+*   [云测试](monkey-test.html)
+*   [界面](page.html)
+    *   [启动页](page.html#启动页)
+    *   [菜单栏](page.html#菜单栏)
+    *   [工具栏](page.html#工具栏)
+    *   [模拟器](page.html#模拟器)
+    *   [设置](settings.html)
+        *   [外观设置](settings.html#外观设置)
+        *   [通知设置](settings.html#通知设置)
+        *   [编辑设置](settings.html#编辑设置)
+        *   [代理设置](settings.html#代理设置)
+    *   [项目页卡](project.html)
+        *   [项目设置](project.html#项目设置)
+        *   [域名信息](project.html#域名信息)
+        *   [腾讯云状态](project.html#腾讯云状态)
+*   [快捷键](shortcut.html)
+*   [代码编辑](edit.html)
+    *   [文件格式](edit.html#文件格式)
+    *   [文件类型](edit.html#文件支持)
+    *   [自动补全](edit.html#自动补全)
+    *   [项目配置文件](edit.html#项目配置文件)
+*   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
+    *   [自定义编译](debug.html#自定义编译)
+    *   [前后台切换](debug.html#前后台切换)
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
@@ -70,15 +93,14 @@
         *   [Storage Panel](debug.html#storage-panel)
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
-    *   [小程序操作区](debug.html#小程序操作区)
     *   [自定义数据上报](debug.html#自定义数据上报)
-*   [特殊 API 的调试](different.html)
-*   [代码编辑](edit.html)
-*   [设置](settings.html)
-*   [项目预览](project.html)
+    *   [特殊场景调试](different.html)
 *   [第三方平台](ext.html)
+*   [实现差异](details.html)
+    *   [运行环境差异](details.html#运行环境差异)
+    *   [ES6 支持情况](details.html#客户端es6-api-支持情况)
+    *   [API 实现差异](notsupport.html)
 *   [下载](download.html)
-*   [细节点](details.html)
 *   [历史更新日志](uplog.html)
 
 </nav>
@@ -103,46 +125,63 @@
 
 ## 显示当前项目细节
 
-包括图标、AppID、目录信息，以及上次提交代码的时间以及代码包大小。
+包括图标、AppID、第三方平台名（只有第三方平台的开发小程序才会显示）、目录信息，以及上次提交代码的时间以及代码包大小。
 
-## 提交预览和提交上传
+## 基础库版本切换
 
-*   点击预览功能，工具会上传源代码到微信服务器，成功后将会显示一个二维码，当前 AppID 绑定的任意开发者用新版微信扫描二维码即可在手机上看到相应项目的真实表现。
-*   点击上传，工具会上传源代码到微信服务器，开发者可以在 mp 管理后台看到本次提交的情况。 需要注意的是，**代码上传** 功能仅管理员微信号可操作
+开发者可以在此选择任意基础库版本，用于开发和调试旧版本兼容。
 
-## 项目配置
+![clientlib](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/clientlib.png)
+
+## 项目设置
+
+微信小程序运行在三端：iOS、Android 和 用于调试的开发者工具。
+
+三端的脚本执行环境聚以及用于渲染非原生组件的环境是各不相同的：
+
+*   在 iOS 上，小程序的 javascript 代码是运行在 JavaScriptCore 中，是由 WKWebView 来渲染的，环境有 iOS8、iOS9、iOS10
+*   在 Android 上，小程序的 javascript 代码是通过 X5 JSCore来解析，是由 [X5](http://x5.tencent.com/guide?id=4000) 基于 Mobile Chrome 53 内核来渲染的
+*   在 开发工具上， 小程序的 javascript 代码是运行在 nwjs 中，是由 Chrome Webview 来渲染的
+
+尽管三端的环境是十分相似的，但是还是有些许区别：
+
+*   `ES6` 语法支持不一致[详情](details.html#es6-api-支持情况)
+
+*   `wxss` 渲染表现不一致尽管可以通过开启样式补全来规避大部分的问题 ，还是建议开发者需要在 iOS 和 Android 上检查小程序的真实表现。
 
 ### ES6 转 ES5
 
-在 0.10.101000 以及之后版本的开发工具中，会默认使用 `babel` 将开发者代码 `ES6` 语法转换为三端都能很好支持的 `ES5` 的代码，帮助开发者解决环境不同所带来的开发问题。开发者可以在项目设置中关闭这个功能。[详情](details.html#javascript)
+在 0.10.101000 以及之后版本的开发工具中，会默认使用 `babel` 将开发者代码 `ES6` 语法转换为三端都能很好支持的 `ES5` 的代码，帮助开发者解决环境不同所带来的开发问题。
 
 需要注意的是：
 
-*   为了提高代码质量，在开启 `ES6` 转换功能的情况下，默认启用 `javasctipt` 严格模式，请参考 ["use strict"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) 。
+*   为了提高代码质量，在开启 `ES6` 转换功能的情况下，默认启用 `javasctipt` 严格模式，请参考 ["use strict"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 
-### 监听文件变化，自动刷新开发者工具
+### 样式补全
 
-开启此选项，和当前项目相关的文件发生改变时候，会自动帮助开发者刷新调试模拟器，从而提高开发效率。
+开启此选项，开发工具会自动检测并补全缺失样式，保证在 iOS8 上的正常显示。尽管可以规避大部分的问题 ，还是建议开发者需要在 iOS 和 Android 上检查小程序的真实表现。
 
 ### 压缩代码
 
 开启此选项，开发工具在上传代码时候将会帮助开发者压缩 `javascript` 代码，减小代码包体积。
 
-### 样式补全
-
-开启此选项，开发工具会自动检测并补全缺失样式，保证在 iOS8 上的正常显示。
-
 ### 不校验请求域名及 TLS 版本
 
-开启此选项，开发工具将不会校验安全域名，以及 TLS 版本，帮助在开发过程中更好的完成调试工作。
+正式发布的小程序的网络请求是需要校验合法域名以及域名的 TLS 版本，可以在 mp 管理后台进行配置。 在开发过程中，我们可以开启此选项，开发工具将不会校验安全域名，以及 TLS 版本，帮助在开发过程中更好的完成调试工作。
 
-![edit](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/edit/project1.png)
+![edit](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/righttools.png)
 
-### 基础库版本切换
+## 域名信息
 
-开发者可以在此选择任意基础库版本，用于开发和调试旧版本兼容。
+将显示小程序的安全域名信息，合法域名可在 mp 管理后台进行设置
 
-![project](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/project/1.png)
+![host](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/host.png)
+
+## 腾讯云状态
+
+使用腾讯云功能，可以在这里看到腾讯云状态、开发环境信息和域名信息
+
+![qcloud](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/qcloudinfo.png)
 
 </section>
 
@@ -183,6 +222,6 @@
 
 </div>
 
-[](settings.html)[](ext.html)</div>
+[](settings.html#代理设置)[](project.html#项目设置)</div>
 
 </div>

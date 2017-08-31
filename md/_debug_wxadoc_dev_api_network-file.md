@@ -265,6 +265,7 @@
         *   [clearActions](canvas/clear-actions.html)
     *   [下拉刷新](pulldown.html)
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
+        *   [wx.startPullDownRefresh](pulldown.html#wxstartpulldownrefresh)
         *   [wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)
 *   [WXML节点信息](wxml-nodes-info.html)
     *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
@@ -287,6 +288,7 @@
         *   [wx.authorize](authorize.html#wxauthorizeobject)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
+        *   [getPhoneNumber](getPhoneNumber.html)
         *   [UnionID机制说明](uinionID.html)
     *   [微信支付](api-pay.html)
         *   [wx.requestPayment](api-pay.html#wxrequestpaymentobject)
@@ -298,12 +300,14 @@
         *   [接收消息和事件](custommsg/receive.html#接收消息和事件)
             *   [文本消息](custommsg/receive.html#文本消息)
             *   [图片消息](custommsg/receive.html#图片消息)
+            *   [小程序卡片消息](custommsg/receive.html#小程序卡片消息)
             *   [进入会话事件](custommsg/receive.html#进入会话事件)
         *   [发送客服消息](custommsg/conversation.html)
         *   [转发消息](custommsg/trans.html)
         *   [临时素材接口](custommsg/material.html)
             *   [获取临时素材](custommsg/material.html#获取临时素材)
             *   [新增临时素材](custommsg/material.html#新增临时素材)
+        *   [客服输入状态](custommsg/typing.html)
         *   [接入指引](custommsg/callback_help.html)
     *   [转发](share.html)
         *   [Page.onShareAppMessage](share.html#onshareappmessage)
@@ -327,6 +331,11 @@
     *   [打开小程序](navigateToMiniProgram.html)
         *   [wx.navigateToMiniProgram](navigateToMiniProgram.html)
         *   [wx.navigateBackMiniProgram](navigateBackMiniProgram.html)
+    *   [获取发票抬头](chooseInvoiceTitle.html)
+        *   [wx.chooseInvoiceTitle](chooseInvoiceTitle.html)
+    *   [生物认证](checkIsSupportSoterAuthentication.html)
+        *   [wx.checkIsSupportSoterAuthentication](checkIsSupportSoterAuthentication.html)
+        *   [wx.startSoterAuthentication](startSoterAuthentication.html)
 *   [数据](analysis.html)
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
@@ -539,7 +548,7 @@
       success: function(res) {
         var tempFilePaths = res.tempFilePaths
         wx.uploadFile({
-          url: 'http://example.weixin.qq.com/upload', //仅为示例，非真实的接口地址
+          url: 'https://example.weixin.qq.com/upload', //仅为示例，非真实的接口地址
           filePath: tempFilePaths[0],
           name: 'file',
           formData:{
@@ -788,7 +797,7 @@
 **示例代码:**
 
     wx.downloadFile({
-      url: 'http://example.com/audio/123', //仅为示例，并非真实的资源
+      url: 'https://example.com/audio/123', //仅为示例，并非真实的资源
       success: function(res) {
         wx.playVoice({
           filePath: res.tempFilePath

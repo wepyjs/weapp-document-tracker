@@ -297,6 +297,20 @@
 
 <tr>
 
+<td>cursor</td>
+
+<td>Number</td>
+
+<td></td>
+
+<td>指定focus时的光标位置</td>
+
+<td>[1.5.0](../framework/compatibility.html "基础库 1.5.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>bindfocus</td>
 
 <td>EventHandle</td>
@@ -345,7 +359,7 @@
 
 <td></td>
 
-<td>当键盘输入时，触发 input 事件，event.detail = {value: value}， **bindinput 处理函数的返回值并不会反映到 textarea 上**</td>
+<td>当键盘输入时，触发 input 事件，event.detail = {value, cursor}， **bindinput 处理函数的返回值并不会反映到 textarea 上**</td>
 
 <td></td>
 

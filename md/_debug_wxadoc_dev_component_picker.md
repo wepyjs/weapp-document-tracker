@@ -221,8 +221,6 @@
 
 <th>说明</th>
 
-<th>最低版本</th>
-
 </tr>
 
 </thead>
@@ -551,6 +549,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -567,6 +567,22 @@
 
 <td>表示选中的省市区，默认选中每一列的第一个值</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>custom-item</td>
+
+<td>String</td>
+
+<td></td>
+
+<td>可为每一列的顶部添加一个自定义的项</td>
+
+<td>[1.5.0](../framework/compatibility.html "基础库 1.5.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 <tr>
@@ -578,6 +594,8 @@
 <td></td>
 
 <td>value 改变时触发 change 事件，event.detail = {value: value}</td>
+
+<td></td>
 
 </tr>
 
@@ -634,7 +652,7 @@
     </view>
     <view class="section">
       <view class="section__title">省市区选择器</view>
-      <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
         <view class="picker">
           当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
         </view>
@@ -709,7 +727,8 @@
         multiIndex: [0, 0, 0],
         date: '2016-09-01',
         time: '12:01',
-        region: ['广东省', '广州市', '海珠区']
+        region: ['广东省', '广州市', '海珠区'],
+        customItem: '全部'
       },
       bindPickerChange: function(e) {
         console.log('picker发送选择改变，携带值为', e.detail.value)

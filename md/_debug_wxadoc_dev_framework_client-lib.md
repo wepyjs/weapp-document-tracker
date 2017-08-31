@@ -76,6 +76,14 @@
         *   [模板](view/wxml/template.html)
         *   [事件](view/wxml/event.html)
         *   [引用](view/wxml/import.html)
+    *   [WXS](view/wxs/)
+        *   [模块](view/wxs/01wxs-module.html)
+        *   [变量](view/wxs/02variate.html)
+        *   [注释](view/wxs/03annotation.html)
+        *   [运算符](view/wxs/04operator.html)
+        *   [语句](view/wxs/05statement.html)
+        *   [数据类型](view/wxs/06datatype.html)
+        *   [基础类库](view/wxs/07basiclibrary.html)
     *   [WXSS](view/wxss.html)
     *   [组件](view/component.html)
 *   [基础库](client-lib.html)
@@ -141,7 +149,23 @@
 
 <tr>
 
-<td>1.4.4</td>
+<td>1.5.3</td>
+
+<td>0.56%</td>
+
+</tr>
+
+<tr>
+
+<td>1.5.2</td>
+
+<td>80.32%</td>
+
+</tr>
+
+<tr>
+
+<td>1.5.1</td>
 
 <td>0.00%</td>
 
@@ -149,9 +173,25 @@
 
 <tr>
 
+<td>1.5.0</td>
+
+<td>0.00%</td>
+
+</tr>
+
+<tr>
+
+<td>1.4.4</td>
+
+<td>8.58%</td>
+
+</tr>
+
+<tr>
+
 <td>1.4.3</td>
 
-<td>79.21%</td>
+<td>0.00%</td>
 
 </tr>
 
@@ -183,7 +223,7 @@
 
 <td>1.3.0</td>
 
-<td>7.64%</td>
+<td>3.00%</td>
 
 </tr>
 
@@ -199,7 +239,7 @@
 
 <td>1.2.5</td>
 
-<td>5.45%</td>
+<td>2.80%</td>
 
 </tr>
 
@@ -247,7 +287,7 @@
 
 <td>1.1.1</td>
 
-<td>5.04%</td>
+<td>2.99%</td>
 
 </tr>
 
@@ -263,7 +303,7 @@
 
 <td>1.0.1</td>
 
-<td>2.66%</td>
+<td>1.75%</td>
 
 </tr>
 
@@ -279,7 +319,7 @@
 
 </table>
 
-(数据截止 2017-07-25)
+(数据截止 2017-08-28)
 
 #### Android
 
@@ -301,7 +341,23 @@
 
 <tr>
 
-<td>1.4.4</td>
+<td>1.5.3</td>
+
+<td>0.40%</td>
+
+</tr>
+
+<tr>
+
+<td>1.5.2</td>
+
+<td>60.96%</td>
+
+</tr>
+
+<tr>
+
+<td>1.5.1</td>
 
 <td>0.00%</td>
 
@@ -309,9 +365,25 @@
 
 <tr>
 
+<td>1.5.0</td>
+
+<td>0.00%</td>
+
+</tr>
+
+<tr>
+
+<td>1.4.4</td>
+
+<td>26.21%</td>
+
+</tr>
+
+<tr>
+
 <td>1.4.3</td>
 
-<td>71.97%</td>
+<td>0.00%</td>
 
 </tr>
 
@@ -319,7 +391,7 @@
 
 <td>1.4.2</td>
 
-<td>0.01%</td>
+<td>0.00%</td>
 
 </tr>
 
@@ -359,7 +431,7 @@
 
 <td>1.2.5</td>
 
-<td>22.37%</td>
+<td>6.82%</td>
 
 </tr>
 
@@ -367,7 +439,7 @@
 
 <td>1.2.4</td>
 
-<td>0.35%</td>
+<td>0.17%</td>
 
 </tr>
 
@@ -383,7 +455,7 @@
 
 <td>1.2.2</td>
 
-<td>0.01%</td>
+<td>0.00%</td>
 
 </tr>
 
@@ -407,7 +479,7 @@
 
 <td>1.1.1</td>
 
-<td>2.89%</td>
+<td>1.62%</td>
 
 </tr>
 
@@ -423,7 +495,7 @@
 
 <td>1.0.1</td>
 
-<td>1.36%</td>
+<td>3.24%</td>
 
 </tr>
 
@@ -431,7 +503,7 @@
 
 <td>1.0.0</td>
 
-<td>1.03%</td>
+<td>0.57%</td>
 
 </tr>
 
@@ -439,7 +511,7 @@
 
 </table>
 
-(数据截止 2017-07-25)
+(数据截止 2017-08-28)
 
 </section>
 

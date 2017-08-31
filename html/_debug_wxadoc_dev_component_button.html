@@ -723,6 +723,7 @@
 <th>&#x7C7B;&#x578B;</th>
 <th>&#x9ED8;&#x8BA4;&#x503C;</th>
 <th>&#x8BF4;&#x660E;</th>
+<th>&#x751F;&#x6548;&#x65F6;&#x673A;</th>
 <th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th>
 </tr>
 </thead>
@@ -733,12 +734,14 @@
 <td>default</td>
 <td>&#x6309;&#x94AE;&#x7684;&#x5927;&#x5C0F;</td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td>type</td>
 <td>String</td>
 <td>default</td>
 <td>&#x6309;&#x94AE;&#x7684;&#x6837;&#x5F0F;&#x7C7B;&#x578B;</td>
+<td></td>
 <td></td>
 </tr>
 <tr>
@@ -747,12 +750,14 @@
 <td>false</td>
 <td>&#x6309;&#x94AE;&#x662F;&#x5426;&#x9542;&#x7A7A;&#xFF0C;&#x80CC;&#x666F;&#x8272;&#x900F;&#x660E;</td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td>disabled</td>
 <td>Boolean</td>
 <td>false</td>
 <td>&#x662F;&#x5426;&#x7981;&#x7528;</td>
+<td></td>
 <td></td>
 </tr>
 <tr>
@@ -761,6 +766,7 @@
 <td>false</td>
 <td>&#x540D;&#x79F0;&#x524D;&#x662F;&#x5426;&#x5E26; loading &#x56FE;&#x6807;</td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td>form-type</td>
@@ -768,12 +774,14 @@
 <td></td>
 <td>&#x7528;&#x4E8E; <code>&lt;form/&gt;</code> &#x7EC4;&#x4EF6;&#xFF0C;&#x70B9;&#x51FB;&#x5206;&#x522B;&#x4F1A;&#x89E6;&#x53D1; <code>&lt;form/&gt;</code> &#x7EC4;&#x4EF6;&#x7684; submit/reset &#x4E8B;&#x4EF6;</td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td>open-type</td>
 <td>String</td>
 <td></td>
 <td>&#x5FAE;&#x4FE1;&#x5F00;&#x653E;&#x80FD;&#x529B;</td>
+<td></td>
 <td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.1.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.1.0</a></td>
 </tr>
 <tr>
@@ -782,12 +790,22 @@
 <td>button-hover</td>
 <td>&#x6307;&#x5B9A;&#x6309;&#x94AE;&#x6309;&#x4E0B;&#x53BB;&#x7684;&#x6837;&#x5F0F;&#x7C7B;&#x3002;&#x5F53; <code>hover-class=&quot;none&quot;</code> &#x65F6;&#xFF0C;&#x6CA1;&#x6709;&#x70B9;&#x51FB;&#x6001;&#x6548;&#x679C;</td>
 <td></td>
+<td></td>
+</tr>
+<tr>
+<td>hover-stop-propagation</td>
+<td>Boolean</td>
+<td>false</td>
+<td>&#x6307;&#x5B9A;&#x662F;&#x5426;&#x963B;&#x6B62;&#x672C;&#x8282;&#x70B9;&#x7684;&#x7956;&#x5148;&#x8282;&#x70B9;&#x51FA;&#x73B0;&#x70B9;&#x51FB;&#x6001;</td>
+<td></td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.5.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.5.0</a></td>
 </tr>
 <tr>
 <td>hover-start-time</td>
 <td>Number</td>
 <td>20</td>
 <td>&#x6309;&#x4F4F;&#x540E;&#x591A;&#x4E45;&#x51FA;&#x73B0;&#x70B9;&#x51FB;&#x6001;&#xFF0C;&#x5355;&#x4F4D;&#x6BEB;&#x79D2;</td>
+<td></td>
 <td></td>
 </tr>
 <tr>
@@ -796,24 +814,78 @@
 <td>70</td>
 <td>&#x624B;&#x6307;&#x677E;&#x5F00;&#x540E;&#x70B9;&#x51FB;&#x6001;&#x4FDD;&#x7559;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#x6BEB;&#x79D2;</td>
 <td></td>
-</tr>
-<tr>
-<td>session-from</td>
-<td>String</td>
 <td></td>
-<td>open-type=&quot;contact&quot;&#x65F6;&#x6709;&#x6548;&#xFF1A;&#x7528;&#x6237;&#x4ECE;&#x8BE5;&#x6309;&#x94AE;&#x8FDB;&#x5165;&#x4F1A;&#x8BDD;&#x65F6;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x5C06;&#x6536;&#x5230;&#x5E26;&#x4E0A;&#x672C;&#x53C2;&#x6570;&#x7684;&#x4E8B;&#x4EF6;&#x63A8;&#x9001;&#x3002;&#x672C;&#x53C2;&#x6570;&#x53EF;&#x7528;&#x4E8E;&#x533A;&#x5206;&#x7528;&#x6237;&#x8FDB;&#x5165;&#x5BA2;&#x670D;&#x4F1A;&#x8BDD;&#x7684;&#x6765;&#x6E90;&#x3002;</td>
-<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.4.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.4.0</a></td>
 </tr>
 <tr>
 <td>bindgetuserinfo</td>
 <td>Handler</td>
 <td></td>
-<td>open-type=&quot;getUserInfo&quot;&#x65F6;&#x6709;&#x6548;&#xFF1A;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x8BE5;&#x6309;&#x94AE;&#x65F6;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x7528;&#x6237;&#x4FE1;&#x606F;&#xFF0C;&#x4ECE;&#x8FD4;&#x56DE;&#x53C2;&#x6570;&#x7684;detail&#x4E2D;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x503C;&#x540C;<a href="../api/open.html#wxgetuserinfoobject">wx.getUserInfo</a></td>
+<td>&#x7528;&#x6237;&#x70B9;&#x51FB;&#x8BE5;&#x6309;&#x94AE;&#x65F6;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x7528;&#x6237;&#x4FE1;&#x606F;&#xFF0C;&#x4ECE;&#x8FD4;&#x56DE;&#x53C2;&#x6570;&#x7684;detail&#x4E2D;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x503C;&#x540C;<a href="../api/open.html#wxgetuserinfoobject">wx.getUserInfo</a></td>
+<td>open-type=&quot;getUserInfo&apos;</td>
 <td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.3.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.3.0</a></td>
+</tr>
+<tr>
+<td>session-from</td>
+<td>String</td>
+<td></td>
+<td>&#x4F1A;&#x8BDD;&#x6765;&#x6E90;</td>
+<td>open-type=&quot;contact&quot;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.4.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.4.0</a></td>
+</tr>
+<tr>
+<td>send-message-title</td>
+<td>String</td>
+<td>&#x5F53;&#x524D;&#x6807;&#x9898;</td>
+<td>&#x4F1A;&#x8BDD;&#x5185;&#x6D88;&#x606F;&#x5361;&#x7247;&#x6807;&#x9898;</td>
+<td>open-type=&quot;contact&quot;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.5.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.5.0</a></td>
+</tr>
+<tr>
+<td>send-message-path</td>
+<td>String</td>
+<td>&#x5F53;&#x524D;&#x5206;&#x4EAB;&#x8DEF;&#x5F84;</td>
+<td>&#x4F1A;&#x8BDD;&#x5185;&#x6D88;&#x606F;&#x5361;&#x7247;&#x70B9;&#x51FB;&#x8DF3;&#x8F6C;&#x5C0F;&#x7A0B;&#x5E8F;&#x8DEF;&#x5F84;</td>
+<td>open-type=&quot;contact&quot;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.5.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.5.0</a></td>
+</tr>
+<tr>
+<td>send-message-img</td>
+<td>String</td>
+<td>&#x622A;&#x56FE;</td>
+<td>&#x4F1A;&#x8BDD;&#x5185;&#x6D88;&#x606F;&#x5361;&#x7247;&#x56FE;&#x7247;</td>
+<td>open-type=&quot;contact&quot;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.5.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.5.0</a></td>
+</tr>
+<tr>
+<td>show-message-card</td>
+<td>Boolean</td>
+<td>false</td>
+<td>&#x663E;&#x793A;&#x4F1A;&#x8BDD;&#x5185;&#x6D88;&#x606F;&#x5361;&#x7247;</td>
+<td>open-type=&quot;contact&quot;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.5.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.5.0</a></td>
+</tr>
+<tr>
+<td>bindcontact</td>
+<td>Handler</td>
+<td></td>
+<td>&#x5BA2;&#x670D;&#x6D88;&#x606F;&#x56DE;&#x8C03;</td>
+<td>open-type=&quot;contact&quot;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.5.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.5.0</a></td>
+</tr>
+<tr>
+<td>bindgetphonenumber</td>
+<td>Handler</td>
+<td></td>
+<td>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x624B;&#x673A;&#x53F7;&#x56DE;&#x8C03;</td>
+<td>open-type=&quot;getphonenumber&quot;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.2.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.2.0</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>&#x6CE8;&#xFF1A;<code>button-hover</code> &#x9ED8;&#x8BA4;&#x4E3A;<code>{background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}</code></strong></p>
+<ul>
+<li><strong>&#x6CE8;1&#xFF1A;<code>button-hover</code> &#x9ED8;&#x8BA4;&#x4E3A;<code>{background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}</code></strong></li>
+<li><strong>&#x6CE8;2&#xFF1A;<code>bindgetphonenumber</code> &#x4ECE;1.2.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F46;&#x662F;&#x5728;1.5.3&#x4EE5;&#x4E0B;&#x7248;&#x672C;&#x4E2D;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;<code>wx.canIUse</code>&#x8FDB;&#x884C;&#x68C0;&#x6D4B;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x57FA;&#x7840;&#x5E93;&#x7248;&#x672C;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#x3002;</strong></li>
+</ul>
 <p><strong>size &#x6709;&#x6548;&#x503C;&#xFF1A;</strong></p>
 <table>
 <thead>
@@ -897,6 +969,11 @@
 <td>getUserInfo</td>
 <td>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE;bindgetuserinfo&#x56DE;&#x8C03;&#x4E2D;&#x83B7;&#x53D6;&#x5230;&#x7528;&#x6237;&#x4FE1;&#x606F;</td>
 <td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.3.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.3.0</a></td>
+</tr>
+<tr>
+<td>getPhoneNumber</td>
+<td>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x624B;&#x673A;&#x53F7;&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE;bindgetphonenumber&#x56DE;&#x8C03;&#x7528;&#x83B7;&#x53D6;&#x5230;&#x7528;&#x6237;&#x4FE1;&#x606F;&#xFF0C;<a href="../api/getPhoneNumber.html">&#x89E3;&#x5305;&#x65B9;&#x5F0F;</a></td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.2.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.2.0</a></td>
 </tr>
 </tbody>
 </table>

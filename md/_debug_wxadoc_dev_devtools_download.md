@@ -60,25 +60,47 @@
 <nav role="navigation">
 
 *   [概览](devtools.html)
-*   [程序调试](debug.html)
+*   [云测试](monkey-test.html)
+*   [界面](page.html)
+    *   [启动页](page.html#启动页)
+    *   [菜单栏](page.html#菜单栏)
+    *   [工具栏](page.html#工具栏)
+    *   [模拟器](page.html#模拟器)
+    *   [设置](settings.html)
+        *   [外观设置](settings.html#外观设置)
+        *   [编辑设置](settings.html#编辑设置)
+        *   [通知设置](settings.html#通知设置)
+        *   [代理设置](settings.html#代理设置)
+    *   [项目页卡](project.html)
+        *   [项目设置](project.html#项目设置)
+        *   [域名信息](project.html#域名信息)
+        *   [腾讯云状态](project.html#腾讯云状态)
+*   [快捷键](shortcut.html)
+*   [代码编辑](edit.html)
+    *   [文件格式](edit.html#文件格式)
+    *   [文件类型](edit.html#文件支持)
+    *   [自动补全](edit.html#自动补全)
+    *   [项目配置文件](edit.html#项目配置文件)
+*   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
+    *   [自定义编译](debug.html#自定义编译)
+    *   [前后台切换](debug.html#前后台切换)
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
-        *   [Network Panel](debug.html#network-panel)
         *   [Appdata Panel](debug.html#appdata-panel)
         *   [Storage Panel](debug.html#storage-panel)
+        *   [Network Panel](debug.html#network-panel)
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
-    *   [小程序操作区](debug.html#小程序操作区)
     *   [自定义数据上报](debug.html#自定义数据上报)
-*   [特殊 API 的调试](different.html)
-*   [代码编辑](edit.html)
-*   [设置](settings.html)
-*   [项目预览](project.html)
+    *   [特殊场景调试](different.html)
 *   [第三方平台](ext.html)
+*   [实现差异](details.html)
+    *   [运行环境差异](details.html#运行环境差异)
+    *   [ES6 支持情况](details.html#客户端es6-api-支持情况)
+    *   [API 实现差异](notsupport.html)
 *   [下载](download.html)
-*   [细节点](details.html)
 *   [历史更新日志](uplog.html)
 
 </nav>
@@ -101,38 +123,36 @@
 
 ## 下载地址
 
-### 最新版本 2017.07.20 (0.20.191900)
+### 最新版本 2017.08.31 (1.01.170831)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
 
-### 基础库更新（1.4.3）
+### 开发工具更新
 
-1.  `A` 新增 API `setTopBarText` 设置置顶信息 [详情](../api/ui.html#wxsettopbartextobject)
+1.  `A` 新增 快捷键 `F8` 显示隐藏工具栏
+2.  `U` 优化 当有错误的时候 `console` 面板不会自动弹出
+3.  `F` 修复 保存时自动编译，编译时自动保存无法保存所有文件的问题
+4.  `F` 修复 第三方平台小程序打开项目报错的问题
+5.  `F` 修复 启动工具后显示网络连接错误，增加错误提示
+6.  `F` 修复 模拟器在一些设备上显示模糊的问题
+7.  `F` 修复 `wxss` 编译错误提示不正确的问题
+8.  `F` 修复 某些第三方编辑器打开文件会触发工具自动编译的问题
+9.  `F` 修复 网页调试 hash 变化会 load 页面的问题
+10.  `F` 修复 网页调试 `alert`、`confirm` 不显示的问题
+11.  `F` 修复 网页调试添加卡券屏幕缩放无效的问题
+12.  `F` 修复 网页调试 `urlbar` 输入后自动匹配，按键盘向下键然后 `load` 不了
 
-### 基础库更新 (1.4.2)
+### 历史版本下载 2017.08.30 (0.22.203100)
 
-1.  `F` 修复 组件 `<cover-view />` 在某些情况下真机上无法覆盖在 `<map />` 组件上的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=3966c31758ee359cd956cfaebd4e8683)
-2.  `F` 修复 组件 `<open-data />` 请求数据顺序的问题
-3.  `F` 修复 组件 `<canvas />` 动态变化大小后 `canvasToTempFilePath` 的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=21fb347ea7d9a0715faeb1e274c32a66)
+[windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_darwin&from=mpwiki)
 
-### 基础库更新 (1.4.1)
+### 开发工具更新
 
-1.  `U` 更新 API `createSelectorQuery` 可获取元素的属性
-2.  `U` 更新 API `reLaunch` 逻辑，此版本开始 `reLaunch` 不可在小程序进入后台后调用
-3.  `F` 修复 API `getBLEDeviceCharacteristics` 在开发者工具中请求失败的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=28012b227d377bcf8482702760c37ff5)
-4.  `F` 修复 API `canvasToTempFilePath` 在 iOS 中坐标偏移的问题 [详情](http://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=4ab78e3831f27bba978a9dd501ba9210)
-5.  `F` 修复 组件 `<rich-text />` 没有检查参数为空的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=f4c572208d66102411b9119a07c1cfd5)
-6.  `F` 修复 组件 `<open-data />` 组件无法获取群名称的问题 [详情](http://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=ffe8f510fffb57cd39aa520af5779071)
-7.  `F` 修复 组件 `<map />` 在开发者工具中无法移动和触发事件的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=8961072b9a2ebc7be89b6d62df8c8067)
-8.  `F` 修复 组件 `<cover-image />` 在开发者工具中无法预览临时图片的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=f666e86c5871733ee41a0f7b5e3e4898)
-9.  `F` 修复 组件 `<text-area />` 在 iOS 中设置 `color` 无效的问题 [详情](http://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=c123349d20be1c79c565e852339c5aab)
-10.  `F` 修复 基础框架 重新打开小程序的时 `App.onShow` 未正确获取 `path` 和 `query` 的问题
-
-### 工具更新
-
-1.  `A` 新增 功能 自定义数据上报调试 [详情](debug.html#自定义数据上报)
-2.  `F` 修复 `<picker />` `bindchange` 事件选中 `value` 值不对的问题
-3.  `F` 修复 编辑器设置自动换行和主题不生效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1429295584&docid=951b8851981f76e4c8b64fdf90461451)
+1.  `A` 新增 申请测试报告功能 [详情](monkey-test.html)
+2.  `A` 新增 `WXS` 功能 [详情](../framework/view/wxs/)
+3.  `A` 新增 发布腾讯云功能 [详情](https://mp.weixin.qq.com/debug/wxadoc/introduction/qcloud.html)
+4.  `U` 优化 全新的视觉和交互体验
+5.  `U` 优化 更新内核版本
 
 ## 历史更新日志
 
@@ -177,6 +197,6 @@
 
 </div>
 
-[](ext.html)[](details.html)</div>
+[](notsupport.html)[](uplog.html)</div>
 
 </div>

@@ -265,6 +265,7 @@
         *   [clearActions](../canvas/clear-actions.html)
     *   [下拉刷新](../pulldown.html)
         *   [Page.onPullDownRefresh](../pulldown.html#onpulldownrefresh)
+        *   [wx.startPullDownRefresh](../pulldown.html#wxstartpulldownrefresh)
         *   [wx.stopPullDownRefresh](../pulldown.html#wxstoppulldownrefresh)
 *   [WXML节点信息](../wxml-nodes-info.html)
     *   [wx.createSelectorQuery](../wxml-nodes-info.html#wxcreateselectorquery)
@@ -287,6 +288,7 @@
         *   [wx.authorize](../authorize.html#wxauthorizeobject)
     *   [用户信息](../open.html)
         *   [wx.getUserInfo](../open.html#wxgetuserinfoobject)
+        *   [getPhoneNumber](../getPhoneNumber.html)
         *   [UnionID机制说明](../uinionID.html)
     *   [微信支付](../api-pay.html)
         *   [wx.requestPayment](../api-pay.html#wxrequestpaymentobject)
@@ -298,12 +300,14 @@
         *   [接收消息和事件](receive.html#接收消息和事件)
             *   [文本消息](receive.html#文本消息)
             *   [图片消息](receive.html#图片消息)
+            *   [小程序卡片消息](receive.html#小程序卡片消息)
             *   [进入会话事件](receive.html#进入会话事件)
         *   [发送客服消息](conversation.html)
         *   [转发消息](trans.html)
         *   [临时素材接口](material.html)
             *   [获取临时素材](material.html#获取临时素材)
             *   [新增临时素材](material.html#新增临时素材)
+        *   [客服输入状态](typing.html)
         *   [接入指引](callback_help.html)
     *   [转发](../share.html)
         *   [Page.onShareAppMessage](../share.html#onshareappmessage)
@@ -327,6 +331,11 @@
     *   [打开小程序](../navigateToMiniProgram.html)
         *   [wx.navigateToMiniProgram](../navigateToMiniProgram.html)
         *   [wx.navigateBackMiniProgram](../navigateBackMiniProgram.html)
+    *   [获取发票抬头](../chooseInvoiceTitle.html)
+        *   [wx.chooseInvoiceTitle](../chooseInvoiceTitle.html)
+    *   [生物认证](../checkIsSupportSoterAuthentication.html)
+        *   [wx.checkIsSupportSoterAuthentication](../checkIsSupportSoterAuthentication.html)
+        *   [wx.startSoterAuthentication](../startSoterAuthentication.html)
 *   [数据](../analysis.html)
     *   [常规分析](../analysis.html)
         *   [概况](../analysis.html#概况)
@@ -513,6 +522,6 @@ PHP示例代码下载：[下载](https://wximg.gtimg.com/shake_tv/mpwiki/cryptoD
 
 </div>
 
-[](material.html#新增临时素材)[](../share.html)</div>
+[](typing.html)[](../share.html)</div>
 
 </div>

@@ -133,6 +133,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -149,6 +151,8 @@
 
 <td>应用内的跳转链接</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -160,6 +164,8 @@
 <td>navigate</td>
 
 <td>跳转方式</td>
+
+<td></td>
 
 </tr>
 
@@ -173,6 +179,8 @@
 
 <td>当 open-type 为 'navigateBack' 时有效，表示回退的层数</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -185,6 +193,22 @@
 
 <td>指定点击时的样式类，当`hover-class="none"`时，没有点击态效果</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>hover-stop-propagation</td>
+
+<td>Boolean</td>
+
+<td>false</td>
+
+<td>指定是否阻止本节点的祖先节点出现点击态</td>
+
+<td>[1.5.0](../framework/compatibility.html "基础库 1.5.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 <tr>
@@ -196,6 +220,8 @@
 <td>50</td>
 
 <td>按住后多久出现点击态，单位毫秒</td>
+
+<td></td>
 
 </tr>
 

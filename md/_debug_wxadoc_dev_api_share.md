@@ -265,6 +265,7 @@
         *   [clearActions](canvas/clear-actions.html)
     *   [下拉刷新](pulldown.html)
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
+        *   [wx.startPullDownRefresh](pulldown.html#wxstartpulldownrefresh)
         *   [wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)
 *   [WXML节点信息](wxml-nodes-info.html)
     *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
@@ -287,6 +288,7 @@
         *   [wx.authorize](authorize.html#wxauthorizeobject)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
+        *   [getPhoneNumber](getPhoneNumber.html)
         *   [UnionID机制说明](uinionID.html)
     *   [微信支付](api-pay.html)
         *   [wx.requestPayment](api-pay.html#wxrequestpaymentobject)
@@ -298,12 +300,14 @@
         *   [接收消息和事件](custommsg/receive.html#接收消息和事件)
             *   [文本消息](custommsg/receive.html#文本消息)
             *   [图片消息](custommsg/receive.html#图片消息)
+            *   [小程序卡片消息](custommsg/receive.html#小程序卡片消息)
             *   [进入会话事件](custommsg/receive.html#进入会话事件)
         *   [发送客服消息](custommsg/conversation.html)
         *   [转发消息](custommsg/trans.html)
         *   [临时素材接口](custommsg/material.html)
             *   [获取临时素材](custommsg/material.html#获取临时素材)
             *   [新增临时素材](custommsg/material.html#新增临时素材)
+        *   [客服输入状态](custommsg/typing.html)
         *   [接入指引](custommsg/callback_help.html)
     *   [转发](share.html)
         *   [Page.onShareAppMessage](share.html#onshareappmessage)
@@ -327,6 +331,11 @@
     *   [打开小程序](navigateToMiniProgram.html)
         *   [wx.navigateToMiniProgram](navigateToMiniProgram.html)
         *   [wx.navigateBackMiniProgram](navigateBackMiniProgram.html)
+    *   [获取发票抬头](chooseInvoiceTitle.html)
+        *   [wx.chooseInvoiceTitle](chooseInvoiceTitle.html)
+    *   [生物认证](checkIsSupportSoterAuthentication.html)
+        *   [wx.checkIsSupportSoterAuthentication](checkIsSupportSoterAuthentication.html)
+        *   [wx.startSoterAuthentication](startSoterAuthentication.html)
 *   [数据](analysis.html)
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
@@ -464,6 +473,18 @@
 <td>当前页面 path ，必须是以 / 开头的完整路径</td>
 
 <td></td>
+
+</tr>
+
+<tr>
+
+<td>imageUrl</td>
+
+<td>自定义图片路径，可以是本地文件路径、代码包文件路径或者网络图片路径，支持PNG及JPG，不传入 imageUrl 则使用默认截图。iOS 显示图片长宽比是 5:4，Android 显示图片长宽比是 215:168。高度超出部分会从底部裁剪。**推荐使用 Android 图片长宽比，可保证图片在两个平台都完整显示，其中 iOS 底部会出现一小段白色**</td>
+
+<td></td>
+
+<td>[1.5.0](../framework/compatibility.html "基础库 1.5.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -1055,7 +1076,7 @@
 
 #### Bug & Tip
 
-1.  `tip`: 转发图片不能自定义；会取当前页面，从顶部开始，高度为 80% 屏幕宽度的图像作为转发图片。
+1.  `tip`: 不自定义转发图片的情况下，默认会取当前页面，从顶部开始，高度为 80% 屏幕宽度的图像作为转发图片。
 2.  `tip`: 转发的调试支持请查看 [普通转发的调试支持](../devtools/different.html#普通的转发) 和 [带 shareTicket 的转发](../devtools/different.html#带-shareticket-的转发)
 3.  `tip`: 只有转发到群聊中打开才可以获取到 `shareTickets` 返回值，单聊没有 `shareTickets`
 4.  `tip`: `shareTicket` 仅在当前小程序生命周期内有效

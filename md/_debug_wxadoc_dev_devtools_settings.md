@@ -60,8 +60,31 @@
 <nav role="navigation">
 
 *   [概览](devtools.html)
-*   [程序调试](debug.html)
+*   [云测试](monkey-test.html)
+*   [界面](page.html)
+    *   [启动页](page.html#启动页)
+    *   [菜单栏](page.html#菜单栏)
+    *   [工具栏](page.html#工具栏)
+    *   [模拟器](page.html#模拟器)
+    *   [设置](settings.html)
+        *   [外观设置](settings.html#外观设置)
+        *   [通知设置](settings.html#通知设置)
+        *   [编辑设置](settings.html#编辑设置)
+        *   [代理设置](settings.html#代理设置)
+    *   [项目页卡](project.html)
+        *   [项目设置](project.html#项目设置)
+        *   [域名信息](project.html#域名信息)
+        *   [腾讯云状态](project.html#腾讯云状态)
+*   [快捷键](shortcut.html)
+*   [代码编辑](edit.html)
+    *   [文件格式](edit.html#文件格式)
+    *   [文件类型](edit.html#文件支持)
+    *   [自动补全](edit.html#自动补全)
+    *   [项目配置文件](edit.html#项目配置文件)
+*   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
+    *   [自定义编译](debug.html#自定义编译)
+    *   [前后台切换](debug.html#前后台切换)
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
@@ -70,15 +93,14 @@
         *   [Storage Panel](debug.html#storage-panel)
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
-    *   [小程序操作区](debug.html#小程序操作区)
     *   [自定义数据上报](debug.html#自定义数据上报)
-*   [特殊 API 的调试](different.html)
-*   [代码编辑](edit.html)
-*   [设置](settings.html)
-*   [项目预览](project.html)
+    *   [特殊场景调试](different.html)
 *   [第三方平台](ext.html)
+*   [实现差异](details.html)
+    *   [运行环境差异](details.html#运行环境差异)
+    *   [ES6 支持情况](details.html#客户端es6-api-支持情况)
+    *   [API 实现差异](notsupport.html)
 *   [下载](download.html)
-*   [细节点](details.html)
 *   [历史更新日志](uplog.html)
 
 </nav>
@@ -99,28 +121,24 @@
 
 <section class="normal markdown-section">
 
-设置页提供对编辑器（外观和代码编辑）、代理和通知的配置。
+设置页外观设置、编辑设置、代理设置和通知配置。
 
 ## 入口
 
-菜单栏上点击设置可以打开设置页。设置页侧边栏分别是编辑器、代理和通知的配置。
+菜单栏上点击设置，或者使用快捷键 ctrl(command) + , 可以打开设置页。
 
-![main](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_main.png)
-
-## 编辑器配置
+### 外观设置
 
 编辑器支持配置外观和代码编辑器习惯和风格。
-
-### 编辑器外观配置
 
 *   主题：白色、深色、黑色
 *   字体
 *   字号
 *   行距
 
-![appearance](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_appearance.png)
+![appearance](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/setting_appearance.png)
 
-### 编辑配置支持
+### 编辑设置
 
 *   修改文件时自动保存
 *   编译时自动保存所有文件
@@ -129,19 +147,19 @@
 *   用空格代替 Tab
 *   Tab 大小
 
-![edit](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_edit.png)
+![edit](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/setting_edit.png)
 
-## 代理配置
+## 代理设置
 
 可以配置不使用代理，或使用系统代理，或使用自定义代理。
 
-![proxy](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_proxy.png)
+![proxy](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/setting_proxy.png)
 
-## 通知配置
+## 通知设置
 
-可以配置系统消息和开发者社区消息通知。
+可以设置是否接受系统消息、开发者社区消息、监控报警消息。
 
-![bbs](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/settings_bbs.png)
+![bbs](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/setting_notice.png)
 
 </section>
 
@@ -182,6 +200,6 @@
 
 </div>
 
-[](edit.html)[](project.html)</div>
+[](page.html#模拟器)[](settings.html#外观设置)</div>
 
 </div>

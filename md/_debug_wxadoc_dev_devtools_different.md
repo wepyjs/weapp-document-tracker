@@ -60,8 +60,31 @@
 <nav role="navigation">
 
 *   [概览](devtools.html)
-*   [程序调试](debug.html)
+*   [云测试](monkey-test.html)
+*   [界面](page.html)
+    *   [启动页](page.html#启动页)
+    *   [菜单栏](page.html#菜单栏)
+    *   [工具栏](page.html#工具栏)
+    *   [模拟器](page.html#模拟器)
+    *   [设置](settings.html)
+        *   [外观设置](settings.html#外观设置)
+        *   [通知设置](settings.html#通知设置)
+        *   [编辑设置](settings.html#编辑设置)
+        *   [代理设置](settings.html#代理设置)
+    *   [项目页卡](project.html)
+        *   [项目设置](project.html#项目设置)
+        *   [域名信息](project.html#域名信息)
+        *   [腾讯云状态](project.html#腾讯云状态)
+*   [快捷键](shortcut.html)
+*   [代码编辑](edit.html)
+    *   [文件格式](edit.html#文件格式)
+    *   [文件类型](edit.html#文件支持)
+    *   [自动补全](edit.html#自动补全)
+    *   [项目配置文件](edit.html#项目配置文件)
+*   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
+    *   [自定义编译](debug.html#自定义编译)
+    *   [前后台切换](debug.html#前后台切换)
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
@@ -70,15 +93,14 @@
         *   [Storage Panel](debug.html#storage-panel)
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
-    *   [小程序操作区](debug.html#小程序操作区)
     *   [自定义数据上报](debug.html#自定义数据上报)
-*   [特殊 API 的调试](different.html)
-*   [代码编辑](edit.html)
-*   [设置](settings.html)
-*   [项目预览](project.html)
+    *   [特殊场景调试](different.html)
 *   [第三方平台](ext.html)
+*   [实现差异](details.html)
+    *   [运行环境差异](details.html#运行环境差异)
+    *   [ES6 支持情况](details.html#客户端es6-api-支持情况)
+    *   [API 实现差异](notsupport.html)
 *   [下载](download.html)
-*   [细节点](details.html)
 *   [历史更新日志](uplog.html)
 
 </nav>
@@ -115,6 +137,20 @@
 
 使用的交互有所不同，但是接口的输入输出工具同客户端是保持一致的。
 
+## 启动使用自定义参数
+
+在日常使用中，用户可以通过扫码、分享打开一个小程序，这时候会依据设置的启动页面：`path` 跳转到对应的小程序页面（不一定是首页）并且可以携带参数：`query`。在开发者工具中，开发者同样可以通过自定义编译条件的方式来达到调试不同启动页面和启动参数的目的。
+
+例如下图是选择进入页面是 `page/API/index`，参数 是 `name=can`
+
+![args](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/pathquery.png)
+
+## 进入场景值
+
+在微信客户端中，用户可能在各个场景下打开小程序 [详情](../framework/app-service/scene.html#场景值) 然而在开发者工具中是没有真实的环境去模拟这些场景的。开发者可以通过条件编译的方式来达到调试不同场景的目的。
+
+![sence](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/scene.png)
+
 ## 普通的转发
 
 开发者工具上调用转发是一个模拟的行为，并不会真实的转发给用户，开发可以通过这个模拟行为判断是否正确的调用了转发 API。
@@ -125,37 +161,19 @@
 
 调用 `wx.showShareMenu` 的参数 `withShareTicket` 为 `true` 时，点击模拟器右上角菜单后出现的转发按钮，会出现一个测试群列表，如图：
 
-![withShareTicket](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/4.png)
+![withShareTicket](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/group.png)
 
 开发者点击选取任何一个群，可以通过接口的回包获取到 `shareTicket` ，通过调用 `wx.getShareInfo` 可以获取到相关转发的信息
 
 当开发者需要调试从某一个群点开，并且带有 `shareTicket` 的场景时，可以使用自定义编译中的 `1044:群聊会话中的小程序消息卡片（带 shareTicket）` 同时可以选择任一模拟测试群，如图
 
-![withShareTicket](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/5.png)
+![withShareTicket](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/shareticket.png)
 
-## 进入场景值
+## 预览使用自定义编译条件
 
-在微信客户端中，用户可能在各个场景下打开小程序 [详情](../framework/app-service/scene.html#场景值) 然而在开发者工具中是没有真实的环境去模拟这些场景的。开发者可以通过条件编译的方式来达到调试不同场景的目的。
+同 **启动使用自定义参数** 相同，提交预览时，开发者可以通过自定义预览的方式来达到在移动设备上调试不同启动页面和启动参数 的目的。我们可以选择已经创建好的自定义编译条件进行预览。
 
-![sence](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/1.png)
-
-## 启动使用自定义参数
-
-在日常使用中，用户可以打开一个小程序，并且依据传入的 `path` 跳转到对应的小程序页面而非启动页面，或者可以通过 `参数` 使得小程序区别默认开打状态，开发者工具中，开发者同样可以通过条件编译的方式来达到调试不同 `path` 和 `参数` 的目的。
-
-例如下图是选择进入页面是 `pages/name/name` `参数` 是 `name=linchao`
-
-![args](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/2.png)
-
-## 预览使用自定义参数
-
-同 **启动使用自定义参数** 相同，提交预览时，开发者可以通过自定义预览的方式来达到在移动设备上调试不同 `path` 和 `参数` 的目的。
-
-例如下图是选择进入页面是 `pages/name/name` `参数` 是 `name=linchao`
-
-![uplodfortest](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/3.png)
-
-## 小程序跳转的调试支持
+## 跳转小程序调试支持
 
 小程序跳转开发调试可以分为两个部分
 
@@ -167,11 +185,11 @@
 
 选择 **自定义编译** 进入场景选择 **1037 从小程序进入** 可以调试小程序被打开时候是否接收到了正确的参数并做了相关处理。
 
-![navigateToMiniProgram](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/6.png)
+![navigateToMiniProgram](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/navigateminiprogram.png)
 
 选择 **自定义编译** 进入场景选择 **1038 从小程序返回** 可以调试小程序返回时候是否接收到了正确的参数并做了相关处理。
 
-![navigateToMiniProgram](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/different/7.png)
+![navigateToMiniProgram](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/navigateminiprogramback.png)
 
 </section>
 
@@ -212,6 +230,6 @@
 
 </div>
 
-[](debug.html#自定义数据上报)[](edit.html)</div>
+[](debug.html#自定义数据上报)[](ext.html)</div>
 
 </div>

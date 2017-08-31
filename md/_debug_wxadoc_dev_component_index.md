@@ -127,7 +127,7 @@
 
         <tagname property="value">
           Content goes here ...
-        </tagename>
+        </tagname>
 
     **注意：所有组件与属性都是小写，以连字符`-`连接**
 

@@ -770,7 +770,6 @@
 <th>&#x7C7B;&#x578B;</th>
 <th>&#x9ED8;&#x8BA4;&#x503C;</th>
 <th>&#x8BF4;&#x660E;</th>
-<th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th>
 </tr>
 </thead>
 <tbody>
@@ -935,6 +934,7 @@
 <th>&#x7C7B;&#x578B;</th>
 <th>&#x9ED8;&#x8BA4;&#x503C;</th>
 <th>&#x8BF4;&#x660E;</th>
+<th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th>
 </tr>
 </thead>
 <tbody>
@@ -943,12 +943,21 @@
 <td>Array</td>
 <td>[]</td>
 <td>&#x8868;&#x793A;&#x9009;&#x4E2D;&#x7684;&#x7701;&#x5E02;&#x533A;&#xFF0C;&#x9ED8;&#x8BA4;&#x9009;&#x4E2D;&#x6BCF;&#x4E00;&#x5217;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x503C;</td>
+<td></td>
+</tr>
+<tr>
+<td>custom-item</td>
+<td>String</td>
+<td></td>
+<td>&#x53EF;&#x4E3A;&#x6BCF;&#x4E00;&#x5217;&#x7684;&#x9876;&#x90E8;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x9879;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.5.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.5.0</a></td>
 </tr>
 <tr>
 <td>bindchange</td>
 <td>EventHandle</td>
 <td></td>
 <td>value &#x6539;&#x53D8;&#x65F6;&#x89E6;&#x53D1; change &#x4E8B;&#x4EF6;&#xFF0C;event.detail = {value: value}</td>
+<td></td>
 </tr>
 <tr>
 <td>disabled</td>
@@ -994,7 +1003,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;section&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;section__title&quot;</span>&gt;</span>&#x7701;&#x5E02;&#x533A;&#x9009;&#x62E9;&#x5668;<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">picker</span> <span class="hljs-attr">mode</span>=<span class="hljs-string">&quot;region&quot;</span> <span class="hljs-attr">bindchange</span>=<span class="hljs-string">&quot;bindRegionChange&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;{{region}}&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">picker</span> <span class="hljs-attr">mode</span>=<span class="hljs-string">&quot;region&quot;</span> <span class="hljs-attr">bindchange</span>=<span class="hljs-string">&quot;bindRegionChange&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;{{region}}&quot;</span> <span class="hljs-attr">custom-item</span>=<span class="hljs-string">&quot;{{customItem}}&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;picker&quot;</span>&gt;</span>
       &#x5F53;&#x524D;&#x9009;&#x62E9;&#xFF1A;{{region[0]}}&#xFF0C;{{region[1]}}&#xFF0C;{{region[2]}}
     <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
@@ -1069,7 +1078,8 @@
     multiIndex: [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>],
     date: <span class="hljs-string">&apos;2016-09-01&apos;</span>,
     time: <span class="hljs-string">&apos;12:01&apos;</span>,
-    region: [<span class="hljs-string">&apos;&#x5E7F;&#x4E1C;&#x7701;&apos;</span>, <span class="hljs-string">&apos;&#x5E7F;&#x5DDE;&#x5E02;&apos;</span>, <span class="hljs-string">&apos;&#x6D77;&#x73E0;&#x533A;&apos;</span>]
+    region: [<span class="hljs-string">&apos;&#x5E7F;&#x4E1C;&#x7701;&apos;</span>, <span class="hljs-string">&apos;&#x5E7F;&#x5DDE;&#x5E02;&apos;</span>, <span class="hljs-string">&apos;&#x6D77;&#x73E0;&#x533A;&apos;</span>],
+    customItem: <span class="hljs-string">&apos;&#x5168;&#x90E8;&apos;</span>
   },
   bindPickerChange: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;picker&#x53D1;&#x9001;&#x9009;&#x62E9;&#x6539;&#x53D8;&#xFF0C;&#x643A;&#x5E26;&#x503C;&#x4E3A;&apos;</span>, e.detail.value)

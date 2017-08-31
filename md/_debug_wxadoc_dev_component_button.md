@@ -133,6 +133,8 @@
 
 <th>说明</th>
 
+<th>生效时机</th>
+
 <th>最低版本</th>
 
 </tr>
@@ -153,6 +155,8 @@
 
 <td></td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -164,6 +168,8 @@
 <td>default</td>
 
 <td>按钮的样式类型</td>
+
+<td></td>
 
 <td></td>
 
@@ -181,6 +187,8 @@
 
 <td></td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -192,6 +200,8 @@
 <td>false</td>
 
 <td>是否禁用</td>
+
+<td></td>
 
 <td></td>
 
@@ -209,6 +219,8 @@
 
 <td></td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -223,6 +235,8 @@
 
 <td></td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -234,6 +248,8 @@
 <td></td>
 
 <td>微信开放能力</td>
+
+<td></td>
 
 <td>[1.1.0](../framework/compatibility.html "基础库 1.1.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -251,6 +267,24 @@
 
 <td></td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>hover-stop-propagation</td>
+
+<td>Boolean</td>
+
+<td>false</td>
+
+<td>指定是否阻止本节点的祖先节点出现点击态</td>
+
+<td></td>
+
+<td>[1.5.0](../framework/compatibility.html "基础库 1.5.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 <tr>
@@ -262,6 +296,8 @@
 <td>20</td>
 
 <td>按住后多久出现点击态，单位毫秒</td>
+
+<td></td>
 
 <td></td>
 
@@ -279,19 +315,7 @@
 
 <td></td>
 
-</tr>
-
-<tr>
-
-<td>session-from</td>
-
-<td>String</td>
-
 <td></td>
-
-<td>open-type="contact"时有效：用户从该按钮进入会话时，开发者将收到带上本参数的事件推送。本参数可用于区分用户进入客服会话的来源。</td>
-
-<td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -303,9 +327,123 @@
 
 <td></td>
 
-<td>open-type="getUserInfo"时有效：用户点击该按钮时，会返回获取到的用户信息，从返回参数的detail中获取到的值同[wx.getUserInfo](../api/open.html#wxgetuserinfoobject)</td>
+<td>用户点击该按钮时，会返回获取到的用户信息，从返回参数的detail中获取到的值同[wx.getUserInfo](../api/open.html#wxgetuserinfoobject)</td>
+
+<td>open-type="getUserInfo'</td>
 
 <td>[1.3.0](../framework/compatibility.html "基础库 1.3.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>session-from</td>
+
+<td>String</td>
+
+<td></td>
+
+<td>会话来源</td>
+
+<td>open-type="contact"</td>
+
+<td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>send-message-title</td>
+
+<td>String</td>
+
+<td>当前标题</td>
+
+<td>会话内消息卡片标题</td>
+
+<td>open-type="contact"</td>
+
+<td>[1.5.0](../framework/compatibility.html "基础库 1.5.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>send-message-path</td>
+
+<td>String</td>
+
+<td>当前分享路径</td>
+
+<td>会话内消息卡片点击跳转小程序路径</td>
+
+<td>open-type="contact"</td>
+
+<td>[1.5.0](../framework/compatibility.html "基础库 1.5.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>send-message-img</td>
+
+<td>String</td>
+
+<td>截图</td>
+
+<td>会话内消息卡片图片</td>
+
+<td>open-type="contact"</td>
+
+<td>[1.5.0](../framework/compatibility.html "基础库 1.5.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>show-message-card</td>
+
+<td>Boolean</td>
+
+<td>false</td>
+
+<td>显示会话内消息卡片</td>
+
+<td>open-type="contact"</td>
+
+<td>[1.5.0](../framework/compatibility.html "基础库 1.5.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>bindcontact</td>
+
+<td>Handler</td>
+
+<td></td>
+
+<td>客服消息回调</td>
+
+<td>open-type="contact"</td>
+
+<td>[1.5.0](../framework/compatibility.html "基础库 1.5.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>bindgetphonenumber</td>
+
+<td>Handler</td>
+
+<td></td>
+
+<td>获取用户手机号回调</td>
+
+<td>open-type="getphonenumber"</td>
+
+<td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -313,7 +451,8 @@
 
 </table>
 
-**注：`button-hover` 默认为`{background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}`**
+*   **注1：`button-hover` 默认为`{background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}`**
+*   **注2：`bindgetphonenumber` 从1.2.0 开始支持，但是在1.5.3以下版本中无法使用`wx.canIUse`进行检测，建议使用基础库版本进行判断。**
 
 **size 有效值：**
 
@@ -480,6 +619,16 @@
 <td>获取用户信息，可以从bindgetuserinfo回调中获取到用户信息</td>
 
 <td>[1.3.0](../framework/compatibility.html "基础库 1.3.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>getPhoneNumber</td>
+
+<td>获取用户手机号，可以从bindgetphonenumber回调用获取到用户信息，[解包方式](../api/getPhoneNumber.html)</td>
+
+<td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

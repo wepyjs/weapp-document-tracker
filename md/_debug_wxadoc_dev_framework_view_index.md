@@ -76,6 +76,14 @@
         *   [模板](wxml/template.html)
         *   [事件](wxml/event.html)
         *   [引用](wxml/import.html)
+    *   [WXS](wxs/)
+        *   [模块](wxs/01wxs-module.html)
+        *   [变量](wxs/02variate.html)
+        *   [注释](wxs/03annotation.html)
+        *   [运算符](wxs/04operator.html)
+        *   [语句](wxs/05statement.html)
+        *   [数据类型](wxs/06datatype.html)
+        *   [基础类库](wxs/07basiclibrary.html)
     *   [WXSS](wxss.html)
     *   [组件](component.html)
 *   [基础库](../client-lib.html)
@@ -109,9 +117,11 @@
 
 将逻辑层的数据反应成视图，同时将视图层的事件发送给逻辑层。
 
-WXML(WeiXin Markup language)用于描述页面的结构。
+WXML(WeiXin Markup language) 用于描述页面的结构。
 
-WXSS(WeiXin Style Sheet)用于描述页面的样式。
+WXS(WeiXin Script) 是小程序的一套脚本语言，结合 `WXML`，可以构建出页面的结构。
+
+WXSS(WeiXin Style Sheet) 用于描述页面的样式。
 
 组件(Component)是视图的基本组成单元。
 

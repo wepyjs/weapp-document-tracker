@@ -76,6 +76,14 @@
         *   [模板](../view/wxml/template.html)
         *   [事件](../view/wxml/event.html)
         *   [引用](../view/wxml/import.html)
+    *   [WXS](../view/wxs/)
+        *   [模块](../view/wxs/01wxs-module.html)
+        *   [变量](../view/wxs/02variate.html)
+        *   [注释](../view/wxs/03annotation.html)
+        *   [运算符](../view/wxs/04operator.html)
+        *   [语句](../view/wxs/05statement.html)
+        *   [数据类型](../view/wxs/06datatype.html)
+        *   [基础类库](../view/wxs/07basiclibrary.html)
     *   [WXSS](../view/wxss.html)
     *   [组件](../view/component.html)
 *   [基础库](../client-lib.html)
@@ -263,6 +271,14 @@
 
 <tr>
 
+<td>1027</td>
+
+<td>顶部搜索框搜索结果页“使用过的小程序”列表</td>
+
+</tr>
+
+<tr>
+
 <td>1028</td>
 
 <td>我的卡包</td>
@@ -431,6 +447,14 @@
 
 <tr>
 
+<td>1064</td>
+
+<td>微信连Wifi状态栏</td>
+
+</tr>
+
+<tr>
+
 <td>1067</td>
 
 <td>公众号文章广告</td>
@@ -449,7 +473,23 @@
 
 <td>1072</td>
 
-<td>二维码收款页面，打开小程序</td>
+<td>二维码收款页面</td>
+
+</tr>
+
+<tr>
+
+<td>1073</td>
+
+<td>客服消息列表下发的小程序消息卡片</td>
+
+</tr>
+
+<tr>
+
+<td>1074</td>
+
+<td>公众号会话下发的小程序消息卡片</td>
 
 </tr>
 

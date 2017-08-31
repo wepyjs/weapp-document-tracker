@@ -76,6 +76,14 @@
         *   [模板](template.html)
         *   [事件](event.html)
         *   [引用](import.html)
+    *   [WXS](../wxs/)
+        *   [模块](../wxs/01wxs-module.html)
+        *   [变量](../wxs/02variate.html)
+        *   [注释](../wxs/03annotation.html)
+        *   [运算符](../wxs/04operator.html)
+        *   [语句](../wxs/05statement.html)
+        *   [数据类型](../wxs/06datatype.html)
+        *   [基础类库](../wxs/07basiclibrary.html)
     *   [WXSS](../wxss.html)
     *   [组件](../component.html)
 *   [基础库](../../client-lib.html)
@@ -186,6 +194,8 @@ WXML的冒泡事件列表：
 
 <th>触发条件</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -198,6 +208,8 @@ WXML的冒泡事件列表：
 
 <td>手指触摸动作开始</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -205,6 +217,8 @@ WXML的冒泡事件列表：
 <td>touchmove</td>
 
 <td>手指触摸后移动</td>
+
+<td></td>
 
 </tr>
 
@@ -214,6 +228,8 @@ WXML的冒泡事件列表：
 
 <td>手指触摸动作被打断，如来电提醒，弹窗</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -221,6 +237,8 @@ WXML的冒泡事件列表：
 <td>touchend</td>
 
 <td>手指触摸动作结束</td>
+
+<td></td>
 
 </tr>
 
@@ -230,13 +248,25 @@ WXML的冒泡事件列表：
 
 <td>手指触摸后马上离开</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>longpress</td>
+
+<td>手指触摸后，超过350ms再离开，如果指定了事件回调函数并触发了这个事件，tap事件将不被触发</td>
+
+<td>[1.5.0](../../compatibility.html "基础库 1.5.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 <tr>
 
 <td>longtap</td>
 
-<td>手指触摸后，超过350ms再离开</td>
+<td>手指触摸后，超过350ms再离开（推荐使用longpress事件代替）</td>
 
 </tr>
 
@@ -246,24 +276,46 @@ WXML的冒泡事件列表：
 
 **注：除上表之外的其他组件自定义事件如无特殊申明都是非冒泡事件，如[`<form/>`](../../../component/form.html)的`submit`事件，[`<input/>`](../../../component/input.html)的`input`事件，[`<scroll-view/>`](../../../component/scroll-view.html)的`scroll`事件，(详见各个[组件](../../../component/))**
 
-### 事件绑定
+### 事件绑定和冒泡
 
 事件绑定的写法同组件的属性，以 key、value 的形式。
 
-*   key 以`bind`或`catch`开头，然后跟上事件的类型，如`bindtap`, `catchtouchstart`
+*   key 以`bind`或`catch`开头，然后跟上事件的类型，如`bindtap`、`catchtouchstart`。自基础库版本 [1.5.0](../../compatibility.html "基础库 1.5.0 开始支持，低版本需做兼容处理。") 起，`bind`和`catch`后可以紧跟一个冒号，其含义不变，如`bind:tap`、、`catch:touchstart`。
 *   value 是一个字符串，需要在对应的 Page 中定义同名的函数。不然当触发事件的时候会报错。
 
 `bind`事件绑定不会阻止冒泡事件向上冒泡，`catch`事件绑定可以阻止冒泡事件向上冒泡。
 
-如在下边这个例子中，点击 inner view 会先后触发`handleTap3`和`handleTap2`(因为tap事件会冒泡到 middle view，而 middle view 阻止了 tap 事件冒泡，不再向父节点传递)，点击 middle view 会触发`handleTap2`，点击 outter view 会触发`handleTap1`。
+如在下边这个例子中，点击 inner view 会先后调用`handleTap3`和`handleTap2`(因为tap事件会冒泡到 middle view，而 middle view 阻止了 tap 事件冒泡，不再向父节点传递)，点击 middle view 会触发`handleTap2`，点击 outer view 会触发`handleTap1`。
 
-    <view id="outter" bindtap="handleTap1">
+    <view id="outer" bindtap="handleTap1">
       outer view
       <view id="middle" catchtap="handleTap2">
         middle view
         <view id="inner" bindtap="handleTap3">
           inner view
         </view>
+      </view>
+    </view>
+
+### 事件的捕获阶段
+
+自基础库版本 [1.5.0](../../compatibility.html "基础库 1.5.0 开始支持，低版本需做兼容处理。") 起，触摸类事件支持捕获阶段。捕获阶段位于冒泡阶段之前，且在捕获阶段中，事件到达节点的顺序与冒泡阶段恰好相反。需要在捕获阶段监听事件时，可以采用`capture-bind`、`capture-catch`关键字，后者将中断捕获阶段和取消冒泡阶段。
+
+在下面的代码中，点击 inner view 会先后调用`handleTap2`、`handleTap4`、`handleTap3`、`handleTap1`。
+
+    <view id="outer" bind:touchstart="handleTap1" capture-bind:touchstart="handleTap2">
+      outer view
+      <view id="inner" bind:touchstart="handleTap3" capture-bind:touchstart="handleTap4">
+        inner view
+      </view>
+    </view>
+
+如果将上面代码中的第一个`capture-bind`改为`capture-catch`，将只触发`handleTap2`。
+
+    <view id="outer" bind:touchstart="handleTap1" capture-catch:touchstart="handleTap2">
+      outer view
+      <view id="inner" bind:touchstart="handleTap3" capture-bind:touchstart="handleTap4">
+        inner view
       </view>
     </view>
 

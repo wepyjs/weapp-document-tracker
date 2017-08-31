@@ -60,8 +60,31 @@
 <nav role="navigation">
 
 *   [概览](devtools.html)
-*   [程序调试](debug.html)
+*   [云测试](monkey-test.html)
+*   [界面](page.html)
+    *   [启动页](page.html#启动页)
+    *   [菜单栏](page.html#菜单栏)
+    *   [工具栏](page.html#工具栏)
+    *   [模拟器](page.html#模拟器)
+    *   [设置](settings.html)
+        *   [外观设置](settings.html#外观设置)
+        *   [通知设置](settings.html#通知设置)
+        *   [编辑设置](settings.html#编辑设置)
+        *   [代理设置](settings.html#代理设置)
+    *   [项目页卡](project.html)
+        *   [项目设置](project.html#项目设置)
+        *   [域名信息](project.html#域名信息)
+        *   [腾讯云状态](project.html#腾讯云状态)
+*   [快捷键](shortcut.html)
+*   [代码编辑](edit.html)
+    *   [文件格式](edit.html#文件格式)
+    *   [文件类型](edit.html#文件支持)
+    *   [自动补全](edit.html#自动补全)
+    *   [项目配置文件](edit.html#项目配置文件)
+*   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
+    *   [自定义编译](debug.html#自定义编译)
+    *   [前后台切换](debug.html#前后台切换)
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
@@ -70,15 +93,14 @@
         *   [Storage Panel](debug.html#storage-panel)
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
-    *   [小程序操作区](debug.html#小程序操作区)
     *   [自定义数据上报](debug.html#自定义数据上报)
-*   [特殊 API 的调试](different.html)
-*   [代码编辑](edit.html)
-*   [设置](settings.html)
-*   [项目预览](project.html)
+    *   [特殊场景调试](different.html)
 *   [第三方平台](ext.html)
+*   [实现差异](details.html)
+    *   [运行环境差异](details.html#运行环境差异)
+    *   [ES6 支持情况](details.html#客户端es6-api-支持情况)
+    *   [API 实现差异](notsupport.html)
 *   [下载](download.html)
-*   [细节点](details.html)
 *   [历史更新日志](uplog.html)
 
 </nav>
@@ -105,31 +127,55 @@
 
 模拟器模拟微信小程序在客户端真实的逻辑表现，对于绝大部分的 API 均能够在模拟器上呈现出正确的状态。
 
-![emulat](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/2.png)
+![emulat](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/simulator.png)
 
-## 编译代码
+## 自定义编译
 
-点击工具左下角的编译按钮或者使用快捷键 Ctrl(Command) + B，可以编译当前代码，并自动刷新模拟器。
+点击工具栏中的编译按钮或者使用快捷键 Ctrl(Command) + B，可以编译当前代码，并自动刷新模拟器。
 
-同时为了帮助开发者调试具体页面或者进入的场景值，如图，开发者可以选择自定义编译模式。
+同时为了帮助开发者调试从不同场景值进入具体的页面，如图，开发者可以添加或选择已有的自定义编译条件进行编译和代码预览。
 
-![wxml](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/8.png)
+**注：编译条件跟项目相关，每个项目可以保存自己相关的编译条件**
+
+![wxml](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/customcompile.png)
+
+## 前后台切换
+
+工具栏中前后台切换帮助开发者模拟一些客户端的环境操作。例如当用户从小程序中回到聊天窗口，会触发一个小程序被设置为后台的api。
+
+![5](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/background.png)
 
 ## 调试工具
 
-调试工具分为 7 大功能模块：Wxml、Console、Sources、Network、Appdata、Storage、Sensor
+调试工具分为 7 大功能模块：Wxml、Console、Sources、Network、Appdata、Storage、Sensor、Trace
 
 ### Wxml panel
 
-Wxml panel 用于帮助开发者开发 Wxml 转化后的界面。在这里可以看到真实的页面结构以及结构对应的 wxss 属性，同时可以通过修改对应 wxss 属性，在模拟器中实时看到修改的情况。通过调试模块左上角的选择器，还可以快速找到页面中组件对应的 wxml 代码。
+Wxml panel 用于帮助开发者开发 Wxml 转化后的界面。在这里可以看到真实的页面结构以及结构对应的 wxss 属性，同时可以通过修改对应 wxss 属性，在模拟器中实时看到修改的情况（仅为实时预览，无法保存到文件）。通过调试模块左上角的选择器，还可以快速找到页面中组件对应的 wxml 代码。
 
-![wxml](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/wxml.gif)
+![wxml](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/wxml.gif)
 
 ### Sources panel
 
 Sources panel 用于显示当前项目的脚本文件，同浏览器开发不同，微信小程序框架会对脚本文件进行编译的工作，所以在 Sources panel 中开发者看到的文件是经过处理之后的脚本文件，开发者的代码都会被包裹在 define 函数中，并且对于 Page 代码，在尾部会有 require 的主动调用。
 
-![sources](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/sources.png)
+![sources](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/source.png)
+
+**注：当代码运行到断点的时候，整个小程序都停止了，所以模拟器会出现白屏或者无法操作的情况**
+
+### Appdata panel
+
+Appdata panel 用于显示当前项目运行时小程序 appdata 具体数据，实时地反馈项目数据情况，可以在此处编辑数据，并及时地反馈到界面上。
+
+![appdata](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/appdata.gif)
+
+### Storage panel
+
+Storage panel 用于显示当前项目的使用 wx.setStorage 或者 wx.setStorageSync 后的数据存储情况。
+
+可以直接在 Storage panel 上对数据进行删除（按 delete 键）、新增、修改
+
+![storage](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/storage.gif)
 
 ### Network panel
 
@@ -139,29 +185,31 @@ Network Panel 用于观察和显示 request 和 socket 的请求情况
 
 **注：uploadFile 和 downloadFile 暂时不支持在 Network Panel 中查看**
 
-### Appdata panel
-
-Appdata panel 用于显示当前项目当前时刻 appdata 具体数据，实时地反馈项目数据情况，可以在此处编辑数据，并及时地反馈到界面上。
-
-![appdata](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/appdata.gif)
-
-### Storage panel
-
-Storage panel 用于显示当前项目的使用 wx.setStorage 或者 wx.setStorageSync 后的数据存储情况。
-
-![storage](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/storage.gif)
-
 ### Console panel
 
 Console panel 有两大功能：
 
 *   开发者可以在此输入和调试代码
 
-    ![console](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/console1.gif)
+    ![console](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/console.gif)
 
 *   小程序的错误输出，会显示在此处
 
-    ![4](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/4.png)
+    ![4](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/console.png)
+
+*   在控制台中可以输入以下命令
+
+> build: 编译小程序
+> 
+> preview: 预览
+> 
+> upload: 上传代码
+> 
+> openVendor: 打开基础库所在目录
+> 
+> openToolsLog: 打开工具日志目录
+> 
+> checkProxy(url): 检查指定 url 的代理使用情况
 
 ### Sensor panel
 
@@ -174,16 +222,6 @@ Sensor panel 有两大功能：
 *   开发可以在这里模拟移动设备表现，用于调试重力感应 API
 
     ![4](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/accelerometerchange.gif)
-
-## 小程序操作区
-
-小程序操作区帮助开发者模拟一些客户端的环境操作。例如当用户从小程序中回到聊天窗口，会触发一个小程序被设置为后台的api。
-
-![5](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/5.png)
-
-当小程序使用到多窗口的时候，可以在顶部操作区进行页面切换，需要注意的是这个操作只是为了方便开发者才存在的，在真实的微信客户端中是不会有的。
-
-![7](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/7.png)
 
 ## 自定义数据上报
 
@@ -242,6 +280,6 @@ Sensor panel 有两大功能：
 
 </div>
 
-[](devtools.html)[](debug.html#模拟器)</div>
+[](edit.html#项目配置文件)[](debug.html#模拟器)</div>
 
 </div>

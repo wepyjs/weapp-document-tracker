@@ -60,8 +60,31 @@
 <nav role="navigation">
 
 *   [概览](devtools.html)
-*   [程序调试](debug.html)
+*   [云测试](monkey-test.html)
+*   [界面](page.html)
+    *   [启动页](page.html#启动页)
+    *   [菜单栏](page.html#菜单栏)
+    *   [工具栏](page.html#工具栏)
+    *   [模拟器](page.html#模拟器)
+    *   [设置](settings.html)
+        *   [外观设置](settings.html#外观设置)
+        *   [通知设置](settings.html#通知设置)
+        *   [编辑设置](settings.html#编辑设置)
+        *   [代理设置](settings.html#代理设置)
+    *   [项目页卡](project.html)
+        *   [项目设置](project.html#项目设置)
+        *   [域名信息](project.html#域名信息)
+        *   [腾讯云状态](project.html#腾讯云状态)
+*   [快捷键](shortcut.html)
+*   [代码编辑](edit.html)
+    *   [文件格式](edit.html#文件格式)
+    *   [文件类型](edit.html#文件支持)
+    *   [自动补全](edit.html#自动补全)
+    *   [项目配置文件](edit.html#项目配置文件)
+*   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
+    *   [自定义编译](debug.html#自定义编译)
+    *   [前后台切换](debug.html#前后台切换)
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
@@ -70,15 +93,14 @@
         *   [Storage Panel](debug.html#storage-panel)
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
-    *   [小程序操作区](debug.html#小程序操作区)
     *   [自定义数据上报](debug.html#自定义数据上报)
-*   [特殊 API 的调试](different.html)
-*   [代码编辑](edit.html)
-*   [设置](settings.html)
-*   [项目预览](project.html)
+    *   [特殊场景调试](different.html)
 *   [第三方平台](ext.html)
+*   [实现差异](details.html)
+    *   [运行环境差异](details.html#运行环境差异)
+    *   [ES6 支持情况](details.html#客户端es6-api-支持情况)
+    *   [API 实现差异](notsupport.html)
 *   [下载](download.html)
-*   [细节点](details.html)
 *   [历史更新日志](uplog.html)
 
 </nav>
@@ -101,19 +123,35 @@
 
 编辑区可以对当前项目进行代码编写和文件的添加、删除以及重命名等基本操作。
 
+## 文件格式
+
+因 iOS 下仅支持 **UTF8** 编码格式，最新版本的开发者工具会在上传代码时候对代码文件做一次编码格式校验。
+
 ## 文件支持
 
-工具目前提供了4种文件的编辑：wxml、wxss、js、json以及图片文件的预览。
+工具目前提供了 5 种文件的编辑：wxml、wxss、js、json、wxs 以及图片文件的预览。
 
-## 实时预览
+## 文件操作
 
-如果设置中开启了“文件保存时自动编译小程序”（位置在：设置 - 编辑 - 文件保存时自动编译小程序），那么当 js, json, wxml 或 wxss 文件修改时，可以通过模拟器实时预览编辑的情况：
+新建页面有两种方式
 
-![edit](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/edit/edit1.png)
+1.  在目录树上右键，选择新建 Page，将自动生成页面所需要的 wxml、js、wxss、json
+
+2.  在 app.json 的 pages 字段，添加需要新建的页面的路径，将会自动生成改页面所需要的文件
 
 ## 自动保存
 
-书写代码后，工具会自动帮助用户保存当前的代码编辑状态，直接关闭工具或者切换到别的项目，并不会丢失已经编辑的文件状态，但需要注意的是，只有保存文件，修改内容才会真实的写到硬盘上。可以在设置（设置 - 编辑）中配置开启“修改文件时自动保存”已达到修改文件时自动保存而无需手动保存的效果，也可开启“编译时自动保存所有文件”以达到点击编译时自动帮助保存所有文件的效果。
+书写代码后，工具会自动帮助用户保存当前的代码编辑状态，直接关闭工具或者切换到别的项目，并不会丢失已经编辑的文件状态，但需要注意的是，只有用户主动保存文件，修改内容才会真实的写到硬盘上。
+
+如果设置中开启了 “修改文件时自动保存”（设置-编辑设置-修改文件自动保存），工具在修改文件时会自动保存到硬盘中，无需手动保存的效果。
+
+设置中开启 “编译时自动保存所有文件”（设置-编译设置-编译时自动保存所有文件），在点击编译时自动保存所有文件的效果。
+
+## 实时预览
+
+如果设置中开启了 “文件保存时自动编译小程序”（位置在：设置-编辑设置-保存时自动编译小程序），那么当 js, json, wxml 或 wxss 文件修改时，可以通过模拟器实时预览编辑的情况：
+
+**注意：如果同时开启了 ”修改文件时自动保存“ 的设置，编译动作会有一定的延迟，来避免频繁的编译，手动点击编译按钮将立即编译。**
 
 ## 自动补全
 
@@ -125,23 +163,152 @@
 
 js 补全
 
-![3](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/edit1_1.gif)
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/jsautocomplete2.gif)
 
 代码模板支持
 
-![3](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/edit1_2.gif)
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/jsautocomplete.gif)
 
 json 补全
 
-![3](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/edit3.gif)
+![3](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/jsoncomplete.gif)
 
 wxml 补全
 
 ![3](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/edit4.gif)
 
-## 快捷键
+## 项目配置文件
 
-见工具菜单栏
+我们可以在项目根目录使用 `project.config.json` 文件对项目进行配置。
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>字段名</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>client</td>
+
+<td>Path String</td>
+
+<td>指定小程序源码的目录(需为相对路径)</td>
+
+</tr>
+
+<tr>
+
+<td>svr</td>
+
+<td>Path String</td>
+
+<td>指定腾讯云项目的目录(需为相对路径)</td>
+
+</tr>
+
+<tr>
+
+<td>setting</td>
+
+<td>Object</td>
+
+<td>项目设置</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+setting 中可以指定以下设置
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>字段名</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>es6</td>
+
+<td>Boolean</td>
+
+<td>是否启用 es5 转 es6</td>
+
+</tr>
+
+<tr>
+
+<td>postcss</td>
+
+<td>Boolean</td>
+
+<td>上传代码时样式是否自动补全</td>
+
+</tr>
+
+<tr>
+
+<td>minified</td>
+
+<td>Boolean</td>
+
+<td>上传代码时是否自动压缩</td>
+
+</tr>
+
+<tr>
+
+<td>urlCheck</td>
+
+<td>Boolean</td>
+
+<td>是否检查安全域名和 TLS 版本</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**示例：**
+
+    {
+      "client": "./src",
+      "svr": "./svr",
+      "setting": {
+        "postcss": true,
+        "es6": true,
+        "minified": true,
+        "urlCheck": false
+      }
+    }
 
 </section>
 
@@ -182,6 +349,6 @@ wxml 补全
 
 </div>
 
-[](different.html)[](settings.html)</div>
+[](shortcut.html)[](edit.html#文件格式)</div>
 
 </div>

@@ -76,6 +76,14 @@
         *   [模板](../view/wxml/template.html)
         *   [事件](../view/wxml/event.html)
         *   [引用](../view/wxml/import.html)
+    *   [WXS](../view/wxs/)
+        *   [模块](../view/wxs/01wxs-module.html)
+        *   [变量](../view/wxs/02variate.html)
+        *   [注释](../view/wxs/03annotation.html)
+        *   [运算符](../view/wxs/04operator.html)
+        *   [语句](../view/wxs/05statement.html)
+        *   [数据类型](../view/wxs/06datatype.html)
+        *   [基础类库](../view/wxs/07basiclibrary.html)
     *   [WXSS](../view/wxss.html)
     *   [组件](../view/component.html)
 *   [基础库](../client-lib.html)
@@ -279,6 +287,8 @@
       viewTap: function() {
         this.setData({
           text: 'Set some data for updating view.'
+        }, function() {
+          // this is setData callback
         })
       },
       customData: {
@@ -360,11 +370,13 @@
 *   `onPullDownRefresh`: 下拉刷新
 
     *   监听用户下拉刷新事件。
-    *   需要在`config`的[`window`](../config.html#window)选项中开启`enablePullDownRefresh`。
+    *   需要在`app.json`的[`window`](../config.html#window)选项中或[页面配置](../config.html#pagejson)中开启`enablePullDownRefresh`。
     *   当处理完数据刷新后，[`wx.stopPullDownRefresh`](../../api/pulldown.html#wxstoppulldownrefresh)可以停止当前页面的下拉刷新。
 *   `onReachBottom`: 上拉触底
 
-    *   监听用户下拉触底事件。
+    *   监听用户上拉触底事件。
+    *   可以在`app.json`的[`window`](../config.html#window)选项中或[页面配置](../config.html#pagejson)中设置触发距离`onReachBottomDistance`。
+    *   在触发距离内滑动期间，本事件只会被触发一次。
 *   `onPageScroll`: 页面滚动
 
     *   监听用户滑动页面事件。
@@ -478,15 +490,71 @@
 
 ### Page.prototype.route
 
+> 基础库 1.2.0 开始支持，低版本需做[兼容处理](../compatibility.html)
+
 `route` 字段可以获取到当前页面的路径。
 
 ### Page.prototype.setData()
 
-`setData` 函数用于将数据从逻辑层发送到视图层，同时改变对应的 `this.data` 的值。
+`setData` 函数用于将数据从逻辑层发送到视图层（异步），同时改变对应的 `this.data` 的值（同步）。
 
 ### setData() 参数格式
 
-接受一个对象，以 key，value 的形式表示将 this.data 中的 key 对应的值改变成 value。
+<table>
+
+<thead>
+
+<tr>
+
+<th>字段</th>
+
+<th>类型</th>
+
+<th>必填</th>
+
+<th>描述</th>
+
+<th>最低版本</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>data</td>
+
+<td>Object</td>
+
+<td>是</td>
+
+<td>这次要改变的数据</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>callback</td>
+
+<td>Function</td>
+
+<td>否</td>
+
+<td>回调函数</td>
+
+<td>[1.5.0](../compatibility.html "基础库 1.5.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+object 以 key，value 的形式表示将 this.data 中的 key 对应的值改变成 value。 callback 是一个回调函数，在这次setData对界面渲染完毕后调用。
 
 其中 key 可以非常灵活，以数据路径的形式给出，如 `array[2].message`，`a.b.c.d`，并且不需要在 this.data 中预先定义。
 
