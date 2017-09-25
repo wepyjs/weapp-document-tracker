@@ -284,7 +284,7 @@
         *   [wx.login](api-login.html#wxloginobject)
         *   [wx.checkSession](api-login.html#wxchecksessionobject)
         *   [签名加密](signature.html)
-    *   [授权](authorize.html)
+    *   [授权](authorize-index.html)
         *   [wx.authorize](authorize.html#wxauthorizeobject)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
@@ -310,7 +310,7 @@
         *   [客服输入状态](custommsg/typing.html)
         *   [接入指引](custommsg/callback_help.html)
     *   [转发](share.html)
-        *   [Page.onShareAppMessage](share.html#onshareappmessage)
+        *   [Page.onShareAppMessage](share.html#onshareappmessageoptions)
         *   [wx.showShareMenu](share.html#wxshowsharemenuobject)
         *   [wx.hideShareMenu](share.html#wxhidesharemenuobject)
         *   [wx.updateShareMenu](share.html#wxupdatesharemenuobject)
@@ -376,7 +376,9 @@
 
 > 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
-调起客户端小程序设置界面，返回用户设置的操作结果
+调起客户端小程序设置界面，返回用户设置的操作结果。
+
+注：设置界面只会出现小程序已经向用户请求过的权限。
 
 **Object 参数说明：**
 
@@ -466,7 +468,7 @@
 
 <td>Object</td>
 
-<td>用户授权结果，其中 key 为 scope 值，value 为 Bool 值，表示用户是否允许授权，详见 [scope 列表](authorize.html#scope-列表)</td>
+<td>用户授权结果，其中 key 为 scope 值，value 为 Bool 值，表示用户是否允许授权，详见 [scope 列表](authorize-index.html#scope-列表)</td>
 
 </tr>
 
@@ -491,7 +493,9 @@
 
 > 基础库 1.2.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
-获取用户的当前设置
+获取用户的当前设置。
+
+注：返回值中只会出现小程序已经向用户请求过的权限。
 
 **Object 参数说明：**
 
@@ -581,7 +585,7 @@
 
 <td>Object</td>
 
-<td>用户授权结果，其中 key 为 scope 值，value 为 Bool 值，表示用户是否允许授权，详见 [scope 列表](authorize.html#scope-列表)</td>
+<td>用户授权结果，其中 key 为 scope 值，value 为 Bool 值，表示用户是否允许授权，详见 [scope 列表](authorize-index.html#scope-列表)</td>
 
 </tr>
 

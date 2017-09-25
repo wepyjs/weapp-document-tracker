@@ -372,11 +372,29 @@
 
 <section class="normal markdown-section">
 
-### wx.request(OBJECT)
+# 授权
 
-发起网络请求。**使用前请先阅读[说明](api-network.html)**。
+部分接口需要获得用户授权同意后才能调用。此类接口调用时：
 
-**OBJECT参数说明：**
+*   如果用户未接受或拒绝过此权限，会弹窗询问用户，用户点击同意后方可调用接口；
+*   如果用户已授权，可以直接调用接口；
+*   如果用户已拒绝授权，则短期内不会出现弹窗，而是直接进入接口 fail 回调。**请开发者兼容用户拒绝授权的场景。**
+
+## 获取授权信息
+
+开发者可以使用 [`wx.getSetting`](setting.html#wxgetsettingobject) 获取用户当前的授权状态。
+
+## 打开设置界面
+
+用户可以在小程序设置界面（右上角 - 关于 - 右上角 - 设置）中控制对该小程序的授权状态。
+
+开发者可以调用 [`wx.openSetting`](setting.html#wxopensettingobject) 打开设置界面，引导用户开启授权。
+
+## 提前发起授权请求
+
+开发者可以使用 [`wx.authroize`](authorize.html#wxauthorizeobject) 在调用需授权 API 之前，提前向用户发起授权请求。
+
+## scope 列表
 
 <table>
 
@@ -384,15 +402,11 @@
 
 <tr>
 
-<th>参数名</th>
+<th>scope</th>
 
-<th>类型</th>
+<th>对应接口</th>
 
-<th>必填</th>
-
-<th>默认值</th>
-
-<th>说明</th>
+<th>描述</th>
 
 </tr>
 
@@ -402,272 +416,77 @@
 
 <tr>
 
-<td>url</td>
+<td>scope.userInfo</td>
 
-<td>String</td>
+<td>wx.getUserInfo</td>
 
-<td>是</td>
-
-<td></td>
-
-<td>开发者服务器接口地址</td>
+<td>用户信息</td>
 
 </tr>
 
 <tr>
 
-<td>data</td>
+<td>scope.userLocation</td>
 
-<td>Object/String</td>
+<td>wx.getLocation, wx.chooseLocation</td>
 
-<td>否</td>
-
-<td></td>
-
-<td>请求的参数</td>
+<td>地理位置</td>
 
 </tr>
 
 <tr>
 
-<td>header</td>
+<td>scope.address</td>
 
-<td>Object</td>
+<td>wx.chooseAddress</td>
 
-<td>否</td>
-
-<td></td>
-
-<td>设置请求的 header，header 中不能设置 Referer。</td>
+<td>通讯地址</td>
 
 </tr>
 
 <tr>
 
-<td>method</td>
+<td>scope.invoiceTitle</td>
 
-<td>String</td>
+<td>wx.chooseInvoiceTitle</td>
 
-<td>否</td>
-
-<td>GET</td>
-
-<td>有效值：OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT（需大写）</td>
+<td>发票抬头</td>
 
 </tr>
 
 <tr>
 
-<td>dataType</td>
+<td>scope.werun</td>
 
-<td>String</td>
+<td>wx.getWeRunData</td>
 
-<td>否</td>
-
-<td>json</td>
-
-<td>如果设为json，会尝试对返回的数据做一次 JSON.parse</td>
+<td>微信运动步数</td>
 
 </tr>
 
 <tr>
 
-<td>success</td>
+<td>scope.record</td>
 
-<td>Function</td>
+<td>wx.startRecord</td>
 
-<td>否</td>
-
-<td></td>
-
-<td>收到开发者服务成功返回的回调函数</td>
+<td>录音功能</td>
 
 </tr>
 
 <tr>
 
-<td>fail</td>
+<td>scope.writePhotosAlbum</td>
 
-<td>Function</td>
+<td>wx.saveImageToPhotosAlbum, wx.saveVideoToPhotosAlbum</td>
 
-<td>否</td>
-
-<td></td>
-
-<td>接口调用失败的回调函数</td>
-
-</tr>
-
-<tr>
-
-<td>complete</td>
-
-<td>Function</td>
-
-<td>否</td>
-
-<td></td>
-
-<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+<td>保存到相册</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-**success返回参数说明：**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>参数</th>
-
-<th>类型</th>
-
-<th>说明</th>
-
-<th>最低版本</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>data</td>
-
-<td>Object/String</td>
-
-<td>开发者服务器返回的数据</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>statusCode</td>
-
-<td>Number</td>
-
-<td>开发者服务器返回的 HTTP 状态码</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>header</td>
-
-<td>Object</td>
-
-<td>开发者服务器返回的 HTTP Response Header</td>
-
-<td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**data 数据说明：**
-
-最终发送给服务器的数据是 String 类型，如果传入的 data 不是 String 类型，会被转换成 String 。转换规则如下：
-
-*   对于 `header['content-type']` 为 `application/json` 的数据，会对数据进行 JSON 序列化
-*   对于 `header['content-type']` 为 `application/x-www-form-urlencoded` 的数据，会将数据转换成 query string （encodeURIComponent(k)=encodeURIComponent(v)&encodeURIComponent(k)=encodeURIComponent(v)...）
-
-**示例代码：**
-
-    wx.request({
-      url: 'test.php', //仅为示例，并非真实的接口地址
-      data: {
-         x: '' ,
-         y: ''
-      },
-      header: {
-          'content-type': 'application/json' // 默认值
-      },
-      success: function(res) {
-        console.log(res.data)
-      }
-    })
-
-**返回值：**
-
-> 基础库 1.4.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
-
-返回一个 `requestTask` 对象，通过 `requestTask`，可中断请求任务。
-
-**requestTask 对象的方法列表：**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>方法</th>
-
-<th>参数</th>
-
-<th>说明</th>
-
-<th>最低版本</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>abort</td>
-
-<td></td>
-
-<td>中断请求任务</td>
-
-<td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**示例代码：**
-
-    const requestTask = wx.request({
-      url: 'test.php', //仅为示例，并非真实的接口地址
-      data: {
-         x: '' ,
-         y: ''
-      },
-      header: {
-          'content-type': 'application/json'
-      },
-      success: function(res) {
-        console.log(res.data)
-      }
-    })
-
-    requestTask.abort() // 取消请求任务
-
-#### Bug & Tip
-
-1.  `tip`: content-type 默认为 'application/json';
-2.  `tip`: url 中不能有端口；
-3.  `bug`: 开发者工具 `0.10.102800` 版本，`header` 的 `content-type` 设置异常；
 
 </section>
 
@@ -708,6 +527,6 @@
 
 </div>
 
-[](api-network.html)[](network-request.html#wxrequestobject)</div>
+[](signature.html)[](authorize.html#wxauthorizeobject)</div>
 
 </div>

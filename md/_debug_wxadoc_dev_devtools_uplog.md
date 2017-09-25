@@ -68,8 +68,8 @@
     *   [模拟器](page.html#模拟器)
     *   [设置](settings.html)
         *   [外观设置](settings.html#外观设置)
-        *   [通知设置](settings.html#通知设置)
         *   [编辑设置](settings.html#编辑设置)
+        *   [通知设置](settings.html#通知设置)
         *   [代理设置](settings.html#代理设置)
     *   [项目页卡](project.html)
         *   [项目设置](project.html#项目设置)
@@ -88,9 +88,9 @@
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
-        *   [Network Panel](debug.html#network-panel)
-        *   [Appdata Panel](debug.html#appdata-panel)
+        *   [AppData Panel](debug.html#appdata-panel)
         *   [Storage Panel](debug.html#storage-panel)
+        *   [Network Panel](debug.html#network-panel)
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
@@ -120,6 +120,95 @@
 <div class="search-noresults">
 
 <section class="normal markdown-section">
+
+### 2017.09.06 (1.01.170906)
+
+1.  `F` 修复 使用 `wx:key` 的 `warning` 重复出现的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1483282630&docid=bd07e03ef7b826574eba58406553bc1f)
+2.  `F` 修复 使用 工具中自定义分享图功能无法使用的问题
+3.  `F` 修复 从标签页跳转到新的页面，在跳转完成之前会显示其他标签页的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=182238138&docid=e727520d0b578edc6e49916bb3366b47)
+4.  `F` 修复 公众号开发中 touch 模拟未生效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1483282630&docid=44a661767e1e92c4924dc7ccc47b348a)
+5.  `F` 修复 wxss编译错误提示不正确的问题[详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=182238138&docid=60c9b581ec34920804c0e9ef8aa17a81)
+6.  `F` 修复 使用 `project.config.json` 导致右键新建页面失败的问题
+7.  `F` 修复 编辑 wxml 文件缺失补全的问题
+8.  `F` 修复 `navigationBarTextStyle` 默认值错误的问题
+9.  `F` 修复 `wxml panel` 节点缺失的问题
+10.  `F` 修复 `wxml panel` 选中元素会跳到之前选中的问题
+11.  `F` 修复 `wx.request` 的 Referer 附带的 appid 不对的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1483282630&docid=b1b3cb258ff0896eb06ca1b3c22746fa)
+12.  `F` 修复 `wx.chooseAddress` 没有模拟返回数据的问题
+13.  `F` 修复 `wxml panel` 中鼠标手势不对的问题
+14.  `F` 修复 分享无法使用自定义图片的问题
+15.  `F` 修复 `.sql` 文件无法查看的问题
+16.  `F` 修复 `storage panel` 显示出旧数据的问题
+17.  `F` 修复 检查域名和 TLS 版本时，网络请求无法回调的问题
+18.  `F` 修复 工具中 template 标签内的 wxml 无法格式化
+19.  `F` 修复 `pageScrollTo` 调用没有效果的问题
+20.  `F` 修复 新版工具中最小字号只能为 12px 的问题
+21.  `F` 修复 错误提示框在错误过长的情况下无法关闭的问题
+22.  `F` 修复 脚本文件名中有空格或者是中文文件名无法加载的问题
+23.  `U` 优化 编译有错误，不主动弹出调试器
+24.  `U` 优化 使用 `project.config.json` 修改 client 之外的文件，不触发编译
+25.  `U` 优化 使用 Webview 复用，优化工具卡顿问题
+26.  `U` 优化 删除 F8 F10 快捷键占用的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1691622661&docid=708a5cec8212f06eda3480f5d24120ab)
+27.  `F` 修复 app.json 指定 borderStyle 不生效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=917843816&docid=691ae970397971e4b5e4717685def9a7)
+28.  `U` 优化 编辑器的替换快捷键改为 Ctrl + Shift + R，避免与刷新 Ctrl + R 冲突
+
+### 2017.09.01 开发工具更新
+
+1.  `F` 修复 `wxml panel` 选中节点跳动的问题
+2.  `F` 修复 `wxml panel` 鼠标为圆点的问题
+3.  `F` 修复 编辑器快捷键格式化代码失效的问题
+4.  `F` 修复 `<picker />` 选择第一个异常的问题
+5.  `F` 修复 `wxml` 编译导致 `<radio-group/>` 在 `Page.setData` 之后选中状态被重置的问题
+6.  `F` 修复 第三方平台小程序 `Refer` 异常的问题
+7.  `F` 修复 公众号网页开发触摸模拟不生效的问题
+8.  `F` 修复 公众号网页开发页面变大的问题
+9.  `F` 修复 `console panel` 日志重复显示问题
+10.  `F` 修复 上传代码时上次的输入没有记录的问题
+11.  `F` 修复 保存文件自动编译时，文件保存没有生效的问题
+12.  `F` 修复 ext.json 中 extEnable 为 false，到手机上预览依旧生效的问题
+13.  `F` 修复 页面字体大小异常的问题
+14.  `F` 修复 修复了在外部编辑器编辑了文件，工具不能检测到更改的问题
+15.  `F` 修复 设备选择时 wx.getSystemInfo 的内容不对的问题
+
+### 2017.08.31 开发工具更新
+
+1.  `A` 新增 快捷键 `F8` 显示隐藏工具栏
+2.  `U` 优化 当有错误的时候 `console` 面板不会自动弹出
+3.  `F` 修复 保存时自动编译，编译时自动保存无法保存所有文件的问题
+4.  `F` 修复 第三方平台小程序打开项目报错的问题
+5.  `F` 修复 启动工具后显示网络连接错误，增加错误提示
+6.  `F` 修复 模拟器在一些设备上显示模糊的问题
+7.  `F` 修复 `wxss` 编译错误提示不正确的问题
+8.  `F` 修复 某些第三方编辑器打开文件会触发工具自动编译的问题
+9.  `F` 修复 网页调试 hash 变化会 load 页面的问题
+10.  `F` 修复 网页调试 `alert`、`confirm` 不显示的问题
+11.  `F` 修复 网页调试添加卡券屏幕缩放无效的问题
+12.  `F` 修复 网页调试 `urlbar` 输入后自动匹配，按键盘向下键然后 `load` 不了
+
+### 2017.08.30 开发工具更新
+
+1.  `A` 新增 申请测试报告功能 [详情](monkey-test.html)
+2.  `A` 新增 `WXS` 功能 [详情](../framework/view/wxs/)
+3.  `A` 新增 发布腾讯云功能 [详情](https://mp.weixin.qq.com/debug/wxadoc/introduction/qcloud.html)
+4.  `U` 优化 全新的视觉和交互体验
+5.  `U` 优化 更新内核版本
+
+### 基础库更新 (1.5.3)
+
+1.  `F` 修复 组件 `<swiper />` 在 iOS 下首张图片在某些情况下初始不显示的问题
+2.  `F` 修复 API `canIUse` 无法判断 `getPhoneNumber` 可用情况的问题
+
+### 基础库更新 (1.5.2)
+
+1.  `F` 修复 组件 `<map />` markers 里同时没有设置 callout 和 title 属性时，点击时报 Cannot read property 'always' of null 错误的问题
+2.  `F` 修复 组件 `<image />` bindload 被重复执行两次的问题
+3.  `F` 修复 组件 `<image />` 连续更新 src 会显示图片错误
+4.  `F` 修复 API `chooseInvoiceTitle` 在工具上报错问题
+5.  `F` 修复 API `SelectorQuery.selectViewport` 失效问题
+
+### 基础库更新 (1.5.1)
+
+1.  `F` 修复 组件 `<image />` 覆盖兄弟节点或图片圆角不显示问题
 
 ### 2017.08.21 开发工具更新
 

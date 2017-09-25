@@ -68,8 +68,8 @@
     *   [模拟器](page.html#模拟器)
     *   [设置](settings.html)
         *   [外观设置](settings.html#外观设置)
-        *   [通知设置](settings.html#通知设置)
         *   [编辑设置](settings.html#编辑设置)
+        *   [通知设置](settings.html#通知设置)
         *   [代理设置](settings.html#代理设置)
     *   [项目页卡](project.html)
         *   [项目设置](project.html#项目设置)
@@ -88,9 +88,9 @@
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
-        *   [Network Panel](debug.html#network-panel)
-        *   [Appdata Panel](debug.html#appdata-panel)
+        *   [AppData Panel](debug.html#appdata-panel)
         *   [Storage Panel](debug.html#storage-panel)
+        *   [Network Panel](debug.html#network-panel)
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
@@ -123,13 +123,13 @@
 
 ## 概述
 
-同开发普通的小程序不同，开发第三方平台小程序具有一定的复杂性，首先需要确认三个概念
+同开发普通的小程序不同，开发第三方平台小程序具有一定的复杂性，首先需要确认三个概念：
 
 *   open3rd：第三方平台，是小程序官方认可的第三方开发商 [详情](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419318292&token=&lang=zh_CN)
 *   3rdMiniProgramAppid：第三方平台申请的并绑定在该平台上的小程序，用于开发小程序模板
 *   extAppid：授权给第三方平台的小程序
 
-因为以上的这些不同，第三方平台相关的小程序开发需要做一些特殊的处理
+因为以上的这些不同，第三方平台相关的小程序开发需要做一些特殊的处理：
 
 *   小程序模板的开发
 *   小程序模板结合 extAppid 的开发调试
@@ -146,9 +146,9 @@
 
 ## 小程序模板开发
 
-与开发普通小程序一致，开发者在开发工具上开发好相关的业务逻辑之后，在项目页卡中提交预览既可以在微信中查看小程序的真实表现，
+与开发普通小程序一致，开发者在开发工具上开发好相关的业务逻辑之后，在项目页卡中提交预览既可以在微信中查看小程序的真实表现。
 
-有所不同的是，第三方平台小程序的提交上传是上传至该第三方平台的 open 帐号下的模板草稿箱中，该平台的管理员需要自行对该模板进行相应的设置，更多请参考 [open平台的文档](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1489144594_DhNoV&token=&lang=zh_CN) 。
+有所不同的是，第三方平台小程序的提交上传是上传至该第三方平台的 open 帐号下的模板草稿箱中，该平台的管理员需要自行对该模板进行相应的设置，更多请参考 [开放平台的文档](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1489144594_DhNoV&token=&lang=zh_CN) 。
 
 ## extAppid 的开发调试
 

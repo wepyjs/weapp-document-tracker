@@ -284,7 +284,7 @@
         *   [wx.login](api-login.html#wxloginobject)
         *   [wx.checkSession](api-login.html#wxchecksessionobject)
         *   [签名加密](signature.html)
-    *   [授权](authorize.html)
+    *   [授权](authorize-index.html)
         *   [wx.authorize](authorize.html#wxauthorizeobject)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
@@ -310,7 +310,7 @@
         *   [客服输入状态](custommsg/typing.html)
         *   [接入指引](custommsg/callback_help.html)
     *   [转发](share.html)
-        *   [Page.onShareAppMessage](share.html#onshareappmessage)
+        *   [Page.onShareAppMessage](share.html#onshareappmessageoptions)
         *   [wx.showShareMenu](share.html#wxshowsharemenuobject)
         *   [wx.hideShareMenu](share.html#wxhidesharemenuobject)
         *   [wx.updateShareMenu](share.html#wxupdatesharemenuobject)
@@ -374,7 +374,9 @@
 
 ### wx.login(OBJECT)
 
-调用接口获取**登录凭证（code）**进而换取用户登录态信息，包括用户的**唯一标识（openid）** 及本次登录的 **会话密钥（session_key）**。**用户数据的加解密通讯**需要依赖会话密钥完成。
+调用接口获取**登录凭证（code）**进而换取用户登录态信息，包括用户的**唯一标识（openid）** 及本次登录的 **会话密钥（session_key）**等。**用户数据的加解密通讯**需要依赖会话密钥完成。
+
+**注：调用 `login` 会引起登录态的刷新，之前的 sessionKey 可能会失效。**
 
 **OBJECT参数说明：**
 
@@ -474,7 +476,7 @@
 
 <td>String</td>
 
-<td>用户允许登录后，回调内容会带上 code（有效期五分钟），开发者需要将 code 发送到开发者服务器后台，使用`code 换取 session_key` api，将 code 换成 openid 和 session_key</td>
+<td>用户登录凭证（有效期五分钟）。开发者需要在开发者服务器后台调用 api，使用 code 换取 openid 和 session_key 等信息</td>
 
 </tr>
 
@@ -507,7 +509,9 @@
 
 ### code 换取 session_key
 
-​ 这是一个 HTTPS 接口，开发者服务器使用**登录凭证 code** 获取 session_key 和 openid。其中 session_key 是对用户数据进行[加密签名](signature.html)的密钥。为了自身应用安全，**session_key 不应该在网络上传输**。
+​这是一个 HTTPS 接口，开发者服务器使用**登录凭证 code** 获取 session_key 和 openid。
+
+session_key 是对用户数据进行[加密签名](signature.html)的密钥。为了自身应用安全，**session_key 不应该在网络上传输**。
 
 **接口地址：**
 
@@ -718,9 +722,11 @@
 
 ## 登录态维护
 
-通过 `wx.login()` 获取到用户登录态之后，需要维护登录态。开发者要注意**不应该直接把 session_key、openid 等字段作为用户的标识或者 session 的标识**，而应该自己派发一个 session 登录态（请参考登录时序图）。对于开发者自己生成的 session，应该保证其安全性且不应该设置较长的过期时间。session 派发到小程序客户端之后，可将其存储在 storage ，用于后续通信使用。
+通过 `wx.login` 获取到用户登录态之后，需要维护登录态。
 
-通过`wx.checkSession()` 检测用户登录态是否失效。并决定是否调用wx.login() 重新获取登录态
+开发者要注意**不应该直接把 session_key、openid 等字段作为用户的标识或者 session 的标识**，而应该自己派发一个 session 登录态（请参考登录时序图）。对于开发者自己生成的 session，应该保证其安全性且不应该设置较长的过期时间。session 派发到小程序客户端之后，可将其存储在 storage ，用于后续通信使用。
+
+通过 `wx.checkSession` 可以检测用户登录态是否失效。并决定是否调用 `wx.login` 重新获取登录态
 
 ### 登录时序图
 

@@ -337,6 +337,22 @@
 
 <tr>
 
+<td>lang</td>
+
+<td>String</td>
+
+<td>en</td>
+
+<td>指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。</td>
+
+<td>open-type="getUserInfo"</td>
+
+<td>[1.3.0](../framework/compatibility.html "基础库 1.3.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>session-from</td>
 
 <td>String</td>
@@ -453,6 +469,7 @@
 
 *   **注1：`button-hover` 默认为`{background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}`**
 *   **注2：`bindgetphonenumber` 从1.2.0 开始支持，但是在1.5.3以下版本中无法使用`wx.canIUse`进行检测，建议使用基础库版本进行判断。**
+*   **注3: 在`bindgetphonenumber` 等返回加密信息的回调中调用 `wx.login` 登录，可能会刷新登录态。此时服务器使用 code 换取的 sessionKey 不是加密时使用的 sessionKey，导致解密失败。建议开发者提前进行 `login`；或者在回调中先使用 `checkSession` 进行登录态检查，避免 `login` 刷新登录态。**
 
 **size 有效值：**
 
@@ -626,7 +643,7 @@
 
 <td>getPhoneNumber</td>
 
-<td>获取用户手机号，可以从bindgetphonenumber回调用获取到用户信息，[解包方式](../api/getPhoneNumber.html)</td>
+<td>获取用户手机号，可以从bindgetphonenumber回调用获取到用户信息，[具体说明](../api/getPhoneNumber.html)</td>
 
 <td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
 

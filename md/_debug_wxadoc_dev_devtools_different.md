@@ -68,8 +68,8 @@
     *   [模拟器](page.html#模拟器)
     *   [设置](settings.html)
         *   [外观设置](settings.html#外观设置)
-        *   [通知设置](settings.html#通知设置)
         *   [编辑设置](settings.html#编辑设置)
+        *   [通知设置](settings.html#通知设置)
         *   [代理设置](settings.html#代理设置)
     *   [项目页卡](project.html)
         *   [项目设置](project.html#项目设置)
@@ -88,9 +88,9 @@
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
-        *   [Network Panel](debug.html#network-panel)
-        *   [Appdata Panel](debug.html#appdata-panel)
+        *   [AppData Panel](debug.html#appdata-panel)
         *   [Storage Panel](debug.html#storage-panel)
+        *   [Network Panel](debug.html#network-panel)
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
@@ -121,7 +121,7 @@
 
 <section class="normal markdown-section">
 
-小程序开发者工具是对微信客户端的模拟，受限于桌面设备同移动设备不同，以及微信的一些特有数据，同时考虑到开发的便捷性，那么有部分 API 在工具和微信中是有所不同的。
+小程序开发者工具是对微信客户端的模拟，受限于桌面设备同移动设备的差异，以及微信的一些特有数据，同时考虑到开发的便捷性，部分 API 在工具和微信中有所不同。
 
 ## 扫码接口
 
@@ -147,7 +147,7 @@
 
 ## 进入场景值
 
-在微信客户端中，用户可能在各个场景下打开小程序 [详情](../framework/app-service/scene.html#场景值) 然而在开发者工具中是没有真实的环境去模拟这些场景的。开发者可以通过条件编译的方式来达到调试不同场景的目的。
+在微信客户端中，用户可能在各个场景下打开小程序 [详情](../framework/app-service/scene.html#场景值) ，然而在开发者工具中是没有真实的环境去模拟这些场景的。开发者可以通过条件编译的方式来达到调试不同场景的目的。
 
 ![sence](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/scene.png)
 

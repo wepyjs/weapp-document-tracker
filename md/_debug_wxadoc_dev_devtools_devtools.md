@@ -68,8 +68,8 @@
     *   [模拟器](page.html#模拟器)
     *   [设置](settings.html)
         *   [外观设置](settings.html#外观设置)
-        *   [通知设置](settings.html#通知设置)
         *   [编辑设置](settings.html#编辑设置)
+        *   [通知设置](settings.html#通知设置)
         *   [代理设置](settings.html#代理设置)
     *   [项目页卡](project.html)
         *   [项目设置](project.html#项目设置)
@@ -88,9 +88,9 @@
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
-        *   [Network Panel](debug.html#network-panel)
-        *   [Appdata Panel](debug.html#appdata-panel)
+        *   [AppData Panel](debug.html#appdata-panel)
         *   [Storage Panel](debug.html#storage-panel)
+        *   [Network Panel](debug.html#network-panel)
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
@@ -123,22 +123,23 @@
 
 ### 概览
 
-为了帮助开发者简单和高效地开发和调试微信小程序，我们在原有的公众号网页调试的工具基础上，推出了全新的 [微信开发者工具](download.html)，集成了公众号网页调试和小程序调试两种开发模式。
+为了帮助开发者简单和高效地开发和调试微信小程序，我们在原有的公众号网页调试工具的基础上，推出了全新的 [微信开发者工具](download.html)，集成了公众号网页调试和小程序调试两种开发模式。
 
-使用公众号网页调试，开发者可以调试微信网页授权和微信JS-SDK [详情](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421141115) 使用小程序模式，开发者可以完成小程序的 API 和页面的开发调试、代码查看和编辑、小程序预览和发布等功能。
+*   使用公众号网页调试，开发者可以调试微信网页授权和微信JS-SDK [详情](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421141115)
+*   使用小程序调试，开发者可以完成小程序的 API 和页面的开发调试、代码查看和编辑、小程序预览和发布等功能。
 
 为了更好的开发体验，我们从视觉、交互、性能等方面对开发者工具进行升级，推出了 1.0.0 版本。
 
 ![devtools](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/main.png)
 
-在原有的功能上新增了两个开发辅助功能
+在原有功能的基础上，新增了两个开发辅助功能：
 
-1.  使用腾讯云，快速搭建小程序后台运行环境 [详情](https://mp.weixin.qq.com/debug/wxadoc/introduction/qcloud.html)
-2.  申请测试报告，了解小程序在真实的移动设备上运行性能和运行效果
+1.  使用腾讯云，快速搭建小程序后台运行环境； [详情](https://mp.weixin.qq.com/debug/wxadoc/introduction/qcloud.html)
+2.  申请测试报告，了解小程序在真实的移动设备上运行性能和运行效果。
 
 ![qcloud](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/qcloud.png) ![test](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/test.png)
 
-_注意：因为申请测试会暂用测试机器资源，所以一个 APPID 一天只能申请一次测试报告_
+_注意：因为申请测试会占用测试机器资源，所以一个 APPID 一天只能申请一次测试报告。_
 
 </section>
 

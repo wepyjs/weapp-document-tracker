@@ -284,7 +284,7 @@
         *   [wx.login](api-login.html#wxloginobject)
         *   [wx.checkSession](api-login.html#wxchecksessionobject)
         *   [签名加密](signature.html)
-    *   [授权](authorize.html)
+    *   [授权](authorize-index.html)
         *   [wx.authorize](authorize.html#wxauthorizeobject)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
@@ -310,7 +310,7 @@
         *   [客服输入状态](custommsg/typing.html)
         *   [接入指引](custommsg/callback_help.html)
     *   [转发](share.html)
-        *   [Page.onShareAppMessage](share.html#onshareappmessage)
+        *   [Page.onShareAppMessage](share.html#onshareappmessageoptions)
         *   [wx.showShareMenu](share.html#wxshowsharemenuobject)
         *   [wx.hideShareMenu](share.html#wxhidesharemenuobject)
         *   [wx.updateShareMenu](share.html#wxupdatesharemenuobject)
@@ -558,7 +558,9 @@
 
 ### wx.chooseLocation(OBJECT)
 
-打开地图选择位置
+打开地图选择位置。
+
+需要[用户授权](authorize-index.html) scope.userLocation
 
 **OBJECT参数说明：**
 
@@ -690,7 +692,9 @@
 
 ### wx.openLocation(OBJECT)
 
-​ 使用微信内置地图查看位置
+​使用微信内置地图查看位置。
+
+需要[用户授权](authorize-index.html) scope.userLocation
 
 **OBJECT参数说明：**
 
@@ -832,7 +836,6 @@
 #### Bug & Tip
 
 1.  `bug`: `iOS` `6.3.30` type 参数不生效，只会返回 wgs84 类型的坐标信息
-2.  `tip`: `wx.getLocation`、`wx.chooseLocation` 接口需要用户授权，请兼容用户拒绝授权的场景。
 
 </section>
 

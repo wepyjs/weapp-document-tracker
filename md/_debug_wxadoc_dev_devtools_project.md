@@ -68,8 +68,8 @@
     *   [模拟器](page.html#模拟器)
     *   [设置](settings.html)
         *   [外观设置](settings.html#外观设置)
-        *   [通知设置](settings.html#通知设置)
         *   [编辑设置](settings.html#编辑设置)
+        *   [通知设置](settings.html#通知设置)
         *   [代理设置](settings.html#代理设置)
     *   [项目页卡](project.html)
         *   [项目设置](project.html#项目设置)
@@ -88,9 +88,9 @@
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
-        *   [Network Panel](debug.html#network-panel)
-        *   [Appdata Panel](debug.html#appdata-panel)
+        *   [AppData Panel](debug.html#appdata-panel)
         *   [Storage Panel](debug.html#storage-panel)
+        *   [Network Panel](debug.html#network-panel)
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
@@ -125,11 +125,11 @@
 
 ## 显示当前项目细节
 
-包括图标、AppID、第三方平台名（只有第三方平台的开发小程序才会显示）、目录信息，以及上次提交代码的时间以及代码包大小。
+包括图标、AppID、第三方平台名（只有第三方平台的开发小程序才会显示）、目录信息、上次提交代码的时间以及代码包大小。
 
 ## 基础库版本切换
 
-开发者可以在此选择任意基础库版本，用于开发和调试旧版本兼容。
+开发者可以在此选择任意基础库版本，用于开发和调试旧版本兼容问题。
 
 ![clientlib](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/clientlib.png)
 
@@ -137,21 +137,20 @@
 
 微信小程序运行在三端：iOS、Android 和 用于调试的开发者工具。
 
-三端的脚本执行环境聚以及用于渲染非原生组件的环境是各不相同的：
+三端的脚本执行环境以及用于渲染非原生组件的环境是各不相同的：
 
 *   在 iOS 上，小程序的 javascript 代码是运行在 JavaScriptCore 中，是由 WKWebView 来渲染的，环境有 iOS8、iOS9、iOS10
-*   在 Android 上，小程序的 javascript 代码是通过 X5 JSCore来解析，是由 [X5](http://x5.tencent.com/guide?id=4000) 基于 Mobile Chrome 53 内核来渲染的
+*   在 Android 上，小程序的 javascript 代码是通过 X5 JSCore来解析，是由 [X5](http://x5.tencent.com/guide?id=4000) 基于 Mobile Chrome 53/57 内核来渲染的
 *   在 开发工具上， 小程序的 javascript 代码是运行在 nwjs 中，是由 Chrome Webview 来渲染的
 
 尽管三端的环境是十分相似的，但是还是有些许区别：
 
-*   `ES6` 语法支持不一致[详情](details.html#es6-api-支持情况)
-
-*   `wxss` 渲染表现不一致尽管可以通过开启样式补全来规避大部分的问题 ，还是建议开发者需要在 iOS 和 Android 上检查小程序的真实表现。
+*   `ES6` 语法支持不一致。[详情](details.html#es6-api-支持情况)
+*   `wxss` 渲染表现不一致。尽管可以通过开启样式补全来规避大部分的问题 ，还是建议开发者需要在 iOS 和 Android 上分别检查小程序的真实表现。
 
 ### ES6 转 ES5
 
-在 0.10.101000 以及之后版本的开发工具中，会默认使用 `babel` 将开发者代码 `ES6` 语法转换为三端都能很好支持的 `ES5` 的代码，帮助开发者解决环境不同所带来的开发问题。
+在 0.10.101000 以及之后版本的开发工具中，会默认使用 `babel` 将开发者 `ES6` 语法代码转换为三端都能很好支持的 `ES5` 的代码，帮助开发者解决环境不同所带来的开发问题。
 
 需要注意的是：
 
@@ -159,7 +158,7 @@
 
 ### 样式补全
 
-开启此选项，开发工具会自动检测并补全缺失样式，保证在 iOS8 上的正常显示。尽管可以规避大部分的问题 ，还是建议开发者需要在 iOS 和 Android 上检查小程序的真实表现。
+开启此选项，开发工具会自动检测并补全缺失样式，保证在低版本系统上的正常显示。尽管可以规避大部分的问题 ，还是建议开发者需要在 iOS 和 Android 上分别检查小程序的真实表现。
 
 ### 压缩代码
 
@@ -167,19 +166,19 @@
 
 ### 不校验请求域名及 TLS 版本
 
-正式发布的小程序的网络请求是需要校验合法域名以及域名的 TLS 版本，可以在 mp 管理后台进行配置。 在开发过程中，我们可以开启此选项，开发工具将不会校验安全域名，以及 TLS 版本，帮助在开发过程中更好的完成调试工作。
+正式发布的小程序的网络请求是需要校验合法域名以及域名的 TLS 版本，可以在 mp 管理后台进行配置。 在开发过程中可以开启此选项，开发工具将不会校验安全域名，以及 TLS 版本，帮助在开发过程中更方便的完成调试工作。
 
 ![edit](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/righttools.png)
 
 ## 域名信息
 
-将显示小程序的安全域名信息，合法域名可在 mp 管理后台进行设置
+将显示小程序的安全域名信息，合法域名可在 mp 管理后台进行设置。
 
 ![host](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/host.png)
 
 ## 腾讯云状态
 
-使用腾讯云功能，可以在这里看到腾讯云状态、开发环境信息和域名信息
+使用腾讯云功能，可以在这里看到腾讯云状态、开发环境信息和域名信息。
 
 ![qcloud](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/qcloudinfo.png)
 

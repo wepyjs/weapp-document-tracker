@@ -68,8 +68,8 @@
     *   [模拟器](page.html#模拟器)
     *   [设置](settings.html)
         *   [外观设置](settings.html#外观设置)
-        *   [通知设置](settings.html#通知设置)
         *   [编辑设置](settings.html#编辑设置)
+        *   [通知设置](settings.html#通知设置)
         *   [代理设置](settings.html#代理设置)
     *   [项目页卡](project.html)
         *   [项目设置](project.html#项目设置)
@@ -88,9 +88,9 @@
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
-        *   [Network Panel](debug.html#network-panel)
-        *   [Appdata Panel](debug.html#appdata-panel)
+        *   [AppData Panel](debug.html#appdata-panel)
         *   [Storage Panel](debug.html#storage-panel)
+        *   [Network Panel](debug.html#network-panel)
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
@@ -125,21 +125,21 @@
 
 微信小程序运行在三端：iOS、Android 和 用于调试的开发者工具。
 
-三端的脚本执行环境聚以及用于渲染非原生组件的环境是各不相同的：
+三端的脚本执行环境以及用于渲染非原生组件的环境是各不相同的：
 
 *   在 iOS 上，小程序的 javascript 代码是运行在 JavaScriptCore 中，是由 WKWebView 来渲染的，环境有 iOS8、iOS9、iOS10
-*   在 Android 上，小程序的 javascript 代码是通过 X5 JSCore来解析，是由 [X5](http://x5.tencent.com/guide?id=4000) 基于 Mobile Chrome 53 内核来渲染的
+*   在 Android 上，小程序的 javascript 代码是通过 X5 JSCore来解析，是由 [X5](https://x5.tencent.com/tbs/) 基于 Mobile Chrome 53/57 内核来渲染的
 *   在 开发工具上， 小程序的 javascript 代码是运行在 nwjs 中，是由 Chrome Webview 来渲染的
 
 尽管三端的环境是十分相似的，但是还是有些许区别：
 
 *   `ES6` 语法支持不一致 语法上开发者可以通过开启 `ES6` 转 `ES5` 的功能来规避。[详情](project.html#es6-转-es5)
 
-*   `wxss` 渲染表现不一致 尽管可以通过开启样式补全来规避大部分的问题 [详情](project.html#样式补全)，还是建议开发者需要在 iOS 和 Android 上检查小程序的真实表现。
+*   `wxss` 渲染表现不一致 尽管可以通过开启样式补全来规避大部分的问题 [详情](project.html#样式补全)，还是建议开发者需要在 iOS 和 Android 上分别检查小程序的真实表现。
 
 ### 客户端ES6 API 支持情况
 
-微信小程序已经支持了绝大部分的 ES6 API 具体表格如下：
+微信小程序已经支持了绝大部分的 ES6 API，具体表格如下：
 
 1.  `tip`: TBS 3.0 是指微信小程序 Android 运行环境
 2.  `tip`: `Array.values` 不支持
@@ -936,8 +936,6 @@
 <th>iOS9</th>
 
 <th>iOS10</th>
-
-<th></th>
 
 <th>TBS3.0</th>
 

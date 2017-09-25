@@ -68,8 +68,8 @@
     *   [模拟器](page.html#模拟器)
     *   [设置](settings.html)
         *   [外观设置](settings.html#外观设置)
-        *   [通知设置](settings.html#通知设置)
         *   [编辑设置](settings.html#编辑设置)
+        *   [通知设置](settings.html#通知设置)
         *   [代理设置](settings.html#代理设置)
     *   [项目页卡](project.html)
         *   [项目设置](project.html#项目设置)
@@ -88,9 +88,9 @@
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
-        *   [Network Panel](debug.html#network-panel)
-        *   [Appdata Panel](debug.html#appdata-panel)
+        *   [AppData Panel](debug.html#appdata-panel)
         *   [Storage Panel](debug.html#storage-panel)
+        *   [Network Panel](debug.html#network-panel)
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
@@ -129,19 +129,19 @@
 
 ## 文件支持
 
-工具目前提供了 5 种文件的编辑：wxml、wxss、js、json、wxs 以及图片文件的预览。
+工具目前提供了 5 种文件的编辑：`wxml`、`wxss`、`js`、`json`、`wxs` 以及图片文件的预览。
 
 ## 文件操作
 
 新建页面有两种方式
 
-1.  在目录树上右键，选择新建 Page，将自动生成页面所需要的 wxml、js、wxss、json
+1.  在目录树上右键，选择新建 Page，将自动生成页面所需要的 `wxml`、`wxss`、`js`、`json`
 
 2.  在 app.json 的 pages 字段，添加需要新建的页面的路径，将会自动生成改页面所需要的文件
 
 ## 自动保存
 
-书写代码后，工具会自动帮助用户保存当前的代码编辑状态，直接关闭工具或者切换到别的项目，并不会丢失已经编辑的文件状态，但需要注意的是，只有用户主动保存文件，修改内容才会真实的写到硬盘上。
+编辑代码后，工具会自动帮助用户保存当前的代码编辑状态，直接关闭工具或者切换到别的项目，并不会丢失已经编辑的文件状态，但需要注意的是，只有用户主动保存文件，修改内容才会真实的写到硬盘上。
 
 如果设置中开启了 “修改文件时自动保存”（设置-编辑设置-修改文件自动保存），工具在修改文件时会自动保存到硬盘中，无需手动保存的效果。
 
@@ -149,7 +149,7 @@
 
 ## 实时预览
 
-如果设置中开启了 “文件保存时自动编译小程序”（位置在：设置-编辑设置-保存时自动编译小程序），那么当 js, json, wxml 或 wxss 文件修改时，可以通过模拟器实时预览编辑的情况：
+如果设置中开启了 “文件保存时自动编译小程序”（设置-编辑设置-保存时自动编译小程序），那么当 `wxml`、`wxss`、`js`、`json` 文件修改时，可以通过模拟器实时预览编辑的情况：
 
 **注意：如果同时开启了 ”修改文件时自动保存“ 的设置，编译动作会有一定的延迟，来避免频繁的编译，手动点击编译按钮将立即编译。**
 
@@ -179,7 +179,7 @@ wxml 补全
 
 ## 项目配置文件
 
-我们可以在项目根目录使用 `project.config.json` 文件对项目进行配置。
+可以在项目根目录使用 `project.config.json` 文件对项目进行配置。
 
 <table>
 

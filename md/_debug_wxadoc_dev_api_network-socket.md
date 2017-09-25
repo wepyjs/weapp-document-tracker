@@ -284,7 +284,7 @@
         *   [wx.login](api-login.html#wxloginobject)
         *   [wx.checkSession](api-login.html#wxchecksessionobject)
         *   [签名加密](signature.html)
-    *   [授权](authorize.html)
+    *   [授权](authorize-index.html)
         *   [wx.authorize](authorize.html#wxauthorizeobject)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
@@ -310,7 +310,7 @@
         *   [客服输入状态](custommsg/typing.html)
         *   [接入指引](custommsg/callback_help.html)
     *   [转发](share.html)
-        *   [Page.onShareAppMessage](share.html#onshareappmessage)
+        *   [Page.onShareAppMessage](share.html#onshareappmessageoptions)
         *   [wx.showShareMenu](share.html#wxshowsharemenuobject)
         *   [wx.hideShareMenu](share.html#wxhidesharemenuobject)
         *   [wx.updateShareMenu](share.html#wxupdatesharemenuobject)
@@ -374,7 +374,9 @@
 
 ### wx.connectSocket(OBJECT)
 
-创建一个 [WebSocket](https://developer.mozilla.org/zh-CN/docs/Web/API/WebSocket) 连接；**一个微信小程序同时只能有一个 WebSocket 连接，如果当前已存在一个 WebSocket 连接，会自动关闭该连接，并重新创建一个 WebSocket 连接。**
+创建一个 [WebSocket](https://developer.mozilla.org/zh-CN/docs/Web/API/WebSocket) 连接。**使用前请先阅读[说明](api-network.html)**。
+
+**一个微信小程序同时只能有一个 WebSocket 连接，如果当前已存在一个 WebSocket 连接，会自动关闭该连接，并重新创建一个 WebSocket 连接。**
 
 **OBJECT参数说明：**
 
@@ -450,7 +452,7 @@
 
 <td>否</td>
 
-<td>默认是GET，有效值： OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT</td>
+<td>默认是GET，有效值：OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT</td>
 
 <td></td>
 
@@ -828,11 +830,6 @@
     wx.onSocketClose(function(res) {
       console.log('WebSocket 已关闭！')
     })
-
-#### Bug & Tip
-
-1.  `tip`: createSocket 链接默认和最大超时时间都是 60s
-2.  `tip`: 网络请求的 referer 是不可以设置的，格式固定为 `https://servicewechat.com/{appid}/{version}/page-frame.html`，其中 `{appid}` 为小程序的 appid，`{version}` 为小程序的版本号，版本号为 0 表示为开发版。
 
 </section>
 

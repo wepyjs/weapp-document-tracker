@@ -68,8 +68,8 @@
     *   [模拟器](page.html#模拟器)
     *   [设置](settings.html)
         *   [外观设置](settings.html#外观设置)
-        *   [通知设置](settings.html#通知设置)
         *   [编辑设置](settings.html#编辑设置)
+        *   [通知设置](settings.html#通知设置)
         *   [代理设置](settings.html#代理设置)
     *   [项目页卡](project.html)
         *   [项目设置](project.html#项目设置)
@@ -88,9 +88,9 @@
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
-        *   [Network Panel](debug.html#network-panel)
-        *   [Appdata Panel](debug.html#appdata-panel)
+        *   [AppData Panel](debug.html#appdata-panel)
         *   [Storage Panel](debug.html#storage-panel)
+        *   [Network Panel](debug.html#network-panel)
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
@@ -129,9 +129,9 @@
 
 <tr>
 
-<th>mac 快捷键</th>
+<th>Mac OS 快捷键</th>
 
-<th>windows 快捷键</th>
+<th>Windows 快捷键</th>
 
 <th>说明</th>
 
@@ -143,7 +143,7 @@
 
 <tr>
 
-<td>commad + Q</td>
+<td>⌘ + Q</td>
 
 <td></td>
 
@@ -153,7 +153,7 @@
 
 <tr>
 
-<td>shift + command + N</td>
+<td>⇧ + ⌘ + N</td>
 
 <td>shift + ctrl + N</td>
 
@@ -163,7 +163,7 @@
 
 <tr>
 
-<td>shift + command + W</td>
+<td>⇧ + ⌘ + W</td>
 
 <td>shift + ctrl + W</td>
 
@@ -183,7 +183,7 @@
 
 <tr>
 
-<td>command + N</td>
+<td>⌘ + N</td>
 
 <td>ctrl + N</td>
 
@@ -193,7 +193,7 @@
 
 <tr>
 
-<td>command + S</td>
+<td>⌘ + S</td>
 
 <td>ctrl + S</td>
 
@@ -203,7 +203,7 @@
 
 <tr>
 
-<td>shift + command + S</td>
+<td>⇧ + ⌘ + S</td>
 
 <td>shift + ctrl + S</td>
 
@@ -213,7 +213,7 @@
 
 <tr>
 
-<td>command + W</td>
+<td>⌘ + W</td>
 
 <td>ctrl + W</td>
 
@@ -233,7 +233,7 @@
 
 <tr>
 
-<td>command + Z</td>
+<td>⌘ + Z</td>
 
 <td>ctrl + Z</td>
 
@@ -243,7 +243,7 @@
 
 <tr>
 
-<td>shift + command + Z</td>
+<td>⇧ + ⌘ + Z</td>
 
 <td>shift + ctrl + Z</td>
 
@@ -253,7 +253,7 @@
 
 <tr>
 
-<td>command + C</td>
+<td>⌘ + C</td>
 
 <td>ctrl + C</td>
 
@@ -263,7 +263,7 @@
 
 <tr>
 
-<td>command + X</td>
+<td>⌘ + X</td>
 
 <td>ctrl + X</td>
 
@@ -273,7 +273,7 @@
 
 <tr>
 
-<td>command + V</td>
+<td>⌘ + V</td>
 
 <td>ctrl + V</td>
 
@@ -283,7 +283,7 @@
 
 <tr>
 
-<td>command + [</td>
+<td>⌘ + [</td>
 
 <td>ctrl + [</td>
 
@@ -293,7 +293,7 @@
 
 <tr>
 
-<td>command + ]</td>
+<td>⌘ + ]</td>
 
 <td>ctrl + ]</td>
 
@@ -303,7 +303,7 @@
 
 <tr>
 
-<td>shift + alt + F</td>
+<td>⇧ + ⌥ + F</td>
 
 <td>shift + alt + F</td>
 
@@ -313,7 +313,7 @@
 
 <tr>
 
-<td>alt + ⬆</td>
+<td>⌥ + ⬆</td>
 
 <td>alt + ⬆</td>
 
@@ -323,7 +323,7 @@
 
 <tr>
 
-<td>alt + ⬇</td>
+<td>⌥ + ⬇</td>
 
 <td>alt + ⬆</td>
 
@@ -333,7 +333,7 @@
 
 <tr>
 
-<td>shift + alt + ⬆</td>
+<td>⇧ + ⌥ + ⬆</td>
 
 <td>shift + alt + ⬆</td>
 
@@ -343,7 +343,7 @@
 
 <tr>
 
-<td>shift + alt + ⬇</td>
+<td>⇧ + ⌥ + ⬇</td>
 
 <td>shift + alt + ⬆</td>
 
@@ -353,7 +353,7 @@
 
 <tr>
 
-<td>command + P</td>
+<td>⌘ + P</td>
 
 <td>ctrl + P</td>
 
@@ -363,7 +363,7 @@
 
 <tr>
 
-<td>command + E</td>
+<td>⌘ + E</td>
 
 <td>ctrl + E</td>
 
@@ -373,7 +373,7 @@
 
 <tr>
 
-<td>command + alt + ⬅</td>
+<td>⌘ + ⌥ + ⬅</td>
 
 <td>ctrl + alt + ⬅</td>
 
@@ -383,9 +383,9 @@
 
 <tr>
 
-<td>command + alt + →</td>
+<td>⌘ + ⌥ + ➡</td>
 
-<td>ctrl + alt + →</td>
+<td>ctrl + alt + ➡</td>
 
 <td>打开当前文件编辑器右边的文件</td>
 
@@ -393,7 +393,7 @@
 
 <tr>
 
-<td>command + F</td>
+<td>⌘ + F</td>
 
 <td>ctrl + F</td>
 
@@ -403,7 +403,7 @@
 
 <tr>
 
-<td>shift + command + F</td>
+<td>⇧ + ⌘ + F</td>
 
 <td>shift + ctrl + F</td>
 
@@ -413,9 +413,9 @@
 
 <tr>
 
-<td>command + R</td>
+<td>⇧ + ⌘ + R</td>
 
-<td>ctrl + R</td>
+<td>shift + ctrl + R</td>
 
 <td>焦点在编辑器内，表示替换</td>
 
@@ -433,7 +433,7 @@
 
 <tr>
 
-<td>command + B</td>
+<td>⌘ + B</td>
 
 <td>ctrl + B</td>
 
@@ -443,7 +443,7 @@
 
 <tr>
 
-<td>command + R</td>
+<td>⌘ + R</td>
 
 <td>ctrl + R</td>
 
@@ -453,7 +453,7 @@
 
 <tr>
 
-<td>shift + command + P</td>
+<td>⇧ + ⌘ + P</td>
 
 <td>shift + ctrl + P</td>
 
@@ -463,7 +463,7 @@
 
 <tr>
 
-<td>shift + command + U</td>
+<td>⇧ + ⌘ + U</td>
 
 <td>shift + ctrl + U</td>
 
@@ -483,47 +483,7 @@
 
 <tr>
 
-<td>F9</td>
-
-<td>F9</td>
-
-<td>显示/隐藏 模拟器</td>
-
-</tr>
-
-<tr>
-
-<td>F10</td>
-
-<td>F10</td>
-
-<td>显示/隐藏 编辑器</td>
-
-</tr>
-
-<tr>
-
-<td>F11</td>
-
-<td>F11</td>
-
-<td>显示/隐藏 目录树</td>
-
-</tr>
-
-<tr>
-
-<td>F12</td>
-
-<td>F12</td>
-
-<td>显示/隐藏 编辑器</td>
-
-</tr>
-
-<tr>
-
-<td>command + ,</td>
+<td>⌘ + ,</td>
 
 <td>ctrl + ,</td>
 

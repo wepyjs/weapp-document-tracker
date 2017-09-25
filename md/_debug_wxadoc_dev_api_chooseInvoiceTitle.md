@@ -284,7 +284,7 @@
         *   [wx.login](api-login.html#wxloginobject)
         *   [wx.checkSession](api-login.html#wxchecksessionobject)
         *   [签名加密](signature.html)
-    *   [授权](authorize.html)
+    *   [授权](authorize-index.html)
         *   [wx.authorize](authorize.html#wxauthorizeobject)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
@@ -310,7 +310,7 @@
         *   [客服输入状态](custommsg/typing.html)
         *   [接入指引](custommsg/callback_help.html)
     *   [转发](share.html)
-        *   [Page.onShareAppMessage](share.html#onshareappmessage)
+        *   [Page.onShareAppMessage](share.html#onshareappmessageoptions)
         *   [wx.showShareMenu](share.html#wxshowsharemenuobject)
         *   [wx.hideShareMenu](share.html#wxhidesharemenuobject)
         *   [wx.updateShareMenu](share.html#wxupdatesharemenuobject)
@@ -376,7 +376,9 @@
 
 > 基础库 1.5.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
-选择用户的发票抬头
+选择用户的发票抬头。
+
+需要[用户授权](authorize-index.html) scope.invoiceTitle
 
 **Object参数说明：**
 

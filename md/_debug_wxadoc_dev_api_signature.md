@@ -284,7 +284,7 @@
         *   [wx.login](api-login.html#wxloginobject)
         *   [wx.checkSession](api-login.html#wxchecksessionobject)
         *   [签名加密](signature.html)
-    *   [授权](authorize.html)
+    *   [授权](authorize-index.html)
         *   [wx.authorize](authorize.html#wxauthorizeobject)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
@@ -310,7 +310,7 @@
         *   [客服输入状态](custommsg/typing.html)
         *   [接入指引](custommsg/callback_help.html)
     *   [转发](share.html)
-        *   [Page.onShareAppMessage](share.html#onshareappmessage)
+        *   [Page.onShareAppMessage](share.html#onshareappmessageoptions)
         *   [wx.showShareMenu](share.html#wxshowsharemenuobject)
         *   [wx.hideShareMenu](share.html#wxhidesharemenuobject)
         *   [wx.updateShareMenu](share.html#wxupdatesharemenuobject)
@@ -419,7 +419,7 @@
 
 微信官方提供了多种编程语言的示例代码（[点击下载](../demo/aes-sample.zip)）。每种语言类型的接口名字均一致。调用方式可以参照示例。
 
-另外，为了应用能校验数据的有效性，我们会在敏感数据加上数据水印( watermark )
+另外，为了应用能校验数据的有效性，会在敏感数据加上数据水印( watermark )
 
 **watermark参数说明：**
 
@@ -537,6 +537,6 @@
 
 </div>
 
-[](api-login.html#wxchecksessionobject)[](authorize.html)</div>
+[](api-login.html#wxchecksessionobject)[](authorize-index.html)</div>
 
 </div>

@@ -284,7 +284,7 @@
         *   [wx.login](api-login.html#wxloginobject)
         *   [wx.checkSession](api-login.html#wxchecksessionobject)
         *   [签名加密](signature.html)
-    *   [授权](authorize.html)
+    *   [授权](authorize-index.html)
         *   [wx.authorize](authorize.html#wxauthorizeobject)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
@@ -310,7 +310,7 @@
         *   [客服输入状态](custommsg/typing.html)
         *   [接入指引](custommsg/callback_help.html)
     *   [转发](share.html)
-        *   [Page.onShareAppMessage](share.html#onshareappmessage)
+        *   [Page.onShareAppMessage](share.html#onshareappmessageoptions)
         *   [wx.showShareMenu](share.html#wxshowsharemenuobject)
         *   [wx.hideShareMenu](share.html#wxhidesharemenuobject)
         *   [wx.updateShareMenu](share.html#wxupdatesharemenuobject)
@@ -374,7 +374,9 @@
 
 ### wx.uploadFile(OBJECT)
 
-将本地资源上传到开发者服务器。如页面通过 [wx.chooseImage](media-picture.html#wxchooseimageobject) 等接口获取到一个本地资源的临时文件路径后，可通过此接口将本地资源上传到指定服务器。客户端发起一个 HTTPS POST 请求，其中 `content-type` 为 `multipart/form-data` 。
+将本地资源上传到开发者服务器，客户端发起一个 HTTPS POST 请求，其中 `content-type` 为 `multipart/form-data` 。**使用前请先阅读[说明](api-network.html)**。
+
+如页面通过 [wx.chooseImage](media-picture.html#wxchooseimageobject) 等接口获取到一个本地资源的临时文件路径后，可通过此接口将本地资源上传到指定服务器。
 
 **OBJECT参数说明：**
 
@@ -442,7 +444,7 @@
 
 <td>否</td>
 
-<td>HTTP 请求 Header , header 中不能设置 Referer</td>
+<td>HTTP 请求 Header, header 中不能设置 Referer</td>
 
 </tr>
 
@@ -534,7 +536,7 @@
 
 <td>Number</td>
 
-<td>HTTP状态码</td>
+<td>开发者服务器返回的 HTTP 状态码</td>
 
 </tr>
 
@@ -697,14 +699,9 @@
 
     uploadTask.abort() // 取消上传任务
 
-#### Bug & Tip
-
-1.  `tip`: 最大并发限制是 10 个
-2.  `tip`: 默认超时时间和最大超时时间都是 60s
-
 ### wx.downloadFile(OBJECT)
 
-下载文件资源到本地。客户端直接发起一个 HTTP GET 请求，返回文件的本地临时路径。
+下载文件资源到本地，客户端直接发起一个 HTTP GET 请求，返回文件的本地临时路径。**使用前请先阅读[说明](api-network.html)**。
 
 **OBJECT参数说明：**
 
@@ -748,7 +745,7 @@
 
 <td>否</td>
 
-<td>HTTP 请求 Header</td>
+<td>HTTP 请求 Header，header 中不能设置 Referer</td>
 
 </tr>
 
@@ -938,10 +935,7 @@
 
 #### Bug & Tip
 
-1.  `tip`: 最大并发限制是 10 个
-2.  `tip`: 默认超时时间和最大超时时间都是 60s
-3.  `tip`: 网络请求的 referer 是不可以设置的，格式固定为 `https://servicewechat.com/{appid}/{version}/page-frame.html`，其中 `{appid}` 为小程序的 appid，`{version}` 为小程序的版本号，版本号为 0 表示为开发版。
-4.  `tip`: 6.5.3 以及之前版本的 iOS 微信客户端 `header` 设置无效
+1.  `tip`: 6.5.3 以及之前版本的 iOS 微信客户端 `header` 设置无效
 
 </section>
 

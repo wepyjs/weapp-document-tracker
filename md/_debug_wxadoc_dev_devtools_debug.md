@@ -68,8 +68,8 @@
     *   [模拟器](page.html#模拟器)
     *   [设置](settings.html)
         *   [外观设置](settings.html#外观设置)
-        *   [通知设置](settings.html#通知设置)
         *   [编辑设置](settings.html#编辑设置)
+        *   [通知设置](settings.html#通知设置)
         *   [代理设置](settings.html#代理设置)
     *   [项目页卡](project.html)
         *   [项目设置](project.html#项目设置)
@@ -88,9 +88,9 @@
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
-        *   [Network Panel](debug.html#network-panel)
-        *   [Appdata Panel](debug.html#appdata-panel)
+        *   [AppData Panel](debug.html#appdata-panel)
         *   [Storage Panel](debug.html#storage-panel)
+        *   [Network Panel](debug.html#network-panel)
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
@@ -131,9 +131,9 @@
 
 ## 自定义编译
 
-点击工具栏中的编译按钮或者使用快捷键 Ctrl(Command) + B，可以编译当前代码，并自动刷新模拟器。
+点击工具栏中的编译按钮或者使用快捷键 Ctrl(⌘) + B，可以编译当前代码，并自动刷新模拟器。
 
-同时为了帮助开发者调试从不同场景值进入具体的页面，如图，开发者可以添加或选择已有的自定义编译条件进行编译和代码预览。
+同时为了帮助开发者调试从不同场景值进入具体的页面，开发者可以添加或选择已有的自定义编译条件进行编译和代码预览（如图）。
 
 **注：编译条件跟项目相关，每个项目可以保存自己相关的编译条件**
 
@@ -141,7 +141,7 @@
 
 ## 前后台切换
 
-工具栏中前后台切换帮助开发者模拟一些客户端的环境操作。例如当用户从小程序中回到聊天窗口，会触发一个小程序被设置为后台的api。
+工具栏中前后台切换帮助开发者模拟一些客户端的环境操作。例如当用户从小程序中回到聊天窗口，会触发一个小程序被设置为后台的回调。
 
 ![5](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/background.png)
 
@@ -151,7 +151,7 @@
 
 ### Wxml panel
 
-Wxml panel 用于帮助开发者开发 Wxml 转化后的界面。在这里可以看到真实的页面结构以及结构对应的 wxss 属性，同时可以通过修改对应 wxss 属性，在模拟器中实时看到修改的情况（仅为实时预览，无法保存到文件）。通过调试模块左上角的选择器，还可以快速找到页面中组件对应的 wxml 代码。
+Wxml panel 用于帮助开发者开发 wxml 转化后的界面。在这里可以看到真实的页面结构以及结构对应的 wxss 属性，同时可以通过修改对应 wxss 属性，在模拟器中实时看到修改的情况（仅为实时预览，无法保存到文件）。通过调试模块左上角的选择器，还可以快速定位页面中组件对应的 wxml 代码。
 
 ![wxml](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/wxml.gif)
 
@@ -163,15 +163,15 @@ Sources panel 用于显示当前项目的脚本文件，同浏览器开发不同
 
 **注：当代码运行到断点的时候，整个小程序都停止了，所以模拟器会出现白屏或者无法操作的情况**
 
-### Appdata panel
+### AppData panel
 
-Appdata panel 用于显示当前项目运行时小程序 appdata 具体数据，实时地反馈项目数据情况，可以在此处编辑数据，并及时地反馈到界面上。
+AppData panel 用于显示当前项目运行时小程序 AppData 具体数据，实时地反映项目数据情况，可以在此处编辑数据，并及时地反馈到界面上。
 
 ![appdata](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/appdata.gif)
 
 ### Storage panel
 
-Storage panel 用于显示当前项目的使用 wx.setStorage 或者 wx.setStorageSync 后的数据存储情况。
+Storage panel 用于显示当前项目使用 `wx.setStorage` 或者 `wx.setStorageSync` 后的数据存储情况。
 
 可以直接在 Storage panel 上对数据进行删除（按 delete 键）、新增、修改
 

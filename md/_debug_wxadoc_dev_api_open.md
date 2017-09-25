@@ -284,7 +284,7 @@
         *   [wx.login](api-login.html#wxloginobject)
         *   [wx.checkSession](api-login.html#wxchecksessionobject)
         *   [签名加密](signature.html)
-    *   [授权](authorize.html)
+    *   [授权](authorize-index.html)
         *   [wx.authorize](authorize.html#wxauthorizeobject)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
@@ -310,7 +310,7 @@
         *   [客服输入状态](custommsg/typing.html)
         *   [接入指引](custommsg/callback_help.html)
     *   [转发](share.html)
-        *   [Page.onShareAppMessage](share.html#onshareappmessage)
+        *   [Page.onShareAppMessage](share.html#onshareappmessageoptions)
         *   [wx.showShareMenu](share.html#wxshowsharemenuobject)
         *   [wx.hideShareMenu](share.html#wxhidesharemenuobject)
         *   [wx.updateShareMenu](share.html#wxupdatesharemenuobject)
@@ -376,6 +376,8 @@
 
 获取用户信息，withCredentials 为 true 时需要先调用 [wx.login](api-login.html#wxloginobject) 接口。
 
+需要[用户授权](authorize-index.html) scope.userInfo
+
 **OBJECT参数说明：**
 
 <table>
@@ -422,9 +424,9 @@
 
 <td>否</td>
 
-<td>指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文</td>
+<td>指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。默认为en。</td>
 
-<td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
+<td>[1.3.0](../framework/compatibility.html "基础库 1.3.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -579,10 +581,6 @@ encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](
         "timestamp":TIMESTAMP
         }
     }
-
-#### Bug & Tip
-
-1.  `tip`: `wx.getUserInfo` 接口需要用户授权，请兼容用户拒绝授权的场景。
 
 </section>
 

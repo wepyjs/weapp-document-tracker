@@ -284,7 +284,7 @@
         *   [wx.login](api-login.html#wxloginobject)
         *   [wx.checkSession](api-login.html#wxchecksessionobject)
         *   [签名加密](signature.html)
-    *   [授权](authorize.html)
+    *   [授权](authorize-index.html)
         *   [wx.authorize](authorize.html#wxauthorizeobject)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
@@ -310,7 +310,7 @@
         *   [客服输入状态](custommsg/typing.html)
         *   [接入指引](custommsg/callback_help.html)
     *   [转发](share.html)
-        *   [Page.onShareAppMessage](share.html#onshareappmessage)
+        *   [Page.onShareAppMessage](share.html#onshareappmessageoptions)
         *   [wx.showShareMenu](share.html#wxshowsharemenuobject)
         *   [wx.hideShareMenu](share.html#wxhidesharemenuobject)
         *   [wx.updateShareMenu](share.html#wxupdatesharemenuobject)
@@ -1110,9 +1110,27 @@
 > 
 > 16: 长按识别二维码
 > 
-> 17:相册选取二维码
+> 17: 相册选取二维码
 > 
 > 18: 公众号文章
+> 
+> 19：钱包
+> 
+> 20：卡包
+> 
+> 21：小程序内卡券
+> 
+> 22：其他小程序
+> 
+> 23：其他小程序返回
+> 
+> 24：卡券适用门店列表
+> 
+> 25：搜索框快捷入口
+> 
+> 26：小程序客服消息
+> 
+> 27：公众号下发
 
 访问时长：(index="access_staytime_info")
 

@@ -181,7 +181,7 @@
 
 <td>Boolean</td>
 
-<td>true</td>
+<td>false</td>
 
 <td>是否显示默认控件</td>
 

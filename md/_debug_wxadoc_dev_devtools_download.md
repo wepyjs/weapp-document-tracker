@@ -88,7 +88,7 @@
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
-        *   [Appdata Panel](debug.html#appdata-panel)
+        *   [AppData Panel](debug.html#appdata-panel)
         *   [Storage Panel](debug.html#storage-panel)
         *   [Network Panel](debug.html#network-panel)
         *   [Console Panel](debug.html#console-panel)
@@ -121,38 +121,37 @@
 
 <section class="normal markdown-section">
 
-## 下载地址
-
-### 最新版本 2017.08.31 (1.01.170831)
+## 下载地址 (1.01.170913)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
 
-### 开发工具更新
+### 最新版本 2017.09.13 (1.01.170913)
 
-1.  `A` 新增 快捷键 `F8` 显示隐藏工具栏
-2.  `U` 优化 当有错误的时候 `console` 面板不会自动弹出
-3.  `F` 修复 保存时自动编译，编译时自动保存无法保存所有文件的问题
-4.  `F` 修复 第三方平台小程序打开项目报错的问题
-5.  `F` 修复 启动工具后显示网络连接错误，增加错误提示
-6.  `F` 修复 模拟器在一些设备上显示模糊的问题
-7.  `F` 修复 `wxss` 编译错误提示不正确的问题
-8.  `F` 修复 某些第三方编辑器打开文件会触发工具自动编译的问题
-9.  `F` 修复 网页调试 hash 变化会 load 页面的问题
-10.  `F` 修复 网页调试 `alert`、`confirm` 不显示的问题
-11.  `F` 修复 网页调试添加卡券屏幕缩放无效的问题
-12.  `F` 修复 网页调试 `urlbar` 输入后自动匹配，按键盘向下键然后 `load` 不了
+1.  `A` 新增 `1.5.3` 基础库
+2.  `U` 优化 为工具栏、模拟器、编辑器、目录树、调试器界面的显示隐藏切换增加快捷键
+3.  `U` 优化 编辑器同时编辑若干同名文件时，文件标签的标题显示文件夹或路径名称来区分
+4.  `U` 优化 上传代码时自动填写上次提交的版本号和备注
+5.  `U` 修复 工具不支持 fiddler 和 charles 抓包的问题
+6.  `F` 修复 创建项目时候判断是否空目录时 Mac 下未排除隐藏文件的问题
+7.  `F` 修复 开发者工具内部错误导致的 crash 问题
+8.  `F` 修复 工具栏隐藏后无法显示预览二维码的问题
+9.  `F` 修复 选择旧基础库在重启工具后不生效的问题
+10.  `F` 修复 API `wx.getWeRunData` 在未开通微信运动时未正确提示的问题
+11.  `F` 修复 登录态失效时创建项目失败没有提示的问题
+12.  `F` 修复 地理位置模拟只生效一次的问题
+13.  `F` 修复 模拟器缩放时页面底部被遮住了一部分的问题
+14.  `F` 修复 `app.json` 中 `unicode` 未正常展示的问题
+15.  `F` 修复 点击腾讯云恢复开发环境没有提示的问题
+16.  `F` 修复 模拟器缩放时切后台后的场景值列表样式异常的问题
+17.  `F` 修复 编辑器目录在新建和右键点击时显示效果出错的问题
+18.  `F` 修复 Picker 组件选择第一个值出错的问题
+19.  `F` 修复 重新编译后 audio api 依然在播放音乐的问题
+20.  `F` 修复 app.json 指定 tabBar 的`selectedColor`不生效的问题
+21.  `F` 修复 Windows 系统下无法编辑和保存局域网内文件的问题
 
 ### 历史版本下载 2017.08.30 (0.22.203100)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_darwin&from=mpwiki)
-
-### 开发工具更新
-
-1.  `A` 新增 申请测试报告功能 [详情](monkey-test.html)
-2.  `A` 新增 `WXS` 功能 [详情](../framework/view/wxs/)
-3.  `A` 新增 发布腾讯云功能 [详情](https://mp.weixin.qq.com/debug/wxadoc/introduction/qcloud.html)
-4.  `U` 优化 全新的视觉和交互体验
-5.  `U` 优化 更新内核版本
 
 ## 历史更新日志
 

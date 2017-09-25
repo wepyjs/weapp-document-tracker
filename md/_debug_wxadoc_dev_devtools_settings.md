@@ -68,8 +68,8 @@
     *   [模拟器](page.html#模拟器)
     *   [设置](settings.html)
         *   [外观设置](settings.html#外观设置)
-        *   [通知设置](settings.html#通知设置)
         *   [编辑设置](settings.html#编辑设置)
+        *   [通知设置](settings.html#通知设置)
         *   [代理设置](settings.html#代理设置)
     *   [项目页卡](project.html)
         *   [项目设置](project.html#项目设置)
@@ -88,9 +88,9 @@
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
         *   [Sources Panel](debug.html#sources-panel)
-        *   [Network Panel](debug.html#network-panel)
-        *   [Appdata Panel](debug.html#appdata-panel)
+        *   [AppData Panel](debug.html#appdata-panel)
         *   [Storage Panel](debug.html#storage-panel)
+        *   [Network Panel](debug.html#network-panel)
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
@@ -121,17 +121,15 @@
 
 <section class="normal markdown-section">
 
-设置页外观设置、编辑设置、代理设置和通知配置。
+## 设置页
 
-## 入口
-
-菜单栏上点击设置，或者使用快捷键 ctrl(command) + , 可以打开设置页。
+外观设置、编辑设置、代理设置和通知配置。菜单栏上点击设置，或者使用快捷键 `ctrl(⌘) + ,` 可以打开设置页。
 
 ### 外观设置
 
 编辑器支持配置外观和代码编辑器习惯和风格。
 
-*   主题：白色、深色、黑色
+*   主题：深色、浅色
 *   字体
 *   字号
 *   行距
@@ -145,19 +143,20 @@
 *   文件保存时自动编译小程序
 *   自动折行
 *   用空格代替 Tab
+*   代码缩略图
 *   Tab 大小
 
 ![edit](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/setting_edit.png)
 
-## 代理设置
+### 代理设置
 
 可以配置不使用代理，或使用系统代理，或使用自定义代理。
 
 ![proxy](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/setting_proxy.png)
 
-## 通知设置
+### 通知设置
 
-可以设置是否接受系统消息、开发者社区消息、监控报警消息。
+可以设置是否接收系统消息、开发者社区消息、监控报警消息。
 
 ![bbs](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/setting_notice.png)
 
