@@ -336,6 +336,10 @@
     *   [生物认证](checkIsSupportSoterAuthentication.html)
         *   [wx.checkIsSupportSoterAuthentication](checkIsSupportSoterAuthentication.html)
         *   [wx.startSoterAuthentication](startSoterAuthentication.html)
+    *   [附近](nearby.html)
+        *   [添加地点](nearby.html#添加地点)
+        *   [删除地点](nearby.html#删除地点)
+        *   [展示/取消展示附近小程序](nearby.html#展示取消展示附近小程序)
 *   [数据](analysis.html)
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
@@ -537,6 +541,6 @@
 
 </div>
 
-[](startSoterAuthentication.html)[](analysis.html)</div>
+[](nearby.html#展示取消展示附近小程序)[](analysis.html)</div>
 
 </div>

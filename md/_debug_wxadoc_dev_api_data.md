@@ -336,6 +336,10 @@
     *   [生物认证](checkIsSupportSoterAuthentication.html)
         *   [wx.checkIsSupportSoterAuthentication](checkIsSupportSoterAuthentication.html)
         *   [wx.startSoterAuthentication](startSoterAuthentication.html)
+    *   [附近](nearby.html)
+        *   [添加地点](nearby.html#添加地点)
+        *   [删除地点](nearby.html#删除地点)
+        *   [展示/取消展示附近小程序](nearby.html#展示取消展示附近小程序)
 *   [数据](analysis.html)
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
@@ -374,7 +378,7 @@
 
 每个微信小程序都可以有自己的本地缓存，可以通过 wx.setStorage（wx.setStorageSync）、wx.getStorage（wx.getStorageSync）、wx.clearStorage（wx.clearStorageSync）可以对本地缓存进行设置、获取和清理。同一个微信用户，同一个小程序 storage 上限为 10MB。localStorage 以用户维度隔离，同一台设备上，A 用户无法读取到 B 用户的数据。
 
-**注意：** localStorage 是永久存储的，但是我们不建议将关键信息全部存在 localStorage，以防用户换设备的情况。
+**注意：** localStorage 是持久存储的，但是我们不建议将关键信息全部存在 localStorage，以防用户换设备的情况。
 
 ### wx.setStorage(OBJECT)
 

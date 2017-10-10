@@ -376,37 +376,27 @@
 
 <section class="normal markdown-section">
 
-# getPhoneNumber(OBJECT)
+## 概述
 
-## 说明
+附近的小程序API，提供给需快速批量创建附近地点的小程序开发者使用，使用前请先调高附近地点额度。
 
-获取微信用户绑定的手机号，需先调用[login](https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html#wxloginobject)接口。
+调高附近地点额度申请方式如下：
 
-因为需要用户主动触发才能发起获取手机号接口，所以该功能不由 API 来调用，需用 `<button>` 组件的点击来触发。
+下载[《调高地点额度申请表》](https://mp.weixin.qq.com/mpres/zh_CN/htmledition/comm_htmledition/res/entityshop/location_count_apply36df73.xlsx)，填写后发送至 placeofminiprogram@qq.com。
 
-**注意：目前该接口针对非个人开发者，且完成了认证的小程序开放。需谨慎使用，若用户举报较多或被发现在不必要场景下使用，微信有权永久回收该小程序的该接口权限。**
+邮件主题为：“帐号名称”申请调高附近地点额度。审核通过后可调高额度。
 
-## 使用方法
+## 添加地点
 
-需要将 `<button>` 组件 `open-type` 的值设置为 `getPhoneNumber`，当用户点击并同意之后，可以通过 `bindgetphonenumber` 事件回调获取到微信服务器返回的加密数据， 然后在第三方服务端结合 `session_key` 以及 `app_id` 进行解密获取手机号。
+### 接口地址：
 
-## 注意
+    https://api.weixin.qq.com/wxa/addnearbypoi?access_token=ACCESS_TOKEN
 
-在回调中调用 `wx.login` 登录，可能会刷新登录态。此时服务器使用 code 换取的 sessionKey 不是加密时使用的 sessionKey，导致解密失败。建议开发者提前进行 `login`；或者在回调中先使用 `checkSession` 进行登录态检查，避免 `login` 刷新登录态。
+请求方式: POST（请使用https协议）
 
-## 例子
+**获取 access_token 详见[文档](https://mp.weixin.qq.com/wiki?id=mp1421140183)**
 
-    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"> </button>
-
-    Page({ 
-        getPhoneNumber: function(e) { 
-            console.log(e.detail.errMsg) 
-            console.log(e.detail.iv) 
-            console.log(e.detail.encryptedData) 
-        } 
-    })
-
-## 返回参数说明
+### 请求参数说明：
 
 <table>
 
@@ -416,9 +406,9 @@
 
 <th>参数</th>
 
-<th>类型</th>
-
 <th>说明</th>
+
+<th>备注</th>
 
 </tr>
 
@@ -428,21 +418,41 @@
 
 <tr>
 
-<td>encryptedData</td>
+<td>related_name</td>
 
-<td>String</td>
+<td>经营资质主体</td>
 
-<td>包括敏感数据在内的完整用户信息的加密数据，详细见[加密数据解密算法](https://mp.weixin.qq.com/debug/wxadoc/dev/api/signature.html#%E5%8A%A0%E5%AF%86%E6%95%B0%E6%8D%AE%E8%A7%A3%E5%AF%86%E7%AE%97%E6%B3%95)</td>
+<td>必填</td>
 
 </tr>
 
 <tr>
 
-<td>iv</td>
+<td>related_credential</td>
 
-<td>String</td>
+<td>经营资质证件号</td>
 
-<td>加密算法的初始向量，详细见[加密数据解密算法](https://mp.weixin.qq.com/debug/wxadoc/dev/api/signature.html#%E5%8A%A0%E5%AF%86%E6%95%B0%E6%8D%AE%E8%A7%A3%E5%AF%86%E7%AE%97%E6%B3%95)</td>
+<td>必填</td>
+
+</tr>
+
+<tr>
+
+<td>related_address</td>
+
+<td>经营资质地址</td>
+
+<td>必填</td>
+
+</tr>
+
+<tr>
+
+<td>related_proof_material</td>
+
+<td>相关证明材料 --- [临时素材mediaid](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1444738726)</td>
+
+<td>相关主体必填</td>
 
 </tr>
 
@@ -450,18 +460,23 @@
 
 </table>
 
-encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](https://mp.weixin.qq.com/debug/wxadoc/dev/api/signature.html#%E5%8A%A0%E5%AF%86%E6%95%B0%E6%8D%AE%E8%A7%A3%E5%AF%86%E7%AE%97%E6%B3%95)
+POST数据示例：
 
     {
-        "phoneNumber": "13580006666",  
-        "purePhoneNumber": "13580006666", 
-        "countryCode": "86",
-        "watermark":
-        {
-            "appid":"APPID",
-            "timestamp":TIMESTAMP
-        }
+
+    "related_name":"XXX公司",
+
+    "related_credential":"12345678-0",
+
+    "related_address":"广州市新港中路397号TIT创意园",
+
+    "related_proof_material":"3LaLzqiTrQcD20DlX_o-OV1-nlYMu7sdVAL7SV2PrxVyjZFZZmB3O6LPGaYXlZWq"
+
     }
+
+### 返回json示例：
+
+返回参数说明：
 
 <table>
 
@@ -471,7 +486,49 @@ encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](
 
 <th>参数</th>
 
-<th>类型</th>
+<th>说明</th>
+
+<th>备注</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>audit_id</td>
+
+<td>审核单ID</td>
+
+<td>必填</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+返回内容示例：
+
+    {
+      "errcode":0,
+      "errmsg":"ok",
+      "data":{
+        "audit_id":416620525
+      }
+    }
+
+### 错误码说明：
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>返回码</th>
 
 <th>说明</th>
 
@@ -483,31 +540,370 @@ encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](
 
 <tr>
 
-<td>phoneNumber</td>
+<td>92000</td>
 
-<td>String</td>
-
-<td>用户绑定的手机号（国外手机号会有区号）</td>
+<td>该经营资质已添加，请勿重复添加</td>
 
 </tr>
 
 <tr>
 
-<td>purePhoneNumber</td>
+<td>92002</td>
 
-<td>String</td>
-
-<td>没有区号的手机号</td>
+<td>附近地点添加数量达到上线，无法继续添加</td>
 
 </tr>
 
 <tr>
 
-<td>countryCode</td>
+<td>92004</td>
 
-<td>String</td>
+<td>附近功能被封禁</td>
 
-<td>区号</td>
+</tr>
+
+<tr>
+
+<td>93011</td>
+
+<td>个人类型小程序不可用</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+### 事件推送
+
+    <xml>
+      <ToUserName><![CDATA[gh_4346ac1514d8]]></ToUserName>
+      <FromUserName><![CDATA[od1P50M-fNQI5Gcq-trm4a7apsU8]]></FromUserName>
+      <CreateTime>1488856741</CreateTime>
+      <MsgType><![CDATA[event]]></MsgType>
+      <Event><![CDATA[add_nearby_poi_audit_info]]></Event>
+      <audit_id>11111</audit_id>
+      <status>3</status>
+      <reason><![CDATA[xxx]]></reason>
+      <poi_id>111111</poi_id>
+    </xml>
+
+参数说明
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>audit_id</td>
+
+<td>审核单id</td>
+
+</tr>
+
+<tr>
+
+<td>status</td>
+
+<td>审核状态（3：审核通过，2：审核失败）</td>
+
+</tr>
+
+<tr>
+
+<td>reason</td>
+
+<td>如果status为3或者4，会返回审核失败的原因</td>
+
+</tr>
+
+<tr>
+
+<td>poi_id</td>
+
+<td>poi_id</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+## 删除地点
+
+### 接口地址
+
+    https://api.weixin.qq.com/wxa/delnearbypoi?access_token=ACCESS_TOKEN
+
+请求方式: POST（请使用https协议）
+
+### 请求参数说明：
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>说明</th>
+
+<th>备注</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>poi_id</td>
+
+<td>附近地点ID</td>
+
+<td>必填</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+POST数据示例：
+
+    {
+      "poi_id":"469382092"
+    }
+
+### 返回json示例：
+
+    {
+      "errcode":92005,
+      "errmsg":"地点正在审核中"
+    }
+
+### 错误码说明：
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>返回码</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>92004</td>
+
+<td>近功能被封禁</td>
+
+</tr>
+
+<tr>
+
+<td>92005</td>
+
+<td>地点正在审核中</td>
+
+</tr>
+
+<tr>
+
+<td>92006</td>
+
+<td>地点正在展示小程序</td>
+
+</tr>
+
+<tr>
+
+<td>93010</td>
+
+<td>地点不存在</td>
+
+</tr>
+
+<tr>
+
+<td>93011</td>
+
+<td>个人类型小程序不可用</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+## 展示/取消展示附近小程序
+
+### 接口地址
+
+    https://api.weixin.qq.com/wxa/setnearbypoishowstatus?access_token=ACCESS_TOKEN
+
+请求方式: POST（请使用https协议）
+
+### 请求参数说明
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>说明</th>
+
+<th>备注</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>poi_id</td>
+
+<td>附近地点ID</td>
+
+<td>必填</td>
+
+</tr>
+
+<tr>
+
+<td>status</td>
+
+<td>0：取消展示；1：展示</td>
+
+<td>必填</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+POST数据示例：
+
+    {
+      "poi_id":"469487775",
+      "status":0
+    }
+
+### 返回json示例：
+
+    {
+      "errcode":92008,
+      "errmsg":"小程序未展示在该地点"
+    }
+
+### 错误码说明：
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>返回码</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>92003</td>
+
+<td>地点已被其它小程序占用</td>
+
+</tr>
+
+<tr>
+
+<td>92004</td>
+
+<td>附近功能被封禁</td>
+
+</tr>
+
+<tr>
+
+<td>92005</td>
+
+<td>地点正在审核中</td>
+
+</tr>
+
+<tr>
+
+<td>92007</td>
+
+<td>地点审核失败</td>
+
+</tr>
+
+<tr>
+
+<td>92008</td>
+
+<td>程序未展示在该地点</td>
+
+</tr>
+
+<tr>
+
+<td>93009</td>
+
+<td>小程序未上架或不可见</td>
+
+</tr>
+
+<tr>
+
+<td>93010</td>
+
+<td>地点不存在</td>
+
+</tr>
+
+<tr>
+
+<td>93011</td>
+
+<td>个人类型小程序不可用</td>
 
 </tr>
 
@@ -554,6 +950,6 @@ encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](
 
 </div>
 
-[](open.html#wxgetuserinfoobject)[](uinionID.html)</div>
+[](startSoterAuthentication.html)[](nearby.html#添加地点)</div>
 
 </div>

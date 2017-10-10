@@ -336,6 +336,10 @@
     *   [生物认证](checkIsSupportSoterAuthentication.html)
         *   [wx.checkIsSupportSoterAuthentication](checkIsSupportSoterAuthentication.html)
         *   [wx.startSoterAuthentication](startSoterAuthentication.html)
+    *   [附近](nearby.html)
+        *   [添加地点](nearby.html#添加地点)
+        *   [删除地点](nearby.html#删除地点)
+        *   [展示/取消展示附近小程序](nearby.html#展示取消展示附近小程序)
 *   [数据](analysis.html)
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
@@ -374,7 +378,7 @@
 
 ### wx.saveFile(OBJECT)
 
-保存文件到本地。
+保存文件到本地。**注意：saveFile 会把临时文件移动，因此调用成功后传入的 tempFilePath 将不可用**
 
 **OBJECT参数说明：**
 
@@ -794,7 +798,7 @@
 
 <td>Number</td>
 
-<td>文件的保存是的时间戳，从1970/01/01 08:00:00 到当前时间的秒数</td>
+<td>文件保存时的时间戳，从1970/01/01 08:00:00 到该时刻的秒数</td>
 
 </tr>
 

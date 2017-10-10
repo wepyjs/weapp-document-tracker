@@ -336,6 +336,10 @@
     *   [生物认证](checkIsSupportSoterAuthentication.html)
         *   [wx.checkIsSupportSoterAuthentication](checkIsSupportSoterAuthentication.html)
         *   [wx.startSoterAuthentication](startSoterAuthentication.html)
+    *   [附近](nearby.html)
+        *   [添加地点](nearby.html#添加地点)
+        *   [删除地点](nearby.html#删除地点)
+        *   [展示/取消展示附近小程序](nearby.html#展示取消展示附近小程序)
 *   [数据](analysis.html)
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
@@ -789,7 +793,7 @@
 
 </table>
 
-**注：文件的临时路径，在小程序本次启动期间可以正常使用，如需持久保存，需在主动调用 [wx.saveFile](file.html)，在小程序下次启动时才能访问得到。**
+**注：文件的临时路径，在小程序本次启动期间可以正常使用，如需持久保存，需在主动调用 [wx.saveFile](file.html)，才能在小程序下次启动时访问得到。**
 
 **示例代码:**
 
