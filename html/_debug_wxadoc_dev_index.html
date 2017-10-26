@@ -236,9 +236,9 @@
 <p>app.js&#x662F;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x811A;&#x672C;&#x4EE3;&#x7801;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#x76D1;&#x542C;&#x5E76;&#x5904;&#x7406;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;&#x3001;&#x58F0;&#x660E;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x3002;&#x8C03;&#x7528;&#x6846;&#x67B6;&#x63D0;&#x4F9B;&#x7684;&#x4E30;&#x5BCC;&#x7684; API&#xFF0C;&#x5982;&#x672C;&#x4F8B;&#x7684;&#x540C;&#x6B65;&#x5B58;&#x50A8;&#x53CA;&#x540C;&#x6B65;&#x8BFB;&#x53D6;&#x672C;&#x5730;&#x6570;&#x636E;&#x3002;&#x60F3;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x53EF;&#x7528; API&#xFF0C;&#x53EF;&#x53C2;&#x8003; <a href="api/">API &#x6587;&#x6863;</a></p>
 <pre><code class="lang-javascript"><span class="hljs-comment">//app.js</span>
 App({
-  onLaunch: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  onLaunch() {
     <span class="hljs-comment">// &#x5C55;&#x793A;&#x672C;&#x5730;&#x5B58;&#x50A8;&#x80FD;&#x529B;</span>
-    <span class="hljs-keyword">var</span> logs = wx.getStorageSync(<span class="hljs-string">&apos;logs&apos;</span>) || []
+    <span class="hljs-keyword">const</span> logs = wx.getStorageSync(<span class="hljs-string">&apos;logs&apos;</span>) || []
     logs.unshift(<span class="hljs-built_in">Date</span>.now())
     wx.setStorageSync(<span class="hljs-string">&apos;logs&apos;</span>, logs)
 
@@ -258,11 +258,6 @@ App({
               <span class="hljs-comment">// &#x53EF;&#x4EE5;&#x5C06; res &#x53D1;&#x9001;&#x7ED9;&#x540E;&#x53F0;&#x89E3;&#x7801;&#x51FA; unionId</span>
               <span class="hljs-keyword">this</span>.globalData.userInfo = res.userInfo
 
-              <span class="hljs-comment">// &#x7531;&#x4E8E; getUserInfo &#x662F;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5728; Page.onLoad &#x4E4B;&#x540E;&#x624D;&#x8FD4;&#x56DE;</span>
-              <span class="hljs-comment">// &#x6240;&#x4EE5;&#x6B64;&#x5904;&#x52A0;&#x5165; callback &#x4EE5;&#x9632;&#x6B62;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;</span>
-              <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.userInfoReadyCallback) {
-                <span class="hljs-keyword">this</span>.userInfoReadyCallback(res)
-              }
             }
           })
         }

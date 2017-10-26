@@ -82,6 +82,8 @@
     *   [录音](media-record.html)
         *   [wx.startRecord](media-record.html#wxstartrecordobject)
         *   [wx.stopRecord](media-record.html#wxstoprecord)
+    *   [录音管理](getRecorderManager.html)
+        *   [wx.getRecorderManager](getRecorderManager.html)
     *   [音频播放控制](media-voice.html)
         *   [wx.playVoice](media-voice.html#wxplayvoiceobject)
         *   [wx.pauseVoice](media-voice.html#wxpausevoice)
@@ -99,11 +101,14 @@
         *   [wx.getBackgroundAudioManager](getBackgroundAudioManager.html)
     *   [音频组件控制](api-audio.html)
         *   [wx.createAudioContext](api-audio.html#wxcreateaudiocontextaudioid)
+        *   [wx.createInnerAudioContext](createInnerAudioContext.html)
     *   [视频](media-video.html)
         *   [wx.chooseVideo](media-video.html#wxchoosevideoobject)
         *   [wx.saveVideoToPhotosAlbum](media-video.html#wxsavevideotophotosalbumobject)
     *   [视频组件控制](api-video.html)
         *   [wx.createVideoContext](api-video.html#wxcreatevideocontextvideoid)
+    *   [相机组件控制](api-camera.html)
+        *   [wx.createCameraContext](api-camera.html)
 *   [文件](file.html)
     *   [wx.saveFile](file.html#wxsavefileobject)
     *   [wx.getFileInfo](getFileInfo.html)
@@ -235,6 +240,7 @@
         *   [setLineWidth](canvas/set-line-width.html)
         *   [setLineCap](canvas/set-line-cap.html)
         *   [setLineJoin](canvas/set-line-join.html)
+        *   [setLineDash](canvas/set-line-dash.html)
         *   [setMiterLimit](canvas/set-miter-limit.html)
         *   [rect](canvas/rect.html)
         *   [fillRect](canvas/fill-rect.html)
@@ -252,6 +258,7 @@
         *   [scale](canvas/scale.html)
         *   [rotate](canvas/rotate.html)
         *   [translate](canvas/translate.html)
+        *   [clip](canvas/clip.html)
         *   [setFontSize](canvas/set-font-size.html)
         *   [fillText](canvas/fill-text.html)
         *   [setTextAlign](canvas/set-text-align.html)
@@ -336,6 +343,7 @@
     *   [生物认证](checkIsSupportSoterAuthentication.html)
         *   [wx.checkIsSupportSoterAuthentication](checkIsSupportSoterAuthentication.html)
         *   [wx.startSoterAuthentication](startSoterAuthentication.html)
+        *   [wx.checkIsSoterEnrolledInDevice](checkIsSoterEnrolledInDevice.html)
     *   [附近](nearby.html)
         *   [添加地点](nearby.html#添加地点)
         *   [删除地点](nearby.html#删除地点)
@@ -396,6 +404,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -412,6 +422,22 @@
 
 <td>album 从相册选视频，camera 使用相机拍摄，默认为：['album', 'camera']</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>compressed</td>
+
+<td>Boolead</td>
+
+<td>否</td>
+
+<td>是否压缩所选的视频源文件，默认值为true，需要压缩</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 <tr>
@@ -423,6 +449,8 @@
 <td>否</td>
 
 <td>拍摄视频最长拍摄时间，单位秒。最长支持 60 秒</td>
+
+<td></td>
 
 </tr>
 
@@ -436,6 +464,8 @@
 
 <td>默认调起的为前置还是后置摄像头。front: 前置，back: 后置，默认 back</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -448,6 +478,8 @@
 
 <td>接口调用成功，返回视频文件的临时文件路径，详见返回参数说明</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -459,6 +491,8 @@
 <td>否</td>
 
 <td>接口调用失败的回调函数</td>
+
+<td></td>
 
 </tr>
 
@@ -729,6 +763,6 @@
 
 </div>
 
-[](api-audio.html#wxcreateaudiocontextaudioid)[](media-video.html#wxchoosevideoobject)</div>
+[](createInnerAudioContext.html)[](media-video.html#wxchoosevideoobject)</div>
 
 </div>

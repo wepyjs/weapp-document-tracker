@@ -88,6 +88,7 @@
     *   [audio](audio.html#audio)
     *   [image](image.html)
     *   [video](video.html)
+    *   [camera](camera.html)
 *   [地图](map.html)
     *   [map](map.html#map)
 *   [画布](canvas.html)
@@ -119,7 +120,7 @@
 
 > 基础库 1.4.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
-覆盖在原生组件之上的文本视图，可覆盖的原生组件包括`map`、`video`、`canvas`，支持嵌套。
+覆盖在原生组件之上的文本视图，可覆盖的原生组件包括`map`、`video`、`canvas`、`camera`，只支持嵌套`cover-view`、`cover-image`。
 
 <table>
 
@@ -179,7 +180,7 @@
 
 <td></td>
 
-<td>图标路径，支持临时路径。暂不支持base64与网络地址。</td>
+<td>图标路径，支持临时路径、网络地址。暂不支持base64格式。</td>
 
 </tr>
 
@@ -189,12 +190,12 @@
 
 ##### Bug & Tips
 
-1.  `tip`: 只可嵌套在原生组件`map`、`video`、`canvas`内，避免嵌套在其他组件内。
-2.  `tip`: 事件模型遵循冒泡模型，但不会冒泡到原生组件。
-3.  `tip`: 文本建议都套上cover-view标签，避免排版错误。
-4.  `tip`: 只支持基本的定位、布局、文本样式。不支持设置单边的border、opacity、background-image等。
-5.  `tip`: 建议子节点不要溢出父节点
-6.  `tip`: 暂不支持css动画。
+1.  `tip`: 只支持css transition动画，transition-property只支持transform (translateX, translateY)与opacity。
+2.  `tip`: 只可嵌套在原生组件`map`、`video`、`canvas`、`camera`内，避免嵌套在其他组件内。
+3.  `tip`: 事件模型遵循冒泡模型，但不会冒泡到原生组件。
+4.  `tip`: 文本建议都套上cover-view标签，避免排版错误。
+5.  `tip`: 只支持基本的定位、布局、文本样式。不支持设置单边的border、opacity、background-image等。
+6.  `tip`: 建议子节点不要溢出父节点
 
 **示例：**
 

@@ -88,6 +88,7 @@
     *   [audio](audio.html#audio)
     *   [image](image.html)
     *   [video](video.html)
+    *   [camera](camera.html)
 *   [地图](map.html)
     *   [map](map.html#map)
 *   [画布](canvas.html)
@@ -276,13 +277,6 @@
 </table>
 
 **示例代码：**
-
-    <view class="section section_gap">
-      <text class="section__title">设置left/right icon</text>
-      <view class="body-view">
-        <slider bindchange="slider1change" left-icon="cancel" right-icon="success_no_circle"/>
-      </view>
-    </view>
 
     <view class="section section_gap">
       <text class="section__title">设置step</text>

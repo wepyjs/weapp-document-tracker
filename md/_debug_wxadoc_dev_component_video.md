@@ -88,6 +88,7 @@
     *   [audio](audio.html#audio)
     *   [image](image.html)
     *   [video](video.html)
+    *   [camera](camera.html)
 *   [地图](map.html)
     *   [map](map.html#map)
 *   [画布](canvas.html)
@@ -152,6 +153,20 @@
 <td>要播放视频的资源地址</td>
 
 <td></td>
+
+</tr>
+
+<tr>
+
+<td>initial-time</td>
+
+<td>Number</td>
+
+<td></td>
+
+<td>指定视频初始播放位置</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -264,6 +279,20 @@
 <td>是否静音播放</td>
 
 <td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>page-gesture</td>
+
+<td>Boolean</td>
+
+<td>false</td>
+
+<td>在非全屏模式下，是否开启亮度与音量调节手势</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -489,6 +518,6 @@ video标签认宽度300px、高度225px，设置宽高需要通过wxss设置widt
 
 </div>
 
-[](image.html)[](map.html)</div>
+[](image.html)[](camera.html)</div>
 
 </div>

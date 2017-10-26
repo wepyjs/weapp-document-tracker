@@ -88,6 +88,7 @@
     *   [audio](audio.html#audio)
     *   [image](image.html)
     *   [video](video.html)
+    *   [camera](camera.html)
 *   [地图](map.html)
     *   [map](map.html#map)
 *   [画布](canvas.html)
@@ -346,6 +347,22 @@
 <td></td>
 
 <td>点击地图时触发</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>bindupdated</td>
+
+<td>EventHandle</td>
+
+<td></td>
+
+<td>在地图渲染更新完成时触发</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -783,6 +800,22 @@
 
 <tr>
 
+<td>arrowIconPath</td>
+
+<td>更换箭头图标</td>
+
+<td>String</td>
+
+<td>否</td>
+
+<td>在arrowLine为true时生效</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>borderColor</td>
 
 <td>线的边框颜色</td>
@@ -1152,6 +1185,8 @@
       }
     })
 
+相关api：[wx.createMapContext](../api/api-map.html)
+
 ##### Bug & Tip
 
 1.  `tip`: `map` 组件是由客户端创建的原生组件，它的层级是最高的。
@@ -1198,6 +1233,6 @@
 
 </div>
 
-[](video.html)[](map.html#map)</div>
+[](camera.html)[](map.html#map)</div>
 
 </div>

@@ -268,6 +268,46 @@ WXML的冒泡事件列表：
 
 <td>手指触摸后，超过350ms再离开（推荐使用longpress事件代替）</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>transitionend</td>
+
+<td>会在 WXSS transition 或 wx.createAnimation 动画结束后触发</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>animationstart</td>
+
+<td>会在一个 WXSS animation 动画开始时触发</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>animationiteration</td>
+
+<td>会在一个 WXSS animation 一次迭代结束时触发</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>animationend</td>
+
+<td>会在一个 WXSS animation 动画完成时触发</td>
+
 </tr>
 
 </tbody>

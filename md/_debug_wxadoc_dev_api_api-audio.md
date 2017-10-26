@@ -82,6 +82,8 @@
     *   [录音](media-record.html)
         *   [wx.startRecord](media-record.html#wxstartrecordobject)
         *   [wx.stopRecord](media-record.html#wxstoprecord)
+    *   [录音管理](getRecorderManager.html)
+        *   [wx.getRecorderManager](getRecorderManager.html)
     *   [音频播放控制](media-voice.html)
         *   [wx.playVoice](media-voice.html#wxplayvoiceobject)
         *   [wx.pauseVoice](media-voice.html#wxpausevoice)
@@ -99,11 +101,14 @@
         *   [wx.getBackgroundAudioManager](getBackgroundAudioManager.html)
     *   [音频组件控制](api-audio.html)
         *   [wx.createAudioContext](api-audio.html#wxcreateaudiocontextaudioid)
+        *   [wx.createInnerAudioContext](createInnerAudioContext.html)
     *   [视频](media-video.html)
         *   [wx.chooseVideo](media-video.html#wxchoosevideoobject)
         *   [wx.saveVideoToPhotosAlbum](media-video.html#wxsavevideotophotosalbumobject)
     *   [视频组件控制](api-video.html)
         *   [wx.createVideoContext](api-video.html#wxcreatevideocontextvideoid)
+    *   [相机组件控制](api-camera.html)
+        *   [wx.createCameraContext](api-camera.html)
 *   [文件](file.html)
     *   [wx.saveFile](file.html#wxsavefileobject)
     *   [wx.getFileInfo](getFileInfo.html)
@@ -235,6 +240,7 @@
         *   [setLineWidth](canvas/set-line-width.html)
         *   [setLineCap](canvas/set-line-cap.html)
         *   [setLineJoin](canvas/set-line-join.html)
+        *   [setLineDash](canvas/set-line-dash.html)
         *   [setMiterLimit](canvas/set-miter-limit.html)
         *   [rect](canvas/rect.html)
         *   [fillRect](canvas/fill-rect.html)
@@ -252,6 +258,7 @@
         *   [scale](canvas/scale.html)
         *   [rotate](canvas/rotate.html)
         *   [translate](canvas/translate.html)
+        *   [clip](canvas/clip.html)
         *   [setFontSize](canvas/set-font-size.html)
         *   [fillText](canvas/fill-text.html)
         *   [setTextAlign](canvas/set-text-align.html)
@@ -336,6 +343,7 @@
     *   [生物认证](checkIsSupportSoterAuthentication.html)
         *   [wx.checkIsSupportSoterAuthentication](checkIsSupportSoterAuthentication.html)
         *   [wx.startSoterAuthentication](startSoterAuthentication.html)
+        *   [wx.checkIsSoterEnrolledInDevice](checkIsSoterEnrolledInDevice.html)
     *   [附近](nearby.html)
         *   [添加地点](nearby.html#添加地点)
         *   [删除地点](nearby.html#删除地点)
@@ -377,6 +385,8 @@
 <section class="normal markdown-section">
 
 ### wx.createAudioContext(audioId)
+
+**1.6.0 版本开始，建议使用能力更强的 [wx.createInnerAudioContext](createInnerAudioContext.html) 接口**
 
 创建并返回 audio 上下文 `audioContext` 对象
 

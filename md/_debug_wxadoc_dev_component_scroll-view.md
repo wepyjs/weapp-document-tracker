@@ -88,6 +88,7 @@
     *   [audio](audio.html#audio)
     *   [image](image.html)
     *   [video](video.html)
+    *   [camera](camera.html)
 *   [地图](map.html)
     *   [map](map.html#map)
 *   [画布](canvas.html)

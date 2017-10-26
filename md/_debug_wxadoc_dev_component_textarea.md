@@ -88,6 +88,7 @@
     *   [audio](audio.html#audio)
     *   [image](image.html)
     *   [video](video.html)
+    *   [camera](camera.html)
 *   [地图](map.html)
     *   [map](map.html#map)
 *   [画布](canvas.html)
@@ -311,6 +312,20 @@
 
 <tr>
 
+<td>show-confirm-bar</td>
+
+<td>Boolean</td>
+
+<td>true</td>
+
+<td>是否显示键盘上方带有”完成“按钮那一栏</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>bindfocus</td>
 
 <td>EventHandle</td>
@@ -331,7 +346,7 @@
 
 <td></td>
 
-<td>输入框失去焦点时触发，event.detail = {value: value}</td>
+<td>输入框失去焦点时触发，event.detail = {value, cursor}</td>
 
 <td></td>
 

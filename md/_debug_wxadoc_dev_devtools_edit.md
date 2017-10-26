@@ -201,7 +201,7 @@ wxml 补全
 
 <tr>
 
-<td>client</td>
+<td>miniprogramRoot</td>
 
 <td>Path String</td>
 
@@ -211,7 +211,7 @@ wxml 补全
 
 <tr>
 
-<td>svr</td>
+<td>qcloudRoot</td>
 
 <td>Path String</td>
 
@@ -300,8 +300,8 @@ setting 中可以指定以下设置
 **示例：**
 
     {
-      "client": "./src",
-      "svr": "./svr",
+      "miniprogramRoot": "./src",
+      "qcloudRoot": "./svr",
       "setting": {
         "postcss": true,
         "es6": true,

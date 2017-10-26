@@ -80,7 +80,7 @@
 
 <section class="normal markdown-section">
 
-只需要四部即可部署属于自己的小程序开发环境。
+只需要四步即可部署属于自己的小程序开发环境。
 
 ### 一、通过微信公众平台授权登录腾讯云
 
@@ -123,6 +123,8 @@
 ### 四、上传和部署代码
 
 打开第二步安装的微信开发者工具，点击“小程序项目”按钮，输入小程序 AppID，项目目录选择上一步下载下来的代码目录，点击确定创建小程序项目。
+
+在项目根目录需要有 [`project.config.json`](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/edit.html#%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6) 文件，其中 `miniprogramRoot` 字段指定小程序目录，`qcloudRoot` 指定腾讯云目录
 
 ![上传代码](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/29361218-1bd9af72-82b9-11e7-9dab-d20fd9aebf7c.png)
 

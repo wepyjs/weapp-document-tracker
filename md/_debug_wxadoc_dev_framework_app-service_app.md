@@ -293,7 +293,7 @@
 
 <td>Object</td>
 
-<td>当场景为由另一个小程序打开时，返回此字段</td>
+<td>当场景为由从另一个小程序或公众号或App打开时，返回此字段</td>
 
 </tr>
 
@@ -303,7 +303,7 @@
 
 <td>String</td>
 
-<td>来源小程序的 appId</td>
+<td>来源小程序或公众号或App的 appId，详见下方说明</td>
 
 </tr>
 
@@ -313,7 +313,7 @@
 
 <td>Object</td>
 
-<td>来源小程序传过来的数据</td>
+<td>来源小程序传过来的数据，scene=1037或1038时支持</td>
 
 </tr>
 
@@ -322,6 +322,90 @@
 </table>
 
 场景值 [详见](scene.html)。
+
+以下场景支持返回 referrerInfo.appId：
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>场景值</th>
+
+<th>场景</th>
+
+<th>appId 信息含义</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>1020</td>
+
+<td>公众号 profile 页相关小程序列表</td>
+
+<td>返回来源公众号 appId</td>
+
+</tr>
+
+<tr>
+
+<td>1035</td>
+
+<td>公众号自定义菜单</td>
+
+<td>返回来源公众号 appId</td>
+
+</tr>
+
+<tr>
+
+<td>1036</td>
+
+<td>App 分享消息卡片</td>
+
+<td>返回来源应用 appId</td>
+
+</tr>
+
+<tr>
+
+<td>1037</td>
+
+<td>小程序打开小程序</td>
+
+<td>返回来源小程序 appId</td>
+
+</tr>
+
+<tr>
+
+<td>1038</td>
+
+<td>从另一个小程序返回</td>
+
+<td>返回来源小程序 appId</td>
+
+</tr>
+
+<tr>
+
+<td>1043</td>
+
+<td>公众号模板消息</td>
+
+<td>返回来源公众号 appId</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 ### getApp()
 
