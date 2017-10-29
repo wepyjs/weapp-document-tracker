@@ -430,7 +430,8 @@
 
 <td>经营资质主体</td>
 
-<td>必填</td>
+<td>经营资质主体与小程序同主体--不填;  
+经营资质主体与小程序非同主体--必填;</td>
 
 </tr>
 
@@ -458,15 +459,22 @@
 
 <td>related_proof_material</td>
 
-<td>相关证明材料 --- [临时素材mediaid](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1444738726)</td>
+<td>相关证明材料照片临时素材mediaid</td>
 
-<td>相关主体必填</td>
+<td>经营资质主体与小程序同主体--不填;  
+经营资质主体与小程序非同主体--必填;</td>
 
 </tr>
 
 </tbody>
 
 </table>
+
+**注**：related_proof_material通过临时素材上传接口上传，接口地址：
+
+    https://api.weixin.qq.com/cgi-bin/media/upload?access_token=ACCESS_TOKEN&type=TYPE
+
+**临时素材[接口文档]**([https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1444738726](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1444738726))
 
 POST数据示例：
 
@@ -514,6 +522,26 @@ POST数据示例：
 
 </tr>
 
+<tr>
+
+<td>poi_id</td>
+
+<td>附近地点ID</td>
+
+<td>必填</td>
+
+</tr>
+
+<tr>
+
+<td>related_credential</td>
+
+<td>经营资质证件号</td>
+
+<td>必填</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -545,6 +573,30 @@ POST数据示例：
 </thead>
 
 <tbody>
+
+<tr>
+
+<td>47001</td>
+
+<td>POST数据json格式错误</td>
+
+</tr>
+
+<tr>
+
+<td>20002</td>
+
+<td>POST参数非法</td>
+
+</tr>
+
+<tr>
+
+<td>44002</td>
+
+<td>POST数据为空</td>
+
+</tr>
 
 <tr>
 
