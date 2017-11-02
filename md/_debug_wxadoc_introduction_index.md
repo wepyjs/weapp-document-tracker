@@ -270,6 +270,8 @@
 
 ## 面向个人开发者开放的服务类目
 
+**面向个人开发者开放的服务类目，会随着相关政策、法律法规以及平台规定的变化而变化，请开发者以提交时开放的类目为准，本文档仅供参考。**
+
 <table>
 
 <tbody>
@@ -470,7 +472,7 @@
 
 <tr>
 
-<td width="106" valign="center" rowspan="8">
+<td width="106" valign="center" rowspan="7">
 
 <span>生活服务</span>
 
@@ -558,22 +560,6 @@
 
 <td width="149" valign="bottom">
 
-<span>综合生活服务平台</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
 <span>摄影/扩印</span>
 
 </td>
@@ -604,7 +590,7 @@
 
 <tr>
 
-<td width="106" valign="center" rowspan="5">
+<td width="106" valign="center" rowspan="3">
 
 <span>餐饮</span>
 
@@ -645,38 +631,6 @@
 <td width="149" valign="bottom">
 
 <span>餐厅排队</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>点餐</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>外卖</span>
 
 </td>
 
@@ -942,37 +896,9 @@
 
 <tr>
 
-<td width="106" valign="center" rowspan="7">
+<td width="106" valign="center" rowspan="6">
 
 <span>商业服务</span>
-
-</td>
-
-<td width="149" valign="bottom">
-
-<span>广告/设计</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>公关/推广/市场调查</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
 
 </td>
 
