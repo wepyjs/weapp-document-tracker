@@ -276,6 +276,7 @@
         *   [wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)
 *   [WXML节点信息](wxml-nodes-info.html)
     *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
+    *   [selectorQuery.in](wxml-nodes-info.html#selectorqueryincomponent)
     *   [selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)
     *   [selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)
     *   [selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)
@@ -330,6 +331,7 @@
     *   [卡券](card.html)
         *   [wx.addCard](card.html#wxaddcardobject)
         *   [wx.openCard](card.html#wxopencardobject)
+        *   [会员卡组件](card.html#会员卡组件)
     *   [设置](setting.html)
         *   [wx.openSetting](setting.html#wxopensettingobject)
         *   [wx.getSetting](setting.html#wxgetsettingobject)
@@ -1241,6 +1243,14 @@
 <td>[wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)</td>
 
 <td>创建查询请求</td>
+
+</tr>
+
+<tr>
+
+<td>[selectorQuery.in](wxml-nodes-info.html#selectorqueryincomponent)</td>
+
+<td>指定在哪个自定义组件中选取节点</td>
 
 </tr>
 

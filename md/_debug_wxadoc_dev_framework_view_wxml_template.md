@@ -86,6 +86,11 @@
         *   [基础类库](../wxs/07basiclibrary.html)
     *   [WXSS](../wxss.html)
     *   [组件](../component.html)
+*   [自定义组件](../../custom-component/)
+    *   [组件模版和样式](../../custom-component/wxml-wxss.html)
+    *   [Component构造器](../../custom-component/component.html)
+    *   [组件事件](../../custom-component/events.html)
+    *   [behaviors](../../custom-component/behaviors.html)
 *   [基础库](../../client-lib.html)
 *   [兼容](../../compatibility.html)
 *   [运行机制](../../operating-mechanism.html)
@@ -162,7 +167,7 @@ is 属性可以使用 Mustache 语法，来动态决定具体需要渲染哪个�
 
 ### 模板的作用域
 
-模板拥有自己的作用域，只能使用data传入的数据。
+模板拥有自己的作用域，只能使用 data 传入的数据以及模版定义文件中定义的 `<wxs />` 模块。
 
 </section>
 

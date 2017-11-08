@@ -86,6 +86,11 @@
         *   [基础类库](../wxs/07basiclibrary.html)
     *   [WXSS](../wxss.html)
     *   [组件](../component.html)
+*   [自定义组件](../../custom-component/)
+    *   [组件模版和样式](../../custom-component/wxml-wxss.html)
+    *   [Component构造器](../../custom-component/component.html)
+    *   [组件事件](../../custom-component/events.html)
+    *   [behaviors](../../custom-component/behaviors.html)
 *   [基础库](../../client-lib.html)
 *   [兼容](../../compatibility.html)
 *   [运行机制](../../operating-mechanism.html)
@@ -155,7 +160,7 @@ import 有作用域的概念，即只会 import 目标文件中定义的 templat
 
 ### include
 
-`include`可以将目标文件除了`<template/>`的整个代码引入，相当于是拷贝到`include`位置，如：
+`include` 可以将目标文件**除了** `<template/>` `<wxs/>` 外的整个代码引入，相当于是拷贝到 `include` 位置，如：
 
     <!-- index.wxml -->
     <include src="header.wxml"/>

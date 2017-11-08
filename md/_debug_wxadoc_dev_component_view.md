@@ -93,8 +93,9 @@
     *   [map](map.html#map)
 *   [画布](canvas.html)
     *   [canvas](canvas.html#canvas)
-*   [开放数据](open-data.html)
+*   [开放能力](open-data.html)
     *   [open-data](open-data.html)
+    *   [web-view](web-view.html)
 *   [客服会话](contact-button.html)
     *   [contact-button](contact-button.html)
 

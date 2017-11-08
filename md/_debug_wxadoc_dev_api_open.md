@@ -276,6 +276,7 @@
         *   [wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)
 *   [WXML节点信息](wxml-nodes-info.html)
     *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
+    *   [selectorQuery.in](wxml-nodes-info.html#selectorqueryincomponent)
     *   [selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)
     *   [selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)
     *   [selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)
@@ -330,6 +331,7 @@
     *   [卡券](card.html)
         *   [wx.addCard](card.html#wxaddcardobject)
         *   [wx.openCard](card.html#wxopencardobject)
+        *   [会员卡组件](card.html#会员卡组件)
     *   [设置](setting.html)
         *   [wx.openSetting](setting.html#wxopensettingobject)
         *   [wx.getSetting](setting.html#wxgetsettingobject)
@@ -555,6 +557,100 @@
 <td>String</td>
 
 <td>加密算法的初始向量，详细见[加密数据解密算法](signature.html#加密数据解密算法)</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**userInfo参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>nickName</td>
+
+<td>String</td>
+
+<td>用户昵称</td>
+
+</tr>
+
+<tr>
+
+<td>avatarUrl</td>
+
+<td>String</td>
+
+<td>用户头像，最后一个数值代表正方形头像大小（有0、46、64、96、132数值可选，0代表640*640正方形头像），用户没有头像时该项为空。若用户更换头像，原有头像URL将失效。</td>
+
+</tr>
+
+<tr>
+
+<td>gender</td>
+
+<td>String</td>
+
+<td>用户的性别，值为1时是男性，值为2时是女性，值为0时是未知</td>
+
+</tr>
+
+<tr>
+
+<td>city</td>
+
+<td>String</td>
+
+<td>用户所在城市</td>
+
+</tr>
+
+<tr>
+
+<td>province</td>
+
+<td>String</td>
+
+<td>用户所在省份</td>
+
+</tr>
+
+<tr>
+
+<td>country</td>
+
+<td>String</td>
+
+<td>用户所在国家</td>
+
+</tr>
+
+<tr>
+
+<td>language</td>
+
+<td>String</td>
+
+<td>用户的语言，简体中文为zh_CN</td>
 
 </tr>
 

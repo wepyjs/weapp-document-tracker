@@ -276,6 +276,7 @@
         *   [wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)
 *   [WXML节点信息](wxml-nodes-info.html)
     *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
+    *   [selectorQuery.in](wxml-nodes-info.html#selectorqueryincomponent)
     *   [selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)
     *   [selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)
     *   [selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)
@@ -330,6 +331,7 @@
     *   [卡券](card.html)
         *   [wx.addCard](card.html#wxaddcardobject)
         *   [wx.openCard](card.html#wxopencardobject)
+        *   [会员卡组件](card.html#会员卡组件)
     *   [设置](setting.html)
         *   [wx.openSetting](setting.html#wxopensettingobject)
         *   [wx.getSetting](setting.html#wxgetsettingobject)
@@ -430,6 +432,16 @@
 
 <tr>
 
+<td>in</td>
+
+<td>object Component</td>
+
+<td>参考下面详细介绍</td>
+
+</tr>
+
+<tr>
+
 <td>select</td>
 
 <td>selector</td>
@@ -471,6 +483,23 @@
 </tbody>
 
 </table>
+
+### selectorQuery.in(component)
+
+> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+
+将选择器的选取范围更改为自定义组件`component`内。（初始时，选择器仅选取页面范围的节点，不会选取任何自定义组件中的节点。）
+
+**示例代码：**
+
+    Component({
+      queryMultipleNodes: function(){
+        var query = wx.createSelectorQuery().in(this)
+        query.select('#the-id').boundingClientRect(function(res){
+          res.top // 这个组件内 #the-id 节点的上边界坐标
+        }).exec()
+      }
+    })
 
 ### selectorQuery.select(selector)
 

@@ -276,6 +276,7 @@
         *   [wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)
 *   [WXML节点信息](wxml-nodes-info.html)
     *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
+    *   [selectorQuery.in](wxml-nodes-info.html#selectorqueryincomponent)
     *   [selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)
     *   [selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)
     *   [selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)
@@ -330,6 +331,7 @@
     *   [卡券](card.html)
         *   [wx.addCard](card.html#wxaddcardobject)
         *   [wx.openCard](card.html#wxopencardobject)
+        *   [会员卡组件](card.html#会员卡组件)
     *   [设置](setting.html)
         *   [wx.openSetting](setting.html#wxopensettingobject)
         *   [wx.getSetting](setting.html#wxgetsettingobject)
@@ -388,7 +390,7 @@
 
 创建一个 [WebSocket](https://developer.mozilla.org/zh-CN/docs/Web/API/WebSocket) 连接。**使用前请先阅读[说明](api-network.html)**。
 
-**一个微信小程序同时只能有一个 WebSocket 连接，如果当前已存在一个 WebSocket 连接，会自动关闭该连接，并重新创建一个 WebSocket 连接。**
+**一个微信小程序同时只能有一个 WebSocket 连接，如果当前已存在一个 WebSocket 连接，会创建失败。**
 
 **OBJECT参数说明：**
 

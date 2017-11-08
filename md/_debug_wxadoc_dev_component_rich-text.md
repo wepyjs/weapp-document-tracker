@@ -93,8 +93,9 @@
     *   [map](map.html#map)
 *   [画布](canvas.html)
     *   [canvas](canvas.html#canvas)
-*   [开放数据](open-data.html)
+*   [开放能力](open-data.html)
     *   [open-data](open-data.html)
+    *   [web-view](web-view.html)
 *   [客服会话](contact-button.html)
     *   [contact-button](contact-button.html)
 
@@ -681,6 +682,7 @@
 4.  `tip`: name 属性大小写不敏感。
 5.  `tip`: 如果使用了不受信任的HTML节点，该节点及其所有子节点将会被移除。
 6.  `tip`: img 标签仅支持网络图片。
+7.  `tip`: 如果在自定义组件中使用 `rich-text` 组件，那么仅自定义组件的 wxss 样式对 `rich-text` 中的 class 生效。
 
 </section>
 

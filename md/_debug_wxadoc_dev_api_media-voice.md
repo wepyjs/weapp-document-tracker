@@ -276,6 +276,7 @@
         *   [wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)
 *   [WXML节点信息](wxml-nodes-info.html)
     *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
+    *   [selectorQuery.in](wxml-nodes-info.html#selectorqueryincomponent)
     *   [selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)
     *   [selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)
     *   [selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)
@@ -330,6 +331,7 @@
     *   [卡券](card.html)
         *   [wx.addCard](card.html#wxaddcardobject)
         *   [wx.openCard](card.html#wxopencardobject)
+        *   [会员卡组件](card.html#会员卡组件)
     *   [设置](setting.html)
         *   [wx.openSetting](setting.html#wxopensettingobject)
         *   [wx.getSetting](setting.html#wxgetsettingobject)
@@ -404,6 +406,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -420,6 +424,22 @@
 
 <td>需要播放的语音文件的文件路径</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>duration</td>
+
+<td>Number</td>
+
+<td>否</td>
+
+<td>指定录音时长，到达指定的录音时长后会自动停止录音，单位：秒，默认值：60</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 <tr>
@@ -432,6 +452,8 @@
 
 <td>接口调用成功的回调函数</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -443,6 +465,8 @@
 <td>否</td>
 
 <td>接口调用失败的回调函数</td>
+
+<td></td>
 
 </tr>
 

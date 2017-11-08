@@ -276,6 +276,7 @@
         *   [wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)
 *   [WXML节点信息](wxml-nodes-info.html)
     *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
+    *   [selectorQuery.in](wxml-nodes-info.html#selectorqueryincomponent)
     *   [selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)
     *   [selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)
     *   [selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)
@@ -330,6 +331,7 @@
     *   [卡券](card.html)
         *   [wx.addCard](card.html#wxaddcardobject)
         *   [wx.openCard](card.html#wxopencardobject)
+        *   [会员卡组件](card.html#会员卡组件)
     *   [设置](setting.html)
         *   [wx.openSetting](setting.html#wxopensettingobject)
         *   [wx.getSetting](setting.html#wxgetsettingobject)
@@ -803,14 +805,61 @@
 
 **注：文件的临时路径，在小程序本次启动期间可以正常使用，如需持久保存，需在主动调用 [wx.saveFile](file.html)，才能在小程序下次启动时访问得到。**
 
+**success返回参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>tempFilePath</td>
+
+<td>String</td>
+
+<td>临时文件路径，下载后的文件会存储到一个临时文件</td>
+
+</tr>
+
+<tr>
+
+<td>statusCode</td>
+
+<td>Number</td>
+
+<td>开发者服务器返回的 HTTP 状态码</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
 **示例代码:**
 
     wx.downloadFile({
       url: 'https://example.com/audio/123', //仅为示例，并非真实的资源
       success: function(res) {
-        wx.playVoice({
-          filePath: res.tempFilePath
-        })
+        // 只要服务器有响应数据，就会把响应内容写入文件并进入 success 回调，业务需要自行判断是否下载到了想要的内容
+        if (res.statusCode === 200) {
+            wx.playVoice({
+              filePath: res.tempFilePath
+            })
+        }
       }
     })
 
