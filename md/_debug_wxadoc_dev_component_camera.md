@@ -203,6 +203,32 @@
 2.  `tip`: 同一页面只能插入一个 `camera` 组件。
 3.  `tip`: 请勿在 `scroll-view` 中使用 `camera` 组件。
 
+**示例：**
+
+    <!-- camera.wxml -->
+    <camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+    <button type="primary" bindtap="takePhoto">拍照</button>
+    <view>预览</view>
+    <image mode="widthFix" src="{{src}}"></image>
+
+    // camera.js
+    Page({
+        takePhote() {
+            const ctx = wx.createCameraContext()
+            ctx.takePhoto({
+                quality: 'high',
+                success: (res) {
+                    this.setData({
+                        src: res.tempImagePath
+                    })
+                }
+            })
+        },
+        error(e) {
+            console.log(e.detail)
+        }
+    })
+
 </section>
 
 </div>

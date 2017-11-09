@@ -612,18 +612,6 @@
 
 <tr>
 
-<td>cancel</td>
-
-<td>Function</td>
-
-<td>否</td>
-
-<td>用户取消时调用</td>
-
-</tr>
-
-<tr>
-
 <td>fail</td>
 
 <td>Function</td>
