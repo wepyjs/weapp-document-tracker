@@ -390,7 +390,7 @@
 
 > 基础库 1.2.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
-获取**全局唯一**的背景音频管理器 `backgroundAudioManager`
+获取**全局唯一**的背景音频管理器 `backgroundAudioManager`。
 
 #### backgroundAudioManager
 

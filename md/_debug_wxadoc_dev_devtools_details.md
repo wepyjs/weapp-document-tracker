@@ -60,7 +60,6 @@
 <nav role="navigation">
 
 *   [概览](devtools.html)
-*   [云测试](monkey-test.html)
 *   [界面](page.html)
     *   [启动页](page.html#启动页)
     *   [菜单栏](page.html#菜单栏)
@@ -95,7 +94,9 @@
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
     *   [特殊场景调试](different.html)
+*   [小程序开发助手](mydev.html)
 *   [第三方平台](ext.html)
+*   [云测试](monkey-test.html)
 *   [实现差异](details.html)
     *   [运行环境差异](details.html#运行环境差异)
     *   [ES6 支持情况](details.html#客户端es6-api-支持情况)
@@ -1070,6 +1071,6 @@
 
 </div>
 
-[](ext.html)[](details.html#运行环境差异)</div>
+[](monkey-test.html)[](details.html#运行环境差异)</div>
 
 </div>

@@ -388,7 +388,7 @@
 
 ### wx.createAudioContext(audioId)
 
-**1.6.0 版本开始，建议使用能力更强的 [wx.createInnerAudioContext](createInnerAudioContext.html) 接口**
+**注意：1.6.0 版本开始，本接口不再维护。建议使用能力更强的 [wx.createInnerAudioContext](createInnerAudioContext.html) 接口**
 
 创建并返回 audio 上下文 `audioContext` 对象
 

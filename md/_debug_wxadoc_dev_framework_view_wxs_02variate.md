@@ -129,7 +129,7 @@
     var bar = "hello world";
     var i; // i === undefined
 
-上面代码，分别声明了 `foo`、 `bar`、 `i` 三个变量。然后，`foo` 赋值为数值 `1` ，`bar` 赋值为字符串 `"hello wolrd"`。
+上面代码，分别声明了 `foo`、 `bar`、 `i` 三个变量。然后，`foo` 赋值为数值 `1` ，`bar` 赋值为字符串 `"hello world"`。
 
 ## 变量名
 

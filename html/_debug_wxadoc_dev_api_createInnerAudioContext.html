@@ -4614,7 +4614,6 @@
 <p>&#x57FA;&#x7840;&#x5E93; 1.6.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;<a href="../framework/compatibility.html">&#x517C;&#x5BB9;&#x5904;&#x7406;</a></p>
 </blockquote>
 <p>&#x521B;&#x5EFA;&#x5E76;&#x8FD4;&#x56DE;&#x5185;&#x90E8; audio &#x4E0A;&#x4E0B;&#x6587; <code>innerAudioContext</code> &#x5BF9;&#x8C61;&#x3002;<em>&#x672C;&#x63A5;&#x53E3;&#x662F; <code>wx.createAudioContext</code> &#x5347;&#x7EA7;&#x7248;&#x3002;</em></p>
-<p><strong>&#x4E00;&#x4E2A;&#x5C0F;&#x7A0B;&#x5E8F;&#x5185;&#x6700;&#x591A;&#x53EA;&#x80FD;&#x5B58;&#x5728; 5 &#x4E2A; innerAudio &#x5B9E;&#x4F8B;</strong></p>
 <h4 id="inneraudiocontext">innerAudioContext</h4>
 <p><strong>innerAudioContext &#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x5217;&#x8868;&#xFF1A;</strong></p>
 <table>
@@ -4803,6 +4802,7 @@
 </table>
 <p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</strong></p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> innerAudioContext = wx.createInnerAudioContext()
+innerAudioContext.autoplay = <span class="hljs-literal">true</span>
 innerAudioContext.src = <span class="hljs-string">&apos;http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&amp;uin=346897220&amp;vkey=6292F51E1E384E061FF02C31F716658E5C81F5594D561F2E88B854E81CAAB7806D5E4F103E55D33C16F3FAC506D1AB172DE8600B37E43FAD&amp;fromtag=46&apos;</span>
 innerAudioContext.onPlay(() =&gt; {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x5F00;&#x59CB;&#x64AD;&#x653E;&apos;</span>)
@@ -4812,6 +4812,10 @@ innerAudioContext.onError((res) =&gt; {
     <span class="hljs-built_in">console</span>.log(res.errCode)
 })
 </code></pre>
+<h4 id="bug--tip">Bug &amp; Tip</h4>
+<ol>
+<li><code>tip</code>&#xFF1A;&#x4E00;&#x4E2A;&#x5C0F;&#x7A0B;&#x5E8F;&#x5185;&#x6700;&#x591A;&#x53EA;&#x80FD;&#x5B58;&#x5728; 5 &#x4E2A; innerAudio &#x5B9E;&#x4F8B;**</li>
+</ol>
 
                                 
                                 </section>

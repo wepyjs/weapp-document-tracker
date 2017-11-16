@@ -390,7 +390,7 @@
 
 > 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
-获取**全局唯一**的录音管理器 `recorderManager`
+获取**全局唯一**的录音管理器 `recorderManager`。
 
 #### recorderManager
 

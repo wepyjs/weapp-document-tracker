@@ -386,13 +386,15 @@
 
 <section class="normal markdown-section">
 
-### wx.getBackgroundAudioPlayerState(OBJECT)
+# API
 
-**注意：1.2.0 版本开始，本接口不再维护。建议使用能力更强的 [wx.getBackgroundAudioManager](getBackgroundAudioManager.html) 接口**
+框架提供丰富的微信原生API，可以方便的调起微信提供的能力，如获取用户信息，本地存储，支付功能等。
 
-获取后台音乐播放状态。
+**说明：**
 
-**OBJECT参数说明：**
+*   wx.on 开头的 API 是监听某个事件发生的API接口，接受一个 CALLBACK 函数作为参数。当该事件触发时，会调用 CALLBACK 函数。
+*   如未特殊约定，其他 API 接口都接受一个OBJECT作为参数。
+*   OBJECT中可以指定`success`, `fail`, `complete`来接收接口调用结果。
 
 <table>
 
@@ -400,7 +402,7 @@
 
 <tr>
 
-<th>参数</th>
+<th>参数名</th>
 
 <th>类型</th>
 
@@ -454,7 +456,9 @@
 
 </table>
 
-**success返回参数说明：**
+**API列表：**
+
+**网络 API 列表：**
 
 <table>
 
@@ -462,7 +466,7 @@
 
 <tr>
 
-<th>参数</th>
+<th>API</th>
 
 <th>说明</th>
 
@@ -474,41 +478,81 @@
 
 <tr>
 
-<td>duration</td>
+<td>[wx.request](network-request.html)</td>
 
-<td>选定音频的长度（单位：s），只有在当前有音乐播放时返回</td>
-
-</tr>
-
-<tr>
-
-<td>currentPosition</td>
-
-<td>选定音频的播放位置（单位：s），只有在当前有音乐播放时返回</td>
+<td>发起网络请求</td>
 
 </tr>
 
 <tr>
 
-<td>status</td>
+<td>[wx.uploadFile](network-file.html#wxuploadfileobject)</td>
 
-<td>播放状态（2：没有音乐在播放，1：播放中，0：暂停中）</td>
-
-</tr>
-
-<tr>
-
-<td>downloadPercent</td>
-
-<td>音频的下载进度（整数，80 代表 80%），只有在当前有音乐播放时返回</td>
+<td>上传文件</td>
 
 </tr>
 
 <tr>
 
-<td>dataUrl</td>
+<td>[wx.downloadFile](network-file.html#wxdownloadfileobject)</td>
 
-<td>歌曲数据链接，只有在当前有音乐播放时返回</td>
+<td>下载文件</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.connectSocket](network-socket.html#wxconnectsocketobject)</td>
+
+<td>创建 WebSocket 连接</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.onSocketOpen](network-socket.html#wxonsocketopencallback)</td>
+
+<td>监听 WebSocket 打开</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.onSocketError](network-socket.html#wxonsocketerrorcallback)</td>
+
+<td>监听 WebSocket 错误</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.sendSocketMessage](network-socket.html#wxsendsocketmessageobject)</td>
+
+<td>发送 WebSocket 消息</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.onSocketMessage](network-socket.html#wxonsocketmessagecallback)</td>
+
+<td>接受 WebSocket 消息</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.closeSocket](network-socket.html#wxclosesocket)</td>
+
+<td>关闭 WebSocket 连接</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.onSocketClose](network-socket.html#wxonsocketclosecallback)</td>
+
+<td>监听 WebSocket 关闭</td>
 
 </tr>
 
@@ -516,23 +560,7 @@
 
 </table>
 
-**示例代码：**
-
-    wx.getBackgroundAudioPlayerState({
-        success: function(res) {
-            var status = res.status
-            var dataUrl = res.dataUrl
-            var currentPosition = res.currentPosition
-            var duration = res.duration
-            var downloadPercent = res.downloadPercent
-        }
-    })
-
-### wx.playBackgroundAudio(OBJECT)
-
-使用后台播放器播放音乐，对于微信客户端来说，只能同时有一个后台音乐在播放。当用户离开小程序后，音乐将暂停播放；当用户点击“显示在聊天顶部”时，音乐不会暂停播放；当用户在其他小程序占用了音乐播放器，原有小程序内的音乐将停止播放。
-
-**OBJECT参数说明**
+**媒体 API 列表：**
 
 <table>
 
@@ -540,11 +568,7 @@
 
 <tr>
 
-<th>参数</th>
-
-<th>类型</th>
-
-<th>必填</th>
+<th>API</th>
 
 <th>说明</th>
 
@@ -556,73 +580,129 @@
 
 <tr>
 
-<td>dataUrl</td>
+<td>[wx.chooseImage](media-picture.html#wxchooseimageobject)</td>
 
-<td>String</td>
-
-<td>是</td>
-
-<td>音乐链接，目前支持的格式有 m4a, aac, mp3, wav</td>
+<td>从相册选择图片，或者拍照</td>
 
 </tr>
 
 <tr>
 
-<td>title</td>
+<td>[wx.previewImage](media-picture.html#wxpreviewimageobject)</td>
 
-<td>String</td>
-
-<td>否</td>
-
-<td>音乐标题</td>
+<td>预览图片</td>
 
 </tr>
 
 <tr>
 
-<td>coverImgUrl</td>
+<td>[wx.startRecord](media-record.html#wxstartrecordobject)</td>
 
-<td>String</td>
-
-<td>否</td>
-
-<td>封面URL</td>
+<td>开始录音</td>
 
 </tr>
 
 <tr>
 
-<td>success</td>
+<td>[wx.stopRecord](media-record.html#wxstoprecord)</td>
 
-<td>Function</td>
-
-<td>否</td>
-
-<td>接口调用成功的回调函数</td>
+<td>结束录音</td>
 
 </tr>
 
 <tr>
 
-<td>fail</td>
+<td>[wx.playVoice](media-voice.html#wxplayvoice)</td>
 
-<td>Function</td>
-
-<td>否</td>
-
-<td>接口调用失败的回调函数</td>
+<td>播放语音</td>
 
 </tr>
 
 <tr>
 
-<td>complete</td>
+<td>[wx.pauseVoice](media-voice.html#wxpausevoice)</td>
 
-<td>Function</td>
+<td>暂停播放语音</td>
 
-<td>否</td>
+</tr>
 
-<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+<tr>
+
+<td>[wx.stopVoice](media-voice.html#wxstopvoice)</td>
+
+<td>结束播放语音</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.getBackgroundAudioPlayerState](media-background-audio.html#wxgetbackgroundaudioplayerstateobject)</td>
+
+<td>获取音乐播放状态</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.playBackgroundAudio](media-background-audio.html#wxplaybackgroundaudioobject)</td>
+
+<td>播放音乐</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.pauseBackgroundAudio](media-background-audio.html#wxpausebackgroundaudio)</td>
+
+<td>暂停播放音乐</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.seekBackgroundAudio](media-background-audio.html#wxstopbackgroundaudio)</td>
+
+<td>控制音乐播放进度</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.stopBackgroundAudio](media-background-audio.html#wxstopbackgroundaudio)</td>
+
+<td>停止播放音乐</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.onBackgroundAudioPlay](media-background-audio.html#wxonbackgroundaudioplaycallback)</td>
+
+<td>监听音乐开始播放</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.onBackgroundAudioPause](media-background-audio.html#wxonbackgroundaudiopausecallback)</td>
+
+<td>监听音乐暂停</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.onBackgroundAudioStop](media-background-audio.html#wxonbackgroundaudiostopcallback)</td>
+
+<td>监听音乐结束</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.chooseVideo](media-video.html)</td>
+
+<td>从相册选择视频，或者拍摄</td>
 
 </tr>
 
@@ -630,27 +710,7 @@
 
 </table>
 
-**示例代码**
-
-    wx.playBackgroundAudio({
-        dataUrl: '',
-        title: '',
-        coverImgUrl: ''
-    })
-
-### wx.pauseBackgroundAudio()
-
-暂停播放音乐。
-
-**示例代码**
-
-    wx.pauseBackgroundAudio()
-
-### wx.seekBackgroundAudio(OBJECT)
-
-控制音乐播放进度。
-
-**OBJECT参数说明**
+**文件 API 列表：**
 
 <table>
 
@@ -658,11 +718,7 @@
 
 <tr>
 
-<th>参数</th>
-
-<th>类型</th>
-
-<th>必填</th>
+<th>API</th>
 
 <th>说明</th>
 
@@ -674,49 +730,41 @@
 
 <tr>
 
-<td>position</td>
+<td>[wx.saveFile](file.html)</td>
 
-<td>Number</td>
-
-<td>是</td>
-
-<td>音乐位置，单位：秒</td>
+<td>保存文件</td>
 
 </tr>
 
 <tr>
 
-<td>success</td>
+<td>[wx.getSavedFileList](file.html#wxgetsavedfilelistobject)</td>
 
-<td>Function</td>
-
-<td>否</td>
-
-<td>接口调用成功的回调函数</td>
+<td>获取已保存的文件列表</td>
 
 </tr>
 
 <tr>
 
-<td>fail</td>
+<td>[wx.getSavedFileInfo](file.html#wxgetsavedfileinfoobject)</td>
 
-<td>Function</td>
-
-<td>否</td>
-
-<td>接口调用失败的回调函数</td>
+<td>获取已保存的文件信息</td>
 
 </tr>
 
 <tr>
 
-<td>complete</td>
+<td>[wx.removeSavedFile](file.html#wxremovesavedfileobject)</td>
 
-<td>Function</td>
+<td>删除已保存的文件信息</td>
 
-<td>否</td>
+</tr>
 
-<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+<tr>
+
+<td>[wx.openDocument](file.html#wxopendocumentobject)</td>
+
+<td>打开文件</td>
 
 </tr>
 
@@ -724,35 +772,617 @@
 
 </table>
 
-**示例代码**
+**数据 API 列表：**
 
-    wx.seekBackgroundAudio({
-        position: 30
-    })
+<table>
 
-### wx.stopBackgroundAudio()
+<thead>
 
-停止播放音乐。
+<tr>
 
-**示例代码**
+<th>API</th>
 
-    wx.stopBackgroundAudio()
+<th>说明</th>
 
-### wx.onBackgroundAudioPlay(CALLBACK)
+</tr>
 
-监听音乐播放。
+</thead>
 
-### wx.onBackgroundAudioPause(CALLBACK)
+<tbody>
 
-监听音乐暂停。
+<tr>
 
-### wx.onBackgroundAudioStop(CALLBACK)
+<td>[wx.getStorage](data.html#wxgetstorageobject)</td>
 
-监听音乐停止。
+<td>获取本地数据缓存</td>
 
-#### bug & tip
+</tr>
 
-1.  `bug`: `iOS` `6.3.30` wx.seekBackgroundAudio 会有短暂延迟
+<tr>
+
+<td>[wx.getStorageSync](data.html#wxgetstoragesynckey)</td>
+
+<td>获取本地数据缓存</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.setStorage](data.html#wxsetstorageobject)</td>
+
+<td>设置本地数据缓存</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.setStorageSync](data.html#wxsetstoragesynckeydata)</td>
+
+<td>设置本地数据缓存</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.getStorageInfo](data.html#wxgetstorageinfoobject)</td>
+
+<td>获取本地缓存的相关信息</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.getStorageInfoSync](data.html#wxgetstorageinfosync)</td>
+
+<td>获取本地缓存的相关信息</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.removeStorage](data.html#wxremovestorageobject)</td>
+
+<td>删除本地缓存内容</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.removeStorageSync](data.html#wxremovestoragesynckey)</td>
+
+<td>删除本地缓存内容</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.clearStorage](data.html#wxclearstorageobject)</td>
+
+<td>清理本地数据缓存</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.clearStorageSync](data.html#wxclearstoragesync)</td>
+
+<td>清理本地数据缓存</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**位置 API 列表：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>API</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>[wx.getLocation](location.html#wxgetlocationobject)</td>
+
+<td>获取当前位置</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.chooseLocation](location.html#wxchooselocationobject)</td>
+
+<td>打开地图选择位置</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.openLocation](location.html#wxopenlocationobject)</td>
+
+<td>打开内置地图</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.createMapContext](api-map.html#wxcreatemapcontextmapid)</td>
+
+<td>地图组件控制</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**设备 API 列表：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>API</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>[wx.getNetworkType](device.html#wxgetnetworktypeobject)</td>
+
+<td>获取网络类型</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.onNetworkStatusChange](device.html#wxonnetworkstatuschangecallback)</td>
+
+<td>监听网络状态变化</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.getSystemInfo](systeminfo.html#wxgetsysteminfoobject)</td>
+
+<td>获取系统信息</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.getSystemInfoSync](systeminfo.html#wxgetsysteminfosync)</td>
+
+<td>获取系统信息</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.onAccelerometerChange](accelerometer.html#wxonaccelerometerchangecallback)</td>
+
+<td>监听加速度数据</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.startAccelerometer](accelerometer.html#wxstartaccelerometerobject)</td>
+
+<td>开始监听加速度数据</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.stopAccelerometer](accelerometer.html#wxstopaccelerometerobject)</td>
+
+<td>停止监听加速度数据</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.onCompassChange](compass.html#wxoncompasschangecallback)</td>
+
+<td>监听罗盘数据</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.startCompass](compass.html#wxstartcompassobject)</td>
+
+<td>开始监听罗盘数据</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.stopCompass](compass.html#wxstopcompassobject)</td>
+
+<td>停止监听罗盘数据</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.setClipboardData](clipboard.html#wxsetclipboarddataobject)</td>
+
+<td>设置剪贴板内容</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.getClipboardData](clipboard.html#wxgetclipboarddataobject)</td>
+
+<td>获取剪贴板内容</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.makePhoneCall](phonecall.html#wxmakephonecallobject)</td>
+
+<td>拨打电话</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.scanCode](scancode.html#wxscancodeobject)</td>
+
+<td>扫码</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**界面 API 列表：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>API</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>[wx.showToast](api-react.html#wxshowtoastobject)</td>
+
+<td>显示提示框</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.showLoading](api-react.html#wxshowloadingobject)</td>
+
+<td>显示加载提示框</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.hideToast](api-react.html#wxhidetoast)</td>
+
+<td>隐藏提示框</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.hideLoading](api-react.html#wxhideloading)</td>
+
+<td>隐藏提示框</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.showModal](api-react.html#wxshowmodalobject)</td>
+
+<td>显示模态弹窗</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.showActionSheet](api-react.html#wxshowactionsheetobject)</td>
+
+<td>显示菜单列表</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.setNavigationBarTitle](ui.html#wxsetnavigationbartitleobject)</td>
+
+<td>设置当前页面标题</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.showNavigationBarLoading](ui.html#wxshownavigationbarloading)</td>
+
+<td>显示导航条加载动画</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.hideNavigationBarLoading](ui.html#wxhidenavigationbarloading)</td>
+
+<td>隐藏导航条加载动画</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.navigateTo](ui-navigate.html#wxnavigatetoobject)</td>
+
+<td>新窗口打开页面</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.redirectTo](ui-navigate.html#wxredirecttoobject)</td>
+
+<td>原窗口打开页面</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.switchTab](ui-navigate.html#wxswitchtabobject)</td>
+
+<td>切换到 tabbar 页面</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.navigateBack](ui-navigate.html#wxnavigateback)</td>
+
+<td>退回上一个页面</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.createAnimation](api-animation.html)</td>
+
+<td>动画</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.createContext](canvas/create-canvas-context.html)</td>
+
+<td>创建绘图上下文</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.drawCanvas](canvas/draw-canvas.html)</td>
+
+<td>绘图</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)</td>
+
+<td>停止下拉刷新动画</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**WXML节点信息 API 列表：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>API</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>[wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)</td>
+
+<td>创建查询请求</td>
+
+</tr>
+
+<tr>
+
+<td>[selectorQuery.in](wxml-nodes-info.html#selectorqueryincomponent)</td>
+
+<td>指定在哪个自定义组件中选取节点</td>
+
+</tr>
+
+<tr>
+
+<td>[selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)</td>
+
+<td>根据选择器选择单个节点</td>
+
+</tr>
+
+<tr>
+
+<td>[selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)</td>
+
+<td>根据选择器选择全部节点</td>
+
+</tr>
+
+<tr>
+
+<td>[selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)</td>
+
+<td>选择显示区域</td>
+
+</tr>
+
+<tr>
+
+<td>[nodesRef.boundingClientRect](wxml-nodes-info.html#nodesrefboundingclientrectcallback)</td>
+
+<td>获取布局位置和尺寸</td>
+
+</tr>
+
+<tr>
+
+<td>[nodesRef.scrollOffset](wxml-nodes-info.html#nodesrefscrolloffsetcallback)</td>
+
+<td>获取滚动位置</td>
+
+</tr>
+
+<tr>
+
+<td>[nodesRef.fields](wxml-nodes-info.html#nodesreffieldsfieldscallback)</td>
+
+<td>获取任意字段</td>
+
+</tr>
+
+<tr>
+
+<td>[selectorQuery.exec](wxml-nodes-info.html#selectorqueryexeccallback)</td>
+
+<td>执行查询请求</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**开放接口：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>API</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>[wx.login](api-login.html)</td>
+
+<td>登录</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.getUserInfo](open.html#wxgetuserinfoobject)</td>
+
+<td>获取用户信息</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.chooseAddress](address.html#wxchooseaddressobject)</td>
+
+<td>获取用户收货地址</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.requestPayment](api-pay.html#wxrequestpaymentobject)</td>
+
+<td>发起微信支付</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.addCard](card.html#wxaddcardobject)</td>
+
+<td>添加卡券</td>
+
+</tr>
+
+<tr>
+
+<td>[wx.openCard](card.html#wxopencardobject)</td>
+
+<td>打开卡券</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 </section>
 
@@ -793,6 +1423,6 @@
 
 </div>
 
-[](media-voice.html#wxstopvoice)[](media-background-audio.html#wxgetbackgroundaudioplayerstateobject)</div>
+[](../component/contact-button.html)[](api-network.html)</div>
 
 </div>

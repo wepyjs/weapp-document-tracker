@@ -59,7 +59,31 @@
 
 <nav role="navigation">
 
-*   [简易教程](./)
+*   [基础](quickstart/basic/getting-started.html)
+    *   [起步](quickstart/basic/getting-started.html)
+        *   [申请帐号](quickstart/basic/getting-started.html#申请帐号)
+        *   [安装开发工具](quickstart/basic/getting-started.html#安装开发工具)
+        *   [我的第一个小程序](quickstart/basic/getting-started.html#你的第一个小程序)
+        *   [编译预览](quickstart/basic/getting-started.html#编译预览)
+    *   [代码构成](quickstart/basic/file.html)
+        *   [JSON 配置](quickstart/basic/file.html#JSON-配置)
+        *   [WXML 模板](quickstart/basic/file.html#WXML-模板)
+        *   [WXSS 样式](quickstart/basic/file.html#WXSS-样式)
+        *   [JS 逻辑交互](quickstart/basic/file.html#JS-交互逻辑)
+    *   [小程序能力](quickstart/basic/framework.html)
+        *   [小程序的启动](quickstart/basic/framework.html#小程序的启动)
+        *   [程序与页面](quickstart/basic/framework.html#程序与页面)
+        *   [组件](quickstart/basic/framework.html#组件)
+        *   [API](quickstart/basic/framework.html#API)
+    *   [发布前的准备](quickstart/basic/role.html)
+        *   [用户身份](quickstart/basic/role.html#用户身份)
+        *   [预览](quickstart/basic/role.html#预览)
+        *   [上传代码](quickstart/basic/role.html#上传代码)
+        *   [小程序的版本](quickstart/basic/role.html#小程序的版本)
+    *   [上线](quickstart/basic/release.html)
+        *   [提交审核](quickstart/basic/release.html#提交审核)
+        *   [发布](quickstart/basic/release.html#发布)
+        *   [运营数据](quickstart/basic/release.html#运营数据)
 *   [体验小程序](demo.html)
 *   [更新日志](devtools/new.html)
 
@@ -126,6 +150,6 @@
 
 </div>
 
-[](./)[](devtools/new.html)</div>
+[](quickstart/basic/release.html#运营数据)[](devtools/new.html)</div>
 
 </div>

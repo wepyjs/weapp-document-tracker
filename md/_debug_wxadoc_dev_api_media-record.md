@@ -388,6 +388,8 @@
 
 ### wx.startRecord(OBJECT)
 
+**注意：1.6.0 版本开始，本接口不再维护。建议使用能力更强的 [wx.getRecorderManager](getRecorderManager.html) 接口**
+
 开始录音。当主动调用`wx.stopRecord`，或者录音超过1分钟时自动结束录音，返回录音文件的临时文件路径。当用户离开小程序时，此接口无法调用。
 
 需要[用户授权](authorize-index.html) scope.record
