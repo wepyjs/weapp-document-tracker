@@ -91,6 +91,7 @@
     *   [Component构造器](../custom-component/component.html)
     *   [组件事件](../custom-component/events.html)
     *   [behaviors](../custom-component/behaviors.html)
+    *   [组件间关系](../custom-component/relations.html)
 *   [基础库](../client-lib.html)
 *   [兼容](../compatibility.html)
 *   [运行机制](../operating-mechanism.html)
@@ -565,8 +566,9 @@ object 以 key，value 的形式表示将 this.data 中的 key 对应的值改�
 
 **注意：**
 
-1.  **直接修改 this.data 而不调用 this.setData 是无法改变页面的状态的，还会造成数据不一致**
+1.  **直接修改 this.data 而不调用 this.setData 是无法改变页面的状态的，还会造成数据不一致**。
 2.  **单次设置的数据不能超过1024kB，请尽量避免一次设置过多的数据**。
+3.  请不要把 data 中任何一项的 value 设为 `undefined` ，否则这一项将不被设置并可能遗留一些潜在问题。
 
 **示例代码：**
 

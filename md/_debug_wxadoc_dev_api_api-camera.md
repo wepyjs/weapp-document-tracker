@@ -386,11 +386,11 @@
 
 <section class="normal markdown-section">
 
-### wx.createCameraContext()
+### wx.createCameraContext(this)
 
 > 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
-创建并返回 camera 上下文 `cameraContext` 对象，`cameraContext` 与页面的 `camera` 组件绑定，一个页面只能有一个camera，通过它可以操作对应的 `<camera/>` 组件。
+创建并返回 camera 上下文 `cameraContext` 对象，`cameraContext` 与页面的 `camera` 组件绑定，一个页面只能有一个camera，通过它可以操作对应的 `<camera/>` 组件。 在自定义组件下，第一个参数传入组件实例this，以操作组件内 `<camera/>` 组件
 
 #### cameraContext
 

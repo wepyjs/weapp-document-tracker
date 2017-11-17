@@ -91,6 +91,7 @@
     *   [Component构造器](custom-component/component.html)
     *   [组件事件](custom-component/events.html)
     *   [behaviors](custom-component/behaviors.html)
+    *   [组件间关系](custom-component/relations.html)
 *   [基础库](client-lib.html)
 *   [兼容](compatibility.html)
 *   [运行机制](operating-mechanism.html)
@@ -637,6 +638,6 @@
 
 </div>
 
-[](custom-component/behaviors.html)[](compatibility.html)</div>
+[](custom-component/relations.html)[](compatibility.html)</div>
 
 </div>

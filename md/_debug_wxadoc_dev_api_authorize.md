@@ -116,6 +116,7 @@
         *   [Component构造器](../framework/custom-component/component.html)
         *   [组件事件](../framework/custom-component/events.html)
         *   [behaviors](../framework/custom-component/behaviors.html)
+        *   [组件间关系](../framework/custom-component/relations.html)
     *   [基础库](../framework/client-lib.html)
     *   [兼容](../framework/compatibility.html)
     *   [运行机制](../framework/operating-mechanism.html)

@@ -91,6 +91,7 @@
     *   [Component构造器](component.html)
     *   [组件事件](events.html)
     *   [behaviors](behaviors.html)
+    *   [组件间关系](relations.html)
 *   [基础库](../client-lib.html)
 *   [兼容](../compatibility.html)
 *   [运行机制](../operating-mechanism.html)
@@ -118,6 +119,8 @@
 
 # 组件事件
 
+**注意：目前自定义组件相关特性处于公测阶段。如果需要使用相关特性，请确认在项目选项中已勾选“预览/上传时使用新特性”。**
+
 事件系统是组件间交互的主要形式。自定义组件可以触发任意的事件，引用组件的页面可以监听这些事件。关于事件的基本概念和用法，参见 [事件](../view/wxml/event.html) 。
 
 监听自定义组件事件的方法与监听基础组件事件的方法完全一致：
@@ -125,6 +128,8 @@
 **代码示例：**
 
     <!-- 当自定义组件触发“myevent”事件时，调用“onMyEvent”方法 -->
+    <component-tag-name bindmyevent="onMyEvent" />
+    <!-- 或者可以写成 -->
     <component-tag-name bind:myevent="onMyEvent" />
 
     Page({
@@ -137,10 +142,13 @@
 
 **代码示例：**
 
+    <!-- 在自定义组件中 -->
+    <button bindtap="onTap">点击这个按钮将触发“myevent”事件</button>
+
     Component({
       properties: {}
       methods: {
-        _emitMyEvent: function(){
+        onTap: function(){
           var myEventDetail = {} // detail对象，提供给事件监听函数
           var myEventOption = {} // 触发事件的选项
           this.triggerEvent('myevent', myEventDetail, myEventOption)
@@ -240,7 +248,7 @@
     // 组件 my-component.js
     Component({
       methods: {
-        _emitEvents: function(){
+        onTap: function(){
           this.triggerEvent('customevent', {}) // 只会触发 pageEventListener2
           this.triggerEvent('customevent', {}, { bubbles: true }) // 会依次触发 pageEventListener2 、 pageEventListener1
           this.triggerEvent('customevent', {}, { bubbles: true, composed: true }) // 会依次触发 pageEventListener2 、 anotherEventListener 、 pageEventListener1

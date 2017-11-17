@@ -386,9 +386,9 @@
 
 <section class="normal markdown-section">
 
-### wx.createVideoContext(videoId)
+### wx.createVideoContext(videoId, this)
 
-创建并返回 video 上下文 `videoContext` 对象
+创建并返回 video 上下文 `videoContext` 对象。在自定义组件下，第二个参数传入组件实例this，以操作组件内 `<video/>` 组件
 
 #### videoContext
 

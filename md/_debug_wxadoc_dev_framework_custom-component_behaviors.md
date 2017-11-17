@@ -91,6 +91,7 @@
     *   [Component构造器](component.html)
     *   [组件事件](events.html)
     *   [behaviors](behaviors.html)
+    *   [组件间关系](relations.html)
 *   [基础库](../client-lib.html)
 *   [兼容](../compatibility.html)
 *   [运行机制](../operating-mechanism.html)
@@ -117,6 +118,8 @@
 <section class="normal markdown-section">
 
 # behaviors
+
+**注意：目前自定义组件相关特性处于公测阶段。如果需要使用相关特性，请确认在项目选项中已勾选“预览/上传时使用新特性”。**
 
 `behaviors` 是用于组件间代码共享的特性，类似于一些编程语言中的mixins或traits。
 
@@ -212,6 +215,6 @@
 
 </div>
 
-[](events.html)[](../client-lib.html)</div>
+[](events.html)[](relations.html)</div>
 
 </div>

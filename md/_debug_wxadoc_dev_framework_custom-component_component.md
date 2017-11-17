@@ -91,6 +91,7 @@
     *   [Component构造器](component.html)
     *   [组件事件](events.html)
     *   [behaviors](behaviors.html)
+    *   [组件间关系](relations.html)
 *   [基础库](../client-lib.html)
 *   [兼容](../compatibility.html)
 *   [运行机制](../operating-mechanism.html)
@@ -117,6 +118,8 @@
 <section class="normal markdown-section">
 
 # Component构造器
+
+**注意：目前自定义组件相关特性处于公测阶段。如果需要使用相关特性，请确认在项目选项中已勾选“预览/上传时使用新特性”。**
 
 Component构造器可用于定义组件，调用Component构造器时可以指定组件的属性、数据、方法等。
 
@@ -250,6 +253,18 @@ Component构造器可用于定义组件，调用Component构造器时可以指�
 
 <tr>
 
+<td>relations</td>
+
+<td>Object</td>
+
+<td>否</td>
+
+<td>组件间关系定义，参见 [组件间关系](relations.html)</td>
+
+</tr>
+
+<tr>
+
 <td>options</td>
 
 <td>Object Map</td>
@@ -378,6 +393,16 @@ Component构造器可用于定义组件，调用Component构造器时可以指�
 
 <tr>
 
+<td>createSelectorQuery</td>
+
+<td></td>
+
+<td>创建一个 [SelectorQuery](../../api/wxml-nodes-info.html) 对象，选择器选取范围为这个组件实例内</td>
+
+</tr>
+
+<tr>
+
 <td>selectComponent</td>
 
 <td>String `selector`</td>
@@ -393,6 +418,16 @@ Component构造器可用于定义组件，调用Component构造器时可以指�
 <td>String `selector`</td>
 
 <td>使用选择器选择组件实例节点，返回匹配到的全部组件实例对象组成的数组</td>
+
+</tr>
+
+<tr>
+
+<td>getRelationNodes</td>
+
+<td>String `relationKey`</td>
+
+<td>获取所有这个关系对应的所有关联节点，参见 [组件间关系](relations.html)</td>
 
 </tr>
 
@@ -436,11 +471,12 @@ Component构造器可用于定义组件，调用Component构造器时可以指�
 
     })
 
+注意：在 `properties` 定义段中，属性名采用驼峰写法（`propertyName`）；在 `wxml` 中，指定属性值时则对应使用连字符写法（`component-tag-name property-name="attr value"`），应用于数据绑定时采用驼峰写法（`attr="{{propertyName}}"`）。
+
 **Tips:**
 
 *   使用 `this.data` 可以获取内部数据和属性值，但不要直接修改它们，应使用 `setData` 修改。
 *   生命周期函数无法在组件方法中通过 `this` 访问到。
-*   在 `Component()` 中定义时，属性名采用驼峰写法（`propName`）；在 `wxml` 中，指定属性值时则对应使用连字符写法（`component-tag-name prop-name="attr value"`），应用于数据绑定时采用驼峰写法（``）。
 *   在一个组件的定义和使用时，组件的属性名和data字段相互间都不能冲突（尽管它们位于不同的定义段中）。
 
 </section>

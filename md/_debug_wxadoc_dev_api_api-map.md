@@ -386,9 +386,9 @@
 
 <section class="normal markdown-section">
 
-### wx.createMapContext(mapId)
+### wx.createMapContext(mapId, this)
 
-创建并返回 map 上下文 `mapContext` 对象
+创建并返回 map 上下文 `mapContext` 对象。在自定义组件下，第二个参数传入组件实例this，以操作组件内 `<map/>` 组件
 
 #### mapContext
 
