@@ -84,7 +84,7 @@
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/a0.png)
 
-“小程序数据助手”当前功能模块包括数据概况、访问分析、实时统计、用户画像，数据与小程序后台常规分析一致。
+“小程序数据助手”当前功能模块包括数据概况、访问基础分析（用户趋势、来源分析、留存分析、时长分析、页面详情）、实时统计和用户画像（年龄性别、省份城市、终端机型），数据与小程序后台常规分析一致。
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/a1.png)
 
@@ -96,27 +96,29 @@
 
 **管理员授权**
 
-1.  进入小程序数据概况页，点击小程序头像，选择“授权”；
+1.  点击左上角菜单，在导航页中选择“授权”；
 2.  在搜索框中输入微信号查询，或“从小程序开发者/体验者中选择”，点击“授权”；
 3.  授权成功后，被授权用户将接收到模板消息通知；
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/a2.jpg)
+![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/a2.png)
 
 **管理员取消授权**
 
-1.  进入小程序数据概况页，点击小程序头像，选择“授权”；
+1.  点击左上角菜单，在导航页中选择“授权”；
 2.  在已授权用户列表中，左滑取消授权。取消授权后，用户不再有查看该小程序数据的权限。
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/a3.png)
 
-> 目前小程序最多可授权60位用户查看数据，如果超过上限，可以取消已授权用户后再进行操作。
+小程序数据查询授权也可以在后台“用户身份”设置操作，勾选“数据分析”后，用户即可使用小程序数据助手查看数据。如果超过上限，可以取消已授权用户后再进行操作。
+
+![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/a5.png)
 
 **切换查看数据的小程序**
 
 如果是多个小程序的管理员，或被授权查看多个小程序数据，可以统一在”小程序数据助手”切换查看。
 
 1.  首次打开“小程序数据助手”，直接从列表中选择；
-2.  在任意小程序的数据概况页，点击小程序头像，选择“切换小程序”，从列表中重新选择。
+2.  点击左上角菜单，在导航页中选择“切换”，从列表中重新选择。
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/a4.png)
 
