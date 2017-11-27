@@ -246,7 +246,7 @@
 1.  **canvas 标签默认宽度300px、高度225px**
 2.  **同一页面中的 canvas-id 不可重复，如果使用一个已经出现过的 canvas-id，该 canvas 标签对应的画布将被隐藏并不再正常工作**
 
-**示例代码：[下载](../../demo/api-canvas.zip)**
+**示例代码：[下载](../demo/api-canvas.zip)**
 
     <!-- canvas.wxml -->
     <canvas style="width: 300px; height: 200px;" canvas-id="firstCanvas"></canvas>
