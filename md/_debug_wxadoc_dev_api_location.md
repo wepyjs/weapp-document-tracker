@@ -362,9 +362,6 @@
         *   [用户画像](analysis-user.html)
     *   [自定义分析](analysis-report.html)
         *   [自定义数据上报](analysis-report.html)
-*   [拓展接口](api-util.html)
-    *   [wx.arrayBufferToBase64](api-util.html#wxarraybuffertobase64arraybuffer)
-    *   [wx.base64ToArrayBuffer](api-util.html#wxbase64toarraybufferbase64)
 *   [调试接口](setEnableDebug.html)
     *   [打开/关闭调试](setEnableDebug.html)
 
@@ -406,6 +403,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -422,6 +421,22 @@
 
 <td>默认为 wgs84 返回 gps 坐标，gcj02 返回可用于`wx.openLocation`的坐标</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>altitude</td>
+
+<td>Boolean</td>
+
+<td>否</td>
+
+<td>传入 true 会返回高度信息，由于获取高度需要较高精确度，会减慢接口返回速度</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 <tr>
@@ -434,6 +449,8 @@
 
 <td>接口调用成功的回调函数，返回内容详见返回参数说明。</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -445,6 +462,8 @@
 <td>否</td>
 
 <td>接口调用失败的回调函数</td>
+
+<td></td>
 
 </tr>
 

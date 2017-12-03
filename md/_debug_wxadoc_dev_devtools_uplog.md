@@ -122,6 +122,31 @@
 
 <section class="normal markdown-section">
 
+### 2017.11.16 开发工具更新
+
+1.  `F` 修复 导航条背景色错误时白屏问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=b36f663acb10612e4c7e352e87434117&token=557005191&lang=zh_CN)
+2.  `F` 修复 小程序页面跳转时 WXML 面板可能空白的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=557005191&docid=fb21b3675263f8f059875f86e74fc06c)
+3.  `F` 修复 修复计算上传代码包错误的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=557005191&docid=c038ed11b63330fe2430112de0b1bb33)
+4.  `A` 新增 新建项目时可以选择创建腾讯云的 quick start 项目。
+5.  `A` 新增 编辑器右键创建 Component 功能。
+6.  `F` 修复 模拟器选择 offline 后，没有明确提示问题。 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1874444621&docid=8a89915204f492015b717674097afbf8)
+7.  `F` 修复 `wx.downloadFile` 的 downloadTask.onProgressUpdate 缺少返回参数totalBytesWritten、totalBytesExpectedToWrite 的问题。[详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1874444621&docid=6fcbcc00aefa130248ef96f34604a820)
+8.  `F` 修复 工具异常退出后仍然有进程未关闭并占用大量CPU资源的问题。
+9.  `F` 修复 切换设备时 rpx 计算有误的问题。 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1874444621&docid=e6210386d71f5ce63aead317e0af7f33)
+10.  `F` 修复 websocket 自动断开时，未重置连接状态的问题。 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1874444621&docid=8c82b9661034b9b778a2512012a9b853)
+11.  `F` 修复 `<web-view />` 页面分享时 Page.onShareAppMessage 回调参数没有 webViewUrl 的问题。[详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=e65163ec5fcd1ff96f775d7f89feec66)
+12.  `F` 修复 `<web-view />` 中的网页有 iframe 导致网页主页面无法调用 JSSDK 的方法的问题。 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=5b269e9f217e2002a2d6cba5459cad26&token=890951119&lang=zh_CN)
+13.  `F` 修复 `<web-view />` 没有校验 iframe 中链接合法性的问题
+14.  `F` 修复 wxml style 列表无法滚动到底部的问题。 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=2140474170&docid=9087bfd028605c8d34395194735b08ad)
+15.  `F` 修复 wxml 大量节点更新时导致调试器整体卡顿的问题。 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=72c9399c023d5ea753caf6eb4e268990&token=355961913&lang=zh_CN)
+16.  `F` 修复 wxml 显示嵌套 `<text />` 出错的问题。
+17.  `F` 修复 `wx.authorize` 用户拒绝依然回调 ok 的问题。 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1874444621&docid=c5d8e9df01a0ee536b31bfc1f737a5d6)
+18.  `F` 修复 自定义编译条件预览时自定义参数有误的问题。 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=ef014ed43af2ad089f5aa17561a71153)
+19.  `F` 修复 路由 API 在目标页面获取的参数与客户端不一致的问题。 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=132cf95b7dd95a14b8491a226fec5c6c)
+20.  `U` 优化 项目列表的视觉展示。
+21.  `U` 优化 编辑器显示目录树的功能图标位置固定。 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=5170e2e6311c30b53e3109ac01ee1acc)
+22.  `U` 优化 预览/上传前先计算项目代码包大小再进行编译打包处理，避免项目过大导致内存溢出。
+
 ### 2017.11.02 开发工具更新
 
 1.  `A` 新增 可以上传 php 代码到腾讯云，[QuickStart Demo 地址](https://github.com/tencentyun/wafer2-quickstart-php)
@@ -800,7 +825,7 @@
 2.  `A` 新增 API `wx.chooseAddress` 获取收货地址 [详情](../api/address.html)
 3.  `A` 新增 API `wx.openSetting` 打开小程序设置界面 [详情](../api/setting.html)
 4.  `A` 新增 API `wx.reLaunch` [详情](../api/ui-navigate.html#wxrelaunchobject)
-5.  `A` 新增 API `wx.arrayBufferToBase64`、`wx.base64ToArrayBuffer` [详情](../api/api-util.html)
+5.  `A` 新增 API `wx.arrayBufferToBase64`、`wx.base64ToArrayBuffer` [详情](../api/api-util.md)
 6.  `A` 新增 API `wx.showLoading`、`wx.hideLoading` [详情](../api/api-react.html#wxshowloadingobject)
 7.  `A` 新增 API `wx.startAccelerometer`、`wx.stopAccelerometer` [详情](../api/accelerometer.html)
 8.  `A` 新增 API `wx.startCompass`、`wx.stopCompass` [详情](../api/compass.html)

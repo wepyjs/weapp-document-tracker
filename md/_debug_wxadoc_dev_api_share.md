@@ -362,9 +362,6 @@
         *   [用户画像](analysis-user.html)
     *   [自定义分析](analysis-report.html)
         *   [自定义数据上报](analysis-report.html)
-*   [拓展接口](api-util.html)
-    *   [wx.arrayBufferToBase64](api-util.html#wxarraybuffertobase64arraybuffer)
-    *   [wx.base64ToArrayBuffer](api-util.html#wxbase64toarraybufferbase64)
 *   [调试接口](setEnableDebug.html)
     *   [打开/关闭调试](setEnableDebug.html)
 
@@ -494,7 +491,7 @@
 
 <td>imageUrl</td>
 
-<td>自定义图片路径，可以是本地文件路径、代码包文件路径或者网络图片路径，支持PNG及JPG，不传入 imageUrl 则使用默认截图。iOS 显示图片长宽比是 5:4，Android 显示图片长宽比是 215:168。高度超出部分会从底部裁剪。**推荐使用 Android 图片长宽比，可保证图片在两个平台都完整显示，其中 iOS 底部会出现一小段白色**</td>
+<td>自定义图片路径，可以是本地文件路径、代码包文件路径或者网络图片路径，支持PNG及JPG，不传入 imageUrl 则使用默认截图。显示图片长宽比是 5:4</td>
 
 <td></td>
 

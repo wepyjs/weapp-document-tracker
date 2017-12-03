@@ -362,9 +362,6 @@
         *   [用户画像](analysis-user.html)
     *   [自定义分析](analysis-report.html)
         *   [自定义数据上报](analysis-report.html)
-*   [拓展接口](api-util.html)
-    *   [wx.arrayBufferToBase64](api-util.html#wxarraybuffertobase64arraybuffer)
-    *   [wx.base64ToArrayBuffer](api-util.html#wxbase64toarraybufferbase64)
 *   [调试接口](setEnableDebug.html)
     *   [打开/关闭调试](setEnableDebug.html)
 
@@ -1000,8 +997,7 @@
 
 1.  `bug`: `Android` `6.3.30`，wx.showModal 的返回的 confirm 一直为 true；
 2.  `tip`: wx.showActionSheet 点击取消或蒙层时，回调 `fail`, errMsg 为 "showActionSheet:fail cancel"；
-3.  `tip`: wx.showLoading 和 wx.showToast 同时只能显示一个，使用 wx.hideToast/wx.hideLoading 都可以关闭提示框；
-4.  `tip`: `iOS` wx.showModal 点击蒙层不会关闭模态弹窗，所以尽量避免使用“取消”分支中实现业务逻辑。
+3.  `tip`: `iOS` wx.showModal 点击蒙层不会关闭模态弹窗，所以尽量避免使用“取消”分支中实现业务逻辑。
 
 </section>
 

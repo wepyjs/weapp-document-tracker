@@ -28,7 +28,11 @@
 
 <div class="top_sub_nav">
 
-<div class="top_title_wap"><span class="icon_title"></span></div>
+<div class="top_title_wap"><span class="icon_title icon_dev"></span>
+
+微信小程序开发文档
+
+</div>
 
 *   [简易教程](../)
 *   [框架](../framework/MINA.html)
@@ -51,7 +55,7 @@
 
 <div class="book-summary">
 
-<div class="book-summary-home" id="js-summary-home"><a><span class="icon_home_s"></span><span class="s_title_2">首页</span></a></div>
+<div class="book-summary-home" id="js-summary-home"><a><span class="icon_home_s icon_dev"></span><span class="s_title_2">开发文档首页</span></a></div>
 
 <nav role="navigation">
 
@@ -467,9 +471,6 @@
             *   [用户画像](analysis-user.html)
         *   [自定义分析](analysis-report.html)
             *   [自定义数据上报](analysis-report.html)
-    *   [拓展接口](api-util.html)
-        *   [wx.arrayBufferToBase64](api-util.html#wxarraybuffertobase64arraybuffer)
-        *   [wx.base64ToArrayBuffer](api-util.html#wxbase64toarraybufferbase64)
     *   [调试接口](setEnableDebug.html)
         *   [打开/关闭调试](setEnableDebug.html)
 *   [工具](../devtools/devtools.html)
@@ -699,7 +700,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

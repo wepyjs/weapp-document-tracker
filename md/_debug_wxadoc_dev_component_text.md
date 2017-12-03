@@ -276,10 +276,6 @@
 
 ![text](https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/text.png)
 
-##### Bug & Tip
-
-1.  `tip`: `text` 的长按复制功能尚未实现。
-
 </section>
 
 </div>

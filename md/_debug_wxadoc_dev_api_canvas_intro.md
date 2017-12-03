@@ -362,9 +362,6 @@
         *   [用户画像](../analysis-user.html)
     *   [自定义分析](../analysis-report.html)
         *   [自定义数据上报](../analysis-report.html)
-*   [拓展接口](../api-util.html)
-    *   [wx.arrayBufferToBase64](../api-util.html#wxarraybuffertobase64arraybuffer)
-    *   [wx.base64ToArrayBuffer](../api-util.html#wxbase64toarraybufferbase64)
 *   [调试接口](../setEnableDebug.html)
     *   [打开/关闭调试](../setEnableDebug.html)
 
