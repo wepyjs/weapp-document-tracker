@@ -80,6 +80,7 @@
     *   [文件类型](edit.html#文件支持)
     *   [自动补全](edit.html#自动补全)
     *   [项目配置文件](edit.html#项目配置文件)
+    *   [Git 状态展示](edit.html#Git 状态展示)
 *   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
     *   [自定义编译](debug.html#自定义编译)
@@ -94,6 +95,8 @@
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
     *   [特殊场景调试](different.html)
+*   [命令行调用](cli.html)
+*   [HTTP 调用](http.html)
 *   [小程序开发助手](mydev.html)
 *   [第三方平台](ext.html)
 *   [云测试](monkey-test.html)
@@ -121,6 +124,53 @@
 <div class="search-noresults">
 
 <section class="normal markdown-section">
+
+### 2017.12.07 基础库更新（1.7.0）
+
+1.  `A` 新增 组件 `<camera />` 开发工具上的调试支持 [详情](../component/camera.html)
+2.  `U` 更新 API `WebSocket` 支持创建多条 WebSocket 连接 [详情](../api/network-socket.html)
+3.  `U` 更新 API `wx.request` 支持发送和接收 ArrayBuffer 类型的数据 [详情](../api/network-request.html)
+4.  `U` 更新 API `wx.createCanvasContext` 的 `draw` 接口，回调通知渲染完成 [详情](../api/canvas/draw.html)
+5.  `U` 更新 API `wx.canvasToTempFilePath` 支持设置输出图片格式与质量参数 [详情](../api/canvas/temp-file.html)
+6.  `U` 更新 API `wx.createInnerAudioContext` 去掉切到前台时恢复播放的策略
+7.  `U` 更新 组件 `<slider />` 增加 `bindchanging` 事件 [详情](../component/slider.html)
+8.  `U` 更新 组件 `<progress />` 增加 `active-mode` 属性 [详情](../component/progress.html)
+9.  `U` 更新 组件 `<video />` 在 `timeupdate` 事件回调中新增返回 `duration` 参数 [详情](../component/video.html)
+10.  `U` 更新 组件 `<video />` 新增 `direction` 参数，支持全屏时设置画面方向 [详情](../component/video.html)
+11.  `U` 更新 组件 `<scroll-view />` 优化 `scrolltoupper` 与 `scrolltolower` 事件的触发频率
+12.  `U` 更新 组件 `<cover-view />` 优化在安卓下的渲染性能
+13.  `F` 修复 API `wx.createInnerAudioContext` 接口返回参数的时间单位不正确的问题
+14.  `F` 修复 API `wx.hideLoading` 会把 `wx.showToast` 给隐藏掉的问题
+15.  `F` 修复 API `wx.hideLoading` 一调用立即消失的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=7ab07fac071fa04c3fdc56d52fc80309)
+16.  `F` 修复 API `wx.canvasToTempFilePath` 在 `<canvas />` 不可见时导出失败以及导致crash的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=31fdba041e9797382c400a9017baa19e)
+17.  `F` 修复 API `wx.uploadFile` 文件格式的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=f46c4f8c9992a29a4d824cdfdccf9488)
+18.  `F` 修复 API `wx.getRecorderManager` 在 iOS 下设置最大时长10分钟失效的问题
+19.  `F` 修复 API `wx.getRecorderManager` 在安卓下小程序退到后台时，将默认行为从停止录音调整为暂停录音
+20.  `F` 修复 组件 `<input />` disabled 时字体样式无效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=b245c19a0bce8a8c1831f22c56cb4292)
+21.  `F` 修复 组件 `<navigator />` 快速点击时会新开两个页面的问题
+22.  `F` 修复 组件 `<cover-view />` 在 iOS 下圆角半径的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=d8a743cb8afbbe62dc3917d967a1eac4)
+23.  `F` 修复 组件 `<cover-view />` 设置 `text-align: center` 在安卓上下也会居中的问题
+24.  `F` 修复 组件 `<cover-image />` 总是显示在 `<cover-view />` 之上的问题
+25.  `F` 修复 组件 `<audio />` 在播放结束的时候没有恢复背景音乐的问题
+26.  `F` 修复 组件 `<picker />` 偶现需要点击两次才能收起的问题
+27.  `F` 修复 组件 `<image />` `mode` 从 `widthFix` 改成其他值时高度没更新的问题
+28.  `F` 修复 组件 `<scroll-view />` 滚动时出现闪动的问题
+29.  `F` 修复 组件 `<video />` 在全屏后拉起系统控制面板时退出全屏的问题
+30.  `F` 修复 trace 面板无法连接设备的问题
+
+### 2017.11.30 开发工具更新
+
+1.  `A` 新增 详情页中展示基础库用户使用率及线上版小程序设置的最低基础库
+2.  `A` 新增 项目详情页显示业务域名（webview 可信域名）
+3.  `A` 新增 开启不校验安全域名时，也不校验 webview 的业务域名
+4.  `F` 修复 场景值为 1044 时，返回的 `scene` 字段是 `String` 类型而不是 `Number` 类型的问题
+5.  `F` 修复 断网的时候 socket 没有提示信息的问题
+6.  `F` 修复 安装包重复下载问题
+7.  `F` 修复 `wx.downloadFile` 响应 404 时，没有返回 `tempFilePath` 的问题
+8.  `F` 修复 project.config.json 中 miniprogramRoot 设置的路径以 / 结尾的话会导致编辑器保存自动编译不成功的问题
+9.  `F` 修复 支持 sourcemap 文件在调试器中的加载。[详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=ff21eb384464cb8e1ba5668651e51c63&highline=typescript&token=397816104&lang=zh_CN)
+10.  `U` 优化 复制二维码的交互
+11.  `U` 优化 创建项目页增加注册小程序的入口
 
 ### 2017.11.16 开发工具更新
 

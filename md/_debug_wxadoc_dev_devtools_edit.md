@@ -80,6 +80,7 @@
     *   [文件类型](edit.html#文件支持)
     *   [自动补全](edit.html#自动补全)
     *   [项目配置文件](edit.html#项目配置文件)
+    *   [Git 状态展示](edit.html#Git 状态展示)
 *   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
     *   [自定义编译](debug.html#自定义编译)
@@ -94,6 +95,8 @@
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
     *   [特殊场景调试](different.html)
+*   [命令行调用](cli.html)
+*   [HTTP 调用](http.html)
 *   [小程序开发助手](mydev.html)
 *   [第三方平台](ext.html)
 *   [云测试](monkey-test.html)
@@ -310,6 +313,212 @@ setting 中可以指定以下设置
         "urlCheck": false
       }
     }
+
+## Git 状态展示
+
+如果所在的小程序工程目录（`project.config.json` 所在目录）存在 Git 仓库，编辑器可以展示目前的 Git 状态。
+
+### 目录树
+
+如图所示，当某些文件存在变动时，目录树的文件右侧将展示相应的图标来表明这一状态。当某一处于收起状态的目录下存在有变动的文件时，此目录的右侧亦会展示一个圆点图标表明此情况。
+
+文件图标状态的含义如下：
+
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/git/directory.jpg)
+
+<table>
+
+<thead>
+
+<tr>
+
+<th style="text-align:center">图标</th>
+
+<th>含义</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:center">U</td>
+
+<td>文件未追踪（Untracked）</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:center">A</td>
+
+<td>新文件（Added, Staged）</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:center">M</td>
+
+<td>文件有修改（Modified）</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:center">+M</td>
+
+<td>文件有修改（Modified, Staged）</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:center">C</td>
+
+<td>文件有冲突（Conflict）</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:center">D</td>
+
+<td>文件被删除（Deleted）</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+文件夹目录图标状态的含义如下：
+
+<table>
+
+<thead>
+
+<tr>
+
+<th style="text-align:center">图标</th>
+
+<th>含义</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:center">小红点</td>
+
+<td>目录下至少存在一个删除状态的文件</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:center">小橙点</td>
+
+<td>目录下至少存在一个冲突状态的文件</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:center">小蓝点</td>
+
+<td>目录下至少存在一个未追踪状态的文件</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:center">小绿点</td>
+
+<td>目录下至少存在一个修改状态的文件</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+如果某一文件存在修改（Modified），可以右键点击此文件，并选择 “与上一版本比较”，则可以查看当前工作区文件与 HEAD 版本的比较。
+
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/git/contextmenu.jpg)
+
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/git/diff.jpg)
+
+### 文件编辑
+
+存在 Git 仓库时，状态栏会展示此 Git 仓库目前的分支信息。例如，下图表明目前 Git 仓库处于 `v2` 分支。
+
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/git/statusbar.jpg)
+
+同时，编辑文件内容时，将会在所编辑代码左侧实时显示相对于上一版本内容的比较。
+
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/git/linediff.jpg)
+
+样式说明如下：
+
+文件夹目录图标状态的含义如下：
+
+<table>
+
+<thead>
+
+<tr>
+
+<th style="text-align:center">样式</th>
+
+<th>含义</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:center">蓝色线条</td>
+
+<td>此处的代码有变动</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:center">绿色线条</td>
+
+<td>此处的代码是新增的</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:center">红色三角箭头</td>
+
+<td>此处有代码被删除</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+### Windows 风格回车设置
+
+如需忽略 Windows 风格的回车符，可以前往 “设置” - “编辑”，并勾选 “Git 比较文件内容时，忽略 Windows 风格回车符”。
+
+勾选后，在编辑文件进行内容比较时，所有 Windows 风格的回车符将被当作 Unix 风格的回车符对待。
+
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/git/windowsreturnsettings.jpg)
 
 </section>
 

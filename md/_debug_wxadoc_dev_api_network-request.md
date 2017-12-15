@@ -73,6 +73,7 @@
         *   [wx.onSocketMessage](network-socket.html#wxonsocketmessagecallback)
         *   [wx.closeSocket](network-socket.html#wxclosesocket)
         *   [wx.onSocketClose](network-socket.html#wxonsocketclosecallback)
+        *   [SocketTask](socket-task.html)
 *   [媒体](media-picture.html)
     *   [图片](media-picture.html)
         *   [wx.chooseImage](media-picture.html#wxchooseimageobject)
@@ -405,6 +406,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -423,19 +426,23 @@
 
 <td>开发者服务器接口地址</td>
 
+<td></td>
+
 </tr>
 
 <tr>
 
 <td>data</td>
 
-<td>Object/String</td>
+<td>Object/String/ArrayBuffer</td>
 
 <td>否</td>
 
 <td></td>
 
 <td>请求的参数</td>
+
+<td></td>
 
 </tr>
 
@@ -451,6 +458,8 @@
 
 <td>设置请求的 header，header 中不能设置 Referer。</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -464,6 +473,8 @@
 <td>GET</td>
 
 <td>（需大写）有效值：OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT</td>
+
+<td></td>
 
 </tr>
 
@@ -479,6 +490,24 @@
 
 <td>如果设为json，会尝试对返回的数据做一次 JSON.parse</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>responseType</td>
+
+<td>String</td>
+
+<td>否</td>
+
+<td>text</td>
+
+<td>设置响应的数据类型。合法值：text、arraybuffer</td>
+
+<td>[1.7.0](../framework/compatibility.html "基础库 1.7.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 <tr>
@@ -493,6 +522,8 @@
 
 <td>收到开发者服务成功返回的回调函数</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -506,6 +537,8 @@
 <td></td>
 
 <td>接口调用失败的回调函数</td>
+
+<td></td>
 
 </tr>
 
@@ -553,7 +586,7 @@
 
 <td>data</td>
 
-<td>Object/String</td>
+<td>Object/String/ArrayBuffer</td>
 
 <td>开发者服务器返回的数据</td>
 
@@ -593,8 +626,9 @@
 
 最终发送给服务器的数据是 String 类型，如果传入的 data 不是 String 类型，会被转换成 String 。转换规则如下：
 
-*   对于 `header['content-type']` 为 `application/json` 的数据，会对数据进行 JSON 序列化
-*   对于 `header['content-type']` 为 `application/x-www-form-urlencoded` 的数据，会将数据转换成 query string （encodeURIComponent(k)=encodeURIComponent(v)&encodeURIComponent(k)=encodeURIComponent(v)...）
+*   对于 `GET` 方法的数据，会将数据转换成 query string（encodeURIComponent(k)=encodeURIComponent(v)&encodeURIComponent(k)=encodeURIComponent(v)...）
+*   对于 `POST` 方法且 `header['content-type']` 为 `application/json` 的数据，会对数据进行 JSON 序列化
+*   对于 `POST` 方法且 `header['content-type']` 为 `application/x-www-form-urlencoded` 的数据，会将数据转换成 query string （encodeURIComponent(k)=encodeURIComponent(v)&encodeURIComponent(k)=encodeURIComponent(v)...）
 
 **示例代码：**
 

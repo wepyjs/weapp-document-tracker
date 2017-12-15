@@ -80,6 +80,7 @@
     *   [文件类型](edit.html#文件支持)
     *   [自动补全](edit.html#自动补全)
     *   [项目配置文件](edit.html#项目配置文件)
+    *   [Git 状态展示](edit.html#Git 状态展示)
 *   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
     *   [自定义编译](debug.html#自定义编译)
@@ -94,6 +95,8 @@
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
     *   [特殊场景调试](different.html)
+*   [命令行调用](cli.html)
+*   [HTTP 调用](http.html)
 *   [小程序开发助手](mydev.html)
 *   [第三方平台](ext.html)
 *   [云测试](monkey-test.html)
@@ -162,6 +165,7 @@
     {
       "extEnable": true,
       "extAppid": "wxf9c4501a76931b33",
+      "directCommit": false,
       "ext": {
         "name": "wechat",
         "attr": {
@@ -273,6 +277,18 @@
 
 </tr>
 
+<tr>
+
+<td>[directCommit](#directCommit)</td>
+
+<td>Boolean</td>
+
+<td>否</td>
+
+<td>是否直接提交到待审核列表</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -307,6 +323,14 @@
 `extPages` 是一个对象，对象中的每个 `key` 应该是该小程序模板 `app.json` 中定义的页面，每个 `key` 对应的 `value` 是 [page.json](../framework/config.html#page.json) 中所规定的各项配置。
 
 当开发者设置这个配置以后，小程序框架会对应的修改相对应的 `page` 的配置信息。
+
+### directCommit
+
+`directCommit` 是一个 `Boolean` 类型的字段，用于规定当前的上传操作是否是直接上传到 extAppid 的审核列表中。
+
+当 `directCommit` 为 `true` 真时，开发者在工具中的上传操作，会直接上传到对应的 extAppid 的审核列表，第三方平台只需要调用 `https://api.weixin.qq.com/wxa/submit_audit?access_token=TOKEN` 既可以提交审核。更多请参考 [第三方平台文档](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1489140610_Uavc4&token=&lang=zh_CN)
+
+当 `directCommit` 为 `true` 假时，开发者在工具中的上传操作，会直接上传到对应的草稿箱中。
 
 ### 同 `app.json` 相同的字段
 

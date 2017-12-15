@@ -73,6 +73,7 @@
         *   [wx.onSocketMessage](network-socket.html#wxonsocketmessagecallback)
         *   [wx.closeSocket](network-socket.html#wxclosesocket)
         *   [wx.onSocketClose](network-socket.html#wxonsocketclosecallback)
+        *   [SocketTask](socket-task.html)
 *   [媒体](media-picture.html)
     *   [图片](media-picture.html)
         *   [wx.chooseImage](media-picture.html#wxchooseimageobject)
@@ -387,7 +388,7 @@
 
 创建一个 [WebSocket](https://developer.mozilla.org/zh-CN/docs/Web/API/WebSocket) 连接。**使用前请先阅读[说明](api-network.html)**。
 
-**一个微信小程序同时只能有一个 WebSocket 连接，如果当前已存在一个 WebSocket 连接，会创建失败。**
+**基础库 1.7.0 之前，一个微信小程序同时只能有一个 WebSocket 连接，如果当前已存在一个 WebSocket 连接，会自动关闭该连接，并重新创建一个 WebSocket 连接。基础库版本 1.7.0 及以后，支持存在多个 WebSokcet 连接，每次成功调用 wx.connectSocket 会返回一个新的 [SocketTask](socket-task.html)。**
 
 **OBJECT参数说明：**
 
@@ -516,7 +517,7 @@
 **示例代码：**
 
     wx.connectSocket({
-      url: 'test.php',
+      url: 'wss://example.qq.com',
       data:{
         x: '',
         y: ''
@@ -711,7 +712,7 @@
 
 ### wx.closeSocket(OBJECT)
 
-关闭WebSocket连接。
+关闭 WebSocket 连接。
 
 **OBJECT参数说明：**
 
@@ -827,6 +828,16 @@
     wx.onSocketClose(function(res) {
       console.log('WebSocket 已关闭！')
     })
+
+**返回值：**
+
+> 基础库 1.7.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+
+返回一个 [SocketTask](socket-task.html)。
+
+#### Bug & Tip
+
+1.  `tip`: 基础库 1.7.0 开始，支持同时存在 2 条 WebSocket 连接
 
 </section>
 

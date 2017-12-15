@@ -344,6 +344,19 @@
             
         </li>
     
+        <li class="chapter  " data-level="1.4.1.3.8" data-path="socket-task.html" data-name="SocketTask">
+            
+                <a href="socket-task.html">
+            
+                    
+                    SocketTask
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -4566,7 +4579,7 @@
                                 
                                 <h3 id="wxconnectsocketobject">wx.connectSocket(OBJECT)</h3>
 <p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A; <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/WebSocket" target="_blank">WebSocket</a> &#x8FDE;&#x63A5;&#x3002;<strong>&#x4F7F;&#x7528;&#x524D;&#x8BF7;&#x5148;&#x9605;&#x8BFB;<a href="api-network.html">&#x8BF4;&#x660E;</a></strong>&#x3002;</p>
-<p><strong>&#x4E00;&#x4E2A;&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#x540C;&#x65F6;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A; WebSocket &#x8FDE;&#x63A5;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;&#x5DF2;&#x5B58;&#x5728;&#x4E00;&#x4E2A; WebSocket &#x8FDE;&#x63A5;&#xFF0C;&#x4F1A;&#x521B;&#x5EFA;&#x5931;&#x8D25;&#x3002;</strong></p>
+<p><strong>&#x57FA;&#x7840;&#x5E93; 1.7.0 &#x4E4B;&#x524D;&#xFF0C;&#x4E00;&#x4E2A;&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#x540C;&#x65F6;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A; WebSocket &#x8FDE;&#x63A5;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;&#x5DF2;&#x5B58;&#x5728;&#x4E00;&#x4E2A; WebSocket &#x8FDE;&#x63A5;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x5173;&#x95ED;&#x8BE5;&#x8FDE;&#x63A5;&#xFF0C;&#x5E76;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; WebSocket &#x8FDE;&#x63A5;&#x3002;&#x57FA;&#x7840;&#x5E93;&#x7248;&#x672C; 1.7.0 &#x53CA;&#x4EE5;&#x540E;&#xFF0C;&#x652F;&#x6301;&#x5B58;&#x5728;&#x591A;&#x4E2A; WebSokcet &#x8FDE;&#x63A5;&#xFF0C;&#x6BCF;&#x6B21;&#x6210;&#x529F;&#x8C03;&#x7528; wx.connectSocket &#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684; <a href="socket-task.html">SocketTask</a>&#x3002;</strong></p>
 <p><strong>OBJECT&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
 <table>
 <thead>
@@ -4631,7 +4644,7 @@
 </table>
 <p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</strong></p>
 <pre><code class="lang-javascript">wx.connectSocket({
-  url: <span class="hljs-string">&apos;test.php&apos;</span>,
+  url: <span class="hljs-string">&apos;wss://example.qq.com&apos;</span>,
   data:{
     x: <span class="hljs-string">&apos;&apos;</span>,
     y: <span class="hljs-string">&apos;&apos;</span>
@@ -4759,7 +4772,7 @@ wx.onSocketMessage(<span class="hljs-function"><span class="hljs-keyword">functi
 })
 </code></pre>
 <h3 id="wxclosesocketobject">wx.closeSocket(OBJECT)</h3>
-<p>&#x5173;&#x95ED;WebSocket&#x8FDE;&#x63A5;&#x3002;</p>
+<p>&#x5173;&#x95ED; WebSocket &#x8FDE;&#x63A5;&#x3002;</p>
 <p><strong>OBJECT&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
 <table>
 <thead>
@@ -4825,6 +4838,15 @@ wx.onSocketClose(<span class="hljs-function"><span class="hljs-keyword">function
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;WebSocket &#x5DF2;&#x5173;&#x95ED;&#xFF01;&apos;</span>)
 })
 </code></pre>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#xFF1A;</strong></p>
+<blockquote>
+<p>&#x57FA;&#x7840;&#x5E93; 1.7.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;<a href="../framework/compatibility.html">&#x517C;&#x5BB9;&#x5904;&#x7406;</a></p>
+</blockquote>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; <a href="socket-task.html">SocketTask</a>&#x3002;</p>
+<h4 id="bug--tip">Bug &amp; Tip</h4>
+<ol>
+<li><code>tip</code>: &#x57FA;&#x7840;&#x5E93; 1.7.0 &#x5F00;&#x59CB;&#xFF0C;&#x652F;&#x6301;&#x540C;&#x65F6;&#x5B58;&#x5728; 2 &#x6761; WebSocket &#x8FDE;&#x63A5;</li>
+</ol>
 
                                 
                                 </section>

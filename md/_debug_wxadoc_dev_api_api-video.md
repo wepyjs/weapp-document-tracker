@@ -73,6 +73,7 @@
         *   [wx.onSocketMessage](network-socket.html#wxonsocketmessagecallback)
         *   [wx.closeSocket](network-socket.html#wxclosesocket)
         *   [wx.onSocketClose](network-socket.html#wxonsocketclosecallback)
+        *   [SocketTask](socket-task.html)
 *   [媒体](media-picture.html)
     *   [图片](media-picture.html)
         *   [wx.chooseImage](media-picture.html#wxchooseimageobject)
@@ -479,7 +480,7 @@
 
 <td>无</td>
 
-<td>进入全屏</td>
+<td>进入全屏，可传入{direction}参数（1.7.0起支持），详见video组件文档</td>
 
 <td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
 

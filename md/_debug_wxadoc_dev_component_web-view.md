@@ -117,7 +117,7 @@
 
 <section class="normal markdown-section">
 
-### web-view
+#### web-view
 
 > 基础库 1.6.4 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
@@ -165,7 +165,7 @@ web-view 组件是一个可以用来承载网页的容器，会自动铺满整�
     <!-- 指向微信公众平台首页的web-view -->
     <web-view src="https://mp.weixin.qq.com/"></web-view>
 
-#### 相关接口 1
+##### 相关接口 1
 
 `<web-view/>`网页中可使用[JSSDK 1.3.0](https://res.wx.qq.com/open/js/jweixin-1.3.0.js)提供的接口返回小程序页面。 支持的接口有：
 
@@ -249,7 +249,7 @@ web-view 组件是一个可以用来承载网页的容器，会自动铺满整�
     // javascript
     wx.miniProgram.navigateTo({url: '/path/to/page'})
 
-#### 相关接口 2
+##### 相关接口 2
 
 `<web-view/>`网页中**仅支持以下JSSDK接口**：
 
@@ -545,7 +545,7 @@ web-view 组件是一个可以用来承载网页的容器，会自动铺满整�
 
 </table>
 
-#### 相关接口 3
+##### 相关接口 3
 
 用户分享时可获取当前`<web-view/>`的URL，即在`onShareAppMessage`回调中返回`webViewUrl`参数。
 
@@ -557,16 +557,18 @@ web-view 组件是一个可以用来承载网页的容器，会自动铺满整�
       }
     })
 
-#### 相关接口 4
+##### 相关接口 4
 
 在网页内可通过`window.__wxjs_environment`变量判断是否在小程序环境。
 
 示例代码：
 
     // web-view下的页面内
-    console.log(window.__wxjs_environment === 'miniprogram') // true
+    wx.ready(function() {
+        console.log(window.__wxjs_environment === 'miniprogram') // true
+    })
 
-#### Bug & Tip
+##### Bug & Tip
 
 1.  **网页内iframe的域名也需要配置到域名白名单。**
 2.  开发者工具上，可以在 `<web-view/>` 组件上通过右键 - 调试，打开 `<web-view/>` 组件的调试。

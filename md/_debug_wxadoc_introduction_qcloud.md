@@ -37,7 +37,7 @@
 *   [微信小程序接入指南](./)
 *   [客服功能使用指南](custom.html)
 *   [扫普通链接二维码打开小程序接入指南](qrcode.html)
-*   [开发者工具](qcloud.html)
+*   [腾讯云支持](qcloud.html)
 
 </div>
 
@@ -57,12 +57,14 @@
 
 <nav role="navigation">
 
-*   [通过微信公众平台授权登录腾讯云](qcloud.html#一、通过微信公众平台授权登录腾讯云)
-*   [安装开发工具](qcloud.html#二、安装开发工具)
-*   [导入 NodeJS DEMO 和配置](qcloud.html#三、导入-NodeJS-DEMO-和配置)
-*   [上传和部署 NodeJS 代码](qcloud.html#四、上传和部署代码-NodeJS-代码)
-*   [导入 PHP DEMO 和配置](qcloud.html#五、导入-PHP-DEMO)
-*   [上传和部署 PHP 代码](qcloud.html#六、上传和部署-PHP-代码)
+*   [介绍](qcloud.html#介绍)
+*   [开发环境](qcloud.html#开发环境)
+*   [生产环境](qcloud.html#生产环境)
+*   [通过微信公众平台授权登录腾讯云](qcloud.html#通过微信公众平台授权登录腾讯云)
+*   [安装开发工具](qcloud.html#安装开发工具)
+*   [导入 NodeJS DEMO](qcloud.html#导入-NodeJS-DEMO-和配置)
+*   [导入 PHP DEMO](qcloud.html#导入-PHP-DEMO-和配置)
+*   [其他](qcloud.html#相关开发文档)
 
 </nav>
 
@@ -82,125 +84,127 @@
 
 <section class="normal markdown-section">
 
-只需要四步即可部署属于自己的小程序开发环境。
+### 介绍
 
-### 一、通过微信公众平台授权登录腾讯云
+腾讯云为开发者提供免费的开发环境和生产环境，更加方便、快速、可靠的构建您的小程序。
 
-打开[微信公众平台小程序后台](https://mp.weixin.qq.com) 在设置-开发者工具，可开通使用腾讯云服务
+### 开发环境
 
-**此时通过小程序开发者工具查看腾讯云状态并不会同步，状态会在第一次部署开发环境之后才会同步腾讯云的状态到微信开发者工具上。**
+*   免费使用
+*   自动分配测试用二级域名：xxxxxxx.qcloud.la
+*   自动部署免费 HTTPS
+*   仅可用于线上调试，不可发布
+*   代码部署、运行和数据库与生产环境完全分开
+*   与微信开发工具打通，可一键部署、调试、重启和恢复代码
 
-![授权](image/qcloud.png)
+### 生产环境
 
-![腾讯云微信小程序控制台](image/29357742-2c97ba88-82ab-11e7-8947-de819ad5aa45.png)
+*   免费使用
+*   用户需购买或使用已有的腾讯云域名
+*   自动部署免费 HTTPS
+*   用于线上发布，不可调试
+*   使用微信开发工具上传代码，在腾讯云控制台操作部署，上传和发布分离，降低误操作风险
 
-### 二、安装开发工具
+### 通过微信公众平台授权登录腾讯云
 
-下载并安装[微信开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html)，使用小程序绑定的微信号扫码登录开发者工具。
+打开 [微信公众平台](https://mp.weixin.qq.com) 注册并登录小程序，按如下步骤操作：
 
-![微信开发者工具](image/29358006-2ba9cda4-82ac-11e7-8417-4df838750270.png)
+*   单击左侧菜单栏中的【设置】
+*   单击右侧 Tab 栏中的【开发者工具】
+*   单击【腾讯云】，进入腾讯云工具页面，单击【开通】
+*   使用小程序绑定的微信扫码即可将小程序授权给腾讯云，开通之后会自动进去腾讯云微信小程序控制台，显示开发环境已开通，此时可以进行后续操作
 
-### 三、导入 NodeJS DEMO 和配置
+> **注意：**
+> 
+> 此时通过小程序开发者工具查看腾讯云状态并不会显示已开通，已开通状态会在第一次部署开发环境之后才会同步到微信开发者工具上。
 
-你可以通过两个途径访问 Github 上 `wafer2-startup` 项目下载 Demo 代码：
+![进入微信公众平台后台](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/1.png)
 
-1.  直接访问 [Release](https://github.com/tencentyun/wafer2-startup/releases)，点击最新版本的代码，下载打包好的 Demo 代码。
+![开通腾讯云](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/2.png)
 
-2.  通过 git clone 下载代码：
+![腾讯云微信小程序控制台](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/3.png)
 
-        git clone https://github.com/tencentyun/wafer2-startup.git
+### 安装开发工具
 
-下载好 Demo 代码之后，使用编辑器打开 Demo 代码中 `server` 目录下的 `config.js` 文件，将其中的 `mysql` 配置项的密码 `pass` 改成你的微信小程序 AppID 。
+下载并安装最新版本的 [微信开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html) ，使用小程序绑定的微信号扫码登录开发者工具。
 
-![修改 MySQL 密码](image/29360756-fb2412c4-82b6-11e7-8d6f-c4277cd5d783.jpg)
+![微信开发者工具](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/4.png)
 
-接着在下载下来的目录打开 CMD 安装依赖：
-
-    # 切换到 server 文件夹
-    cd server
-
-    # 安装依赖
-    npm install
-
-### 四、上传和部署代码 NodeJS 代码
-
-打开第二步安装的微信开发者工具，点击“小程序项目”按钮，输入小程序 AppID，项目目录选择上一步下载下来的代码目录，点击确定创建小程序项目。
-
-在项目根目录需要有 [`project.config.json`](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/edit.html#%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6) 文件，其中 `miniprogramRoot` 字段指定小程序目录，`qcloudRoot` 指定腾讯云目录
-
-![上传代码](image/29361218-1bd9af72-82b9-11e7-9dab-d20fd9aebf7c.png)
-
-进入开发者工具之后，点击界面右上角的腾讯云按钮，在下拉的菜单栏中选择“上传并部署代码”，勾选“node_modules之外的代码”和“node_modules”，点击确定开始上传并部署代码：
-
-![上传代码](image/29361779-a3606c72-82bb-11e7-863e-d7bc0b806787.jpg)
-
-![勾选两个选项并点击确定](image/29361778-a35a116a-82bb-11e7-9f70-0321190ed2e4.jpg)
-
-上传代码完成之后，点击右上角的“项目”按钮，接着选择“腾讯云状态”即可看到腾讯云自动分配给你的开发环境域名：
-
-![figure7](image/29362023-b1ed75ea-82bc-11e7-87f4-88c21883196c.jpg)
-
-复制开发环境 request 域名，然后在编辑器中打开 `client/config.js` 文件，将复制的域名填入 `host` 中并保存，保存之后编辑器会自动编译小程序，左边的模拟器窗口即可实时显示出客户端的 Demo：
-
-![修改 host 配置](image/29362107-1e3fae84-82bd-11e7-8cc5-8831f432939a.jpg)
-
-在模拟器中点击登录，看到显示登陆成功，即为配置完成，可以开始你的其他开发了。
-
-![登录测试](image/29362214-968fd67a-82bd-11e7-899e-76cd7c92d969.jpg)
-
-### 五、导入 PHP DEMO
-
-你可以通过两个途径访问 Github 上 `wafer2-quickstart-php` 项目下载 Demo 代码：
-
-1.  访问[仓库主页](https://github.com/tencentyun/wafer2-quickstart-php)，单机 `clone or download` 按钮，再单击 `Download ZIP` 下载打包好的 Demo 代码：
-
-    ![下载代码](image/php1.png)
-
-2.  通过 git clone 下载代码：
-
-        git clone https://github.com/tencentyun/wafer2-quickstart-php.git
-
-### 六、上传和部署 PHP 代码
+### 导入 NodeJS DEMO 和配置
 
 1.  打开第二步安装的微信开发者工具，点击【小程序项目】按钮。
-2.  输入小程序 AppID，项目目录选择上一步下载下来的代码目录，点击确定创建小程序项目。
+
+2.  输入小程序 AppID，项目目录选择一个 **空的目录** ，接着选择【建立腾讯云 Node.js 启动模板】，点击确定创建小程序项目。
+
+    ![微信开发者工具](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/5.png)
+
+3.  安装依赖
+
+    > 为方便本地调试，建议您在本地安装依赖。你也可以跳过这步直接使用开发者工具的“腾讯云”菜单中的“安装依赖”直接在线上安装依赖。
+
+    在您刚刚选择的目录打开 CMD 安装依赖：
+
+        cd server && npm install
+
+    ![安装依赖](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/6.png)
+
+4.  点击界面右上角的【腾讯云】图标，在下拉的菜单栏中选择【上传测试代码】。
+
+    ![上传按钮](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/7.png)
+
+5.  选择【模块上传】并勾选全部选项，然后勾选【部署后自动安装依赖】，点击【确定】开始上传代码。
+
+    ![选择模块](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/8.png)
+
+    ![上传成功](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/9.png)
+
+6.  上传代码完成之后，点击右上角的【详情】按钮，接着选择【腾讯云状态】即可看到腾讯云自动分配给你的开发环境域名：
+
+    ![查看开发域名](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/10.png)
+
+7.  完整复制（包括 `https://`）开发环境 request 域名，然后在编辑器中打开 `client/config.js` 文件，将复制的域名填入 `host` 中并保存，保存之后编辑器会自动编译小程序，左边的模拟器窗口即可实时显示出客户端的 Demo：
+
+    ![修改客户端配置](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/11.png)
+
+8.  在模拟器中点击【登录】，看到显示“登录成功”，即为开通完成，可以开始你的其他开发了。
+
+    ![登录测试](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/12.png)
+
+### 导入 PHP DEMO 和配置
+
+1.  打开第二步安装的微信开发者工具，点击【小程序项目】按钮。
+
+2.  输入小程序 AppID，项目目录选择一个**空的目录**，接着选择【建立腾讯云 PHP 启动模板】，点击确定创建小程序项目。
+
+    ![微信开发者工具](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/13.png)
+
 3.  再次点击【确定】进入开发者工具。
 
-    > **注意：**
-    > 
-    > 目录请选择 `quickstart` 根目录。包含有 `project.config.json`，请不要只选择 `client` 目录！
+    ![开发者工具](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/14.png)
 
-    ![上传代码](image/php2.png)
+4.  点击界面右上角的【腾讯云】图标，在下拉的菜单栏中选择【上传测试代码】。
 
-    ![开发者工具](image/php3.png)
+    ![上传按钮](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/15.png)
 
-4.  打开 Demo 代码中 `server` 目录下的 `config.php` 文件，将其中的 `mysql` 配置项的密码 `pass` 改成你的微信小程序 AppID，并**保存**。
+5.  选择【模块上传】并勾选全部选项，然后勾选【部署后自动安装依赖】，点击【确定】开始上传代码。
 
-    ![修改 MySQL 密码](image/php4.png)
+    ![选择模块](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/16.png)
 
-5.  点击界面右上角的【腾讯云】图标，在下拉的菜单栏中选择【上传测试代码】。
+    ![上传成功](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/17.png)
 
-    ![上传按钮](image/php5.png)
+6.  上传代码完成之后，点击右上角的【详情】按钮，接着选择【腾讯云状态】即可看到腾讯云自动分配给你的开发环境域名。
 
-6.  选择【模块上传】并勾选全部选项，然后勾选【部署后自动安装依赖】，点击【确定】开始上传代码。
+    ![查看开发域名](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/18.png)
 
-    ![选择模块](image/php6.png)
+7.  完整复制（包括 `https://`）开发环境 request 域名，然后在编辑器中打开 `client/config.js` 文件，将复制的域名填入 `host` 中并保存，保存之后编辑器会自动编译小程序，左边的模拟器窗口即可实时显示出客户端的 Demo。
 
-    ![上传成功](image/php7.png)
+    ![修改客户端配置](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/19.png)
 
-7.  上传代码完成之后，点击右上角的【详情】按钮，接着选择【腾讯云状态】即可看到腾讯云自动分配给你的开发环境域名：
+8.  在模拟器中点击【登录】，看到显示“登录成功”，即为开通完成，可以开始你的其他开发了。
 
-    ![查看开发域名](image/php8.png)
+    ![登录测试](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qcloud/20.png) ```
 
-8.  完整复制（包括 `https://`）开发环境 request 域名，然后在编辑器中打开 `client/config.js` 文件，将复制的域名填入 `host` 中并保存，保存之后编辑器会自动编译小程序，左边的模拟器窗口即可实时显示出客户端的 Demo：
-
-    ![修改客户端配置](image/php9.png)
-
-9.  在模拟器中点击【登录】，看到显示“登录成功”，即为开通完成，可以开始你的其他开发了。
-
-    ![登录测试](image/php10.png)
-
-## 相关开发文档
+### 相关开发文档
 
 我们还提供了服务端、客户端的 Demo、SDK 的具体文档：
 
@@ -267,6 +271,6 @@
 
 </div>
 
-[](qrcode.html#发布)[](qcloud.html#一、通过微信公众平台授权登录腾讯云)</div>
+[](qrcode.html#发布)[](qcloud.html#介绍)</div>
 
 </div>

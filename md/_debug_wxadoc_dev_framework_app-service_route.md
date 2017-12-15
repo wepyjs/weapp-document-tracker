@@ -231,7 +231,7 @@
 
 <td></td>
 
-<td>onLoad, onSHow</td>
+<td>onLoad, onShow</td>
 
 </tr>
 

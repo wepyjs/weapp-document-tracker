@@ -73,6 +73,7 @@
         *   [wx.onSocketMessage](network-socket.html#wxonsocketmessagecallback)
         *   [wx.closeSocket](network-socket.html#wxclosesocket)
         *   [wx.onSocketClose](network-socket.html#wxonsocketclosecallback)
+        *   [SocketTask](socket-task.html)
 *   [媒体](media-picture.html)
     *   [图片](media-picture.html)
         *   [wx.chooseImage](media-picture.html#wxchooseimageobject)
@@ -422,6 +423,20 @@
 <td>是否只能从相机扫码，不允许从相册选择图片</td>
 
 <td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>scanType</td>
+
+<td>Array</td>
+
+<td>否</td>
+
+<td>扫码类型，参数类型是数组，二维码是'qrCode'，一维码是'barCode'，DataMatrix是‘datamatrix’，pdf417是‘pdf417’。</td>
+
+<td>[1.7.0](../framework/compatibility.html "基础库 1.7.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

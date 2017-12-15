@@ -73,6 +73,7 @@
         *   [wx.onSocketMessage](../network-socket.html#wxonsocketmessagecallback)
         *   [wx.closeSocket](../network-socket.html#wxclosesocket)
         *   [wx.onSocketClose](../network-socket.html#wxonsocketclosecallback)
+        *   [SocketTask](../socket-task.html)
 *   [媒体](../media-picture.html)
     *   [图片](../media-picture.html)
         *   [wx.chooseImage](../media-picture.html#wxchooseimageobject)

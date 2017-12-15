@@ -73,6 +73,7 @@
         *   [wx.onSocketMessage](network-socket.html#wxonsocketmessagecallback)
         *   [wx.closeSocket](network-socket.html#wxclosesocket)
         *   [wx.onSocketClose](network-socket.html#wxonsocketclosecallback)
+        *   [SocketTask](socket-task.html)
 *   [媒体](media-picture.html)
     *   [图片](media-picture.html)
         *   [wx.chooseImage](media-picture.html#wxchooseimageobject)
@@ -492,6 +493,16 @@
 <td>wx.saveImageToPhotosAlbum, wx.saveVideoToPhotosAlbum</td>
 
 <td>保存到相册</td>
+
+</tr>
+
+<tr>
+
+<td>scope.camera</td>
+
+<td><camera></camera></td>
+
+<td>摄像头</td>
 
 </tr>
 

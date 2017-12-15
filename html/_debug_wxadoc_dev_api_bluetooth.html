@@ -344,6 +344,19 @@
             
         </li>
     
+        <li class="chapter  " data-level="1.4.1.3.8" data-path="socket-task.html" data-name="SocketTask">
+            
+                <a href="socket-task.html">
+            
+                    
+                    SocketTask
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -5008,9 +5021,22 @@ wx.startBluetoothDevicesDiscovery({
 </tbody>
 </table>
 <p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</strong></p>
-<pre><code class="lang-javascript">wx.getBluetoothDevices({
+<pre><code class="lang-javascript"><span class="hljs-comment">// ArrayBuffer&#x8F6C;16&#x8FDB;&#x5EA6;&#x5B57;&#x7B26;&#x4E32;&#x793A;&#x4F8B;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ab2hex</span>(<span class="hljs-params">buffer</span>) </span>{
+  <span class="hljs-keyword">var</span> hexArr = <span class="hljs-built_in">Array</span>.prototype.map.call(
+    <span class="hljs-keyword">new</span> <span class="hljs-built_in">Uint8Array</span>(buffer),
+    <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">bit</span>) </span>{
+      <span class="hljs-keyword">return</span> (<span class="hljs-string">&apos;00&apos;</span> + bit.toString(<span class="hljs-number">16</span>)).slice(<span class="hljs-number">-2</span>)
+    }
+  )
+  <span class="hljs-keyword">return</span> hexArr.join(<span class="hljs-string">&apos;&apos;</span>);
+}
+wx.getBluetoothDevices({
   success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
     <span class="hljs-built_in">console</span>.log(res)
+    <span class="hljs-keyword">if</span> (res.devices[<span class="hljs-number">0</span>]) {
+      <span class="hljs-built_in">console</span>.log(ab2hex(res.devices[<span class="hljs-number">0</span>].advertisData))
+    }
   }
 })
 </code></pre>
@@ -5087,9 +5113,20 @@ wx.startBluetoothDevicesDiscovery({
 </tbody>
 </table>
 <p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</strong></p>
-<pre><code class="lang-javascript">wx.onBluetoothDeviceFound(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">devices</span>) </span>{
+<pre><code class="lang-javascript"><span class="hljs-comment">// ArrayBuffer&#x8F6C;16&#x8FDB;&#x5EA6;&#x5B57;&#x7B26;&#x4E32;&#x793A;&#x4F8B;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ab2hex</span>(<span class="hljs-params">buffer</span>) </span>{
+  <span class="hljs-keyword">var</span> hexArr = <span class="hljs-built_in">Array</span>.prototype.map.call(
+    <span class="hljs-keyword">new</span> <span class="hljs-built_in">Uint8Array</span>(buffer),
+    <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">bit</span>) </span>{
+      <span class="hljs-keyword">return</span> (<span class="hljs-string">&apos;00&apos;</span> + bit.toString(<span class="hljs-number">16</span>)).slice(<span class="hljs-number">-2</span>)
+    }
+  )
+  <span class="hljs-keyword">return</span> hexArr.join(<span class="hljs-string">&apos;&apos;</span>);
+}
+wx.onBluetoothDeviceFound(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">devices</span>) </span>{
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;new device list has founded&apos;</span>)
   <span class="hljs-built_in">console</span>.dir(devices)
+  <span class="hljs-built_in">console</span>.log(ab2hex(devices[<span class="hljs-number">0</span>].advertisData))
 })
 </code></pre>
 <h4 id="bug--tip">Bug &amp; Tip</h4>
@@ -5680,42 +5717,14 @@ wx.startBluetoothDevicesDiscovery({
 </thead>
 <tbody>
 <tr>
-<td>characteristic</td>
-<td>Object</td>
-<td>&#x8BBE;&#x5907;&#x7279;&#x5F81;&#x503C;&#x4FE1;&#x606F;</td>
+<td>errCode</td>
+<td>Number</td>
+<td>&#x9519;&#x8BEF;&#x7801;</td>
 </tr>
 <tr>
 <td>errMsg</td>
 <td>String</td>
 <td>&#x6210;&#x529F;&#xFF1A;ok&#xFF0C;&#x9519;&#x8BEF;&#xFF1A;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</td>
-</tr>
-</tbody>
-</table>
-<h4 id="characteristic&#x5BF9;&#x8C61;">characteristic&#x5BF9;&#x8C61;</h4>
-<p>&#x84DD;&#x7259;&#x8BBE;&#x5907;characteristic(&#x7279;&#x5F81;&#x503C;)&#x4FE1;&#x606F;</p>
-<table>
-<thead>
-<tr>
-<th>&#x53C2;&#x6570;</th>
-<th>&#x7C7B;&#x578B;</th>
-<th>&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>characteristicId</td>
-<td>String</td>
-<td>&#x84DD;&#x7259;&#x8BBE;&#x5907;&#x7279;&#x5F81;&#x503C;&#x7684; uuid</td>
-</tr>
-<tr>
-<td>serviceId</td>
-<td>String</td>
-<td>&#x84DD;&#x7259;&#x8BBE;&#x5907;&#x7279;&#x5F81;&#x503C;&#x5BF9;&#x5E94;&#x670D;&#x52A1;&#x7684; uuid</td>
-</tr>
-<tr>
-<td>value</td>
-<td>ArrayBuffer</td>
-<td>&#x84DD;&#x7259;&#x8BBE;&#x5907;&#x7279;&#x5F81;&#x503C;&#x5BF9;&#x5E94;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x503C;</td>
 </tr>
 </tbody>
 </table>
@@ -5733,7 +5742,7 @@ wx.readBLECharacteristicValue({
   <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x7684; characteristicId &#x9700;&#x8981;&#x5728;&#x4E0A;&#x9762;&#x7684; getBLEDeviceCharacteristics &#x63A5;&#x53E3;&#x4E2D;&#x83B7;&#x53D6;</span>
   characteristicId: characteristicId,
   success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;readBLECharacteristicValue:&apos;</span>, res.characteristic.value)
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;readBLECharacteristicValue:&apos;</span>, res.errCode)
   }
 })
 </code></pre>
@@ -5982,8 +5991,19 @@ wx.writeBLECharacteristicValue({
 </tbody>
 </table>
 <p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</strong></p>
-<pre><code class="lang-javascript">wx.onBLECharacteristicValueChange(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+<pre><code class="lang-javascript"><span class="hljs-comment">// ArrayBuffer&#x8F6C;16&#x8FDB;&#x5EA6;&#x5B57;&#x7B26;&#x4E32;&#x793A;&#x4F8B;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ab2hex</span>(<span class="hljs-params">buffer</span>) </span>{
+  <span class="hljs-keyword">var</span> hexArr = <span class="hljs-built_in">Array</span>.prototype.map.call(
+    <span class="hljs-keyword">new</span> <span class="hljs-built_in">Uint8Array</span>(buffer),
+    <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">bit</span>) </span>{
+      <span class="hljs-keyword">return</span> (<span class="hljs-string">&apos;00&apos;</span> + bit.toString(<span class="hljs-number">16</span>)).slice(<span class="hljs-number">-2</span>)
+    }
+  )
+  <span class="hljs-keyword">return</span> hexArr.join(<span class="hljs-string">&apos;&apos;</span>);
+}
+wx.onBLECharacteristicValueChange(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`characteristic <span class="hljs-subst">${res.characteristicId}</span> has changed, now is <span class="hljs-subst">${res.value}</span>`</span>)
+  <span class="hljs-built_in">console</span>.log(ab2hext(res.value))
 })
 </code></pre>
 <h3 id="&#x84DD;&#x7259;&#x9519;&#x8BEF;&#x7801;errcode&#x5217;&#x8868;">&#x84DD;&#x7259;&#x9519;&#x8BEF;&#x7801;(errCode)&#x5217;&#x8868;</h3>

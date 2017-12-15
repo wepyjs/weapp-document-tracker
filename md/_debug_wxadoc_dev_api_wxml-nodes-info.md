@@ -73,6 +73,7 @@
         *   [wx.onSocketMessage](network-socket.html#wxonsocketmessagecallback)
         *   [wx.closeSocket](network-socket.html#wxclosesocket)
         *   [wx.onSocketClose](network-socket.html#wxonsocketclosecallback)
+        *   [SocketTask](socket-task.html)
 *   [媒体](media-picture.html)
     *   [图片](media-picture.html)
         *   [wx.chooseImage](media-picture.html#wxchooseimageobject)
@@ -506,7 +507,9 @@
 
 *   ID选择器：`#the-id`
 *   class选择器（可以连续指定多个）：`.a-class.another-class`
-*   子元素选择器：`.the-parent > #the-child.a-class`
+*   子元素选择器：`.the-parent > .the-child`
+*   后代选择器：`.the-ancestor .the-descendant`
+*   跨自定义组件的后代选择器：`.the-ancestor >>> .the-descendant`
 *   多选择器的并集：`#a-node, .some-other-nodes`
 
 ### selectorQuery.selectAll(selector)

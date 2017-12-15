@@ -37,7 +37,7 @@
 *   [微信小程序接入指南](./)
 *   [客服功能使用指南](custom.html)
 *   [扫普通链接二维码打开小程序接入指南](qrcode.html)
-*   [开发者工具](qcloud.html)
+*   [腾讯云支持](qcloud.html)
 
 </div>
 

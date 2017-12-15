@@ -73,6 +73,7 @@
         *   [wx.onSocketMessage](../network-socket.html#wxonsocketmessagecallback)
         *   [wx.closeSocket](../network-socket.html#wxclosesocket)
         *   [wx.onSocketClose](../network-socket.html#wxonsocketclosecallback)
+        *   [SocketTask](../socket-task.html)
 *   [媒体](../media-picture.html)
     *   [图片](../media-picture.html)
         *   [wx.chooseImage](../media-picture.html#wxchooseimageobject)
@@ -405,6 +406,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -418,6 +421,20 @@
 <td>Boolean</td>
 
 <td>非必填。本次绘制是否接着上一次绘制，即reserve参数为false，则在本次调用drawCanvas绘制之前native层应先清空画布再继续绘制；若reserver参数为true，则保留当前画布上的内容，本次调用drawCanvas绘制的内容覆盖在上面，默认 false</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>callback</td>
+
+<td>Function</td>
+
+<td>绘制完成后回调</td>
+
+<td>[1.7.0](../../framework/compatibility.html "基础库 1.7.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

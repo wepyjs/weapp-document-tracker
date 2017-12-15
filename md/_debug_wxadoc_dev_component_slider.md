@@ -135,6 +135,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -151,6 +153,8 @@
 
 <td>最小值</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -162,6 +166,8 @@
 <td>100</td>
 
 <td>最大值</td>
+
+<td></td>
 
 </tr>
 
@@ -175,6 +181,8 @@
 
 <td>步长，取值必须大于 0，并且可被(max - min)整除</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -186,6 +194,8 @@
 <td>false</td>
 
 <td>是否禁用</td>
+
+<td></td>
 
 </tr>
 
@@ -199,6 +209,8 @@
 
 <td>当前取值</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -210,6 +222,8 @@
 <td>#e9e9e9</td>
 
 <td>背景条的颜色（请使用 backgroundColor）</td>
+
+<td></td>
 
 </tr>
 
@@ -223,6 +237,8 @@
 
 <td>已选择的颜色（请使用 activeColor）</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -234,6 +250,8 @@
 <td>#1aad19</td>
 
 <td>已选择的颜色</td>
+
+<td></td>
 
 </tr>
 
@@ -247,6 +265,8 @@
 
 <td>背景条的颜色</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -259,6 +279,8 @@
 
 <td>是否显示当前 value</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -270,6 +292,22 @@
 <td></td>
 
 <td>完成一次拖动后触发的事件，event.detail = {value: value}</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>bindchanging</td>
+
+<td>EventHandle</td>
+
+<td></td>
+
+<td>拖动过程中触发的事件，event.detail = {value: value}</td>
+
+<td>[1.7.0](../framework/compatibility.html "基础库 1.7.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

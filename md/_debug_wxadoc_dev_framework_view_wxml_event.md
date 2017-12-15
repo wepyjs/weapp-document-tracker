@@ -320,7 +320,7 @@ WXML的冒泡事件列表：
 
 </table>
 
-**注：除上表之外的其他组件自定义事件如无特殊申明都是非冒泡事件，如[`<form/>`](../../../component/form.html)的`submit`事件，[`<input/>`](../../../component/input.html)的`input`事件，[`<scroll-view/>`](../../../component/scroll-view.html)的`scroll`事件，(详见各个[组件](../../../component/))**
+**注：除上表之外的其他组件自定义事件如无特殊声明都是非冒泡事件，如[`<form/>`](../../../component/form.html)的`submit`事件，[`<input/>`](../../../component/input.html)的`input`事件，[`<scroll-view/>`](../../../component/scroll-view.html)的`scroll`事件，(详见各个[组件](../../../component/))**
 
 ### 事件绑定和冒泡
 

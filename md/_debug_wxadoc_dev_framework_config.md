@@ -571,7 +571,7 @@
 
 <td>否</td>
 
-<td>图片路径，icon 大小限制为40kb，建议尺寸为 81px * 81px，当 postion 为 top 时，此参数无效</td>
+<td>图片路径，icon 大小限制为40kb，建议尺寸为 81px * 81px，当 postion 为 top 时，此参数无效，不支持网络图片</td>
 
 </tr>
 

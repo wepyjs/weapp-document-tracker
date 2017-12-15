@@ -411,7 +411,7 @@
 
 <td>否</td>
 
-<td>marker点击事件回调会返回此id</td>
+<td>marker点击事件回调会返回此id。**建议为每个marker设置上Number类型id，保证更新marker时有更好的性能。**</td>
 
 <td></td>
 
@@ -555,7 +555,7 @@
 
 <td>否</td>
 
-<td>{content, color, fontSize, borderRadius, bgColor, padding, boxShadow, display}</td>
+<td>支持的属性见下表，可识别换行符。</td>
 
 <td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -571,7 +571,7 @@
 
 <td>否</td>
 
-<td>{color, fontSize, content, x, y}，可识别换行符，x,y原点是marker对应的经纬度</td>
+<td>支持的属性见下表，可识别换行符。</td>
 
 <td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -611,6 +611,8 @@
 
 <th>类型</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -625,6 +627,8 @@
 
 <td>String</td>
 
+<td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 <tr>
@@ -634,6 +638,8 @@
 <td>文本颜色</td>
 
 <td>String</td>
+
+<td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -645,6 +651,8 @@
 
 <td>Number</td>
 
+<td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 <tr>
@@ -654,6 +662,8 @@
 <td>callout边框圆角</td>
 
 <td>Number</td>
+
+<td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -665,6 +675,8 @@
 
 <td>String</td>
 
+<td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 <tr>
@@ -675,6 +687,8 @@
 
 <td>Number</td>
 
+<td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 <tr>
@@ -684,6 +698,178 @@
 <td>'BYCLICK':点击显示; 'ALWAYS':常显</td>
 
 <td>String</td>
+
+<td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>textAlign</td>
+
+<td>文本对齐方式。有效值: left, right, center</td>
+
+<td>String</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+##### marker 上的气泡 label
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>属性</th>
+
+<th>说明</th>
+
+<th>类型</th>
+
+<th>最低版本</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>content</td>
+
+<td>文本</td>
+
+<td>String</td>
+
+<td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>color</td>
+
+<td>文本颜色</td>
+
+<td>String</td>
+
+<td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>fontSize</td>
+
+<td>文字大小</td>
+
+<td>Number</td>
+
+<td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>x</td>
+
+<td>label的坐标，原点是 marker 对应的经纬度</td>
+
+<td>Number</td>
+
+<td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>y</td>
+
+<td>label的坐标，原点是 marker 对应的经纬度</td>
+
+<td>Number</td>
+
+<td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>borderWidth</td>
+
+<td>边框宽度</td>
+
+<td>Number</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>borderColor</td>
+
+<td>边框颜色</td>
+
+<td>String</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>borderRadius</td>
+
+<td>边框圆角</td>
+
+<td>Number</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>bgColor</td>
+
+<td>背景色</td>
+
+<td>String</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>padding</td>
+
+<td>文本边缘留白</td>
+
+<td>Number</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>textAlign</td>
+
+<td>文本对齐方式。有效值: left, right, center</td>
+
+<td>String</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -1190,8 +1376,8 @@
 
 ##### Bug & Tip
 
-1.  `tip`: `map` 组件是由客户端创建的原生组件，它的层级是最高的。
-2.  `tip`: 请勿在 `scroll-view` 中使用 `map` 组件。
+1.  `tip`: `map` 组件是由客户端创建的原生组件，它的层级是最高的，不能通过 z-index 控制层级。
+2.  `tip`: 请勿在 `scroll-view`、`swiper`、`picker-view`、`movable-view` 中使用 `map` 组件。
 3.  `tip`: `css` 动画对 `map` 组件无效。
 4.  `tip`: `map` 组件使用的经纬度是火星坐标系，调用 `wx.getLocation` 接口需要指定 `type` 为 `gcj02`
 

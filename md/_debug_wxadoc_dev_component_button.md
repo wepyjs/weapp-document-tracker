@@ -645,7 +645,7 @@
 
 <td>getPhoneNumber</td>
 
-<td>获取用户手机号，可以从bindgetphonenumber回调用获取到用户信息，[具体说明](../api/getPhoneNumber.html)</td>
+<td>获取用户手机号，可以从bindgetphonenumber回调中获取到用户信息，[具体说明](../api/getPhoneNumber.html)</td>
 
 <td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
 

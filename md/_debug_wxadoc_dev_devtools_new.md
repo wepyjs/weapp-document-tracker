@@ -105,19 +105,18 @@
 
 <section class="normal markdown-section">
 
-### 2017.11.30 开发工具更新
+### 2017.12.14 开发工具更新
 
-1.  `A` 新增 详情页中展示基础库用户使用率及线上版小程序设置的最低基础库
-2.  `A` 新增 项目详情页显示业务域名（webview 可信域名）
-3.  `A` 新增 开启不校验安全域名时，也不校验 webview 的业务域名
-4.  `F` 修复 场景值为 1044 时，返回的 `scene` 字段是 `String` 类型而不是 `Number` 类型的问题
-5.  `F` 修复 断网的时候 socket 没有提示信息的问题
-6.  `F` 修复 安装包重复下载问题
-7.  `F` 修复 `wx.downloadFile` 响应 404 时，没有返回 `tempFilePath` 的问题
-8.  `F` 修复 project.config.json 中 miniprogramRoot 设置的路径以 / 结尾的话会导致编辑器保存自动编译不成功的问题
-9.  `F` 修复 支持 sourcemap 文件在调试器中的加载。[详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=ff21eb384464cb8e1ba5668651e51c63&highline=typescript&token=397816104&lang=zh_CN)
-10.  `U` 优化 复制二维码的交互
-11.  `U` 优化 创建项目页增加注册小程序的入口
+1.  `A` 新增 命令行调用工具执行打开、预览、上传等功能 [详情](cli.html)
+2.  `A` 新增 通过 HTTP 调用工具执行打开、预览、上传等功能 [详情](http.html)
+3.  `A` 新增 编辑器 Git 支持 [详情](edit.html)
+4.  `A` 新增 第三方平台 `ext.json` 新增 `directCommit` 字段,用于直接代小程序提交审核 [详情](ext.html)
+5.  `A` 新增 WXML 面板属性自动补全
+6.  `U` 更新 编辑器自动补全
+7.  `U` 优化 提升预览上传性能，预览时展示正在编译的文件
+8.  `U` 优化 增加预览上传队列，优化频繁预览上传的性能
+9.  `U` 优化 项目列表小程序封面截图策略与性能
+10.  `U` 优化 创建项目时目录不合法的提示
 
 ## 历史更新日志
 

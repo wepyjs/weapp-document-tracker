@@ -73,6 +73,7 @@
         *   [wx.onSocketMessage](../network-socket.html#wxonsocketmessagecallback)
         *   [wx.closeSocket](../network-socket.html#wxclosesocket)
         *   [wx.onSocketClose](../network-socket.html#wxonsocketclosecallback)
+        *   [SocketTask](../socket-task.html)
 *   [媒体](../media-picture.html)
     *   [图片](../media-picture.html)
         *   [wx.chooseImage](../media-picture.html#wxchooseimageobject)
@@ -506,6 +507,34 @@
 <td>画布标识，传入 [`<canvas/>`](../../component/canvas.html) 的 cavas-id</td>
 
 <td></td>
+
+</tr>
+
+<tr>
+
+<td>fileType</td>
+
+<td>String</td>
+
+<td>否</td>
+
+<td>目标文件的类型，只支持 'jpg' 或 'png'。默认为 'png'</td>
+
+<td>[1.7.0](../../framework/compatibility.html "基础库 1.7.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>quality</td>
+
+<td>Number</td>
+
+<td>否</td>
+
+<td>图片的质量，取值范围为 (0, 1]，不在范围内时当作1.0处理</td>
+
+<td>[1.7.0](../../framework/compatibility.html "基础库 1.7.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

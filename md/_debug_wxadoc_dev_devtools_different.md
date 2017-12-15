@@ -80,6 +80,7 @@
     *   [文件类型](edit.html#文件支持)
     *   [自动补全](edit.html#自动补全)
     *   [项目配置文件](edit.html#项目配置文件)
+    *   [Git 状态展示](edit.html#Git 状态展示)
 *   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
     *   [自定义编译](debug.html#自定义编译)
@@ -94,6 +95,8 @@
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
     *   [特殊场景调试](different.html)
+*   [命令行调用](cli.html)
+*   [HTTP 调用](http.html)
 *   [小程序开发助手](mydev.html)
 *   [第三方平台](ext.html)
 *   [云测试](monkey-test.html)
@@ -231,6 +234,6 @@
 
 </div>
 
-[](debug.html#自定义数据上报)[](mydev.html)</div>
+[](debug.html#自定义数据上报)[](cli.html)</div>
 
 </div>

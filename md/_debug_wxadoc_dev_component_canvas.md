@@ -287,9 +287,10 @@
 
 ##### Bug & Tip
 
-1.  `tip`: `canvas` 组件是由客户端创建的原生组件，它的层级是最高的。
-2.  `tip`: 请勿在 `scroll-view` 中使用 `canvas` 组件。
+1.  `tip`: `canvas` 组件是由客户端创建的原生组件，它的层级是最高的，不能通过 z-index 控制层级。
+2.  `tip`: 请勿在 `scroll-view`、`swiper`、`picker-view`、`movable-view` 中使用 `canvas` 组件。
 3.  `tip`: `css` 动画对 `canvas` 组件无效。
+4.  `bug`: 避免设置过大的宽高，在安卓下会有crash的问题
 
 </section>
 

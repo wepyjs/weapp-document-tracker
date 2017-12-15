@@ -916,6 +916,9 @@
 </tr>
 </tbody>
 </table>
+<!--
+| bindrealnameauth       | Handler |              | 获取实名授权的auth_token                                                                                                       | open-type="realnameAuth"   | [1.7.0](/framework/compatibility.md "基础库 1.7.0 开始支持，低版本需做兼容处理。") |
+-->
 <ul>
 <li><strong>&#x6CE8;1&#xFF1A;<code>button-hover</code> &#x9ED8;&#x8BA4;&#x4E3A;<code>{background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}</code></strong></li>
 <li><strong>&#x6CE8;2&#xFF1A;<code>bindgetphonenumber</code> &#x4ECE;1.2.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F46;&#x662F;&#x5728;1.5.3&#x4EE5;&#x4E0B;&#x7248;&#x672C;&#x4E2D;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;<code>wx.canIUse</code>&#x8FDB;&#x884C;&#x68C0;&#x6D4B;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x57FA;&#x7840;&#x5E93;&#x7248;&#x672C;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#x3002;</strong></li>
@@ -1007,11 +1010,14 @@
 </tr>
 <tr>
 <td>getPhoneNumber</td>
-<td>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x624B;&#x673A;&#x53F7;&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE;bindgetphonenumber&#x56DE;&#x8C03;&#x7528;&#x83B7;&#x53D6;&#x5230;&#x7528;&#x6237;&#x4FE1;&#x606F;&#xFF0C;<a href="../api/getPhoneNumber.html">&#x5177;&#x4F53;&#x8BF4;&#x660E;</a></td>
+<td>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x624B;&#x673A;&#x53F7;&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE;bindgetphonenumber&#x56DE;&#x8C03;&#x4E2D;&#x83B7;&#x53D6;&#x5230;&#x7528;&#x6237;&#x4FE1;&#x606F;&#xFF0C;<a href="../api/getPhoneNumber.html">&#x5177;&#x4F53;&#x8BF4;&#x660E;</a></td>
 <td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.2.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.2.0</a></td>
 </tr>
 </tbody>
 </table>
+<!--
+| realnameAuth   | 进入实名授权流程，可从bindrealnameauth回调中获取auth_token                          | [1.7.0](/framework/compatibility.md "基础库 1.7.0 开始支持，低版本需做兼容处理。")                |
+-->
 <p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</strong></p>
 <pre><code class="lang-css"><span class="hljs-comment">/** wxss **/</span>
 <span class="hljs-comment">/** &#x4FEE;&#x6539;button&#x9ED8;&#x8BA4;&#x7684;&#x70B9;&#x51FB;&#x6001;&#x6837;&#x5F0F;&#x7C7B;**/</span>

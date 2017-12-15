@@ -123,6 +123,8 @@
 
 系统相机。
 
+需要[用户授权](authorize-index.md) scope.camera
+
 <table>
 
 <thead>
@@ -199,9 +201,9 @@
 
 ##### Bug & Tip
 
-1.  `tip`: `camera` 组件是由客户端创建的原生组件，它的层级是最高的。可使用 `cover-view` `cover-image`覆盖在上面。
+1.  `tip`: `camera` 组件是由客户端创建的原生组件，它的层级是最高的，不能通过 z-index 控制层级。可使用 `cover-view` `cover-image`覆盖在上面。
 2.  `tip`: 同一页面只能插入一个 `camera` 组件。
-3.  `tip`: 请勿在 `scroll-view` 中使用 `camera` 组件。
+3.  `tip`: 请勿在 `scroll-view`、`swiper`、`picker-view`、`movable-view` 中使用 `camera` 组件。
 
 **示例：**
 
@@ -213,11 +215,11 @@
 
     // camera.js
     Page({
-        takePhote() {
+        takePhoto() {
             const ctx = wx.createCameraContext()
             ctx.takePhoto({
                 quality: 'high',
-                success: (res) {
+                success: (res) => {
                     this.setData({
                         src: res.tempImagePath
                     })

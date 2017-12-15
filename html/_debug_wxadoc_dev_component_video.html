@@ -831,6 +831,13 @@
 <td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.6.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.6.0</a></td>
 </tr>
 <tr>
+<td>direction</td>
+<td>Number</td>
+<td></td>
+<td>&#x8BBE;&#x7F6E;&#x5168;&#x5C4F;&#x65F6;&#x89C6;&#x9891;&#x7684;&#x65B9;&#x5411;&#xFF0C;&#x4E0D;&#x6307;&#x5B9A;&#x5219;&#x6839;&#x636E;&#x5BBD;&#x9AD8;&#x6BD4;&#x81EA;&#x52A8;&#x5224;&#x65AD;&#x3002;&#x6709;&#x6548;&#x503C;&#x4E3A; 0&#xFF08;&#x6B63;&#x5E38;&#x7AD6;&#x5411;&#xFF09;, 90&#xFF08;&#x5C4F;&#x5E55;&#x9006;&#x65F6;&#x9488;90&#x5EA6;&#xFF09;, -90&#xFF08;&#x5C4F;&#x5E55;&#x987A;&#x65F6;&#x9488;90&#x5EA6;&#xFF09;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.7.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.7.0</a></td>
+</tr>
+<tr>
 <td>bindplay</td>
 <td>EventHandle</td>
 <td></td>
@@ -855,14 +862,14 @@
 <td>bindtimeupdate</td>
 <td>EventHandle</td>
 <td></td>
-<td>&#x64AD;&#x653E;&#x8FDB;&#x5EA6;&#x53D8;&#x5316;&#x65F6;&#x89E6;&#x53D1;&#xFF0C;event.detail = {currentTime: &apos;&#x5F53;&#x524D;&#x64AD;&#x653E;&#x65F6;&#x95F4;&apos;} &#x3002;&#x89E6;&#x53D1;&#x9891;&#x7387;&#x5E94;&#x8BE5;&#x5728; 250ms &#x4E00;&#x6B21;</td>
+<td>&#x64AD;&#x653E;&#x8FDB;&#x5EA6;&#x53D8;&#x5316;&#x65F6;&#x89E6;&#x53D1;&#xFF0C;event.detail = {currentTime, duration} &#x3002;&#x89E6;&#x53D1;&#x9891;&#x7387; 250ms &#x4E00;&#x6B21;</td>
 <td></td>
 </tr>
 <tr>
 <td>bindfullscreenchange</td>
 <td>EventHandle</td>
 <td></td>
-<td>&#x5F53;&#x89C6;&#x9891;&#x8FDB;&#x5165;&#x548C;&#x9000;&#x51FA;&#x5168;&#x5C4F;&#x662F;&#x89E6;&#x53D1;&#xFF0C;event.detail = {fullScreen: &apos;&#x5F53;&#x524D;&#x5168;&#x5C4F;&#x72B6;&#x6001;&apos;}</td>
+<td>&#x5F53;&#x89C6;&#x9891;&#x8FDB;&#x5165;&#x548C;&#x9000;&#x51FA;&#x5168;&#x5C4F;&#x662F;&#x89E6;&#x53D1;&#xFF0C;event.detail = {fullScreen, direction}&#xFF0C;direction&#x53D6;&#x4E3A; vertical &#x6216; horizontal</td>
 <td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.4.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.4.0</a></td>
 </tr>
 <tr>
@@ -876,7 +883,7 @@
 <td>poster</td>
 <td>String</td>
 <td></td>
-<td>&#x9ED8;&#x8BA4;&#x63A7;&#x4EF6;&#x4E0A;&#x7684;&#x97F3;&#x9891;&#x5C01;&#x9762;&#x7684;&#x56FE;&#x7247;&#x8D44;&#x6E90;&#x5730;&#x5740;&#xFF0C;&#x5982;&#x679C; controls &#x5C5E;&#x6027;&#x503C;&#x4E3A; false &#x5219;&#x8BBE;&#x7F6E; poster &#x65E0;&#x6548;</td>
+<td>&#x89C6;&#x9891;&#x5C01;&#x9762;&#x7684;&#x56FE;&#x7247;&#x7F51;&#x7EDC;&#x8D44;&#x6E90;&#x5730;&#x5740;&#xFF0C;&#x5982;&#x679C; controls &#x5C5E;&#x6027;&#x503C;&#x4E3A; false &#x5219;&#x8BBE;&#x7F6E; poster &#x65E0;&#x6548;</td>
 </tr>
 </tbody>
 </table>
@@ -955,8 +962,8 @@ Page({
 <p>&#x76F8;&#x5173;api&#xFF1A;<a href="../api/api-video.html">wx.createVideoContext</a></p>
 <h5 id="bug--tip">Bug &amp; Tip</h5>
 <ol>
-<li><code>tip</code>: <code>video</code> &#x7EC4;&#x4EF6;&#x662F;&#x7531;&#x5BA2;&#x6237;&#x7AEF;&#x521B;&#x5EFA;&#x7684;&#x539F;&#x751F;&#x7EC4;&#x4EF6;&#xFF0C;&#x5B83;&#x7684;&#x5C42;&#x7EA7;&#x662F;&#x6700;&#x9AD8;&#x7684;&#x3002;</li>
-<li><code>tip</code>: &#x8BF7;&#x52FF;&#x5728; <code>scroll-view</code> &#x4E2D;&#x4F7F;&#x7528; <code>video</code> &#x7EC4;&#x4EF6;&#x3002;</li>
+<li><code>tip</code>: <code>video</code> &#x7EC4;&#x4EF6;&#x662F;&#x7531;&#x5BA2;&#x6237;&#x7AEF;&#x521B;&#x5EFA;&#x7684;&#x539F;&#x751F;&#x7EC4;&#x4EF6;&#xFF0C;&#x5B83;&#x7684;&#x5C42;&#x7EA7;&#x662F;&#x6700;&#x9AD8;&#x7684;&#xFF0C;&#x4E0D;&#x80FD;&#x901A;&#x8FC7; z-index &#x63A7;&#x5236;&#x5C42;&#x7EA7;&#x3002;</li>
+<li><code>tip</code>: &#x8BF7;&#x52FF;&#x5728; <code>scroll-view</code>&#x3001;<code>swiper</code>&#x3001;<code>picker-view</code>&#x3001;<code>movable-view</code> &#x4E2D;&#x4F7F;&#x7528; <code>video</code> &#x7EC4;&#x4EF6;&#x3002;</li>
 <li><code>tip</code>: <code>css</code> &#x52A8;&#x753B;&#x5BF9; <code>video</code> &#x7EC4;&#x4EF6;&#x65E0;&#x6548;&#x3002;</li>
 </ol>
 

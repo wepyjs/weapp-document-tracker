@@ -73,6 +73,7 @@
         *   [wx.onSocketMessage](network-socket.html#wxonsocketmessagecallback)
         *   [wx.closeSocket](network-socket.html#wxclosesocket)
         *   [wx.onSocketClose](network-socket.html#wxonsocketclosecallback)
+        *   [SocketTask](socket-task.html)
 *   [媒体](media-picture.html)
     *   [图片](media-picture.html)
         *   [wx.chooseImage](media-picture.html#wxchooseimageobject)
@@ -1195,9 +1196,22 @@
 
 **示例代码：**
 
+    // ArrayBuffer转16进度字符串示例
+    function ab2hex(buffer) {
+      var hexArr = Array.prototype.map.call(
+        new Uint8Array(buffer),
+        function(bit) {
+          return ('00' + bit.toString(16)).slice(-2)
+        }
+      )
+      return hexArr.join('');
+    }
     wx.getBluetoothDevices({
       success: function (res) {
         console.log(res)
+        if (res.devices[0]) {
+          console.log(ab2hex(res.devices[0].advertisData))
+        }
       }
     })
 
@@ -1336,9 +1350,20 @@
 
 **示例代码：**
 
+    // ArrayBuffer转16进度字符串示例
+    function ab2hex(buffer) {
+      var hexArr = Array.prototype.map.call(
+        new Uint8Array(buffer),
+        function(bit) {
+          return ('00' + bit.toString(16)).slice(-2)
+        }
+      )
+      return hexArr.join('');
+    }
     wx.onBluetoothDeviceFound(function(devices) {
       console.log('new device list has founded')
       console.dir(devices)
+      console.log(ab2hex(devices[0].advertisData))
     })
 
 #### Bug & Tip
@@ -2416,11 +2441,11 @@
 
 <tr>
 
-<td>characteristic</td>
+<td>errCode</td>
 
-<td>Object</td>
+<td>Number</td>
 
-<td>设备特征值信息</td>
+<td>错误码</td>
 
 </tr>
 
@@ -2431,62 +2456,6 @@
 <td>String</td>
 
 <td>成功：ok，错误：详细信息</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-#### characteristic对象
-
-蓝牙设备characteristic(特征值)信息
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>参数</th>
-
-<th>类型</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>characteristicId</td>
-
-<td>String</td>
-
-<td>蓝牙设备特征值的 uuid</td>
-
-</tr>
-
-<tr>
-
-<td>serviceId</td>
-
-<td>String</td>
-
-<td>蓝牙设备特征值对应服务的 uuid</td>
-
-</tr>
-
-<tr>
-
-<td>value</td>
-
-<td>ArrayBuffer</td>
-
-<td>蓝牙设备特征值对应的二进制值</td>
 
 </tr>
 
@@ -2509,7 +2478,7 @@
       // 这里的 characteristicId 需要在上面的 getBLEDeviceCharacteristics 接口中获取
       characteristicId: characteristicId,
       success: function (res) {
-        console.log('readBLECharacteristicValue:', res.characteristic.value)
+        console.log('readBLECharacteristicValue:', res.errCode)
       }
     })
 
@@ -2942,8 +2911,19 @@ _tips: 并行调用多次读写接口存在读写失败的可能性_
 
 **示例代码：**
 
+    // ArrayBuffer转16进度字符串示例
+    function ab2hex(buffer) {
+      var hexArr = Array.prototype.map.call(
+        new Uint8Array(buffer),
+        function(bit) {
+          return ('00' + bit.toString(16)).slice(-2)
+        }
+      )
+      return hexArr.join('');
+    }
     wx.onBLECharacteristicValueChange(function(res) {
       console.log(`characteristic ${res.characteristicId} has changed, now is ${res.value}`)
+      console.log(ab2hext(res.value))
     })
 
 ### 蓝牙错误码(errCode)列表

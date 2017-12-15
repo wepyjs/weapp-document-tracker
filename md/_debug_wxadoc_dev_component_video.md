@@ -299,6 +299,20 @@
 
 <tr>
 
+<td>direction</td>
+
+<td>Number</td>
+
+<td></td>
+
+<td>设置全屏时视频的方向，不指定则根据宽高比自动判断。有效值为 0（正常竖向）, 90（屏幕逆时针90度）, -90（屏幕顺时针90度）</td>
+
+<td>[1.7.0](../framework/compatibility.html "基础库 1.7.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>bindplay</td>
 
 <td>EventHandle</td>
@@ -347,7 +361,7 @@
 
 <td></td>
 
-<td>播放进度变化时触发，event.detail = {currentTime: '当前播放时间'} 。触发频率应该在 250ms 一次</td>
+<td>播放进度变化时触发，event.detail = {currentTime, duration} 。触发频率 250ms 一次</td>
 
 <td></td>
 
@@ -361,7 +375,7 @@
 
 <td></td>
 
-<td>当视频进入和退出全屏是触发，event.detail = {fullScreen: '当前全屏状态'}</td>
+<td>当视频进入和退出全屏是触发，event.detail = {fullScreen, direction}，direction取为 vertical 或 horizontal</td>
 
 <td>[1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -389,7 +403,7 @@
 
 <td></td>
 
-<td>默认控件上的音频封面的图片资源地址，如果 controls 属性值为 false 则设置 poster 无效</td>
+<td>视频封面的图片网络资源地址，如果 controls 属性值为 false 则设置 poster 无效</td>
 
 </tr>
 
@@ -476,8 +490,8 @@ video标签认宽度300px、高度225px，设置宽高需要通过wxss设置widt
 
 ##### Bug & Tip
 
-1.  `tip`: `video` 组件是由客户端创建的原生组件，它的层级是最高的。
-2.  `tip`: 请勿在 `scroll-view` 中使用 `video` 组件。
+1.  `tip`: `video` 组件是由客户端创建的原生组件，它的层级是最高的，不能通过 z-index 控制层级。
+2.  `tip`: 请勿在 `scroll-view`、`swiper`、`picker-view`、`movable-view` 中使用 `video` 组件。
 3.  `tip`: `css` 动画对 `video` 组件无效。
 
 </section>

@@ -80,6 +80,7 @@
     *   [文件类型](edit.html#文件支持)
     *   [自动补全](edit.html#自动补全)
     *   [项目配置文件](edit.html#项目配置文件)
+    *   [Git 状态展示](edit.html#Git 状态展示)
 *   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
     *   [自定义编译](debug.html#自定义编译)
@@ -94,6 +95,8 @@
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
     *   [特殊场景调试](different.html)
+*   [命令行调用](cli.html)
+*   [HTTP 调用](http.html)
 *   [小程序开发助手](mydev.html)
 *   [第三方平台](ext.html)
 *   [云测试](monkey-test.html)
@@ -122,27 +125,26 @@
 
 <section class="normal markdown-section">
 
-## 最新版本下载地址 (1.01.1711300)
+## 最新版本下载地址 (1.01.1712140)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
 
-### 2017.11.30 开发工具更新
+### 2017.12.14 开发工具更新
 
-1.  `A` 新增 详情页中展示基础库用户使用率及线上版小程序设置的最低基础库
-2.  `A` 新增 项目详情页显示业务域名（webview 可信域名）
-3.  `A` 新增 开启不校验安全域名时，也不校验 webview 的业务域名
-4.  `F` 修复 场景值为 1044 时，返回的 `scene` 字段是 `String` 类型而不是 `Number` 类型的问题
-5.  `F` 修复 断网的时候 socket 没有提示信息的问题
-6.  `F` 修复 安装包重复下载问题
-7.  `F` 修复 `wx.downloadFile` 响应 404 时，没有返回 `tempFilePath` 的问题
-8.  `F` 修复 project.config.json 中 miniprogramRoot 设置的路径以 / 结尾的话会导致编辑器保存自动编译不成功的问题
-9.  `F` 修复 支持 sourcemap 文件在调试器中的加载。[详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=ff21eb384464cb8e1ba5668651e51c63&highline=typescript&token=397816104&lang=zh_CN)
-10.  `U` 优化 复制二维码的交互
-11.  `U` 优化 创建项目页增加注册小程序的入口
+1.  `A` 新增 命令行调用工具执行打开、预览、上传等功能 [详情](cli.html)
+2.  `A` 新增 通过 HTTP 调用工具执行打开、预览、上传等功能 [详情](http.html)
+3.  `A` 新增 编辑器 Git 展示支持 [详情](edit.html)
+4.  `A` 新增 第三方平台 `ext.json` 新增 `directCommit` 字段,用于直接代小程序提交审核 [详情](ext.html)
+5.  `A` 新增 WXML 面板属性自动补全
+6.  `U` 更新 编辑器自动补全
+7.  `U` 优化 提升预览上传性能，预览时展示正在编译的文件
+8.  `U` 优化 增加预览上传队列，优化频繁预览上传的性能
+9.  `U` 优化 项目列表小程序封面截图策略与性能
+10.  `U` 优化 创建项目时目录不合法的提示
 
-### 上一版本下载地址 (1.01.1711160)
+### 上一版本下载地址 (1.01.1712070)
 
-[windows 64](http://dldir1.qq.com/WechatWebDev/1.0.0/201711160/wechat_devtools_1.01.1711160_x64.exe) 、 [windows 32](http://dldir1.qq.com/WechatWebDev/1.0.0/201711160/wechat_devtools_1.01.1711160_ia32.exe) 、 [mac](http://dldir1.qq.com/WechatWebDev/1.0.0/201711160/wechat_devtools_1.01.1711160.dmg)
+[windows 64](http://dldir1.qq.com/WechatWebDev/1.0.0/201712070/wechat_devtools_1.01.1712070_x64.exe) 、 [windows 32](http://dldir1.qq.com/WechatWebDev/1.0.0/201712070/wechat_devtools_1.01.1712070_ia32.exe) 、 [mac](http://dldir1.qq.com/WechatWebDev/1.0.0/201712070/wechat_devtools_1.01.1712070.dmg)
 
 ### 历史版本下载 2017.08.30 (0.22.203100)
 

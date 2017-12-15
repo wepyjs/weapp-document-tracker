@@ -135,6 +135,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -151,6 +153,8 @@
 
 <td>百分比0~100</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -162,6 +166,8 @@
 <td>false</td>
 
 <td>在进度条右侧显示百分比</td>
+
+<td></td>
 
 </tr>
 
@@ -175,6 +181,8 @@
 
 <td>进度条线的宽度，单位px</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -186,6 +194,8 @@
 <td>#09BB07</td>
 
 <td>进度条颜色 （请使用 activeColor）</td>
+
+<td></td>
 
 </tr>
 
@@ -199,6 +209,8 @@
 
 <td>已选择的进度条的颜色</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -211,6 +223,8 @@
 
 <td>未选择的进度条的颜色</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -222,6 +236,22 @@
 <td>false</td>
 
 <td>进度条从左往右的动画</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>active-mode</td>
+
+<td>String</td>
+
+<td>backwards</td>
+
+<td>backwards: 动画从头播；forwards：动画从上次结束点接着播</td>
+
+<td>[1.7.0](../framework/compatibility.html "基础库 1.7.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

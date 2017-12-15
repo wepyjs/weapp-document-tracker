@@ -73,6 +73,7 @@
         *   [wx.onSocketMessage](network-socket.html#wxonsocketmessagecallback)
         *   [wx.closeSocket](network-socket.html#wxclosesocket)
         *   [wx.onSocketClose](network-socket.html#wxonsocketclosecallback)
+        *   [SocketTask](socket-task.html)
 *   [媒体](media-picture.html)
     *   [图片](media-picture.html)
         *   [wx.chooseImage](media-picture.html#wxchooseimageobject)
@@ -961,7 +962,7 @@
 
 详情查看会员开卡组件介绍：[会员开卡组件](https://mp.weixin.qq.com/cgi-bin/announce?action=getannouncement&key=1479824356&version=1&lang=zh_CN&platform=2)
 
-**OBJECT参数说明**
+**参数说明**
 
 <table>
 
