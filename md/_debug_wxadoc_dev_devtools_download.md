@@ -125,11 +125,11 @@
 
 <section class="normal markdown-section">
 
-## 最新版本下载地址 (1.01.1712140)
+## 最新版本下载地址 (1.01.1712150)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
 
-### 2017.12.14 开发工具更新
+### 2017.12.15 开发工具更新
 
 1.  `A` 新增 命令行调用工具执行打开、预览、上传等功能 [详情](cli.html)
 2.  `A` 新增 通过 HTTP 调用工具执行打开、预览、上传等功能 [详情](http.html)
