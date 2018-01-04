@@ -380,9 +380,9 @@ HTTP 方法：GET
 示例：
 
     # 上传路径为 /Users/username/demo 的项目，指定版本号为 v1.0.0
-    http://127.0.0.1:端口号/preview?projectpath=%2FUsers%2Fusername%2Fdemo&version=v1.0.0
+    http://127.0.0.1:端口号/upload?projectpath=%2FUsers%2Fusername%2Fdemo&version=v1.0.0
     # 上传路径为 /Users/username/demo 的项目，指定版本号为 v1.0.0，并带上备注
-    http://127.0.0.1:端口号/preview?projectpath=%2FUsers%2Fusername%2Fdemo&version=v1.0.0&desc=test
+    http://127.0.0.1:端口号/upload?projectpath=%2FUsers%2Fusername%2Fdemo&version=v1.0.0&desc=test
 
 ### 5\. 自动化测试
 

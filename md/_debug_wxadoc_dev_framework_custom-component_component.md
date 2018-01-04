@@ -92,6 +92,7 @@
     *   [组件事件](events.html)
     *   [behaviors](behaviors.html)
     *   [组件间关系](relations.html)
+*   [分包加载](../subpackages.html)
 *   [基础库](../client-lib.html)
 *   [兼容](../compatibility.html)
 *   [运行机制](../operating-mechanism.html)
@@ -442,7 +443,7 @@ Component构造器可用于定义组件，调用Component构造器时可以指�
       properties: {
         myProperty: { // 属性名
           type: String, // 类型（必填），目前接受的类型包括：String, Number, Boolean, Object, Array, null（表示任意类型）
-          value: '' // 属性初始值（可选），如果未指定则会根据类型选择一个
+          value: '', // 属性初始值（可选），如果未指定则会根据类型选择一个
           observer: function(newVal, oldVal){} // 属性被改变时执行的函数（可选），也可以写成在methods段中定义的方法名字符串
         },
         myProperty2: String // 简化的定义方式
@@ -476,7 +477,7 @@ Component构造器可用于定义组件，调用Component构造器时可以指�
 *   `Component` 构造器构造的组件也可以作为页面使用。
 *   使用 `this.data` 可以获取内部数据和属性值，但不要直接修改它们，应使用 `setData` 修改。
 *   生命周期函数无法在组件方法中通过 `this` 访问到。
-*   属性名不要命名成 `dataXyz` 这样的形式，因为在 WXML 中， `data-xyz=""` 会被作为节点 dataset 来处理，而不是组件属性。
+*   属性名应避免以 data 开头，即不要命名成 `dataXyz` 这样的形式，因为在 WXML 中， `data-xyz=""` 会被作为节点 dataset 来处理，而不是组件属性。
 *   在一个组件的定义和使用时，组件的属性名和data字段相互间都不能冲突（尽管它们位于不同的定义段中）。
 
 </section>

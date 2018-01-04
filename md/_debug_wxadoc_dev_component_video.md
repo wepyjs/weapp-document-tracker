@@ -89,6 +89,8 @@
     *   [image](image.html)
     *   [video](video.html)
     *   [camera](camera.html)
+    *   [live-player](live-player.html)
+    *   [live-pusher](live-pusher.html)
 *   [地图](map.html)
     *   [map](map.html#map)
 *   [画布](canvas.html)
@@ -411,7 +413,7 @@
 
 </table>
 
-video标签认宽度300px、高度225px，设置宽高需要通过wxss设置width和height。
+`<video />` 默认宽度300px、高度225px，可通过wxss设置宽高。
 
 **示例代码：**
 

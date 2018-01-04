@@ -92,6 +92,7 @@
     *   [组件事件](events.html)
     *   [behaviors](behaviors.html)
     *   [组件间关系](relations.html)
+*   [分包加载](../subpackages.html)
 *   [基础库](../client-lib.html)
 *   [兼容](../compatibility.html)
 *   [运行机制](../operating-mechanism.html)
@@ -193,7 +194,7 @@
     button { } /* 在组件中不能使用 */
     .a > .b { } /* 除非 .a 是 view 组件节点，否则不一定会生效 */
 
-除此以外，组件可以指定它所在节点的默认样式，使用 `:host` 选择器（需要 [1.7.2](../compatibility.html "基础库 1.7.2 开始支持，低版本需做兼容处理。") 或更高版本的开发者工具支持）。
+除此以外，组件可以指定它所在节点的默认样式，使用 `:host` 选择器（需要包含基础库 [1.7.2](../compatibility.html "基础库 1.7.2 开始支持，低版本需做兼容处理。") 或更高版本的开发者工具支持）。
 
 **代码示例：**
 
@@ -201,13 +202,9 @@
     :host {
       color: yellow;
     }
-    :host(.dark) {
-      color: black;
-    }
 
     <!-- 页面的 WXML -->
     <custom-component>这段文本是黄色的</custom-component>
-    <custom-component class="dark">这段文本是黑色的</custom-component>
 
 </section>
 

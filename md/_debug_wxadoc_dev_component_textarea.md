@@ -89,6 +89,8 @@
     *   [image](image.html)
     *   [video](video.html)
     *   [camera](camera.html)
+    *   [live-player](live-player.html)
+    *   [live-pusher](live-pusher.html)
 *   [地图](map.html)
     *   [map](map.html#map)
 *   [画布](canvas.html)

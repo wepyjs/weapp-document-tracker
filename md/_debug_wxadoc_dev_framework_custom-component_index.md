@@ -92,6 +92,7 @@
     *   [组件事件](events.html)
     *   [behaviors](behaviors.html)
     *   [组件间关系](relations.html)
+*   [分包加载](../subpackages.html)
 *   [基础库](../client-lib.html)
 *   [兼容](../compatibility.html)
 *   [运行机制](../operating-mechanism.html)
@@ -195,7 +196,7 @@
 
 **Tips**:
 
-*   对于基础库的1.5.x版本， [1.5.7](../compatibility.html "基础库 1.5.7 开始支持，低版本需做兼容处理。") 也同样支持自定义组件。
+*   对于基础库的1.5.x版本， [1.5.7](../compatibility.html "基础库 1.5.7 开始支持，低版本需做兼容处理。") 也有部分自定义组件支持。
 *   因为WXML节点标签名只能是小写字母和下划线的组合，所以自定义组件的标签名也只能包含小写字母和下划线。
 *   自定义组件也是可以引用自定义组件的，引用方法类似于页面引用自定义组件的方式（使用 `usingComponents` 字段）。
 *   自定义组件和使用自定义组件的页面所在项目根目录名不能以“wx-”为前缀，否则会报错。

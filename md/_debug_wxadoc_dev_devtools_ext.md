@@ -127,16 +127,19 @@
 
 ## 概述
 
-同开发普通的小程序不同，开发第三方平台小程序具有一定的复杂性，首先需要确认三个概念：
+小程序运营者，可以一键授权给第三方平台，通过第三方平台来完成业务。第三方平台在小程序的前后端开发上同直接开发小程序有所区别，其所拥有的各项 API 以及详细说明请查看 [代小程序实现业务](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1489144594_DhNoV&token=&lang=zh_CN) ，其余部分请阅读下文。
+
+开发第三方平台小程序具有一定的复杂性，首先需要确认三个概念：
 
 *   open3rd：第三方平台，是小程序官方认可的第三方开发商 [详情](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419318292&token=&lang=zh_CN)
 *   3rdMiniProgramAppid：第三方平台申请的并绑定在该平台上的小程序，用于开发小程序模板
 *   extAppid：授权给第三方平台的小程序
 
-因为以上的这些不同，第三方平台相关的小程序开发需要做一些特殊的处理：
+第三方平台相关的小程序开发需要做一些特殊的处理：
 
 *   小程序模板的开发
 *   小程序模板结合 extAppid 的开发调试
+*   使用 `directCommit` 直接提交至待审核列表 [详情](#directCommit)
 
 最新版本的开发工具支持第三方平台小程序的开发和预览。
 
@@ -330,7 +333,9 @@
 
 当 `directCommit` 为 `true` 真时，开发者在工具中的上传操作，会直接上传到对应的 extAppid 的审核列表，第三方平台只需要调用 `https://api.weixin.qq.com/wxa/submit_audit?access_token=TOKEN` 既可以提交审核。更多请参考 [第三方平台文档](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1489140610_Uavc4&token=&lang=zh_CN)
 
-当 `directCommit` 为 `true` 假时，开发者在工具中的上传操作，会直接上传到对应的草稿箱中。
+当 `directCommit` 为 `false` 或者没有定义时，开发者在工具中的上传操作，会直接上传到对应的草稿箱中。
+
+_tips: 可以使用工具的命令行接口 或者 http 接口来实现自动化的代码提交审核_
 
 ### 同 `app.json` 相同的字段
 

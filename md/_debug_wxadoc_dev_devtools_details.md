@@ -189,9 +189,9 @@
 
 <td>normalize</td>
 
-<td></td>
+<td>✘</td>
 
-<td></td>
+<td>✘</td>
 
 <td></td>
 

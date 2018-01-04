@@ -110,6 +110,9 @@
         *   [wx.createVideoContext](../api-video.html#wxcreatevideocontextvideoid)
     *   [相机组件控制](../api-camera.html)
         *   [wx.createCameraContext](../api-camera.html)
+    *   [实时音视频](../api-live-player.html)
+        *   [wx.createLivePlayerContext](../api-live-player.html)
+        *   [wx.createLivePusherContext](../api-live-pusher.html)
 *   [文件](../file.html)
     *   [wx.saveFile](../file.html#wxsavefileobject)
     *   [wx.getFileInfo](../getFileInfo.html)
@@ -196,6 +199,23 @@
         *   [wx.vibrateShort](../device.html#wxvibrateshortobject)
     *   [手机联系人](../phone-contact.html)
         *   [wx.addPhoneContact](../phone-contact.html#wxaddphonecontactobject)
+    *   [NFC](../nfc.html)
+        *   [wx.getHCEState](../nfc.html#wxgethcestateobject)
+        *   [wx.startHCE](../nfc.html#wxstarthceobject)
+        *   [wx.stopHCE](../nfc.html#wxstophceobject)
+        *   [wx.onHCEMessage](../nfc.html#wxonhcemessagecallback)
+        *   [wx.sendHCEMessage](../nfc.html#wx.sendhcemessageobject)
+    *   [Wi-Fi](../wifi.html)
+        *   [wx.startWifi](../wifi.html#wxstartwifiobject)
+        *   [wx.stopWifi](../wifi.html#wxstopwifiobject)
+        *   [wx.connectWifi](../wifi.html#wxconnectwifiobject)
+        *   [wx.getWifiList](../wifi.html#wxgetwifilistobject)
+        *   [wx.onGetWifiList](../wifi.html#wxongetwifilistcallback)
+        *   [wx.setWifiList](../wifi.html#wxsetwifilistobject)
+        *   [wx.presetWifiList](../wifi.html#wxpresetwifilistobject)
+        *   [wx.getConnectedWifi](../wifi.html#wxgetconnectedwifiobject)
+        *   [wx.onWifiConnected](../wifi.html#wxonwificonnectedcallback)
+        *   [wx.onEvaluateWifi](../wifi.html#wxonevaluatewificallback)
 *   [界面](../api-react.html)
     *   [交互反馈](../api-react.html)
         *   [wx.showToast](../api-react.html#wxshowtoastobject)
@@ -451,6 +471,17 @@
              "content":"Hello World"
         }
     }
+
+发送文本消息时，支持添加可跳转小程序的文字链
+
+    文本内容....<a href="http://www.qq.com" data-miniprogram-appid="appid" data-miniprogram-path="pages/index/index">点击跳小程序</a>
+
+说明：
+
+1.  data-miniprogram-appid 项，填写小程序appid，则表示该链接跳转小程序；
+2.  data-miniprogram-path项，填写小程序路径，路径与app.json中保持一致，可带参数；
+3.  对于不支持data-miniprogram-appid 项的客户端版本，如果有herf项，则仍然保持跳href中的链接；
+4.  小程序发带小程序文字链的文本消息，data-miniprogram-appid必须是该小程序的appid。
 
 ##### 发送图片消息
 

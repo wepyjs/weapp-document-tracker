@@ -89,6 +89,8 @@
     *   [image](image.html)
     *   [video](video.html)
     *   [camera](camera.html)
+    *   [live-player](live-player.html)
+    *   [live-pusher](live-pusher.html)
 *   [地图](map.html)
     *   [map](map.html#map)
 *   [画布](canvas.html)
@@ -348,8 +350,7 @@
 
 ##### Bug & Tip
 
-1.  `tip`: 请勿在 `scroll-view` 中使用 `textarea`、`map`、`canvas`、`video` 组件
-2.  `tip`: 如果在 `bindchange` 的事件回调函数中使用 `setData` 改变 `current` 值，则有可能导致 `setData` 被不停地调用，因而通常情况下请不要这样使用
+1.  `tip`: 如果在 `bindchange` 的事件回调函数中使用 `setData` 改变 `current` 值，则有可能导致 `setData` 被不停地调用，因而通常情况下请不要这样使用
 
 </section>
 
