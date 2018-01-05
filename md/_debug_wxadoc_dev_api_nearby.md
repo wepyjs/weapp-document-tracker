@@ -722,6 +722,228 @@ POST数据示例：
 
 </table>
 
+## 查看地点列表
+
+### 接口地址
+
+    https://api.weixin.qq.com/wxa/getnearbypoilist&page=1&page_rows=20?access_token=ACCESS_TOKEN
+
+请求方式: GET（请使用https协议）
+
+### 请求参数说明：
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>说明</th>
+
+<th>备注</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>page</td>
+
+<td>起始页id（从1开始计数）</td>
+
+<td>必填</td>
+
+</tr>
+
+<tr>
+
+<td>page_rows</td>
+
+<td>每页展示个数（最多1000个）</td>
+
+<td>必填</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+返回参数说明：
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>说明</th>
+
+<th>备注</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>data.left_apply_num</td>
+
+<td>剩余可添加地点个数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>data.max_apply_num</td>
+
+<td>最大可添加地点个数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>data.data</td>
+
+<td>地址列表的json格式字符串</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>data.data.poi_list[i].poi_id</td>
+
+<td>poi_id</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>data.data.poi_list[i].qualification_address</td>
+
+<td>资质证件地址</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>data.data.poi_list[i].qualification_num</td>
+
+<td>资质证件证件号</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>data.data.poi_list[i].audit_status</td>
+
+<td>地点审核状态（3：审核中，4：审核失败，5：审核通过）</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>data.data.poi_list[i].display_status</td>
+
+<td>地点展示在附近状态（0：未展示，1：展示中）</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>data.data.poi_list[i].refuse_reason</td>
+
+<td>审核失败原因</td>
+
+<td>audit_status=4时返回</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+### 返回json示例：
+
+    {
+      "errcode":0,
+      "errmsg":""，
+      "data":
+      {
+         "left_apply_num" : 9,
+         "max_apply_num" : 10,
+         "data":
+         "{
+             "poi_list":
+             [
+                {
+                    "poi_id":"123456",
+                    "qualification_address":"广东省广州市海珠区新港中路123号",
+                    "qualification_num":"123456789-1",
+                    "audit_status":3,
+                    "display_status":0,
+                    "refuse_reason":""
+                }
+             ]
+         }"
+      }
+    }
+
+### 错误码说明：
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>返回码</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>-1</td>
+
+<td>系统错误</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
 ## 删除地点
 
 ### 接口地址
@@ -1030,6 +1252,6 @@ POST数据示例：
 
 </div>
 
-[](checkIsSoterEnrolledInDevice.html)[](nearby.html#添加地点)</div>
+[](checkIsSoterEnrolledInDevice.html)[](analysis.html)</div>
 
 </div>

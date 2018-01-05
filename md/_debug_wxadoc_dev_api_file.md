@@ -1091,6 +1091,6 @@
 
 </div>
 
-[](api-live-pusher.html)[](file.html#wxsavefileobject)</div>
+[](api-live-pusher.html)[](getFileInfo.html)</div>
 
 </div>
