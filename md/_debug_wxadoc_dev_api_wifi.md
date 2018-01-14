@@ -10,7 +10,9 @@
 
 *   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [小程序开发](javascript:;)
+    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
 *   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
@@ -1005,21 +1007,19 @@
 
 **示例代码：**
 
-    wx.onGetWifiList({
-      success: function(res) {
-        if (res.wifiList.length) {
-          wx.setWifiList({
-            wifiList: [{
-              SSID: res.wifiList[0].SSID,
-              BSSID: res.wifiList[0].BSSID,
-              password: '123456'
-            }]
-          })
-        } else {
-          wx.setWifiList({
-            wifiList: []
-          })
-        }
+    wx.onGetWifiList(function(res) {
+      if (res.wifiList.length) {
+        wx.setWifiList({
+          wifiList: [{
+            SSID: res.wifiList[0].SSID,
+            BSSID: res.wifiList[0].BSSID,
+            password: '123456'
+          }]
+        })
+      } else {
+        wx.setWifiList({
+          wifiList: []
+        })
       }
     })
     wx.getWifiList()
@@ -1489,6 +1489,6 @@
 
 </div>
 
-[](nfc.html#wx.sendhcemessageobject)[](wifi.html#wxstartwifiobject)</div>
+[](nfc.html#wx.sendhcemessageobject)[](api-react.html)</div>
 
 </div>

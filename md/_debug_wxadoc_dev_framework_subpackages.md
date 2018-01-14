@@ -10,7 +10,9 @@
 
 *   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [小程序开发](javascript:;)
+    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
 *   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
@@ -120,7 +122,7 @@
 
 # 分包加载
 
-> 微信 6.6 客户端，1.7.0 及以上基础库开始支持，请更新至最新客户端版本，开发者工具请使用 1.01.1712150 及以上版本，可[点此下载](../devtools/download.html)
+> 微信 6.6 客户端，1.7.3 及以上基础库开始支持，请更新至最新客户端版本，开发者工具请使用 1.01.1712150 及以上版本，可[点此下载](../devtools/download.html)
 
 某些情况下，开发者需要将小程序划分成不同的子包，在构建时打包成不同的分包，用户在使用时按需进行加载。
 

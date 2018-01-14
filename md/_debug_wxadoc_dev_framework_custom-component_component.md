@@ -10,7 +10,9 @@
 
 *   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [小程序开发](javascript:;)
+    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
 *   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
@@ -444,7 +446,7 @@ Component构造器可用于定义组件，调用Component构造器时可以指�
         myProperty: { // 属性名
           type: String, // 类型（必填），目前接受的类型包括：String, Number, Boolean, Object, Array, null（表示任意类型）
           value: '', // 属性初始值（可选），如果未指定则会根据类型选择一个
-          observer: function(newVal, oldVal){} // 属性被改变时执行的函数（可选），也可以写成在methods段中定义的方法名字符串
+          observer: function(newVal, oldVal){} // 属性被改变时执行的函数（可选），也可以写成在methods段中定义的方法名字符串, 如：'_propertyChange'
         },
         myProperty2: String // 简化的定义方式
       },
@@ -465,6 +467,9 @@ Component构造器可用于定义组件，调用Component构造器时可以指�
           // 内部方法建议以下划线开头
           this.replaceDataOnPath(['A', 0, 'B'], 'myPrivateData') // 这里将 data.A[0].B 设为 'myPrivateData'
           this.applyDataUpdates()
+        },
+        _propertyChange: function(newVal, oldVal) {
+
         }
       }
 

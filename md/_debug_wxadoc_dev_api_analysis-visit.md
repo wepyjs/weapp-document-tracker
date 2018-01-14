@@ -10,7 +10,9 @@
 
 *   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [小程序开发](javascript:;)
+    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
 *   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
@@ -1163,6 +1165,10 @@
 > 26：小程序客服消息
 > 
 > 27：公众号下发
+> 
+> 28: 会话左下角菜单
+> 
+> 29: 小程序任务栏
 
 访问时长：(index="access_staytime_info")
 
@@ -2122,6 +2128,6 @@
 
 </div>
 
-[](analysis.html#概况趋势)[](analysis-visit.html#访问趋势)</div>
+[](analysis.html#概况趋势)[](analysis-user.html)</div>
 
 </div>

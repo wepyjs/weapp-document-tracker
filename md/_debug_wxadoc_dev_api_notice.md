@@ -10,7 +10,9 @@
 
 *   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [小程序开发](javascript:;)
+    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
 *   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
@@ -1475,6 +1477,6 @@ access_token 是全局唯一接口调用凭据，开发者调用各接口时都�
 
 </div>
 
-[](api-pay.html#wxrequestpaymentobject)[](notice.html#使用说明)</div>
+[](api-pay.html#wxrequestpaymentobject)[](custommsg/receive.html)</div>
 
 </div>

@@ -10,7 +10,9 @@
 
 *   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [小程序开发](javascript:;)
+    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
 *   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
@@ -105,18 +107,14 @@
 
 <section class="normal markdown-section">
 
-### 2017.12.15 开发工具更新
+### 2018.01.08 开发工具更新
 
-1.  `A` 新增 命令行调用工具执行打开、预览、上传等功能 [详情](cli.html)
-2.  `A` 新增 通过 HTTP 调用工具执行打开、预览、上传等功能 [详情](http.html)
-3.  `A` 新增 编辑器 Git 支持 [详情](edit.html)
-4.  `A` 新增 第三方平台 `ext.json` 新增 `directCommit` 字段,用于直接代小程序提交审核 [详情](ext.html)
-5.  `A` 新增 WXML 面板属性自动补全
-6.  `U` 更新 编辑器自动补全
-7.  `U` 优化 提升预览上传性能，预览时展示正在编译的文件
-8.  `U` 优化 增加预览上传队列，优化频繁预览上传的性能
-9.  `U` 优化 项目列表小程序封面截图策略与性能
-10.  `U` 优化 创建项目时目录不合法的提示
+1.  `A` 新增 支持小程序新版菜单
+2.  `F` 修复 分包中页面 json 文件无效的问题
+3.  `F` 修复 windows 系统环境变量中有 http_proxy 字段时，无法显示登录二维码的问题。
+4.  `F` 修复 windows 登录界面设置手动代理，输入字符后自动失去焦点的问题
+5.  `F` 修复 `<web-view/>` 页面无法调用 JS-SDK 接口的问题
+6.  `F` 修复 游戏体验模式时不校验安全域名
 
 ## 历史更新日志
 

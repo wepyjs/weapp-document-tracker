@@ -10,7 +10,9 @@
 
 *   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [小程序开发](javascript:;)
+    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
 *   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
@@ -124,6 +126,23 @@
 <div class="search-noresults">
 
 <section class="normal markdown-section">
+
+### 历史版本下载 2017.08.30 (0.22.203100)
+
+[windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_darwin&from=mpwiki)
+
+### 2017.12.15 开发工具更新
+
+1.  `A` 新增 命令行调用工具执行打开、预览、上传等功能 [详情](cli.html)
+2.  `A` 新增 通过 HTTP 调用工具执行打开、预览、上传等功能 [详情](http.html)
+3.  `A` 新增 编辑器 Git 展示支持 [详情](edit.html)
+4.  `A` 新增 第三方平台 `ext.json` 新增 `directCommit` 字段,用于直接代小程序提交审核 [详情](ext.html)
+5.  `A` 新增 WXML 面板属性自动补全
+6.  `U` 更新 编辑器自动补全
+7.  `U` 优化 提升预览上传性能，预览时展示正在编译的文件
+8.  `U` 优化 增加预览上传队列，优化频繁预览上传的性能
+9.  `U` 优化 项目列表小程序封面截图策略与性能
+10.  `U` 优化 创建项目时目录不合法的提示
 
 ### 2017.12.07 基础库更新（1.7.0）
 

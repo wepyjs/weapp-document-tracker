@@ -10,7 +10,9 @@
 
 *   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [小程序开发](javascript:;)
+    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
 *   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
@@ -454,6 +456,14 @@
 
 <tr>
 
+<td>1057</td>
+
+<td>钱包中的银行卡详情页</td>
+
+</tr>
+
+<tr>
+
 <td>1058</td>
 
 <td>公众号文章</td>
@@ -472,7 +482,7 @@
 
 <td>1064</td>
 
-<td>微信连Wifi状态栏</td>
+<td>微信连Wi-Fi状态栏</td>
 
 </tr>
 
@@ -489,6 +499,14 @@
 <td>1068</td>
 
 <td>附近小程序列表广告</td>
+
+</tr>
+
+<tr>
+
+<td>1071</td>
+
+<td>钱包中的银行卡列表页</td>
 
 </tr>
 
@@ -513,6 +531,38 @@
 <td>1074</td>
 
 <td>公众号会话下发的小程序消息卡片</td>
+
+</tr>
+
+<tr>
+
+<td>1078</td>
+
+<td>连Wi-Fi成功页</td>
+
+</tr>
+
+<tr>
+
+<td>1089</td>
+
+<td>微信聊天主界面下拉</td>
+
+</tr>
+
+<tr>
+
+<td>1090</td>
+
+<td>长按小程序右上角菜单唤出最近使用历史</td>
+
+</tr>
+
+<tr>
+
+<td>1092</td>
+
+<td>城市服务入口</td>
 
 </tr>
 
