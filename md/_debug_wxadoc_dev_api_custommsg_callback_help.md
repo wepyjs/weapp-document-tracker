@@ -231,6 +231,15 @@
         *   [wx.showNavigationBarLoading](../ui.html#wxshownavigationbarloading)
         *   [wx.hideNavigationBarLoading](../ui.html#wxhidenavigationbarloading)
         *   [wx.setNavigationBarColor](../setNavigationBarColor.html)
+    *   [设置tabBar](../ui-tabbar.html)
+        *   [wx.setTabBarBadge](../ui-tabbar.html#wxsettabbarbadgeobject)
+        *   [wx.removeTabBarBadge](../ui-tabbar.html#wxremovetabbarbadgeobject)
+        *   [wx.showTabBarRedDot](../ui-tabbar.html#wxshowtabbarreddotobject)
+        *   [wx.hideTabBarRedDot](../ui-tabbar.html#wxhidetabbarreddotobject)
+        *   [wx.setTabBarStyle](../ui-tabbar.html#wxsettabbarstyleobject)
+        *   [wx.setTabBarItem](../ui-tabbar.html#wxsettabbaritemobject)
+        *   [wx.showTabBar](../ui-tabbar.html#wxshowtabbarobject)
+        *   [wx.hideTabBar](../ui-tabbar.html#wxhidetabbarobject)
     *   [设置置顶信息](../ui.html#wxsettopbartextobject)
         *   [wx.setTopBarText](../ui.html#wxsettopbartextobject)
     *   [导航](../ui-navigate.html)
@@ -254,6 +263,8 @@
         *   [wx.createContext](../canvas/create-context.html)
         *   [wx.drawCanvas](../canvas/draw-canvas.html)
         *   [wx.canvasToTempFilePath](../canvas/temp-file.html)
+        *   [wx.canvasGetImageData](../canvas/get-image-data.html)
+        *   [wx.canvasPutImageData](../canvas/put-image-data.html)
         *   [setFillStyle](../canvas/set-fill-style.html)
         *   [setStrokeStyle](../canvas/set-stroke-style.html)
         *   [setShadow](../canvas/set-shadow.html)
@@ -371,6 +382,7 @@
         *   [wx.checkIsSoterEnrolledInDevice](../checkIsSoterEnrolledInDevice.html)
     *   [附近](../nearby.html)
         *   [添加地点](../nearby.html#添加地点)
+        *   [查看地点列表](../nearby.html#查看地点列表)
         *   [删除地点](../nearby.html#删除地点)
         *   [展示/取消展示附近小程序](../nearby.html#展示取消展示附近小程序)
 *   [数据](../analysis.html)
@@ -424,7 +436,7 @@
 
 URL是开发者用来接收微信消息和事件的接口URL。 Token可由开发者可以任意填写，用作生成签名（该Token会和接口URL中包含的Token进行比对，从而验证安全性）。 EncodingAESKey由开发者手动填写或随机生成，将用作消息体加解密密钥。
 
-同时，开发者可选择消息加解密方式：明文模式、兼容模式和安全模式。可以选择消息数据格式：XML格式或JSON格式。加密方式的默认状态是明问格式，而数据格式的默认状态是XML格式。
+同时，开发者可选择消息加解密方式：明文模式、兼容模式和安全模式。可以选择消息数据格式：XML格式或JSON格式。加密方式的默认状态是明文格式，而数据格式的默认状态是XML格式。
 
 模式的选择与服务器配置在提交后都会立即生效，请开发者谨慎填写及选择。切换加密方式和数据格式需要提前配置好相关代码，详情请参考[消息加解密说明](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419318479&token=&lang=zh_CN)。
 

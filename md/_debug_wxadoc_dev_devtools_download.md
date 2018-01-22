@@ -131,14 +131,30 @@
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
 
-### 2018.01.08 开发工具更新
+### 2018.01.16 基础库更新（1.9.0）
 
-1.  `A` 新增 支持小程序新版菜单
-2.  `F` 修复 分包中页面 json 文件无效的问题
-3.  `F` 修复 windows 系统环境变量中有 http_proxy 字段时，无法显示登录二维码的问题。
-4.  `F` 修复 windows 登录界面设置手动代理，输入字符后自动失去焦点的问题
-5.  `F` 修复 `<web-view/>` 页面无法调用 JS-SDK 接口的问题
-6.  `F` 修复 游戏体验模式时不校验安全域名
+1.  `A` 新增 API tabBar 相关接口 [详情](../api/ui-tabbar.html)
+2.  `A` 新增 API `wx.canvasGetImageData` 可返回 `<canvas />` 的像素数据 [详情](../api/canvas/get-image-data.html)
+3.  `A` 新增 API `wx.canvasPutImageData` 可将像素数据绘制到 `<canvas />` [详情](../api/canvas/put-image-data.html)
+4.  `U` 更新 组件 `<swiper />` 增加 `current-item-id`、`previous-margin`、`next-margin`、`display-multiple-items`、`skip-hidden-item-layout`、`bindanimationfinish` 属性 [详情](../component/swiper.html)
+5.  `U` 更新 组件 `<input />` 支持 selection 选区 [详情](../component/input.html)
+6.  `U` 更新 组件 `<textarea />` 支持 selection 选区 [详情](../component/textarea.html)
+7.  `U` 更新 组件 `<live-player />` 增加 `bindnetstatus` 事件 [详情](../component/live-player.html)
+8.  `U` 更新 组件 `<live-pusher />` 增加 `bindnetstatus` 事件 [详情](../component/live-pusher.html)
+9.  `U` 更新 组件 `<video />` 可对控制栏进行更细粒度控制 [详情](../component/video.html)
+10.  `U` 更新 组件 `<slider />` 支持 `block-size` 设置滑块尺寸和 `block-color` 设置滑块颜色 [详情](../component/slider.html)
+11.  `U` 更新 API 背景音频接口 `backgroundAudioManager` 支持直播流音频
+12.  `U` 更新 API `canvasContext.drawImage` 支持从源图像裁剪后再画到 `<canvas />` [详情](../api/canvas/draw-image.html)
+13.  `U` 更新 API `wx.showToast` 文本统一限制为 7 个汉字长度，并增加无 icon 类型 [详情](../api/api-react.html)
+14.  `F` 修复 API `wx.chooseVideo` 接口的 `compressed` 参数不生效的问题
+15.  `F` 修复 API WebSocket 接口在 Android 下服务连接失败的时候，没有立刻触发 `error` 和 `close` 事件，而是等到超时
+16.  `F` 修复 API Android 背景音频接口 `backgroundAudioManager` 不能播放本地文件的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=c7b223db52aff88b3c3a15f2fb5ddfc6)
+17.  `F` 修复 API `wx.setEnableDebug` 接口在 Android 下会导致小程序一直在重启的问题
+18.  `F` 修复 API `wx.showToast` 在 iOS 下连续调用两次再调用 `wx.hideToast` 时遮罩层没去掉的问题
+19.  `F` 修复 API `wx.startPullDownRefresh` 在 iOS 下没有触发 `onPullDownRefresh` 事件的问题
+20.  `F` 修复 API `wx.previewImage` 在 Android 下长按GIF发送后退出小程序的问题
+21.  `F` 修复 API `wx.pageScrollTo` 导致 fixed 元素闪动的问题，并增加 `duration` 参数 [详情](../api/scroll.html)
+22.  `F` 修复 自定义组件通过动态设置的回调方法时会执行两遍的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=915568549&docid=037127b97509bc7eff550b9e7b94765d)
 
 ### 上一版本下载地址 (1.01.1712150)
 

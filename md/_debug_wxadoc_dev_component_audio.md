@@ -100,8 +100,6 @@
 *   [开放能力](open-data.html)
     *   [open-data](open-data.html)
     *   [web-view](web-view.html)
-*   [客服会话](contact-button.html)
-    *   [contact-button](contact-button.html)
 
 </nav>
 
@@ -313,7 +311,7 @@
 
 <tr>
 
-<td>MEDIA_ERR_ABORTED</td>
+<td>1</td>
 
 <td>获取资源被用户禁止</td>
 
@@ -321,7 +319,7 @@
 
 <tr>
 
-<td>MEDIA_ERR_NETWORD</td>
+<td>2</td>
 
 <td>网络错误</td>
 
@@ -329,7 +327,7 @@
 
 <tr>
 
-<td>MEDIA_ERR_DECODE</td>
+<td>3</td>
 
 <td>解码错误</td>
 
@@ -337,7 +335,7 @@
 
 <tr>
 
-<td>MEDIA_ERR_SRC_NOT_SUPPOERTED</td>
+<td>4</td>
 
 <td>不合适资源</td>
 

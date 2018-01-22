@@ -155,7 +155,20 @@
             
         </li>
     
-        <li class="chapter  " data-level="1.1.1.3" data-path="tutorial/base/module.html" data-name="&#x6A21;&#x5757;&#x5316;">
+        <li class="chapter  " data-level="1.1.1.3" data-path="tutorial/base/engine.html" data-name="&#x5BF9;&#x5F15;&#x64CE;&#x7684;&#x652F;&#x6301;">
+            
+                <a href="tutorial/base/engine.html">
+            
+                    
+                    &#x5BF9;&#x5F15;&#x64CE;&#x7684;&#x652F;&#x6301;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.4" data-path="tutorial/base/module.html" data-name="&#x6A21;&#x5757;&#x5316;">
             
                 <a href="tutorial/base/module.html">
             
@@ -316,7 +329,20 @@
             
         </li>
     
-        <li class="chapter  " data-level="1.1.4.3" data-path="tutorial/open-ability/share.html" data-name="&#x8F6C;&#x53D1;">
+        <li class="chapter  " data-level="1.1.4.3" data-path="tutorial/open-ability/qrcode.html" data-name="&#x83B7;&#x53D6;&#x4E8C;&#x7EF4;&#x7801;">
+            
+                <a href="tutorial/open-ability/qrcode.html">
+            
+                    
+                    &#x83B7;&#x53D6;&#x4E8C;&#x7EF4;&#x7801;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.4.4" data-path="tutorial/open-ability/share.html" data-name="&#x8F6C;&#x53D1;">
             
                 <a href="tutorial/open-ability/share.html">
             
@@ -329,7 +355,7 @@
             
         </li>
     
-        <li class="chapter  " data-level="1.1.4.4" data-path="tutorial/open-ability/signature.html" data-name="&#x7528;&#x6237;&#x6570;&#x636E;&#x7684;&#x7B7E;&#x540D;&#x9A8C;&#x8BC1;&#x548C;&#x52A0;&#x89E3;&#x5BC6;">
+        <li class="chapter  " data-level="1.1.4.5" data-path="tutorial/open-ability/signature.html" data-name="&#x7528;&#x6237;&#x6570;&#x636E;&#x7684;&#x7B7E;&#x540D;&#x9A8C;&#x8BC1;&#x548C;&#x52A0;&#x89E3;&#x5BC6;">
             
                 <a href="tutorial/open-ability/signature.html">
             
@@ -580,7 +606,25 @@ wx.onTouchCancel(<span class="hljs-function"><span class="hljs-keyword">function
     <span class="hljs-built_in">console</span>.log(e.touches)
 })
 </code></pre>
+<h4 id="&#x5168;&#x5C40;&#x5BF9;&#x8C61;">&#x5168;&#x5C40;&#x5BF9;&#x8C61;</h4>
+<p>window &#x5BF9;&#x8C61;&#x662F;&#x6D4F;&#x89C8;&#x5668;&#x73AF;&#x5883;&#x4E0B;&#x7684;&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#x3002;&#x5C0F;&#x6E38;&#x620F;&#x7684;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x4E2D;&#x6CA1;&#x6709; BOM API&#xFF0C;&#x56E0;&#x6B64;&#x6CA1;&#x6709; window &#x5BF9;&#x8C61;&#x3002;&#x4F46;&#x662F;&#x63D0;&#x4F9B;&#x4E86;&#x5168;&#x5C40;&#x5BF9;&#x8C61; GameGlobal&#xFF0C;&#x6240;&#x6709;&#x5168;&#x5C40;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x90FD;&#x662F; GameGlobal &#x7684;&#x5C5E;&#x6027;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(GameGlobal.setTimeout === setTimeout)
+<span class="hljs-built_in">console</span>.log(GameGlobal.requestAnimationFrame === requestAnimationFrame)
+<span class="hljs-comment">// true</span>
+</code></pre>
+<p>&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x628A;&#x81EA;&#x5DF1;&#x5C01;&#x88C5;&#x7684;&#x7C7B;&#x548C;&#x51FD;&#x6570;&#x6302;&#x8F7D;&#x5230; GameGlobal &#x4E0A;&#x3002;</p>
+<pre><code class="lang-javascript">GameGlobal.render = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">//&#x7701;&#x7565;&#x65B9;&#x6CD5;&#x7684;&#x5177;&#x4F53;&#x5B9E;&#x73B0;...</span>
+}
 
+render()
+</code></pre>
+<p>GameGlobal &#x662F;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#xFF0C;&#x672C;&#x8EAB;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x5B58;&#x5728;&#x5FAA;&#x73AF;&#x5F15;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(GameGlobal === GameGlobal.GameGlobal)
+</code></pre>
+<p>console.log &#x65E0;&#x6CD5;&#x5728;&#x771F;&#x673A;&#x4E0A;&#x5C06;&#x5B58;&#x5728;&#x5FAA;&#x73AF;&#x5F15;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#x8F93;&#x51FA;&#x5230; vConsole &#x4E2D;&#x3002;&#x56E0;&#x6B64;&#x771F;&#x673A;&#x8C03;&#x8BD5;&#x65F6;&#x8BF7;&#x6CE8;&#x91CA; console.log(GameGlobal) &#x8FD9;&#x6837;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5426;&#x5219;&#x5C06;&#x4F1A;&#x4EA7;&#x751F;&#x8FD9;&#x6837;&#x7684;&#x9519;&#x8BEF;</p>
+<pre><code>An object width circular reference can&apos;t be logged
+</code></pre>
                                 
                                 </section>
                             

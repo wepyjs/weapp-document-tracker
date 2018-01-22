@@ -231,6 +231,15 @@
         *   [wx.showNavigationBarLoading](ui.html#wxshownavigationbarloading)
         *   [wx.hideNavigationBarLoading](ui.html#wxhidenavigationbarloading)
         *   [wx.setNavigationBarColor](setNavigationBarColor.html)
+    *   [设置tabBar](ui-tabbar.html)
+        *   [wx.setTabBarBadge](ui-tabbar.html#wxsettabbarbadgeobject)
+        *   [wx.removeTabBarBadge](ui-tabbar.html#wxremovetabbarbadgeobject)
+        *   [wx.showTabBarRedDot](ui-tabbar.html#wxshowtabbarreddotobject)
+        *   [wx.hideTabBarRedDot](ui-tabbar.html#wxhidetabbarreddotobject)
+        *   [wx.setTabBarStyle](ui-tabbar.html#wxsettabbarstyleobject)
+        *   [wx.setTabBarItem](ui-tabbar.html#wxsettabbaritemobject)
+        *   [wx.showTabBar](ui-tabbar.html#wxshowtabbarobject)
+        *   [wx.hideTabBar](ui-tabbar.html#wxhidetabbarobject)
     *   [设置置顶信息](ui.html#wxsettopbartextobject)
         *   [wx.setTopBarText](ui.html#wxsettopbartextobject)
     *   [导航](ui-navigate.html)
@@ -254,6 +263,8 @@
         *   [wx.createContext](canvas/create-context.html)
         *   [wx.drawCanvas](canvas/draw-canvas.html)
         *   [wx.canvasToTempFilePath](canvas/temp-file.html)
+        *   [wx.canvasGetImageData](canvas/get-image-data.html)
+        *   [wx.canvasPutImageData](canvas/put-image-data.html)
         *   [setFillStyle](canvas/set-fill-style.html)
         *   [setStrokeStyle](canvas/set-stroke-style.html)
         *   [setShadow](canvas/set-shadow.html)
@@ -371,6 +382,7 @@
         *   [wx.checkIsSoterEnrolledInDevice](checkIsSoterEnrolledInDevice.html)
     *   [附近](nearby.html)
         *   [添加地点](nearby.html#添加地点)
+        *   [查看地点列表](nearby.html#查看地点列表)
         *   [删除地点](nearby.html#删除地点)
         *   [展示/取消展示附近小程序](nearby.html#展示取消展示附近小程序)
 *   [数据](analysis.html)
@@ -456,7 +468,7 @@
 
 <td>否</td>
 
-<td>图标，有效值 "success", "loading"</td>
+<td>图标，有效值 "success", "loading", "none"</td>
 
 <td></td>
 
@@ -541,6 +553,60 @@
 <td>否</td>
 
 <td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**icon有效值**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>有效值</th>
+
+<th>说明</th>
+
+<th>最低版本</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>success</td>
+
+<td>显示成功图标，此时 title 文本最多显示 7 个汉字长度。默认值</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>loading</td>
+
+<td>显示加载图标，此时 title 文本最多显示 7 个汉字长度。</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>none</td>
+
+<td>不显示图标，此时 title 文本最多可显示两行</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

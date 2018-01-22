@@ -231,6 +231,15 @@
         *   [wx.showNavigationBarLoading](../ui.html#wxshownavigationbarloading)
         *   [wx.hideNavigationBarLoading](../ui.html#wxhidenavigationbarloading)
         *   [wx.setNavigationBarColor](../setNavigationBarColor.html)
+    *   [设置tabBar](../ui-tabbar.html)
+        *   [wx.setTabBarBadge](../ui-tabbar.html#wxsettabbarbadgeobject)
+        *   [wx.removeTabBarBadge](../ui-tabbar.html#wxremovetabbarbadgeobject)
+        *   [wx.showTabBarRedDot](../ui-tabbar.html#wxshowtabbarreddotobject)
+        *   [wx.hideTabBarRedDot](../ui-tabbar.html#wxhidetabbarreddotobject)
+        *   [wx.setTabBarStyle](../ui-tabbar.html#wxsettabbarstyleobject)
+        *   [wx.setTabBarItem](../ui-tabbar.html#wxsettabbaritemobject)
+        *   [wx.showTabBar](../ui-tabbar.html#wxshowtabbarobject)
+        *   [wx.hideTabBar](../ui-tabbar.html#wxhidetabbarobject)
     *   [设置置顶信息](../ui.html#wxsettopbartextobject)
         *   [wx.setTopBarText](../ui.html#wxsettopbartextobject)
     *   [导航](../ui-navigate.html)
@@ -254,6 +263,8 @@
         *   [wx.createContext](create-context.html)
         *   [wx.drawCanvas](draw-canvas.html)
         *   [wx.canvasToTempFilePath](temp-file.html)
+        *   [wx.canvasGetImageData](get-image-data.html)
+        *   [wx.canvasPutImageData](put-image-data.html)
         *   [setFillStyle](set-fill-style.html)
         *   [setStrokeStyle](set-stroke-style.html)
         *   [setShadow](set-shadow.html)
@@ -371,6 +382,7 @@
         *   [wx.checkIsSoterEnrolledInDevice](../checkIsSoterEnrolledInDevice.html)
     *   [附近](../nearby.html)
         *   [添加地点](../nearby.html#添加地点)
+        *   [查看地点列表](../nearby.html#查看地点列表)
         *   [删除地点](../nearby.html#删除地点)
         *   [展示/取消展示附近小程序](../nearby.html#展示取消展示附近小程序)
 *   [数据](../analysis.html)
@@ -410,7 +422,7 @@
 
 ### 定义
 
-绘制图像，图像保持原始尺寸。
+绘制图像到画布。
 
 ### 参数
 
@@ -444,47 +456,93 @@
 
 <tr>
 
-<td>x</td>
+<td>dx</td>
 
 <td>Number</td>
 
-<td>图像左上角的x坐标</td>
+<td>图像的左上角在目标canvas上 X 轴的位置</td>
 
 </tr>
 
 <tr>
 
-<td>y</td>
+<td>dy</td>
 
 <td>Number</td>
 
-<td>图像左上角的y坐标</td>
+<td>图像的左上角在目标canvas上 Y 轴的位置</td>
 
 </tr>
 
 <tr>
 
-<td>width</td>
+<td>dWidth</td>
 
 <td>Number</td>
 
-<td>图像宽度</td>
+<td>在目标画布上绘制图像的宽度，允许对绘制的图像进行缩放</td>
 
 </tr>
 
 <tr>
 
-<td>height</td>
+<td>dHeigt</td>
 
 <td>Number</td>
 
-<td>图像高度</td>
+<td>在目标画布上绘制图像的高度，允许对绘制的图像进行缩放</td>
+
+</tr>
+
+<tr>
+
+<td>sx</td>
+
+<td>Number</td>
+
+<td>源图像的矩形选择框的左上角 X 坐标</td>
+
+</tr>
+
+<tr>
+
+<td>sy</td>
+
+<td>Number</td>
+
+<td>源图像的矩形选择框的左上角 Y 坐标</td>
+
+</tr>
+
+<tr>
+
+<td>sWidth</td>
+
+<td>Number</td>
+
+<td>源图像的矩形选择框的高度</td>
+
+</tr>
+
+<tr>
+
+<td>sHeight</td>
+
+<td>Number</td>
+
+<td>源图像的矩形选择框的高度</td>
 
 </tr>
 
 </tbody>
 
 </table>
+
+**有三个版本的写法：**
+
+*   drawImage(dx, dy)
+*   drawImage(dx, dy, dWidth, dHeight)
+*   drawImage(sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight) **从 1.9.0 起支持**
 
 ### 例子
 

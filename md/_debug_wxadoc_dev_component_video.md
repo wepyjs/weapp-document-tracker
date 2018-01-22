@@ -100,8 +100,6 @@
 *   [开放能力](open-data.html)
     *   [open-data](open-data.html)
     *   [web-view](web-view.html)
-*   [客服会话](contact-button.html)
-    *   [contact-button](contact-button.html)
 
 </nav>
 
@@ -312,6 +310,76 @@
 <td>设置全屏时视频的方向，不指定则根据宽高比自动判断。有效值为 0（正常竖向）, 90（屏幕逆时针90度）, -90（屏幕顺时针90度）</td>
 
 <td>[1.7.0](../framework/compatibility.html "基础库 1.7.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>show-progress</td>
+
+<td>Boolean</td>
+
+<td>true</td>
+
+<td>若不设置，宽度大于240时才会显示</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>show-fullscreen-btn</td>
+
+<td>Boolean</td>
+
+<td>true</td>
+
+<td>是否显示全屏按钮</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>show-play-btn</td>
+
+<td>Boolean</td>
+
+<td>true</td>
+
+<td>是否显示视频底部控制栏的播放按钮</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>show-center-play-btn</td>
+
+<td>Boolean</td>
+
+<td>true</td>
+
+<td>是否显示视频中间的播放按钮</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>enableProgressGesture</td>
+
+<td>Boolean</td>
+
+<td>true</td>
+
+<td>是否开启控制进度的手势</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

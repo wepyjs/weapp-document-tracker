@@ -806,6 +806,11 @@
 <td>&#x9875;&#x9762;&#x6EDA;&#x52A8;&#x89E6;&#x53D1;&#x4E8B;&#x4EF6;&#x7684;&#x5904;&#x7406;&#x51FD;&#x6570;</td>
 </tr>
 <tr>
+<td>onTabItemTap</td>
+<td>Function</td>
+<td>&#x5F53;&#x524D;&#x662F; tab &#x9875;&#x65F6;&#xFF0C;&#x70B9;&#x51FB; tab &#x65F6;&#x89E6;&#x53D1;</td>
+</tr>
+<tr>
 <td>&#x5176;&#x4ED6;</td>
 <td>Any</td>
 <td>&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4EFB;&#x610F;&#x7684;&#x51FD;&#x6570;&#x6216;&#x6570;&#x636E;&#x5230; object &#x53C2;&#x6570;&#x4E2D;&#xFF0C;&#x5728;&#x9875;&#x9762;&#x7684;&#x51FD;&#x6570;&#x4E2D;&#x7528; <code>this</code> &#x53EF;&#x4EE5;&#x8BBF;&#x95EE;</td>
@@ -845,6 +850,11 @@ Page({
   },
   onPageScroll: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-comment">// Do something when page scroll</span>
+  },
+  onTabItemTap(item) {
+    <span class="hljs-built_in">console</span>.log(item.index)
+    <span class="hljs-built_in">console</span>.log(item.pagePath)
+    <span class="hljs-built_in">console</span>.log(item.text)
   },
   <span class="hljs-comment">// Event handler.</span>
   viewTap: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{

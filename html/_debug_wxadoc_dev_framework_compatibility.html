@@ -771,15 +771,16 @@
 })
 </code></pre>
 <h3 id="&#x517C;&#x5BB9;&#x65B9;&#x5F0F;---&#x7EC4;&#x4EF6;">&#x517C;&#x5BB9;&#x65B9;&#x5F0F; - &#x7EC4;&#x4EF6;</h3>
-<p>&#x5BF9;&#x4E8E;&#x7EC4;&#x4EF6;&#xFF0C;&#x65B0;&#x589E;&#x7684;&#x5C5E;&#x6027;&#x5728;&#x65E7;&#x7248;&#x672C;&#x4E0A;&#x4E0D;&#x4F1A;&#x88AB;&#x5904;&#x7406;&#xFF0C;&#x4E0D;&#x8FC7;&#x4E5F;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;&#x3002;&#x5982;&#x679C;&#x7279;&#x6B8A;&#x573A;&#x666F;&#x9700;&#x8981;&#x5BF9;&#x65E7;&#x7248;&#x672C;&#x505A;&#x4E00;&#x4E9B;&#x964D;&#x7EA7;&#x5904;&#x7406;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x5B50;&#x505A;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x7EC4;&#x4EF6;&#xFF0C;&#x65B0;&#x589E;&#x7684;&#x7EC4;&#x4EF6;&#x6216;&#x5C5E;&#x6027;&#x5728;&#x65E7;&#x7248;&#x672C;&#x4E0A;&#x4E0D;&#x4F1A;&#x88AB;&#x5904;&#x7406;&#xFF0C;&#x4E0D;&#x8FC7;&#x4E5F;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;&#x3002;&#x5982;&#x679C;&#x7279;&#x6B8A;&#x573A;&#x666F;&#x9700;&#x8981;&#x5BF9;&#x65E7;&#x7248;&#x672C;&#x505A;&#x4E00;&#x4E9B;&#x964D;&#x7EA7;&#x5904;&#x7406;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x5B50;&#x505A;&#x3002;</p>
 <pre><code class="lang-js">Page({
   data: {
-    canIUse: wx.canIUse(<span class="hljs-string">&apos;button.open-type.contact&apos;</span>)
+    canIUse: wx.canIUse(<span class="hljs-string">&apos;cover-view&apos;</span>)
   }
 })
 </code></pre>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">wx:if</span>=<span class="hljs-string">&quot;{{canIUse}}&quot;</span> <span class="hljs-attr">open-type</span>=<span class="hljs-string">&quot;contact&quot;</span>&gt;</span> &#x5BA2;&#x670D;&#x6D88;&#x606F; <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">contact-button</span> <span class="hljs-attr">wx:else</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">contact-button</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot;{{!canIUse}}&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">cover-view</span> <span class="hljs-attr">wx:if</span>=<span class="hljs-string">&quot;{{canIUse}}&quot;</span>&gt;</span>play<span class="hljs-tag">&lt;/<span class="hljs-name">cover-view</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span>
 </code></pre>
 
                                 

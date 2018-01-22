@@ -100,8 +100,6 @@
 *   [开放能力](open-data.html)
     *   [open-data](open-data.html)
     *   [web-view](web-view.html)
-*   [客服会话](contact-button.html)
-    *   [contact-button](contact-button.html)
 
 </nav>
 
@@ -153,9 +151,21 @@ web-view 组件是一个可以用来承载网页的容器，会自动铺满整�
 
 <td>String</td>
 
-<td>none</td>
+<td></td>
 
 <td>webview 指向网页的链接。需登录[小程序管理后台](https://mp.weixin.qq.com/)配置域名白名单。</td>
+
+</tr>
+
+<tr>
+
+<td>bindmessage</td>
+
+<td>EventHandler</td>
+
+<td></td>
+
+<td>网页向小程序 postMessage 时，会在特定时机（小程序后退、组件销毁、分享）触发并收到消息。e.detail = { data }</td>
 
 </tr>
 
@@ -171,7 +181,7 @@ web-view 组件是一个可以用来承载网页的容器，会自动铺满整�
 
 ##### 相关接口 1
 
-`<web-view/>`网页中可使用[JSSDK 1.3.0](https://res.wx.qq.com/open/js/jweixin-1.3.0.js)提供的接口返回小程序页面。 支持的接口有：
+`<web-view/>`网页中可使用[JSSDK 1.3.1](https://res.wx.qq.com/open/js/jweixin-1.3.0.js)提供的接口返回小程序页面。 支持的接口有：
 
 <table>
 
@@ -241,6 +251,26 @@ web-view 组件是一个可以用来承载网页的容器，会自动铺满整�
 
 </tr>
 
+<tr>
+
+<td>wx.miniProgram.postMessage</td>
+
+<td>向小程序发送消息</td>
+
+<td>[1.7.1](../framework/compatibility.html "基础库 1.7.1 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>wx.miniProgram.getEnv</td>
+
+<td>获取当前环境</td>
+
+<td>[1.7.1](../framework/compatibility.html "基础库 1.7.1 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -252,6 +282,9 @@ web-view 组件是一个可以用来承载网页的容器，会自动铺满整�
 
     // javascript
     wx.miniProgram.navigateTo({url: '/path/to/page'})
+    wx.miniProgram.postMessage({ data: 'foo' })
+    wx.miniProgram.postMessage({ data: {foo: 'bar'} })
+    wx.miniProgram.getEnv(function(res) { console.log(res.miniprogram) // true })
 
 ##### 相关接口 2
 
@@ -619,6 +652,6 @@ web-view 组件是一个可以用来承载网页的容器，会自动铺满整�
 
 </div>
 
-[](open-data.html)[](contact-button.html)</div>
+[](open-data.html)[](../api/)</div>
 
 </div>

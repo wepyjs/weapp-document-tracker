@@ -246,6 +246,16 @@
 
 <tr>
 
+<td>onTabItemTap</td>
+
+<td>Function</td>
+
+<td>当前是 tab 页时，点击 tab 时触发</td>
+
+</tr>
+
+<tr>
+
 <td>其他</td>
 
 <td>Any</td>
@@ -293,6 +303,11 @@
       },
       onPageScroll: function() {
         // Do something when page scroll
+      },
+      onTabItemTap(item) {
+        console.log(item.index)
+        console.log(item.pagePath)
+        console.log(item.text)
       },
       // Event handler.
       viewTap: function() {

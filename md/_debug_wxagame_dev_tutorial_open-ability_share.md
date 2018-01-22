@@ -59,6 +59,7 @@
 *   [基础](../../index.html)
     *   [快速上手](../../index.html)
     *   [Adapter](../base/adapter.html)
+    *   [对引擎的支持](../base/engine.html)
     *   [模块化](../base/module.html)
 *   [能力](../ability/audio.html)
     *   [音频播放](../ability/audio.html)
@@ -70,6 +71,7 @@
 *   [开放能力](authorize.html)
     *   [用户授权](authorize.html)
     *   [用户登录态签名](http-signature.html)
+    *   [获取二维码](qrcode.html)
     *   [转发](share.html)
     *   [用户数据的签名验证和加解密](signature.html)
 
@@ -190,6 +192,6 @@
 
 </div>
 
-[](http-signature.html)[](signature.html)</div>
+[](qrcode.html)[](signature.html)</div>
 
 </div>

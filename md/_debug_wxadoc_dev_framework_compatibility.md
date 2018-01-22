@@ -158,16 +158,17 @@
 
 ### 兼容方式 - 组件
 
-对于组件，新增的属性在旧版本上不会被处理，不过也不会报错。如果特殊场景需要对旧版本做一些降级处理，可以这样子做。
+对于组件，新增的组件或属性在旧版本上不会被处理，不过也不会报错。如果特殊场景需要对旧版本做一些降级处理，可以这样子做。
 
     Page({
       data: {
-        canIUse: wx.canIUse('button.open-type.contact')
+        canIUse: wx.canIUse('cover-view')
       }
     })
 
-    <button wx:if="{{canIUse}}" open-type="contact"> 客服消息 </button>
-    <contact-button wx:else></contact-button>
+    <video controls="{{!canIUse}}">
+      <cover-view wx:if="{{canIUse}}">play</cover-view>
+    </video>
 
 </section>
 

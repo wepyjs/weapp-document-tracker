@@ -100,8 +100,6 @@
 *   [开放能力](open-data.html)
     *   [open-data](open-data.html)
     *   [web-view](web-view.html)
-*   [客服会话](contact-button.html)
-    *   [contact-button](contact-button.html)
 
 </nav>
 
@@ -203,6 +201,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -219,6 +219,8 @@
 
 <td>音视频地址。目前仅支持 flv, rtmp 格式</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -230,6 +232,8 @@
 <td>live</td>
 
 <td>live（直播），RTC（实时通话）</td>
+
+<td></td>
 
 </tr>
 
@@ -243,6 +247,8 @@
 
 <td>自动播放</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -254,6 +260,8 @@
 <td>false</td>
 
 <td>是否静音</td>
+
+<td></td>
 
 </tr>
 
@@ -267,6 +275,8 @@
 
 <td>画面方向，可选值有 vertical，horizontal</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -278,6 +288,8 @@
 <td>contain</td>
 
 <td>填充模式，可选值有 contain，fillCrop</td>
+
+<td></td>
 
 </tr>
 
@@ -291,6 +303,8 @@
 
 <td>进入后台时是否静音</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -302,6 +316,8 @@
 <td>1</td>
 
 <td>最小缓冲区，单位s</td>
+
+<td></td>
 
 </tr>
 
@@ -315,6 +331,8 @@
 
 <td>最大缓冲区，单位s</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -325,7 +343,9 @@
 
 <td></td>
 
-<td>播放状态变化事件，detail = {errCode}</td>
+<td>播放状态变化事件，detail = {code}</td>
+
+<td></td>
 
 </tr>
 
@@ -339,6 +359,22 @@
 
 <td>全屏变化事件，detail = {direction, fullScreen}</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>bindnetstatus</td>
+
+<td>EventHandle</td>
+
+<td></td>
+
+<td>网络状态通知，detail = {info}</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 </tbody>
@@ -348,6 +384,7 @@
 **注意：**
 
 *   `<live-player />` 默认宽度300px、高度225px，可通过wxss设置宽高。
+*   开发者工具上暂不支持。
 *   相关api：[wx.createLivePlayerContext](../api/api-live-player.html)
 
 ##### 状态码
@@ -549,6 +586,92 @@
 <td>3005</td>
 
 <td>RTMP 读/写失败</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+##### 网络状态数据
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>键名</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>videoBitrate</td>
+
+<td>当前视频编/码器输出的比特率，单位 kbps</td>
+
+</tr>
+
+<tr>
+
+<td>audioBitrate</td>
+
+<td>当前音频编/码器输出的比特率，单位 kbps</td>
+
+</tr>
+
+<tr>
+
+<td>videoFPS</td>
+
+<td>当前视频帧率</td>
+
+</tr>
+
+<tr>
+
+<td>videoGOP</td>
+
+<td>当前视频 GOP,也就是每两个关键帧(I帧)间隔时长，单位 s</td>
+
+</tr>
+
+<tr>
+
+<td>netSpeed</td>
+
+<td>当前的发送/接收速度</td>
+
+</tr>
+
+<tr>
+
+<td>netJitter</td>
+
+<td>网络抖动情况，抖动越大，网络越不稳定</td>
+
+</tr>
+
+<tr>
+
+<td>videoWidth</td>
+
+<td>视频画面的宽度</td>
+
+</tr>
+
+<tr>
+
+<td>videoHeight</td>
+
+<td>视频画面的高度</td>
 
 </tr>
 

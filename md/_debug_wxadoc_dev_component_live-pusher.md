@@ -100,8 +100,6 @@
 *   [开放能力](open-data.html)
     *   [open-data](open-data.html)
     *   [web-view](web-view.html)
-*   [客服会话](contact-button.html)
-    *   [contact-button](contact-button.html)
 
 </nav>
 
@@ -205,6 +203,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -221,6 +221,8 @@
 
 <td>推流地址。目前仅支持 flv, rtmp 格式</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -232,6 +234,8 @@
 <td>RTC</td>
 
 <td>SD（标清）, HD（高清）, FHD（超清）, RTC（实时通话）</td>
+
+<td></td>
 
 </tr>
 
@@ -245,6 +249,8 @@
 
 <td>自动推流</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -256,6 +262,8 @@
 <td>false</td>
 
 <td>是否静音</td>
+
+<td></td>
 
 </tr>
 
@@ -269,6 +277,8 @@
 
 <td>开启摄像头</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -280,6 +290,8 @@
 <td>true</td>
 
 <td>自动聚集</td>
+
+<td></td>
 
 </tr>
 
@@ -293,6 +305,8 @@
 
 <td>vertical，horizontal</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -304,6 +318,8 @@
 <td>0</td>
 
 <td>美颜</td>
+
+<td></td>
 
 </tr>
 
@@ -317,6 +333,8 @@
 
 <td>美白</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -328,6 +346,8 @@
 <td>9:16</td>
 
 <td>宽高比，可选值有 3:4, 9:16</td>
+
+<td></td>
 
 </tr>
 
@@ -341,6 +361,8 @@
 
 <td>最小码率</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -352,6 +374,8 @@
 <td>1000</td>
 
 <td>最大码率</td>
+
+<td></td>
 
 </tr>
 
@@ -365,6 +389,8 @@
 
 <td>进入后台时推流的等待画面</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -376,6 +402,8 @@
 <td></td>
 
 <td>等待画面资源的MD5值</td>
+
+<td></td>
 
 </tr>
 
@@ -389,6 +417,8 @@
 
 <td>进入后台时是否静音</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -399,7 +429,23 @@
 
 <td></td>
 
-<td>状态变化事件，detail = {errCode}</td>
+<td>状态变化事件，detail = {code}</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>bindnetstatus</td>
+
+<td>EventHandle</td>
+
+<td></td>
+
+<td>网络状态通知，detail = {info}</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -410,6 +456,7 @@
 **注意：**
 
 *   `<live-player />` 默认宽度为100%、无默认高度，请通过wxss设置宽高。
+*   开发者工具上暂不支持。
 *   相关api：[wx.createLivePusherContext](../api/api-live-pusher.html)
 
 ##### 状态码
@@ -682,13 +729,99 @@
 
 </table>
 
+##### 网络状态数据
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>键名</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>videoBitrate</td>
+
+<td>当前视频编/码器输出的比特率，单位 kbps</td>
+
+</tr>
+
+<tr>
+
+<td>audioBitrate</td>
+
+<td>当前音频编/码器输出的比特率，单位 kbps</td>
+
+</tr>
+
+<tr>
+
+<td>videoFPS</td>
+
+<td>当前视频帧率</td>
+
+</tr>
+
+<tr>
+
+<td>videoGOP</td>
+
+<td>当前视频 GOP,也就是每两个关键帧(I帧)间隔时长，单位 s</td>
+
+</tr>
+
+<tr>
+
+<td>netSpeed</td>
+
+<td>当前的发送/接收速度</td>
+
+</tr>
+
+<tr>
+
+<td>netJitter</td>
+
+<td>网络抖动情况，抖动越大，网络越不稳定</td>
+
+</tr>
+
+<tr>
+
+<td>videoWidth</td>
+
+<td>视频画面的宽度</td>
+
+</tr>
+
+<tr>
+
+<td>videoHeight</td>
+
+<td>视频画面的高度</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
 **示例代码：**
 
       <live-pusher url="https://domain/push_stream" mode="RTC" autopush bindstatechange="statechange" style="width: 300px; height: 225px;" />
 
     Page({
       statechange(e) {
-        console.log('live-pusher code:', e.errCode)
+        console.log('live-pusher code:', e.detail.code)
       }
     })
 

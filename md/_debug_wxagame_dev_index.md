@@ -59,6 +59,7 @@
 *   [基础](./index.html)
     *   [快速上手](./index.html)
     *   [Adapter](tutorial/base/adapter.html)
+    *   [对引擎的支持](tutorial/base/engine.html)
     *   [模块化](tutorial/base/module.html)
 *   [能力](tutorial/ability/audio.html)
     *   [音频播放](tutorial/ability/audio.html)
@@ -70,6 +71,7 @@
 *   [开放能力](tutorial/open-ability/authorize.html)
     *   [用户授权](tutorial/open-ability/authorize.html)
     *   [用户登录态签名](tutorial/open-ability/http-signature.html)
+    *   [获取二维码](tutorial/open-ability/qrcode.html)
     *   [转发](tutorial/open-ability/share.html)
     *   [用户数据的签名验证和加解密](tutorial/open-ability/signature.html)
 
@@ -408,6 +410,30 @@
     wx.onTouchCancel(function (e) {
         console.log(e.touches)
     })
+
+#### 全局对象
+
+window 对象是浏览器环境下的全局对象。小游戏的运行环境中没有 BOM API，因此没有 window 对象。但是提供了全局对象 GameGlobal，所有全局定义的变量都是 GameGlobal 的属性。
+
+    console.log(GameGlobal.setTimeout === setTimeout)
+    console.log(GameGlobal.requestAnimationFrame === requestAnimationFrame)
+    // true
+
+开发者可以根据需要把自己封装的类和函数挂载到 GameGlobal 上。
+
+    GameGlobal.render = function () {
+        //省略方法的具体实现...
+    }
+
+    render()
+
+GameGlobal 是一个全局对象，本身也是一个存在循环引用的对象。
+
+    console.log(GameGlobal === GameGlobal.GameGlobal)
+
+console.log 无法在真机上将存在循环引用的对象输出到 vConsole 中。因此真机调试时请注释 console.log(GameGlobal) 这样的代码，否则将会产生这样的错误
+
+    An object width circular reference can't be logged
 
 </section>
 

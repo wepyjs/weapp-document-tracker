@@ -100,8 +100,6 @@
 *   [开放能力](open-data.html)
     *   [open-data](open-data.html)
     *   [web-view](web-view.html)
-*   [客服会话](contact-button.html)
-    *   [contact-button](contact-button.html)
 
 </nav>
 
@@ -211,9 +209,23 @@
 
 <td>0</td>
 
-<td>当前所在页面的 index</td>
+<td>当前所在滑块的 index</td>
 
 <td></td>
+
+</tr>
+
+<tr>
+
+<td>current-item-id</td>
+
+<td>String</td>
+
+<td>""</td>
+
+<td>当前所在滑块的 item-id ，不能与 current 被同时指定</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -275,6 +287,62 @@
 
 <tr>
 
+<td>previous-margin</td>
+
+<td>String</td>
+
+<td>"0px"</td>
+
+<td>前边距，可用于露出前一项的一小部分，接受 px 和 rpx 值</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>next-margin</td>
+
+<td>String</td>
+
+<td>"0px"</td>
+
+<td>后边距，可用于露出后一项的一小部分，接受 px 和 rpx 值</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>display-multiple-items</td>
+
+<td>Number</td>
+
+<td>1</td>
+
+<td>同时显示的滑块数量</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>skip-hidden-item-layout</td>
+
+<td>Boolean</td>
+
+<td>false</td>
+
+<td>是否跳过未显示的滑块布局，设为 true 可优化复杂情况下的滑动性能，但会丢失隐藏状态滑块的布局信息</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>bindchange</td>
 
 <td>EventHandle</td>
@@ -283,13 +351,29 @@
 
 <td>current 改变时会触发 change 事件，event.detail = {current: current, source: source}</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>bindanimationfinish</td>
+
+<td>EventHandle</td>
+
+<td></td>
+
+<td>动画结束时会触发 animationfinish 事件，event.detail 同上</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 </tbody>
 
 </table>
 
-从公共库v1.4.0开始，`change`事件返回`detail`中包含一个`source`字段，表示导致变更的原因，可能值如下：
+从 [1.4.0](../framework/compatibility.html "基础库 1.4.0 开始支持，低版本需做兼容处理。") 开始，`change`事件返回`detail`中包含一个`source`字段，表示导致变更的原因，可能值如下：
 
 *   `autoplay` 自动播放导致swiper变化；
 *   `touch` 用户划动引起swiper变化；
@@ -300,6 +384,46 @@
 #### swiper-item
 
 仅可放置在`<swiper/>`组件中，宽高自动设置为100%。
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>属性名</th>
+
+<th>类型</th>
+
+<th>默认值</th>
+
+<th>说明</th>
+
+<th>最低版本</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>item-id</td>
+
+<td>String</td>
+
+<td>""</td>
+
+<td>该 swiper-item 的标识符</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 **示例代码：**
 
@@ -352,7 +476,7 @@
 
 ##### Bug & Tip
 
-1.  `tip`: 如果在 `bindchange` 的事件回调函数中使用 `setData` 改变 `current` 值，则有可能导致 `setData` 被不停地调用，因而通常情况下请不要这样使用
+1.  `tip`: 如果在 `bindchange` 的事件回调函数中使用 `setData` 改变 `current` 值，则有可能导致 `setData` 被不停地调用，因而通常情况下请在改变 `current` 值前检测 `source` 字段来判断是否是由于用户触摸引起。
 
 </section>
 

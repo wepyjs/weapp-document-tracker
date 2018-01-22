@@ -100,8 +100,6 @@
 *   [开放能力](open-data.html)
     *   [open-data](open-data.html)
     *   [web-view](web-view.html)
-*   [客服会话](contact-button.html)
-    *   [contact-button](contact-button.html)
 
 </nav>
 
@@ -270,6 +268,34 @@
 <td>背景条的颜色</td>
 
 <td></td>
+
+</tr>
+
+<tr>
+
+<td>block-size</td>
+
+<td>Number</td>
+
+<td>28</td>
+
+<td>滑块的大小，取值范围为 12 - 28</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>block-color</td>
+
+<td>Color</td>
+
+<td>#ffffff</td>
+
+<td>滑块的颜色</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

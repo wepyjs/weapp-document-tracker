@@ -100,8 +100,6 @@
 *   [开放能力](open-data.html)
     *   [open-data](open-data.html)
     *   [web-view](web-view.html)
-*   [客服会话](contact-button.html)
-    *   [contact-button](contact-button.html)
 
 </nav>
 
@@ -660,36 +658,6 @@
 <td>[canvas](canvas.html)</td>
 
 <td>画布</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**客服会话：**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>组件名</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>[contact-button](contact-button.html)</td>
-
-<td>进入客服会话按钮</td>
 
 </tr>
 

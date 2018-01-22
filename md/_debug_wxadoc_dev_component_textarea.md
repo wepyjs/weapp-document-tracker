@@ -100,8 +100,6 @@
 *   [开放能力](open-data.html)
     *   [open-data](open-data.html)
     *   [web-view](web-view.html)
-*   [客服会话](contact-button.html)
-    *   [contact-button](contact-button.html)
 
 </nav>
 
@@ -326,6 +324,34 @@
 <td>是否显示键盘上方带有”完成“按钮那一栏</td>
 
 <td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>selection-start</td>
+
+<td>Number</td>
+
+<td>-1</td>
+
+<td>光标起始位置，自动聚集时有效，需与selection-end搭配使用</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>selection-end</td>
+
+<td>Number</td>
+
+<td>-1</td>
+
+<td>光标结束位置，自动聚集时有效，需与selection-start搭配使用</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

@@ -59,6 +59,7 @@
 *   [基础](../../index.html)
     *   [快速上手](../../index.html)
     *   [Adapter](adapter.html)
+    *   [对引擎的支持](engine.html)
     *   [模块化](module.html)
 *   [能力](../ability/audio.html)
     *   [音频播放](../ability/audio.html)
@@ -70,6 +71,7 @@
 *   [开放能力](../open-ability/authorize.html)
     *   [用户授权](../open-ability/authorize.html)
     *   [用户登录态签名](../open-ability/http-signature.html)
+    *   [获取二维码](../open-ability/qrcode.html)
     *   [转发](../open-ability/share.html)
     *   [用户数据的签名验证和加解密](../open-ability/signature.html)
 
@@ -197,6 +199,6 @@ weapp-adapter 会预先调用 wx.createCanvas() 创建一个上屏 Canvas，并�
 
 </div>
 
-[](../../index.html)[](module.html)</div>
+[](../../index.html)[](engine.html)</div>
 
 </div>

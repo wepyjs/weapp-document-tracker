@@ -386,9 +386,6 @@ array 支持以下的定义方式：
 
 ### 方法
 
-*   `parse`
-*   `UTC`
-*   `now`
 *   `toString`
 *   `toDateString`
 *   `toTimeString`

@@ -231,6 +231,15 @@
         *   [wx.showNavigationBarLoading](../ui.html#wxshownavigationbarloading)
         *   [wx.hideNavigationBarLoading](../ui.html#wxhidenavigationbarloading)
         *   [wx.setNavigationBarColor](../setNavigationBarColor.html)
+    *   [设置tabBar](../ui-tabbar.html)
+        *   [wx.setTabBarBadge](../ui-tabbar.html#wxsettabbarbadgeobject)
+        *   [wx.removeTabBarBadge](../ui-tabbar.html#wxremovetabbarbadgeobject)
+        *   [wx.showTabBarRedDot](../ui-tabbar.html#wxshowtabbarreddotobject)
+        *   [wx.hideTabBarRedDot](../ui-tabbar.html#wxhidetabbarreddotobject)
+        *   [wx.setTabBarStyle](../ui-tabbar.html#wxsettabbarstyleobject)
+        *   [wx.setTabBarItem](../ui-tabbar.html#wxsettabbaritemobject)
+        *   [wx.showTabBar](../ui-tabbar.html#wxshowtabbarobject)
+        *   [wx.hideTabBar](../ui-tabbar.html#wxhidetabbarobject)
     *   [设置置顶信息](../ui.html#wxsettopbartextobject)
         *   [wx.setTopBarText](../ui.html#wxsettopbartextobject)
     *   [导航](../ui-navigate.html)
@@ -254,6 +263,8 @@
         *   [wx.createContext](create-context.html)
         *   [wx.drawCanvas](draw-canvas.html)
         *   [wx.canvasToTempFilePath](temp-file.html)
+        *   [wx.canvasGetImageData](get-image-data.html)
+        *   [wx.canvasPutImageData](put-image-data.html)
         *   [setFillStyle](set-fill-style.html)
         *   [setStrokeStyle](set-stroke-style.html)
         *   [setShadow](set-shadow.html)
@@ -371,6 +382,7 @@
         *   [wx.checkIsSoterEnrolledInDevice](../checkIsSoterEnrolledInDevice.html)
     *   [附近](../nearby.html)
         *   [添加地点](../nearby.html#添加地点)
+        *   [查看地点列表](../nearby.html#查看地点列表)
         *   [删除地点](../nearby.html#删除地点)
         *   [展示/取消展示附近小程序](../nearby.html#展示取消展示附近小程序)
 *   [数据](../analysis.html)
@@ -498,6 +510,6 @@
 
 </div>
 
-[](temp-file.html)[](set-stroke-style.html)</div>
+[](put-image-data.html)[](set-stroke-style.html)</div>
 
 </div>
