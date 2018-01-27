@@ -289,6 +289,8 @@
 
 <th>描述</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -305,6 +307,8 @@
 
 <td>导航栏背景颜色，如"#000000"</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -316,6 +320,8 @@
 <td>white</td>
 
 <td>导航栏标题颜色，仅支持 black/white</td>
+
+<td></td>
 
 </tr>
 
@@ -329,6 +335,22 @@
 
 <td>导航栏标题文字内容</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>navigationStyle</td>
+
+<td>String</td>
+
+<td>default</td>
+
+<td>导航栏样式，仅支持 default/custom。custom 模式可自定义导航栏，只保留右上角胶囊状的按钮</td>
+
+<td>微信版本 6.6.0</td>
+
 </tr>
 
 <tr>
@@ -340,6 +362,8 @@
 <td>#ffffff</td>
 
 <td>窗口的背景色</td>
+
+<td></td>
 
 </tr>
 
@@ -353,6 +377,8 @@
 
 <td>下拉背景字体、loading 图的样式，仅支持 dark/light</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -363,7 +389,9 @@
 
 <td>false</td>
 
-<td>是否开启下拉刷新，详见[页面相关事件处理函数](app-service/page.html#页面相关事件处理函数)。</td>
+<td>是否开启下拉刷新，详见[页面相关事件处理函数](app-service/page.html#页面相关事件处理函数)</td>
+
+<td></td>
 
 </tr>
 
@@ -384,6 +412,8 @@
 </table>
 
 **注：HexColor（十六进制颜色值），如"#ff00ff"**
+
+**注：navigationStyle 开启 custom 后，低版本客户端需要做好兼容。开发者工具基础库版本切到 1.7.0（不代表最低版本，只供调试用） 可方便切到旧视觉**
 
 如 app.json ：
 

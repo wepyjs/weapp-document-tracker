@@ -371,7 +371,7 @@
 
 <tr>
 
-<td>enableProgressGesture</td>
+<td>enable-progress-gesture</td>
 
 <td>Boolean</td>
 

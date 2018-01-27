@@ -181,7 +181,7 @@ web-view 组件是一个可以用来承载网页的容器，会自动铺满整�
 
 ##### 相关接口 1
 
-`<web-view/>`网页中可使用[JSSDK 1.3.1](https://res.wx.qq.com/open/js/jweixin-1.3.0.js)提供的接口返回小程序页面。 支持的接口有：
+`<web-view/>`网页中可使用[JSSDK 1.3.2](https://res.wx.qq.com/open/js/jweixin-1.3.2.js)提供的接口返回小程序页面。 支持的接口有：
 
 <table>
 

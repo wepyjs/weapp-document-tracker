@@ -261,6 +261,22 @@
 
 <tr>
 
+<td>app-parameter</td>
+
+<td>String</td>
+
+<td></td>
+
+<td>打开 APP 时，向 APP 传递的参数</td>
+
+<td>open-type="launchApp"</td>
+
+<td>[1.9.5](../framework/compatibility.html "基础库 1.9.5 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>hover-class</td>
 
 <td>String</td>
@@ -467,6 +483,22 @@
 
 </tr>
 
+<tr>
+
+<td>binderrror</td>
+
+<td>Handler</td>
+
+<td></td>
+
+<td>当使用开放能力时，发生错误的回调</td>
+
+<td>open-type="launchApp"</td>
+
+<td>[1.9.5](../framework/compatibility.html "基础库 1.9.5 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -650,6 +682,16 @@
 <td>获取用户手机号，可以从bindgetphonenumber回调中获取到用户信息，[具体说明](../api/getPhoneNumber.html)</td>
 
 <td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>launchApp</td>
+
+<td>打开APP，可以通过app-parameter属性设定向APP传的参数[具体说明](../api/launchApp.html)</td>
+
+<td>[1.9.5](../framework/compatibility.html "基础库 1.9.5 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

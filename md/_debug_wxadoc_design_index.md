@@ -67,11 +67,11 @@
     *   [利用接口提升性能](./#利用接口提升性能)
 *   [统一稳定](./#统一稳定)
 *   [视觉规范](./#视觉规范)
-    *   [字体规范](./#字体规范)
-    *   [列表视觉规范](./#列表视觉规范)
-    *   [表单输入视觉规范](./#表单输入视觉规范)
-    *   [按钮使用原则](./#按钮使用原则)
-    *   [图标使用原则](./#图标使用原则)
+    *   [字体](./#字体)
+    *   [列表](./#列表)
+    *   [表单输入](./#表单输入)
+    *   [按钮](./#按钮)
+    *   [图标](./#图标)
 *   [资源下载](./#资源下载)
 
 </nav>
@@ -104,39 +104,17 @@
 
 每个页面都应有明确的重点，以便于用户每进入一个新页面的时候都能快速地理解页面内容。在确定了重点的前提下，应尽量避免页面上出现其它与用户的决策和操作无关的干扰因素。
 
-#### 反例示意
-
-此页面的主题是查询，却添加了诸多与查询不相关的业务入口，与用户的目标无关，易造成用户的迷失。
+#### 案例示意1
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/1emphasis.dont.png)
 
-#### 纠正示意
-
-去掉任何与用户目标不相关的内容，明确页面主题，在技术和页面控件允许的前提下提供有助于用户决策和操作的帮助内容，比如最近搜索词等。
-
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/1emphasis.do.png)
-
-#### 反例示意
-
-操作没有主次，让用户无从选择。
+#### 案例示意2
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/1emphasis.dont2.png)
 
-#### 纠正示意
-
-首先要避免并列过多操作让用户选择，在不得不并列多个操作时，需区分操作主次，减轻用户的选择难度。
-
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/1emphasis.do2.png)
-
 ### 流程明确
 
-为了让用户顺畅地使用页面，在用户进行某一个操作流程时，应避免出现用户目标流程之外的内容而打断用户。
-
-#### 反例示意
-
-用户本打算进行搜索，在进入页面时却被突如其来的模态抽奖框所打断；对于抽奖没有兴趣的用户是非常不友好的干扰； 而即便有部分用户确实被“诱人”的抽奖活动所吸引，离开主流程去抽奖之后可能就遗忘了原本的目标，进而失去了对产品真正价值的利用和认识。
-
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/2flow.dont.png)
+为了让用户顺畅地使用页面，在用户进行某一个操作流程时，应避免出现用户目标流程之外的内容而打断用户。 ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/2flow.dont.png)
 
 ## 清晰明确
 
@@ -144,43 +122,21 @@
 
 ### 导航明确，来去自如
 
-导航是确保用户在网页中浏览跳转时不迷路的最关键因素。导航需要告诉用户，当前在哪，可以去哪，如何回去等问题。首先在微信系统内的所有小程序的全部页面，均会自带有微信提供的导航栏，统一解决当前在哪，如何回去的问题。在微信层级导航保持体验一致，有助于用户在微信内形成统一的体验和交互认知，无需在各小程序和其他微信页面的切换中新增学习成本或改变使用习惯。
+导航是确保用户在网页中浏览跳转时不迷路的最关键因素。导航需要告诉用户，当前在哪，可以去哪，如何回去等问题。微信在小程序内现不提供统一导航栏样式，开发者可根据需要自行设计小程序首页和次级页面界面导航。建议所有的次级页面左上角提供返回上一级页面操作。此外，微信iOS用户还可通过界面边缘向右滑动操作，返回上一级小程序或微信页面。安卓用户可通过物理返回键达到同样目的。
 
-#### 微信导航栏
+#### 小程序菜单
 
-微信导航栏，直接继承于客户端，除导航栏颜色之外，开发者无需亦不可对其中的内容进行自定义。但开发者需要规定小程序各个页面的跳转关系，让导航系统能够以合理的方式工作。
+小程序的所有页面，包括小程序内嵌网页和插件，微信都会在其右上角放置官方小程序菜单，样式如图。开发者不可对其内容自定义，但可选择深浅两种基本配色以适应页面设计风格。 官方小程序菜单将放置在界面固定位置，开发者在设计界面时请预留出该区域空间，若需要在此区域附近放置可交互元素，要特别注意交互事件是否会冲突，操作是否容易被使用 ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.iOS.png)
 
-微信导航栏分为导航区域、标题区域以及操作区域。其中导航区控制程序页面进程。目前导航栏分深浅两种基本配色。
+#### 小程序菜单深浅配色方案（iOS和Android）
 
-#### 导航区（iOS）
-
-微信进入小程序的第一个页面，导航区通常只有一个操作——“返回”，即返回进入小程序前的微信页面。 进入小程序后的次级页面，导航区的操作为——“返回” 和“关闭”。 “返回”，即返回上一级小程序界面或微信界面。“关闭”，即在当前界面直接退出小程序，回到进入小程序前的微信页面。
-
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.iOS.png)
-
-#### 导航区（Android）
-
-导航区仅存在唯一操作——直接退出小程序，回到进入小程序前的微信或系统桌面，安卓手机自带的硬件返回键执行返回上一级页面的操作。
-
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.android.png)
-
-安卓导航存在一类特殊情况：当用户通过操作区的菜单将小程序添加至安卓桌面，并从安卓桌面打开小程序时，小程序的首页，不展示导航按钮。仅展示小程序标题和操作区。小程序次级页面，导航区只有返回上一级页面的操作，而点击安卓手机自带的硬件返回键也起到相同作用。
-
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.android.special.png)
-
-#### 微信导航栏自定义颜色规则（iOS和Android）
-
-小程序导航栏支持基本的背景颜色自定义功能，选择的颜色需要在满足可用性前提下，和谐搭配微信提供的两套主导航栏图标。建议参考以下选色效果：
-
-选色方案示例
-
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.color.png)
+开发者可在满足可用性的前提下，从微信提供的深浅两套配色的小程序菜单中选择合适的方案，以适应小程序页面设计风格。 ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.color.png)
 
 #### 页面内导航
 
-开发者可根据自身功能设计需要在页面内添加自有导航。并保持不同页面间导航一致。但是受限于手机屏幕尺寸的限制，小程序页面的导航应尽量简单，若仅为一般线性浏览的页面建议仅使用微信导航栏即可。
+开发者可根据自身功能设计需要在页面内添加自有导航。并保持不同页面间导航一致，指向清晰，有路可退。受限于手机屏幕尺寸的限制，小程序页面的导航应尽量简单。建议开发者设计的自有导航样式与微信官方小程序菜单样式保持一定差异，以便区分。 ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.customize.png)
 
-开发者可选择小程序页面添加标签分页（Tab）导航。标签分页栏可固定在页面顶部或者底部，便于用户在不同的分页间做切换。标签数量不得少于2个，最多不得超过5个，为确保点击区域，建议标签数量不超过4项。一个页面也不应出现一组以上的标签分页栏。
+开发者可为小程序页面添加标签分页（Tab）导航。标签分页栏可固定在页面顶部或者底部，便于用户在不同的分页间做切换。标签数量不得少于2个，最多不得超过5个，为确保点击区域，建议标签数量不超过4项。一个页面也不应出现一组以上的标签分页栏。
 
 其中小程序首页可选择微信提供的原生底部标签分页样式，该样式仅供小程序首页使用。开发时可自定义图标样式、标签文案以及文案颜色等，具体设置项如图标尺寸等参考可参考开发文档和WeUI基础控件库。
 
@@ -190,8 +146,6 @@
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.page.top.png)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/3navigation.page.top.dont.png)
-
 ### 减少等待，反馈及时
 
 页面的过长时间的等待会引起用户的不良情绪，使用微信小程序项目提供的技术已能很大程度缩短等待时间。即便如此，当不可避免的出现了加载和等待的时候，需要予以及时的反馈以舒缓用户等待的不良情绪。
@@ -200,7 +154,7 @@
 
 小程序启动页是小程序在微信内一定程度上展现品牌特征的页面之一。本页面将突出展示小程序品牌特征和加载状态。启动页除品牌标志（Logo）展示外，页面上的其他所有元素如加载进度指示，均由微信统一提供且不能更改，无需开发者开发。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/4miniapploading.jpg)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/4miniapp.loading.png)
 
 #### 页面下拉刷新加载
 
@@ -210,7 +164,7 @@
 
 #### 页面内加载反馈
 
-开发者可在小程序里自定义页面内容的加载样式。建议不管是使用在局部还是全局加载，自定义加载样式都应该尽可能简洁，并使用简单动画告知用户加载过程。 开发者也可以使用微信提供的，统一的页面加载样式，如图中例所示。
+开发者可在小程序里自定义页面内容的加载样式。建议不管是使用在局部还是全局加载，自定义加载样式都应该尽可能简洁，并使用简单动画告知用户加载过程。
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/4loading.page.feedback.png)
 
@@ -226,6 +180,10 @@
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/4loading.feedback.png)
 
+#### 全局加载反馈
+
+开发者可以参考图中样式，使用标题栏提示加载小程序页面内容的过程。例如： ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/4loading.title.png)
+
 #### 加载反馈注意事项
 
 *   若载入时间较长,应提供取消操作,并使用进度条显示载入的进度。
@@ -234,7 +192,7 @@
 
 #### 结果反馈
 
-除了在用户等待的过程中需予以及时反馈外，对操作的结果也需要予以明确反馈。根据实际情况，可选择不同的结果反馈样式。对于页面局部的操作，可在操作区域予以直接反馈，对于页面级操作结果，可使用弹出式提示（Toast）、模态对话框或结果页面展示。
+除了在用户等待的过程中需予以及时反馈外，对操作的结果也需要予以明确反馈。根据实际情况，可选择不同的结果反馈样式。对于页面局部的操作，可在操作区域予以直接反馈，对于页面级操作结果，可使用弹出式提示、模态对话框或结果页面展示。
 
 #### 页面局部操作结果反馈
 
@@ -242,11 +200,17 @@
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/5local.feedback.png)
 
-#### 页面全局操作结果——弹出式提示（Toast）
+#### 页面全局操作结果——图标型弹出提示
 
-弹出式提示（Toast）适用于轻量级的成功提示，1.5秒后自动消失，并不打断流程，对用户影响较小，适用于不需要强调的操作提醒，例如成功提示。特别注意该形式不适用于错误提示，因为错误提示需明确告知用户，因而不适合使用一闪而过的弹出式提示。
+图标型弹出提示适用于轻量级的成功提示，1.5秒后自动消失，并不打断流程，对用户影响较小，适用于不需要强调的操作提醒，例如成功提示。特别注意该形式不适用于错误提示，因为错误提示需明确告知用户，因而不适合使用一闪而过的弹出式提示。
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/5global.toast.png)
+
+#### 页面全局操作结果——文字型弹出提示
+
+文字型弹出提示适用于需要轻量化地用文字解释当前状态或提醒不严重的错误。1.5秒后自动消失，不打断流程，对用户影响较小。
+
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/5wording.toast.png)
 
 #### 页面全局操作结果——模态对话框
 
@@ -304,7 +268,7 @@
 
 ## 视觉规范
 
-### 字体规范
+### 字体
 
 微信内字体的使用与所运行的系统字体保持一致，常用字号为20, 18, 17, 16,14 13, 11(pt)，使用场景具体如下：
 
@@ -322,19 +286,25 @@
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/8Font.color3.png)
 
-### 列表视觉规范
+### 列表
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/9List.png)
 
-### 表单输入视觉规范
+### 表单输入
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/10Input.png)
 
-### 按钮使用原则
+### 按钮
 
-![](https://mp.weixin.qq.com/debug/wxadoc/design/image/11button.png) ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/11button2.png) ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/11button3.png) ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/11button4.png)
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/11button.png)
 
-### 图标使用原则
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/11button2.png)
+
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/11button3.png)
+
+![](https://mp.weixin.qq.com/debug/wxadoc/design/image/11button4.png)
+
+### 图标
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/design/image/12icon.png)
 
@@ -345,8 +315,6 @@
 *   <div class="item_inner"> [WeUI_sketch组件库](https://wximg.gtimg.com/shake_tv/mina/WEUI_1_0_161226_Sketch.zip) [下载](https://wximg.gtimg.com/shake_tv/mina/WEUI_1_0_161226_Sketch.zip)</div>
 
 *   <div class="item_inner"> [WeUI_PS组件库](https://wximg.gtimg.com/shake_tv/mina/WeUI1.0.psd.zip) [下载](https://wximg.gtimg.com/shake_tv/mina/WeUI1.0.psd.zip)</div>
-
-*   <div class="item_inner"> [小程序标志](https://wximg.gtimg.com/shake_tv/mina/standard_logo.zip) [下载](https://wximg.gtimg.com/shake_tv/mina/standard_logo.zip)</div>
 
 预览地址：[https://weui.io](https://wximg.gtimg.com/shake_tv/mina/WEUI_1_0_161226_Sketch.zip)
 

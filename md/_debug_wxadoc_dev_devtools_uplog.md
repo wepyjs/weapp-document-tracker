@@ -131,6 +131,11 @@
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_darwin&from=mpwiki)
 
+### 2018.01.24 基础库更新（1.9.5）
+
+1.  `A` 新增 配置 `window.navigationStyle` 支持全屏显示小程序 [详情](../framework/config.html)
+2.  `U` 更新 组件 `<button />` `open-type` 新增 `launchApp` 属性 [详情](../component/button.html)
+
 ### 2018.01.16 基础库更新（1.9.0）
 
 1.  `A` 新增 API tabBar 相关接口 [详情](../api/ui-tabbar.html)
@@ -1132,7 +1137,7 @@
 7.  `A` 新增 框架方法 `App.onError` [详情](../framework/app-service/app.html)
 8.  `A` 新增 页面配置 `disabelScroll` [详情](../framework/config.html#pagejson)
 9.  `A` 新增 `<picker-view/>` 组件 [详情](../component/picker-view.html)
-10.  `A` 新增 `<contact-button/>` 组件，用于显示客服会话按钮 [详情](../component/contact-button.html)
+10.  `A` 新增 `<contact-button/>` 组件，用于显示客服会话按钮 [详情](../component/contact-button.md)
 11.  `A` 新增 `<navigator/>` 组件属性 openType [详情](../component/navigator.html)
 12.  `A` 新增 `<switch/>` `<checkbox/>` `<radio/>` 组件属性 color
 13.  `A` 新增 `<video/>` 组件属性 objectFit [详情](../component/video.html)

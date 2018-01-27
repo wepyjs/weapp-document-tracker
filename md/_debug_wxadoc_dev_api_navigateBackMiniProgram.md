@@ -374,6 +374,8 @@
     *   [打开小程序](navigateToMiniProgram.html)
         *   [wx.navigateToMiniProgram](navigateToMiniProgram.html)
         *   [wx.navigateBackMiniProgram](navigateBackMiniProgram.html)
+    *   [打开APP](launchApp.html)
+        *   [launchApp](launchApp.html)
     *   [获取发票抬头](chooseInvoiceTitle.html)
         *   [wx.chooseInvoiceTitle](chooseInvoiceTitle.html)
     *   [生物认证](checkIsSupportSoterAuthentication.html)
@@ -584,6 +586,6 @@
 
 </div>
 
-[](navigateToMiniProgram.html)[](chooseInvoiceTitle.html)</div>
+[](navigateToMiniProgram.html)[](launchApp.html)</div>
 
 </div>

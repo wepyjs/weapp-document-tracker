@@ -374,6 +374,8 @@
     *   [打开小程序](../navigateToMiniProgram.html)
         *   [wx.navigateToMiniProgram](../navigateToMiniProgram.html)
         *   [wx.navigateBackMiniProgram](../navigateBackMiniProgram.html)
+    *   [打开APP](../launchApp.html)
+        *   [launchApp](../launchApp.html)
     *   [获取发票抬头](../chooseInvoiceTitle.html)
         *   [wx.chooseInvoiceTitle](../chooseInvoiceTitle.html)
     *   [生物认证](../checkIsSupportSoterAuthentication.html)
@@ -615,6 +617,10 @@
 </tbody>
 
 </table>
+
+### Bug & Tip
+
+1.  `tip`: 在 `draw` 回调里调用该方法才能保证图片导出成功。
 
 ### 示例代码
 

@@ -845,6 +845,7 @@
 <th>&#x7C7B;&#x578B;</th>
 <th>&#x9ED8;&#x8BA4;&#x503C;</th>
 <th>&#x63CF;&#x8FF0;</th>
+<th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th>
 </tr>
 </thead>
 <tbody>
@@ -853,36 +854,49 @@
 <td>HexColor</td>
 <td>#000000</td>
 <td>&#x5BFC;&#x822A;&#x680F;&#x80CC;&#x666F;&#x989C;&#x8272;&#xFF0C;&#x5982;&quot;#000000&quot;</td>
+<td></td>
 </tr>
 <tr>
 <td>navigationBarTextStyle</td>
 <td>String</td>
 <td>white</td>
 <td>&#x5BFC;&#x822A;&#x680F;&#x6807;&#x9898;&#x989C;&#x8272;&#xFF0C;&#x4EC5;&#x652F;&#x6301; black/white</td>
+<td></td>
 </tr>
 <tr>
 <td>navigationBarTitleText</td>
 <td>String</td>
 <td></td>
 <td>&#x5BFC;&#x822A;&#x680F;&#x6807;&#x9898;&#x6587;&#x5B57;&#x5185;&#x5BB9;</td>
+<td></td>
+</tr>
+<tr>
+<td>navigationStyle</td>
+<td>String</td>
+<td>default</td>
+<td>&#x5BFC;&#x822A;&#x680F;&#x6837;&#x5F0F;&#xFF0C;&#x4EC5;&#x652F;&#x6301; default/custom&#x3002;custom &#x6A21;&#x5F0F;&#x53EF;&#x81EA;&#x5B9A;&#x4E49;&#x5BFC;&#x822A;&#x680F;&#xFF0C;&#x53EA;&#x4FDD;&#x7559;&#x53F3;&#x4E0A;&#x89D2;&#x80F6;&#x56CA;&#x72B6;&#x7684;&#x6309;&#x94AE;</td>
+<td>&#x5FAE;&#x4FE1;&#x7248;&#x672C; 6.6.0</td>
 </tr>
 <tr>
 <td>backgroundColor</td>
 <td>HexColor</td>
 <td>#ffffff</td>
 <td>&#x7A97;&#x53E3;&#x7684;&#x80CC;&#x666F;&#x8272;</td>
+<td></td>
 </tr>
 <tr>
 <td>backgroundTextStyle</td>
 <td>String</td>
 <td>dark</td>
 <td>&#x4E0B;&#x62C9;&#x80CC;&#x666F;&#x5B57;&#x4F53;&#x3001;loading &#x56FE;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x4EC5;&#x652F;&#x6301; dark/light</td>
+<td></td>
 </tr>
 <tr>
 <td>enablePullDownRefresh</td>
 <td>Boolean</td>
 <td>false</td>
-<td>&#x662F;&#x5426;&#x5F00;&#x542F;&#x4E0B;&#x62C9;&#x5237;&#x65B0;&#xFF0C;&#x8BE6;&#x89C1;<a href="app-service/page.html#&#x9875;&#x9762;&#x76F8;&#x5173;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x51FD;&#x6570;">&#x9875;&#x9762;&#x76F8;&#x5173;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x51FD;&#x6570;</a>&#x3002;</td>
+<td>&#x662F;&#x5426;&#x5F00;&#x542F;&#x4E0B;&#x62C9;&#x5237;&#x65B0;&#xFF0C;&#x8BE6;&#x89C1;<a href="app-service/page.html#&#x9875;&#x9762;&#x76F8;&#x5173;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x51FD;&#x6570;">&#x9875;&#x9762;&#x76F8;&#x5173;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x51FD;&#x6570;</a></td>
+<td></td>
 </tr>
 <tr>
 <td>onReachBottomDistance</td>
@@ -892,10 +906,8 @@
 </tr>
 </tbody>
 </table>
-<!--
-| navigationStyle              | String   | default | 导航栏样式，仅支持 default/custom。custom 模式可自定义导航栏，只保留右上角胶囊状的按钮   |
--->
 <p><strong>&#x6CE8;&#xFF1A;HexColor&#xFF08;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x989C;&#x8272;&#x503C;&#xFF09;&#xFF0C;&#x5982;&quot;#ff00ff&quot;</strong></p>
+<p><strong>&#x6CE8;&#xFF1A;navigationStyle &#x5F00;&#x542F; custom &#x540E;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x5BA2;&#x6237;&#x7AEF;&#x9700;&#x8981;&#x505A;&#x597D;&#x517C;&#x5BB9;&#x3002;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#x57FA;&#x7840;&#x5E93;&#x7248;&#x672C;&#x5207;&#x5230; 1.7.0&#xFF08;&#x4E0D;&#x4EE3;&#x8868;&#x6700;&#x4F4E;&#x7248;&#x672C;&#xFF0C;&#x53EA;&#x4F9B;&#x8C03;&#x8BD5;&#x7528;&#xFF09; &#x53EF;&#x65B9;&#x4FBF;&#x5207;&#x5230;&#x65E7;&#x89C6;&#x89C9;</strong></p>
 <p>&#x5982; app.json &#xFF1A;</p>
 <pre><code class="lang-json">{
   <span class="hljs-string">&quot;window&quot;</span>:{
