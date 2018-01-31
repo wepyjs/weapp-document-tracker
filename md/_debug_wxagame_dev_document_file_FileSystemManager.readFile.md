@@ -10,7 +10,9 @@
 
 *   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [小游戏开发](javascript:;)
+    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
 *   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
@@ -131,30 +133,32 @@
 *   [文件](wx.getFileSystemManager.html)
     *   [wx.getFileSystemManager](wx.getFileSystemManager.html)
     *   [FileSystemManager](FileSystemManager.html)
+    *   [Stats](Stats.html)
     *   [FileSystemManager.access](FileSystemManager.access.html)
     *   [FileSystemManager.accessSync](FileSystemManager.accessSync.html)
     *   [FileSystemManager.copyFile](FileSystemManager.copyFile.html)
     *   [FileSystemManager.copyFileSync](FileSystemManager.copyFileSync.html)
     *   [FileSystemManager.getFileInfo](FileSystemManager.getFileInfo.html)
     *   [FileSystemManager.getSavedFileList](FileSystemManager.getSavedFileList.html)
+    *   [Stats.isFile](Stats.isFile.html)
+    *   [Stats.isDirectory](Stats.isDirectory.html)
     *   [FileSystemManager.mkdir](FileSystemManager.mkdir.html)
     *   [FileSystemManager.mkdirSync](FileSystemManager.mkdirSync.html)
-    *   [FileSystemManager.rmdir](FileSystemManager.rmdir.html)
-    *   [FileSystemManager.readdir](FileSystemManager.readdir.html)
     *   [FileSystemManager.removeSavedFile](FileSystemManager.removeSavedFile.html)
-    *   [FileSystemManager.readFile](FileSystemManager.readFile.html)
-    *   [FileSystemManager.rename](FileSystemManager.rename.html)
     *   [FileSystemManager.readdirSync](FileSystemManager.readdirSync.html)
     *   [FileSystemManager.renameSync](FileSystemManager.renameSync.html)
-    *   [FileSystemManager.readFileSync](FileSystemManager.readFileSync.html)
     *   [FileSystemManager.rmdirSync](FileSystemManager.rmdirSync.html)
+    *   [FileSystemManager.rename](FileSystemManager.rename.html)
+    *   [FileSystemManager.readdir](FileSystemManager.readdir.html)
+    *   [FileSystemManager.rmdir](FileSystemManager.rmdir.html)
+    *   [FileSystemManager.readFile](FileSystemManager.readFile.html)
+    *   [FileSystemManager.readFileSync](FileSystemManager.readFileSync.html)
     *   [FileSystemManager.saveFile](FileSystemManager.saveFile.html)
     *   [FileSystemManager.stat](FileSystemManager.stat.html)
     *   [FileSystemManager.statSync](FileSystemManager.statSync.html)
     *   [FileSystemManager.unlink](FileSystemManager.unlink.html)
     *   [FileSystemManager.unzip](FileSystemManager.unzip.html)
     *   [FileSystemManager.unlinkSync](FileSystemManager.unlinkSync.html)
-    *   [FileSystemManager.unzipSync](FileSystemManager.unzipSync.html)
     *   [FileSystemManager.writeFile](FileSystemManager.writeFile.html)
     *   [FileSystemManager.writeFileSync](FileSystemManager.writeFileSync.html)
 *   [位置](../location/wx.getLocation.html)
@@ -404,7 +408,7 @@
 
 <td>否</td>
 
-<td>指定读取文件的字符编码</td>
+<td>指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容</td>
 
 <td></td>
 
@@ -536,6 +540,46 @@
 
 </table>
 
+#### success 回调函数
+
+##### 参数
+
+###### Object res
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>属性</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+<th>支持版本</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>data</td>
+
+<td>string/ArrayBuffer</td>
+
+<td>文件内容</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
 #### fail 回调函数
 
 ##### 参数
@@ -653,6 +697,6 @@
 
 </div>
 
-[](FileSystemManager.removeSavedFile.html)[](FileSystemManager.rename.html)</div>
+[](FileSystemManager.rmdir.html)[](FileSystemManager.readFileSync.html)</div>
 
 </div>

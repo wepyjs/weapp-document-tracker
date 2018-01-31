@@ -10,7 +10,9 @@
 
 *   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [小游戏开发](javascript:;)
+    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
 *   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
@@ -131,30 +133,32 @@
 *   [文件](../file/wx.getFileSystemManager.html)
     *   [wx.getFileSystemManager](../file/wx.getFileSystemManager.html)
     *   [FileSystemManager](../file/FileSystemManager.html)
+    *   [Stats](../file/Stats.html)
     *   [FileSystemManager.access](../file/FileSystemManager.access.html)
     *   [FileSystemManager.accessSync](../file/FileSystemManager.accessSync.html)
     *   [FileSystemManager.copyFile](../file/FileSystemManager.copyFile.html)
     *   [FileSystemManager.copyFileSync](../file/FileSystemManager.copyFileSync.html)
     *   [FileSystemManager.getFileInfo](../file/FileSystemManager.getFileInfo.html)
     *   [FileSystemManager.getSavedFileList](../file/FileSystemManager.getSavedFileList.html)
+    *   [Stats.isFile](../file/Stats.isFile.html)
+    *   [Stats.isDirectory](../file/Stats.isDirectory.html)
     *   [FileSystemManager.mkdir](../file/FileSystemManager.mkdir.html)
     *   [FileSystemManager.mkdirSync](../file/FileSystemManager.mkdirSync.html)
-    *   [FileSystemManager.rmdir](../file/FileSystemManager.rmdir.html)
-    *   [FileSystemManager.readdir](../file/FileSystemManager.readdir.html)
     *   [FileSystemManager.removeSavedFile](../file/FileSystemManager.removeSavedFile.html)
-    *   [FileSystemManager.readFile](../file/FileSystemManager.readFile.html)
-    *   [FileSystemManager.rename](../file/FileSystemManager.rename.html)
     *   [FileSystemManager.readdirSync](../file/FileSystemManager.readdirSync.html)
     *   [FileSystemManager.renameSync](../file/FileSystemManager.renameSync.html)
-    *   [FileSystemManager.readFileSync](../file/FileSystemManager.readFileSync.html)
     *   [FileSystemManager.rmdirSync](../file/FileSystemManager.rmdirSync.html)
+    *   [FileSystemManager.rename](../file/FileSystemManager.rename.html)
+    *   [FileSystemManager.readdir](../file/FileSystemManager.readdir.html)
+    *   [FileSystemManager.rmdir](../file/FileSystemManager.rmdir.html)
+    *   [FileSystemManager.readFile](../file/FileSystemManager.readFile.html)
+    *   [FileSystemManager.readFileSync](../file/FileSystemManager.readFileSync.html)
     *   [FileSystemManager.saveFile](../file/FileSystemManager.saveFile.html)
     *   [FileSystemManager.stat](../file/FileSystemManager.stat.html)
     *   [FileSystemManager.statSync](../file/FileSystemManager.statSync.html)
     *   [FileSystemManager.unlink](../file/FileSystemManager.unlink.html)
     *   [FileSystemManager.unzip](../file/FileSystemManager.unzip.html)
     *   [FileSystemManager.unlinkSync](../file/FileSystemManager.unlinkSync.html)
-    *   [FileSystemManager.unzipSync](../file/FileSystemManager.unzipSync.html)
     *   [FileSystemManager.writeFile](../file/FileSystemManager.writeFile.html)
     *   [FileSystemManager.writeFileSync](../file/FileSystemManager.writeFileSync.html)
 *   [位置](../location/wx.getLocation.html)
@@ -509,6 +513,14 @@
 </tbody>
 
 </table>
+
+#### 示例代码
+
+encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](../../tutorial/open-ability/signature.html)
+
+    {
+        "openGId": "OPENGID"
+    }
 
 </section>
 

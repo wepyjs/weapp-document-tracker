@@ -10,7 +10,9 @@
 
 *   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [小游戏开发](javascript:;)
+    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
 *   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
@@ -131,30 +133,32 @@
 *   [文件](wx.getFileSystemManager.html)
     *   [wx.getFileSystemManager](wx.getFileSystemManager.html)
     *   [FileSystemManager](FileSystemManager.html)
+    *   [Stats](Stats.html)
     *   [FileSystemManager.access](FileSystemManager.access.html)
     *   [FileSystemManager.accessSync](FileSystemManager.accessSync.html)
     *   [FileSystemManager.copyFile](FileSystemManager.copyFile.html)
     *   [FileSystemManager.copyFileSync](FileSystemManager.copyFileSync.html)
     *   [FileSystemManager.getFileInfo](FileSystemManager.getFileInfo.html)
     *   [FileSystemManager.getSavedFileList](FileSystemManager.getSavedFileList.html)
+    *   [Stats.isFile](Stats.isFile.html)
+    *   [Stats.isDirectory](Stats.isDirectory.html)
     *   [FileSystemManager.mkdir](FileSystemManager.mkdir.html)
     *   [FileSystemManager.mkdirSync](FileSystemManager.mkdirSync.html)
-    *   [FileSystemManager.rmdir](FileSystemManager.rmdir.html)
-    *   [FileSystemManager.readdir](FileSystemManager.readdir.html)
     *   [FileSystemManager.removeSavedFile](FileSystemManager.removeSavedFile.html)
-    *   [FileSystemManager.readFile](FileSystemManager.readFile.html)
-    *   [FileSystemManager.rename](FileSystemManager.rename.html)
     *   [FileSystemManager.readdirSync](FileSystemManager.readdirSync.html)
     *   [FileSystemManager.renameSync](FileSystemManager.renameSync.html)
-    *   [FileSystemManager.readFileSync](FileSystemManager.readFileSync.html)
     *   [FileSystemManager.rmdirSync](FileSystemManager.rmdirSync.html)
+    *   [FileSystemManager.rename](FileSystemManager.rename.html)
+    *   [FileSystemManager.readdir](FileSystemManager.readdir.html)
+    *   [FileSystemManager.rmdir](FileSystemManager.rmdir.html)
+    *   [FileSystemManager.readFile](FileSystemManager.readFile.html)
+    *   [FileSystemManager.readFileSync](FileSystemManager.readFileSync.html)
     *   [FileSystemManager.saveFile](FileSystemManager.saveFile.html)
     *   [FileSystemManager.stat](FileSystemManager.stat.html)
     *   [FileSystemManager.statSync](FileSystemManager.statSync.html)
     *   [FileSystemManager.unlink](FileSystemManager.unlink.html)
     *   [FileSystemManager.unzip](FileSystemManager.unzip.html)
     *   [FileSystemManager.unlinkSync](FileSystemManager.unlinkSync.html)
-    *   [FileSystemManager.unzipSync](FileSystemManager.unzipSync.html)
     *   [FileSystemManager.writeFile](FileSystemManager.writeFile.html)
     *   [FileSystemManager.writeFileSync](FileSystemManager.writeFileSync.html)
 *   [位置](../location/wx.getLocation.html)
@@ -358,9 +362,11 @@ FileSystemManager.stat 的同步版本
 
 #### 返回值
 
-##### Stats stat
+##### [Stats](Stats.html) stat
 
 一个 Stats 对象
+
+#### 错误
 
 <table>
 
@@ -368,13 +374,9 @@ FileSystemManager.stat 的同步版本
 
 <tr>
 
-<th>属性</th>
-
-<th>类型</th>
+<th>errMsg</th>
 
 <th>说明</th>
-
-<th>支持版本</th>
 
 </tr>
 
@@ -384,47 +386,17 @@ FileSystemManager.stat 的同步版本
 
 <tr>
 
-<td>mode</td>
+<td>fail permission denied, open ${path}</td>
 
-<td>string</td>
-
-<td>文件的类型和存取的权限，对应 POSIX stat.st_mode</td>
-
-<td></td>
+<td>指定的 path 路径没有读权限</td>
 
 </tr>
 
 <tr>
 
-<td>size</td>
+<td>fail no such file or directory ${path}</td>
 
-<td>number</td>
-
-<td>文件大小，单位：B，对应 POSIX stat.st_size</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>lastAccessedTime</td>
-
-<td>number</td>
-
-<td>文件最近一次被存取或被执行的时间，UNIX 时间戳，对应 POSIX stat.st_atime</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>lastModifiedTime</td>
-
-<td>number</td>
-
-<td>文件最后一次被修改的时间，UNIX 时间戳，对应 POSIX stat.st_mtime</td>
+<td>文件不存在</td>
 
 </tr>
 

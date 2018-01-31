@@ -10,7 +10,9 @@
 
 *   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
-*   [开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+*   [小游戏开发](javascript:;)
+    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
 *   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
@@ -131,30 +133,32 @@
 *   [文件](wx.getFileSystemManager.html)
     *   [wx.getFileSystemManager](wx.getFileSystemManager.html)
     *   [FileSystemManager](FileSystemManager.html)
+    *   [Stats](Stats.html)
     *   [FileSystemManager.access](FileSystemManager.access.html)
     *   [FileSystemManager.accessSync](FileSystemManager.accessSync.html)
     *   [FileSystemManager.copyFile](FileSystemManager.copyFile.html)
     *   [FileSystemManager.copyFileSync](FileSystemManager.copyFileSync.html)
     *   [FileSystemManager.getFileInfo](FileSystemManager.getFileInfo.html)
     *   [FileSystemManager.getSavedFileList](FileSystemManager.getSavedFileList.html)
+    *   [Stats.isFile](Stats.isFile.html)
+    *   [Stats.isDirectory](Stats.isDirectory.html)
     *   [FileSystemManager.mkdir](FileSystemManager.mkdir.html)
     *   [FileSystemManager.mkdirSync](FileSystemManager.mkdirSync.html)
-    *   [FileSystemManager.rmdir](FileSystemManager.rmdir.html)
-    *   [FileSystemManager.readdir](FileSystemManager.readdir.html)
     *   [FileSystemManager.removeSavedFile](FileSystemManager.removeSavedFile.html)
-    *   [FileSystemManager.readFile](FileSystemManager.readFile.html)
-    *   [FileSystemManager.rename](FileSystemManager.rename.html)
     *   [FileSystemManager.readdirSync](FileSystemManager.readdirSync.html)
     *   [FileSystemManager.renameSync](FileSystemManager.renameSync.html)
-    *   [FileSystemManager.readFileSync](FileSystemManager.readFileSync.html)
     *   [FileSystemManager.rmdirSync](FileSystemManager.rmdirSync.html)
+    *   [FileSystemManager.rename](FileSystemManager.rename.html)
+    *   [FileSystemManager.readdir](FileSystemManager.readdir.html)
+    *   [FileSystemManager.rmdir](FileSystemManager.rmdir.html)
+    *   [FileSystemManager.readFile](FileSystemManager.readFile.html)
+    *   [FileSystemManager.readFileSync](FileSystemManager.readFileSync.html)
     *   [FileSystemManager.saveFile](FileSystemManager.saveFile.html)
     *   [FileSystemManager.stat](FileSystemManager.stat.html)
     *   [FileSystemManager.statSync](FileSystemManager.statSync.html)
     *   [FileSystemManager.unlink](FileSystemManager.unlink.html)
     *   [FileSystemManager.unzip](FileSystemManager.unzip.html)
     *   [FileSystemManager.unlinkSync](FileSystemManager.unlinkSync.html)
-    *   [FileSystemManager.unzipSync](FileSystemManager.unzipSync.html)
     *   [FileSystemManager.writeFile](FileSystemManager.writeFile.html)
     *   [FileSystemManager.writeFileSync](FileSystemManager.writeFileSync.html)
 *   [位置](../location/wx.getLocation.html)
@@ -362,6 +366,52 @@ FileSystemManager.readdir 的同步版本
 
 指定目录下的文件名数组。
 
+#### 错误
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>errMsg</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>fail no such file or directory ${dirPath}</td>
+
+<td>目录不存在</td>
+
+</tr>
+
+<tr>
+
+<td>fail not a directory ${dirPath}</td>
+
+<td>dirPath 不是目录</td>
+
+</tr>
+
+<tr>
+
+<td>fail permission denied, open ${dirPath}</td>
+
+<td>指定的 filePath 路径没有读权限</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
 </section>
 
 </div>
@@ -401,6 +451,6 @@ FileSystemManager.readdir 的同步版本
 
 </div>
 
-[](FileSystemManager.rename.html)[](FileSystemManager.renameSync.html)</div>
+[](FileSystemManager.removeSavedFile.html)[](FileSystemManager.renameSync.html)</div>
 
 </div>
