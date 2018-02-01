@@ -278,7 +278,7 @@ web-view 组件是一个可以用来承载网页的容器，会自动铺满整�
 示例代码：
 
     <!-- html -->
-    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.0.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
 
     // javascript
     wx.miniProgram.navigateTo({url: '/path/to/page'})
@@ -596,13 +596,23 @@ web-view 组件是一个可以用来承载网页的容器，会自动铺满整�
 
 ##### 相关接口 4
 
-在网页内可通过`window.__wxjs_environment`变量判断是否在小程序环境。
+在网页内可通过`window.__wxjs_environment`变量判断是否在小程序环境，建议在`WeixinJSBridgeReady`回调中使用，也可以使用[JSSDK 1.3.2](https://res.wx.qq.com/open/js/jweixin-1.3.2.js)提供的`getEnv`接口。
 
 示例代码：
 
     // web-view下的页面内
-    wx.ready(function() {
-        console.log(window.__wxjs_environment === 'miniprogram') // true
+    function ready() {
+      console.log(window.__wxjs_environment === 'miniprogram') // true
+    }
+    if (!window.WeixinJSBridge || !WeixinJSBridge.invoke) {
+      document.addEventListener('WeixinJSBridgeReady', ready, false)
+    } else {
+      ready()
+    }
+
+    // 或者
+    wx.miniProgram.getEnv(function(res) {
+      console.log(res.miniprogram) // true
     })
 
 ##### Bug & Tip

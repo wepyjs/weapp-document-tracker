@@ -107,6 +107,18 @@
 
 <section class="normal markdown-section">
 
+### 2018.02.01 开发者工具更新
+
+1.  `A` 新增 多开项目
+2.  `A` 新增 小程序远程调试(需要更新客户端版本) [详情](remote-debug.html)
+3.  `A` 新增 sourceMap 文件解析
+4.  `A` 新增 `wx.showTabBar`、`wx.hideTabBar`、`wx.setTabBarStyle`、`wx.setTabBarItem`、`Page.onTabItemTap` 调试支持
+5.  `F` 修复 1.02.1801081 版本 wxss 编译器更新失败的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0008e61e34c9c8be7436a258056804&highline=37%20not%20&token=2109809508&lang=zh_CN)
+6.  `F` 修复 使用自定义组件后 AppData 面板无法使用的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000ac04c9c871865ab26df3325b400)
+7.  `F` 修复 Mac 版本，如果目录存在 `.DS_Store`，删除目录时提示非空的问题
+8.  `F` 修复 部分系统上黑屏的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=&docid=000ceab9b34e58a24a26e667456400)
+9.  `F` 修复 部分系统上无法获取 webgl 的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=&docid=000ceab9b34e58a24a26e667456400)
+
 ### 2018.01.24 基础库更新（1.9.5）
 
 1.  `A` 新增 配置 `window.navigationStyle` 支持全屏显示小程序 [详情](../framework/config.html)

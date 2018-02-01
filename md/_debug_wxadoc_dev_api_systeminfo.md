@@ -578,6 +578,16 @@
 
 <tr>
 
+<td>statusBarHeight</td>
+
+<td>状态栏的高度</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>language</td>
 
 <td>微信设置的语言</td>

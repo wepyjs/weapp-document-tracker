@@ -548,6 +548,7 @@
             *   [Sensor Panel](../devtools/debug.html#sensor-panel)
         *   [自定义数据上报](../devtools/debug.html#自定义数据上报)
         *   [特殊场景调试](../devtools/different.html)
+        *   [真机调试](../devtools/remote-debug.html)
     *   [命令行调用](../devtools/cli.html)
     *   [HTTP 调用](../devtools/http.html)
     *   [小程序开发助手](../devtools/mydev.html)

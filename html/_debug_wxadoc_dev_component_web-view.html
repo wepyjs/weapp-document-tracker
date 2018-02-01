@@ -826,7 +826,7 @@
 </table>
 <p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
 <pre><code>&lt;!-- html --&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;https://res.wx.qq.com/open/js/jweixin-1.3.0.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://res.wx.qq.com/open/js/jweixin-1.3.2.js&quot;&gt;&lt;/script&gt;
 
 // javascript
 wx.miniProgram.navigateTo({url: &apos;/path/to/page&apos;})
@@ -991,11 +991,21 @@ wx.miniProgram.getEnv(function(res) { console.log(res.miniprogram) // true })
 })
 </code></pre>
 <h5 id="&#x76F8;&#x5173;&#x63A5;&#x53E3;-4">&#x76F8;&#x5173;&#x63A5;&#x53E3; 4</h5>
-<p>&#x5728;&#x7F51;&#x9875;&#x5185;&#x53EF;&#x901A;&#x8FC7;<code>window.__wxjs_environment</code>&#x53D8;&#x91CF;&#x5224;&#x65AD;&#x662F;&#x5426;&#x5728;&#x5C0F;&#x7A0B;&#x5E8F;&#x73AF;&#x5883;&#x3002;</p>
+<p>&#x5728;&#x7F51;&#x9875;&#x5185;&#x53EF;&#x901A;&#x8FC7;<code>window.__wxjs_environment</code>&#x53D8;&#x91CF;&#x5224;&#x65AD;&#x662F;&#x5426;&#x5728;&#x5C0F;&#x7A0B;&#x5E8F;&#x73AF;&#x5883;&#xFF0C;&#x5EFA;&#x8BAE;&#x5728;<code>WeixinJSBridgeReady</code>&#x56DE;&#x8C03;&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<a href="https://res.wx.qq.com/open/js/jweixin-1.3.2.js" target="_blank">JSSDK 1.3.2</a>&#x63D0;&#x4F9B;&#x7684;<code>getEnv</code>&#x63A5;&#x53E3;&#x3002;</p>
 <p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// web-view&#x4E0B;&#x7684;&#x9875;&#x9762;&#x5185;</span>
-wx.ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">window</span>.__wxjs_environment === <span class="hljs-string">&apos;miniprogram&apos;</span>) <span class="hljs-comment">// true</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ready</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">window</span>.__wxjs_environment === <span class="hljs-string">&apos;miniprogram&apos;</span>) <span class="hljs-comment">// true</span>
+}
+<span class="hljs-keyword">if</span> (!<span class="hljs-built_in">window</span>.WeixinJSBridge || !WeixinJSBridge.invoke) {
+  <span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">&apos;WeixinJSBridgeReady&apos;</span>, ready, <span class="hljs-literal">false</span>)
+} <span class="hljs-keyword">else</span> {
+  ready()
+}
+
+<span class="hljs-comment">// &#x6216;&#x8005;</span>
+wx.miniProgram.getEnv(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(res.miniprogram) <span class="hljs-comment">// true</span>
 })
 </code></pre>
 <h5 id="bug--tip">Bug &amp; Tip</h5>

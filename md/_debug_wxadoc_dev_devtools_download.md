@@ -97,6 +97,7 @@
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
     *   [特殊场景调试](different.html)
+    *   [真机调试](remote-debug.html)
 *   [命令行调用](cli.html)
 *   [HTTP 调用](http.html)
 *   [小程序开发助手](mydev.html)
@@ -127,38 +128,30 @@
 
 <section class="normal markdown-section">
 
-## 最新版本下载地址 (1.02.1801081)
+## 最新版本下载地址 (1.02.1802010)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
 
-### 2018.01.16 基础库更新（1.9.0）
+### 2018.02.01 开发者工具更新
 
-1.  `A` 新增 API tabBar 相关接口 [详情](../api/ui-tabbar.html)
-2.  `A` 新增 API `wx.canvasGetImageData` 可返回 `<canvas />` 的像素数据 [详情](../api/canvas/get-image-data.html)
-3.  `A` 新增 API `wx.canvasPutImageData` 可将像素数据绘制到 `<canvas />` [详情](../api/canvas/put-image-data.html)
-4.  `U` 更新 组件 `<swiper />` 增加 `current-item-id`、`previous-margin`、`next-margin`、`display-multiple-items`、`skip-hidden-item-layout`、`bindanimationfinish` 属性 [详情](../component/swiper.html)
-5.  `U` 更新 组件 `<input />` 支持 selection 选区 [详情](../component/input.html)
-6.  `U` 更新 组件 `<textarea />` 支持 selection 选区 [详情](../component/textarea.html)
-7.  `U` 更新 组件 `<live-player />` 增加 `bindnetstatus` 事件 [详情](../component/live-player.html)
-8.  `U` 更新 组件 `<live-pusher />` 增加 `bindnetstatus` 事件 [详情](../component/live-pusher.html)
-9.  `U` 更新 组件 `<video />` 可对控制栏进行更细粒度控制 [详情](../component/video.html)
-10.  `U` 更新 组件 `<slider />` 支持 `block-size` 设置滑块尺寸和 `block-color` 设置滑块颜色 [详情](../component/slider.html)
-11.  `U` 更新 API 背景音频接口 `backgroundAudioManager` 支持直播流音频
-12.  `U` 更新 API `canvasContext.drawImage` 支持从源图像裁剪后再画到 `<canvas />` [详情](../api/canvas/draw-image.html)
-13.  `U` 更新 API `wx.showToast` 文本统一限制为 7 个汉字长度，并增加无 icon 类型 [详情](../api/api-react.html)
-14.  `F` 修复 API `wx.chooseVideo` 接口的 `compressed` 参数不生效的问题
-15.  `F` 修复 API WebSocket 接口在 Android 下服务连接失败的时候，没有立刻触发 `error` 和 `close` 事件，而是等到超时
-16.  `F` 修复 API Android 背景音频接口 `backgroundAudioManager` 不能播放本地文件的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=c7b223db52aff88b3c3a15f2fb5ddfc6)
-17.  `F` 修复 API `wx.setEnableDebug` 接口在 Android 下会导致小程序一直在重启的问题
-18.  `F` 修复 API `wx.showToast` 在 iOS 下连续调用两次再调用 `wx.hideToast` 时遮罩层没去掉的问题
-19.  `F` 修复 API `wx.startPullDownRefresh` 在 iOS 下没有触发 `onPullDownRefresh` 事件的问题
-20.  `F` 修复 API `wx.previewImage` 在 Android 下长按GIF发送后退出小程序的问题
-21.  `F` 修复 API `wx.pageScrollTo` 导致 fixed 元素闪动的问题，并增加 `duration` 参数 [详情](../api/scroll.html)
-22.  `F` 修复 自定义组件通过动态设置的回调方法时会执行两遍的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=915568549&docid=037127b97509bc7eff550b9e7b94765d)
+1.  `A` 新增 多开项目
+2.  `A` 新增 小程序远程调试(需要更新客户端版本) [详情](remote-debug.html)
+3.  `A` 新增 sourceMap 文件解析
+4.  `A` 新增 `wx.showTabBar`、`wx.hideTabBar`、`wx.setTabBarStyle`、`wx.setTabBarItem`、`Page.onTabItemTap` 调试支持
+5.  `F` 修复 1.02.1801081 版本 wxss 编译器更新失败的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0008e61e34c9c8be7436a258056804&highline=37%20not%20&token=2109809508&lang=zh_CN)
+6.  `F` 修复 使用自定义组件后 AppData 面板无法使用的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000ac04c9c871865ab26df3325b400)
+7.  `F` 修复 Mac 版本，如果目录存在 `.DS_Store`，删除目录时提示非空的问题
+8.  `F` 修复 部分系统上黑屏的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=&docid=000ceab9b34e58a24a26e667456400)
+9.  `F` 修复 部分系统上无法获取 webgl 的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=&docid=000ceab9b34e58a24a26e667456400)
 
-### 上一版本下载地址 (1.01.1712150)
+### 2018.01.24 基础库更新（1.9.5）
 
-[windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki&download_version=1011712150) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki&download_version=1011712150) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki&download_version=1011712150)
+1.  `A` 新增 配置 `window.navigationStyle` 支持全屏显示小程序 [详情](../framework/config.html)
+2.  `U` 更新 组件 `<button />` `open-type` 新增 `launchApp` 属性 [详情](../component/button.html)
+
+### 上一版本下载地址 (1.02.1801081)
+
+[windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki&download_version=1021801081) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki&download_version=1021801081) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki&download_version=1021801081)
 
 ## 历史更新日志
 

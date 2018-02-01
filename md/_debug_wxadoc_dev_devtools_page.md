@@ -97,6 +97,7 @@
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
     *   [特殊场景调试](different.html)
+    *   [真机调试](remote-debug.html)
 *   [命令行调用](cli.html)
 *   [HTTP 调用](http.html)
 *   [小程序开发助手](mydev.html)
@@ -155,6 +156,15 @@
 3.  需要选择一个空目录，或者选择的非空目录下存在 [`app.json`](../framework/config.html) 或者 `project.config.json`。当选择空目录时，可以选择是否在该目录下生成一个简单的项目。
 
 ![新建项目](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/addproject.png)
+
+### 多开项目
+
+工具支持同时打开多个项目，每次打开项目时会从新窗口打开，入口有以下几种：
+
+1.  从项目选择页打开项目，处于项目窗口时可以从菜单栏的项目 -> 查看所有项目打开项目选择页
+2.  从菜单栏的最近打开项目列表中打开的项目会从新窗口打开
+3.  新建项目
+4.  命令行或 HTTP 调用工具打开项目
 
 ### 管理项目
 
