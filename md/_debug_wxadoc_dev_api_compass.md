@@ -647,6 +647,6 @@
 
 </div>
 
-[](accelerometer.html#wxstopaccelerometerobject)[](phonecall.html)</div>
+[](accelerometer.html#wxstopaccelerometerobject)[](compass.html#wxoncompasschangecallback)</div>
 
 </div>

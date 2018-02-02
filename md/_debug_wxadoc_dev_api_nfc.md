@@ -1125,6 +1125,6 @@
 
 </div>
 
-[](phone-contact.html#wxaddphonecontactobject)[](wifi.html)</div>
+[](phone-contact.html#wxaddphonecontactobject)[](nfc.html#wxgethcestateobject)</div>
 
 </div>

@@ -3155,6 +3155,6 @@ _tips: 并行调用多次读写接口存在读写失败的可能性_
 
 </div>
 
-[](clipboard.html#wxgetclipboarddataobject)[](iBeacon.html)</div>
+[](clipboard.html#wxgetclipboarddataobject)[](bluetooth.html#wxopenbluetoothadapterobject)</div>
 
 </div>

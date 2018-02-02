@@ -287,6 +287,6 @@ Sensor panel 有两大功能：
 
 </div>
 
-[](edit.html#Git 状态展示)[](different.html)</div>
+[](edit.html#Git 状态展示)[](debug.html#模拟器)</div>
 
 </div>

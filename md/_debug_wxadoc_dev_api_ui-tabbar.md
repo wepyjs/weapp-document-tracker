@@ -629,6 +629,18 @@
 
 <tr>
 
+<td>index</td>
+
+<td>Number</td>
+
+<td>是</td>
+
+<td>tabBar的哪一项，从左边算起</td>
+
+</tr>
+
+<tr>
+
 <td>success</td>
 
 <td>Function</td>
@@ -694,6 +706,18 @@
 </thead>
 
 <tbody>
+
+<tr>
+
+<td>index</td>
+
+<td>Number</td>
+
+<td>是</td>
+
+<td>tabBar的哪一项，从左边算起</td>
+
+</tr>
 
 <tr>
 
@@ -1184,6 +1208,6 @@
 
 </div>
 
-[](setNavigationBarColor.html)[](ui.html#wxsettopbartextobject)</div>
+[](setNavigationBarColor.html)[](ui-tabbar.html#wxsettabbarbadgeobject)</div>
 
 </div>

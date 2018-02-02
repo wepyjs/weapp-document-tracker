@@ -256,6 +256,6 @@
 
 </div>
 
-[](cover-view.html)[](text.html)</div>
+[](cover-view.html)[](icon.html)</div>
 
 </div>

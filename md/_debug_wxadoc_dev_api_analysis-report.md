@@ -520,6 +520,6 @@
 
 </div>
 
-[](analysis-user.html)[](setEnableDebug.html)</div>
+[](analysis-user.html)[](analysis-report.html)</div>
 
 </div>

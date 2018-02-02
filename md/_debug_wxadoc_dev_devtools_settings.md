@@ -206,6 +206,6 @@
 
 </div>
 
-[](page.html#模拟器)[](project.html)</div>
+[](page.html#模拟器)[](settings.html#外观设置)</div>
 
 </div>

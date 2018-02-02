@@ -228,6 +228,6 @@
 
 </div>
 
-[](settings.html#代理设置)[](shortcut.html)</div>
+[](settings.html#代理设置)[](project.html#项目设置)</div>
 
 </div>

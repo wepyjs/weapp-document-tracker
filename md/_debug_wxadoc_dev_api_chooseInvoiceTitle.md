@@ -640,6 +640,6 @@
 
 </div>
 
-[](launchApp.html)[](checkIsSupportSoterAuthentication.html)</div>
+[](launchApp.html)[](chooseInvoiceTitle.html)</div>
 
 </div>

@@ -1013,6 +1013,6 @@
 
 </div>
 
-[](api-caniuse.html)[](accelerometer.html)</div>
+[](api-caniuse.html)[](device.html#wxgetnetworktypeobject)</div>
 
 </div>

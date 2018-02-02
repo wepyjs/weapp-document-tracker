@@ -627,6 +627,6 @@
 
 </div>
 
-[](chooseInvoiceTitle.html)[](startSoterAuthentication.html)</div>
+[](chooseInvoiceTitle.html)[](checkIsSupportSoterAuthentication.html)</div>
 
 </div>

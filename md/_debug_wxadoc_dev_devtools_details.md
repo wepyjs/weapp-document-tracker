@@ -1077,6 +1077,6 @@
 
 </div>
 
-[](monkey-test.html)[](notsupport.html)</div>
+[](monkey-test.html)[](details.html#运行环境差异)</div>
 
 </div>

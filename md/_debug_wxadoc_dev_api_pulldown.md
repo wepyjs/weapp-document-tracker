@@ -584,6 +584,6 @@
 
 </div>
 
-[](canvas/clear-actions.html)[](wxml-nodes-info.html)</div>
+[](canvas/clear-actions.html)[](pulldown.html#onpulldownrefresh)</div>
 
 </div>

@@ -400,7 +400,7 @@
 
 <tr>
 
-<td>value</td>
+<td>data</td>
 
 <td>Object/string</td>
 

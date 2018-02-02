@@ -966,6 +966,6 @@
 
 </div>
 
-[](location.html#wxopenlocationobject)[](systeminfo.html)</div>
+[](location.html#wxopenlocationobject)[](api-map.html#wxcreatemapcontextmapid)</div>
 
 </div>

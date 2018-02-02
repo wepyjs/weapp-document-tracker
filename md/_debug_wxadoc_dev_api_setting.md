@@ -693,6 +693,6 @@
 
 </div>
 
-[](card.html#会员卡组件)[](we-run.html)</div>
+[](card.html#会员卡组件)[](setting.html#wxopensettingobject)</div>
 
 </div>

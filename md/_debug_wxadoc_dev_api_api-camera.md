@@ -731,6 +731,6 @@
 
 </div>
 
-[](api-video.html#wxcreatevideocontextvideoid)[](api-live-player.html)</div>
+[](api-video.html#wxcreatevideocontextvideoid)[](api-camera.html)</div>
 
 </div>

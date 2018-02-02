@@ -350,13 +350,13 @@
 
 <section class="normal markdown-section">
 
-### FileSystemManager.rmdirSync(Object filePath)
+### FileSystemManager.rmdirSync(Object dirPath)
 
 FileSystemManager.rmdir 的同步版本
 
 #### 参数
 
-##### Object filePath
+##### Object dirPath
 
 要删除的目录路径
 

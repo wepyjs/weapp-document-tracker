@@ -634,6 +634,6 @@
 
 </div>
 
-[](wxml-nodes-info.html#selectorqueryexeccallback)[](api-login.html)</div>
+[](wxml-nodes-info.html#selectorqueryexeccallback)[](ext-api.html#wxgetextconfigobject)</div>
 
 </div>

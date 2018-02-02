@@ -659,6 +659,6 @@
 
 </div>
 
-[](uinionID.html)[](notice.html)</div>
+[](uinionID.html)[](api-pay.html#wxrequestpaymentobject)</div>
 
 </div>

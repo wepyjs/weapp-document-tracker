@@ -562,6 +562,6 @@ setting 中可以指定以下设置
 
 </div>
 
-[](shortcut.html)[](debug.html)</div>
+[](shortcut.html)[](edit.html#文件格式)</div>
 
 </div>

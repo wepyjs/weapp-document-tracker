@@ -585,6 +585,6 @@
 
 </div>
 
-[](analysis-report.html)[](../devtools/devtools.html)</div>
+[](analysis-report.html)[](setEnableDebug.html)</div>
 
 </div>

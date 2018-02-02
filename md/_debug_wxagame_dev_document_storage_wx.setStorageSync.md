@@ -350,7 +350,7 @@
 
 <section class="normal markdown-section">
 
-### wx.setStorageSync(string key, Object|string value)
+### wx.setStorageSync(string key, Object|string data)
 
 wx.setStorage 的同步版本
 
@@ -360,7 +360,7 @@ wx.setStorage 的同步版本
 
 本地缓存中指定的 key
 
-##### Object|string value
+##### Object|string data
 
 需要存储的内容
 

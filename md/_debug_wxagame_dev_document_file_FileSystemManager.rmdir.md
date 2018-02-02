@@ -384,7 +384,7 @@
 
 <tr>
 
-<td>filePath</td>
+<td>dirPath</td>
 
 <td>Object</td>
 

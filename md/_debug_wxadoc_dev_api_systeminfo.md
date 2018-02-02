@@ -876,6 +876,6 @@
 
 </div>
 
-[](api-map.html#wxcreatemapcontextmapid)[](api-caniuse.html)</div>
+[](api-map.html#wxcreatemapcontextmapid)[](systeminfo.html)</div>
 
 </div>

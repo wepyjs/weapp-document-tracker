@@ -196,6 +196,6 @@ WXSS支持以`.`开始的类选择器。如：
 
 </div>
 
-[](devtools/uplog.html)</div>
+[](devtools/uplog.html)[](qa.html)</div>
 
 </div>

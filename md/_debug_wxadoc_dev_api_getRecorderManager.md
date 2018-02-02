@@ -918,6 +918,6 @@
 
 </div>
 
-[](media-record.html#wxstoprecord)[](media-voice.html)</div>
+[](media-record.html#wxstoprecord)[](getRecorderManager.html)</div>
 
 </div>
