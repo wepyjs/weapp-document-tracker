@@ -1208,6 +1208,6 @@
 
 </div>
 
-[](setNavigationBarColor.html)[](ui-tabbar.html#wxsettabbarbadgeobject)</div>
+[](setNavigationBarColor.html)[](ui.html#wxsettopbartextobject)</div>
 
 </div>

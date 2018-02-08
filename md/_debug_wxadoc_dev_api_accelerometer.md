@@ -669,6 +669,6 @@
 
 </div>
 
-[](device.html#wxonnetworkstatuschangecallback)[](accelerometer.html#wxonaccelerometerchangecallback)</div>
+[](device.html#wxonnetworkstatuschangecallback)[](compass.html)</div>
 
 </div>

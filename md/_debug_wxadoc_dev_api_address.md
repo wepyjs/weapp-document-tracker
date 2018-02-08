@@ -658,6 +658,6 @@
 
 </div>
 
-[](qrcode.html)[](address.html#wxchooseaddressobject)</div>
+[](qrcode.html)[](card.html)</div>
 
 </div>

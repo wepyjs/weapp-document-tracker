@@ -125,7 +125,7 @@
 
 系统相机。
 
-需要[用户授权](authorize-index.md) scope.camera
+需要[用户授权](../api/authorize-index.html) scope.camera
 
 <table>
 

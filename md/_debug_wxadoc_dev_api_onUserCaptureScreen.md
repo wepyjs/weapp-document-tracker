@@ -475,6 +475,6 @@
 
 </div>
 
-[](setKeepScreenOn.html)[](onUserCaptureScreen.html)</div>
+[](setKeepScreenOn.html)[](device.html#wxvibratelongobject)</div>
 
 </div>

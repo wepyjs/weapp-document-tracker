@@ -70,8 +70,8 @@
     *   [设置](settings.html)
         *   [外观设置](settings.html#外观设置)
         *   [编辑设置](settings.html#编辑设置)
-        *   [通知设置](settings.html#通知设置)
         *   [代理设置](settings.html#代理设置)
+        *   [通知设置](settings.html#通知设置)
     *   [项目页卡](project.html)
         *   [项目设置](project.html#项目设置)
         *   [域名信息](project.html#域名信息)
@@ -82,7 +82,7 @@
     *   [文件类型](edit.html#文件支持)
     *   [自动补全](edit.html#自动补全)
     *   [项目配置文件](edit.html#项目配置文件)
-    *   [Git 状态展示](edit.html#Git 状态展示)
+    *   [Git 状态展示](edit.html#git-状态展示)
 *   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
     *   [自定义编译](debug.html#自定义编译)
@@ -131,6 +131,18 @@
 ### 历史版本下载 2017.08.30 (0.22.203100)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_darwin&from=mpwiki)
+
+### 2018.02.01 开发工具更新
+
+1.  `A` 新增 多开项目
+2.  `A` 新增 小程序远程调试(需要更新客户端版本) [详情](remote-debug.html)
+3.  `A` 新增 sourceMap 文件解析
+4.  `A` 新增 `wx.showTabBar`、`wx.hideTabBar`、`wx.setTabBarStyle`、`wx.setTabBarItem`、`Page.onTabItemTap` 调试支持
+5.  `F` 修复 1.02.1801081 版本 wxss 编译器更新失败的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0008e61e34c9c8be7436a258056804&highline=37%20not%20&token=2109809508&lang=zh_CN)
+6.  `F` 修复 使用自定义组件后 AppData 面板无法使用的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000ac04c9c871865ab26df3325b400)
+7.  `F` 修复 Mac 版本，如果目录存在 `.DS_Store`，删除目录时提示非空的问题
+8.  `F` 修复 部分系统上黑屏的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=&docid=000ceab9b34e58a24a26e667456400)
+9.  `F` 修复 部分系统上无法获取 webgl 的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=&docid=000ceab9b34e58a24a26e667456400)
 
 ### 2018.01.24 基础库更新（1.9.5）
 

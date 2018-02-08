@@ -70,8 +70,8 @@
     *   [设置](settings.html)
         *   [外观设置](settings.html#外观设置)
         *   [编辑设置](settings.html#编辑设置)
-        *   [通知设置](settings.html#通知设置)
         *   [代理设置](settings.html#代理设置)
+        *   [通知设置](settings.html#通知设置)
     *   [项目页卡](project.html)
         *   [项目设置](project.html#项目设置)
         *   [域名信息](project.html#域名信息)
@@ -82,7 +82,7 @@
     *   [文件类型](edit.html#文件支持)
     *   [自动补全](edit.html#自动补全)
     *   [项目配置文件](edit.html#项目配置文件)
-    *   [Git 状态展示](edit.html#Git 状态展示)
+    *   [Git 状态展示](edit.html#git-状态展示)
 *   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
     *   [自定义编译](debug.html#自定义编译)
@@ -233,6 +233,36 @@ wxml 补全
 <td>Object</td>
 
 <td>项目设置</td>
+
+</tr>
+
+<tr>
+
+<td>libVersion</td>
+
+<td>String</td>
+
+<td>基础库版本</td>
+
+</tr>
+
+<tr>
+
+<td>appid</td>
+
+<td>String</td>
+
+<td>项目的 appid，**只在新建项目时读取**</td>
+
+</tr>
+
+<tr>
+
+<td>projectname</td>
+
+<td>String</td>
+
+<td>项目名字，**只在新建项目时读取**</td>
 
 </tr>
 
@@ -562,6 +592,6 @@ setting 中可以指定以下设置
 
 </div>
 
-[](shortcut.html)[](edit.html#文件格式)</div>
+[](shortcut.html)[](debug.html)</div>
 
 </div>

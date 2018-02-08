@@ -263,6 +263,6 @@ WXSS 具有 CSS 大部分的特性，小程序在 WXSS 也做了一些扩充和�
 
 </div>
 
-[](getting-started.html#编译预览)[](file.html#JSON-配置)</div>
+[](getting-started.html#编译预览)[](framework.html)</div>
 
 </div>

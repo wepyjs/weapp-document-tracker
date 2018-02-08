@@ -1422,6 +1422,6 @@
 
 </div>
 
-[](live-pusher.html)[](map.html#map)</div>
+[](live-pusher.html)[](canvas.html)</div>
 
 </div>

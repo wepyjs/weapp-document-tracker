@@ -424,6 +424,6 @@
 
 </div>
 
-[](navigator.html)[](audio.html#audio)</div>
+[](navigator.html)[](image.html)</div>
 
 </div>

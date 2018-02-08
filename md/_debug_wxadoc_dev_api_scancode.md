@@ -630,6 +630,6 @@
 
 </div>
 
-[](phonecall.html#wxmakephonecallobject)[](scancode.html#wxscancodeobject)</div>
+[](phonecall.html#wxmakephonecallobject)[](clipboard.html)</div>
 
 </div>

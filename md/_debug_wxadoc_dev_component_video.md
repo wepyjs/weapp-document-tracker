@@ -385,6 +385,34 @@
 
 <tr>
 
+<td>objectFit</td>
+
+<td>String</td>
+
+<td>contain</td>
+
+<td>当视频大小与 video 容器大小不一致时，视频的表现形式。contain：包含，fill：填充，cover：覆盖</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>poster</td>
+
+<td>String</td>
+
+<td></td>
+
+<td>视频封面的图片网络资源地址，如果 controls 属性值为 false 则设置 poster 无效</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
 <td>bindplay</td>
 
 <td>EventHandle</td>
@@ -455,27 +483,29 @@
 
 <tr>
 
-<td>objectFit</td>
+<td>bindwaiting</td>
 
-<td>String</td>
-
-<td>contain</td>
-
-<td>当视频大小与 video 容器大小不一致时，视频的表现形式。contain：包含，fill：填充，cover：覆盖</td>
+<td>EventHandle</td>
 
 <td></td>
+
+<td>视频出现缓冲时触发</td>
+
+<td>[1.7.0](../framework/compatibility.html "基础库 1.7.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
 <tr>
 
-<td>poster</td>
+<td>binderror</td>
 
-<td>String</td>
+<td>EventHandle</td>
 
 <td></td>
 
-<td>视频封面的图片网络资源地址，如果 controls 属性值为 false 则设置 poster 无效</td>
+<td>视频播放出错时触发</td>
+
+<td>[1.7.0](../framework/compatibility.html "基础库 1.7.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

@@ -580,6 +580,6 @@
 
 </div>
 
-[](media-picture.html#wxsaveimagetophotosalbumobject)[](media-record.html#wxstartrecordobject)</div>
+[](media-picture.html#wxsaveimagetophotosalbumobject)[](getRecorderManager.html)</div>
 
 </div>

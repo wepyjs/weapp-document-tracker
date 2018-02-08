@@ -763,6 +763,6 @@ encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](
 
 </div>
 
-[](authorize.html#wxauthorizeobject)[](open.html#wxgetuserinfoobject)</div>
+[](authorize.html#wxauthorizeobject)[](getPhoneNumber.html)</div>
 
 </div>

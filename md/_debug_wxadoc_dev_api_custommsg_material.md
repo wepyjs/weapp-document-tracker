@@ -674,6 +674,6 @@ HTTP 请求方式：POST/FORM，HTTPS 调用
 
 </div>
 
-[](trans.html)[](material.html#获取临时素材)</div>
+[](trans.html)[](typing.html)</div>
 
 </div>

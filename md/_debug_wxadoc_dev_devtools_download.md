@@ -70,8 +70,8 @@
     *   [设置](settings.html)
         *   [外观设置](settings.html#外观设置)
         *   [编辑设置](settings.html#编辑设置)
-        *   [通知设置](settings.html#通知设置)
         *   [代理设置](settings.html#代理设置)
+        *   [通知设置](settings.html#通知设置)
     *   [项目页卡](project.html)
         *   [项目设置](project.html#项目设置)
         *   [域名信息](project.html#域名信息)
@@ -82,7 +82,7 @@
     *   [文件类型](edit.html#文件支持)
     *   [自动补全](edit.html#自动补全)
     *   [项目配置文件](edit.html#项目配置文件)
-    *   [Git 状态展示](edit.html#Git 状态展示)
+    *   [Git 状态展示](edit.html#git-状态展示)
 *   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
     *   [自定义编译](debug.html#自定义编译)
@@ -128,26 +128,23 @@
 
 <section class="normal markdown-section">
 
-## 最新版本下载地址 (1.02.1802021)
+## 最新版本下载地址 (1.02.1802080)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
 
-### 2018.02.01 开发者工具更新
+### 2018.02.08 开发者工具更新
 
-1.  `A` 新增 多开项目
-2.  `A` 新增 小程序远程调试(需要更新客户端版本) [详情](remote-debug.html)
-3.  `A` 新增 sourceMap 文件解析
-4.  `A` 新增 `wx.showTabBar`、`wx.hideTabBar`、`wx.setTabBarStyle`、`wx.setTabBarItem`、`Page.onTabItemTap` 调试支持
-5.  `F` 修复 1.02.1801081 版本 wxss 编译器更新失败的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0008e61e34c9c8be7436a258056804&highline=37%20not%20&token=2109809508&lang=zh_CN)
-6.  `F` 修复 使用自定义组件后 AppData 面板无法使用的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000ac04c9c871865ab26df3325b400)
-7.  `F` 修复 Mac 版本，如果目录存在 `.DS_Store`，删除目录时提示非空的问题
-8.  `F` 修复 部分系统上黑屏的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=&docid=000ceab9b34e58a24a26e667456400)
-9.  `F` 修复 部分系统上无法获取 webgl 的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=&docid=000ceab9b34e58a24a26e667456400)
-
-### 2018.01.24 基础库更新（1.9.5）
-
-1.  `A` 新增 配置 `window.navigationStyle` 支持全屏显示小程序 [详情](../framework/config.html)
-2.  `U` 更新 组件 `<button />` `open-type` 新增 `launchApp` 属性 [详情](../component/button.html)
+1.  `A` 新增 iPhone X 尺寸
+2.  `U` 更新 自动补全更新
+3.  `F` 修复 多开时登录态丢失问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1304261213&docid=0000eab3d84d60bc6946e5f765b400)
+4.  `F` 修复 Windows 某些版本下工具可能打不开的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0002c0bd2942b0854a46236465b000&token=1304261213&lang=zh_CN)
+5.  `F` 修复 硬盘空间满的时候，如果保存出错文件会被清空的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1923294032&docid=0002ac463ccb20b077469e04756400&comment_lvl=1)
+6.  `F` 修复 `wx.getSystemInfo` 返回缺少 `batteryLevel` 的问题
+7.  `F` 修复 部分 API 自动补全格式错误 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1557132050&docid=00024aa27202d81374468829251000&inwindow=1)
+8.  `F` 修复 `wx.navigateBackMiniProgram` 返回信息错误问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000eec97c70b00977d460025251000&token=2038396590&lang=zh_CN)
+9.  `F` 修复 焦点不在编辑器时，按下跳转文件快捷键没有自动让它获取到焦点的问题
+10.  `F` 修复 在 `app.json` 编辑 `pages` 自动创建文件时，路径逾越了项目路径也能成功的问题
+11.  `F` 修复 `app.json` 中 `enablePullDownRefresh` 没有严格校验类型的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000e44a8fa8718741f26d903c51000&token=2109809508&lang=zh_CN)
 
 ### 上一版本下载地址 (1.02.1801081)
 

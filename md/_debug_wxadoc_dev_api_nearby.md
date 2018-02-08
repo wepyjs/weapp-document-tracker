@@ -1270,6 +1270,6 @@ POST数据示例：
 
 </div>
 
-[](checkIsSoterEnrolledInDevice.html)[](nearby.html#添加地点)</div>
+[](checkIsSoterEnrolledInDevice.html)[](analysis.html)</div>
 
 </div>

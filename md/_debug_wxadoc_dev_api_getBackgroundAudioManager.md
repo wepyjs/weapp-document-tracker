@@ -861,6 +861,6 @@
 
 </div>
 
-[](media-background-audio.html#wxonbackgroundaudiostopcallback)[](getBackgroundAudioManager.html)</div>
+[](media-background-audio.html#wxonbackgroundaudiostopcallback)[](api-audio.html)</div>
 
 </div>

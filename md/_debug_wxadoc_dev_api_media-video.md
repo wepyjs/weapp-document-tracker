@@ -785,6 +785,6 @@
 
 </div>
 
-[](createInnerAudioContext.html)[](media-video.html#wxchoosevideoobject)</div>
+[](createInnerAudioContext.html)[](api-video.html)</div>
 
 </div>

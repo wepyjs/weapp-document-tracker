@@ -637,6 +637,6 @@
 
 </div>
 
-[](api-react.html#wxshowactionsheetobject)[](ui.html#wxsetnavigationbartitleobject)</div>
+[](api-react.html#wxshowactionsheetobject)[](setNavigationBarColor.html)</div>
 
 </div>
