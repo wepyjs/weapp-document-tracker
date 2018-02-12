@@ -146,10 +146,6 @@
 10.  `F` 修复 在 `app.json` 编辑 `pages` 自动创建文件时，路径逾越了项目路径也能成功的问题
 11.  `F` 修复 `app.json` 中 `enablePullDownRefresh` 没有严格校验类型的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000e44a8fa8718741f26d903c51000&token=2109809508&lang=zh_CN)
 
-### 上一版本下载地址 (1.02.1801081)
-
-[windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki&download_version=1021801081) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki&download_version=1021801081) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki&download_version=1021801081)
-
 ## 历史更新日志
 
 [历史更新日志](uplog.html)
