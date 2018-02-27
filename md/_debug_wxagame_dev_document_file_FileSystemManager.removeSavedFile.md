@@ -352,7 +352,7 @@
 
 ### FileSystemManager.removeSavedFile(Object object)
 
-获取该小程序下已保存的本地缓存文件列表
+删除该小程序下已保存的本地缓存文件
 
 #### 参数
 

@@ -107,19 +107,10 @@
 
 <section class="normal markdown-section">
 
-### 2018.02.08 开发者工具更新
+### 2018.02.27 开发者工具更新
 
-1.  `A` 新增 iPhone X 尺寸
-2.  `U` 更新 自动补全更新
-3.  `F` 修复 多开时登录态丢失问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1304261213&docid=0000eab3d84d60bc6946e5f765b400)
-4.  `F` 修复 Windows 某些版本下工具可能打不开的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0002c0bd2942b0854a46236465b000&token=1304261213&lang=zh_CN)
-5.  `F` 修复 硬盘空间满的时候，如果保存出错文件会被清空的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1923294032&docid=0002ac463ccb20b077469e04756400&comment_lvl=1)
-6.  `F` 修复 `wx.getSystemInfo` 返回缺少 `batteryLevel` 的问题
-7.  `F` 修复 部分 API 自动补全格式错误 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1557132050&docid=00024aa27202d81374468829251000&inwindow=1)
-8.  `F` 修复 `wx.navigateBackMiniProgram` 返回信息错误问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000eec97c70b00977d460025251000&token=2038396590&lang=zh_CN)
-9.  `F` 修复 焦点不在编辑器时，按下跳转文件快捷键没有自动让它获取到焦点的问题
-10.  `F` 修复 在 `app.json` 编辑 `pages` 自动创建文件时，路径逾越了项目路径也能成功的问题
-11.  `F` 修复 `app.json` 中 `enablePullDownRefresh` 没有严格校验类型的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000e44a8fa8718741f26d903c51000&token=2109809508&lang=zh_CN)
+1.  `F` 修复 长文本中文乱码问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1027061435&docid=000e82370640309df8463524851400&inwindow=1)
+2.  `F` 修复 用命令行 / http 上传第三方平台小程序代码没有上传至对应用户的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=151559511&docid=0008ca1074069022f256a1df351c00)
 
 ## 历史更新日志
 

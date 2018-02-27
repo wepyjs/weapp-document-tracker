@@ -1039,7 +1039,7 @@
 
 <tr>
 
-<td>aniamtion</td>
+<td>animation</td>
 
 <td>Boolean</td>
 
@@ -1119,7 +1119,7 @@
 
 <tr>
 
-<td>aniamtion</td>
+<td>animation</td>
 
 <td>Boolean</td>
 
