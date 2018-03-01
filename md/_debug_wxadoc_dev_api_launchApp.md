@@ -527,6 +527,6 @@ Android 第三方 app 需要处理 `ShowMessageFromWX.req` 的微信回调，iOS
 
 </div>
 
-[](navigateBackMiniProgram.html)[](launchApp.html)</div>
+[](navigateBackMiniProgram.html)[](chooseInvoiceTitle.html)</div>
 
 </div>

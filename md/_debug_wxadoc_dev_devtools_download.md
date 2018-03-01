@@ -128,7 +128,7 @@
 
 <section class="normal markdown-section">
 
-## 最新版本下载地址 (1.02.1802770)
+## 最新版本下载地址 (1.02.1802270)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
 
@@ -136,6 +136,10 @@
 
 1.  `F` 修复 长文本中文乱码问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1027061435&docid=000e82370640309df8463524851400&inwindow=1)
 2.  `F` 修复 用命令行 / http 上传第三方平台小程序代码没有上传至对应用户的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=151559511&docid=0008ca1074069022f256a1df351c00)
+
+### 上一版本下载地址 (1.02.1802080)
+
+[windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki&download_version=1021802080) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki&download_version=1021802080) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki&download_version=1021802080)
 
 ## 历史更新日志
 

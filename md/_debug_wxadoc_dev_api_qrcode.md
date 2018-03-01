@@ -502,7 +502,7 @@
 
 <td>{"r":"0","g":"0","b":"0"}</td>
 
-<td>auth_color 为 false 时生效，使用 rgb 设置颜色 例如 {"r":"xxx","g":"xxx","b":"xxx"}</td>
+<td>auth_color 为 false 时生效，使用 rgb 设置颜色 例如 {"r":"xxx","g":"xxx","b":"xxx"},十进制表示</td>
 
 </tr>
 
@@ -598,7 +598,7 @@
 
 <td>{"r":"0","g":"0","b":"0"}</td>
 
-<td>auto_color 为 false 时生效，使用 rgb 设置颜色 例如 {"r":"xxx","g":"xxx","b":"xxx"}</td>
+<td>auto_color 为 false 时生效，使用 rgb 设置颜色 例如 {"r":"xxx","g":"xxx","b":"xxx"} 十进制表示</td>
 
 </tr>
 
