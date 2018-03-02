@@ -76,6 +76,7 @@
     *   [获取二维码](qrcode.html)
     *   [转发](share.html)
     *   [用户数据的签名验证和加解密](signature.html)
+    *   [关系链数据](open-data.html)
 
 </nav>
 
@@ -271,12 +272,8 @@
 
 **注意：通过该接口生成的小程序码，永久有效，数量暂无限制。用户扫描该码进入小程序后，开发者需在对应页面获取的码中 scene 字段的值，再做处理逻辑。使用如下代码可以获取到二维码中的 scene 字段的值。调试阶段可以使用开发工具的条件编译自定义参数 scene=xxxx 进行模拟，开发工具模拟时的 scene 的参数值需要进行 urlencode**
 
-    // 这是首页的 js
-    Page({
-      onLoad: function(options) {
-        // options 中的 scene 需要使用 decodeURIComponent 才能获取到生成二维码时传入的 scene
-        var scene = decodeURIComponent(options.scene)
-      }
+    wx.onShow(function (option) {
+        var scene = decodeURIComponent(option.query.scene)
     })
 
 ### 获取小程序二维码
@@ -319,7 +316,7 @@
 
 <td></td>
 
-<td>不能为空，最大长度 128 字节。小游戏没有页面的概念，因此将 query 以 `?a=b&c=d` 形式传给此参数</td>
+<td>不能为空，最大长度 128 字节。小游戏没有页面的概念，因此只需要path的query部分，如 ?a=b&c=d</td>
 
 </tr>
 

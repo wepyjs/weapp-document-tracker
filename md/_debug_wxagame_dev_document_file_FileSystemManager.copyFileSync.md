@@ -140,21 +140,22 @@
     *   [FileSystemManager.copyFileSync](FileSystemManager.copyFileSync.html)
     *   [FileSystemManager.getFileInfo](FileSystemManager.getFileInfo.html)
     *   [FileSystemManager.getSavedFileList](FileSystemManager.getSavedFileList.html)
-    *   [Stats.isFile](Stats.isFile.html)
     *   [Stats.isDirectory](Stats.isDirectory.html)
+    *   [Stats.isFile](Stats.isFile.html)
     *   [FileSystemManager.mkdir](FileSystemManager.mkdir.html)
     *   [FileSystemManager.mkdirSync](FileSystemManager.mkdirSync.html)
     *   [FileSystemManager.removeSavedFile](FileSystemManager.removeSavedFile.html)
+    *   [FileSystemManager.readFile](FileSystemManager.readFile.html)
+    *   [FileSystemManager.rename](FileSystemManager.rename.html)
+    *   [FileSystemManager.rmdir](FileSystemManager.rmdir.html)
+    *   [FileSystemManager.readdir](FileSystemManager.readdir.html)
     *   [FileSystemManager.readdirSync](FileSystemManager.readdirSync.html)
     *   [FileSystemManager.renameSync](FileSystemManager.renameSync.html)
     *   [FileSystemManager.rmdirSync](FileSystemManager.rmdirSync.html)
-    *   [FileSystemManager.rename](FileSystemManager.rename.html)
-    *   [FileSystemManager.readdir](FileSystemManager.readdir.html)
-    *   [FileSystemManager.rmdir](FileSystemManager.rmdir.html)
-    *   [FileSystemManager.readFile](FileSystemManager.readFile.html)
     *   [FileSystemManager.readFileSync](FileSystemManager.readFileSync.html)
     *   [FileSystemManager.saveFile](FileSystemManager.saveFile.html)
     *   [FileSystemManager.stat](FileSystemManager.stat.html)
+    *   [FileSystemManager.saveFileSync](FileSystemManager.saveFileSync.html)
     *   [FileSystemManager.statSync](FileSystemManager.statSync.html)
     *   [FileSystemManager.unlink](FileSystemManager.unlink.html)
     *   [FileSystemManager.unzip](FileSystemManager.unzip.html)
@@ -208,6 +209,14 @@
         *   [AuthSetting](../open-api/setting/AuthSetting.html)
     *   [微信运动](../open-api/werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../open-api/werun/wx.getWeRunData.html)
+    *   [开放数据](../open-api/data/wx.getFriendCloudStorage.html)
+        *   [wx.getFriendCloudStorage](../open-api/data/wx.getFriendCloudStorage.html)
+        *   [wx.getGroupCloudStorage](../open-api/data/wx.getGroupCloudStorage.html)
+        *   [wx.getUserCloudStorage](../open-api/data/wx.getUserCloudStorage.html)
+        *   [wx.removeUserCloudStorage](../open-api/data/wx.removeUserCloudStorage.html)
+        *   [wx.setUserCloudStorage](../open-api/data/wx.setUserCloudStorage.html)
+        *   [KVData](../open-api/data/KVData.html)
+        *   [UserGameData](../open-api/data/UserGameData.html)
 *   [转发](../share/wx.getShareInfo.html)
     *   [wx.getShareInfo](../share/wx.getShareInfo.html)
     *   [wx.hideShareMenu](../share/wx.hideShareMenu.html)
@@ -307,17 +316,23 @@
         *   [wx.createVideo](../media/video/wx.createVideo.html)
         *   [Video](../media/video/Video.html)
         *   [Video.exitFullScreen](../media/video/Video.exitFullScreen.html)
-        *   [Video.onPlay](../media/video/Video.onPlay.html)
-        *   [Video.onEnded](../media/video/Video.onEnded.html)
-        *   [Video.onTimeUpdate](../media/video/Video.onTimeUpdate.html)
         *   [Video.onError](../media/video/Video.onError.html)
-        *   [Video.onWaiting](../media/video/Video.onWaiting.html)
+        *   [Video.offPlay](../media/video/Video.offPlay.html)
         *   [Video.onPause](../media/video/Video.onPause.html)
-        *   [Video.play](../media/video/Video.play.html)
+        *   [Video.offPause](../media/video/Video.offPause.html)
+        *   [Video.onEnded](../media/video/Video.onEnded.html)
+        *   [Video.offEnded](../media/video/Video.offEnded.html)
+        *   [Video.onTimeUpdate](../media/video/Video.onTimeUpdate.html)
+        *   [Video.onWaiting](../media/video/Video.onWaiting.html)
+        *   [Video.onPlay](../media/video/Video.onPlay.html)
+        *   [Video.offError](../media/video/Video.offError.html)
+        *   [Video.offWaiting](../media/video/Video.offWaiting.html)
+        *   [Video.offTimeUpdate](../media/video/Video.offTimeUpdate.html)
         *   [Video.pause](../media/video/Video.pause.html)
+        *   [Video.play](../media/video/Video.play.html)
         *   [Video.requestFullScreen](../media/video/Video.requestFullScreen.html)
-        *   [Video.seek](../media/video/Video.seek.html)
         *   [Video.stop](../media/video/Video.stop.html)
+        *   [Video.seek](../media/video/Video.seek.html)
 *   [性能](../performance/wx.getPerformance.html)
     *   [wx.getPerformance](../performance/wx.getPerformance.html)
     *   [wx.triggerGC](../performance/wx.triggerGC.html)
@@ -350,7 +365,7 @@
 
 <section class="normal markdown-section">
 
-### FileSystemManager.copyFileSync(string srcPath, string destPath)
+### string FileSystemManager.copyFileSync(string srcPath, string destPath)
 
 FileSystemManager.copyFile 的同步版本
 
@@ -364,7 +379,13 @@ FileSystemManager.copyFile 的同步版本
 
 目标文件路径
 
-#### 错误
+#### 返回值
+
+##### string errMsg
+
+错误信息
+
+**errMsg 的合法值**
 
 <table>
 
@@ -372,7 +393,7 @@ FileSystemManager.copyFile 的同步版本
 
 <tr>
 
-<th>errMsg</th>
+<th>值</th>
 
 <th>说明</th>
 

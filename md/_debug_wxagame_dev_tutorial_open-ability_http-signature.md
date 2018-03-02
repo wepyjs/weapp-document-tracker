@@ -76,6 +76,7 @@
     *   [获取二维码](qrcode.html)
     *   [转发](share.html)
     *   [用户数据的签名验证和加解密](signature.html)
+    *   [关系链数据](open-data.html)
 
 </nav>
 

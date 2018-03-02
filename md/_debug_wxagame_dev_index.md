@@ -76,6 +76,7 @@
     *   [获取二维码](tutorial/open-ability/qrcode.html)
     *   [转发](tutorial/open-ability/share.html)
     *   [用户数据的签名验证和加解密](tutorial/open-ability/signature.html)
+    *   [关系链数据](tutorial/open-ability/open-data.html)
 
 </nav>
 

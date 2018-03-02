@@ -376,6 +376,19 @@
             
         </li>
     
+        <li class="chapter  " data-level="1.1.4.6" data-path="open-data.html" data-name="&#x5173;&#x7CFB;&#x94FE;&#x6570;&#x636E;">
+            
+                <a href="open-data.html">
+            
+                    
+                    &#x5173;&#x7CFB;&#x94FE;&#x6570;&#x636E;
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -501,12 +514,8 @@
 </tbody>
 </table>
 <p><strong>&#x6CE8;&#x610F;&#xFF1A;&#x901A;&#x8FC7;&#x8BE5;&#x63A5;&#x53E3;&#x751F;&#x6210;&#x7684;&#x5C0F;&#x7A0B;&#x5E8F;&#x7801;&#xFF0C;&#x6C38;&#x4E45;&#x6709;&#x6548;&#xFF0C;&#x6570;&#x91CF;&#x6682;&#x65E0;&#x9650;&#x5236;&#x3002;&#x7528;&#x6237;&#x626B;&#x63CF;&#x8BE5;&#x7801;&#x8FDB;&#x5165;&#x5C0F;&#x7A0B;&#x5E8F;&#x540E;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x9700;&#x5728;&#x5BF9;&#x5E94;&#x9875;&#x9762;&#x83B7;&#x53D6;&#x7684;&#x7801;&#x4E2D; scene &#x5B57;&#x6BB5;&#x7684;&#x503C;&#xFF0C;&#x518D;&#x505A;&#x5904;&#x7406;&#x903B;&#x8F91;&#x3002;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#x4E8C;&#x7EF4;&#x7801;&#x4E2D;&#x7684; scene &#x5B57;&#x6BB5;&#x7684;&#x503C;&#x3002;&#x8C03;&#x8BD5;&#x9636;&#x6BB5;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x7684;&#x6761;&#x4EF6;&#x7F16;&#x8BD1;&#x81EA;&#x5B9A;&#x4E49;&#x53C2;&#x6570; scene=xxxx &#x8FDB;&#x884C;&#x6A21;&#x62DF;&#xFF0C;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x6A21;&#x62DF;&#x65F6;&#x7684; scene &#x7684;&#x53C2;&#x6570;&#x503C;&#x9700;&#x8981;&#x8FDB;&#x884C; urlencode</strong></p>
-<pre><code class="lang-javascript"><span class="hljs-comment">// &#x8FD9;&#x662F;&#x9996;&#x9875;&#x7684; js</span>
-Page({
-  onLoad: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">options</span>) </span>{
-    <span class="hljs-comment">// options &#x4E2D;&#x7684; scene &#x9700;&#x8981;&#x4F7F;&#x7528; decodeURIComponent &#x624D;&#x80FD;&#x83B7;&#x53D6;&#x5230;&#x751F;&#x6210;&#x4E8C;&#x7EF4;&#x7801;&#x65F6;&#x4F20;&#x5165;&#x7684; scene</span>
-    <span class="hljs-keyword">var</span> scene = <span class="hljs-built_in">decodeURIComponent</span>(options.scene)
-  }
+<pre><code class="lang-javascript">wx.onShow(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">option</span>) </span>{
+    <span class="hljs-keyword">var</span> scene = <span class="hljs-built_in">decodeURIComponent</span>(option.query.scene)
 })
 </code></pre>
 <h3 id="&#x83B7;&#x53D6;&#x5C0F;&#x7A0B;&#x5E8F;&#x4E8C;&#x7EF4;&#x7801;">&#x83B7;&#x53D6;&#x5C0F;&#x7A0B;&#x5E8F;&#x4E8C;&#x7EF4;&#x7801;</h3>
@@ -529,7 +538,7 @@ Page({
 <td>path</td>
 <td>String</td>
 <td></td>
-<td>&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#xFF0C;&#x6700;&#x5927;&#x957F;&#x5EA6; 128 &#x5B57;&#x8282;&#x3002;&#x5C0F;&#x6E38;&#x620F;&#x6CA1;&#x6709;&#x9875;&#x9762;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x56E0;&#x6B64;&#x5C06; query &#x4EE5; <code>?a=b&amp;c=d</code> &#x5F62;&#x5F0F;&#x4F20;&#x7ED9;&#x6B64;&#x53C2;&#x6570;</td>
+<td>&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#xFF0C;&#x6700;&#x5927;&#x957F;&#x5EA6; 128 &#x5B57;&#x8282;&#x3002;&#x5C0F;&#x6E38;&#x620F;&#x6CA1;&#x6709;&#x9875;&#x9762;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x56E0;&#x6B64;&#x53EA;&#x9700;&#x8981;path&#x7684;query&#x90E8;&#x5206;&#xFF0C;&#x5982; ?a=b&amp;c=d</td>
 </tr>
 <tr>
 <td>width</td>

@@ -111,9 +111,9 @@
 
 <section class="normal markdown-section">
 
-## 最新版本下载地址 (1.02.1801080)
+## 最新版本下载地址 (1.02.1803020)
 
-[Windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=game_x64&from=mpwiki&) 、 [Windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=game_ia32&from=mpwiki&) 、 [macOS](https://servicewechat.com/wxa-dev-logic/download_redirect?type=game_darwin&from=mpwiki&)
+[Windows 64](https://dldir1.qq.com/WechatWebDev/1.0.0/201803020/wechat_devtools_1.02.1803020_x64.exe) 、 [Windows 32](https://dldir1.qq.com/WechatWebDev/1.0.0/201803020/wechat_devtools_1.02.1803020_ia32.exe) 、 [macOS](https://dldir1.qq.com/WechatWebDev/1.0.0/201803020/wechat_devtools_1.02.1803020.dmg)
 
 </section>
 
