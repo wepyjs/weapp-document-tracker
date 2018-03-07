@@ -304,6 +304,19 @@
         *   [draw](canvas/draw.html)
         *   [getActions](canvas/get-actions.html)
         *   [clearActions](canvas/clear-actions.html)
+        *   [measureText](canvas/measure-text.html)
+        *   [globalCompositeOperation](canvas/global-composite-operation.html)
+        *   [arcTo](canvas/arc-to.html)
+        *   [strokeText](canvas/stroke-text.html)
+        *   [lineDashOffset](canvas/line-dash-offset.html)
+        *   [createPattern](canvas/create-pattern.html)
+        *   <span>shadowBlur</span>
+        *   <span>shadowColor</span>
+        *   <span>shadowOffsetX</span>
+        *   <span>shadowOffsetY</span>
+        *   [font](canvas/font.html)
+        *   <span>transform</span>
+        *   [setTransform](canvas/set-transform.html)
     *   [下拉刷新](pulldown.html)
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
         *   [wx.startPullDownRefresh](pulldown.html#wxstartpulldownrefresh)
@@ -399,6 +412,10 @@
         *   [用户画像](analysis-user.html)
     *   [自定义分析](analysis-report.html)
         *   [自定义数据上报](analysis-report.html)
+*   [更新](getUpdateManager.html)
+    *   [wx.getUpdateManager](getUpdateManager.html)
+*   [多线程](createWorker.html)
+    *   [wx.createWorker](createWorker.html)
 *   [调试接口](setEnableDebug.html)
     *   [打开/关闭调试](setEnableDebug.html)
 
@@ -444,6 +461,8 @@
 
 <th>只读</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -460,6 +479,8 @@
 
 <td>否</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -471,6 +492,8 @@
 <td>开始播放的位置（单位：s），默认 0</td>
 
 <td>否</td>
+
+<td></td>
 
 </tr>
 
@@ -484,6 +507,8 @@
 
 <td>否</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -495,6 +520,8 @@
 <td>是否循环播放，默认 false</td>
 
 <td>否</td>
+
+<td></td>
 
 </tr>
 
@@ -508,6 +535,8 @@
 
 <td>否</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -519,6 +548,8 @@
 <td>当前音频的长度（单位：s），只有在当前有合法的 src 时返回</td>
 
 <td>是</td>
+
+<td></td>
 
 </tr>
 
@@ -532,6 +563,8 @@
 
 <td>是</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -544,6 +577,8 @@
 
 <td>是</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -555,6 +590,22 @@
 <td>音频缓冲的时间点，仅保证当前播放时间点到此时间点内容已缓冲。</td>
 
 <td>是</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>volume</td>
+
+<td>Number</td>
+
+<td>音量。范围 0~1。</td>
+
+<td>否</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

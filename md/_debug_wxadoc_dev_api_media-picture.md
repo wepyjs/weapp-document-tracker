@@ -304,6 +304,19 @@
         *   [draw](canvas/draw.html)
         *   [getActions](canvas/get-actions.html)
         *   [clearActions](canvas/clear-actions.html)
+        *   [measureText](canvas/measure-text.html)
+        *   [globalCompositeOperation](canvas/global-composite-operation.html)
+        *   [arcTo](canvas/arc-to.html)
+        *   [strokeText](canvas/stroke-text.html)
+        *   [lineDashOffset](canvas/line-dash-offset.html)
+        *   [createPattern](canvas/create-pattern.html)
+        *   <span>shadowBlur</span>
+        *   <span>shadowColor</span>
+        *   <span>shadowOffsetX</span>
+        *   <span>shadowOffsetY</span>
+        *   [font](canvas/font.html)
+        *   <span>transform</span>
+        *   [setTransform](canvas/set-transform.html)
     *   [下拉刷新](pulldown.html)
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
         *   [wx.startPullDownRefresh](pulldown.html#wxstartpulldownrefresh)
@@ -399,6 +412,10 @@
         *   [用户画像](analysis-user.html)
     *   [自定义分析](analysis-report.html)
         *   [自定义数据上报](analysis-report.html)
+*   [更新](getUpdateManager.html)
+    *   [wx.getUpdateManager](getUpdateManager.html)
+*   [多线程](createWorker.html)
+    *   [wx.createWorker](createWorker.html)
 *   [调试接口](setEnableDebug.html)
     *   [打开/关闭调试](setEnableDebug.html)
 
@@ -819,6 +836,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -833,6 +852,8 @@
 
 <td>图片宽度，单位px</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -843,6 +864,8 @@
 
 <td>图片高度，单位px</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -852,6 +875,118 @@
 <td>String</td>
 
 <td>返回图片的本地路径</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>orientation</td>
+
+<td>String</td>
+
+<td>返回图片的方向，有效值见下表</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>type</td>
+
+<td>String</td>
+
+<td>返回图片的格式</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**orientation参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>枚举值</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>up</td>
+
+<td>默认</td>
+
+</tr>
+
+<tr>
+
+<td>down</td>
+
+<td>180度旋转</td>
+
+</tr>
+
+<tr>
+
+<td>left</td>
+
+<td>逆时针旋转90度</td>
+
+</tr>
+
+<tr>
+
+<td>right</td>
+
+<td>顺时针旋转90度</td>
+
+</tr>
+
+<tr>
+
+<td>up-mirrored</td>
+
+<td>同up，但水平翻转</td>
+
+</tr>
+
+<tr>
+
+<td>down-mirrored</td>
+
+<td>同down，但水平翻转</td>
+
+</tr>
+
+<tr>
+
+<td>left-mirrored</td>
+
+<td>同left，但垂直翻转</td>
+
+</tr>
+
+<tr>
+
+<td>right-mirrored</td>
+
+<td>同right，但垂直翻转</td>
 
 </tr>
 

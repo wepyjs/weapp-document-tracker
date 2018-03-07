@@ -357,13 +357,27 @@
 
 <tr>
 
+<td>adjust-position</td>
+
+<td>Boolean</td>
+
+<td>true</td>
+
+<td>键盘弹起时，是否自动上推页面</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>bindfocus</td>
 
 <td>EventHandle</td>
 
 <td></td>
 
-<td>输入框聚焦时触发，event.detail = {value: value}</td>
+<td>输入框聚焦时触发，event.detail = { value, height }，height 参数在基础库 1.9.90 起支持</td>
 
 <td></td>
 

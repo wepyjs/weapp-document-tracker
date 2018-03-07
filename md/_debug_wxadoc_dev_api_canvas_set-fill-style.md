@@ -304,6 +304,19 @@
         *   [draw](draw.html)
         *   [getActions](get-actions.html)
         *   [clearActions](clear-actions.html)
+        *   [measureText](measure-text.html)
+        *   [globalCompositeOperation](global-composite-operation.html)
+        *   [arcTo](arc-to.html)
+        *   [strokeText](stroke-text.html)
+        *   [lineDashOffset](line-dash-offset.html)
+        *   [createPattern](create-pattern.html)
+        *   <span>shadowBlur</span>
+        *   <span>shadowColor</span>
+        *   <span>shadowOffsetX</span>
+        *   <span>shadowOffsetY</span>
+        *   [font](font.html)
+        *   <span>transform</span>
+        *   [setTransform](set-transform.html)
     *   [下拉刷新](../pulldown.html)
         *   [Page.onPullDownRefresh](../pulldown.html#onpulldownrefresh)
         *   [wx.startPullDownRefresh](../pulldown.html#wxstartpulldownrefresh)
@@ -399,6 +412,10 @@
         *   [用户画像](../analysis-user.html)
     *   [自定义分析](../analysis-report.html)
         *   [自定义数据上报](../analysis-report.html)
+*   [更新](../getUpdateManager.html)
+    *   [wx.getUpdateManager](../getUpdateManager.html)
+*   [多线程](../createWorker.html)
+    *   [wx.createWorker](../createWorker.html)
 *   [调试接口](../setEnableDebug.html)
     *   [打开/关闭调试](../setEnableDebug.html)
 
@@ -427,6 +444,11 @@
 设置填充色。
 
 **Tip**: 如果没有设置 `fillStyle`，默认颜色为 `black`。
+
+### 语法
+
+    canvasContext.setFillStyle(color)
+    canvasContext.fillStyle = color // 基础库 1.9.90 起支持
 
 ### 参数
 

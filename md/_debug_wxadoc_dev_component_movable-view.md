@@ -125,6 +125,46 @@
 
 `movable-view` 的可移动区域
 
+<table>
+
+<thead>
+
+<tr>
+
+<th>属性名</th>
+
+<th>类型</th>
+
+<th>默认值</th>
+
+<th>说明</th>
+
+<th>最低版本</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>scale-area</td>
+
+<td>Boolean</td>
+
+<td>false</td>
+
+<td>当里面的movable-view设置为支持双指缩放时，设置此值可将缩放手势生效区域修改为整个movable-area</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
 **注意：movable-area 必须设置width和height属性，不设置默认为10px**
 
 #### movable-view
@@ -147,6 +187,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -163,6 +205,8 @@
 
 <td>movable-view的移动方向，属性值有all、vertical、horizontal、none</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -174,6 +218,8 @@
 <td>false</td>
 
 <td>movable-view是否带有惯性</td>
+
+<td></td>
 
 </tr>
 
@@ -187,17 +233,21 @@
 
 <td>超过可移动区域后，movable-view是否还可以移动</td>
 
+<td></td>
+
 </tr>
 
 <tr>
 
 <td>x</td>
 
-<td>Number</td>
+<td>Number / String</td>
 
 <td></td>
 
 <td>定义x轴方向的偏移，如果x的值不在可移动范围内，会自动移动到可移动范围；改变x的值会触发动画</td>
+
+<td></td>
 
 </tr>
 
@@ -205,11 +255,13 @@
 
 <td>y</td>
 
-<td>Number</td>
+<td>Number / String</td>
 
 <td></td>
 
 <td>定义y轴方向的偏移，如果y的值不在可移动范围内，会自动移动到可移动范围；改变y的值会触发动画</td>
+
+<td></td>
 
 </tr>
 
@@ -223,6 +275,8 @@
 
 <td>阻尼系数，用于控制x或y改变时的动画和过界回弹的动画，值越大移动越快</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -234,6 +288,150 @@
 <td>2</td>
 
 <td>摩擦系数，用于控制惯性滑动的动画，值越大摩擦力越大，滑动越快停止；必须大于0，否则会被设置成默认值</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>disabled</td>
+
+<td>Boolean</td>
+
+<td>false</td>
+
+<td>是否禁用</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>scale</td>
+
+<td>Boolean</td>
+
+<td>false</td>
+
+<td>是否支持双指缩放，默认缩放手势生效区域是在movable-view内</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>scale-min</td>
+
+<td>Number</td>
+
+<td>0.5</td>
+
+<td>定义缩放倍数最小值</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>scale-max</td>
+
+<td>Number</td>
+
+<td>10</td>
+
+<td>定义缩放倍数最大值</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>scale-value</td>
+
+<td>Number</td>
+
+<td>1</td>
+
+<td>定义缩放倍数，取值范围为 0.5 - 10</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>bindchange</td>
+
+<td>EventHandle</td>
+
+<td></td>
+
+<td>完成一次拖动后触发的事件，event.detail = {x: x, y: y, source: source}，其中source表示产生移动的原因，值可为touch（拖动）、touch-out-of-bounds（超出移动范围）、out-of-bounds（超出移动范围后的回弹）、friction（惯性）和空字符串（setData）</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>bindscale</td>
+
+<td>EventHandle</td>
+
+<td></td>
+
+<td>完成一次拖动后触发的事件，event.detail = {scale: scale}</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+除了基本事件外，movable-view提供了两个特殊事件
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>类型</th>
+
+<th>触发条件</th>
+
+<th>最低版本</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>htouchmove</td>
+
+<td>初次手指触摸后移动为横向的移动，如果catch此事件，则意味着touchmove事件也被catch</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>vtouchmove</td>
+
+<td>初次手指触摸后移动为纵向的移动，如果catch此事件，则意味着touchmove事件也被catch</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -253,7 +451,7 @@
 
     <view class="section">
       <view class="section__title">movable-view区域小于movable-area</view>
-      <movable-area style="height: 200px;width: 200px;background: red;">
+      <movable-area style="height: 200px; width: 200px; background: red;">
         <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all">
         </movable-view>
       </movable-area>
@@ -261,8 +459,13 @@
         <button size="mini" bindtap="tap">click me to move to (30px, 30px)</button>
       </view>
       <view class="section__title">movable-view区域大于movable-area</view>
-      <movable-area style="height: 100px;width: 100px;background: red;" direction="all">
-        <movable-view style="height: 200px; width: 200px; background: blue;">
+      <movable-area style="height: 100px; width: 100px; background: red;">
+        <movable-view style="height: 200px; width: 200px; background: blue;" direction="all">
+        </movable-view>
+      </movable-area>
+      <view class="section__title">可放缩</view>
+      <movable-area style="height: 200px; width: 200px; background: red;" scale-area>
+        <movable-view style="height: 50px; width: 50px; background: blue;" direction="all" bindchange="onChange" bindscale="onScale" scale scale-min="0.5" scale-max="4" scale-value="2">
         </movable-view>
       </movable-area>
     </view>
@@ -277,6 +480,12 @@
           x: 30,
           y: 30
         });
+      },
+      onChange: function(e) {
+        console.log(e.detail)
+      },
+      onScale: function(e) {
+        console.log(e.detail)
       }
     })
 

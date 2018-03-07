@@ -95,6 +95,7 @@
     *   [behaviors](custom-component/behaviors.html)
     *   [组件间关系](custom-component/relations.html)
 *   [分包加载](subpackages.html)
+*   [多线程](workers.html)
 *   [基础库](client-lib.html)
 *   [兼容](compatibility.html)
 *   [运行机制](operating-mechanism.html)
@@ -126,7 +127,7 @@
 
 ### 更新机制
 
-小程序冷启动时如果发现有新版本，将会异步下载新版本的代码包，并同时用客户端本地的包进行启动，即新版本的小程序需要等下一次冷启动才会应用上。
+小程序冷启动时如果发现有新版本，将会异步下载新版本的代码包，并同时用客户端本地的包进行启动，即新版本的小程序需要等下一次冷启动才会应用上。 如果需要马上应用最新版本，可以使用 [wx.getUpdateManager](../api/getUpdateManager.html) API 进行处理。
 
 ### 运行机制
 

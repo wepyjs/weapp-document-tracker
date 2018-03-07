@@ -95,6 +95,7 @@
     *   [behaviors](../../custom-component/behaviors.html)
     *   [组件间关系](../../custom-component/relations.html)
 *   [分包加载](../../subpackages.html)
+*   [多线程](../../workers.html)
 *   [基础库](../../client-lib.html)
 *   [兼容](../../compatibility.html)
 *   [运行机制](../../operating-mechanism.html)
@@ -316,6 +317,18 @@ WXML的冒泡事件列表：
 <td>animationend</td>
 
 <td>会在一个 WXSS animation 动画完成时触发</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>touchforcechange</td>
+
+<td>在支持 3D Touch 的 iPhone 设备，重按时会触发</td>
+
+<td>[1.9.90](../../compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

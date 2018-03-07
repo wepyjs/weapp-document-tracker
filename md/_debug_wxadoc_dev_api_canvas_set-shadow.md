@@ -304,6 +304,19 @@
         *   [draw](draw.html)
         *   [getActions](get-actions.html)
         *   [clearActions](clear-actions.html)
+        *   [measureText](measure-text.html)
+        *   [globalCompositeOperation](global-composite-operation.html)
+        *   [arcTo](arc-to.html)
+        *   [strokeText](stroke-text.html)
+        *   [lineDashOffset](line-dash-offset.html)
+        *   [createPattern](create-pattern.html)
+        *   <span>shadowBlur</span>
+        *   <span>shadowColor</span>
+        *   <span>shadowOffsetX</span>
+        *   <span>shadowOffsetY</span>
+        *   [font](font.html)
+        *   <span>transform</span>
+        *   [setTransform](set-transform.html)
     *   [下拉刷新](../pulldown.html)
         *   [Page.onPullDownRefresh](../pulldown.html#onpulldownrefresh)
         *   [wx.startPullDownRefresh](../pulldown.html#wxstartpulldownrefresh)
@@ -399,6 +412,10 @@
         *   [用户画像](../analysis-user.html)
     *   [自定义分析](../analysis-report.html)
         *   [自定义数据上报](../analysis-report.html)
+*   [更新](../getUpdateManager.html)
+    *   [wx.getUpdateManager](../getUpdateManager.html)
+*   [多线程](../createWorker.html)
+    *   [wx.createWorker](../createWorker.html)
 *   [调试接口](../setEnableDebug.html)
     *   [打开/关闭调试](../setEnableDebug.html)
 
@@ -511,6 +528,54 @@
     ctx.draw()
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/canvas/shadow.png)
+
+# canvasContext.shadowBlur
+
+> 基础库 1.9.90 开始支持，低版本需做[兼容处理](../../framework/compatibility.html)
+
+### 定义
+
+设置阴影的模糊级别
+
+### 语法
+
+    canvasContext.shadowBlur = value
+
+# canvasContext.shadowColor
+
+> 基础库 1.9.90 开始支持，低版本需做[兼容处理](../../framework/compatibility.html)
+
+### 定义
+
+设置阴影的颜色
+
+### 语法
+
+    canvasContext.shadowColor = value
+
+# canvasContext.shadowOffsetX
+
+> 基础库 1.9.90 开始支持，低版本需做[兼容处理](../../framework/compatibility.html)
+
+### 定义
+
+设置阴影相对于形状在水平方向的偏移
+
+### 语法
+
+    canvasContext.shadowOffsetX = value
+
+# canvasContext.shadowOffsetY
+
+> 基础库 1.9.90 开始支持，低版本需做[兼容处理](../../framework/compatibility.html)
+
+### 定义
+
+设置阴影相对于形状在竖直方向的偏移
+
+### 语法
+
+    canvasContext.shadowOffsetY = value
 
 </section>
 

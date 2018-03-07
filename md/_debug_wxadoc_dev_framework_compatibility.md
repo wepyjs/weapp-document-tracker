@@ -95,6 +95,7 @@
     *   [behaviors](custom-component/behaviors.html)
     *   [组件间关系](custom-component/relations.html)
 *   [分包加载](subpackages.html)
+*   [多线程](workers.html)
 *   [基础库](client-lib.html)
 *   [兼容](compatibility.html)
 *   [运行机制](operating-mechanism.html)
@@ -129,6 +130,39 @@
 可以通过 `wx.getSystemInfo` 或者 `wx.getSystemInfoSync` 获取到小程序的基础库版本号。
 
 也可以通过 `wx.canIUse` [详情](../api/api-caniuse.html) 来判断是否可以在该基础库版本下直接使用对应的API或者组件
+
+### 兼容方式 - 版本比较
+
+微信客户端和小程序基础库的版本号风格为 Major.Minor.Patch（主版本号.次版本号.修订号）。 开发者可以根据版本号去做兼容，以下为参考代码：
+
+    function compareVersion(v1, v2) {
+      v1 = v1.split('.')
+      v2 = v2.split('.')
+      var len = Math.max(v1.length, v2.length)
+
+      while (v1.length < len) {
+        v1.push('0')
+      }
+      while (v2.length < len) {
+        v2.push('0')
+      }
+
+      for (var i = 0; i < len; i++) {
+        var num1 = parseInt(v1[i])
+        var num2 = parseInt(v2[i])
+
+        if (num1 > num2) {
+          return 1
+        } else if (num1 < num2) {
+          return -1
+        }
+      }
+
+      return 0
+    }
+
+    compareVersion('1.11.0', '1.9.9')
+    // 1
 
 ### 兼容方式 - 接口
 

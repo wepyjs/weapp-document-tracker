@@ -747,6 +747,26 @@
 <p>&#x57FA;&#x7840;&#x5E93; 1.2.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;<a href="../framework/compatibility.html">&#x517C;&#x5BB9;&#x5904;&#x7406;</a></p>
 </blockquote>
 <p><code>movable-view</code> &#x7684;&#x53EF;&#x79FB;&#x52A8;&#x533A;&#x57DF;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scale-area</td>
+<td>Boolean</td>
+<td>false</td>
+<td>&#x5F53;&#x91CC;&#x9762;&#x7684;movable-view&#x8BBE;&#x7F6E;&#x4E3A;&#x652F;&#x6301;&#x53CC;&#x6307;&#x7F29;&#x653E;&#x65F6;&#xFF0C;&#x8BBE;&#x7F6E;&#x6B64;&#x503C;&#x53EF;&#x5C06;&#x7F29;&#x653E;&#x624B;&#x52BF;&#x751F;&#x6548;&#x533A;&#x57DF;&#x4FEE;&#x6539;&#x4E3A;&#x6574;&#x4E2A;movable-area</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.90 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.90</a></td>
+</tr>
+</tbody>
+</table>
 <p><strong>&#x6CE8;&#x610F;&#xFF1A;movable-area &#x5FC5;&#x987B;&#x8BBE;&#x7F6E;width&#x548C;height&#x5C5E;&#x6027;&#xFF0C;&#x4E0D;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x4E3A;10px</strong></p>
 <h4 id="movable-view">movable-view</h4>
 <blockquote>
@@ -760,6 +780,7 @@
 <th>&#x7C7B;&#x578B;</th>
 <th>&#x9ED8;&#x8BA4;&#x503C;</th>
 <th>&#x8BF4;&#x660E;</th>
+<th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th>
 </tr>
 </thead>
 <tbody>
@@ -768,42 +789,120 @@
 <td>String</td>
 <td>none</td>
 <td>movable-view&#x7684;&#x79FB;&#x52A8;&#x65B9;&#x5411;&#xFF0C;&#x5C5E;&#x6027;&#x503C;&#x6709;all&#x3001;vertical&#x3001;horizontal&#x3001;none</td>
+<td></td>
 </tr>
 <tr>
 <td>inertia</td>
 <td>Boolean</td>
 <td>false</td>
 <td>movable-view&#x662F;&#x5426;&#x5E26;&#x6709;&#x60EF;&#x6027;</td>
+<td></td>
 </tr>
 <tr>
 <td>out-of-bounds</td>
 <td>Boolean</td>
 <td>false</td>
 <td>&#x8D85;&#x8FC7;&#x53EF;&#x79FB;&#x52A8;&#x533A;&#x57DF;&#x540E;&#xFF0C;movable-view&#x662F;&#x5426;&#x8FD8;&#x53EF;&#x4EE5;&#x79FB;&#x52A8;</td>
+<td></td>
 </tr>
 <tr>
 <td>x</td>
-<td>Number</td>
+<td>Number / String</td>
 <td></td>
 <td>&#x5B9A;&#x4E49;x&#x8F74;&#x65B9;&#x5411;&#x7684;&#x504F;&#x79FB;&#xFF0C;&#x5982;&#x679C;x&#x7684;&#x503C;&#x4E0D;&#x5728;&#x53EF;&#x79FB;&#x52A8;&#x8303;&#x56F4;&#x5185;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x79FB;&#x52A8;&#x5230;&#x53EF;&#x79FB;&#x52A8;&#x8303;&#x56F4;&#xFF1B;&#x6539;&#x53D8;x&#x7684;&#x503C;&#x4F1A;&#x89E6;&#x53D1;&#x52A8;&#x753B;</td>
+<td></td>
 </tr>
 <tr>
 <td>y</td>
-<td>Number</td>
+<td>Number / String</td>
 <td></td>
 <td>&#x5B9A;&#x4E49;y&#x8F74;&#x65B9;&#x5411;&#x7684;&#x504F;&#x79FB;&#xFF0C;&#x5982;&#x679C;y&#x7684;&#x503C;&#x4E0D;&#x5728;&#x53EF;&#x79FB;&#x52A8;&#x8303;&#x56F4;&#x5185;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x79FB;&#x52A8;&#x5230;&#x53EF;&#x79FB;&#x52A8;&#x8303;&#x56F4;&#xFF1B;&#x6539;&#x53D8;y&#x7684;&#x503C;&#x4F1A;&#x89E6;&#x53D1;&#x52A8;&#x753B;</td>
+<td></td>
 </tr>
 <tr>
 <td>damping</td>
 <td>Number</td>
 <td>20</td>
 <td>&#x963B;&#x5C3C;&#x7CFB;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x63A7;&#x5236;x&#x6216;y&#x6539;&#x53D8;&#x65F6;&#x7684;&#x52A8;&#x753B;&#x548C;&#x8FC7;&#x754C;&#x56DE;&#x5F39;&#x7684;&#x52A8;&#x753B;&#xFF0C;&#x503C;&#x8D8A;&#x5927;&#x79FB;&#x52A8;&#x8D8A;&#x5FEB;</td>
+<td></td>
 </tr>
 <tr>
 <td>friction</td>
 <td>Number</td>
 <td>2</td>
 <td>&#x6469;&#x64E6;&#x7CFB;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x60EF;&#x6027;&#x6ED1;&#x52A8;&#x7684;&#x52A8;&#x753B;&#xFF0C;&#x503C;&#x8D8A;&#x5927;&#x6469;&#x64E6;&#x529B;&#x8D8A;&#x5927;&#xFF0C;&#x6ED1;&#x52A8;&#x8D8A;&#x5FEB;&#x505C;&#x6B62;&#xFF1B;&#x5FC5;&#x987B;&#x5927;&#x4E8E;0&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x88AB;&#x8BBE;&#x7F6E;&#x6210;&#x9ED8;&#x8BA4;&#x503C;</td>
+<td></td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Boolean</td>
+<td>false</td>
+<td>&#x662F;&#x5426;&#x7981;&#x7528;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.90 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.90</a></td>
+</tr>
+<tr>
+<td>scale</td>
+<td>Boolean</td>
+<td>false</td>
+<td>&#x662F;&#x5426;&#x652F;&#x6301;&#x53CC;&#x6307;&#x7F29;&#x653E;&#xFF0C;&#x9ED8;&#x8BA4;&#x7F29;&#x653E;&#x624B;&#x52BF;&#x751F;&#x6548;&#x533A;&#x57DF;&#x662F;&#x5728;movable-view&#x5185;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.90 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.90</a></td>
+</tr>
+<tr>
+<td>scale-min</td>
+<td>Number</td>
+<td>0.5</td>
+<td>&#x5B9A;&#x4E49;&#x7F29;&#x653E;&#x500D;&#x6570;&#x6700;&#x5C0F;&#x503C;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.90 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.90</a></td>
+</tr>
+<tr>
+<td>scale-max</td>
+<td>Number</td>
+<td>10</td>
+<td>&#x5B9A;&#x4E49;&#x7F29;&#x653E;&#x500D;&#x6570;&#x6700;&#x5927;&#x503C;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.90 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.90</a></td>
+</tr>
+<tr>
+<td>scale-value</td>
+<td>Number</td>
+<td>1</td>
+<td>&#x5B9A;&#x4E49;&#x7F29;&#x653E;&#x500D;&#x6570;&#xFF0C;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x4E3A; 0.5 - 10</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.90 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.90</a></td>
+</tr>
+<tr>
+<td>bindchange</td>
+<td>EventHandle</td>
+<td></td>
+<td>&#x5B8C;&#x6210;&#x4E00;&#x6B21;&#x62D6;&#x52A8;&#x540E;&#x89E6;&#x53D1;&#x7684;&#x4E8B;&#x4EF6;&#xFF0C;event.detail = {x: x, y: y, source: source}&#xFF0C;&#x5176;&#x4E2D;source&#x8868;&#x793A;&#x4EA7;&#x751F;&#x79FB;&#x52A8;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x503C;&#x53EF;&#x4E3A;touch&#xFF08;&#x62D6;&#x52A8;&#xFF09;&#x3001;touch-out-of-bounds&#xFF08;&#x8D85;&#x51FA;&#x79FB;&#x52A8;&#x8303;&#x56F4;&#xFF09;&#x3001;out-of-bounds&#xFF08;&#x8D85;&#x51FA;&#x79FB;&#x52A8;&#x8303;&#x56F4;&#x540E;&#x7684;&#x56DE;&#x5F39;&#xFF09;&#x3001;friction&#xFF08;&#x60EF;&#x6027;&#xFF09;&#x548C;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF08;setData&#xFF09;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.90 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.90</a></td>
+</tr>
+<tr>
+<td>bindscale</td>
+<td>EventHandle</td>
+<td></td>
+<td>&#x5B8C;&#x6210;&#x4E00;&#x6B21;&#x62D6;&#x52A8;&#x540E;&#x89E6;&#x53D1;&#x7684;&#x4E8B;&#x4EF6;&#xFF0C;event.detail = {scale: scale}</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.90 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.90</a></td>
+</tr>
+</tbody>
+</table>
+<p>&#x9664;&#x4E86;&#x57FA;&#x672C;&#x4E8B;&#x4EF6;&#x5916;&#xFF0C;movable-view&#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x4E2A;&#x7279;&#x6B8A;&#x4E8B;&#x4EF6;</p>
+<table>
+<thead>
+<tr>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+<th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>htouchmove</td>
+<td>&#x521D;&#x6B21;&#x624B;&#x6307;&#x89E6;&#x6478;&#x540E;&#x79FB;&#x52A8;&#x4E3A;&#x6A2A;&#x5411;&#x7684;&#x79FB;&#x52A8;&#xFF0C;&#x5982;&#x679C;catch&#x6B64;&#x4E8B;&#x4EF6;&#xFF0C;&#x5219;&#x610F;&#x5473;&#x7740;touchmove&#x4E8B;&#x4EF6;&#x4E5F;&#x88AB;catch</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.90 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.90</a></td>
+</tr>
+<tr>
+<td>vtouchmove</td>
+<td>&#x521D;&#x6B21;&#x624B;&#x6307;&#x89E6;&#x6478;&#x540E;&#x79FB;&#x52A8;&#x4E3A;&#x7EB5;&#x5411;&#x7684;&#x79FB;&#x52A8;&#xFF0C;&#x5982;&#x679C;catch&#x6B64;&#x4E8B;&#x4EF6;&#xFF0C;&#x5219;&#x610F;&#x5473;&#x7740;touchmove&#x4E8B;&#x4EF6;&#x4E5F;&#x88AB;catch</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.90 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.90</a></td>
 </tr>
 </tbody>
 </table>
@@ -816,7 +915,7 @@
 <p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</strong></p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;section&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;section__title&quot;</span>&gt;</span>movable-view&#x533A;&#x57DF;&#x5C0F;&#x4E8E;movable-area<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">movable-area</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 200px;width: 200px;background: red;&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">movable-area</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 200px; width: 200px; background: red;&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">movable-view</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 50px; width: 50px; background: blue;&quot;</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;{{x}}&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;{{y}}&quot;</span> <span class="hljs-attr">direction</span>=<span class="hljs-string">&quot;all&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">movable-view</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">movable-area</span>&gt;</span>
@@ -824,8 +923,13 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;mini&quot;</span> <span class="hljs-attr">bindtap</span>=<span class="hljs-string">&quot;tap&quot;</span>&gt;</span>click me to move to (30px, 30px)<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;section__title&quot;</span>&gt;</span>movable-view&#x533A;&#x57DF;&#x5927;&#x4E8E;movable-area<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">movable-area</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 100px;width: 100px;background: red;&quot;</span> <span class="hljs-attr">direction</span>=<span class="hljs-string">&quot;all&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">movable-view</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 200px; width: 200px; background: blue;&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">movable-area</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 100px; width: 100px; background: red;&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">movable-view</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 200px; width: 200px; background: blue;&quot;</span> <span class="hljs-attr">direction</span>=<span class="hljs-string">&quot;all&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">movable-view</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">movable-area</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;section__title&quot;</span>&gt;</span>&#x53EF;&#x653E;&#x7F29;<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">movable-area</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 200px; width: 200px; background: red;&quot;</span> <span class="hljs-attr">scale-area</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">movable-view</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 50px; width: 50px; background: blue;&quot;</span> <span class="hljs-attr">direction</span>=<span class="hljs-string">&quot;all&quot;</span> <span class="hljs-attr">bindchange</span>=<span class="hljs-string">&quot;onChange&quot;</span> <span class="hljs-attr">bindscale</span>=<span class="hljs-string">&quot;onScale&quot;</span> <span class="hljs-attr">scale</span> <span class="hljs-attr">scale-min</span>=<span class="hljs-string">&quot;0.5&quot;</span> <span class="hljs-attr">scale-max</span>=<span class="hljs-string">&quot;4&quot;</span> <span class="hljs-attr">scale-value</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">movable-view</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">movable-area</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
@@ -840,6 +944,12 @@
       x: <span class="hljs-number">30</span>,
       y: <span class="hljs-number">30</span>
     });
+  },
+  onChange: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(e.detail)
+  },
+  onScale: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(e.detail)
   }
 })
 </code></pre>

@@ -169,6 +169,18 @@
 
 </tr>
 
+<tr>
+
+<td>lang</td>
+
+<td>String</td>
+
+<td>en</td>
+
+<td>当 type="user*" 时生效，以哪种语言展示 userInfo，有效值有：en, zh_CN, zh_TW</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -203,6 +215,76 @@
 
 </tr>
 
+<tr>
+
+<td>userNickName</td>
+
+<td>用户昵称</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>userAvatarUrl</td>
+
+<td>用户头像</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>userGender</td>
+
+<td>用户性别</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>userCity</td>
+
+<td>用户所在城市</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>userProvince</td>
+
+<td>用户所在省份</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>userCountry</td>
+
+<td>用户所在国家</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>userLanguage</td>
+
+<td>用户的语言</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -210,6 +292,8 @@
 **Tips:** 只有当前用户在此群内才能拉取到群名称
 
     <open-data type="groupName" open-gid="xxxxxx"></open-data>
+    <open-data type="userAvatarUrl"></open-data>
+    <open-data type="userGender" lang="zh_CN"></open-data>
 
 **Tips:** 关于open-gid的获取请查看 [转发](../api/share.html#wxgetshareinfoobject)
 

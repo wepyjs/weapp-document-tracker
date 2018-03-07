@@ -124,6 +124,7 @@
         *   [behaviors](../framework/custom-component/behaviors.html)
         *   [组件间关系](../framework/custom-component/relations.html)
     *   [分包加载](../framework/subpackages.html)
+    *   [多线程](../framework/workers.html)
     *   [基础库](../framework/client-lib.html)
     *   [兼容](../framework/compatibility.html)
     *   [运行机制](../framework/operating-mechanism.html)
@@ -414,6 +415,19 @@
             *   [draw](canvas/draw.html)
             *   [getActions](canvas/get-actions.html)
             *   [clearActions](canvas/clear-actions.html)
+            *   [measureText](canvas/measure-text.html)
+            *   [globalCompositeOperation](canvas/global-composite-operation.html)
+            *   [arcTo](canvas/arc-to.html)
+            *   [strokeText](canvas/stroke-text.html)
+            *   [lineDashOffset](canvas/line-dash-offset.html)
+            *   [createPattern](canvas/create-pattern.html)
+            *   <span>shadowBlur</span>
+            *   <span>shadowColor</span>
+            *   <span>shadowOffsetX</span>
+            *   <span>shadowOffsetY</span>
+            *   [font](canvas/font.html)
+            *   <span>transform</span>
+            *   [setTransform](canvas/set-transform.html)
         *   [下拉刷新](pulldown.html)
             *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
             *   [wx.startPullDownRefresh](pulldown.html#wxstartpulldownrefresh)
@@ -509,6 +523,10 @@
             *   [用户画像](analysis-user.html)
         *   [自定义分析](analysis-report.html)
             *   [自定义数据上报](analysis-report.html)
+    *   [更新](getUpdateManager.html)
+        *   [wx.getUpdateManager](getUpdateManager.html)
+    *   [多线程](createWorker.html)
+        *   [wx.createWorker](createWorker.html)
     *   [调试接口](setEnableDebug.html)
         *   [打开/关闭调试](setEnableDebug.html)
 *   [工具](../devtools/devtools.html)

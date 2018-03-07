@@ -95,6 +95,7 @@
     *   [behaviors](behaviors.html)
     *   [组件间关系](relations.html)
 *   [分包加载](../subpackages.html)
+*   [多线程](../workers.html)
 *   [基础库](../client-lib.html)
 *   [兼容](../compatibility.html)
 *   [运行机制](../operating-mechanism.html)
@@ -207,6 +208,31 @@
 
     <!-- 页面的 WXML -->
     <custom-component>这段文本是黄色的</custom-component>
+
+### 外部样式类
+
+有时，组件希望接受外部传入的样式类（类似于 `view` 组件的 `hover-class` 属性）。此时可以在 `Component` 中用 `externalClasses` 定义段定义若干个外部样式类。
+
+**代码示例：**
+
+    /* 组件 custom-component.js */
+    Component({
+      externalClasses: ['my-class']
+    })
+
+    <!-- 组件 custom-component.wxml -->
+    <custom-component class="my-class">这段文本的颜色由组件外的 class 决定</custom-component>
+
+这样，组件的使用者可以指定这个样式类对应的 class ，就像使用普通属性一样。
+
+**代码示例：**
+
+    <!-- 页面的 WXML -->
+    <custom-component my-class="red-text" />
+
+    .red-text {
+      color: red;
+    }
 
 </section>
 

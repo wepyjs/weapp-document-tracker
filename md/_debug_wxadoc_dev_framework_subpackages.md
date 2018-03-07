@@ -95,6 +95,7 @@
     *   [behaviors](custom-component/behaviors.html)
     *   [组件间关系](custom-component/relations.html)
 *   [分包加载](subpackages.html)
+*   [多线程](workers.html)
 *   [基础库](client-lib.html)
 *   [兼容](compatibility.html)
 *   [运行机制](operating-mechanism.html)
@@ -241,6 +242,6 @@
 
 </div>
 
-[](custom-component/relations.html)[](client-lib.html)</div>
+[](custom-component/relations.html)[](workers.html)</div>
 
 </div>

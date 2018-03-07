@@ -628,7 +628,20 @@
             
         </li>
     
-        <li class="chapter  " data-level="1.2.7" data-path="client-lib.html" data-name="&#x57FA;&#x7840;&#x5E93;">
+        <li class="chapter  " data-level="1.2.7" data-path="workers.html" data-name="&#x591A;&#x7EBF;&#x7A0B;">
+            
+                <a href="workers.html">
+            
+                    
+                    &#x591A;&#x7EBF;&#x7A0B;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.8" data-path="client-lib.html" data-name="&#x57FA;&#x7840;&#x5E93;">
             
                 <a href="client-lib.html">
             
@@ -641,7 +654,7 @@
             
         </li>
     
-        <li class="chapter active " data-level="1.2.8" data-path="compatibility.html" data-name="&#x517C;&#x5BB9;">
+        <li class="chapter active " data-level="1.2.9" data-path="compatibility.html" data-name="&#x517C;&#x5BB9;">
             
                 <a href="compatibility.html">
             
@@ -654,7 +667,7 @@
             
         </li>
     
-        <li class="chapter  " data-level="1.2.9" data-path="operating-mechanism.html" data-name="&#x8FD0;&#x884C;&#x673A;&#x5236;">
+        <li class="chapter  " data-level="1.2.10" data-path="operating-mechanism.html" data-name="&#x8FD0;&#x884C;&#x673A;&#x5236;">
             
                 <a href="operating-mechanism.html">
             
@@ -667,7 +680,7 @@
             
         </li>
     
-        <li class="chapter  open" data-level="1.2.10" data-path="performance/" data-name="&#x6027;&#x80FD;">
+        <li class="chapter  open" data-level="1.2.11" data-path="performance/" data-name="&#x6027;&#x80FD;">
             
                 <a href="performance/">
             
@@ -681,7 +694,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter  " data-level="1.2.10.1" data-path="performance/tips.html" data-name="&#x4F18;&#x5316;&#x5EFA;&#x8BAE;">
+        <li class="chapter  " data-level="1.2.11.1" data-path="performance/tips.html" data-name="&#x4F18;&#x5316;&#x5EFA;&#x8BAE;">
             
                 <a href="performance/tips.html">
             
@@ -694,7 +707,7 @@
             
         </li>
     
-        <li class="chapter  " data-level="1.2.10.2" data-path="performance/tools.html" data-name="&#x5206;&#x6790;&#x5DE5;&#x5177;">
+        <li class="chapter  " data-level="1.2.11.2" data-path="performance/tools.html" data-name="&#x5206;&#x6790;&#x5DE5;&#x5177;">
             
                 <a href="performance/tools.html">
             
@@ -748,6 +761,38 @@
 <p>&#x6587;&#x6863;&#x4F1A;&#x5728;&#x7EC4;&#x4EF6;&#xFF0C;API&#x7B49;&#x9875;&#x9762;&#x63CF;&#x8FF0;&#x4E2D;&#x5E26;&#x4E0A;&#x5404;&#x4E2A;&#x529F;&#x80FD;&#x6240;&#x652F;&#x6301;&#x7684;&#x7248;&#x672C;&#x53F7;&#x3002;</p>
 <p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>wx.getSystemInfo</code> &#x6216;&#x8005; <code>wx.getSystemInfoSync</code> &#x83B7;&#x53D6;&#x5230;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x57FA;&#x7840;&#x5E93;&#x7248;&#x672C;&#x53F7;&#x3002;</p>
 <p>&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>wx.canIUse</code> <a href="../api/api-caniuse.html">&#x8BE6;&#x60C5;</a> &#x6765;&#x5224;&#x65AD;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x5728;&#x8BE5;&#x57FA;&#x7840;&#x5E93;&#x7248;&#x672C;&#x4E0B;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x5BF9;&#x5E94;&#x7684;API&#x6216;&#x8005;&#x7EC4;&#x4EF6;</p>
+<h3 id="&#x517C;&#x5BB9;&#x65B9;&#x5F0F;---&#x7248;&#x672C;&#x6BD4;&#x8F83;">&#x517C;&#x5BB9;&#x65B9;&#x5F0F; - &#x7248;&#x672C;&#x6BD4;&#x8F83;</h3>
+<p>&#x5FAE;&#x4FE1;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x5C0F;&#x7A0B;&#x5E8F;&#x57FA;&#x7840;&#x5E93;&#x7684;&#x7248;&#x672C;&#x53F7;&#x98CE;&#x683C;&#x4E3A; Major.Minor.Patch&#xFF08;&#x4E3B;&#x7248;&#x672C;&#x53F7;.&#x6B21;&#x7248;&#x672C;&#x53F7;.&#x4FEE;&#x8BA2;&#x53F7;&#xFF09;&#x3002;
+&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x7248;&#x672C;&#x53F7;&#x53BB;&#x505A;&#x517C;&#x5BB9;&#xFF0C;&#x4EE5;&#x4E0B;&#x4E3A;&#x53C2;&#x8003;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compareVersion</span>(<span class="hljs-params">v1, v2</span>) </span>{
+  v1 = v1.split(<span class="hljs-string">&apos;.&apos;</span>)
+  v2 = v2.split(<span class="hljs-string">&apos;.&apos;</span>)
+  <span class="hljs-keyword">var</span> len = <span class="hljs-built_in">Math</span>.max(v1.length, v2.length)
+
+  <span class="hljs-keyword">while</span> (v1.length &lt; len) {
+    v1.push(<span class="hljs-string">&apos;0&apos;</span>)
+  }
+  <span class="hljs-keyword">while</span> (v2.length &lt; len) {
+    v2.push(<span class="hljs-string">&apos;0&apos;</span>)
+  }
+
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; len; i++) {
+    <span class="hljs-keyword">var</span> num1 = <span class="hljs-built_in">parseInt</span>(v1[i])
+    <span class="hljs-keyword">var</span> num2 = <span class="hljs-built_in">parseInt</span>(v2[i])
+
+    <span class="hljs-keyword">if</span> (num1 &gt; num2) {
+      <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (num1 &lt; num2) {
+      <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>
+    }
+  }
+
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>
+}
+
+compareVersion(<span class="hljs-string">&apos;1.11.0&apos;</span>, <span class="hljs-string">&apos;1.9.9&apos;</span>)
+<span class="hljs-comment">// 1</span>
+</code></pre>
 <h3 id="&#x517C;&#x5BB9;&#x65B9;&#x5F0F;---&#x63A5;&#x53E3;">&#x517C;&#x5BB9;&#x65B9;&#x5F0F; - &#x63A5;&#x53E3;</h3>
 <p>&#x5BF9;&#x4E8E;&#x65B0;&#x589E;&#x7684; API&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x6765;&#x5224;&#x65AD;&#x662F;&#x5426;&#x652F;&#x6301;&#x7528;&#x6237;&#x7684;&#x624B;&#x673A;&#x3002;</p>
 <pre><code class="lang-js"><span class="hljs-keyword">if</span> (wx.openBluetoothAdapter) {

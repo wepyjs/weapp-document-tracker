@@ -95,6 +95,7 @@
     *   [behaviors](behaviors.html)
     *   [组件间关系](relations.html)
 *   [分包加载](../subpackages.html)
+*   [多线程](../workers.html)
 *   [基础库](../client-lib.html)
 *   [兼容](../compatibility.html)
 *   [运行机制](../operating-mechanism.html)
@@ -261,6 +262,18 @@ Component构造器可用于定义组件，调用Component构造器时可以指�
 <td>否</td>
 
 <td>组件间关系定义，参见 [组件间关系](relations.html)</td>
+
+</tr>
+
+<tr>
+
+<td>externalClasses</td>
+
+<td>String Array</td>
+
+<td>否</td>
+
+<td>组件接受的外部样式类，参见 [外部样式类](wxml-wxss.html)</td>
 
 </tr>
 

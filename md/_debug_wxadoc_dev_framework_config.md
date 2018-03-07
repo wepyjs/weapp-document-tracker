@@ -95,6 +95,7 @@
     *   [behaviors](custom-component/behaviors.html)
     *   [组件间关系](custom-component/relations.html)
 *   [分包加载](subpackages.html)
+*   [多线程](workers.html)
 *   [基础库](client-lib.html)
 *   [兼容](compatibility.html)
 *   [运行机制](operating-mechanism.html)
@@ -378,6 +379,34 @@
 <td>下拉背景字体、loading 图的样式，仅支持 dark/light</td>
 
 <td></td>
+
+</tr>
+
+<tr>
+
+<td>backgroundColorTop</td>
+
+<td>String</td>
+
+<td>#ffffff</td>
+
+<td>顶部窗口的背景色，仅 iOS 支持</td>
+
+<td>微信版本 6.5.16</td>
+
+</tr>
+
+<tr>
+
+<td>backgroundColorBottom</td>
+
+<td>String</td>
+
+<td>#ffffff</td>
+
+<td>底部窗口的背景色，仅 iOS 支持</td>
+
+<td>微信版本 6.5.16</td>
 
 </tr>
 
