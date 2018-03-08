@@ -214,10 +214,8 @@
         *   [wx.getWifiList](wifi.html#wxgetwifilistobject)
         *   [wx.onGetWifiList](wifi.html#wxongetwifilistcallback)
         *   [wx.setWifiList](wifi.html#wxsetwifilistobject)
-        *   [wx.presetWifiList](wifi.html#wxpresetwifilistobject)
-        *   [wx.getConnectedWifi](wifi.html#wxgetconnectedwifiobject)
         *   [wx.onWifiConnected](wifi.html#wxonwificonnectedcallback)
-        *   [wx.onEvaluateWifi](wifi.html#wxonevaluatewificallback)
+        *   [wx.getConnectedWifi](wifi.html#wxgetconnectedwifiobject)
 *   [界面](api-react.html)
     *   [交互反馈](api-react.html)
         *   [wx.showToast](api-react.html#wxshowtoastobject)
@@ -412,8 +410,6 @@
         *   [用户画像](analysis-user.html)
     *   [自定义分析](analysis-report.html)
         *   [自定义数据上报](analysis-report.html)
-*   [更新](getUpdateManager.html)
-    *   [wx.getUpdateManager](getUpdateManager.html)
 *   [多线程](createWorker.html)
     *   [wx.createWorker](createWorker.html)
 *   [调试接口](setEnableDebug.html)
@@ -600,6 +596,6 @@
 
 </div>
 
-[](getUpdateManager.html)[](setEnableDebug.html)</div>
+[](analysis-report.html)[](setEnableDebug.html)</div>
 
 </div>

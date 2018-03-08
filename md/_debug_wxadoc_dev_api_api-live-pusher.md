@@ -214,10 +214,8 @@
         *   [wx.getWifiList](wifi.html#wxgetwifilistobject)
         *   [wx.onGetWifiList](wifi.html#wxongetwifilistcallback)
         *   [wx.setWifiList](wifi.html#wxsetwifilistobject)
-        *   [wx.presetWifiList](wifi.html#wxpresetwifilistobject)
-        *   [wx.getConnectedWifi](wifi.html#wxgetconnectedwifiobject)
         *   [wx.onWifiConnected](wifi.html#wxonwificonnectedcallback)
-        *   [wx.onEvaluateWifi](wifi.html#wxonevaluatewificallback)
+        *   [wx.getConnectedWifi](wifi.html#wxgetconnectedwifiobject)
 *   [界面](api-react.html)
     *   [交互反馈](api-react.html)
         *   [wx.showToast](api-react.html#wxshowtoastobject)
@@ -412,8 +410,6 @@
         *   [用户画像](analysis-user.html)
     *   [自定义分析](analysis-report.html)
         *   [自定义数据上报](analysis-report.html)
-*   [更新](getUpdateManager.html)
-    *   [wx.getUpdateManager](getUpdateManager.html)
 *   [多线程](createWorker.html)
     *   [wx.createWorker](createWorker.html)
 *   [调试接口](setEnableDebug.html)
@@ -459,6 +455,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -473,6 +471,8 @@
 
 <td>播放推流</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -482,6 +482,8 @@
 <td>OBJECT</td>
 
 <td>停止推流</td>
+
+<td></td>
 
 </tr>
 
@@ -493,6 +495,8 @@
 
 <td>暂停推流</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -503,6 +507,8 @@
 
 <td>恢复推流</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -512,6 +518,20 @@
 <td>OBJECT</td>
 
 <td>切换前后摄像头</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>snapshot</td>
+
+<td>OBJECT</td>
+
+<td>快照</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
