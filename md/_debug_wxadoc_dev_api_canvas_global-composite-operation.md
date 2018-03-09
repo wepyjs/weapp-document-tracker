@@ -479,7 +479,43 @@
 
 </table>
 
-**`type` 支持的操作有：** | 平台 | 操作 | | ---- | ---- | | 安卓 | xor, source-over, source-atop, destination-out, lighter, overlay, darken, lighten, hard-light | | iOS |
+**`type` 支持的操作有：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>平台</th>
+
+<th>操作</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>安卓</td>
+
+<td>xor, source-over, source-atop, destination-out, lighter, overlay, darken, lighten, hard-light</td>
+
+</tr>
+
+<tr>
+
+<td>iOS</td>
+
+<td>xor, source-over, source-atop, destination-over, destination-out, lighter, multiply, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, saturation, luminosity</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 </section>
 
