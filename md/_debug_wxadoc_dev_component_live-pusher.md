@@ -449,6 +449,20 @@
 
 </tr>
 
+<tr>
+
+<td>binderror</td>
+
+<td>EventHandle</td>
+
+<td></td>
+
+<td>渲染错误事件，detail = {errMsg, errCode}</td>
+
+<td>[1.7.4](../framework/compatibility.html "基础库 1.7.4 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -459,7 +473,45 @@
 *   开发者工具上暂不支持。
 *   相关api：[wx.createLivePusherContext](../api/api-live-pusher.html)
 
-##### 状态码
+##### 错误码（errCode）
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>代码</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>1001</td>
+
+<td>用户禁止使用摄像头</td>
+
+</tr>
+
+<tr>
+
+<td>1002</td>
+
+<td>用户禁止使用录音</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+##### 状态码（code）
 
 <table>
 
@@ -729,7 +781,7 @@
 
 </table>
 
-##### 网络状态数据
+##### 网络状态数据（info）
 
 <table>
 

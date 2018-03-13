@@ -94,6 +94,11 @@
     *   [组件事件](custom-component/events.html)
     *   [behaviors](custom-component/behaviors.html)
     *   [组件间关系](custom-component/relations.html)
+    *   [抽象节点](custom-component/generics.html)
+*   [插件](plugin/)
+    *   [开发插件](plugin/development.html)
+    *   [使用插件](plugin/using.html)
+    *   [插件的限制](plugin/api-limit.html)
 *   [分包加载](subpackages.html)
 *   [多线程](workers.html)
 *   [基础库](client-lib.html)
@@ -242,6 +247,6 @@
 
 </div>
 
-[](custom-component/relations.html)[](workers.html)</div>
+[](plugin/api-limit.html)[](workers.html)</div>
 
 </div>

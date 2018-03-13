@@ -250,7 +250,6 @@
         *   [wx.createAnimation](api-animation.html#wxcreateanimationobject)
     *   [位置](scroll.html)
         *   [wx.pageScrollTo](scroll.html)
-        *   [wx.createSelectorQuery](wxml-nodes-info.html)
     *   [绘图](canvas/reference.html)
         *   [intro](canvas/intro.html)
         *   [coordinates](canvas/coordinates.html)
@@ -319,16 +318,22 @@
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
         *   [wx.startPullDownRefresh](pulldown.html#wxstartpulldownrefresh)
         *   [wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)
-*   [WXML节点信息](wxml-nodes-info.html)
-    *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
-    *   [selectorQuery.in](wxml-nodes-info.html#selectorqueryincomponent)
-    *   [selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)
-    *   [selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)
-    *   [selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)
-    *   [nodesRef.boundingClientRect](wxml-nodes-info.html#nodesrefboundingclientrectcallback)
-    *   [nodesRef.scrollOffset](wxml-nodes-info.html#nodesrefscrolloffsetcallback)
-    *   [nodesRef.fields](wxml-nodes-info.html#nodesreffieldsfieldscallback)
-    *   [selectorQuery.exec](wxml-nodes-info.html#selectorqueryexeccallback)
+    *   [WXML节点信息](wxml-nodes-info.html)
+        *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
+        *   [selectorQuery.in](wxml-nodes-info.html#selectorqueryincomponent)
+        *   [selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)
+        *   [selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)
+        *   [selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)
+        *   [nodesRef.boundingClientRect](wxml-nodes-info.html#nodesrefboundingclientrectcallback)
+        *   [nodesRef.scrollOffset](wxml-nodes-info.html#nodesrefscrolloffsetcallback)
+        *   [nodesRef.fields](wxml-nodes-info.html#nodesreffieldsfieldscallback)
+        *   [selectorQuery.exec](wxml-nodes-info.html#selectorqueryexeccallback)
+    *   [WXML节点布局相交状态](intersection-observer.html)
+        *   [wx.createIntersectionObserver](intersection-observer.html#wxcreateintersectionobserverthisoptions)
+        *   [intersectionObserver.relativeTo](intersection-observer.html#intersectionobserverrelativetoselectormargins)
+        *   [intersectionObserver.relativeToViewport](intersection-observer.html#intersectionobserverrelativetoviewportmargins)
+        *   [intersectionObserver.observe](intersection-observer.html#intersectionobserverobservetargetselectorcallback)
+        *   [intersectionObserver.disconnect](intersection-observer.html#intersectionobserverdisconnect)
 *   [第三方平台](ext-api.html)
     *   [wx.getExtConfig](ext-api.html#wxgetextconfigobject)
     *   [wx.getExtConfigSync](ext-api.html#wxgetextconfigsync)
@@ -435,13 +440,18 @@
 
 ## 用户数据的签名验证和加解密
 
+小程序可以通过各种前端接口获取微信提供的开放数据。 考虑到开发者服务器也需要获取这些开放数据，微信会对这些数据做签名和加密处理。 开发者后台拿到开放数据后可以对数据进行校验签名和解密，来保证数据不被篡改。
+
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/signature.jpg)
+
+签名校验以及数据加解密涉及用户的会话密钥session_key。 开发者应该事先通过 [wx.login](api-login.html) 登录流程获取会话密钥 session_key 并保存在服务器。为了数据不被篡改，开发者不应该把session_key传到小程序客户端等服务器外的环境。
+
 ### 数据签名校验
 
 为了确保 [开放接口](open.html) 返回用户数据的安全性，微信会对明文数据进行签名。开发者可以根据业务需要对数据包进行签名校验，确保数据的完整性。
 
-1.  签名校验算法涉及用户的session_key，通过 [wx.login](api-login.html#wxloginobject) 登录流程获取用户session_key，并自行维护与应用自身登录态的对应关系。
-2.  通过调用接口（如 [wx.getUserInfo](open.html)）获取数据时，接口会同时返回 rawData、signature，其中 signature = sha1( rawData + session_key )
-3.  开发者将 signature、rawData 发送到开发者服务器进行校验。服务器利用用户对应的 session_key 使用相同的算法计算出签名 signature2 ，比对 signature 与 signature2 即可校验数据的完整性。
+1.  通过调用接口（如 [wx.getUserInfo](open.html)）获取数据时，接口会同时返回 rawData、signature，其中 signature = sha1( rawData + session_key )
+2.  开发者将 signature、rawData 发送到开发者服务器进行校验。服务器利用用户对应的 session_key 使用相同的算法计算出签名 signature2 ，比对 signature 与 signature2 即可校验数据的完整性。
 
 **如wx.getUserInfo的数据校验：**
 
@@ -461,7 +471,7 @@
 
     HyVFkGl5F5OQWJZZaNzBBg==
 
-所以，用于签名的字符串为：
+用于签名的字符串为：
 
     {"nickName":"Band","gender":1,"language":"zh_CN","city":"Guangzhou","province":"Guangdong","country":"CN","avatarUrl":"http://wx.qlogo.cn/mmopen/vi_32/1vZvI39NWFQ9XM4LtQpFrQJ1xlgZxx3w7bQxKARol6503Iuswjjn6nIGBiaycAjAtpujxyzYsrztuuICqIM5ibXQ/0"}HyVFkGl5F5OQWJZZaNzBBg==
 
@@ -501,16 +511,6 @@
 </thead>
 
 <tbody>
-
-<tr>
-
-<td>watermark</td>
-
-<td>OBJECT</td>
-
-<td>数据水印</td>
-
-</tr>
 
 <tr>
 
@@ -556,8 +556,99 @@
 
 注：
 
-1.  此前提供的**加密数据（encryptData）**以及对应的加密算法将被弃用，请开发者不要再依赖旧逻辑。
+1.  此前提供的**加密数据（encryptData）**以及对应的加密算法将被弃用，请开发者不要再依赖旧字段。
 2.  解密后得到的json数据根据需求可能会增加新的字段，旧字段不会改变和删减，开发者需要预留足够的空间
+
+### 会话密钥session_key有效性
+
+开发者如果遇到因为session_key不正确而校验签名失败或解密失败，请关注下面几个与session_key有关的注意事项。
+
+1.  wx.login()调用时，用户的session_key会被更新而致使旧session_key失效。开发者应该在明确需要重新登录时才调用wx.login()，及时通过[登录凭证校验](api-login.html#临时登录凭证校验)接口更新服务器存储的session_key。
+
+2.  微信不会把session_key的有效期告知开发者。我们会根据用户使用小程序的行为对session_key进行续期。用户越频繁使用小程序，session_key有效期越长。
+
+3.  开发者在session_key失效时，可以通过重新执行登录流程获取有效的session_key。使用接口wx.checkSession()可以校验session_key是否有效，从而避免小程序反复执行登录流程。
+
+4.  当开发者在实现自定义登录态时，可以考虑以session_key有效期作为自身登录态有效期，也可以实现自定义的时效性策略。
+
+### wx.checkSession(OBJECT)
+
+校验用户当前session_key是否有效。
+
+**OBJECT参数说明：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数名</th>
+
+<th>类型</th>
+
+<th>必填</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>success</td>
+
+<td>Function</td>
+
+<td>否</td>
+
+<td>接口调用成功的回调函数，session_key未过期</td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>Function</td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数，session_key已过期</td>
+
+</tr>
+
+<tr>
+
+<td>complete</td>
+
+<td>Function</td>
+
+<td>否</td>
+
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**示例代码：**
+
+    wx.checkSession({
+      success: function(){
+        //session_key 未过期，并且在本生命周期一直有效
+      },
+      fail: function(){
+        // session_key 已经失效，需要重新执行登录流程
+        wx.login() //重新登录
+        ....
+      }
+    })
 
 </section>
 

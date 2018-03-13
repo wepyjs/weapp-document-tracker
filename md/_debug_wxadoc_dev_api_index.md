@@ -250,7 +250,6 @@
         *   [wx.createAnimation](api-animation.html#wxcreateanimationobject)
     *   [位置](scroll.html)
         *   [wx.pageScrollTo](scroll.html)
-        *   [wx.createSelectorQuery](wxml-nodes-info.html)
     *   [绘图](canvas/reference.html)
         *   [intro](canvas/intro.html)
         *   [coordinates](canvas/coordinates.html)
@@ -319,16 +318,22 @@
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
         *   [wx.startPullDownRefresh](pulldown.html#wxstartpulldownrefresh)
         *   [wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)
-*   [WXML节点信息](wxml-nodes-info.html)
-    *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
-    *   [selectorQuery.in](wxml-nodes-info.html#selectorqueryincomponent)
-    *   [selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)
-    *   [selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)
-    *   [selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)
-    *   [nodesRef.boundingClientRect](wxml-nodes-info.html#nodesrefboundingclientrectcallback)
-    *   [nodesRef.scrollOffset](wxml-nodes-info.html#nodesrefscrolloffsetcallback)
-    *   [nodesRef.fields](wxml-nodes-info.html#nodesreffieldsfieldscallback)
-    *   [selectorQuery.exec](wxml-nodes-info.html#selectorqueryexeccallback)
+    *   [WXML节点信息](wxml-nodes-info.html)
+        *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
+        *   [selectorQuery.in](wxml-nodes-info.html#selectorqueryincomponent)
+        *   [selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)
+        *   [selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)
+        *   [selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)
+        *   [nodesRef.boundingClientRect](wxml-nodes-info.html#nodesrefboundingclientrectcallback)
+        *   [nodesRef.scrollOffset](wxml-nodes-info.html#nodesrefscrolloffsetcallback)
+        *   [nodesRef.fields](wxml-nodes-info.html#nodesreffieldsfieldscallback)
+        *   [selectorQuery.exec](wxml-nodes-info.html#selectorqueryexeccallback)
+    *   [WXML节点布局相交状态](intersection-observer.html)
+        *   [wx.createIntersectionObserver](intersection-observer.html#wxcreateintersectionobserverthisoptions)
+        *   [intersectionObserver.relativeTo](intersection-observer.html#intersectionobserverrelativetoselectormargins)
+        *   [intersectionObserver.relativeToViewport](intersection-observer.html#intersectionobserverrelativetoviewportmargins)
+        *   [intersectionObserver.observe](intersection-observer.html#intersectionobserverobservetargetselectorcallback)
+        *   [intersectionObserver.disconnect](intersection-observer.html#intersectionobserverdisconnect)
 *   [第三方平台](ext-api.html)
     *   [wx.getExtConfig](ext-api.html#wxgetextconfigobject)
     *   [wx.getExtConfigSync](ext-api.html#wxgetextconfigsync)
@@ -1354,6 +1359,68 @@
 <td>[selectorQuery.exec](wxml-nodes-info.html#selectorqueryexeccallback)</td>
 
 <td>执行查询请求</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**WXML节点布局相交状态：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>API</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>[wx.createIntersectionObserver](api/intersection-observer.md#wxcreateintersectionobserverthisoptions)</td>
+
+<td>创建 IntersectionObserver 对象</td>
+
+</tr>
+
+<tr>
+
+<td>[intersectionObserver.relativeTo](api/intersection-observer.md#intersectionobserverrelativetoselectormargins)</td>
+
+<td>指定参照节点</td>
+
+</tr>
+
+<tr>
+
+<td>[intersectionObserver.relativeToViewport](api/intersection-observer.md#intersectionobserverrelativetoviewportmargins)</td>
+
+<td>指定页面显示区域作为参照区域</td>
+
+</tr>
+
+<tr>
+
+<td>[intersectionObserver.observe](api/intersection-observer.md#intersectionobserverobservetargetselectorcallback)</td>
+
+<td>指定目标节点并开始监听</td>
+
+</tr>
+
+<tr>
+
+<td>[intersectionObserver.disconnect](api/intersection-observer.md#intersectionobserverdisconnect)</td>
+
+<td>停止监听</td>
 
 </tr>
 

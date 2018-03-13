@@ -101,7 +101,9 @@
 *   [命令行调用](cli.html)
 *   [HTTP 调用](http.html)
 *   [小程序开发助手](mydev.html)
+*   [代码片段](minicode.html)
 *   [第三方平台](ext.html)
+*   [小程序插件开发](plugin.html)
 *   [云测试](monkey-test.html)
 *   [实现差异](details.html)
     *   [运行环境差异](details.html#运行环境差异)
@@ -228,6 +230,26 @@ wxml 补全
 
 <tr>
 
+<td>pluginRoot</td>
+
+<td>Path String</td>
+
+<td>指定插件项目的目录(需为相对路径)</td>
+
+</tr>
+
+<tr>
+
+<td>compileType</td>
+
+<td>String</td>
+
+<td>编译类型</td>
+
+</tr>
+
+<tr>
+
 <td>setting</td>
 
 <td>Object</td>
@@ -263,6 +285,44 @@ wxml 补全
 <td>String</td>
 
 <td>项目名字，**只在新建项目时读取**</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+compileType 有效值
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>名字</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>miniprogram</td>
+
+<td>当前为普通小程序项目</td>
+
+</tr>
+
+<tr>
+
+<td>plugin</td>
+
+<td>当前为小程序插件项目</td>
 
 </tr>
 

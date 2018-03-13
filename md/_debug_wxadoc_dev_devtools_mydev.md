@@ -101,7 +101,9 @@
 *   [命令行调用](cli.html)
 *   [HTTP 调用](http.html)
 *   [小程序开发助手](mydev.html)
+*   [代码片段](minicode.html)
 *   [第三方平台](ext.html)
+*   [小程序插件开发](plugin.html)
 *   [云测试](monkey-test.html)
 *   [实现差异](details.html)
     *   [运行环境差异](details.html#运行环境差异)
@@ -187,6 +189,6 @@
 
 </div>
 
-[](http.html)[](ext.html)</div>
+[](http.html)[](minicode.html)</div>
 
 </div>

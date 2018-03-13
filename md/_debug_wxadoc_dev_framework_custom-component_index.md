@@ -94,6 +94,11 @@
     *   [组件事件](events.html)
     *   [behaviors](behaviors.html)
     *   [组件间关系](relations.html)
+    *   [抽象节点](generics.html)
+*   [插件](../plugin/)
+    *   [开发插件](../plugin/development.html)
+    *   [使用插件](../plugin/using.html)
+    *   [插件的限制](../plugin/api-limit.html)
 *   [分包加载](../subpackages.html)
 *   [多线程](../workers.html)
 *   [基础库](../client-lib.html)
@@ -123,7 +128,7 @@
 
 # 自定义组件
 
-从小程序基础库版本 [1.6.3](../compatibility.html "基础库 1.6.3 开始支持，低版本需做兼容处理。") 开始，小程序支持简洁的组件化编程。
+从小程序基础库版本 [1.6.3](../compatibility.html "基础库 1.6.3 开始支持，低版本需做兼容处理。") 开始，小程序支持简洁的组件化编程。所有自定义组件相关特性都需要基础库版本 [1.6.3](../compatibility.html "基础库 1.6.3 开始支持，低版本需做兼容处理。") 或更高。
 
 开发者可以将页面内的功能模块抽象成自定义组件，以便在不同的页面中重复使用；也可以将复杂的页面拆分成多个低耦合的模块，有助于代码维护。自定义组件在使用时与基础组件非常相似。
 

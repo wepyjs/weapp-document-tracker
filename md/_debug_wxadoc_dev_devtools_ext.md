@@ -101,7 +101,9 @@
 *   [命令行调用](cli.html)
 *   [HTTP 调用](http.html)
 *   [小程序开发助手](mydev.html)
+*   [代码片段](minicode.html)
 *   [第三方平台](ext.html)
+*   [小程序插件开发](plugin.html)
 *   [云测试](monkey-test.html)
 *   [实现差异](details.html)
     *   [运行环境差异](details.html#运行环境差异)
@@ -395,6 +397,6 @@ _tips: 可以使用工具的命令行接口 或者 http 接口来实现自动化
 
 </div>
 
-[](mydev.html)[](monkey-test.html)</div>
+[](minicode.html)[](plugin.html)</div>
 
 </div>

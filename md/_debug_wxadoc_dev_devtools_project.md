@@ -101,7 +101,9 @@
 *   [命令行调用](cli.html)
 *   [HTTP 调用](http.html)
 *   [小程序开发助手](mydev.html)
+*   [代码片段](minicode.html)
 *   [第三方平台](ext.html)
+*   [小程序插件开发](plugin.html)
 *   [云测试](monkey-test.html)
 *   [实现差异](details.html)
     *   [运行环境差异](details.html#运行环境差异)
@@ -176,6 +178,10 @@
 正式发布的小程序的网络请求是需要校验合法域名以及域名的 TLS 版本，可以在 mp 管理后台进行配置。 在开发过程中可以开启此选项，开发工具将不会校验安全域名，以及 TLS 版本，帮助在开发过程中更方便的完成调试工作。
 
 ![edit](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/righttools.png)
+
+### 启用多核心编译
+
+在四核及以上的电脑上此选项可见。启用此选项，会充分利用 CPU 资源来编译项目的 JS 代码，提高编译的效率。可以选择关闭此选项。
 
 ## 域名信息
 

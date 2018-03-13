@@ -94,6 +94,11 @@
     *   [组件事件](events.html)
     *   [behaviors](behaviors.html)
     *   [组件间关系](relations.html)
+    *   [抽象节点](generics.html)
+*   [插件](../plugin/)
+    *   [开发插件](../plugin/development.html)
+    *   [使用插件](../plugin/using.html)
+    *   [插件的限制](../plugin/api-limit.html)
 *   [分包加载](../subpackages.html)
 *   [多线程](../workers.html)
 *   [基础库](../client-lib.html)
@@ -146,6 +151,8 @@
         <view>这里是插入到组件slot中的内容</view>
       </component-tag-name>
     </view>
+
+注意，在模版中引用到的自定义组件及其对应的节点名需要在 `json` 文件中显式定义，否则会被当作一个无意义的节点。除此以外，节点名也可以被声明为[抽象节点](../plugin/generics.md)。
 
 ### 组件wxml的slot
 
@@ -211,7 +218,7 @@
 
 ### 外部样式类
 
-有时，组件希望接受外部传入的样式类（类似于 `view` 组件的 `hover-class` 属性）。此时可以在 `Component` 中用 `externalClasses` 定义段定义若干个外部样式类。
+有时，组件希望接受外部传入的样式类（类似于 `view` 组件的 `hover-class` 属性）。此时可以在 `Component` 中用 `externalClasses` 定义段定义若干个外部样式类。这个特性从小程序基础库版本 [1.9.90](../compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。") 开始支持。
 
 **代码示例：**
 
