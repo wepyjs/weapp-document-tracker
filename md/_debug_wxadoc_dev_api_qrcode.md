@@ -415,6 +415,8 @@
         *   [用户画像](analysis-user.html)
     *   [自定义分析](analysis-report.html)
         *   [自定义数据上报](analysis-report.html)
+*   [更新](getUpdateManager.html)
+    *   [wx.getUpdateManager](getUpdateManager.html)
 *   [多线程](createWorker.html)
     *   [wx.createWorker](createWorker.html)
 *   [调试接口](setEnableDebug.html)
@@ -443,6 +445,10 @@
 通过后台接口可以获取小程序任意页面的二维码，扫描该二维码可以直接进入小程序对应的页面。目前微信支持两种二维码，小程序码（左），小程序二维码（右），如下所示：
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qrcode/qrcode.png)
+
+可以使用开发工具 1.02.1803130 及以后版本通过二维码编译功能调试所获得的二维码
+
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/qrcodecompile.png)
 
 ### 获取小程序码
 
@@ -623,8 +629,6 @@
 </tbody>
 
 </table>
-
-**注意：通过该接口生成的小程序码，永久有效，数量暂无限制。用户扫描该码进入小程序后，开发者需在对应页面获取的码中 scene 字段的值，再做处理逻辑。使用如下代码可以获取到二维码中的 scene 字段的值。调试阶段可以使用开发工具的条件编译自定义参数 scene=xxxx 进行模拟，开发工具模拟时的 scene 的参数值需要进行 urlencode**
 
     // 这是首页的 js
     Page({

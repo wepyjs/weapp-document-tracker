@@ -214,10 +214,8 @@
         *   [wx.getWifiList](wifi.html#wxgetwifilistobject)
         *   [wx.onGetWifiList](wifi.html#wxongetwifilistcallback)
         *   [wx.setWifiList](wifi.html#wxsetwifilistobject)
-        *   [wx.presetWifiList](wifi.html#wxpresetwifilistobject)
-        *   [wx.getConnectedWifi](wifi.html#wxgetconnectedwifiobject)
         *   [wx.onWifiConnected](wifi.html#wxonwificonnectedcallback)
-        *   [wx.onEvaluateWifi](wifi.html#wxonevaluatewificallback)
+        *   [wx.getConnectedWifi](wifi.html#wxgetconnectedwifiobject)
 *   [界面](api-react.html)
     *   [交互反馈](api-react.html)
         *   [wx.showToast](api-react.html#wxshowtoastobject)
@@ -252,7 +250,6 @@
         *   [wx.createAnimation](api-animation.html#wxcreateanimationobject)
     *   [位置](scroll.html)
         *   [wx.pageScrollTo](scroll.html)
-        *   [wx.createSelectorQuery](wxml-nodes-info.html)
     *   [绘图](canvas/reference.html)
         *   [intro](canvas/intro.html)
         *   [coordinates](canvas/coordinates.html)
@@ -321,16 +318,22 @@
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
         *   [wx.startPullDownRefresh](pulldown.html#wxstartpulldownrefresh)
         *   [wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)
-*   [WXML节点信息](wxml-nodes-info.html)
-    *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
-    *   [selectorQuery.in](wxml-nodes-info.html#selectorqueryincomponent)
-    *   [selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)
-    *   [selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)
-    *   [selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)
-    *   [nodesRef.boundingClientRect](wxml-nodes-info.html#nodesrefboundingclientrectcallback)
-    *   [nodesRef.scrollOffset](wxml-nodes-info.html#nodesrefscrolloffsetcallback)
-    *   [nodesRef.fields](wxml-nodes-info.html#nodesreffieldsfieldscallback)
-    *   [selectorQuery.exec](wxml-nodes-info.html#selectorqueryexeccallback)
+    *   [WXML节点信息](wxml-nodes-info.html)
+        *   [wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)
+        *   [selectorQuery.in](wxml-nodes-info.html#selectorqueryincomponent)
+        *   [selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)
+        *   [selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)
+        *   [selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)
+        *   [nodesRef.boundingClientRect](wxml-nodes-info.html#nodesrefboundingclientrectcallback)
+        *   [nodesRef.scrollOffset](wxml-nodes-info.html#nodesrefscrolloffsetcallback)
+        *   [nodesRef.fields](wxml-nodes-info.html#nodesreffieldsfieldscallback)
+        *   [selectorQuery.exec](wxml-nodes-info.html#selectorqueryexeccallback)
+    *   [WXML节点布局相交状态](intersection-observer.html)
+        *   [wx.createIntersectionObserver](intersection-observer.html#wxcreateintersectionobserverthisoptions)
+        *   [intersectionObserver.relativeTo](intersection-observer.html#intersectionobserverrelativetoselectormargins)
+        *   [intersectionObserver.relativeToViewport](intersection-observer.html#intersectionobserverrelativetoviewportmargins)
+        *   [intersectionObserver.observe](intersection-observer.html#intersectionobserverobservetargetselectorcallback)
+        *   [intersectionObserver.disconnect](intersection-observer.html#intersectionobserverdisconnect)
 *   [第三方平台](ext-api.html)
     *   [wx.getExtConfig](ext-api.html#wxgetextconfigobject)
     *   [wx.getExtConfigSync](ext-api.html#wxgetextconfigsync)
@@ -576,10 +579,6 @@
     updateManager.onUpdateFailed(function () {
       // 新的版本下载失败
     })
-
-**Tips**
-
-1.  微信开发者工具暂时未支持 updateManager 的调试
 
 </section>
 

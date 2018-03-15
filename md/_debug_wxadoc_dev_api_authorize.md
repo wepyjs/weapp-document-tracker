@@ -531,6 +531,8 @@
             *   [用户画像](analysis-user.html)
         *   [自定义分析](analysis-report.html)
             *   [自定义数据上报](analysis-report.html)
+    *   [更新](getUpdateManager.html)
+        *   [wx.getUpdateManager](getUpdateManager.html)
     *   [多线程](createWorker.html)
         *   [wx.createWorker](createWorker.html)
     *   [调试接口](setEnableDebug.html)

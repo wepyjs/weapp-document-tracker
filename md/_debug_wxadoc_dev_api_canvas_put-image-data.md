@@ -415,6 +415,8 @@
         *   [用户画像](../analysis-user.html)
     *   [自定义分析](../analysis-report.html)
         *   [自定义数据上报](../analysis-report.html)
+*   [更新](../getUpdateManager.html)
+    *   [wx.getUpdateManager](../getUpdateManager.html)
 *   [多线程](../createWorker.html)
     *   [wx.createWorker](../createWorker.html)
 *   [调试接口](../setEnableDebug.html)
@@ -600,11 +602,11 @@
 
     const data = new Uint8ClampedArray([255, 0, 0, 1])
     wx.canvasPutImageData({
-      canvasId: 'myCanvas'
+      canvasId: 'myCanvas',
       x: 0,
       y: 0,
       width: 1,
-      data: data
+      data: data,
       success(res) {}
     })
 
