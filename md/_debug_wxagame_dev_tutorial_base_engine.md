@@ -69,14 +69,15 @@
 *   [可用性](../usability/debug.html)
     *   [调试](../usability/debug.html)
     *   [性能](../usability/performance.html)
+    *   [小游戏更新](../usability/update.html)
     *   [多线程 Worker](../usability/worker.html)
 *   [开放能力](../open-ability/authorize.html)
     *   [用户授权](../open-ability/authorize.html)
     *   [用户登录态签名](../open-ability/http-signature.html)
+    *   [关系链数据使用指南](../open-ability/open-data.html)
     *   [获取二维码](../open-ability/qrcode.html)
     *   [转发](../open-ability/share.html)
     *   [用户数据的签名验证和加解密](../open-ability/signature.html)
-    *   [关系链数据](../open-ability/open-data.html)
 
 </nav>
 
@@ -106,7 +107,7 @@
 
 *   Cocos：[http://docs.cocos.com/creator/manual/zh/publish/publish-wechatgame.html](http://docs.cocos.com/creator/manual/zh/publish/publish-wechatgame.html)
 *   Egret：[http://developer.egret.com/cn/github/egret-docs/Engine2D/minigame/introduction/index.html](http://developer.egret.com/cn/github/egret-docs/Engine2D/minigame/introduction/index.html)
-*   Laya：[https://ldc.layabox.com/doc/?nav=zh-as-3-4-5](https://ldc.layabox.com/doc/?nav=zh-as-3-4-5&)
+*   LayaBox：[https://ldc.layabox.com/doc/?nav=zh-as-5-0-1](https://ldc.layabox.com/doc/?nav=zh-as-5-0-1&)
 
 Unity 目前还没有对小游戏进行适配。不过小游戏提供了对大部分 Canvas 2d 和 WebGL 1.0 特性的支持，支持情况参见 [RenderingContext](../../document/render/canvas/RenderingContext.html)，有能力的开发者可以尝试自行适配。
 

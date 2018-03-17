@@ -216,7 +216,15 @@
         *   [wx.removeUserCloudStorage](../open-api/data/wx.removeUserCloudStorage.html)
         *   [wx.setUserCloudStorage](../open-api/data/wx.setUserCloudStorage.html)
         *   [KVData](../open-api/data/KVData.html)
-        *   [UserGameData](../open-api/data/UserGameData.html)
+        *   [removeUserStorage](../open-api/data/removeUserStorage.html)
+        *   [setUserStorage](../open-api/data/setUserStorage.html)
+    *   [开放数据域](../open-api/context/wx.getOpenDataContext.html)
+        *   [wx.getOpenDataContext](../open-api/context/wx.getOpenDataContext.html)
+        *   [wx.onMessage](../open-api/context/wx.onMessage.html)
+        *   [OpenDataContext](../open-api/context/OpenDataContext.html)
+        *   [OpenDataContext.postMessage](../open-api/context/OpenDataContext.postMessage.html)
+    *   [access token](../open-api/access-token/getAccessToken.html)
+        *   [getAccessToken](../open-api/access-token/getAccessToken.html)
 *   [转发](../share/wx.getShareInfo.html)
     *   [wx.getShareInfo](../share/wx.getShareInfo.html)
     *   [wx.hideShareMenu](../share/wx.hideShareMenu.html)
@@ -257,9 +265,18 @@
         *   [wx.showKeyboard](../ui/keyboard/wx.showKeyboard.html)
     *   [菜单](../ui/menu/wx.setMenuStyle.html)
         *   [wx.setMenuStyle](../ui/menu/wx.setMenuStyle.html)
+    *   [状态栏](../ui/statusbar/wx.setStatusBarStyle.html)
+        *   [wx.setStatusBarStyle](../ui/statusbar/wx.setStatusBarStyle.html)
     *   [窗口](../ui/window/wx.onWindowResize.html)
         *   [wx.onWindowResize](../ui/window/wx.onWindowResize.html)
         *   [wx.offWindowResize](../ui/window/wx.offWindowResize.html)
+*   [更新](../update/wx.getUpdateManager.html)
+    *   [wx.getUpdateManager](../update/wx.getUpdateManager.html)
+    *   [UpdateManager](../update/UpdateManager.html)
+    *   [UpdateManager.applyUpdate](../update/UpdateManager.applyUpdate.html)
+    *   [UpdateManager.onCheckForUpdate](../update/UpdateManager.onCheckForUpdate.html)
+    *   [UpdateManager.onUpdateReady](../update/UpdateManager.onUpdateReady.html)
+    *   [UpdateManager.onUpdateFailed](../update/UpdateManager.onUpdateFailed.html)
 *   [Worker](../worker/wx.createWorker.html)
     *   [wx.createWorker](../worker/wx.createWorker.html)
     *   [Worker](../worker/Worker.html)
@@ -343,9 +360,6 @@
     *   [clearInterval](../timer/clearInterval.html)
     *   [setTimeout](../timer/setTimeout.html)
     *   [setInterval](../timer/setInterval.html)
-*   [数据上报](../report/wx.gameLoginReport.html)
-    *   [wx.gameLoginReport](../report/wx.gameLoginReport.html)
-    *   [wx.gameLogoutReport](../report/wx.gameLogoutReport.html)
 
 </nav>
 
@@ -365,7 +379,7 @@
 
 <section class="normal markdown-section">
 
-### string FileSystemManager.rmdirSync(Object dirPath)
+### FileSystemManager.rmdirSync(Object dirPath)
 
 FileSystemManager.rmdir 的同步版本
 
@@ -375,13 +389,7 @@ FileSystemManager.rmdir 的同步版本
 
 要删除的目录路径
 
-#### 返回值
-
-##### string errMsg
-
-错误信息
-
-**errMsg 的合法值**
+#### 错误
 
 <table>
 
@@ -389,7 +397,7 @@ FileSystemManager.rmdir 的同步版本
 
 <tr>
 
-<th>值</th>
+<th>errMsg</th>
 
 <th>说明</th>
 

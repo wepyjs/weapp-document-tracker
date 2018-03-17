@@ -69,14 +69,15 @@
 *   [可用性](../usability/debug.html)
     *   [调试](../usability/debug.html)
     *   [性能](../usability/performance.html)
+    *   [小游戏更新](../usability/update.html)
     *   [多线程 Worker](../usability/worker.html)
 *   [开放能力](authorize.html)
     *   [用户授权](authorize.html)
     *   [用户登录态签名](http-signature.html)
+    *   [关系链数据使用指南](open-data.html)
     *   [获取二维码](qrcode.html)
     *   [转发](share.html)
     *   [用户数据的签名验证和加解密](signature.html)
-    *   [关系链数据](open-data.html)
 
 </nav>
 
@@ -221,7 +222,7 @@ src/myOpenDataContext 是 `开放数据域的代码目录`，除 src/myOpenDataC
 
 开放数据域不能向主域发送消息。
 
-主域可以向开放数据域发送消息。调用 <a href="">wx.getOpenDataContext()</a> 方法可以获取开放数据域实例，调用实例上的 <a href="">OpenDataContext.postMessage()</a> 方法可以向开放数据域发送消息。
+主域可以向开放数据域发送消息。调用 [wx.getOpenDataContext()](../../document/open-api/context/wx.getOpenDataContext.html) 方法可以获取开放数据域实例，调用实例上的 [OpenDataContext.postMessage()](../../document/open-api/context/OpenDataContext.postMessage.html) 方法可以向开放数据域发送消息。
 
     // game.js
     let openDataContext = wx.getOpenDataContext()
@@ -230,7 +231,7 @@ src/myOpenDataContext 是 `开放数据域的代码目录`，除 src/myOpenDataC
       year: (new Date()).getFullYear()
     })
 
-在开放数据域中通过 <a href="">wx.onMessage()</a> 方法可以监听从主域发来的消息。
+在开放数据域中通过 [wx.onMessage()](../../document/open-api/context/wx.onMessage.html) 方法可以监听从主域发来的消息。
 
     // src/myOpenDataContext/index.js
     wx.onMessage(data => {
@@ -279,7 +280,7 @@ sharedCanvas 是主域和开放数据域都可以访问的一个离屏画布。�
 
     let canvas = wx.createCanvas()
     let context = canvas.getContext('2d')
-    context.drawImage(canvas, 0, 0)
+    context.drawImage(sharedCanvas, 0, 0)
 
 ## 限制
 
@@ -343,7 +344,7 @@ sharedCanvas 是主域和开放数据域都可以访问的一个离屏画布。�
 
 **监听主域消息**
 
-*   <a href="">wx.onMessage()</a>
+*   [wx.onMessage()](../../document/open-api/context/wx.onMessage.html)
 
 </section>
 
@@ -384,6 +385,6 @@ sharedCanvas 是主域和开放数据域都可以访问的一个离屏画布。�
 
 </div>
 
-[](signature.html)[](../../document/render/canvas/wx.createCanvas.html)</div>
+[](http-signature.html)[](qrcode.html)</div>
 
 </div>

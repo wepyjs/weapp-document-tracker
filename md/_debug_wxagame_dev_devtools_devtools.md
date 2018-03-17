@@ -161,6 +161,6 @@
 
 </div>
 
-[](../document/report/wx.gameLogoutReport.html)[](devtools.html)</div>
+[](../document/timer/setInterval.html)[](devtools.html)</div>
 
 </div>

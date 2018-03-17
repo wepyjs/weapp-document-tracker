@@ -69,14 +69,15 @@
 *   [可用性](../usability/debug.html)
     *   [调试](../usability/debug.html)
     *   [性能](../usability/performance.html)
+    *   [小游戏更新](../usability/update.html)
     *   [多线程 Worker](../usability/worker.html)
 *   [开放能力](../open-ability/authorize.html)
     *   [用户授权](../open-ability/authorize.html)
     *   [用户登录态签名](../open-ability/http-signature.html)
+    *   [关系链数据使用指南](../open-ability/open-data.html)
     *   [获取二维码](../open-ability/qrcode.html)
     *   [转发](../open-ability/share.html)
     *   [用户数据的签名验证和加解密](../open-ability/signature.html)
-    *   [关系链数据](../open-ability/open-data.html)
 
 </nav>
 

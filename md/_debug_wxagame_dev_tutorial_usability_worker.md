@@ -69,14 +69,15 @@
 *   [可用性](debug.html)
     *   [调试](debug.html)
     *   [性能](performance.html)
+    *   [小游戏更新](update.html)
     *   [多线程 Worker](worker.html)
 *   [开放能力](../open-ability/authorize.html)
     *   [用户授权](../open-ability/authorize.html)
     *   [用户登录态签名](../open-ability/http-signature.html)
+    *   [关系链数据使用指南](../open-ability/open-data.html)
     *   [获取二维码](../open-ability/qrcode.html)
     *   [转发](../open-ability/share.html)
     *   [用户数据的签名验证和加解密](../open-ability/signature.html)
-    *   [关系链数据](../open-ability/open-data.html)
 
 </nav>
 
@@ -204,6 +205,6 @@ worker 对象的其它接口请看 [worker接口说明](../../document/worker/Wo
 
 </div>
 
-[](performance.html)[](../open-ability/authorize.html)</div>
+[](update.html)[](../open-ability/authorize.html)</div>
 
 </div>
