@@ -443,7 +443,7 @@
 <p>&#x4E3A;&#x4E86;&#x786E;&#x4FDD;&#x5F00;&#x653E;&#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x7528;&#x6237;&#x6570;&#x636E;&#x7684;&#x5B89;&#x5168;&#x6027;&#xFF0C;&#x5FAE;&#x4FE1;&#x4F1A;&#x5BF9;&#x660E;&#x6587;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x7B7E;&#x540D;&#x3002;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x4E1A;&#x52A1;&#x9700;&#x8981;&#x5BF9;&#x6570;&#x636E;&#x5305;&#x8FDB;&#x884C;&#x7B7E;&#x540D;&#x6821;&#x9A8C;&#xFF0C;&#x786E;&#x4FDD;&#x6570;&#x636E;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x3002;</p>
 <ol>
 <li>&#x7B7E;&#x540D;&#x6821;&#x9A8C;&#x7B97;&#x6CD5;&#x6D89;&#x53CA;&#x7528;&#x6237;&#x7684;session_key&#xFF0C;&#x901A;&#x8FC7; <a href="../../document/open-api/login/wx.login.html">wx.login</a> &#x767B;&#x5F55;&#x6D41;&#x7A0B;&#x83B7;&#x53D6;&#x7528;&#x6237;session_key&#xFF0C;&#x5E76;&#x81EA;&#x884C;&#x7EF4;&#x62A4;&#x4E0E;&#x5E94;&#x7528;&#x81EA;&#x8EAB;&#x767B;&#x5F55;&#x6001;&#x7684;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;&#x3002;</li>
-<li>&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x63A5;&#x53E3;&#xFF08;&#x5982; <a href="../../document/open-api/user-info/wx.getUserInfo.html">wx.getUserInfo</a>&#xFF09;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x63A5;&#x53E3;&#x4F1A;&#x540C;&#x65F6;&#x8FD4;&#x56DE; rawData&#x3001;signature&#xFF0C;&#x5176;&#x4E2D; signature = sha1( rawData + session_key )</li>
+<li>&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x63A5;&#x53E3;&#xFF08;&#x5982; <a href="../../document/open-api/data/wx.getUserInfo.html">wx.getUserInfo</a>&#xFF09;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x63A5;&#x53E3;&#x4F1A;&#x540C;&#x65F6;&#x8FD4;&#x56DE; rawData&#x3001;signature&#xFF0C;&#x5176;&#x4E2D; signature = sha1( rawData + session_key )</li>
 <li>&#x5F00;&#x53D1;&#x8005;&#x5C06; signature&#x3001;rawData &#x53D1;&#x9001;&#x5230;&#x5F00;&#x53D1;&#x8005;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x884C;&#x6821;&#x9A8C;&#x3002;&#x670D;&#x52A1;&#x5668;&#x5229;&#x7528;&#x7528;&#x6237;&#x5BF9;&#x5E94;&#x7684; session_key &#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x7B97;&#x6CD5;&#x8BA1;&#x7B97;&#x51FA;&#x7B7E;&#x540D; signature2 &#xFF0C;&#x6BD4;&#x5BF9; signature &#x4E0E; signature2 &#x5373;&#x53EF;&#x6821;&#x9A8C;&#x6570;&#x636E;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x3002;</li>
 </ol>
 <p><strong>&#x5982;wx.getUserInfo&#x7684;&#x6570;&#x636E;&#x6821;&#x9A8C;&#xFF1A;</strong></p>
@@ -465,7 +465,7 @@
 </code></pre><p>&#x4F7F;&#x7528;sha1&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x4E3A;</p>
 <pre><code>75e81ceda165f4ffa64f4068af58c64b8f54b88c
 </code></pre><h3 id="&#x52A0;&#x5BC6;&#x6570;&#x636E;&#x89E3;&#x5BC6;&#x7B97;&#x6CD5;">&#x52A0;&#x5BC6;&#x6570;&#x636E;&#x89E3;&#x5BC6;&#x7B97;&#x6CD5;</h3>
-<p>&#x63A5;&#x53E3;&#x5982;&#x679C;&#x6D89;&#x53CA;&#x654F;&#x611F;&#x6570;&#x636E;&#xFF08;&#x5982;<a href="../../document/open-api/user-info/wx.getUserInfo.html">wx.getUserInfo</a>&#x5F53;&#x4E2D;&#x7684; openId &#x548C;unionId &#xFF09;&#xFF0C;&#x63A5;&#x53E3;&#x7684;&#x660E;&#x6587;&#x5185;&#x5BB9;&#x5C06;&#x4E0D;&#x5305;&#x542B;&#x8FD9;&#x4E9B;&#x654F;&#x611F;&#x6570;&#x636E;&#x3002;&#x5F00;&#x53D1;&#x8005;&#x5982;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x654F;&#x611F;&#x6570;&#x636E;&#xFF0C;&#x9700;&#x8981;&#x5BF9;&#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x7684;<strong>&#x52A0;&#x5BC6;&#x6570;&#x636E;( encryptedData )</strong>&#x8FDB;&#x884C;&#x5BF9;&#x79F0;&#x89E3;&#x5BC6;&#x3002;
+<p>&#x63A5;&#x53E3;&#x5982;&#x679C;&#x6D89;&#x53CA;&#x654F;&#x611F;&#x6570;&#x636E;&#xFF08;&#x5982;<a href="../../document/open-api/data/wx.getUserInfo.html">wx.getUserInfo</a>&#x5F53;&#x4E2D;&#x7684; openId &#x548C;unionId &#xFF09;&#xFF0C;&#x63A5;&#x53E3;&#x7684;&#x660E;&#x6587;&#x5185;&#x5BB9;&#x5C06;&#x4E0D;&#x5305;&#x542B;&#x8FD9;&#x4E9B;&#x654F;&#x611F;&#x6570;&#x636E;&#x3002;&#x5F00;&#x53D1;&#x8005;&#x5982;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x654F;&#x611F;&#x6570;&#x636E;&#xFF0C;&#x9700;&#x8981;&#x5BF9;&#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x7684;<strong>&#x52A0;&#x5BC6;&#x6570;&#x636E;( encryptedData )</strong>&#x8FDB;&#x884C;&#x5BF9;&#x79F0;&#x89E3;&#x5BC6;&#x3002;
 &#x89E3;&#x5BC6;&#x7B97;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
 <ol>
 <li>&#x5BF9;&#x79F0;&#x89E3;&#x5BC6;&#x4F7F;&#x7528;&#x7684;&#x7B97;&#x6CD5;&#x4E3A; AES-128-CBC&#xFF0C;&#x6570;&#x636E;&#x91C7;&#x7528;PKCS#7&#x586B;&#x5145;&#x3002;</li>
@@ -501,7 +501,7 @@
 </tr>
 </tbody>
 </table>
-<p>&#x5982;&#x63A5;&#x53E3;<a href="../../document/open-api/user-info/wx.getUserInfo.html">wx.getUserInfo</a>&#x654F;&#x611F;&#x6570;&#x636E;&#x5F53;&#x4E2D;&#x7684;watermark&#xFF1A;</p>
+<p>&#x5982;&#x63A5;&#x53E3;<a href="../../document/open-api/data/wx.getUserInfo.html">wx.getUserInfo</a>&#x654F;&#x611F;&#x6570;&#x636E;&#x5F53;&#x4E2D;&#x7684;watermark&#xFF1A;</p>
 <pre><code>{
     &quot;openId&quot;: &quot;OPENID&quot;,
     &quot;nickName&quot;: &quot;NICKNAME&quot;,

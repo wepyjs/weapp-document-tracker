@@ -188,6 +188,22 @@
 
 插件会同时有多个线上版本，由使用插件的小程序决定具体使用的版本号。
 
+## 插件请求签名
+
+插件在使用 `wx.request` 等 API 发送网络请求时，将会额外携带一个签名 `HostSign` ，用于验证请求来源于小程序插件。这个签名位于请求头中，形如：
+
+    X-WECHAT-HOSTSIGN: {"noncestr":"NONCESTR", "timestamp":"TIMESTAMP", "signature":"SIGNATURE"}
+
+其中， `NONCESTR` 和 `TIMESTAMP` 是是用于计算签名 `SIGNATRUE` 的参数，签名算法为：
+
+    SIGNATURE = sha1(APPID + NONCESTR + TIMESTAMP + TOKEN)
+
+插件开发者可以在服务器上使用这个算法校验签名。其中， `APPID` 是所在小程序的 AppId ； `TOKEN` 是插件 Token ，可以在小程序插件基本设置中找到。
+
+**Tips:**
+
+*   目前，手机预览插件时将使用一个特殊分配的小程序 appid （与插件的 appid 不同）。
+
 </section>
 
 </div>

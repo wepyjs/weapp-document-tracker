@@ -213,9 +213,11 @@
         *   [wx.getFriendCloudStorage](wx.getFriendCloudStorage.html)
         *   [wx.getGroupCloudStorage](wx.getGroupCloudStorage.html)
         *   [wx.getUserCloudStorage](wx.getUserCloudStorage.html)
+        *   [wx.getUserInfo](wx.getUserInfo.html)
         *   [wx.removeUserCloudStorage](wx.removeUserCloudStorage.html)
         *   [wx.setUserCloudStorage](wx.setUserCloudStorage.html)
         *   [KVData](KVData.html)
+        *   [UserGameData](UserGameData.html)
         *   [removeUserStorage](removeUserStorage.html)
         *   [setUserStorage](setUserStorage.html)
     *   [开放数据域](../context/wx.getOpenDataContext.html)
@@ -581,7 +583,7 @@
 
 <td>87016</td>
 
-<td>由于单个key-value数据量超过限制而写入失败。</td>
+<td>由于某个key-value长度超过限制而上报失败。</td>
 
 </tr>
 
@@ -589,7 +591,23 @@
 
 <td>87017</td>
 
-<td>由于用户存储的数据量超过限制而写入失败。</td>
+<td>由于用户存储的数据量超过限制而上报失败。</td>
+
+</tr>
+
+<tr>
+
+<td>87018</td>
+
+<td>由于用户存储的key-value对数量超过限制而上报失败。</td>
+
+</tr>
+
+<tr>
+
+<td>87019</td>
+
+<td>由于某个key长度超过限制而上报失败。</td>
 
 </tr>
 
@@ -600,6 +618,14 @@
 #### 示例代码
 
     curl - d '{ "kv_list":[{"key":"score","value":"100"},{"key":"gold","value":"3000"}] }'\'https://api.weixin.qq.com/wxa/set_user_storage?access_token=ACCESS_TOKEN&signature=SIGNATURE&openid=OPENID&sig_method=SIG_METHOD'
+
+#### 托管数据的限制
+
+如果在上报数据时触发这些限制，设置数据会失败并且会收到带错误码的返回包。
+
+1.  每个openid所标识的微信用户，在游戏当中的托管的数据不能超过128个key-value对。
+2.  上报的key-value列表当中每一项的key+value长度都不能超过1K(1024)字节。
+3.  上报的key-value列表当中每一个key长度都不能超过128字节。
 
 </section>
 

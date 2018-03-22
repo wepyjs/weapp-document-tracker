@@ -213,9 +213,11 @@
         *   [wx.getFriendCloudStorage](wx.getFriendCloudStorage.html)
         *   [wx.getGroupCloudStorage](wx.getGroupCloudStorage.html)
         *   [wx.getUserCloudStorage](wx.getUserCloudStorage.html)
+        *   [wx.getUserInfo](wx.getUserInfo.html)
         *   [wx.removeUserCloudStorage](wx.removeUserCloudStorage.html)
         *   [wx.setUserCloudStorage](wx.setUserCloudStorage.html)
         *   [KVData](KVData.html)
+        *   [UserGameData](UserGameData.html)
         *   [removeUserStorage](removeUserStorage.html)
         *   [setUserStorage](setUserStorage.html)
     *   [开放数据域](../context/wx.getOpenDataContext.html)
@@ -476,6 +478,12 @@
 </tbody>
 
 </table>
+
+#### 托管数据的限制
+
+1.  每个openid所标识的微信用户在每个游戏上托管的数据不能超过128个key-value对。
+2.  上报的key-value列表当中每一项的key+value长度都不能超过1K(1024)字节。
+3.  上报的key-value列表当中每一个key长度都不能超过128字节。
 
 </section>
 

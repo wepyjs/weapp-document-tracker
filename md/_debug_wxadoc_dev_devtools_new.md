@@ -107,6 +107,13 @@
 
 <section class="normal markdown-section">
 
+### 2018.03.21 更新日志
+
+1.  `F` 修复 TLS 版本校验出错的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000ca4793889f8b18c76bf5f256400&highline=tls&token=1251231172&lang=zh_CN)
+2.  `F` 修复 `wx.chooseVideo` 没有回调的问题
+3.  `F` 修复 插件中没有 `WXML` 文件时报错的问题
+4.  `F` 修复 开发者工具更新逻辑异常的问题
+
 ### 2018.03.15 更新日志
 
 1.  `F` 修复 上报更新导致 `wx.uploadFile` 返回值异常的问题

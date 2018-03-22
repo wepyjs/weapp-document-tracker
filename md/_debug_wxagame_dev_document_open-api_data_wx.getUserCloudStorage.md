@@ -213,9 +213,11 @@
         *   [wx.getFriendCloudStorage](wx.getFriendCloudStorage.html)
         *   [wx.getGroupCloudStorage](wx.getGroupCloudStorage.html)
         *   [wx.getUserCloudStorage](wx.getUserCloudStorage.html)
+        *   [wx.getUserInfo](wx.getUserInfo.html)
         *   [wx.removeUserCloudStorage](wx.removeUserCloudStorage.html)
         *   [wx.setUserCloudStorage](wx.setUserCloudStorage.html)
         *   [KVData](KVData.html)
+        *   [UserGameData](UserGameData.html)
         *   [removeUserStorage](removeUserStorage.html)
         *   [setUserStorage](setUserStorage.html)
     *   [开放数据域](../context/wx.getOpenDataContext.html)
@@ -556,6 +558,6 @@
 
 </div>
 
-[](wx.getGroupCloudStorage.html)[](wx.removeUserCloudStorage.html)</div>
+[](wx.getGroupCloudStorage.html)[](wx.getUserInfo.html)</div>
 
 </div>

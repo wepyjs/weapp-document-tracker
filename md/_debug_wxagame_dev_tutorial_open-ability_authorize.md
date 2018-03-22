@@ -205,7 +205,7 @@
 
 <td>scope.userInfo</td>
 
-<td>[wx.getUserInfo()](../../document/open-api/user-info/wx.getUserInfo.html)</td>
+<td>[wx.getUserInfo()](../../document/open-api/data/wx.getUserInfo.html)</td>
 
 <td>用户信息</td>
 

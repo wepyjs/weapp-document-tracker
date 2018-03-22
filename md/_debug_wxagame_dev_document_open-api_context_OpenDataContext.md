@@ -213,9 +213,11 @@
         *   [wx.getFriendCloudStorage](../data/wx.getFriendCloudStorage.html)
         *   [wx.getGroupCloudStorage](../data/wx.getGroupCloudStorage.html)
         *   [wx.getUserCloudStorage](../data/wx.getUserCloudStorage.html)
+        *   [wx.getUserInfo](../data/wx.getUserInfo.html)
         *   [wx.removeUserCloudStorage](../data/wx.removeUserCloudStorage.html)
         *   [wx.setUserCloudStorage](../data/wx.setUserCloudStorage.html)
         *   [KVData](../data/KVData.html)
+        *   [UserGameData](../data/UserGameData.html)
         *   [removeUserStorage](../data/removeUserStorage.html)
         *   [setUserStorage](../data/setUserStorage.html)
     *   [开放数据域](wx.getOpenDataContext.html)
@@ -385,9 +387,9 @@
 
 #### 属性
 
-##### [Canvas](Canvas.md) 开放数据域和主域共享的
+##### [Canvas](Canvas.md) canvas
 
-sharedCanvas
+开放数据域和主域共享的 sharedCanvas
 
 #### 方法
 

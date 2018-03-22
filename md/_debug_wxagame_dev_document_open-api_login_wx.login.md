@@ -213,9 +213,11 @@
         *   [wx.getFriendCloudStorage](../data/wx.getFriendCloudStorage.html)
         *   [wx.getGroupCloudStorage](../data/wx.getGroupCloudStorage.html)
         *   [wx.getUserCloudStorage](../data/wx.getUserCloudStorage.html)
+        *   [wx.getUserInfo](../data/wx.getUserInfo.html)
         *   [wx.removeUserCloudStorage](../data/wx.removeUserCloudStorage.html)
         *   [wx.setUserCloudStorage](../data/wx.setUserCloudStorage.html)
         *   [KVData](../data/KVData.html)
+        *   [UserGameData](../data/UserGameData.html)
         *   [removeUserStorage](../data/removeUserStorage.html)
         *   [setUserStorage](../data/setUserStorage.html)
     *   [开放数据域](../context/wx.getOpenDataContext.html)
@@ -493,7 +495,7 @@
 
 <td>string</td>
 
-<td>用户登录凭证（有效期五分钟）。开发者需要在开发者服务器后台调用 api，使用 code 换取 openid 和 session_key 等信息</td>
+<td>用户登录凭证（有效期五分钟）。开发者需要在开发者服务器后台调用 [code2accessToken](../code-to-access-token/code2accessToken.md)，使用 code 换取 openid 和 session_key 等信息</td>
 
 </tr>
 

@@ -104,7 +104,7 @@
 为了确保开放接口返回用户数据的安全性，微信会对明文数据进行签名。开发者可以根据业务需要对数据包进行签名校验，确保数据的完整性。
 
 1.  签名校验算法涉及用户的session_key，通过 [wx.login](../../document/open-api/login/wx.login.html) 登录流程获取用户session_key，并自行维护与应用自身登录态的对应关系。
-2.  通过调用接口（如 [wx.getUserInfo](../../document/open-api/user-info/wx.getUserInfo.html)）获取数据时，接口会同时返回 rawData、signature，其中 signature = sha1( rawData + session_key )
+2.  通过调用接口（如 [wx.getUserInfo](../../document/open-api/data/wx.getUserInfo.html)）获取数据时，接口会同时返回 rawData、signature，其中 signature = sha1( rawData + session_key )
 3.  开发者将 signature、rawData 发送到开发者服务器进行校验。服务器利用用户对应的 session_key 使用相同的算法计算出签名 signature2 ，比对 signature 与 signature2 即可校验数据的完整性。
 
 **如wx.getUserInfo的数据校验：**
@@ -135,7 +135,7 @@
 
 ### 加密数据解密算法
 
-接口如果涉及敏感数据（如[wx.getUserInfo](../../document/open-api/user-info/wx.getUserInfo.html)当中的 openId 和unionId ），接口的明文内容将不包含这些敏感数据。开发者如需要获取敏感数据，需要对接口返回的**加密数据( encryptedData )**进行对称解密。 解密算法如下：
+接口如果涉及敏感数据（如[wx.getUserInfo](../../document/open-api/data/wx.getUserInfo.html)当中的 openId 和unionId ），接口的明文内容将不包含这些敏感数据。开发者如需要获取敏感数据，需要对接口返回的**加密数据( encryptedData )**进行对称解密。 解密算法如下：
 
 1.  对称解密使用的算法为 AES-128-CBC，数据采用PKCS#7填充。
 2.  对称解密的目标密文为 Base64_Decode(encryptedData)。
@@ -198,7 +198,7 @@
 
 </table>
 
-如接口[wx.getUserInfo](../../document/open-api/user-info/wx.getUserInfo.html)敏感数据当中的watermark：
+如接口[wx.getUserInfo](../../document/open-api/data/wx.getUserInfo.html)敏感数据当中的watermark：
 
     {
         "openId": "OPENID",
