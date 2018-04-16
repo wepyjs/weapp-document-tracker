@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [小程序开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -41,7 +46,7 @@
 *   [组件](../component/)
 *   [API](./)
 *   [工具](../devtools/devtools.html)
-*   [Q&A](../qa.html)
+*   [腾讯云支持](../qcloud/qcloud.html)
 
 </div>
 
@@ -340,10 +345,10 @@
 *   [开放接口](api-login.html)
     *   [登录](api-login.html)
         *   [wx.login](api-login.html#wxloginobject)
-        *   [wx.checkSession](api-login.html#wxchecksessionobject)
+        *   [wx.checkSession](signature.html#wxchecksessionobject)
         *   [签名加密](signature.html)
     *   [授权](authorize-index.html)
-        *   [wx.authorize](authorize.html#wxauthorizeobject)
+        *   [wx.authorize](authorize.html)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
         *   [getPhoneNumber](getPhoneNumber.html)
@@ -403,6 +408,7 @@
         *   [查看地点列表](nearby.html#查看地点列表)
         *   [删除地点](nearby.html#删除地点)
         *   [展示/取消展示附近小程序](nearby.html#展示取消展示附近小程序)
+    *   [插件管理](plugin.html)
 *   [数据](analysis.html)
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
@@ -630,6 +636,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -644,6 +652,8 @@
 
 <td>播放</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -653,6 +663,8 @@
 <td>无</td>
 
 <td>暂停</td>
+
+<td></td>
 
 </tr>
 
@@ -664,6 +676,8 @@
 
 <td>停止</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -673,6 +687,8 @@
 <td>position</td>
 
 <td>跳转到指定位置，单位 s</td>
+
+<td></td>
 
 </tr>
 
@@ -684,6 +700,8 @@
 
 <td>销毁当前实例</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -693,6 +711,8 @@
 <td>callback</td>
 
 <td>音频进入可以播放状态，但不保证后面可以流畅播放</td>
+
+<td></td>
 
 </tr>
 
@@ -704,6 +724,8 @@
 
 <td>音频播放事件</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -713,6 +735,8 @@
 <td>callback</td>
 
 <td>音频暂停事件</td>
+
+<td></td>
 
 </tr>
 
@@ -724,6 +748,8 @@
 
 <td>音频停止事件</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -733,6 +759,8 @@
 <td>callback</td>
 
 <td>音频自然播放结束事件</td>
+
+<td></td>
 
 </tr>
 
@@ -744,6 +772,8 @@
 
 <td>音频播放进度更新事件</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -753,6 +783,8 @@
 <td>callback</td>
 
 <td>音频播放错误事件</td>
+
+<td></td>
 
 </tr>
 
@@ -764,6 +796,8 @@
 
 <td>音频加载中事件，当音频因为数据不足，需要停下来加载时会触发</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -774,6 +808,8 @@
 
 <td>音频进行 seek 操作事件</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -783,6 +819,128 @@
 <td>callback</td>
 
 <td>音频完成 seek 操作事件</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>offCanplay</td>
+
+<td>callback</td>
+
+<td>取消监听 onCanplay 事件</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>offPlay</td>
+
+<td>callback</td>
+
+<td>取消监听 onPlay 事件</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>offPause</td>
+
+<td>callback</td>
+
+<td>取消监听 onPause 事件</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>offStop</td>
+
+<td>callback</td>
+
+<td>取消监听 onStop 事件</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>offEnded</td>
+
+<td>callback</td>
+
+<td>取消监听 onEnded 事件</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>offTimeUpdate</td>
+
+<td>callback</td>
+
+<td>取消监听 onTimeUpdate 事件</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>offError</td>
+
+<td>callback</td>
+
+<td>取消监听 onError 事件</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>offWaiting</td>
+
+<td>callback</td>
+
+<td>取消监听 onWaiting 事件</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>offSeeking</td>
+
+<td>callback</td>
+
+<td>取消监听 onSeeking 事件</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>offSeeked</td>
+
+<td>callback</td>
+
+<td>取消监听 onSeeked 事件</td>
+
+<td>[1.9.0](../framework/compatibility.html "基础库 1.9.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

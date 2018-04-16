@@ -6,8 +6,16 @@
             <h1 class="logo"><a href="javascript:;" title="_(&apos;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x5E73;&#x53F0; &#x5C0F;&#x7A0B;&#x5E8F;&apos;)"></a></h1>
             <div class="header_ctrls">
                 <ul class="top_nav">
-                    <li class="top_nav_item" id="js_selected_introduction">
-                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html">&#x4ECB;&#x7ECD;</a>
+                    <li class="top_nav_item dropdown" id="js_selected_introduction">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_introduction">&#x4ECB;&#x7ECD;</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html">&#x5C0F;&#x7A0B;&#x5E8F;&#x4ECB;&#x7ECD;</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/introduction/index.html">&#x5C0F;&#x6E38;&#x620F;&#x4ECB;&#x7ECD;</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="top_nav_item" id="js_selected_design">
                         <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/design/index.html">&#x8BBE;&#x8BA1;</a>
@@ -26,8 +34,19 @@
                     <li class="top_nav_item" id="js_selected_product">
                         <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/product/index.html">&#x8FD0;&#x8425;</a>
                     </li>
-                    <li class="top_nav_item" id="js_selected_design">
-                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html">&#x6570;&#x636E;</a>
+                    <li class="top_nav_item dropdown" id="js_selected_analysis">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_analysis">&#x6570;&#x636E;</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html">&#x5C0F;&#x7A0B;&#x5E8F;&#x6570;&#x636E;</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/analysis/index.html">&#x5C0F;&#x6E38;&#x620F;&#x6570;&#x636E;</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_bbs">
+                        <a class="top_nav_item_title" href="https://developers.weixin.qq.com/">&#x793E;&#x533A;</a>
                     </li>
                 </ul>
             </div>
@@ -107,12 +126,12 @@
             
         </li>
     
-        <li class="sub_nav_item " data-level="1.6" data-path="../../qa.html">
+        <li class="sub_nav_item " data-level="1.6" data-path="../../qcloud/qcloud.html">
             
-                <a href="../../qa.html">
+                <a href="../../qcloud/qcloud.html">
             
                     
-                    Q&amp;A
+                    &#x817E;&#x8BAF;&#x4E91;&#x652F;&#x6301;
             
                 </a>
             
@@ -4091,9 +4110,9 @@
             
         </li>
     
-        <li class="chapter  " data-level="1.4.9.1.2" data-path="../api-login.html" data-name="wx.checkSession">
+        <li class="chapter  " data-level="1.4.9.1.2" data-path="../signature.html" data-name="wx.checkSession">
             
-                <a href="../api-login.html#wxchecksessionobject">
+                <a href="../signature.html#wxchecksessionobject">
             
                     
                     wx.checkSession
@@ -4138,7 +4157,7 @@
     
         <li class="chapter  " data-level="1.4.9.2.1" data-path="../authorize.html" data-name="wx.authorize">
             
-                <a href="../authorize.html#wxauthorizeobject">
+                <a href="../authorize.html">
             
                     
                     wx.authorize
@@ -5017,6 +5036,19 @@
             
         </li>
     
+        <li class="chapter  " data-level="1.4.9.18" data-path="../plugin.html" data-name="&#x63D2;&#x4EF6;&#x7BA1;&#x7406;">
+            
+                <a href="../plugin.html">
+            
+                    
+                    &#x63D2;&#x4EF6;&#x7BA1;&#x7406;
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -5357,7 +5389,7 @@
 <tr>
 <td>value</td>
 <td>String</td>
-<td>&#x7B26;&#x5408;CSS font &#x8BED;&#x6CD5;&#x7684;DOMString &#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x9ED8;&#x8BA4;&#x5B57;&#x4F53;&#x662F; 10px sans-serif</td>
+<td>&#x7B26;&#x5408; CSS font &#x8BED;&#x6CD5;&#x7684; DOMString &#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x81F3;&#x5C11;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x548C;&#x5B57;&#x4F53;&#x65CF;&#x540D;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; 10px sans-serif</td>
 </tr>
 </tbody>
 </table>
@@ -5375,12 +5407,12 @@
 <td>&#x5B57;&#x4F53;&#x6837;&#x5F0F;&#x3002;&#x4EC5;&#x652F;&#x6301; italic, oblique, normal</td>
 </tr>
 <tr>
-<td>size</td>
-<td>&#x5B57;&#x4F53;&#x5927;&#x5C0F;</td>
-</tr>
-<tr>
 <td>weight</td>
 <td>&#x5B57;&#x4F53;&#x7C97;&#x7EC6;&#x3002;&#x4EC5;&#x652F;&#x6301; normal, bold</td>
+</tr>
+<tr>
+<td>size</td>
+<td>&#x5B57;&#x4F53;&#x5927;&#x5C0F;</td>
 </tr>
 <tr>
 <td>family</td>

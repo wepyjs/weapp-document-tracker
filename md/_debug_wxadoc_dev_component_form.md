@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [小程序开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -41,7 +46,7 @@
 *   [组件](./)
 *   [API](../api/)
 *   [工具](../devtools/devtools.html)
-*   [Q&A](../qa.html)
+*   [腾讯云支持](../qcloud/qcloud.html)
 
 </div>
 
@@ -184,6 +189,8 @@
 </table>
 
 **示例代码：**
+
+[在开发者工具中预览效果](wechatide://minicode/MUaz7cmy6AYq)
 
     <form bindsubmit="formSubmit" bindreset="formReset">
       <view class="section section_gap">

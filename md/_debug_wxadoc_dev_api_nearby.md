@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [小程序开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -41,7 +46,7 @@
 *   [组件](../component/)
 *   [API](./)
 *   [工具](../devtools/devtools.html)
-*   [Q&A](../qa.html)
+*   [腾讯云支持](../qcloud/qcloud.html)
 
 </div>
 
@@ -340,10 +345,10 @@
 *   [开放接口](api-login.html)
     *   [登录](api-login.html)
         *   [wx.login](api-login.html#wxloginobject)
-        *   [wx.checkSession](api-login.html#wxchecksessionobject)
+        *   [wx.checkSession](signature.html#wxchecksessionobject)
         *   [签名加密](signature.html)
     *   [授权](authorize-index.html)
-        *   [wx.authorize](authorize.html#wxauthorizeobject)
+        *   [wx.authorize](authorize.html)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
         *   [getPhoneNumber](getPhoneNumber.html)
@@ -403,6 +408,7 @@
         *   [查看地点列表](nearby.html#查看地点列表)
         *   [删除地点](nearby.html#删除地点)
         *   [展示/取消展示附近小程序](nearby.html#展示取消展示附近小程序)
+    *   [插件管理](plugin.html)
 *   [数据](analysis.html)
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
@@ -486,8 +492,7 @@
 
 <td>经营资质主体</td>
 
-<td>经营资质主体与小程序同主体--不填;  
-经营资质主体与小程序非同主体--必填;</td>
+<td>必填</td>
 
 </tr>
 
@@ -685,6 +690,30 @@ POST数据示例：
 <td>93011</td>
 
 <td>个人类型小程序不可用</td>
+
+</tr>
+
+<tr>
+
+<td>93012</td>
+
+<td>非普通类型小程序（门店小程序、小店小程序等）不可用</td>
+
+</tr>
+
+<tr>
+
+<td>93013</td>
+
+<td>从腾讯地图获取地址详细信息失败</td>
+
+</tr>
+
+<tr>
+
+<td>93014</td>
+
+<td>同一资质证件号重复添加</td>
 
 </tr>
 
@@ -1290,6 +1319,6 @@ POST数据示例：
 
 </div>
 
-[](checkIsSoterEnrolledInDevice.html)[](analysis.html)</div>
+[](checkIsSoterEnrolledInDevice.html)[](plugin.html)</div>
 
 </div>

@@ -6,8 +6,16 @@
             <h1 class="logo"><a href="javascript:;" title="_(&apos;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x5E73;&#x53F0; &#x5C0F;&#x7A0B;&#x5E8F;&apos;)"></a></h1>
             <div class="header_ctrls">
                 <ul class="top_nav">
-                    <li class="top_nav_item" id="js_selected_introduction">
-                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html">&#x4ECB;&#x7ECD;</a>
+                    <li class="top_nav_item dropdown" id="js_selected_introduction">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_introduction">&#x4ECB;&#x7ECD;</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html">&#x5C0F;&#x7A0B;&#x5E8F;&#x4ECB;&#x7ECD;</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/introduction/index.html">&#x5C0F;&#x6E38;&#x620F;&#x4ECB;&#x7ECD;</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="top_nav_item" id="js_selected_design">
                         <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/design/index.html">&#x8BBE;&#x8BA1;</a>
@@ -26,8 +34,19 @@
                     <li class="top_nav_item" id="js_selected_product">
                         <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/product/index.html">&#x8FD0;&#x8425;</a>
                     </li>
-                    <li class="top_nav_item" id="js_selected_design">
-                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html">&#x6570;&#x636E;</a>
+                    <li class="top_nav_item dropdown" id="js_selected_analysis">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_analysis">&#x6570;&#x636E;</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html">&#x5C0F;&#x7A0B;&#x5E8F;&#x6570;&#x636E;</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/analysis/index.html">&#x5C0F;&#x6E38;&#x620F;&#x6570;&#x636E;</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_bbs">
+                        <a class="top_nav_item_title" href="https://developers.weixin.qq.com/">&#x793E;&#x533A;</a>
                     </li>
                 </ul>
             </div>
@@ -107,12 +126,12 @@
             
         </li>
     
-        <li class="sub_nav_item " data-level="1.6" data-path="../qa.html">
+        <li class="sub_nav_item " data-level="1.6" data-path="../qcloud/qcloud.html">
             
-                <a href="../qa.html">
+                <a href="../qcloud/qcloud.html">
             
                     
-                    Q&amp;A
+                    &#x817E;&#x8BAF;&#x4E91;&#x652F;&#x6301;
             
                 </a>
             
@@ -4091,9 +4110,9 @@
             
         </li>
     
-        <li class="chapter  " data-level="1.4.9.1.2" data-path="api-login.html" data-name="wx.checkSession">
+        <li class="chapter  " data-level="1.4.9.1.2" data-path="signature.html" data-name="wx.checkSession">
             
-                <a href="api-login.html#wxchecksessionobject">
+                <a href="signature.html#wxchecksessionobject">
             
                     
                     wx.checkSession
@@ -4138,7 +4157,7 @@
     
         <li class="chapter  " data-level="1.4.9.2.1" data-path="authorize.html" data-name="wx.authorize">
             
-                <a href="authorize.html#wxauthorizeobject">
+                <a href="authorize.html">
             
                     
                     wx.authorize
@@ -5017,6 +5036,19 @@
             
         </li>
     
+        <li class="chapter  " data-level="1.4.9.18" data-path="plugin.html" data-name="&#x63D2;&#x4EF6;&#x7BA1;&#x7406;">
+            
+                <a href="plugin.html">
+            
+                    
+                    &#x63D2;&#x4EF6;&#x7BA1;&#x7406;
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -5432,6 +5464,7 @@
 <th>&#x65B9;&#x6CD5;</th>
 <th>&#x53C2;&#x6570;</th>
 <th>&#x8BF4;&#x660E;</th>
+<th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th>
 </tr>
 </thead>
 <tbody>
@@ -5439,76 +5472,151 @@
 <td>play</td>
 <td>&#x65E0;</td>
 <td>&#x64AD;&#x653E;</td>
+<td></td>
 </tr>
 <tr>
 <td>pause</td>
 <td>&#x65E0;</td>
 <td>&#x6682;&#x505C;</td>
+<td></td>
 </tr>
 <tr>
 <td>stop</td>
 <td>&#x65E0;</td>
 <td>&#x505C;&#x6B62;</td>
+<td></td>
 </tr>
 <tr>
 <td>seek</td>
 <td>position</td>
 <td>&#x8DF3;&#x8F6C;&#x5230;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#xFF0C;&#x5355;&#x4F4D; s</td>
+<td></td>
 </tr>
 <tr>
 <td>destroy</td>
 <td>&#x65E0;</td>
 <td>&#x9500;&#x6BC1;&#x5F53;&#x524D;&#x5B9E;&#x4F8B;</td>
+<td></td>
 </tr>
 <tr>
 <td>onCanplay</td>
 <td>callback</td>
 <td>&#x97F3;&#x9891;&#x8FDB;&#x5165;&#x53EF;&#x4EE5;&#x64AD;&#x653E;&#x72B6;&#x6001;&#xFF0C;&#x4F46;&#x4E0D;&#x4FDD;&#x8BC1;&#x540E;&#x9762;&#x53EF;&#x4EE5;&#x6D41;&#x7545;&#x64AD;&#x653E;</td>
+<td></td>
 </tr>
 <tr>
 <td>onPlay</td>
 <td>callback</td>
 <td>&#x97F3;&#x9891;&#x64AD;&#x653E;&#x4E8B;&#x4EF6;</td>
+<td></td>
 </tr>
 <tr>
 <td>onPause</td>
 <td>callback</td>
 <td>&#x97F3;&#x9891;&#x6682;&#x505C;&#x4E8B;&#x4EF6;</td>
+<td></td>
 </tr>
 <tr>
 <td>onStop</td>
 <td>callback</td>
 <td>&#x97F3;&#x9891;&#x505C;&#x6B62;&#x4E8B;&#x4EF6;</td>
+<td></td>
 </tr>
 <tr>
 <td>onEnded</td>
 <td>callback</td>
 <td>&#x97F3;&#x9891;&#x81EA;&#x7136;&#x64AD;&#x653E;&#x7ED3;&#x675F;&#x4E8B;&#x4EF6;</td>
+<td></td>
 </tr>
 <tr>
 <td>onTimeUpdate</td>
 <td>callback</td>
 <td>&#x97F3;&#x9891;&#x64AD;&#x653E;&#x8FDB;&#x5EA6;&#x66F4;&#x65B0;&#x4E8B;&#x4EF6;</td>
+<td></td>
 </tr>
 <tr>
 <td>onError</td>
 <td>callback</td>
 <td>&#x97F3;&#x9891;&#x64AD;&#x653E;&#x9519;&#x8BEF;&#x4E8B;&#x4EF6;</td>
+<td></td>
 </tr>
 <tr>
 <td>onWaiting</td>
 <td>callback</td>
 <td>&#x97F3;&#x9891;&#x52A0;&#x8F7D;&#x4E2D;&#x4E8B;&#x4EF6;&#xFF0C;&#x5F53;&#x97F3;&#x9891;&#x56E0;&#x4E3A;&#x6570;&#x636E;&#x4E0D;&#x8DB3;&#xFF0C;&#x9700;&#x8981;&#x505C;&#x4E0B;&#x6765;&#x52A0;&#x8F7D;&#x65F6;&#x4F1A;&#x89E6;&#x53D1;</td>
+<td></td>
 </tr>
 <tr>
 <td>onSeeking</td>
 <td>callback</td>
 <td>&#x97F3;&#x9891;&#x8FDB;&#x884C; seek &#x64CD;&#x4F5C;&#x4E8B;&#x4EF6;</td>
+<td></td>
 </tr>
 <tr>
 <td>onSeeked</td>
 <td>callback</td>
 <td>&#x97F3;&#x9891;&#x5B8C;&#x6210; seek &#x64CD;&#x4F5C;&#x4E8B;&#x4EF6;</td>
+<td></td>
+</tr>
+<tr>
+<td>offCanplay</td>
+<td>callback</td>
+<td>&#x53D6;&#x6D88;&#x76D1;&#x542C; onCanplay &#x4E8B;&#x4EF6;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.0</a></td>
+</tr>
+<tr>
+<td>offPlay</td>
+<td>callback</td>
+<td>&#x53D6;&#x6D88;&#x76D1;&#x542C; onPlay &#x4E8B;&#x4EF6;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.0</a></td>
+</tr>
+<tr>
+<td>offPause</td>
+<td>callback</td>
+<td>&#x53D6;&#x6D88;&#x76D1;&#x542C; onPause &#x4E8B;&#x4EF6;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.0</a></td>
+</tr>
+<tr>
+<td>offStop</td>
+<td>callback</td>
+<td>&#x53D6;&#x6D88;&#x76D1;&#x542C; onStop &#x4E8B;&#x4EF6;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.0</a></td>
+</tr>
+<tr>
+<td>offEnded</td>
+<td>callback</td>
+<td>&#x53D6;&#x6D88;&#x76D1;&#x542C; onEnded &#x4E8B;&#x4EF6;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.0</a></td>
+</tr>
+<tr>
+<td>offTimeUpdate</td>
+<td>callback</td>
+<td>&#x53D6;&#x6D88;&#x76D1;&#x542C; onTimeUpdate &#x4E8B;&#x4EF6;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.0</a></td>
+</tr>
+<tr>
+<td>offError</td>
+<td>callback</td>
+<td>&#x53D6;&#x6D88;&#x76D1;&#x542C; onError &#x4E8B;&#x4EF6;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.0</a></td>
+</tr>
+<tr>
+<td>offWaiting</td>
+<td>callback</td>
+<td>&#x53D6;&#x6D88;&#x76D1;&#x542C; onWaiting &#x4E8B;&#x4EF6;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.0</a></td>
+</tr>
+<tr>
+<td>offSeeking</td>
+<td>callback</td>
+<td>&#x53D6;&#x6D88;&#x76D1;&#x542C; onSeeking &#x4E8B;&#x4EF6;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.0</a></td>
+</tr>
+<tr>
+<td>offSeeked</td>
+<td>callback</td>
+<td>&#x53D6;&#x6D88;&#x76D1;&#x542C; onSeeked &#x4E8B;&#x4EF6;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.0</a></td>
 </tr>
 </tbody>
 </table>

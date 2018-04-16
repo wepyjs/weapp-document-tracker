@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [小游戏开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -36,9 +41,10 @@
 
 </div>
 
-*   [教程](./index.html)
+*   [教程](./)
 *   [API](document/render/canvas/wx.createCanvas.html)
 *   [工具](devtools/devtools.html)
+*   [腾讯云支持](qcloud/qcloud.html)
 
 </div>
 
@@ -58,8 +64,8 @@
 
 <nav role="navigation">
 
-*   [基础](./index.html)
-    *   [快速上手](./index.html)
+*   [基础](./)
+    *   [快速上手](./)
     *   [Adapter](tutorial/base/adapter.html)
     *   [对引擎的支持](tutorial/base/engine.html)
     *   [模块化](tutorial/base/module.html)
@@ -74,7 +80,9 @@
 *   [开放能力](tutorial/open-ability/authorize.html)
     *   [用户授权](tutorial/open-ability/authorize.html)
     *   [用户登录态签名](tutorial/open-ability/http-signature.html)
+    *   [米大师支付签名](tutorial/open-ability/midas-signature.html)
     *   [关系链数据使用指南](tutorial/open-ability/open-data.html)
+    *   [虚拟支付](tutorial/open-ability/payment.html)
     *   [获取二维码](tutorial/open-ability/qrcode.html)
     *   [转发](tutorial/open-ability/share.html)
     *   [用户数据的签名验证和加解密](tutorial/open-ability/signature.html)
@@ -105,7 +113,9 @@
 
 ### 你的第一个小游戏
 
-新建项目选择小程序项目，选择代码存放的硬盘路径。 **目前小游戏不提供公开注册，可点击体验小游戏使用无 AppID 模式。** 给你的项目起一个好听的名字，最后，勾选“建立游戏快速启动模板”（注意：你要选择一个空的目录才会有这个选项），点击确定，你就得到了你的第一个小游戏了。 ![](tutorial/images/select-game.jpg)
+新建项目选择小程序项目，选择代码存放的硬盘路径，并输入 AppId。
+
+你可以前往 [小游戏注册](https://developers.weixin.qq.com/minigame/introduction/index.html#%E5%B0%8F%E6%B8%B8%E6%88%8F%E6%B3%A8%E5%86%8C) 通过注册小游戏帐号来获得 AppId，也可以使用无 AppId 的体验模式。给你的项目起一个好听的名字，最后，勾选“建立游戏快速启动模板”（注意：你要选择一个空的目录才会有这个选项），点击确定，你就得到了你的第一个小游戏了。 ![](tutorial/images/select-game.jpg)
 
 点击顶部菜单编译就可以在 IDE 预览你的第一个小游戏。
 
@@ -126,6 +136,10 @@
 
 1.  `game.js` 小游戏入口文件
 2.  `game.json` 配置文件
+
+### 代码包大小限制
+
+每个小游戏允许上传的代码包总大小为 4MB。
 
 ### 配置
 
@@ -468,8 +482,8 @@ console.log 无法在真机上将存在循环引用的对象输出到 vConsole �
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
@@ -478,6 +492,6 @@ console.log 无法在真机上将存在循环引用的对象输出到 vConsole �
 
 </div>
 
-[](./index.html)</div>
+[](./)</div>
 
 </div>

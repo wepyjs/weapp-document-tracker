@@ -6,8 +6,16 @@
             <h1 class="logo"><a href="javascript:;" title="_(&apos;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x5E73;&#x53F0; &#x5C0F;&#x7A0B;&#x5E8F;&apos;)"></a></h1>
             <div class="header_ctrls">
                 <ul class="top_nav">
-                    <li class="top_nav_item" id="js_selected_introduction">
-                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html">&#x4ECB;&#x7ECD;</a>
+                    <li class="top_nav_item dropdown" id="js_selected_introduction">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_introduction">&#x4ECB;&#x7ECD;</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html">&#x5C0F;&#x7A0B;&#x5E8F;&#x4ECB;&#x7ECD;</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/introduction/index.html">&#x5C0F;&#x6E38;&#x620F;&#x4ECB;&#x7ECD;</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="top_nav_item" id="js_selected_design">
                         <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/design/index.html">&#x8BBE;&#x8BA1;</a>
@@ -26,8 +34,19 @@
                     <li class="top_nav_item" id="js_selected_product">
                         <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/product/index.html">&#x8FD0;&#x8425;</a>
                     </li>
-                    <li class="top_nav_item" id="js_selected_design">
-                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html">&#x6570;&#x636E;</a>
+                    <li class="top_nav_item dropdown" id="js_selected_analysis">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_analysis">&#x6570;&#x636E;</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html">&#x5C0F;&#x7A0B;&#x5E8F;&#x6570;&#x636E;</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/analysis/index.html">&#x5C0F;&#x6E38;&#x620F;&#x6570;&#x636E;</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_bbs">
+                        <a class="top_nav_item_title" href="https://developers.weixin.qq.com/">&#x793E;&#x533A;</a>
                     </li>
                 </ul>
             </div>
@@ -107,12 +126,12 @@
             
         </li>
     
-        <li class="sub_nav_item " data-level="1.6" data-path="../qa.html">
+        <li class="sub_nav_item " data-level="1.6" data-path="../qcloud/qcloud.html">
             
-                <a href="../qa.html">
+                <a href="../qcloud/qcloud.html">
             
                     
-                    Q&amp;A
+                    &#x817E;&#x8BAF;&#x4E91;&#x652F;&#x6301;
             
                 </a>
             
@@ -4091,9 +4110,9 @@
             
         </li>
     
-        <li class="chapter  " data-level="1.4.9.1.2" data-path="api-login.html" data-name="wx.checkSession">
+        <li class="chapter  " data-level="1.4.9.1.2" data-path="signature.html" data-name="wx.checkSession">
             
-                <a href="api-login.html#wxchecksessionobject">
+                <a href="signature.html#wxchecksessionobject">
             
                     
                     wx.checkSession
@@ -4138,7 +4157,7 @@
     
         <li class="chapter  " data-level="1.4.9.2.1" data-path="authorize.html" data-name="wx.authorize">
             
-                <a href="authorize.html#wxauthorizeobject">
+                <a href="authorize.html">
             
                     
                     wx.authorize
@@ -5017,6 +5036,19 @@
             
         </li>
     
+        <li class="chapter  " data-level="1.4.9.18" data-path="plugin.html" data-name="&#x63D2;&#x4EF6;&#x7BA1;&#x7406;">
+            
+                <a href="plugin.html">
+            
+                    
+                    &#x63D2;&#x4EF6;&#x7BA1;&#x7406;
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -5349,6 +5381,7 @@
 <th>&#x65B9;&#x6CD5;</th>
 <th>&#x53C2;&#x6570;</th>
 <th>&#x8BF4;&#x660E;</th>
+<th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th>
 </tr>
 </thead>
 <tbody>
@@ -5356,21 +5389,37 @@
 <td>play</td>
 <td>OBJECT</td>
 <td>&#x64AD;&#x653E;</td>
+<td></td>
 </tr>
 <tr>
 <td>stop</td>
 <td>OBJECT</td>
 <td>&#x505C;&#x6B62;</td>
+<td></td>
 </tr>
 <tr>
 <td>mute</td>
 <td>OBJECT</td>
 <td>&#x9759;&#x97F3;</td>
+<td></td>
+</tr>
+<tr>
+<td>pause</td>
+<td>OBJECT</td>
+<td>&#x6682;&#x505C;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.90 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.90</a></td>
+</tr>
+<tr>
+<td>resume</td>
+<td>OBJECT</td>
+<td>&#x6062;&#x590D;</td>
+<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.9.90 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.9.90</a></td>
 </tr>
 <tr>
 <td>requestFullScreen</td>
 <td>OBJECT</td>
 <td>&#x8FDB;&#x5165;&#x5168;&#x5C4F;</td>
+<td></td>
 </tr>
 <tr>
 <td>exitFullScreen</td>
@@ -5447,6 +5496,8 @@
 </tr>
 </tbody>
 </table>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</strong></p>
+<p><a href="wechatide://minicode/UzWEzmm763Y4" target="_blank">&#x5728;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#x4E2D;&#x9884;&#x89C8;&#x6548;&#x679C;</a></p>
 
                                 
                                 </section>

@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [小游戏开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -36,9 +41,10 @@
 
 </div>
 
-*   [教程](../../index.html)
+*   [教程](../../)
 *   [API](../../document/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
+*   [腾讯云支持](../../qcloud/qcloud.html)
 
 </div>
 
@@ -58,8 +64,8 @@
 
 <nav role="navigation">
 
-*   [基础](../../index.html)
-    *   [快速上手](../../index.html)
+*   [基础](../../)
+    *   [快速上手](../../)
     *   [Adapter](adapter.html)
     *   [对引擎的支持](engine.html)
     *   [模块化](module.html)
@@ -74,7 +80,9 @@
 *   [开放能力](../open-ability/authorize.html)
     *   [用户授权](../open-ability/authorize.html)
     *   [用户登录态签名](../open-ability/http-signature.html)
+    *   [米大师支付签名](../open-ability/midas-signature.html)
     *   [关系链数据使用指南](../open-ability/open-data.html)
+    *   [虚拟支付](../open-ability/payment.html)
     *   [获取二维码](../open-ability/qrcode.html)
     *   [转发](../open-ability/share.html)
     *   [用户数据的签名验证和加解密](../open-ability/signature.html)
@@ -99,7 +107,7 @@
 
 ## Adapter
 
-小游戏的运行环境在 iOS 上是 [JavaScriptCore](https://developer.apple.com/documentation/javascriptcore)，在 Android 上是 [V8](https://developers.google.com/v8/index.html)，都是没有 BOM 和 DOM 的运行环境，没有全局的 document 和 window 对象。因此当你希望使用 DOM API 来创建 Canvas 和 Image 等元素的时候，会引发错误。
+小游戏的运行环境在 iOS 上是 [JavaScriptCore](https://developer.apple.com/documentation/javascriptcore)，在 Android 上是 [V8](https://developers.google.com/v8/)，都是没有 BOM 和 DOM 的运行环境，没有全局的 document 和 window 对象。因此当你希望使用 DOM API 来创建 Canvas 和 Image 等元素的时候，会引发错误。
 
     var canvas = document.createElement('canvas')
 
@@ -160,7 +168,7 @@ weapp-adapter 会预先调用 wx.createCanvas() 创建一个上屏 Canvas，并�
 
 *   Cocos：[http://docs.cocos.com/creator/manual/zh/publish/publish-wechatgame.html](http://docs.cocos.com/creator/manual/zh/publish/publish-wechatgame.html)
 *   Egret：[http://developer.egret.com/cn/github/egret-docs/Engine2D/minigame/introduction/index.html](http://developer.egret.com/cn/github/egret-docs/Engine2D/minigame/introduction/index.html)
-*   Laya：[https://ldc.layabox.com/doc/?nav=zh-as-3-4-5](https://ldc.layabox.com/doc/?nav=zh-as-3-4-5&)
+*   Laya：[https://ldc.layabox.com/doc/?nav=zh-as-3-4-5](https://ldc.layabox.com/doc/?nav=zh-as-3-4-5)
 
 再次强调，weapp-adapter 不是小游戏基础库的一部分，今后官方也将不再对 weapp-adapter 进行更新和维护。开发者应该根据自己使用的游戏引擎，实现自己的 Adapter 来使所用的游戏引擎适配小游戏的运行环境。
 
@@ -193,8 +201,8 @@ weapp-adapter 会预先调用 wx.createCanvas() 创建一个上屏 Canvas，并�
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
@@ -203,6 +211,6 @@ weapp-adapter 会预先调用 wx.createCanvas() 创建一个上屏 Canvas，并�
 
 </div>
 
-[](../../index.html)[](engine.html)</div>
+[](../../)[](engine.html)</div>
 
 </div>

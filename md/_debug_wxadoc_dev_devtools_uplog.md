@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [小程序开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -41,7 +46,7 @@
 *   [组件](../component/)
 *   [API](../api/)
 *   [工具](devtools.html)
-*   [Q&A](../qa.html)
+*   [腾讯云支持](../qcloud/qcloud.html)
 
 </div>
 
@@ -81,11 +86,12 @@
     *   [文件格式](edit.html#文件格式)
     *   [文件类型](edit.html#文件支持)
     *   [自动补全](edit.html#自动补全)
-    *   [项目配置文件](edit.html#项目配置文件)
     *   [Git 状态展示](edit.html#git-状态展示)
+    *   [项目配置文件](projectconfig.html)
 *   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
     *   [自定义编译](debug.html#自定义编译)
+    *   [自定义预处理](debug.html#自定义预处理)
     *   [前后台切换](debug.html#前后台切换)
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
@@ -133,6 +139,42 @@
 ### 历史版本下载 2017.08.30 (0.22.203100)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_darwin&from=mpwiki)
+
+### 2018.03.21 更新日志
+
+1.  `F` 修复 TLS 版本校验出错的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000ca4793889f8b18c76bf5f256400&highline=tls&token=1251231172&lang=zh_CN)
+2.  `F` 修复 `wx.chooseVideo` 没有回调的问题
+3.  `F` 修复 插件中没有 `WXML` 文件时报错的问题
+4.  `F` 修复 开发者工具更新逻辑异常的问题
+
+### 2018.03.15 更新日志
+
+1.  `F` 修复 上报更新导致 `wx.uploadFile` 返回值异常的问题
+2.  `F` 修复 申请测试报告时报错的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=456208041&docid=0004e4ef488c883650762672756c00)
+3.  `F` 修复 频繁调用 `wx.downloadFile` 后 `wx.saveFile` 于同一网络图片时，可能出错的问题
+4.  `F` 修复 `wx.setTabBarItem` 不支持图标地址绝对路径的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1212819401&docid=0008ee6f0f0ad8b606765929f59c00&inwindow=1&comment_lvl=2)
+5.  `F` 修复 onShareAppMessage 不能展示临时图片的问题
+6.  `F` 修复 插件中自定义组件样式丢失的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000c4c032807b8c750764d66756800&comment_lvl=13)
+7.  `F` 修复 审查节点时，WXML 面板没有高亮对应节点的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=456208041&docid=000eeac2444e48c65b768d5dc5a400)
+8.  `F` 修复 工具覆盖安装后出现无法监听文件变更的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1566714570&docid=000a26cda68a88a55d767b2ce56c00&inwindow=1)
+
+### 2018.03.13 更新日志
+
+1.  `A` 新增 小程序插件开发支持 [详情](plugin.html)
+2.  `A` 新增 小程序代码片段功能 [详情](minicode.html)
+3.  `A` 新增 通过二维码调试功能，可以调试[获取二维码](../api/qrcode.html)所生成的二维码
+4.  `A` 新增 `Network` 面板显示 `wx.uploadFile`、`wx.downloadFile` 的内容
+5.  `A` 新增 `wx.getImageInfo` 返回图片的方向和类型
+6.  `F` 修复 界面调试没有显示 padding、margin 的问题
+7.  `F` 修复 `wx.request` 没有校验 `method` 的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0002e41c52cb08098b46bb3af5b400&token=998348858&lang=zh_CN)
+8.  `F` 修复 项目列表页中没有按最近使用时间排序的问题
+9.  `F` 修复 小游戏编译条件场景值为 `1044` 时没有 `shareInfo` 的问题
+10.  `F` 修复 网页调试 `devicePixelRatio` 不正确的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1462950566&docid=0004e245b9cf984a276639ee356000&inwindow=1)
+11.  `F` 修复 tabbar 没有 icon 时文字没有居中对齐的问题[详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1304261213&docid=000a0ac7dec6c84d6f46afa7152800&inwindow=1)
+12.  `F` 修复 腾讯云恢复开发环境后，选择智能上传时，没有全量上传的问题
+13.  `F` 修复 开发者工具可以新建名称为 "." 的文件夹的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=2020845980&docid=00088874174698f68e6696eb151c00&inwindow=1)
+14.  `F` 修复 公众号网页调试地址栏下拉选择错误的问题
+15.  `U` 优化 开发者工具卡顿的问题
 
 ### 2018.03.07 基础库更新 (1.9.92)
 
@@ -1581,6 +1623,6 @@
 
 </div>
 
-[](download.html)[](../qa.html)</div>
+[](download.html)[](../qcloud/qcloud.html)</div>
 
 </div>

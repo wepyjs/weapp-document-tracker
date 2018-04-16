@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [小程序开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -41,7 +46,7 @@
 *   [组件](../component/)
 *   [API](../api/)
 *   [工具](devtools.html)
-*   [Q&A](../qa.html)
+*   [腾讯云支持](../qcloud/qcloud.html)
 
 </div>
 
@@ -81,11 +86,12 @@
     *   [文件格式](edit.html#文件格式)
     *   [文件类型](edit.html#文件支持)
     *   [自动补全](edit.html#自动补全)
-    *   [项目配置文件](edit.html#项目配置文件)
     *   [Git 状态展示](edit.html#git-状态展示)
+    *   [项目配置文件](projectconfig.html)
 *   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
     *   [自定义编译](debug.html#自定义编译)
+    *   [自定义预处理](debug.html#自定义预处理)
     *   [前后台切换](debug.html#前后台切换)
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
@@ -147,6 +153,29 @@
 **注：编译条件跟项目相关，每个项目可以保存自己相关的编译条件**
 
 ![wxml](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/customcompile.png)
+
+## 自定义预处理
+
+![projectsetting](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/projectsetting.png)
+
+在项目设置页卡，我们提供了以下几个默认的预处理，可以解决大部分的代码文件预处理的问题
+
+1.  ES6 转 ES5（可以应用于编译、预览、上传），使用 "babel-core": "^6.26.0"
+2.  上传代码时样式自动补全，使用 "postcss": "^6.0.1"
+3.  上传代码时自动压缩，使用 "uglify-js": "3.0.27"
+
+对于高级开发者来说，完全可以自己编写自动化构建脚本对代码文件进行预处理，所以我们提供了 `启用自定义处理命令` 选项 开发者可以指定 `编译前/预览前/上传前` 需要预处理的命令 开发者工具使用 shell 的方式运行指定的命令，并在控制台中输出命令的执行日志
+
+预处理命令的执行顺序
+
+1.  自定义预处理命令
+2.  默认预处理命令
+3.  编译/预览/上传
+
+注：
+
+1.  编译前预处理命令，需要手动点击 "编译" 按钮，或者使用快捷键编译才能触发。文件修改无法触发该命令。
+2.  Mac 版本的开发者工具无法复用 bash 中的 Path 环境变量。可能需要手动设置系统的 Path 环境变量，才能正常执行命令。
 
 ## 前后台切换
 
@@ -289,6 +318,6 @@ Sensor panel 有两大功能：
 
 </div>
 
-[](edit.html#git-状态展示)[](different.html)</div>
+[](projectconfig.html)[](different.html)</div>
 
 </div>

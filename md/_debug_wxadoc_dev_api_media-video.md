@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [小程序开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -41,7 +46,7 @@
 *   [组件](../component/)
 *   [API](./)
 *   [工具](../devtools/devtools.html)
-*   [Q&A](../qa.html)
+*   [腾讯云支持](../qcloud/qcloud.html)
 
 </div>
 
@@ -340,10 +345,10 @@
 *   [开放接口](api-login.html)
     *   [登录](api-login.html)
         *   [wx.login](api-login.html#wxloginobject)
-        *   [wx.checkSession](api-login.html#wxchecksessionobject)
+        *   [wx.checkSession](signature.html#wxchecksessionobject)
         *   [签名加密](signature.html)
     *   [授权](authorize-index.html)
-        *   [wx.authorize](authorize.html#wxauthorizeobject)
+        *   [wx.authorize](authorize.html)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
         *   [getPhoneNumber](getPhoneNumber.html)
@@ -403,6 +408,7 @@
         *   [查看地点列表](nearby.html#查看地点列表)
         *   [删除地点](nearby.html#删除地点)
         *   [展示/取消展示附近小程序](nearby.html#展示取消展示附近小程序)
+    *   [插件管理](plugin.html)
 *   [数据](analysis.html)
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
@@ -620,6 +626,8 @@
 
 **示例代码：**
 
+[代码片段](wechatide://minicode/Qu4htbmu6RYo)
+
     <view class="container">
         <video src="{{src}}"></video>
         <button bindtap="bindButtonTap">获取视频</button>
@@ -758,8 +766,10 @@
 **示例代码：**
 
     wx.saveVideoToPhotosAlbum({
-        success(res) {
-        }
+      filePath: 'wxfile://xxx'
+      success(res) {
+        console.log(res.errMsg)
+      }
     })
 
 #### Bug & Tip

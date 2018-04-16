@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [小程序开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -41,7 +46,7 @@
 *   [组件](../component/)
 *   [API](./)
 *   [工具](../devtools/devtools.html)
-*   [Q&A](../qa.html)
+*   [腾讯云支持](../qcloud/qcloud.html)
 
 </div>
 
@@ -340,10 +345,10 @@
 *   [开放接口](api-login.html)
     *   [登录](api-login.html)
         *   [wx.login](api-login.html#wxloginobject)
-        *   [wx.checkSession](api-login.html#wxchecksessionobject)
+        *   [wx.checkSession](signature.html#wxchecksessionobject)
         *   [签名加密](signature.html)
     *   [授权](authorize-index.html)
-        *   [wx.authorize](authorize.html#wxauthorizeobject)
+        *   [wx.authorize](authorize.html)
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
         *   [getPhoneNumber](getPhoneNumber.html)
@@ -403,6 +408,7 @@
         *   [查看地点列表](nearby.html#查看地点列表)
         *   [删除地点](nearby.html#删除地点)
         *   [展示/取消展示附近小程序](nearby.html#展示取消展示附近小程序)
+    *   [插件管理](plugin.html)
 *   [数据](analysis.html)
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
@@ -448,7 +454,9 @@
 
 可以使用开发工具 1.02.1803130 及以后版本通过二维码编译功能调试所获得的二维码
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/qrcodecompile.png)
+## ![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/qrcodecompile.png)
+
+为满足不同需求和场景，这里提供了三个接口，开发者可挑选适合自己的接口。 A接口，生成小程序码，可接受path参数较长，生成个数受限。 B接口，生成小程序码，可接受页面参数较短，生成个数不受限。 C接口，生成二维码，可接受path参数较长，生成个数受限。
 
 ### 获取小程序码
 
@@ -536,7 +544,7 @@
 
 **注意：通过该接口生成的小程序码，永久有效，数量限制见文末说明，请谨慎使用。用户扫描该码进入小程序后，将直接进入 path 对应的页面。**
 
-接口B：适用于需要的码数量极多，或仅临时使用的业务场景
+接口B：适用于需要的码数量极多的业务场景
 
 接口地址：
 
@@ -629,6 +637,8 @@
 </tbody>
 
 </table>
+
+**注意：通过该接口生成的小程序码，永久有效，数量暂无限制。用户扫描该码进入小程序后，开发者需在对应页面获取的码中 scene 字段的值，再做处理逻辑。使用如下代码可以获取到二维码中的 scene 字段的值。调试阶段可以使用开发工具的条件编译自定义参数 scene=xxxx 进行模拟，开发工具模拟时的 scene 的参数值需要进行 urlencode**
 
     // 这是首页的 js
     Page({

@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -39,7 +44,6 @@
 *   [微信小程序接入指南](./)
 *   [客服功能使用指南](custom.html)
 *   [扫码打开小程序接入指南](qrcode.html)
-*   [腾讯云支持](qcloud.html)
 *   [插件接入指南](plugin.html)
 
 </div>
@@ -79,14 +83,6 @@
     *   [开发前准备](./#开发前准备)
         *   [绑定开发者](./#绑定开发者)
         *   [获取AppID](./#获取appid)
-        *   [阅读开发文档并下载开发者工具](./#阅读开发文档并下载开发者工具)
-*   [开发者工具的使用](./#开发者工具的使用)
-    *   [下载并安装开发者工具](./#下载并安装开发者工具)
-    *   [登录](./#登录)
-    *   [创建项目](./#创建项目)
-    *   [开发](./#开发)
-    *   [预览](./#预览)
-    *   [上传代码](./#上传代码)
 *   [代码审核与发布](./#代码审核与发布)
     *   [提交审核](./#提交审核)
     *   [审核信息填写](./#审核信息填写)
@@ -94,6 +90,7 @@
         *   [测试帐号](./#测试帐号)
         *   [完成提交](./#完成提交)
         *   [代码发布](./#代码发布)
+*   [开发者工具的使用](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/devtools.html)
 *   [小程序申请微信认证](./#小程序申请微信认证)
 *   [小程序申请微信支付](./#小程序申请微信支付)
 *   [小程序绑定微信开放平台帐号](./#小程序绑定微信开放平台帐号)
@@ -1044,57 +1041,6 @@
 进入“设置-开发设置”，获取AppID信息。
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/i.png)
-
-### 阅读开发文档并下载开发者工具
-
-点击页面右上角文档-开发，详细阅读开发者文档并进入下载页面，下载开发者工具。
-
-# 开发者工具的使用
-
-## 下载并安装开发者工具
-
-## 登录
-
-开发者工具使用管理员或者绑定的开发者微信号扫码登录。
-
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/k.png)
-
-## 创建项目
-
-小程序的管理员或已绑定的开发者可以创建项目。需要填写AppID、项目名称及本地开发目录。
-
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/l.png)
-
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/m.png)
-
-## 开发
-
-管理员和开发者可在开发者工具内完成小程序的开发、调试、预览、上传代码等操作。
-
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/n.png)
-
-## 预览
-
-小程序的管理员或是开发者可点击左侧“项目”，进入上传/预览页面。点击“预览”，开发者可用本人微信扫码，在手机内预览小程序的效果。
-
-**注意：**
-
-*   开发工具上的二维码仅限于登录开发工具的开发者本人可以扫码并预览，其他人无法扫码预览。
-*   请用微信客户端iOS或Android的6.3.27及以上版本才可以扫码预览。
-
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/o.png)
-
-## 上传代码
-
-小程序的管理员可点击左侧“项目”，进入上传/预览页面，使用管理员本人微信号扫码确认上传。 **注意：**
-
-*   只有管理员有权限可以上传，开发者没有权限上传。
-
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/p.png)
-
-代码上传后可在微信公众平台（mp.weixin.qq.com），开发管理页面中看到对应提交的版本。
-
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/q.png)
 
 # 代码审核与发布
 

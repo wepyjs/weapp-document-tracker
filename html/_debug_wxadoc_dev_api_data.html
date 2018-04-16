@@ -6,8 +6,16 @@
             <h1 class="logo"><a href="javascript:;" title="_(&apos;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x5E73;&#x53F0; &#x5C0F;&#x7A0B;&#x5E8F;&apos;)"></a></h1>
             <div class="header_ctrls">
                 <ul class="top_nav">
-                    <li class="top_nav_item" id="js_selected_introduction">
-                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html">&#x4ECB;&#x7ECD;</a>
+                    <li class="top_nav_item dropdown" id="js_selected_introduction">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_introduction">&#x4ECB;&#x7ECD;</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html">&#x5C0F;&#x7A0B;&#x5E8F;&#x4ECB;&#x7ECD;</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/introduction/index.html">&#x5C0F;&#x6E38;&#x620F;&#x4ECB;&#x7ECD;</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="top_nav_item" id="js_selected_design">
                         <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/design/index.html">&#x8BBE;&#x8BA1;</a>
@@ -26,8 +34,19 @@
                     <li class="top_nav_item" id="js_selected_product">
                         <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/product/index.html">&#x8FD0;&#x8425;</a>
                     </li>
-                    <li class="top_nav_item" id="js_selected_design">
-                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html">&#x6570;&#x636E;</a>
+                    <li class="top_nav_item dropdown" id="js_selected_analysis">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_analysis">&#x6570;&#x636E;</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html">&#x5C0F;&#x7A0B;&#x5E8F;&#x6570;&#x636E;</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/analysis/index.html">&#x5C0F;&#x6E38;&#x620F;&#x6570;&#x636E;</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_bbs">
+                        <a class="top_nav_item_title" href="https://developers.weixin.qq.com/">&#x793E;&#x533A;</a>
                     </li>
                 </ul>
             </div>
@@ -107,12 +126,12 @@
             
         </li>
     
-        <li class="sub_nav_item " data-level="1.6" data-path="../qa.html">
+        <li class="sub_nav_item " data-level="1.6" data-path="../qcloud/qcloud.html">
             
-                <a href="../qa.html">
+                <a href="../qcloud/qcloud.html">
             
                     
-                    Q&amp;A
+                    &#x817E;&#x8BAF;&#x4E91;&#x652F;&#x6301;
             
                 </a>
             
@@ -4091,9 +4110,9 @@
             
         </li>
     
-        <li class="chapter  " data-level="1.4.9.1.2" data-path="api-login.html" data-name="wx.checkSession">
+        <li class="chapter  " data-level="1.4.9.1.2" data-path="signature.html" data-name="wx.checkSession">
             
-                <a href="api-login.html#wxchecksessionobject">
+                <a href="signature.html#wxchecksessionobject">
             
                     
                     wx.checkSession
@@ -4138,7 +4157,7 @@
     
         <li class="chapter  " data-level="1.4.9.2.1" data-path="authorize.html" data-name="wx.authorize">
             
-                <a href="authorize.html#wxauthorizeobject">
+                <a href="authorize.html">
             
                     
                     wx.authorize
@@ -5017,6 +5036,19 @@
             
         </li>
     
+        <li class="chapter  " data-level="1.4.9.18" data-path="plugin.html" data-name="&#x63D2;&#x4EF6;&#x7BA1;&#x7406;">
+            
+                <a href="plugin.html">
+            
+                    
+                    &#x63D2;&#x4EF6;&#x7BA1;&#x7406;
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -5336,7 +5368,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <p>&#x6BCF;&#x4E2A;&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#x90FD;&#x53EF;&#x4EE5;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x672C;&#x5730;&#x7F13;&#x5B58;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; wx.setStorage&#xFF08;wx.setStorageSync&#xFF09;&#x3001;wx.getStorage&#xFF08;wx.getStorageSync&#xFF09;&#x3001;wx.clearStorage&#xFF08;wx.clearStorageSync&#xFF09;&#x53EF;&#x4EE5;&#x5BF9;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#x3001;&#x83B7;&#x53D6;&#x548C;&#x6E05;&#x7406;&#x3002;&#x540C;&#x4E00;&#x4E2A;&#x5FAE;&#x4FE1;&#x7528;&#x6237;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x5C0F;&#x7A0B;&#x5E8F; storage &#x4E0A;&#x9650;&#x4E3A; 10MB&#x3002;localStorage &#x4EE5;&#x7528;&#x6237;&#x7EF4;&#x5EA6;&#x9694;&#x79BB;&#xFF0C;&#x540C;&#x4E00;&#x53F0;&#x8BBE;&#x5907;&#x4E0A;&#xFF0C;A &#x7528;&#x6237;&#x65E0;&#x6CD5;&#x8BFB;&#x53D6;&#x5230; B &#x7528;&#x6237;&#x7684;&#x6570;&#x636E;&#x3002;</p>
-<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> localStorage &#x662F;&#x6301;&#x4E45;&#x5B58;&#x50A8;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x4E0D;&#x5EFA;&#x8BAE;&#x5C06;&#x5173;&#x952E;&#x4FE1;&#x606F;&#x5168;&#x90E8;&#x5B58;&#x5728; localStorage&#xFF0C;&#x4EE5;&#x9632;&#x7528;&#x6237;&#x6362;&#x8BBE;&#x5907;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x5982;&#x679C;&#x7528;&#x6237;&#x50A8;&#x5B58;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x6E05;&#x7A7A;&#x6700;&#x8FD1;&#x6700;&#x4E45;&#x672A;&#x4F7F;&#x7528;&#x7684;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x3002;&#x6211;&#x4EEC;&#x4E0D;&#x5EFA;&#x8BAE;&#x5C06;&#x5173;&#x952E;&#x4FE1;&#x606F;&#x5168;&#x90E8;&#x5B58;&#x5728; localStorage&#xFF0C;&#x4EE5;&#x9632;&#x50A8;&#x5B58;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;&#x6216;&#x7528;&#x6237;&#x6362;&#x8BBE;&#x5907;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
 <h3 id="wxsetstorageobject">wx.setStorage(OBJECT)</h3>
 <p>&#x5C06;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x5728;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x4E2D;&#x6307;&#x5B9A;&#x7684; key &#x4E2D;&#xFF0C;&#x4F1A;&#x8986;&#x76D6;&#x6389;&#x539F;&#x6765;&#x8BE5; key &#x5BF9;&#x5E94;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x63A5;&#x53E3;&#x3002;</p>
 <p><strong>OBJECT&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>

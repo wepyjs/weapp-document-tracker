@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [小程序开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -41,7 +46,7 @@
 *   [组件](../component/)
 *   [API](../api/)
 *   [工具](devtools.html)
-*   [Q&A](../qa.html)
+*   [腾讯云支持](../qcloud/qcloud.html)
 
 </div>
 
@@ -107,41 +112,38 @@
 
 <section class="normal markdown-section">
 
-### 2018.03.21 更新日志
+### 2018.04.12 更新日志
 
-1.  `F` 修复 TLS 版本校验出错的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000ca4793889f8b18c76bf5f256400&highline=tls&token=1251231172&lang=zh_CN)
-2.  `F` 修复 `wx.chooseVideo` 没有回调的问题
-3.  `F` 修复 插件中没有 `WXML` 文件时报错的问题
-4.  `F` 修复 开发者工具更新逻辑异常的问题
+1.  `F` 修复 1.02.1804080 引入的编译条件为分包内页面时无法加载的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1149299852&docid=000202572c8060847796a59cc5b000)
+2.  `F` 修复 1.02.1804080 引入的页面白屏的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1093803632&docid=0006ecb698cbd8a85b9649d895b400&inwindow=1)
+3.  `F` 修复 未使用插件时，出现 `[non-writable]` 的提示的问题
+4.  `F` 修复 `navigationStyle` 为 `'custom'` 时，获取的 `windowHeight` 与真机不一致的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=713615538&docid=000ca2632108607676965713b56000&inwindow=1)
+5.  `F` 修复 `wx.showModal` 没有覆盖 tabbar 的问题
 
-### 2018.03.15 更新日志
+### 2018.04.08 更新日志
 
-1.  `F` 修复 上报更新导致 `wx.uploadFile` 返回值异常的问题
-2.  `F` 修复 申请测试报告时报错的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=456208041&docid=0004e4ef488c883650762672756c00)
-3.  `F` 修复 频繁调用 `wx.downloadFile` 后 `wx.saveFile` 于同一网络图片时，可能出错的问题
-4.  `F` 修复 `wx.setTabBarItem` 不支持图标地址绝对路径的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1212819401&docid=0008ee6f0f0ad8b606765929f59c00&inwindow=1&comment_lvl=2)
-5.  `F` 修复 onShareAppMessage 不能展示临时图片的问题
-6.  `F` 修复 插件中自定义组件样式丢失的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000c4c032807b8c750764d66756800&comment_lvl=13)
-7.  `F` 修复 审查节点时，WXML 面板没有高亮对应节点的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=456208041&docid=000eeac2444e48c65b768d5dc5a400)
-8.  `F` 修复 工具覆盖安装后出现无法监听文件变更的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1566714570&docid=000a26cda68a88a55d767b2ce56c00&inwindow=1)
-
-### 2018.03.13 更新日志
-
-1.  `A` 新增 小程序插件开发支持 [详情](plugin.html)
-2.  `A` 新增 小程序代码片段功能 [详情](minicode.html)
-3.  `A` 新增 通过二维码调试功能，可以调试[获取二维码](../api/qrcode.html)所生成的二维码
-4.  `A` 新增 `Network` 面板显示 `wx.uploadFile`、`wx.downloadFile` 的内容
-5.  `A` 新增 `wx.getImageInfo` 返回图片的方向和类型
-6.  `A` 新增 小程序强制更新 `wx.getUpdateManager` 功能调试
-7.  `F` 修复 界面调试没有显示 padding、margin 的问题
-8.  `F` 修复 `wx.request` 没有校验 `method` 的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0002e41c52cb08098b46bb3af5b400&token=998348858&lang=zh_CN)
-9.  `F` 修复 项目列表页中没有按最近使用时间排序的问题
-10.  `F` 修复 小游戏编译条件场景值为 `1044` 时没有 `shareInfo` 的问题
-11.  `F` 修复 网页调试 `devicePixelRatio` 不正确的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1462950566&docid=0004e245b9cf984a276639ee356000&inwindow=1)
-12.  `F` 修复 tabbar 没有 icon 时文字没有居中对齐的问题[详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1304261213&docid=000a0ac7dec6c84d6f46afa7152800&inwindow=1)
-13.  `F` 修复 腾讯云恢复开发环境后，选择智能上传时，没有全量上传的问题
-14.  `F` 修复 开发者工具可以新建名称为 "." 的文件夹的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=2020845980&docid=00088874174698f68e6696eb151c00&inwindow=1)
-15.  `U` 优化 开发者工具卡顿的问题
+1.  `A` 新增 编辑器文件标签打开策略设置
+2.  `A` 新增 iPhone X 刘海效果
+3.  `A` 新增 `App.onPageNotFound` 的调试支持 [详情](../framework/app-service/app.html)
+4.  `A` 新增 远程调试带插件的小程序支持
+5.  `A` 新增 `project.config.json` 的 `ignore` 字段 [详情](projectconfig.html#packoptions)
+6.  `A` 新增 项目设置中展示插件信息、分包大小
+7.  `A` 新增 自定义预处理命令 [详情](debug.html#自定义预处理)
+8.  `A` 新增 支持分包中使用插件
+9.  `F` 修复 同步 API 导致内存泄漏的问题
+10.  `F` 修复 `<web-view />` 链接带 `#wechat_redirect` 无法加载的问题
+11.  `F` 修复 在 tabbar 页面调用 `wx.redirectTo` 后再调用 `wx.switchTab` 到同一 tabbar，页面出错的问题
+12.  `F` 修复 网络请求 API 没有带上对应模拟器设备的 `userAgent` 的问题
+13.  `F` 修复 项目管理删除无效项目不生效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0008ec35474c704a5e76d3ab156400)
+14.  `F` 修复 只有设置页面时，无法关闭开发者工具的问题
+15.  `F` 修复 当项目目录在 `node_modules` 下时，无法感知文件变更的问题
+16.  `F` 修复 1.02.1803210 版本导致的 `WXML` 面板，某些情况下不显示子节点的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=892177389&docid=000a40b7b5c5d0b01286dc4dd56c00&inwindow=1&comment_lvl=17)
+17.  `F` 修复 远程调试 CanvasContext.measureText 报错的问题
+18.  `F` 修复 `WXML` 面板无法审查自定义组件内节点的问题
+19.  `F` 修复 `WXSS` 文件解析异常导致无法查看节点样式的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000264dc12cd005b637621e775b400&comment_lvl=4)
+20.  `F` 修复 某些情况下新增编译条件无效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=653286445&docid=00082ef4904f20d21686ea3ea5bc00)
+21.  `F` 修复 切换模拟器网络为 offline 后，Socket接口还能正常发送的问题。
+22.  `F` 修复 BackgroundAudioManager 不回调 onCanplay 的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000086896d45d85e6776edfbe54c00)
 
 ## 历史更新日志
 

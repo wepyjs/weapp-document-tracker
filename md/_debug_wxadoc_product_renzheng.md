@@ -8,13 +8,17 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
 
 </div>
 
@@ -103,21 +107,21 @@
 
 入口一：“设置->基本信息->微信认证”点击“详情”进入。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/product/image/a.png)
+![](image/a.png)
 
 入口二：小程序发布流程页（政府、媒体、其他组织类帐号）
 
-![](https://mp.weixin.qq.com/debug/wxadoc/product/image/c.png)
+![](image/c.png)
 
 ## 二、申请微信认证操作流程
 
 1.  签署《微信公众平台认证服务协议》，勾选同意，点击下一步。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/product/image/d.png)
+![](image/d.png)
 
 1.  填写资料：选择认证主体类型，提交相应的认证材料。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/product/image/e.png)
+![](image/e.png)
 
 选择完类型后进入填写认证资料页面，各类型需要提交的资质材料包括但不限于：　
 
@@ -139,7 +143,7 @@
 
     用户可选择开具普通发票（定额发票）、增值税专用发票。其中增值税专用发票还需提交《税务登记证》（办理三证合一的企业直接上传新的营业执照）、《银行开户证明》，审核公司会对资质进行审核。资质审核通过后由腾讯公司开具并寄送发票。
 
-    ![](https://mp.weixin.qq.com/debug/wxadoc/product/image/g.png)
+    ![](image/g.png)
 
     ​
 
@@ -149,7 +153,7 @@
 
     微信支付过程如下：
 
-    ![](https://mp.weixin.qq.com/debug/wxadoc/product/image/h.png)
+    ![](image/h.png)
 
     ​
 

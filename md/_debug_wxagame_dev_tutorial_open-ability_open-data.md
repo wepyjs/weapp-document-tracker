@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [小游戏开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -36,9 +41,10 @@
 
 </div>
 
-*   [教程](../../index.html)
+*   [教程](../../)
 *   [API](../../document/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
+*   [腾讯云支持](../../qcloud/qcloud.html)
 
 </div>
 
@@ -58,8 +64,8 @@
 
 <nav role="navigation">
 
-*   [基础](../../index.html)
-    *   [快速上手](../../index.html)
+*   [基础](../../)
+    *   [快速上手](../../)
     *   [Adapter](../base/adapter.html)
     *   [对引擎的支持](../base/engine.html)
     *   [模块化](../base/module.html)
@@ -74,7 +80,9 @@
 *   [开放能力](authorize.html)
     *   [用户授权](authorize.html)
     *   [用户登录态签名](http-signature.html)
+    *   [米大师支付签名](midas-signature.html)
     *   [关系链数据使用指南](open-data.html)
+    *   [虚拟支付](payment.html)
     *   [获取二维码](qrcode.html)
     *   [转发](share.html)
     *   [用户数据的签名验证和加解密](signature.html)
@@ -375,8 +383,8 @@ sharedCanvas 是主域和开放数据域都可以访问的一个离屏画布。�
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
@@ -385,6 +393,6 @@ sharedCanvas 是主域和开放数据域都可以访问的一个离屏画布。�
 
 </div>
 
-[](http-signature.html)[](qrcode.html)</div>
+[](midas-signature.html)[](payment.html)</div>
 
 </div>

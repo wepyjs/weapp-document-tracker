@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -39,7 +44,6 @@
 *   [微信小程序接入指南](./)
 *   [客服功能使用指南](custom.html)
 *   [扫码打开小程序接入指南](qrcode.html)
-*   [腾讯云支持](qcloud.html)
 *   [插件接入指南](plugin.html)
 
 </div>
@@ -333,7 +337,7 @@
 
 1.  在小程序管理后台添加插件
 
-    小程序开发者可在”小程序管理后台-设置-第三方服务-插件管理“中，根据AppID查找需要的插件，并申请使用。插件开发者在24小时内通过后，小程序开发者可在小程序内使用该插件。
+    小程序开发者可在“小程序管理后台-设置-第三方服务-插件管理”中查找需要的插件，并申请使用。插件开发者在24小时内通过后，小程序开发者可在小程序内使用该插件。
 
     ![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/p_6.png)
 
@@ -380,6 +384,6 @@
 
 </div>
 
-[](qcloud.html#相关开发文档)[](plugin.html#小程序插件功能介绍)</div>
+[](qrcode.html#发布)[](plugin.html#小程序插件功能介绍)</div>
 
 </div>

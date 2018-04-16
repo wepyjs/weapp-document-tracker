@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [小程序开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -41,7 +46,7 @@
 *   [组件](../component/)
 *   [API](../api/)
 *   [工具](devtools.html)
-*   [Q&A](../qa.html)
+*   [腾讯云支持](../qcloud/qcloud.html)
 
 </div>
 
@@ -81,11 +86,12 @@
     *   [文件格式](edit.html#文件格式)
     *   [文件类型](edit.html#文件支持)
     *   [自动补全](edit.html#自动补全)
-    *   [项目配置文件](edit.html#项目配置文件)
     *   [Git 状态展示](edit.html#git-状态展示)
+    *   [项目配置文件](projectconfig.html)
 *   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
     *   [自定义编译](debug.html#自定义编译)
+    *   [自定义预处理](debug.html#自定义预处理)
     *   [前后台切换](debug.html#前后台切换)
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
@@ -142,13 +148,13 @@
 
 2.  `plugin` 文件就是小程序插件项目，用来编写小程序插件的代码。
 
-3.  `project.config.json` 需要关注 `compileType` 字段，`compileType == 'plugin'` 时才能正常的使用插件项目。[详情](edit.html#项目配置文件)
+3.  `project.config.json` 需要关注 `compileType` 字段，`compileType == 'plugin'` 时才能正常的使用插件项目。[详情](projectconfig.html)
 
 ## 打开已存在的插件项目
 
 如果是之前创建的插件项目，可以在项目列表中直接打开；
 
-如果重新创建项目，选择一个非空目录，那么这个非空目录中需要有 `project.config.json` [详情](edit.html#项目配置文件)，确保这个文件中有以下字段：
+如果重新创建项目，选择一个非空目录，那么这个非空目录中需要有 `project.config.json` [详情](projectconfig.html)，确保这个文件中有以下字段：
 
     {
       "miniprogramRoot": "./miniprogram",

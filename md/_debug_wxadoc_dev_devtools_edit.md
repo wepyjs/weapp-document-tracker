@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [小程序开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -41,7 +46,7 @@
 *   [组件](../component/)
 *   [API](../api/)
 *   [工具](devtools.html)
-*   [Q&A](../qa.html)
+*   [腾讯云支持](../qcloud/qcloud.html)
 
 </div>
 
@@ -81,11 +86,12 @@
     *   [文件格式](edit.html#文件格式)
     *   [文件类型](edit.html#文件支持)
     *   [自动补全](edit.html#自动补全)
-    *   [项目配置文件](edit.html#项目配置文件)
     *   [Git 状态展示](edit.html#git-状态展示)
+    *   [项目配置文件](projectconfig.html)
 *   [小程序调试](debug.html)
     *   [模拟器](debug.html#模拟器)
     *   [自定义编译](debug.html#自定义编译)
+    *   [自定义预处理](debug.html#自定义预处理)
     *   [前后台切换](debug.html#前后台切换)
     *   [调试工具](debug.html#调试工具)
         *   [Wxml Panel](debug.html#wxml-panel)
@@ -185,227 +191,6 @@ json 补全
 wxml 补全
 
 ![3](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/edit4.gif)
-
-## 项目配置文件
-
-可以在项目根目录使用 `project.config.json` 文件对项目进行配置。
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>字段名</th>
-
-<th>类型</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>miniprogramRoot</td>
-
-<td>Path String</td>
-
-<td>指定小程序源码的目录(需为相对路径)</td>
-
-</tr>
-
-<tr>
-
-<td>qcloudRoot</td>
-
-<td>Path String</td>
-
-<td>指定腾讯云项目的目录(需为相对路径)</td>
-
-</tr>
-
-<tr>
-
-<td>pluginRoot</td>
-
-<td>Path String</td>
-
-<td>指定插件项目的目录(需为相对路径)</td>
-
-</tr>
-
-<tr>
-
-<td>compileType</td>
-
-<td>String</td>
-
-<td>编译类型</td>
-
-</tr>
-
-<tr>
-
-<td>setting</td>
-
-<td>Object</td>
-
-<td>项目设置</td>
-
-</tr>
-
-<tr>
-
-<td>libVersion</td>
-
-<td>String</td>
-
-<td>基础库版本</td>
-
-</tr>
-
-<tr>
-
-<td>appid</td>
-
-<td>String</td>
-
-<td>项目的 appid，**只在新建项目时读取**</td>
-
-</tr>
-
-<tr>
-
-<td>projectname</td>
-
-<td>String</td>
-
-<td>项目名字，**只在新建项目时读取**</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-compileType 有效值
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>名字</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>miniprogram</td>
-
-<td>当前为普通小程序项目</td>
-
-</tr>
-
-<tr>
-
-<td>plugin</td>
-
-<td>当前为小程序插件项目</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-setting 中可以指定以下设置
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>字段名</th>
-
-<th>类型</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>es6</td>
-
-<td>Boolean</td>
-
-<td>是否启用 es5 转 es6</td>
-
-</tr>
-
-<tr>
-
-<td>postcss</td>
-
-<td>Boolean</td>
-
-<td>上传代码时样式是否自动补全</td>
-
-</tr>
-
-<tr>
-
-<td>minified</td>
-
-<td>Boolean</td>
-
-<td>上传代码时是否自动压缩</td>
-
-</tr>
-
-<tr>
-
-<td>urlCheck</td>
-
-<td>Boolean</td>
-
-<td>是否检查安全域名和 TLS 版本</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**示例：**
-
-    {
-      "miniprogramRoot": "./src",
-      "qcloudRoot": "./svr",
-      "setting": {
-        "postcss": true,
-        "es6": true,
-        "minified": true,
-        "urlCheck": false
-      }
-    }
 
 ## Git 状态展示
 
@@ -547,7 +332,7 @@ setting 中可以指定以下设置
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/git/diff.jpg)
 
-### 文件编辑
+### 文件编辑
 
 存在 Git 仓库时，状态栏会展示此 Git 仓库目前的分支信息。例如，下图表明目前 Git 仓库处于 `v2` 分支。
 
@@ -607,7 +392,7 @@ setting 中可以指定以下设置
 
 ### Windows 风格回车设置
 
-如需忽略 Windows 风格的回车符，可以前往 “设置” - “编辑”，并勾选 “Git 比较文件内容时，忽略 Windows 风格回车符”。
+如需忽略 Windows 风格的回车符，可以前往 “设置” - “编辑”，并勾选 “Git 比较文件内容时，忽略 Windows 风格回车符”。
 
 勾选后，在编辑文件进行内容比较时，所有 Windows 风格的回车符将被当作 Unix 风格的回车符对待。
 
@@ -652,6 +437,6 @@ setting 中可以指定以下设置
 
 </div>
 
-[](shortcut.html)[](debug.html)</div>
+[](shortcut.html)[](projectconfig.html)</div>
 
 </div>

@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [小程序开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -41,7 +46,7 @@
 *   [组件](../../component/)
 *   [API](../../api/)
 *   [工具](../../devtools/devtools.html)
-*   [Q&A](../../qa.html)
+*   [腾讯云支持](../../qcloud/qcloud.html)
 
 </div>
 
@@ -199,6 +204,18 @@
 <td>错误监听函数</td>
 
 <td>当小程序发生脚本错误，或者 api 调用失败时，会触发 onError 并带上错误信息</td>
+
+</tr>
+
+<tr>
+
+<td>onPageNotFound</td>
+
+<td>Function</td>
+
+<td>页面不存在监听函数</td>
+
+<td>当小程序出现要打开的页面不存在的情况，会带上页面信息回调该函数，详见下文</td>
 
 </tr>
 
@@ -421,6 +438,82 @@
 </tbody>
 
 </table>
+
+### onPageNotFound
+
+> 基础库 1.9.90 开始支持，低版本需做[兼容处理](../compatibility.html)
+
+当要打开的页面并不存在时，会回调这个监听器，并带上以下信息：
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>字段</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>path</td>
+
+<td>String</td>
+
+<td>不存在页面的路径</td>
+
+</tr>
+
+<tr>
+
+<td>query</td>
+
+<td>Object</td>
+
+<td>打开不存在页面的 query</td>
+
+</tr>
+
+<tr>
+
+<td>isEntryPage</td>
+
+<td>Boolean</td>
+
+<td>是否本次启动的首个页面（例如从分享等入口进来，首个页面是开发者配置的分享页面）</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+开发者可以在 `onPageNotFound` 回调中进行重定向处理，但必须在回调中**同步**处理，异步处理（例如 setTimeout 异步执行）无效。
+
+**示例代码：**
+
+    App({
+      onPageNotFound(res) {
+        wx.redirectTo({
+          url: 'pages/...'
+        })
+      }
+    })
+
+**注意：**
+
+1.  微信开发者工具暂不支持 `onPageNotFound` 调试，请使用真机调试
+2.  如果开发者没有添加 `onPageNotFound` 监听，当跳转页面不存在时，将推入微信客户端原生的页面不存在提示页面
+3.  如果 `onPageNotFound` 回调中又重定向到另一个不存在的页面，将推入微信客户端原生的页面不存在提示页面，并且不在回调 `onPageNotFound`
 
 ### getApp()
 
