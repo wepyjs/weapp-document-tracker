@@ -19,6 +19,7 @@
 *   [数据](javascript:;)
     *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
     *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -498,6 +499,10 @@
 <span id="16.6">16.6不得模仿系统通知或警告诱导用户点击。</span>
 
 <span id="16.7">16.7小程序的页面在下拉时，帐号字样应清晰可见，不得使用背景色遮挡帐号名称。</span>
+
+<span id="16.8">16.8小程序卡片页的分享样式、内容、结构、外观等，均不得以任何形式与腾讯官方提供的红包等功能的样式图片、文字文案产生相同、相似或引起混淆的效果。</span>
+
+![](image/i.png)
 
 ## 三、小游戏特别规范
 
