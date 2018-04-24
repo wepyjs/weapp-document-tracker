@@ -213,7 +213,7 @@
         *   [Style](../../open-api/user-info/Style.html)
         *   [UserInfo](../../open-api/user-info/UserInfo.html)
         *   [UserInfoButton](../../open-api/user-info/UserInfoButton.html)
-        *   [UserInfoButton.destory](../../open-api/user-info/UserInfoButton.destory.html)
+        *   [UserInfoButton.destroy](../../open-api/user-info/UserInfoButton.destroy.html)
         *   [UserInfoButton.hide](../../open-api/user-info/UserInfoButton.hide.html)
         *   [UserInfoButton.onTap](../../open-api/user-info/UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](../../open-api/user-info/UserInfoButton.offTap.html)
@@ -327,8 +327,8 @@
         *   [InnerAudioContext.onCanplay](../audio/InnerAudioContext.onCanplay.html)
         *   [InnerAudioContext.offError](../audio/InnerAudioContext.offError.html)
         *   [InnerAudioContext.pause](../audio/InnerAudioContext.pause.html)
-        *   [InnerAudioContext.pause](../audio/InnerAudioContext.pause.html)
         *   [InnerAudioContext.play](../audio/InnerAudioContext.play.html)
+        *   [InnerAudioContext.stop](../audio/InnerAudioContext.stop.html)
         *   [InnerAudioContext.seek](../audio/InnerAudioContext.seek.html)
     *   [录音](../recorder/wx.getRecorderManager.html)
         *   [wx.getRecorderManager](../recorder/wx.getRecorderManager.html)
@@ -409,7 +409,7 @@
 
 #### 参数
 
-##### function callback
+##### callback
 
 取消监听事件的回调函数
 

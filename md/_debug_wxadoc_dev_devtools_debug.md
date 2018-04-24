@@ -154,6 +154,16 @@
 
 ![wxml](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/customcompile.png)
 
+### 编译异常信息
+
+在预览或上传的过程中，可能会出现编译异常信息。
+
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/compile-warnings.png)
+
+忽略上传的文件：在项目文件夹下，某些文件可能不是小程序运行所需的，例如 readme 文档、`.gitignore` 文件等。为了优化大小，在预览和上传的过程中，这些文件将不会被打包。
+
+体积过大的文件：如果勾选了 ES6 转 ES5 或代码压缩的选项，为了优化编译速度，对于某些体积很大的 JS 文件，工具会跳过对这些文件的处理。
+
 ## 自定义预处理
 
 ![projectsetting](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/projectsetting.png)

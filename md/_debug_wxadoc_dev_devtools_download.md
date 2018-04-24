@@ -136,9 +136,16 @@
 
 <section class="normal markdown-section">
 
-## 最新版本下载地址 (1.02.1804120)
+## 最新版本下载地址 (1.02.1804241)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
+
+### 2018.04.24 更新日志
+
+1.  `A` 新增 搜索动态页 [详情](https://mp.weixin.qq.com/servicezone/apidocs/html/%E5%BC%80%E5%8F%91%E5%89%8D%E5%BF%85%E8%AF%BB/%E4%BD%93%E9%AA%8Cdemo.html)
+2.  `A` 新增 `wx.getUserInfo` 升级提示
+3.  `F` 修复 小游戏使用自定义编译条件预览时，真机没有 query 的问题
+4.  `F` 修复 `2.0.0` 基础库 `<button open-type="getUserInfo"></button>` 无效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=&docid=000e66816e4e68694da68dc8b56c00)
 
 ### 2018.04.12 更新日志
 
@@ -172,10 +179,6 @@
 20.  `F` 修复 某些情况下新增编译条件无效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=653286445&docid=00082ef4904f20d21686ea3ea5bc00)
 21.  `F` 修复 切换模拟器网络为 offline 后，Socket接口还能正常发送的问题。
 22.  `F` 修复 BackgroundAudioManager 不回调 onCanplay 的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000086896d45d85e6776edfbe54c00)
-
-### 上一版本下载地址 (1.02.1803210)
-
-[windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki&download_version=1021803210) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki&download_version=1021803210) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki&download_version=1021803210)
 
 ## 历史更新日志
 

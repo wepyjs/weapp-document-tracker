@@ -340,7 +340,7 @@ sharedCanvas 是主域和开放数据域都可以访问的一个离屏画布。�
 
 *   [wx.createImage()](../../document/render/image/wx.createImage.html)
 
-开放数据域的 Image 只能使用本地或微信 CDN 的图片，不能使用开发者自己服务器上的图片。
+开放数据域的 Image 只能使用本地或微信 CDN 的图片，不能使用开发者自己服务器上的图片。对于非本地或非微信 CDN 的图片，可以先从主域 [wx.downloadFile()](../../document/network/download/wx.downloadFile.html) 下载图片文件，再通过 <a href="">wx.postMessage()</a> 把文件路径传给开放数据域去使用。
 
 **开放数据**
 

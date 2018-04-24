@@ -213,7 +213,7 @@
         *   [Style](../user-info/Style.html)
         *   [UserInfo](../user-info/UserInfo.html)
         *   [UserInfoButton](../user-info/UserInfoButton.html)
-        *   [UserInfoButton.destory](../user-info/UserInfoButton.destory.html)
+        *   [UserInfoButton.destroy](../user-info/UserInfoButton.destroy.html)
         *   [UserInfoButton.hide](../user-info/UserInfoButton.hide.html)
         *   [UserInfoButton.onTap](../user-info/UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](../user-info/UserInfoButton.offTap.html)
@@ -327,8 +327,8 @@
         *   [InnerAudioContext.onCanplay](../../media/audio/InnerAudioContext.onCanplay.html)
         *   [InnerAudioContext.offError](../../media/audio/InnerAudioContext.offError.html)
         *   [InnerAudioContext.pause](../../media/audio/InnerAudioContext.pause.html)
-        *   [InnerAudioContext.pause](../../media/audio/InnerAudioContext.pause.html)
         *   [InnerAudioContext.play](../../media/audio/InnerAudioContext.play.html)
+        *   [InnerAudioContext.stop](../../media/audio/InnerAudioContext.stop.html)
         *   [InnerAudioContext.seek](../../media/audio/InnerAudioContext.seek.html)
     *   [录音](../../media/recorder/wx.getRecorderManager.html)
         *   [wx.getRecorderManager](../../media/recorder/wx.getRecorderManager.html)
@@ -596,6 +596,126 @@
 <td>Array.<UserInfo></td>
 
 <td>用户信息列表</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**res.data 的结构**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>属性</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+<th>支持版本</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>avatarUrl</td>
+
+<td>string</td>
+
+<td>用户头像图片 url</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>city</td>
+
+<td>string</td>
+
+<td>用户所在城市</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>country</td>
+
+<td>string</td>
+
+<td>用户所在国家</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>gender</td>
+
+<td>number</td>
+
+<td>用户性别</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>language</td>
+
+<td>string</td>
+
+<td>显示 country province city 所用的语言</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>nickName</td>
+
+<td>string</td>
+
+<td>用户昵称</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>openId</td>
+
+<td>string</td>
+
+<td>用户 openId</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>province</td>
+
+<td>string</td>
+
+<td>用户所在省份</td>
 
 </tr>
 

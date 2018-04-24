@@ -213,7 +213,7 @@
         *   [Style](../open-api/user-info/Style.html)
         *   [UserInfo](../open-api/user-info/UserInfo.html)
         *   [UserInfoButton](../open-api/user-info/UserInfoButton.html)
-        *   [UserInfoButton.destory](../open-api/user-info/UserInfoButton.destory.html)
+        *   [UserInfoButton.destroy](../open-api/user-info/UserInfoButton.destroy.html)
         *   [UserInfoButton.hide](../open-api/user-info/UserInfoButton.hide.html)
         *   [UserInfoButton.onTap](../open-api/user-info/UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](../open-api/user-info/UserInfoButton.offTap.html)
@@ -327,8 +327,8 @@
         *   [InnerAudioContext.onCanplay](../media/audio/InnerAudioContext.onCanplay.html)
         *   [InnerAudioContext.offError](../media/audio/InnerAudioContext.offError.html)
         *   [InnerAudioContext.pause](../media/audio/InnerAudioContext.pause.html)
-        *   [InnerAudioContext.pause](../media/audio/InnerAudioContext.pause.html)
         *   [InnerAudioContext.play](../media/audio/InnerAudioContext.play.html)
+        *   [InnerAudioContext.stop](../media/audio/InnerAudioContext.stop.html)
         *   [InnerAudioContext.seek](../media/audio/InnerAudioContext.seek.html)
     *   [录音](../media/recorder/wx.getRecorderManager.html)
         *   [wx.getRecorderManager](../media/recorder/wx.getRecorderManager.html)
@@ -455,7 +455,7 @@
 
 <td>groupMsgInfos</td>
 
-<td>Array.<GroupMsgInfo></td>
+<td>Array.<<a href="">GroupMsgInfo</a>></td>
 
 <td>群消息票据信息列表，长度与 res.shareTickets 相等</td>
 

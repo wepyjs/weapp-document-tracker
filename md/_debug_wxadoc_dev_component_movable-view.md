@@ -376,7 +376,7 @@
 
 <td></td>
 
-<td>完成一次拖动后触发的事件，event.detail = {x: x, y: y, source: source}，其中source表示产生移动的原因，值可为touch（拖动）、touch-out-of-bounds（超出移动范围）、out-of-bounds（超出移动范围后的回弹）、friction（惯性）和空字符串（setData）</td>
+<td>拖动过程中触发的事件，event.detail = {x: x, y: y, source: source}，其中source表示产生移动的原因，值可为touch（拖动）、touch-out-of-bounds（超出移动范围）、out-of-bounds（超出移动范围后的回弹）、friction（惯性）和空字符串（setData）</td>
 
 <td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
 
@@ -390,7 +390,7 @@
 
 <td></td>
 
-<td>完成一次拖动后触发的事件，event.detail = {scale: scale}</td>
+<td>缩放过程中触发的事件，event.detail = {scale: scale}</td>
 
 <td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
 

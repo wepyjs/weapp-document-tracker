@@ -213,7 +213,7 @@
         *   [Style](Style.html)
         *   [UserInfo](UserInfo.html)
         *   [UserInfoButton](UserInfoButton.html)
-        *   [UserInfoButton.destory](UserInfoButton.destory.html)
+        *   [UserInfoButton.destroy](UserInfoButton.destroy.html)
         *   [UserInfoButton.hide](UserInfoButton.hide.html)
         *   [UserInfoButton.onTap](UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](UserInfoButton.offTap.html)
@@ -327,8 +327,8 @@
         *   [InnerAudioContext.onCanplay](../../media/audio/InnerAudioContext.onCanplay.html)
         *   [InnerAudioContext.offError](../../media/audio/InnerAudioContext.offError.html)
         *   [InnerAudioContext.pause](../../media/audio/InnerAudioContext.pause.html)
-        *   [InnerAudioContext.pause](../../media/audio/InnerAudioContext.pause.html)
         *   [InnerAudioContext.play](../../media/audio/InnerAudioContext.play.html)
+        *   [InnerAudioContext.stop](../../media/audio/InnerAudioContext.stop.html)
         *   [InnerAudioContext.seek](../../media/audio/InnerAudioContext.seek.html)
     *   [录音](../../media/recorder/wx.getRecorderManager.html)
         *   [wx.getRecorderManager](../../media/recorder/wx.getRecorderManager.html)
@@ -489,7 +489,7 @@
 
 <td>style</td>
 
-<td>Style</td>
+<td>[Style](Style.html)</td>
 
 <td></td>
 
@@ -543,7 +543,7 @@
 
 #### 返回值
 
-##### UserInfoButton
+##### [UserInfoButton](UserInfoButton.html)
 
 #### 示例代码
 

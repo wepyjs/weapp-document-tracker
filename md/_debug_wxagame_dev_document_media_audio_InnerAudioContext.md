@@ -213,7 +213,7 @@
         *   [Style](../../open-api/user-info/Style.html)
         *   [UserInfo](../../open-api/user-info/UserInfo.html)
         *   [UserInfoButton](../../open-api/user-info/UserInfoButton.html)
-        *   [UserInfoButton.destory](../../open-api/user-info/UserInfoButton.destory.html)
+        *   [UserInfoButton.destroy](../../open-api/user-info/UserInfoButton.destroy.html)
         *   [UserInfoButton.hide](../../open-api/user-info/UserInfoButton.hide.html)
         *   [UserInfoButton.onTap](../../open-api/user-info/UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](../../open-api/user-info/UserInfoButton.offTap.html)
@@ -327,8 +327,8 @@
         *   [InnerAudioContext.onCanplay](InnerAudioContext.onCanplay.html)
         *   [InnerAudioContext.offError](InnerAudioContext.offError.html)
         *   [InnerAudioContext.pause](InnerAudioContext.pause.html)
-        *   [InnerAudioContext.pause](InnerAudioContext.pause.html)
         *   [InnerAudioContext.play](InnerAudioContext.play.html)
+        *   [InnerAudioContext.stop](InnerAudioContext.stop.html)
         *   [InnerAudioContext.seek](InnerAudioContext.seek.html)
     *   [录音](../recorder/wx.getRecorderManager.html)
         *   [wx.getRecorderManager](../recorder/wx.getRecorderManager.html)
@@ -455,7 +455,7 @@ InnerAudioContext 实例，可通过 wx.createInnerAudioContext 接口获取实�
 
 暂停。暂停后的音频再播放会从暂停处开始播放
 
-##### [InnerAudioContext.pause()](InnerAudioContext.pause.html)
+##### [InnerAudioContext.stop()](InnerAudioContext.stop.html)
 
 停止。停止后的音频再播放会从头开始播放。
 

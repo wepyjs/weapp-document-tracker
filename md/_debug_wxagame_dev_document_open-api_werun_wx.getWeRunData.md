@@ -213,7 +213,7 @@
         *   [Style](../user-info/Style.html)
         *   [UserInfo](../user-info/UserInfo.html)
         *   [UserInfoButton](../user-info/UserInfoButton.html)
-        *   [UserInfoButton.destory](../user-info/UserInfoButton.destory.html)
+        *   [UserInfoButton.destroy](../user-info/UserInfoButton.destroy.html)
         *   [UserInfoButton.hide](../user-info/UserInfoButton.hide.html)
         *   [UserInfoButton.onTap](../user-info/UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](../user-info/UserInfoButton.offTap.html)
@@ -327,8 +327,8 @@
         *   [InnerAudioContext.onCanplay](../../media/audio/InnerAudioContext.onCanplay.html)
         *   [InnerAudioContext.offError](../../media/audio/InnerAudioContext.offError.html)
         *   [InnerAudioContext.pause](../../media/audio/InnerAudioContext.pause.html)
-        *   [InnerAudioContext.pause](../../media/audio/InnerAudioContext.pause.html)
         *   [InnerAudioContext.play](../../media/audio/InnerAudioContext.play.html)
+        *   [InnerAudioContext.stop](../../media/audio/InnerAudioContext.stop.html)
         *   [InnerAudioContext.seek](../../media/audio/InnerAudioContext.seek.html)
     *   [录音](../../media/recorder/wx.getRecorderManager.html)
         *   [wx.getRecorderManager](../../media/recorder/wx.getRecorderManager.html)
@@ -411,7 +411,7 @@
 
 #### 参数
 
-##### Object object
+##### object
 
 <table>
 

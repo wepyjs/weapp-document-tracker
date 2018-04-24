@@ -213,7 +213,7 @@
         *   [Style](../user-info/Style.html)
         *   [UserInfo](../user-info/UserInfo.html)
         *   [UserInfoButton](../user-info/UserInfoButton.html)
-        *   [UserInfoButton.destory](../user-info/UserInfoButton.destory.html)
+        *   [UserInfoButton.destroy](../user-info/UserInfoButton.destroy.html)
         *   [UserInfoButton.hide](../user-info/UserInfoButton.hide.html)
         *   [UserInfoButton.onTap](../user-info/UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](../user-info/UserInfoButton.offTap.html)
@@ -327,8 +327,8 @@
         *   [InnerAudioContext.onCanplay](../../media/audio/InnerAudioContext.onCanplay.html)
         *   [InnerAudioContext.offError](../../media/audio/InnerAudioContext.offError.html)
         *   [InnerAudioContext.pause](../../media/audio/InnerAudioContext.pause.html)
-        *   [InnerAudioContext.pause](../../media/audio/InnerAudioContext.pause.html)
         *   [InnerAudioContext.play](../../media/audio/InnerAudioContext.play.html)
+        *   [InnerAudioContext.stop](../../media/audio/InnerAudioContext.stop.html)
         *   [InnerAudioContext.seek](../../media/audio/InnerAudioContext.seek.html)
     *   [录音](../../media/recorder/wx.getRecorderManager.html)
         *   [wx.getRecorderManager](../../media/recorder/wx.getRecorderManager.html)
@@ -404,6 +404,8 @@
 <section class="normal markdown-section">
 
 ### wx.getGroupCloudStorage(Object object)
+
+> 基础库 1.9.92 开始支持，低版本需做兼容处理
 
 在小游戏是通过群分享卡片打开的情况下，可以通过调用该接口获取群同玩成员的游戏数据。该接口只可在开放数据域下使用。
 
@@ -547,7 +549,7 @@
 
 <td>data</td>
 
-<td>Array.<UserGameData></td>
+<td>Array.<[UserGameData](UserGameData.html)></td>
 
 <td>群同玩成员的托管数据</td>
 

@@ -213,7 +213,7 @@
         *   [Style](Style.html)
         *   [UserInfo](UserInfo.html)
         *   [UserInfoButton](UserInfoButton.html)
-        *   [UserInfoButton.destory](UserInfoButton.destory.html)
+        *   [UserInfoButton.destroy](UserInfoButton.destroy.html)
         *   [UserInfoButton.hide](UserInfoButton.hide.html)
         *   [UserInfoButton.onTap](UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](UserInfoButton.offTap.html)
@@ -327,8 +327,8 @@
         *   [InnerAudioContext.onCanplay](../../media/audio/InnerAudioContext.onCanplay.html)
         *   [InnerAudioContext.offError](../../media/audio/InnerAudioContext.offError.html)
         *   [InnerAudioContext.pause](../../media/audio/InnerAudioContext.pause.html)
-        *   [InnerAudioContext.pause](../../media/audio/InnerAudioContext.pause.html)
         *   [InnerAudioContext.play](../../media/audio/InnerAudioContext.play.html)
+        *   [InnerAudioContext.stop](../../media/audio/InnerAudioContext.stop.html)
         *   [InnerAudioContext.seek](../../media/audio/InnerAudioContext.seek.html)
     *   [录音](../../media/recorder/wx.getRecorderManager.html)
         *   [wx.getRecorderManager](../../media/recorder/wx.getRecorderManager.html)
@@ -417,7 +417,7 @@
 
 按钮的背景图片，仅当 type 为 `image` 时有效
 
-##### Style style
+##### [Style](Style.html) style
 
 按钮的样式
 
@@ -431,7 +431,7 @@
 
 隐藏用户信息按钮
 
-##### [UserInfoButton.destory()](UserInfoButton.destory.html)
+##### [UserInfoButton.destroy()](UserInfoButton.destroy.html)
 
 销毁用户信息按钮
 
@@ -482,6 +482,6 @@
 
 </div>
 
-[](UserInfo.html)[](UserInfoButton.destory.html)</div>
+[](UserInfo.html)[](UserInfoButton.destroy.html)</div>
 
 </div>

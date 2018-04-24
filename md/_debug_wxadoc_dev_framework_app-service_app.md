@@ -505,15 +505,14 @@
       onPageNotFound(res) {
         wx.redirectTo({
           url: 'pages/...'
-        })
+        }) // 如果是 tabbar 页面，请使用 wx.switchTab
       }
     })
 
 **注意：**
 
-1.  微信开发者工具暂不支持 `onPageNotFound` 调试，请使用真机调试
-2.  如果开发者没有添加 `onPageNotFound` 监听，当跳转页面不存在时，将推入微信客户端原生的页面不存在提示页面
-3.  如果 `onPageNotFound` 回调中又重定向到另一个不存在的页面，将推入微信客户端原生的页面不存在提示页面，并且不在回调 `onPageNotFound`
+1.  如果开发者没有添加 `onPageNotFound` 监听，当跳转页面不存在时，将推入微信客户端原生的页面不存在提示页面
+2.  如果 `onPageNotFound` 回调中又重定向到另一个不存在的页面，将推入微信客户端原生的页面不存在提示页面，并且不在回调 `onPageNotFound`
 
 ### getApp()
 

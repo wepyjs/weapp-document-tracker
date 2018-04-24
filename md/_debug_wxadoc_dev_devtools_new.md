@@ -112,6 +112,13 @@
 
 <section class="normal markdown-section">
 
+### 2018.04.24 更新日志
+
+1.  `A` 新增 搜索动态页 [详情](https://mp.weixin.qq.com/servicezone/apidocs/html/%E5%BC%80%E5%8F%91%E5%89%8D%E5%BF%85%E8%AF%BB/%E4%BD%93%E9%AA%8Cdemo.html)
+2.  `A` 新增 `wx.getUserInfo` 升级提示
+3.  `F` 修复 小游戏使用自定义编译条件预览时，真机没有 query 的问题
+4.  `F` 修复 `2.0.0` 基础库 `<button open-type="getUserInfo"></button>` 无效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=&docid=000e66816e4e68694da68dc8b56c00)
+
 ### 2018.04.12 更新日志
 
 1.  `F` 修复 1.02.1804080 引入的编译条件为分包内页面时无法加载的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1149299852&docid=000202572c8060847796a59cc5b000)

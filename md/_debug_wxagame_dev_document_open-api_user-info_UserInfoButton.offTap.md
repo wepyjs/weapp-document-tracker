@@ -213,7 +213,7 @@
         *   [Style](Style.html)
         *   [UserInfo](UserInfo.html)
         *   [UserInfoButton](UserInfoButton.html)
-        *   [UserInfoButton.destory](UserInfoButton.destory.html)
+        *   [UserInfoButton.destroy](UserInfoButton.destroy.html)
         *   [UserInfoButton.hide](UserInfoButton.hide.html)
         *   [UserInfoButton.onTap](UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](UserInfoButton.offTap.html)
@@ -327,8 +327,8 @@
         *   [InnerAudioContext.onCanplay](../../media/audio/InnerAudioContext.onCanplay.html)
         *   [InnerAudioContext.offError](../../media/audio/InnerAudioContext.offError.html)
         *   [InnerAudioContext.pause](../../media/audio/InnerAudioContext.pause.html)
-        *   [InnerAudioContext.pause](../../media/audio/InnerAudioContext.pause.html)
         *   [InnerAudioContext.play](../../media/audio/InnerAudioContext.play.html)
+        *   [InnerAudioContext.stop](../../media/audio/InnerAudioContext.stop.html)
         *   [InnerAudioContext.seek](../../media/audio/InnerAudioContext.seek.html)
     *   [录音](../../media/recorder/wx.getRecorderManager.html)
         *   [wx.getRecorderManager](../../media/recorder/wx.getRecorderManager.html)
@@ -409,7 +409,7 @@
 
 #### 参数
 
-##### function callback
+##### callback
 
 取消监听事件的回调函数
 
