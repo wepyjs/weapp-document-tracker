@@ -136,11 +136,11 @@
 
 <section class="normal markdown-section">
 
-## 最新版本下载地址 (1.02.1804241)
+## 最新版本下载地址 (1.02.1804251)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
 
-### 2018.04.24 更新日志
+### 2018.04.25 更新日志
 
 1.  `A` 新增 搜索动态页 [详情](https://mp.weixin.qq.com/servicezone/apidocs/html/%E5%BC%80%E5%8F%91%E5%89%8D%E5%BF%85%E8%AF%BB/%E4%BD%93%E9%AA%8Cdemo.html)
 2.  `A` 新增 `wx.getUserInfo` 升级提示

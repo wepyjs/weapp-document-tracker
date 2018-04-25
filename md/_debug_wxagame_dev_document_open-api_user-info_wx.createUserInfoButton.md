@@ -200,17 +200,18 @@
         *   [UploadTask](../../network/upload/UploadTask.html)
         *   [UploadTask.abort](../../network/upload/UploadTask.abort.html)
         *   [UploadTask.onProgressUpdate](../../network/upload/UploadTask.onProgressUpdate.html)
-*   [开放接口](../login/wx.checkSession.html)
+*   [开放接口](../werun/wx.getWeRunData.html)
+    *   [微信运动](../werun/wx.getWeRunData.html)
+        *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
     *   [登录](../login/wx.checkSession.html)
         *   [wx.checkSession](../login/wx.checkSession.html)
         *   [wx.login](../login/wx.login.html)
         *   [code2accessToken](../login/code2accessToken.html)
-    *   [授权](../authorize/wx.authorize.html)
-        *   [wx.authorize](../authorize/wx.authorize.html)
+    *   [防沉迷](../anti-addiction/wx.checkIsUserAdvisedToRest.html)
+        *   [wx.checkIsUserAdvisedToRest](../anti-addiction/wx.checkIsUserAdvisedToRest.html)
     *   [用户信息](wx.createUserInfoButton.html)
         *   [wx.createUserInfoButton](wx.createUserInfoButton.html)
         *   [wx.getUserInfo](wx.getUserInfo.html)
-        *   [Style](Style.html)
         *   [UserInfo](UserInfo.html)
         *   [UserInfoButton](UserInfoButton.html)
         *   [UserInfoButton.destroy](UserInfoButton.destroy.html)
@@ -222,8 +223,8 @@
         *   [wx.getSetting](../setting/wx.getSetting.html)
         *   [wx.openSetting](../setting/wx.openSetting.html)
         *   [AuthSetting](../setting/AuthSetting.html)
-    *   [微信运动](../werun/wx.getWeRunData.html)
-        *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
+    *   [授权](../authorize/wx.authorize.html)
+        *   [wx.authorize](../authorize/wx.authorize.html)
     *   [开放数据](../data/wx.getFriendCloudStorage.html)
         *   [wx.getFriendCloudStorage](../data/wx.getFriendCloudStorage.html)
         *   [wx.getUserCloudStorage](../data/wx.getUserCloudStorage.html)
@@ -236,6 +237,12 @@
         *   [UserGameData](../data/UserGameData.html)
         *   [removeUserStorage](../data/removeUserStorage.html)
         *   [setUserStorage](../data/setUserStorage.html)
+    *   [游戏圈](../game-club/wx.createGameClubButton.html)
+        *   [wx.createGameClubButton](../game-club/wx.createGameClubButton.html)
+        *   [GameClubButton](../game-club/GameClubButton.html)
+        *   [UserInfoButton.destroy](../game-club/UserInfoButton.destroy.html)
+        *   [GameClubButton.hide](../game-club/GameClubButton.hide.html)
+        *   [GameClubButton.show](../game-club/GameClubButton.show.html)
     *   [开放数据域](../context/wx.getOpenDataContext.html)
         *   [wx.getOpenDataContext](../context/wx.getOpenDataContext.html)
         *   [wx.onMessage](../context/wx.onMessage.html)
@@ -243,6 +250,9 @@
         *   [OpenDataContext.postMessage](../context/OpenDataContext.postMessage.html)
     *   [接口调用凭证](../access-token/getAccessToken.html)
         *   [getAccessToken](../access-token/getAccessToken.html)
+    *   [内容安全](../sec-check/imgSecCheck.html)
+        *   [imgSecCheck](../sec-check/imgSecCheck.html)
+        *   [msgSecCheck](../sec-check/msgSecCheck.html)
 *   [转发](../../share/wx.getShareInfo.html)
     *   [wx.getShareInfo](../../share/wx.getShareInfo.html)
     *   [wx.hideShareMenu](../../share/wx.hideShareMenu.html)
@@ -489,7 +499,7 @@
 
 <td>style</td>
 
-<td>[Style](Style.html)</td>
+<td>Object</td>
 
 <td></td>
 
@@ -534,6 +544,256 @@
 <td>image</td>
 
 <td>只能设置背景贴图的按钮，背景贴图会直接拉伸到按钮的宽高</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**object.style 的结构**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>属性</th>
+
+<th>类型</th>
+
+<th>默认值</th>
+
+<th>是否必填</th>
+
+<th>说明</th>
+
+<th>支持版本</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>left</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>左上角横坐标</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>top</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>左上角纵坐标</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>width</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>宽度</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>height</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>高度</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>backgroundColor</td>
+
+<td>string</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>背景颜色</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>borderColor</td>
+
+<td>string</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>边框颜色</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>borderWidth</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>边框宽度</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>borderRadius</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>边框圆角</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>textAlign</td>
+
+<td>string</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>文本的水平居中方式</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>fontSize</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>字号</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>lineHeight</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>文本的行高</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**object.style.textAlign 的合法值**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>值</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>left</td>
+
+<td>居左</td>
+
+</tr>
+
+<tr>
+
+<td>center</td>
+
+<td>居中</td>
+
+</tr>
+
+<tr>
+
+<td>right</td>
+
+<td>居右</td>
 
 </tr>
 
@@ -606,6 +866,6 @@
 
 </div>
 
-[](../authorize/wx.authorize.html)[](wx.createUserInfoButton.html)</div>
+[](../anti-addiction/wx.checkIsUserAdvisedToRest.html)[](wx.createUserInfoButton.html)</div>
 
 </div>

@@ -200,17 +200,18 @@
         *   [UploadTask](../../network/upload/UploadTask.html)
         *   [UploadTask.abort](../../network/upload/UploadTask.abort.html)
         *   [UploadTask.onProgressUpdate](../../network/upload/UploadTask.onProgressUpdate.html)
-*   [开放接口](../login/wx.checkSession.html)
+*   [开放接口](../werun/wx.getWeRunData.html)
+    *   [微信运动](../werun/wx.getWeRunData.html)
+        *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
     *   [登录](../login/wx.checkSession.html)
         *   [wx.checkSession](../login/wx.checkSession.html)
         *   [wx.login](../login/wx.login.html)
         *   [code2accessToken](../login/code2accessToken.html)
-    *   [授权](../authorize/wx.authorize.html)
-        *   [wx.authorize](../authorize/wx.authorize.html)
+    *   [防沉迷](../anti-addiction/wx.checkIsUserAdvisedToRest.html)
+        *   [wx.checkIsUserAdvisedToRest](../anti-addiction/wx.checkIsUserAdvisedToRest.html)
     *   [用户信息](wx.createUserInfoButton.html)
         *   [wx.createUserInfoButton](wx.createUserInfoButton.html)
         *   [wx.getUserInfo](wx.getUserInfo.html)
-        *   [Style](Style.html)
         *   [UserInfo](UserInfo.html)
         *   [UserInfoButton](UserInfoButton.html)
         *   [UserInfoButton.destroy](UserInfoButton.destroy.html)
@@ -222,8 +223,8 @@
         *   [wx.getSetting](../setting/wx.getSetting.html)
         *   [wx.openSetting](../setting/wx.openSetting.html)
         *   [AuthSetting](../setting/AuthSetting.html)
-    *   [微信运动](../werun/wx.getWeRunData.html)
-        *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
+    *   [授权](../authorize/wx.authorize.html)
+        *   [wx.authorize](../authorize/wx.authorize.html)
     *   [开放数据](../data/wx.getFriendCloudStorage.html)
         *   [wx.getFriendCloudStorage](../data/wx.getFriendCloudStorage.html)
         *   [wx.getUserCloudStorage](../data/wx.getUserCloudStorage.html)
@@ -236,6 +237,12 @@
         *   [UserGameData](../data/UserGameData.html)
         *   [removeUserStorage](../data/removeUserStorage.html)
         *   [setUserStorage](../data/setUserStorage.html)
+    *   [游戏圈](../game-club/wx.createGameClubButton.html)
+        *   [wx.createGameClubButton](../game-club/wx.createGameClubButton.html)
+        *   [GameClubButton](../game-club/GameClubButton.html)
+        *   [UserInfoButton.destroy](../game-club/UserInfoButton.destroy.html)
+        *   [GameClubButton.hide](../game-club/GameClubButton.hide.html)
+        *   [GameClubButton.show](../game-club/GameClubButton.show.html)
     *   [开放数据域](../context/wx.getOpenDataContext.html)
         *   [wx.getOpenDataContext](../context/wx.getOpenDataContext.html)
         *   [wx.onMessage](../context/wx.onMessage.html)
@@ -243,6 +250,9 @@
         *   [OpenDataContext.postMessage](../context/OpenDataContext.postMessage.html)
     *   [接口调用凭证](../access-token/getAccessToken.html)
         *   [getAccessToken](../access-token/getAccessToken.html)
+    *   [内容安全](../sec-check/imgSecCheck.html)
+        *   [imgSecCheck](../sec-check/imgSecCheck.html)
+        *   [msgSecCheck](../sec-check/msgSecCheck.html)
 *   [转发](../../share/wx.getShareInfo.html)
     *   [wx.getShareInfo](../../share/wx.getShareInfo.html)
     *   [wx.hideShareMenu](../../share/wx.hideShareMenu.html)
@@ -441,23 +451,11 @@
 
 <tr>
 
-<td>language</td>
+<td>userInfo</td>
 
-<td>string</td>
+<td>[UserInfo](UserInfo.html)</td>
 
-<td>显示 country province city 所用的语言</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>nickName</td>
-
-<td>string</td>
-
-<td>用户昵称</td>
+<td>用户信息对象，不包含 openid 等敏感信息</td>
 
 <td></td>
 
@@ -465,11 +463,11 @@
 
 <tr>
 
-<td>avatarUrl</td>
+<td>rawData</td>
 
 <td>string</td>
 
-<td>用户头像图片 url。最后一个数值代表正方形头像大小（有0、46、64、96、132数值可选，0代表640*640正方形头像），用户没有头像时该项为空。若用户更换头像，原有头像 url 将失效。</td>
+<td>不包括敏感信息的原始数据字符串，用于计算签名</td>
 
 <td></td>
 
@@ -477,11 +475,11 @@
 
 <tr>
 
-<td>gender</td>
+<td>signature</td>
 
-<td>number</td>
+<td>string</td>
 
-<td>用户性别</td>
+<td>使用 sha1( rawData + sessionkey ) 得到字符串，用于校验用户信息，参考文档[signature](../../../tutorial/open-ability/http-signature.html)</td>
 
 <td></td>
 
@@ -489,11 +487,11 @@
 
 <tr>
 
-<td>country</td>
+<td>encryptedData</td>
 
 <td>string</td>
 
-<td>用户所在国家</td>
+<td>包括敏感数据在内的完整用户信息的加密数据，详细见[加密数据解密算法](../../../tutorial/open-ability/signature.html)</td>
 
 <td></td>
 
@@ -501,131 +499,11 @@
 
 <tr>
 
-<td>province</td>
+<td>iv</td>
 
 <td>string</td>
 
-<td>用户所在省份</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>city</td>
-
-<td>string</td>
-
-<td>用户所在城市</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**avatarUrl 的合法值**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>值</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>0</td>
-
-<td>640x640 的正方形头像</td>
-
-</tr>
-
-<tr>
-
-<td>46</td>
-
-<td>46x46 的正方形头像</td>
-
-</tr>
-
-<tr>
-
-<td>64</td>
-
-<td>64x64 的正方形头像</td>
-
-</tr>
-
-<tr>
-
-<td>96</td>
-
-<td>96x96 的正方形头像</td>
-
-</tr>
-
-<tr>
-
-<td>132</td>
-
-<td>132x132 的正方形头像</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**gender 的合法值**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>值</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>0</td>
-
-<td>未知</td>
-
-</tr>
-
-<tr>
-
-<td>1</td>
-
-<td>男性</td>
-
-</tr>
-
-<tr>
-
-<td>2</td>
-
-<td>女性</td>
+<td>加密算法的初始向量，详细见[加密数据解密算法](../../../tutorial/open-ability/signature.html)</td>
 
 </tr>
 
