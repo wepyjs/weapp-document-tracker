@@ -105,6 +105,7 @@
 *   [开放能力](open-data.html)
     *   [open-data](open-data.html)
     *   [web-view](web-view.html)
+    *   [ad](ad.html)
 
 </nav>
 
@@ -669,6 +670,6 @@ web-view 组件是一个可以用来承载网页的容器，会自动铺满整�
 
 </div>
 
-[](open-data.html)[](../api/)</div>
+[](open-data.html)[](ad.html)</div>
 
 </div>

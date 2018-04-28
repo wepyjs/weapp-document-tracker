@@ -352,7 +352,7 @@
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
         *   [getPhoneNumber](getPhoneNumber.html)
-        *   [UnionID机制说明](uinionID.html)
+        *   [UnionID机制说明](unionID.html)
     *   [微信支付](api-pay.html)
         *   [wx.requestPayment](api-pay.html#wxrequestpaymentobject)
     *   [模板消息](notice.html)
@@ -623,7 +623,7 @@
 
 1.  会话密钥session_key 是对用户数据进行[加密签名](signature.html#用户数据的签名验证和加解密)的密钥。为了应用自身的数据安全，开发者服务器**不应该把会话密钥下发到小程序，也不应该对外提供这个密钥**。
 
-2.  UnionID 只在满足一定条件的情况下返回。具体参看[UnionID机制说明](uinionID.html)
+2.  UnionID 只在满足一定条件的情况下返回。具体参看[UnionID机制说明](unionID.html)
 
 3.  临时登录凭证code只能使用一次
 

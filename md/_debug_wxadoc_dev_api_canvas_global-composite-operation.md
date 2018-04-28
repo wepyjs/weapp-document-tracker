@@ -352,7 +352,7 @@
     *   [用户信息](../open.html)
         *   [wx.getUserInfo](../open.html#wxgetuserinfoobject)
         *   [getPhoneNumber](../getPhoneNumber.html)
-        *   [UnionID机制说明](../uinionID.html)
+        *   [UnionID机制说明](../unionID.html)
     *   [微信支付](../api-pay.html)
         *   [wx.requestPayment](../api-pay.html#wxrequestpaymentobject)
     *   [模板消息](../notice.html)
@@ -529,6 +529,8 @@
 </tbody>
 
 </table>
+
+**Bug**: 目前安卓版本只适用于 fill 填充块的合成，用于 stroke 线段的合成效果都是 source-over
 
 </section>
 

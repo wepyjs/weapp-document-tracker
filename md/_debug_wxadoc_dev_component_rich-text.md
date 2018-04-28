@@ -105,6 +105,7 @@
 *   [开放能力](open-data.html)
     *   [open-data](open-data.html)
     *   [web-view](web-view.html)
+    *   [ad](ad.html)
 
 </nav>
 

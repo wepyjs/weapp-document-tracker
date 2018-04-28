@@ -352,7 +352,7 @@
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
         *   [getPhoneNumber](getPhoneNumber.html)
-        *   [UnionID机制说明](uinionID.html)
+        *   [UnionID机制说明](unionID.html)
     *   [微信支付](api-pay.html)
         *   [wx.requestPayment](api-pay.html#wxrequestpaymentobject)
     *   [模板消息](notice.html)

@@ -352,7 +352,7 @@
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
         *   [getPhoneNumber](getPhoneNumber.html)
-        *   [UnionID机制说明](uinionID.html)
+        *   [UnionID机制说明](unionID.html)
     *   [微信支付](api-pay.html)
         *   [wx.requestPayment](api-pay.html#wxrequestpaymentobject)
     *   [模板消息](notice.html)
@@ -514,6 +514,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -528,6 +530,8 @@
 
 <td>一个数值数组，包含所有阈值。默认为 `[0]` 。</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -537,6 +541,20 @@
 <td>Number</td>
 
 <td>初始的相交比例，如果调用时检测到的相交比例与这个值不相等且达到阈值，则会触发一次监听器的回调函数。默认为 `0` 。</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>selectAll</td>
+
+<td>Boolean</td>
+
+<td>是否同时观测多个参照节点（而非一个），如果设为 `true` ， `observe` 的 `targetSelector` 将选中多个节点（注意：同时选中过多节点将影响渲染性能）</td>
+
+<td>[2.0.0](../framework/compatibility.html "基础库 2.0.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

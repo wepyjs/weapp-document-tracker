@@ -352,7 +352,7 @@
     *   [用户信息](open.html)
         *   [wx.getUserInfo](open.html#wxgetuserinfoobject)
         *   [getPhoneNumber](getPhoneNumber.html)
-        *   [UnionID机制说明](uinionID.html)
+        *   [UnionID机制说明](unionID.html)
     *   [微信支付](api-pay.html)
         *   [wx.requestPayment](api-pay.html#wxrequestpaymentobject)
     *   [模板消息](notice.html)
@@ -625,6 +625,48 @@ WebSocket 任务，可通过 [wx.connectSocket()](network-socket.html) 接口创
 ##### SocketTask.onOpen(CALLBACK)
 
 监听 WebSocket 连接打开事件。
+
+##### callback 回调函数
+
+##### 参数
+
+###### res
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>属性</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+<th>支持版本</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>header</td>
+
+<td>object</td>
+
+<td>连接成功的 HTTP 响应 Header</td>
+
+<td>2.0.0</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 ##### SocketTask.onClose(CALLBACK)
 

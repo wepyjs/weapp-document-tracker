@@ -79,6 +79,7 @@
     *   [多线程 Worker](../usability/worker.html)
 *   [开放能力](authorize.html)
     *   [用户授权](authorize.html)
+    *   [游戏圈使用指南](game-club.html)
     *   [用户登录态签名](http-signature.html)
     *   [米大师支付签名](midas-signature.html)
     *   [关系链数据使用指南](open-data.html)
@@ -86,7 +87,6 @@
     *   [获取二维码](qrcode.html)
     *   [转发](share.html)
     *   [用户数据的签名验证和加解密](signature.html)
-    *   [UnionID 机制说明](union-id.html)
 
 </nav>
 

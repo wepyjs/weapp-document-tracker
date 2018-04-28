@@ -142,14 +142,36 @@
 
 ### 2018.04.12 基础库更新 (2.0.0)
 
+1.  `A` 新增 `require` 支持循环依赖
+2.  `U` 更新 API 'wx.saveImageToPhotosAlbum' 支持保存包内文件
+3.  `F` 修复 API `wx.hideTabBar` 第一次调用失败的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000ea2e6db4e50f0c8763741756000)
+4.  `F` 修复 API `wx.showToast` 在插件中无法设置自定义图片的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000484c9cac770ca5d7660cd255c00)
+5.  `F` 修复 API `wx.closeBluetoothAdapter` 在安卓端没有释放资源的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000668b26bcdb053d9769ac7651400)
+6.  `F` 修复 API `wx.chooseVideo` 在 iOS 上使用前置摄像头拍摄的视频没有声音的问题
+7.  `F` 修复 API `wx.getBackgroundAudioManager` 在 iOS 播放音频文件完毕之后，播放视频四秒后会自动暂停的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000c4a5065c3d8a25166124445a400)
+8.  `F` 修复 API `wx.openDocument` 在安卓上海外用户调用会直接报错的问题
+9.  `F` 修复 API `wx.previewImage` 在安卓第二次会失败的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000862deb50f50463046e502054c00)
+10.  `F` 修复 API `wx.getSystemInfo` 在进行首次 tab 切换时返回的 `screenHeight` 数值错误的问题
+11.  `F` 修复 组件 `<map />` 在开发工具上手动改变经纬度不会触发 regionchange 的问题
+12.  `F` 修复 组件 `<cover-image />` 在图片加载完没有自动调整高度的问题
+13.  `F` 修复 组件 `<textarea />` 在设置 `adjust-position="false"` 时，无法触发 `bindfocus` 事件的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000caccf9bc9707af976b3f8456000)
+14.  `F` 修复 组件 `<video />` 在全屏时隐藏 video 不会自动退出全屏的问题
+15.  `F` 修复 组件 `<canvas />` 在自定义组件的 `ready` 生命周期里调用 `drawImage` 无效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000064ef124e88ba5b764f6eb51800)
+16.  `F` 修复 组件 `<canvas />` 在 iOS 上调用 `setTextAlign` 接口居中后，调用 `wx.canvasToTempFilePath` 接口导出的图片出现错位的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a6efbb6ceb0ed73263c4d151000)
+17.  `F` 修复 组件 `<picker />` 在 iOS 上字体适配的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=421986b2a6e1e9c6da9fc4d4d6ddd11a)
+18.  `F` 修复 在插件中无法使用 Behavior 的问题
+19.  `F` 修复 在 iOS 上配置里设置 `backgroundColorTop` 会使 `backgroundColor` 失效的问题
+20.  `F` 修复 生命周期 `onItemTap` 、`onShow` 的触发时序在 iOS 和安卓没对齐的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&&docid=0008ca834f4108b4bf66a46ef56000)
+21.  `F` 修复 iOS 在自定义标题栏模式下在聚集输入框弹起键盘时导致顶部胶囊上移的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a44e15045507d3d6605a4556400)
+22.  `F` 修复 tabBar 在 iOS、安卓、开发工具上三端展示不对齐的问题
+
 ### 2018.04.12 更新日志
 
-1.  `A` 新增 `require` 支持循环依赖
-2.  `F` 修复 1.02.1804080 引入的编译条件为分包内页面时无法加载的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1149299852&docid=000202572c8060847796a59cc5b000)
-3.  `F` 修复 1.02.1804080 引入的页面白屏的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1093803632&docid=0006ecb698cbd8a85b9649d895b400&inwindow=1)
-4.  `F` 修复 未使用插件时，出现 `[non-writable]` 的提示的问题
-5.  `F` 修复 `navigationStyle` 为 `'custom'` 时，获取的 `windowHeight` 与真机不一致的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=713615538&docid=000ca2632108607676965713b56000&inwindow=1)
-6.  `F` 修复 `wx.showModal` 没有覆盖 tabbar 的问题
+1.  `F` 修复 1.02.1804080 引入的编译条件为分包内页面时无法加载的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1149299852&docid=000202572c8060847796a59cc5b000)
+2.  `F` 修复 1.02.1804080 引入的页面白屏的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1093803632&docid=0006ecb698cbd8a85b9649d895b400&inwindow=1)
+3.  `F` 修复 未使用插件时，出现 `[non-writable]` 的提示的问题
+4.  `F` 修复 `navigationStyle` 为 `'custom'` 时，获取的 `windowHeight` 与真机不一致的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=713615538&docid=000ca2632108607676965713b56000&inwindow=1)
+5.  `F` 修复 `wx.showModal` 没有覆盖 tabbar 的问题
 
 ### 2018.04.08 更新日志
 

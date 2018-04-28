@@ -105,6 +105,7 @@
 *   [开放能力](open-data.html)
     *   [open-data](open-data.html)
     *   [web-view](web-view.html)
+    *   [ad](ad.html)
 
 </nav>
 
@@ -354,7 +355,7 @@
 
 <td>用户点击该按钮时，会返回获取到的用户信息，从返回参数的detail中获取到的值同[wx.getUserInfo](../api/open.html#wxgetuserinfoobject)</td>
 
-<td>open-type="getUserInfo'</td>
+<td>open-type="getUserInfo"</td>
 
 <td>[1.3.0](../framework/compatibility.html "基础库 1.3.0 开始支持，低版本需做兼容处理。")</td>
 
