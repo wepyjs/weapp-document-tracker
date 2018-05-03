@@ -150,7 +150,7 @@
 ### 2018.04.12 基础库更新 (2.0.0)
 
 1.  `A` 新增 `require` 支持循环依赖
-2.  `U` 更新 API 'wx.saveImageToPhotosAlbum' 支持保存包内文件
+2.  `U` 更新 API `wx.saveImageToPhotosAlbum` 支持保存包内文件
 3.  `F` 修复 API `wx.hideTabBar` 第一次调用失败的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000ea2e6db4e50f0c8763741756000)
 4.  `F` 修复 API `wx.showToast` 在插件中无法设置自定义图片的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000484c9cac770ca5d7660cd255c00)
 5.  `F` 修复 API `wx.closeBluetoothAdapter` 在安卓端没有释放资源的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000668b26bcdb053d9769ac7651400)
@@ -204,6 +204,10 @@
 20.  `F` 修复 某些情况下新增编译条件无效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=653286445&docid=00082ef4904f20d21686ea3ea5bc00)
 21.  `F` 修复 切换模拟器网络为 offline 后，Socket接口还能正常发送的问题。
 22.  `F` 修复 BackgroundAudioManager 不回调 onCanplay 的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000086896d45d85e6776edfbe54c00)
+
+### 上一版本下载地址 (1.02.1803210)
+
+[windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki&download_version=1021803210) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki&download_version=1021803210) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki&download_version=1021803210)
 
 ## 历史更新日志
 

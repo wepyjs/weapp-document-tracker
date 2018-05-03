@@ -383,7 +383,7 @@
 
 <td></td>
 
-<td>输入框聚焦时触发，event.detail = { value, height }，height 参数在基础库 1.9.90 起支持</td>
+<td>输入框聚焦时触发，event.detail = { value, height }，height 为键盘高度，在基础库 1.9.90 起支持</td>
 
 <td></td>
 
