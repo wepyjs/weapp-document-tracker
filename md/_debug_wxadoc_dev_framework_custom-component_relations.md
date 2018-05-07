@@ -144,6 +144,8 @@
 
 这个例子中， `custom-ul` 和 `custom-li` 都是自定义组件，它们有相互间的关系，相互间的通信往往比较复杂。此时在组件定义时加入 `relations` 定义段，可以解决这样的问题。示例：
 
+[在开发者工具中预览效果](wechatide://minicode/00qj0nmE6UYt)
+
     // path/to/custom-ul.js
     Component({
       relations: {
@@ -192,6 +194,8 @@
 **注意：必须在两个组件定义中都加入relations定义，否则不会生效。**
 
 ## 关联一类组件
+
+[在开发者工具中预览效果](wechatide://minicode/LFEVaqmh6zYU)
 
 有时，需要关联的是一类组件，如：
 

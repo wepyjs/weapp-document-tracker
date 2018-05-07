@@ -538,6 +538,18 @@
 
 </tr>
 
+<tr>
+
+<td>is_hyaline</td>
+
+<td>Bool</td>
+
+<td>false</td>
+
+<td>是否需要透明底色， is_hyaline 为true时，生成透明底色的小程序码</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -631,6 +643,18 @@
 <td>{"r":"0","g":"0","b":"0"}</td>
 
 <td>auto_color 为 false 时生效，使用 rgb 设置颜色 例如 {"r":"xxx","g":"xxx","b":"xxx"} 十进制表示</td>
+
+</tr>
+
+<tr>
+
+<td>is_hyaline</td>
+
+<td>Bool</td>
+
+<td>false</td>
+
+<td>是否需要透明底色， is_hyaline 为true时，生成透明底色的小程序码</td>
 
 </tr>
 

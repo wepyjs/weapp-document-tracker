@@ -250,6 +250,9 @@
         *   [OpenDataContext.postMessage](../open-api/context/OpenDataContext.postMessage.html)
     *   [接口调用凭证](../open-api/access-token/getAccessToken.html)
         *   [getAccessToken](../open-api/access-token/getAccessToken.html)
+    *   [内容安全](../open-api/sec-check/imgSecCheck.html)
+        *   [imgSecCheck](../open-api/sec-check/imgSecCheck.html)
+        *   [msgSecCheck](../open-api/sec-check/msgSecCheck.html)
 *   [转发](wx.getShareInfo.html)
     *   [wx.getShareInfo](wx.getShareInfo.html)
     *   [wx.hideShareMenu](wx.hideShareMenu.html)
@@ -596,18 +599,6 @@
 <td>Array.<string></td>
 
 <td>每一项是一个 string 类型的 ShareTicket ，对应每个群。如果此次转发是带 shareTicket 的转发则会有回调此参数。可作为 wx.getShareInfo() 的参数来获取群 id。</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>groupMsgInfos</td>
-
-<td>Array.<<a href="">GroupMsgInfo</a>></td>
-
-<td>群消息票据信息列表，长度与 res.shareTickets 相等</td>
 
 </tr>
 

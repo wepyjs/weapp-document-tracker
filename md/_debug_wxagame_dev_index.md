@@ -87,6 +87,7 @@
     *   [获取二维码](tutorial/open-ability/qrcode.html)
     *   [转发](tutorial/open-ability/share.html)
     *   [用户数据的签名验证和加解密](tutorial/open-ability/signature.html)
+    *   [UnionID 机制说明](tutorial/open-ability/union-id.html)
 
 </nav>
 

@@ -341,6 +341,8 @@
 
 **示例代码：**
 
+[在开发者工具中预览效果](wechatide://minicode/YMMjwnm364Yl)
+
     <view>{{text}}</view>
     <view>{{array[0].msg}}</view>
 
@@ -502,6 +504,8 @@
 
 **示例代码**
 
+[在开发者工具中预览效果](wechatide://minicode/UUUiDnms6TYX)
+
     Page({
       onShareAppMessage: function () {
         return {
@@ -516,6 +520,8 @@
 除了初始化数据和生命周期函数，Page 中还可以定义一些特殊的函数：事件处理函数。在渲染层可以在组件中加入[事件绑定](../view/wxml/event.html)，当达到触发事件时，就会执行 Page 中定义的事件处理函数。
 
 **示例代码：**
+
+[在开发者工具中预览效果](wechatide://minicode/rhFjFnmX6lYu)
 
     <view bindtap="viewTap"> click me </view>
 
@@ -602,6 +608,8 @@ object 以 key，value 的形式表示将 this.data 中的 key 对应的值改�
 3.  请不要把 data 中任何一项的 value 设为 `undefined` ，否则这一项将不被设置并可能遗留一些潜在问题。
 
 **示例代码：**
+
+[在开发者工具中预览效果](wechatide://minicode/h3xAxnmB6cY3)
 
     <!--index.wxml-->
     <view>{{text}}</view>

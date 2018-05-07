@@ -200,6 +200,8 @@
 
 **代码示例：**
 
+[在开发者工具中预览效果](wechatide://minicode/aTrhYnmH6oYg)
+
     <view>
       <!-- 以下是对一个自定义组件的引用 -->
       <component-tag-name inner-text="Some text"></component-tag-name>

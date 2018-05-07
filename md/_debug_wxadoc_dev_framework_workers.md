@@ -137,6 +137,8 @@
 
 #### 步骤
 
+[在开发者工具中预览效果](wechatide://minicode/akaQknmy6ZY6)
+
 ##### 1\. 配置 Worker 信息
 
 在 `app.json` 中可配置 `Worker` 代码放置的目录，目录下的代码将被打包成一个文件：

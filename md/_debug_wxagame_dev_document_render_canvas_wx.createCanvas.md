@@ -250,6 +250,9 @@
         *   [OpenDataContext.postMessage](../../open-api/context/OpenDataContext.postMessage.html)
     *   [接口调用凭证](../../open-api/access-token/getAccessToken.html)
         *   [getAccessToken](../../open-api/access-token/getAccessToken.html)
+    *   [内容安全](../../open-api/sec-check/imgSecCheck.html)
+        *   [imgSecCheck](../../open-api/sec-check/imgSecCheck.html)
+        *   [msgSecCheck](../../open-api/sec-check/msgSecCheck.html)
 *   [转发](../../share/wx.getShareInfo.html)
     *   [wx.getShareInfo](../../share/wx.getShareInfo.html)
     *   [wx.hideShareMenu](../../share/wx.hideShareMenu.html)
@@ -482,6 +485,6 @@
 
 </div>
 
-[](../../../tutorial/open-ability/signature.html)[](wx.createCanvas.html)</div>
+[](../../../tutorial/open-ability/union-id.html)[](wx.createCanvas.html)</div>
 
 </div>

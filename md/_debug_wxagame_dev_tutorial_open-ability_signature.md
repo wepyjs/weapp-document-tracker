@@ -87,6 +87,7 @@
     *   [获取二维码](qrcode.html)
     *   [转发](share.html)
     *   [用户数据的签名验证和加解密](signature.html)
+    *   [UnionID 机制说明](union-id.html)
 
 </nav>
 
@@ -266,6 +267,6 @@
 
 </div>
 
-[](share.html)[](../../document/render/canvas/wx.createCanvas.html)</div>
+[](share.html)[](union-id.html)</div>
 
 </div>

@@ -164,6 +164,8 @@
 
 **代码示例：**
 
+[在开发者工具中预览效果](wechatide://minicode/CHlNxnml6yYV)
+
     // my-component.js
     var myBehavior = require('my-behavior')
     Component({
@@ -197,6 +199,8 @@
 自定义组件可以通过引用内置的 `behavior` 来获得内置组件的一些行为。
 
 **代码示例：**
+
+[在开发者工具中预览效果](wechatide://minicode/JgF61qmL69YR)
 
     Component({
       behaviors: ['wx://form-field']

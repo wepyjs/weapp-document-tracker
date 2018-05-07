@@ -95,7 +95,7 @@
 
 ​ 欢迎你使用微信小程序平台！
 
-​ **为使用微信小程序平台服务（以下简称“本服务”或“小程序服务”），你应当阅读并遵守《微信小程序平台服务条款》（以下简称“本条款”），本条款是《微信公众平台服务协议》的补充协议，是其不可分割的一部分。你应当已经阅读、同意过包括但不限于[《Apple Developer Program License Agreement》](https://download.developer.apple.com/Documentation/License_Agreements__Apple_Developer_Program/Apple_Developer_Program_License_Agreement_20180402.pdf)等终端设备系统、应用程序商店、市场等的协议规范。请请你务必审慎阅读、充分理解各条款内容，特别是免除或限制责任的相应条款，以及开通或使用某项服务的单独协议，并选择接受或不接受。限制、免责条款可能以加粗形式提示你注意。**
+​ **为使用微信小程序平台服务（以下简称“本服务”或“小程序服务”），你应当阅读并遵守《微信小程序平台服务条款》（以下简称“本条款”），本条款是《微信公众平台服务协议》的补充协议，是其不可分割的一部分。你应当已经阅读、同意过包括但不限于[《Apple Developer Program 许可协议》](https://download.developer.apple.com/Documentation/License_Agreements__Apple_Developer_Program/Apple_Developer_Program_License_Agreement_20180402.pdf)、[《App Store 审核指南》](https://developer.apple.com/cn/app-store/review/guidelines/) 等终端设备系统、应用程序商店、市场等的协议规范。请请你务必审慎阅读、充分理解各条款内容，特别是免除或限制责任的相应条款，以及开通或使用某项服务的单独协议，并选择接受或不接受。限制、免责条款可能以加粗形式提示你注意。**
 
 ​ **除非你已阅读并接受本条款所有条款，否则你无权使用微信公众平台服务。你对本服务的登录、查看、发布信息等行为即视为你已阅读并同意本条款的约束。**
 

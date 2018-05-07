@@ -172,6 +172,8 @@ WXS 代码可以编写在 wxml 文件中的 `<wxs>` 标签内，或以 `.wxs` �
 
 **示例代码：**
 
+[在开发者工具中预览效果](wechatide://minicode/Ts3L3nmi63YO)
+
     // /pages/tools.wxs
 
     var foo = "'hello world' from tools.wxs";
@@ -206,6 +208,8 @@ WXS 代码可以编写在 wxml 文件中的 `<wxs>` 标签内，或以 `.wxs` �
 *   如果一个 `wxs` 模块在定义之后，一直没有被引用，则该模块不会被解析与运行。
 
 **示例代码：**
+
+[在开发者工具中预览效果](wechatide://minicode/H88vDnm668Y0)
 
     // /pages/tools.wxs
 
@@ -298,6 +302,8 @@ module 属性值的命名必须符合下面两个规则：
 
 **示例代码：**
 
+[在开发者工具中预览效果](wechatide://minicode/jPeZCnmD6eYr)
+
     <!--wxml-->
 
     <wxs module="foo">
@@ -325,6 +331,8 @@ src 属性可以用来引用其他的 `wxs` 文件模块。
 *   如果一个 `wxs` 模块在定义之后，一直没有被引用，则该模块不会被解析与运行。
 
 **示例代码：**
+
+[在开发者工具中预览效果](wechatide://minicode/kkm6JnmW6mYv)
 
     // /pages/index/index.js
 

@@ -154,6 +154,8 @@
 
 **代码示例：**
 
+[在开发者工具中预览效果](wechatide://minicode/fDgtWnmb6vYs)
+
     <!-- 在自定义组件中 -->
     <button bindtap="onTap">点击这个按钮将触发“myevent”事件</button>
 
@@ -241,6 +243,8 @@
 关于冒泡和捕获阶段的概念，请阅读 [事件](../view/wxml/event.html) 章节中的相关说明。
 
 **代码示例：**
+
+[在开发者工具中预览效果](wechatide://minicode/W2hvznmw65Yj)
 
     // 页面 page.wxml
     <another-component bindcustomevent="pageEventListener1">

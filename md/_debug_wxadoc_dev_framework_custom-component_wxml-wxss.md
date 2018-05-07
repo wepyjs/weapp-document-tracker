@@ -143,6 +143,8 @@
 
 **代码示例：**
 
+[在开发者工具中预览效果](wechatide://minicode/1udXLnmi6KY2)
+
     <!-- 组件模板 -->
     <view class="wrapper">
       <view>这里是组件的内部节点</view>
@@ -213,6 +215,8 @@
 
 **代码示例：**
 
+[在开发者工具中预览效果](wechatide://minicode/pLeYvnmW62Yd)
+
     /* 组件 custom-component.wxss */
     :host {
       color: yellow;
@@ -238,6 +242,8 @@
 这样，组件的使用者可以指定这个样式类对应的 class ，就像使用普通属性一样。
 
 **代码示例：**
+
+[在开发者工具中预览效果](wechatide://minicode/65emRnmA6pYk)
 
     <!-- 页面的 WXML -->
     <custom-component my-class="red-text" />

@@ -250,6 +250,9 @@
         *   [OpenDataContext.postMessage](../open-api/context/OpenDataContext.postMessage.html)
     *   [接口调用凭证](../open-api/access-token/getAccessToken.html)
         *   [getAccessToken](../open-api/access-token/getAccessToken.html)
+    *   [内容安全](../open-api/sec-check/imgSecCheck.html)
+        *   [imgSecCheck](../open-api/sec-check/imgSecCheck.html)
+        *   [msgSecCheck](../open-api/sec-check/msgSecCheck.html)
 *   [转发](wx.getShareInfo.html)
     *   [wx.getShareInfo](wx.getShareInfo.html)
     *   [wx.hideShareMenu](wx.hideShareMenu.html)
@@ -644,6 +647,6 @@ encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](
 
 </div>
 
-[](../open-api/access-token/getAccessToken.html)[](wx.getShareInfo.html)</div>
+[](../open-api/sec-check/msgSecCheck.html)[](wx.getShareInfo.html)</div>
 
 </div>
