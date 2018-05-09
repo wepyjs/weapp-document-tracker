@@ -409,6 +409,9 @@
         *   [删除地点](nearby.html#删除地点)
         *   [展示/取消展示附近小程序](nearby.html#展示取消展示附近小程序)
     *   [插件管理](plugin.html)
+    *   [内容安全](imgSecCheck.html)
+        *   [imgSecCheck](imgSecCheck.html)
+        *   [msgSecCheck](msgSecCheck.html)
 *   [数据](analysis.html)
     *   [常规分析](analysis.html)
         *   [概况](analysis.html#概况)
@@ -1224,6 +1227,6 @@ POST数据示例：
 
 </div>
 
-[](nearby.html#展示取消展示附近小程序)[](analysis.html)</div>
+[](nearby.html#展示取消展示附近小程序)[](imgSecCheck.html)</div>
 
 </div>

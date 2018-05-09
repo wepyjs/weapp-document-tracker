@@ -409,6 +409,9 @@
         *   [删除地点](../nearby.html#删除地点)
         *   [展示/取消展示附近小程序](../nearby.html#展示取消展示附近小程序)
     *   [插件管理](../plugin.html)
+    *   [内容安全](../imgSecCheck.html)
+        *   [imgSecCheck](../imgSecCheck.html)
+        *   [msgSecCheck](../msgSecCheck.html)
 *   [数据](../analysis.html)
     *   [常规分析](../analysis.html)
         *   [概况](../analysis.html#概况)
@@ -538,7 +541,7 @@
 
 <td>否</td>
 
-<td>输出图片宽度（默认为width）</td>
+<td>输出图片宽度（默认为 width * 屏幕像素密度）</td>
 
 <td>[1.2.0](../../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -552,7 +555,7 @@
 
 <td>否</td>
 
-<td>输出图片高度（默认为height）</td>
+<td>输出图片高度（默认为 height * 屏幕像素密度）</td>
 
 <td>[1.2.0](../../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
 
