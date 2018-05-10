@@ -493,7 +493,7 @@
 
 <tr>
 
-<td>scope.userInfo</td>
+<td>scope.userInfo【废弃】</td>
 
 <td>wx.getUserInfo</td>
 
