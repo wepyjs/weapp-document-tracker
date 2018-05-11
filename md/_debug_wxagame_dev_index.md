@@ -79,12 +79,12 @@
     *   [多线程 Worker](tutorial/usability/worker.html)
 *   [开放能力](tutorial/open-ability/authorize.html)
     *   [用户授权](tutorial/open-ability/authorize.html)
-    *   [游戏圈使用指南](tutorial/open-ability/game-club.html)
     *   [用户登录态签名](tutorial/open-ability/http-signature.html)
     *   [米大师支付签名](tutorial/open-ability/midas-signature.html)
     *   [关系链数据使用指南](tutorial/open-ability/open-data.html)
     *   [虚拟支付](tutorial/open-ability/payment.html)
     *   [获取二维码](tutorial/open-ability/qrcode.html)
+    *   [排行榜配置指引](tutorial/open-ability/ranklist.html)
     *   [转发](tutorial/open-ability/share.html)
     *   [用户数据的签名验证和加解密](tutorial/open-ability/signature.html)
     *   [UnionID 机制说明](tutorial/open-ability/union-id.html)
@@ -454,6 +454,61 @@ GameGlobal 是一个全局对象，本身也是一个存在循环引用的对象
 console.log 无法在真机上将存在循环引用的对象输出到 vConsole 中。因此真机调试时请注释 console.log(GameGlobal) 这样的代码，否则将会产生这样的错误
 
     An object width circular reference can't be logged
+
+### 文件类型限制
+
+小游戏限制了可以上传的文件类型。只有在以下列表中的文件可以上传成功：
+
+1.  png
+2.  jpg
+3.  jpeg
+4.  gif
+5.  svg
+6.  js
+7.  json
+8.  cer
+9.  obj
+10.  dae
+11.  fbx
+12.  mtl
+13.  stl
+14.  3ds
+15.  mp3
+16.  pvr
+17.  wav
+18.  plist
+19.  ttf
+20.  fnt
+21.  gz
+22.  ccz
+23.  m4a
+24.  mp4
+25.  bmp
+26.  atlas
+27.  swf
+28.  ani
+29.  part
+30.  proto
+31.  bin
+32.  sk
+33.  mipmaps
+34.  txt
+35.  zip
+36.  tt
+37.  map
+38.  ogg
+39.  silk
+40.  dbbin
+41.  dbmv
+42.  etc
+43.  lmat
+44.  lm
+45.  ls
+46.  lh
+47.  lani
+48.  lav
+49.  lsani
+50.  ltc
 
 </section>
 

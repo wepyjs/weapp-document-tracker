@@ -200,9 +200,19 @@
         *   [UploadTask](../../network/upload/UploadTask.html)
         *   [UploadTask.abort](../../network/upload/UploadTask.abort.html)
         *   [UploadTask.onProgressUpdate](../../network/upload/UploadTask.onProgressUpdate.html)
-*   [开放接口](../werun/wx.getWeRunData.html)
-    *   [微信运动](../werun/wx.getWeRunData.html)
-        *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
+*   [开放接口](../data/wx.getFriendCloudStorage.html)
+    *   [开放数据](../data/wx.getFriendCloudStorage.html)
+        *   [wx.getFriendCloudStorage](../data/wx.getFriendCloudStorage.html)
+        *   [wx.getUserCloudStorage](../data/wx.getUserCloudStorage.html)
+        *   [wx.getUserInfo](../data/wx.getUserInfo.html)
+        *   [wx.getGroupCloudStorage](../data/wx.getGroupCloudStorage.html)
+        *   [wx.getSharedCanvas](../data/wx.getSharedCanvas.html)
+        *   [wx.removeUserCloudStorage](../data/wx.removeUserCloudStorage.html)
+        *   [wx.setUserCloudStorage](../data/wx.setUserCloudStorage.html)
+        *   [KVData](../data/KVData.html)
+        *   [UserGameData](../data/UserGameData.html)
+        *   [removeUserStorage](../data/removeUserStorage.html)
+        *   [setUserStorage](../data/setUserStorage.html)
     *   [登录](../login/wx.checkSession.html)
         *   [wx.checkSession](../login/wx.checkSession.html)
         *   [wx.login](../login/wx.login.html)
@@ -223,26 +233,18 @@
         *   [wx.getSetting](../setting/wx.getSetting.html)
         *   [wx.openSetting](../setting/wx.openSetting.html)
         *   [AuthSetting](../setting/AuthSetting.html)
+    *   [微信运动](../werun/wx.getWeRunData.html)
+        *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
     *   [授权](../authorize/wx.authorize.html)
         *   [wx.authorize](../authorize/wx.authorize.html)
-    *   [开放数据](../data/wx.getFriendCloudStorage.html)
-        *   [wx.getFriendCloudStorage](../data/wx.getFriendCloudStorage.html)
-        *   [wx.getUserCloudStorage](../data/wx.getUserCloudStorage.html)
-        *   [wx.getUserInfo](../data/wx.getUserInfo.html)
-        *   [wx.getGroupCloudStorage](../data/wx.getGroupCloudStorage.html)
-        *   [wx.getSharedCanvas](../data/wx.getSharedCanvas.html)
-        *   [wx.removeUserCloudStorage](../data/wx.removeUserCloudStorage.html)
-        *   [wx.setUserCloudStorage](../data/wx.setUserCloudStorage.html)
-        *   [KVData](../data/KVData.html)
-        *   [UserGameData](../data/UserGameData.html)
-        *   [removeUserStorage](../data/removeUserStorage.html)
-        *   [setUserStorage](../data/setUserStorage.html)
     *   [游戏圈](wx.createGameClubButton.html)
         *   [wx.createGameClubButton](wx.createGameClubButton.html)
         *   [GameClubButton](GameClubButton.html)
         *   [UserInfoButton.destroy](UserInfoButton.destroy.html)
         *   [GameClubButton.hide](GameClubButton.hide.html)
         *   [GameClubButton.show](GameClubButton.show.html)
+    *   [客服消息](../customer-message/openCustomerServiceConversation.html)
+        *   [openCustomerServiceConversation](../customer-message/openCustomerServiceConversation.html)
     *   [开放数据域](../context/wx.getOpenDataContext.html)
         *   [wx.getOpenDataContext](../context/wx.getOpenDataContext.html)
         *   [wx.onMessage](../context/wx.onMessage.html)
@@ -440,7 +442,7 @@
 
 > 基础库 2.0.3 开始支持，低版本需做兼容处理
 
-创建游戏圈按钮。游戏圈按钮被点击后会跳转到小游戏的游戏圈。更多关于游戏圈的信息见 [游戏圈使用指南](../../../tutorial/open-ability/game-club.html)
+创建游戏圈按钮。游戏圈按钮被点击后会跳转到小游戏的游戏圈。更多关于游戏圈的信息见 <a href="">游戏圈使用指南</a>
 
 #### 参数
 
@@ -708,6 +710,6 @@
 
 </div>
 
-[](../data/setUserStorage.html)[](wx.createGameClubButton.html)</div>
+[](../authorize/wx.authorize.html)[](wx.createGameClubButton.html)</div>
 
 </div>
