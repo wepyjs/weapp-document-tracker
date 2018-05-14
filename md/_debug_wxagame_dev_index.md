@@ -79,6 +79,7 @@
     *   [多线程 Worker](tutorial/usability/worker.html)
 *   [开放能力](tutorial/open-ability/authorize.html)
     *   [用户授权](tutorial/open-ability/authorize.html)
+    *   [游戏圈使用指南](tutorial/open-ability/game-club.html)
     *   [用户登录态签名](tutorial/open-ability/http-signature.html)
     *   [米大师支付签名](tutorial/open-ability/midas-signature.html)
     *   [关系链数据使用指南](tutorial/open-ability/open-data.html)

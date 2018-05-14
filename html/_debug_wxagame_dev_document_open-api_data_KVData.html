@@ -5153,6 +5153,46 @@
 <p>&#x6570;&#x636E;&#x7684; key</p>
 <h5 id="string-value">string value</h5>
 <p>&#x6570;&#x636E;&#x7684; value</p>
+<h4 id="&#x5C06;&#x6392;&#x884C;&#x699C;&#x663E;&#x793A;&#x5728;&#x5C0F;&#x6E38;&#x620F;&#x4E2D;&#x5FC3;">&#x5C06;&#x6392;&#x884C;&#x699C;&#x663E;&#x793A;&#x5728;&#x5C0F;&#x6E38;&#x620F;&#x4E2D;&#x5FC3;</h4>
+<p> &#x82E5;&#x5F00;&#x53D1;&#x8005;&#x5E0C;&#x671B;&#x628A;&#x6E38;&#x620F;&#x7684;&#x6392;&#x884C;&#x699C;&#x663E;&#x793A;&#x4E8E;&#x5C0F;&#x6E38;&#x620F;&#x4E2D;&#x5FC3;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x628A;&#x6392;&#x884C;&#x699C;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x5230;&#x5BF9;&#x5E94;&#x7684;key/value&#x4E2D;&#xFF0C;&#x4E00;&#x4E2A;&#x6392;&#x884C;&#x699C;&#x6570;&#x636E;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;key&#xFF0C;&#x591A;&#x4E2A;&#x6392;&#x884C;&#x699C;&#x5219;&#x591A;&#x4E2A;key&#x3002;&#x540C;&#x65F6;&#x5728;mp.weixin.qq.com&#x7684;&#x5C0F;&#x6E38;&#x620F;&#x7BA1;&#x7406;&#x540E;&#x53F0;&#x201C;&#x8BBE;&#x7F6E;-&#x6E38;&#x620F;-&#x6392;&#x884C;&#x699C;&#x8BBE;&#x7F6E;&#x201D;&#x4E0B;&#x914D;&#x7F6E;&#x5BF9;&#x5E94;&#x7684;key&#x4EE5;&#x53CA;&#x76F8;&#x5173;&#x6392;&#x884C;&#x699C;&#x5C5E;&#x6027;&#x3002;&#x4E14;value&#x7684;&#x5185;&#x5BB9;&#x5FC5;&#x987B;&#x662F;JSON Object&#x683C;&#x5F0F;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8BE5;JSON Object&#x9876;&#x5C42;&#x5FC5;&#x987B;&#x5305;&#x542B; <code>wxgame</code> &#x5B57;&#x6BB5;&#xFF0C;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x586B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>score</td>
+<td>Int32</td>
+<td>&#x662F;</td>
+<td>&#x8BE5;&#x699C;&#x5355;&#x5BF9;&#x5E94;&#x5206;&#x6570;&#x503C;</td>
+</tr>
+<tr>
+<td>update_time</td>
+<td>Int64</td>
+<td>&#x662F;</td>
+<td>&#x8BE5;&#x5206;&#x6570;&#x6700;&#x540E;&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#xFF0C;Unix&#x65F6;&#x95F4;&#x6233;</td>
+</tr>
+</tbody>
+</table>
+<p> &#x6CE8;&#x610F;&#xFF1A; <code>wxgame</code>&#x4E0B;&#x5F00;&#x53D1;&#x8005;&#x4E0D;&#x53EF;&#x81EA;&#x5B9A;&#x4E49;&#x5176;&#x4ED6;&#x5B57;&#x6BB5;&#xFF0C; <code>wxgame</code>&#x540C;&#x7EA7;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x81EA;&#x7531;&#x5B9A;&#x4E49;&#xFF0C;&#x6BD4;&#x5982;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;<code>detail</code> &#x5B57;&#x6BB5;&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x53D6;&#x5F97;&#x8BE5;&#x5206;&#x6570;&#x7684;&#x4E2D;&#x95F4;&#x72B6;&#x6001;&#x3002;</p>
+<h3 id="&#x4E3E;&#x4F8B;">&#x4E3E;&#x4F8B;</h3>
+<p> &#x6BD4;&#x5982;&#x67D0;&#x5C0F;&#x6E38;&#x620F;&#x6709;&#x4E00;&#x4E2A;&#x5206;&#x6570;&#x6392;&#x884C;&#x699C;&#xFF0C;&#x5206;&#x6570;&#x6392;&#x884C;&#x699C;&#x9700;&#x8981;&#x8BB0;&#x5F55;&#x5206;&#x6570;&#x4EE5;&#x53CA;&#x83B7;&#x5F97;&#x5206;&#x6570;&#x7684;&#x8017;&#x65F6;&#xFF08;&#x6E38;&#x620F;&#x5185;&#x7684;&#x6392;&#x884C;&#x699C;&#x9700;&#x8981;&#x5C55;&#x793A;&#x8017;&#x65F6;&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;<code>wxgame</code>&#x540C;&#x7EA7;&#x522B;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;<code>cost_ms</code>&#x5B57;&#x6BB5;&#xFF0C;&#x5B58;&#x50A8;&#x8017;&#x65F6;&#x7684;&#x6BEB;&#x79D2;&#x6570;&#x3002;
+ &#x5206;&#x914D;&#x4E00;&#x4E2A;&#x4E0D;&#x548C;&#x5DF2;&#x5B9A;&#x4E49;&#x7684;&#x6258;&#x7BA1;&#x6570;&#x636E;&#x7684;key&#x76F8;&#x51B2;&#x7A81;&#x7684;key&#x4F5C;&#x4E3A;&#x5206;&#x6570;&#x6392;&#x884C;&#x699C;&#x7684;key&#xFF0C;&#x5982; &quot;rank_score&quot;&#x3002;</p>
+<p> &#x5728;&#x73A9;&#x5BB6;&#x8017;&#x65F6;36500ms&#x540E;&#xFF0C;&#x83B7;&#x5F97;&#x672C;&#x5468;&#x6700;&#x9AD8;&#x5206;16&#x5206;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x66F4;&#x65B0;&#x5206;&#x6570;&#xFF0C;&#x5047;&#x8BBE;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#x6233;&#x4E3A;1513080573&#xFF0C; &#x5219;&#x5B8C;&#x6574; value&#x5728;&#x5E8F;&#x5217;&#x5316;&#x4E4B;&#x524D;&#x7684;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-json"> {
+   <span class="hljs-string">&quot;wxgame&quot;</span>: {
+         <span class="hljs-string">&quot;score&quot;</span>:<span class="hljs-number">16</span>,
+         <span class="hljs-string">&quot;update_time&quot;</span>: <span class="hljs-number">1513080573</span>
+   },
+   <span class="hljs-string">&quot;cost_ms&quot;</span>:<span class="hljs-number">36500</span>
+ }
+</code></pre>
+<p> &#x6700;&#x7EC8;&#x5E8F;&#x5217;&#x5316;&#x4E3A;string&#x540E;&#xFF0C;value&#x4E3A;&quot;{\&quot;wxgame\&quot;:{\&quot;score\&quot;:16,\&quot;update_time\&quot;: 1513080573},\&quot;cost_ms\&quot;:36500}&quot;&#x3002;</p>
 
                                 
                                 </section>
