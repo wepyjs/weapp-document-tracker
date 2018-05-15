@@ -267,22 +267,6 @@
 
 <tr>
 
-<td>app-parameter</td>
-
-<td>String</td>
-
-<td></td>
-
-<td>打开 APP 时，向 APP 传递的参数</td>
-
-<td>open-type="launchApp"</td>
-
-<td>[1.9.5](../framework/compatibility.html "基础库 1.9.5 开始支持，低版本需做兼容处理。")</td>
-
-</tr>
-
-<tr>
-
 <td>hover-class</td>
 
 <td>String</td>
@@ -347,13 +331,13 @@
 
 <tr>
 
-<td>bindgetuserinfo</td>
+<td>lang</td>
 
-<td>Handler</td>
+<td>String</td>
 
-<td></td>
+<td>en</td>
 
-<td>用户点击该按钮时，会返回获取到的用户信息，从返回参数的detail中获取到的值同[wx.getUserInfo](../api/open.html#wxgetuserinfoobject)</td>
+<td>指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。</td>
 
 <td>open-type="getUserInfo"</td>
 
@@ -363,13 +347,13 @@
 
 <tr>
 
-<td>lang</td>
+<td>bindgetuserinfo</td>
 
-<td>String</td>
+<td>Handler</td>
 
-<td>en</td>
+<td></td>
 
-<td>指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。</td>
+<td>用户点击该按钮时，会返回获取到的用户信息，回调的detail数据与[wx.getUserInfo](../api/open.html#wxgetuserinfoobject)返回的一致</td>
 
 <td>open-type="getUserInfo"</td>
 
@@ -491,6 +475,22 @@
 
 <tr>
 
+<td>app-parameter</td>
+
+<td>String</td>
+
+<td></td>
+
+<td>打开 APP 时，向 APP 传递的参数</td>
+
+<td>open-type="launchApp"</td>
+
+<td>[1.9.5](../framework/compatibility.html "基础库 1.9.5 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>binderror</td>
 
 <td>Handler</td>
@@ -511,7 +511,7 @@
 
 *   **注1：`button-hover` 默认为`{background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}`**
 *   **注2：`bindgetphonenumber` 从1.2.0 开始支持，但是在1.5.3以下版本中无法使用`wx.canIUse`进行检测，建议使用基础库版本进行判断。**
-*   **注3: 在`bindgetphonenumber` 等返回加密信息的回调中调用 `wx.login` 登录，可能会刷新登录态。此时服务器使用 code 换取的 sessionKey 不是加密时使用的 sessionKey，导致解密失败。建议开发者提前进行 `login`；或者在回调中先使用 `checkSession` 进行登录态检查，避免 `login` 刷新登录态。**
+*   **注3：在`bindgetphonenumber` 等返回加密信息的回调中调用 `wx.login` 登录，可能会刷新登录态。此时服务器使用 code 换取的 sessionKey 不是加密时使用的 sessionKey，导致解密失败。建议开发者提前进行 `login`；或者在回调中先使用 `checkSession` 进行登录态检查，避免 `login` 刷新登录态。**
 
 **size 有效值：**
 
@@ -707,7 +707,7 @@
 
 **示例代码：**
 
-[在开发者工具中预览效果](wechatide://minicode/DJaYicms6lY5)
+[在开发者工具中预览效果](wechatide://minicode/ZHrWZqm66cZy)
 
     /** wxss **/
     /** 修改button默认的点击态样式类**/
@@ -729,6 +729,7 @@
     <button bindtap="setPlain">点击设置以上按钮plain属性</button>
     <button bindtap="setLoading">点击设置以上按钮loading属性</button>
     <button open-type="contact">进入客服会话</button>
+    <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
 
     var types = ['default', 'primary', 'warn']
     var pageObject = {
@@ -754,7 +755,12 @@
         this.setData({
           loading: !this.data.loading
         })
-      }
+      },
+      onGotUserInfo: function(e) {
+        console.log(e.detail.errMsg)
+        console.log(e.detail.userInfo)
+        console.log(e.detail.rawData)
+      },
     }
 
     for (var i = 0; i < types.length; ++i) {

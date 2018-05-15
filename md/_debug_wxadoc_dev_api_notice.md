@@ -428,6 +428,8 @@
     *   [wx.getUpdateManager](getUpdateManager.html)
 *   [多线程](createWorker.html)
     *   [wx.createWorker](createWorker.html)
+*   [监控](monitor-report.html)
+    *   [监控数据上报](monitor-report.html)
 *   [调试接口](setEnableDebug.html)
     *   [打开/关闭调试](setEnableDebug.html)
 
@@ -815,8 +817,8 @@
 ##### 示例：
 
     {
-    "id":"AT0002", 
-    "keyword_id_list":[3,4,5] 
+    "id":"AT0002",
+    "keyword_id_list":[3,4,5]
     }
 
 **返回码说明：**
@@ -1292,7 +1294,7 @@ access_token 是全局唯一接口调用凭据，开发者调用各接口时都�
 
 <td>否</td>
 
-<td>模板内容字体的颜色，不填默认黑色</td>
+<td>模板内容字体的颜色，不填默认黑色 【废弃】</td>
 
 </tr>
 
@@ -1313,29 +1315,25 @@ access_token 是全局唯一接口调用凭据，开发者调用各接口时都�
 ##### 示例：
 
     {
-      "touser": "OPENID",  
-      "template_id": "TEMPLATE_ID", 
-      "page": "index",          
-      "form_id": "FORMID",         
+      "touser": "OPENID",
+      "template_id": "TEMPLATE_ID",
+      "page": "index",
+      "form_id": "FORMID",
       "data": {
           "keyword1": {
-              "value": "339208499", 
-              "color": "#173177"
-          }, 
+              "value": "339208499"
+          },
           "keyword2": {
-              "value": "2015年01月05日 12:30", 
-              "color": "#173177"
-          }, 
+              "value": "2015年01月05日 12:30"
+          },
           "keyword3": {
-              "value": "粤海喜来登酒店", 
-              "color": "#173177"
-          } , 
+              "value": "粤海喜来登酒店"
+          } ,
           "keyword4": {
-              "value": "广州市天河区天河路208号", 
-              "color": "#173177"
-          } 
+              "value": "广州市天河区天河路208号"
+          }
       },
-      "emphasis_keyword": "keyword1.DATA" 
+      "emphasis_keyword": "keyword1.DATA"
     }
 
 **返回码说明：**

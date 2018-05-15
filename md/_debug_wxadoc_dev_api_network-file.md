@@ -428,6 +428,8 @@
     *   [wx.getUpdateManager](getUpdateManager.html)
 *   [多线程](createWorker.html)
     *   [wx.createWorker](createWorker.html)
+*   [监控](monitor-report.html)
+    *   [监控数据上报](monitor-report.html)
 *   [调试接口](setEnableDebug.html)
     *   [打开/关闭调试](setEnableDebug.html)
 
@@ -866,7 +868,7 @@
 
 </table>
 
-**注：文件的临时路径，在小程序本次启动期间可以正常使用，如需持久保存，需在主动调用 [wx.saveFile](file.html)，才能在小程序下次启动时访问得到。**
+**注：文件的临时路径，在小程序本次启动期间可以正常使用，如需持久保存，需在主动调用 [wx.saveFile](file.html)，才能在小程序下次启动时访问得到。** **注：请在 header 中指定合理的 Content-Type 字段，以保证客户端正确处理文件类型**
 
 **success返回参数说明：**
 

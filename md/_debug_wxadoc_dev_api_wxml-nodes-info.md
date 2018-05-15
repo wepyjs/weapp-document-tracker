@@ -428,6 +428,8 @@
     *   [wx.getUpdateManager](getUpdateManager.html)
 *   [多线程](createWorker.html)
     *   [wx.createWorker](createWorker.html)
+*   [监控](monitor-report.html)
+    *   [监控数据上报](monitor-report.html)
 *   [调试接口](setEnableDebug.html)
     *   [打开/关闭调试](setEnableDebug.html)
 
@@ -743,7 +745,7 @@
           res.scrollLeft // 节点的水平滚动位置
           res.scrollTop  // 节点的竖直滚动位置
           res.scrollX    // 节点 scroll-x 属性的当前值
-          res.scrollY    // 节点 scroll-x 属性的当前值
+          res.scrollY    // 节点 scroll-y 属性的当前值
         }).exec()
       }
     })

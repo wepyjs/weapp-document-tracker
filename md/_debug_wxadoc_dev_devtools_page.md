@@ -71,7 +71,9 @@
     *   [启动页](page.html#启动页)
     *   [菜单栏](page.html#菜单栏)
     *   [工具栏](page.html#工具栏)
+    *   [工具栏管理](page.html#工具栏管理)
     *   [模拟器](page.html#模拟器)
+    *   [独立窗口](page.html#独立窗口)
     *   [设置](settings.html)
         *   [外观设置](settings.html#外观设置)
         *   [编辑设置](settings.html#编辑设置)
@@ -111,6 +113,7 @@
 *   [第三方平台](ext.html)
 *   [小程序插件开发](plugin.html)
 *   [云测试](monkey-test.html)
+*   [素材管理](../qcloud/material.html)
 *   [实现差异](details.html)
     *   [运行环境差异](details.html#运行环境差异)
     *   [ES6 支持情况](details.html#客户端es6-api-支持情况)
@@ -274,6 +277,12 @@
 
 ![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/righttools.png)
 
+### 工具栏管理
+
+在工具栏上点击鼠标右键，可以打开工具栏管理
+
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/toolbarmanager.png)
+
 ### 模拟器
 
 模拟器可以模拟小程序在微信客户端的表现。小程序的代码通过编译后可以在模拟器上直接运行。
@@ -283,6 +292,14 @@
 ![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/device.png)
 
 在模拟器底部的状态栏，可以直观地看到当前运行小程序的场景值，页面路径及页面参数
+
+### 独立窗口
+
+点击 模拟器/调试器 右上角的按钮可以使用独立窗口显示 模拟器/调试器
+
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/popup.png)
+
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/poped.png)
 
 </section>
 

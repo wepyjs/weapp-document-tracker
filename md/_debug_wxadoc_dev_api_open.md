@@ -428,6 +428,8 @@
     *   [wx.getUpdateManager](getUpdateManager.html)
 *   [多线程](createWorker.html)
     *   [wx.createWorker](createWorker.html)
+*   [监控](monitor-report.html)
+    *   [监控数据上报](monitor-report.html)
 *   [调试接口](setEnableDebug.html)
     *   [打开/关闭调试](setEnableDebug.html)
 
@@ -451,7 +453,7 @@
 
 ### wx.getUserInfo(OBJECT)
 
-**注意：此接口有调整，使用该接口将不再出现授权弹窗，请使用 [<button open-type="getUserInfo"></button>](../component/button.html) 引导用户主动进行授权操作**
+**注意：此接口有调整，使用该接口将不再出现授权弹窗，请使用 [&ltbutton open-type="getUserInfo"&gt&lt/button&gt](../component/button.html) 引导用户主动进行授权操作**
 
 1.  当用户未授权过，调用该接口将直接报错
 2.  当用户授权过，可以使用该接口获取用户信息

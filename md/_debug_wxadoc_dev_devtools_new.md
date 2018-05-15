@@ -112,75 +112,41 @@
 
 <section class="normal markdown-section">
 
-### 2018.04.25 更新日志
+### 2018.05.15 更新日志
 
-1.  `A` 新增 搜索动态页 [详情](https://mp.weixin.qq.com/servicezone/apidocs/html/%E5%BC%80%E5%8F%91%E5%89%8D%E5%BF%85%E8%AF%BB/%E4%BD%93%E9%AA%8Cdemo.html)
-2.  `A` 新增 `wx.getUserInfo` 升级提示
-3.  `F` 修复 小游戏使用自定义编译条件预览时，真机没有 query 的问题
-4.  `F` 修复 `2.0.0` 基础库 `<button open-type="getUserInfo"></button>` 无效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=&docid=000e66816e4e68694da68dc8b56c00)
-
-### 2018.04.12 基础库更新 (2.0.0)
-
-1.  `A` 新增 `require` 支持循环依赖
-2.  `A` 新增小游戏 API `wx.onMemoryWarning` 监听内存告警事件 [详情](https://developers.weixin.qq.com/minigame/dev/document/performance/wx.onMemoryWarning.html)
-3.  `U` 更新 API `wx.saveImageToPhotosAlbum` 支持保存包内文件
-4.  `U` 更新 API `wx.onSocketOpen`、`SocketTask.onOpen` 新增回调参数 header [详情](https://developers.weixin.qq.com/miniprogram/dev/api/network-socket.html#wxonsocketopen)
-5.  `U` 更新 API `wx.setClipboardData` 交互，在调用成功之后会弹出提示“内容已复制”
-6.  `F` 修复 API `wx.hideTabBar` 第一次调用失败的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000ea2e6db4e50f0c8763741756000)
-7.  `F` 修复 API `wx.showToast` 在插件中无法设置自定义图片的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000484c9cac770ca5d7660cd255c00)
-8.  `F` 修复 API `wx.closeBluetoothAdapter` 在安卓端没有释放资源的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000668b26bcdb053d9769ac7651400)
-9.  `F` 修复 API `wx.chooseVideo` 在 iOS 上使用前置摄像头拍摄的视频没有声音的问题
-10.  `F` 修复 API `wx.getBackgroundAudioManager` 在 iOS 播放音频文件完毕之后，播放视频四秒后会自动暂停的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000c4a5065c3d8a25166124445a400)
-11.  `F` 修复 API `wx.openDocument` 在安卓上海外用户调用会直接报错的问题
-12.  `F` 修复 API `wx.previewImage` 在安卓第二次会失败的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000862deb50f50463046e502054c00)
-13.  `F` 修复 API `wx.getSystemInfo` 在进行首次 tab 切换时返回的 `screenHeight` 数值错误的问题
-14.  `F` 修复 组件 `<map />` 在开发工具上手动改变经纬度不会触发 regionchange 的问题
-15.  `F` 修复 组件 `<cover-image />` 在图片加载完没有自动调整高度的问题
-16.  `F` 修复 组件 `<textarea />` 在设置 `adjust-position="false"` 时，无法触发 `bindfocus` 事件的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000caccf9bc9707af976b3f8456000)
-17.  `F` 修复 组件 `<video />` 在全屏时隐藏 video 不会自动退出全屏的问题
-18.  `F` 修复 组件 `<canvas />` 在自定义组件的 `ready` 生命周期里调用 `drawImage` 无效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000064ef124e88ba5b764f6eb51800)
-19.  `F` 修复 组件 `<canvas />` 在 iOS 上调用 `setTextAlign` 接口居中后，调用 `wx.canvasToTempFilePath` 接口导出的图片出现错位的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a6efbb6ceb0ed73263c4d151000)
-20.  `F` 修复 组件 `<picker />` 在 iOS 上字体适配的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=421986b2a6e1e9c6da9fc4d4d6ddd11a)
-21.  `F` 修复 在插件中无法使用 Behavior 的问题
-22.  `F` 修复 在 iOS 上配置里设置 `backgroundColorTop` 会使 `backgroundColor` 失效的问题
-23.  `F` 修复 生命周期 `onItemTap` 、`onShow` 的触发时序在 iOS 和安卓没对齐的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&&docid=0008ca834f4108b4bf66a46ef56000)
-24.  `F` 修复 iOS 在自定义标题栏模式下在聚集输入框弹起键盘时导致顶部胶囊上移的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a44e15045507d3d6605a4556400)
-25.  `F` 修复 tabBar 在 iOS、安卓、开发工具上三端展示不对齐的问题
-26.  `F` 修复小游戏 API `Canvas2DRenderingContext.drawImage` 在 dHeight 参数为负数时，图片会发生 180° 旋转的问题
-27.  `F` 修复小游戏 API `WebGLRenderingContext.VERSION` 在 Android 平台下返回 undefined 的问题
-
-### 2018.04.12 更新日志
-
-1.  `F` 修复 1.02.1804080 引入的编译条件为分包内页面时无法加载的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1149299852&docid=000202572c8060847796a59cc5b000)
-2.  `F` 修复 1.02.1804080 引入的页面白屏的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1093803632&docid=0006ecb698cbd8a85b9649d895b400&inwindow=1)
-3.  `F` 修复 未使用插件时，出现 `[non-writable]` 的提示的问题
-4.  `F` 修复 `navigationStyle` 为 `'custom'` 时，获取的 `windowHeight` 与真机不一致的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=713615538&docid=000ca2632108607676965713b56000&inwindow=1)
-5.  `F` 修复 `wx.showModal` 没有覆盖 tabbar 的问题
-
-### 2018.04.08 更新日志
-
-1.  `A` 新增 编辑器文件标签打开策略设置
-2.  `A` 新增 iPhone X 刘海效果
-3.  `A` 新增 `App.onPageNotFound` 的调试支持 [详情](../framework/app-service/app.html)
-4.  `A` 新增 远程调试带插件的小程序支持
-5.  `A` 新增 `project.config.json` 的 `ignore` 字段 [详情](projectconfig.html#packoptions)
-6.  `A` 新增 项目设置中展示插件信息、分包大小
-7.  `A` 新增 自定义预处理命令 [详情](debug.html#自定义预处理)
-8.  `A` 新增 支持分包中使用插件
-9.  `F` 修复 同步 API 导致内存泄漏的问题
-10.  `F` 修复 `<web-view />` 链接带 `#wechat_redirect` 无法加载的问题
-11.  `F` 修复 在 tabbar 页面调用 `wx.redirectTo` 后再调用 `wx.switchTab` 到同一 tabbar，页面出错的问题
-12.  `F` 修复 网络请求 API 没有带上对应模拟器设备的 `userAgent` 的问题
-13.  `F` 修复 项目管理删除无效项目不生效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0008ec35474c704a5e76d3ab156400)
-14.  `F` 修复 只有设置页面时，无法关闭开发者工具的问题
-15.  `F` 修复 当项目目录在 `node_modules` 下时，无法感知文件变更的问题
-16.  `F` 修复 1.02.1803210 版本导致的 `WXML` 面板，某些情况下不显示子节点的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=892177389&docid=000a40b7b5c5d0b01286dc4dd56c00&inwindow=1&comment_lvl=17)
-17.  `F` 修复 远程调试 CanvasContext.measureText 报错的问题
-18.  `F` 修复 `WXML` 面板无法审查自定义组件内节点的问题
-19.  `F` 修复 `WXSS` 文件解析异常导致无法查看节点样式的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000264dc12cd005b637621e775b400&comment_lvl=4)
-20.  `F` 修复 某些情况下新增编译条件无效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=653286445&docid=00082ef4904f20d21686ea3ea5bc00)
-21.  `F` 修复 切换模拟器网络为 offline 后，Socket接口还能正常发送的问题。
-22.  `F` 修复 BackgroundAudioManager 不回调 onCanplay 的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000086896d45d85e6776edfbe54c00)
+1.  `A` 新增 素材管理功能 [详情](../qcloud/material.html)
+2.  `A` 新增 工具栏右键进行工具栏管理 [详情](page.html#工具栏管理)
+3.  `A` 新增 独立窗口显示模拟器和调试器的功能 [详情](page.html#独立窗口)
+4.  `A` 新增 可以在工具栏切换小程序模式和插件模式
+5.  `A` 新增 小程序使用的插件有更新时，在控制台提示插件更新
+6.  `A` 新增 小游戏 `wx.createUserInfoButton` 调试支持（基础库需选择2.0.6）
+7.  `A` 新增 当插件有更新时，在插件使用者的调试器控制台提示更新
+8.  `A` 新增 插件 README.md 文档编辑及上传功能
+9.  `A` 新增 小游戏广告展示
+10.  `U` 优化 多核编译的实现方案
+11.  `U` 优化 开发者工具中基础库的更新逻辑，实时获取最新的基础库
+12.  `F` 修复 1.02.1804251 引入的修改 `game.json` 中的 `deviceOrientation` 不生效的问题
+13.  `F` 修复 1.02.1804251 引入的小游戏重新编译时音效没有重置的问题
+14.  `F` 修复 1.02.1804251 引入的 `addEventListener` 报错导致无法显示页面的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a0e8625c090a6b1a6a0a775b000)
+15.  `F` 修复 小游戏 `wx.getUpdateManager` 无效的问题
+16.  `F` 修复 小游戏 `wx.onShow` 偶尔不触发的问题
+17.  `F` 修复 小游戏默认背景颜色与真机不一致的问题
+18.  `F` 修复 小游戏 状态栏位置异常的问题
+19.  `F` 修复 小程序业务逻辑（复杂计算或死循环）导致重新编译无效的问题
+20.  `F` 修复 横屏时 iPhoneX 刘海位置异常的问题
+21.  `F` 修复 `wx.showModal` 在页面路由之后消失的问题
+22.  `F` 修复 开启自动保存修改时，在 `app.json` 中新增 `page` 出现多个中间页面的问题
+23.  `F` 修复 开发者工具 1.6.0 基础库调用 `wx.createInnerAudioContext` 无效的问题
+24.  `F` 修复 `<picker fields="year" value="2018"/>` 显示 1970 的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1324768068&docid=000860735d8a68eb7fa6f2a0351c00&inwindow=1&comment_lvl=1)
+25.  `F` 修复 开发者工具支持 HTTP2 而真机不支持 HTTP2，导致网络 Response Headers 大小写不一致的问题
+26.  `F` 修复 不处理 `wx.authorize` 授权窗，直接重新编译，再也无法弹出授权窗，清除缓存编译也无法弹出的问题
+27.  `F` 修复 多开项目时社区消息会重复通知的问题
+28.  `F` 修复 命令行调用无法打开游客模式的项目的问题
+29.  `F` 修复 点击胶囊关闭按钮，不会触发 `App.onHide` 的问题
+30.  `F` 修复 自带背景音乐播放器窗口没有播放按钮的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=769370567&docid=000c224e904dd096bea6a3e1556000&inwindow=1&comment_lvl=1)
+31.  `F` 修复 快速修改 text 节点时在 WXML 面板中显示异常的问题
+32.  `F` 修复 referrerInfo.extraData 类型与文档不一致的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=00024622e1c778d5dab68f54d51000&comment_lvl=1)
+33.  `F` 修复 `<web-view />` src 没有更新的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0006cc97e3c38065eeb69eeee5b800&token=1532068018&devtools=1&comment_lvl=12)
 
 ## 历史更新日志
 

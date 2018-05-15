@@ -428,6 +428,8 @@
     *   [wx.getUpdateManager](getUpdateManager.html)
 *   [多线程](createWorker.html)
     *   [wx.createWorker](createWorker.html)
+*   [监控](monitor-report.html)
+    *   [监控数据上报](monitor-report.html)
 *   [调试接口](setEnableDebug.html)
     *   [打开/关闭调试](setEnableDebug.html)
 
@@ -614,6 +616,6 @@
 
 </div>
 
-[](createWorker.html)[](../devtools/devtools.html)</div>
+[](monitor-report.html)[](../devtools/devtools.html)</div>
 
 </div>

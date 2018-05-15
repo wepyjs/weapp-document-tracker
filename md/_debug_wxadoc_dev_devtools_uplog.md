@@ -71,7 +71,9 @@
     *   [启动页](page.html#启动页)
     *   [菜单栏](page.html#菜单栏)
     *   [工具栏](page.html#工具栏)
+    *   [工具栏管理](page.html#工具栏管理)
     *   [模拟器](page.html#模拟器)
+    *   [独立窗口](page.html#独立窗口)
     *   [设置](settings.html)
         *   [外观设置](settings.html#外观设置)
         *   [编辑设置](settings.html#编辑设置)
@@ -111,6 +113,7 @@
 *   [第三方平台](ext.html)
 *   [小程序插件开发](plugin.html)
 *   [云测试](monkey-test.html)
+*   [素材管理](../qcloud/material.html)
 *   [实现差异](details.html)
     *   [运行环境差异](details.html#运行环境差异)
     *   [ES6 支持情况](details.html#客户端es6-api-支持情况)
@@ -139,6 +142,71 @@
 ### 历史版本下载 2017.08.30 (0.22.203100)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_darwin&from=mpwiki)
+
+### 2018.04.25 更新日志
+
+1.  `A` 新增 搜索动态页 [详情](https://mp.weixin.qq.com/servicezone/apidocs/html/%E5%BC%80%E5%8F%91%E5%89%8D%E5%BF%85%E8%AF%BB/%E4%BD%93%E9%AA%8Cdemo.html)
+2.  `A` 新增 `wx.getUserInfo` 升级提示
+3.  `F` 修复 小游戏使用自定义编译条件预览时，真机没有 query 的问题
+4.  `F` 修复 `2.0.0` 基础库 `<button open-type="getUserInfo"></button>` 无效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=&docid=000e66816e4e68694da68dc8b56c00)
+
+### 2018.04.12 基础库更新 (2.0.0)
+
+1.  `A` 新增 `require` 支持循环依赖
+2.  `U` 更新 API `wx.saveImageToPhotosAlbum` 支持保存包内文件
+3.  `F` 修复 API `wx.hideTabBar` 第一次调用失败的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000ea2e6db4e50f0c8763741756000)
+4.  `F` 修复 API `wx.showToast` 在插件中无法设置自定义图片的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000484c9cac770ca5d7660cd255c00)
+5.  `F` 修复 API `wx.closeBluetoothAdapter` 在安卓端没有释放资源的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000668b26bcdb053d9769ac7651400)
+6.  `F` 修复 API `wx.chooseVideo` 在 iOS 上使用前置摄像头拍摄的视频没有声音的问题
+7.  `F` 修复 API `wx.getBackgroundAudioManager` 在 iOS 播放音频文件完毕之后，播放视频四秒后会自动暂停的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000c4a5065c3d8a25166124445a400)
+8.  `F` 修复 API `wx.openDocument` 在安卓上海外用户调用会直接报错的问题
+9.  `F` 修复 API `wx.previewImage` 在安卓第二次会失败的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000862deb50f50463046e502054c00)
+10.  `F` 修复 API `wx.getSystemInfo` 在进行首次 tab 切换时返回的 `screenHeight` 数值错误的问题
+11.  `F` 修复 组件 `<map />` 在开发工具上手动改变经纬度不会触发 regionchange 的问题
+12.  `F` 修复 组件 `<cover-image />` 在图片加载完没有自动调整高度的问题
+13.  `F` 修复 组件 `<textarea />` 在设置 `adjust-position="false"` 时，无法触发 `bindfocus` 事件的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000caccf9bc9707af976b3f8456000)
+14.  `F` 修复 组件 `<video />` 在全屏时隐藏 video 不会自动退出全屏的问题
+15.  `F` 修复 组件 `<canvas />` 在自定义组件的 `ready` 生命周期里调用 `drawImage` 无效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000064ef124e88ba5b764f6eb51800)
+16.  `F` 修复 组件 `<canvas />` 在 iOS 上调用 `setTextAlign` 接口居中后，调用 `wx.canvasToTempFilePath` 接口导出的图片出现错位的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a6efbb6ceb0ed73263c4d151000)
+17.  `F` 修复 组件 `<picker />` 在 iOS 上字体适配的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=421986b2a6e1e9c6da9fc4d4d6ddd11a)
+18.  `F` 修复 在插件中无法使用 Behavior 的问题
+19.  `F` 修复 在 iOS 上配置里设置 `backgroundColorTop` 会使 `backgroundColor` 失效的问题
+20.  `F` 修复 生命周期 `onItemTap` 、`onShow` 的触发时序在 iOS 和安卓没对齐的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&&docid=0008ca834f4108b4bf66a46ef56000)
+21.  `F` 修复 iOS 在自定义标题栏模式下在聚集输入框弹起键盘时导致顶部胶囊上移的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a44e15045507d3d6605a4556400)
+22.  `F` 修复 tabBar 在 iOS、安卓、开发工具上三端展示不对齐的问题
+
+### 2018.04.12 更新日志
+
+1.  `F` 修复 1.02.1804080 引入的编译条件为分包内页面时无法加载的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1149299852&docid=000202572c8060847796a59cc5b000)
+2.  `F` 修复 1.02.1804080 引入的页面白屏的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1093803632&docid=0006ecb698cbd8a85b9649d895b400&inwindow=1)
+3.  `F` 修复 未使用插件时，出现 `[non-writable]` 的提示的问题
+4.  `F` 修复 `navigationStyle` 为 `'custom'` 时，获取的 `windowHeight` 与真机不一致的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=713615538&docid=000ca2632108607676965713b56000&inwindow=1)
+5.  `F` 修复 `wx.showModal` 没有覆盖 tabbar 的问题
+
+### 2018.04.08 更新日志
+
+1.  `A` 新增 编辑器文件标签打开策略设置
+2.  `A` 新增 iPhone X 刘海效果
+3.  `A` 新增 `App.onPageNotFound` 的调试支持 [详情](../framework/app-service/app.html)
+4.  `A` 新增 远程调试带插件的小程序支持
+5.  `A` 新增 `project.config.json` 的 `ignore` 字段 [详情](projectconfig.html#packoptions)
+6.  `A` 新增 项目设置中展示插件信息、分包大小
+7.  `A` 新增 自定义预处理命令 [详情](debug.html#自定义预处理)
+8.  `A` 新增 支持分包中使用插件
+9.  `F` 修复 同步 API 导致内存泄漏的问题
+10.  `F` 修复 `<web-view />` 链接带 `#wechat_redirect` 无法加载的问题
+11.  `F` 修复 在 tabbar 页面调用 `wx.redirectTo` 后再调用 `wx.switchTab` 到同一 tabbar，页面出错的问题
+12.  `F` 修复 网络请求 API 没有带上对应模拟器设备的 `userAgent` 的问题
+13.  `F` 修复 项目管理删除无效项目不生效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0008ec35474c704a5e76d3ab156400)
+14.  `F` 修复 只有设置页面时，无法关闭开发者工具的问题
+15.  `F` 修复 当项目目录在 `node_modules` 下时，无法感知文件变更的问题
+16.  `F` 修复 1.02.1803210 版本导致的 `WXML` 面板，某些情况下不显示子节点的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=892177389&docid=000a40b7b5c5d0b01286dc4dd56c00&inwindow=1&comment_lvl=17)
+17.  `F` 修复 远程调试 CanvasContext.measureText 报错的问题
+18.  `F` 修复 `WXML` 面板无法审查自定义组件内节点的问题
+19.  `F` 修复 `WXSS` 文件解析异常导致无法查看节点样式的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000264dc12cd005b637621e775b400&comment_lvl=4)
+20.  `F` 修复 某些情况下新增编译条件无效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=653286445&docid=00082ef4904f20d21686ea3ea5bc00)
+21.  `F` 修复 切换模拟器网络为 offline 后，Socket接口还能正常发送的问题。
+22.  `F` 修复 BackgroundAudioManager 不回调 onCanplay 的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000086896d45d85e6776edfbe54c00)
 
 ### 2018.04.12 基础库更新 (2.0.0)
 

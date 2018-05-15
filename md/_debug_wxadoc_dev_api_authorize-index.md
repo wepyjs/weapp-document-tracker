@@ -428,6 +428,8 @@
     *   [wx.getUpdateManager](getUpdateManager.html)
 *   [多线程](createWorker.html)
     *   [wx.createWorker](createWorker.html)
+*   [监控](monitor-report.html)
+    *   [监控数据上报](monitor-report.html)
 *   [调试接口](setEnableDebug.html)
     *   [打开/关闭调试](setEnableDebug.html)
 
@@ -493,7 +495,7 @@
 
 <tr>
 
-<td>scope.userInfo【废弃】</td>
+<td>scope.userInfo</td>
 
 <td>wx.getUserInfo</td>
 
@@ -565,7 +567,7 @@
 
 <td>scope.camera</td>
 
-<td><camera></camera></td>
+<td><camera /></td>
 
 <td>摄像头</td>
 
@@ -574,6 +576,8 @@
 </tbody>
 
 </table>
+
+**注意：wx.authorize({scope: "scope.userInfo"})，无法弹出授权窗口，请使用 [<button open-type="getUserInfo"></button>](../component/button.html)**
 
 </section>
 

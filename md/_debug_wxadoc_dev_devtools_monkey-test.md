@@ -71,7 +71,9 @@
     *   [启动页](page.html#启动页)
     *   [菜单栏](page.html#菜单栏)
     *   [工具栏](page.html#工具栏)
+    *   [工具栏管理](page.html#工具栏管理)
     *   [模拟器](page.html#模拟器)
+    *   [独立窗口](page.html#独立窗口)
     *   [设置](settings.html)
         *   [外观设置](settings.html#外观设置)
         *   [编辑设置](settings.html#编辑设置)
@@ -111,6 +113,7 @@
 *   [第三方平台](ext.html)
 *   [小程序插件开发](plugin.html)
 *   [云测试](monkey-test.html)
+*   [素材管理](../qcloud/material.html)
 *   [实现差异](details.html)
     *   [运行环境差异](details.html#运行环境差异)
     *   [ES6 支持情况](details.html#客户端es6-api-支持情况)
@@ -220,6 +223,6 @@
 
 </div>
 
-[](plugin.html)[](details.html)</div>
+[](plugin.html)[](../qcloud/material.html)</div>
 
 </div>
