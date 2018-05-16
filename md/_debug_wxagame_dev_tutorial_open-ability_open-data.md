@@ -268,7 +268,7 @@ src/myOpenDataContext 是 `开放数据域的代码目录`，除 src/myOpenDataC
       })
     }
 
-    wx.getFriendUserGameData({
+    wx.getFriendCloudStorage({
       success: res => {
         let data = res.data
         drawRankList(data)

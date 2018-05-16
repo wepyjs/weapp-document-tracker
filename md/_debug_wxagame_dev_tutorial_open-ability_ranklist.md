@@ -132,11 +132,11 @@
 
 ### 配置步骤与相关字段说明
 
-1.  完成规范格式的后台数据上报
+#### 1\. 完成规范格式的后台数据上报
 
-    上报接口文档地址：[wx.setUserCloudStorage](../../document/open-api/data/wx.setUserCloudStorage.html) （前端接口)、[setUserStorage](../../document/open-api/data/setUserStorage.html) （后台接口)
+上报接口文档地址：[wx.setUserCloudStorage](../../document/open-api/data/wx.setUserCloudStorage.html) （前端接口)、[setUserStorage](../../document/open-api/data/setUserStorage.html) （后台接口)
 
-2.  登录mp管理后台后，在游戏设置-排行榜配置中完成配置
+#### 2\. 登录mp管理后台后，在游戏设置-排行榜配置中完成配置
 
 ![RanklistConfig](../images/RankListConfig.png)
 
@@ -212,9 +212,9 @@
 
 </table>
 
-1.  完成提交后，需经微信审核通过，才可生效。
+#### 3\. 完成提交后，需经微信审核通过，才可生效。
 
-    ![ConfigApperance](../images/ConfigApperance.png)
+![ConfigApperance](../images/ConfigApperance.png)
 
 </section>
 

@@ -229,10 +229,17 @@
         *   [UserInfoButton.onTap](../open-api/user-info/UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](../open-api/user-info/UserInfoButton.offTap.html)
         *   [UserInfoButton.show](../open-api/user-info/UserInfoButton.show.html)
-    *   [设置](../open-api/setting/wx.getSetting.html)
+    *   [设置](../open-api/setting/wx.createOpenSettingButton.html)
+        *   [wx.createOpenSettingButton](../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../open-api/setting/wx.getSetting.html)
         *   [wx.openSetting](../open-api/setting/wx.openSetting.html)
         *   [AuthSetting](../open-api/setting/AuthSetting.html)
+        *   [OpenSettingButton](../open-api/setting/OpenSettingButton.html)
+        *   [OpenSettingButton.destroy](../open-api/setting/OpenSettingButton.destroy.html)
+        *   [OpenSettingButton.hide](../open-api/setting/OpenSettingButton.hide.html)
+        *   [OpenSettingButton.onTap](../open-api/setting/OpenSettingButton.onTap.html)
+        *   [OpenSettingButton.offTap](../open-api/setting/OpenSettingButton.offTap.html)
+        *   [OpenSettingButton.show](../open-api/setting/OpenSettingButton.show.html)
     *   [微信运动](../open-api/werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../open-api/werun/wx.getWeRunData.html)
     *   [授权](../open-api/authorize/wx.authorize.html)
@@ -240,7 +247,7 @@
     *   [游戏圈](../open-api/game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../open-api/game-club/wx.createGameClubButton.html)
         *   [GameClubButton](../open-api/game-club/GameClubButton.html)
-        *   [UserInfoButton.destroy](../open-api/game-club/UserInfoButton.destroy.html)
+        *   [GameClubButton.destroy](../open-api/game-club/GameClubButton.destroy.html)
         *   [GameClubButton.hide](../open-api/game-club/GameClubButton.hide.html)
         *   [GameClubButton.show](../open-api/game-club/GameClubButton.show.html)
     *   [客服消息](../open-api/customer-message/openCustomerServiceConversation.html)
@@ -322,25 +329,6 @@
 *   [广告](../ad/wx.createBannerAd.html)
     *   [wx.createBannerAd](../ad/wx.createBannerAd.html)
     *   [wx.createRewardedVideoAd](../ad/wx.createRewardedVideoAd.html)
-    *   [BannerAd](../ad/BannerAd.html)
-    *   [RewardedVideoAd](../ad/RewardedVideoAd.html)
-    *   [BannerAd.destroy](../ad/BannerAd.destroy.html)
-    *   [BannerAd.hide](../ad/BannerAd.hide.html)
-    *   [RewardedVideoAd.load](../ad/RewardedVideoAd.load.html)
-    *   [BannerAd.onLoad](../ad/BannerAd.onLoad.html)
-    *   [BannerAd.offLoad](../ad/BannerAd.offLoad.html)
-    *   [BannerAd.onResize](../ad/BannerAd.onResize.html)
-    *   [BannerAd.offError](../ad/BannerAd.offError.html)
-    *   [RewardedVideoAd.onClose](../ad/RewardedVideoAd.onClose.html)
-    *   [BannerAd.offResize](../ad/BannerAd.offResize.html)
-    *   [RewardedVideoAd.offClose](../ad/RewardedVideoAd.offClose.html)
-    *   [RewardedVideoAd.offError](../ad/RewardedVideoAd.offError.html)
-    *   [RewardedVideoAd.onLoad](../ad/RewardedVideoAd.onLoad.html)
-    *   [RewardedVideoAd.offLoad](../ad/RewardedVideoAd.offLoad.html)
-    *   [RewardedVideoAd.onError](../ad/RewardedVideoAd.onError.html)
-    *   [BannerAd.onError](../ad/BannerAd.onError.html)
-    *   [RewardedVideoAd.show](../ad/RewardedVideoAd.show.html)
-    *   [BannerAd.show](../ad/BannerAd.show.html)
 *   [媒体](../media/audio/wx.createInnerAudioContext.html)
     *   [音频](../media/audio/wx.createInnerAudioContext.html)
         *   [wx.createInnerAudioContext](../media/audio/wx.createInnerAudioContext.html)
@@ -472,165 +460,15 @@
 
 <tr>
 
-<td>mode</td>
-
-<td>string</td>
-
 <td></td>
-
-<td>是</td>
-
-<td>支付的类型，不同的支付类型有各自额外要传的附加参数。</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>env</td>
-
-<td>number</td>
-
-<td>0</td>
-
-<td>否</td>
-
-<td>环境配置</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>offerId</td>
-
-<td>string</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>在米大师侧申请的应用 id</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>currencyType</td>
-
-<td>string</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>币种</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>platform</td>
-
-<td>string</td>
-
-<td></td>
-
-<td>否</td>
-
-<td>申请接入时的平台，platform 与应用id有关。</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>buyQuantity</td>
-
-<td>number</td>
-
-<td></td>
-
-<td>否</td>
-
-<td>购买数量。mode=game 时必填。购买数量。详见 [buyQuantity 限制说明](#buyquantity-限制说明)。</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>zoneId</td>
-
-<td>string</td>
-
-<td>1</td>
-
-<td>否</td>
-
-<td>分区 ID</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>success</td>
-
-<td>function</td>
-
-<td></td>
-
-<td>否</td>
-
-<td>接口调用成功的回调函数</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>fail</td>
-
-<td>function</td>
-
-<td></td>
-
-<td>否</td>
-
-<td>接口调用失败的回调函数</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>complete</td>
-
-<td>function</td>
-
-<td></td>
-
-<td>否</td>
-
-<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
 </tr>
 
 </tbody>
 
 </table>
+
+| mode | string | | 是 | 支付的类型，不同的支付类型有各自额外要传的附加参数。 | | | env | number | 0 | 否 | 环境配置 | | | offerId | string | | 是 | 在米大师侧申请的应用 id | | | currencyType | string | | 是 | 币种 | | | platform | string | | 否 | 申请接入时的平台，platform 与应用id有关。 | | | buyQuantity | number | | 否 | 购买数量。mode=game 时必填。购买数量。详见 [buyQuantity 限制说明](#buyquantity-限制说明)。 | | | zoneId | string | 1 | 否 | 分区 ID | | | success | function | | 否 | 接口调用成功的回调函数 | | | fail | function | | 否 | 接口调用失败的回调函数 | | | complete | function | | 否 | 接口调用结束的回调函数（调用成功、失败都会执行） | |
 
 **object.mode 的合法值**
 

@@ -229,10 +229,17 @@
         *   [UserInfoButton.onTap](../user-info/UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](../user-info/UserInfoButton.offTap.html)
         *   [UserInfoButton.show](../user-info/UserInfoButton.show.html)
-    *   [设置](../setting/wx.getSetting.html)
+    *   [设置](../setting/wx.createOpenSettingButton.html)
+        *   [wx.createOpenSettingButton](../setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../setting/wx.getSetting.html)
         *   [wx.openSetting](../setting/wx.openSetting.html)
         *   [AuthSetting](../setting/AuthSetting.html)
+        *   [OpenSettingButton](../setting/OpenSettingButton.html)
+        *   [OpenSettingButton.destroy](../setting/OpenSettingButton.destroy.html)
+        *   [OpenSettingButton.hide](../setting/OpenSettingButton.hide.html)
+        *   [OpenSettingButton.onTap](../setting/OpenSettingButton.onTap.html)
+        *   [OpenSettingButton.offTap](../setting/OpenSettingButton.offTap.html)
+        *   [OpenSettingButton.show](../setting/OpenSettingButton.show.html)
     *   [微信运动](../werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
     *   [授权](../authorize/wx.authorize.html)
@@ -240,7 +247,7 @@
     *   [游戏圈](wx.createGameClubButton.html)
         *   [wx.createGameClubButton](wx.createGameClubButton.html)
         *   [GameClubButton](GameClubButton.html)
-        *   [UserInfoButton.destroy](UserInfoButton.destroy.html)
+        *   [GameClubButton.destroy](GameClubButton.destroy.html)
         *   [GameClubButton.hide](GameClubButton.hide.html)
         *   [GameClubButton.show](GameClubButton.show.html)
     *   [客服消息](../customer-message/openCustomerServiceConversation.html)
@@ -322,25 +329,6 @@
 *   [广告](../../ad/wx.createBannerAd.html)
     *   [wx.createBannerAd](../../ad/wx.createBannerAd.html)
     *   [wx.createRewardedVideoAd](../../ad/wx.createRewardedVideoAd.html)
-    *   [BannerAd](../../ad/BannerAd.html)
-    *   [RewardedVideoAd](../../ad/RewardedVideoAd.html)
-    *   [BannerAd.destroy](../../ad/BannerAd.destroy.html)
-    *   [BannerAd.hide](../../ad/BannerAd.hide.html)
-    *   [RewardedVideoAd.load](../../ad/RewardedVideoAd.load.html)
-    *   [BannerAd.onLoad](../../ad/BannerAd.onLoad.html)
-    *   [BannerAd.offLoad](../../ad/BannerAd.offLoad.html)
-    *   [BannerAd.onResize](../../ad/BannerAd.onResize.html)
-    *   [BannerAd.offError](../../ad/BannerAd.offError.html)
-    *   [RewardedVideoAd.onClose](../../ad/RewardedVideoAd.onClose.html)
-    *   [BannerAd.offResize](../../ad/BannerAd.offResize.html)
-    *   [RewardedVideoAd.offClose](../../ad/RewardedVideoAd.offClose.html)
-    *   [RewardedVideoAd.offError](../../ad/RewardedVideoAd.offError.html)
-    *   [RewardedVideoAd.onLoad](../../ad/RewardedVideoAd.onLoad.html)
-    *   [RewardedVideoAd.offLoad](../../ad/RewardedVideoAd.offLoad.html)
-    *   [RewardedVideoAd.onError](../../ad/RewardedVideoAd.onError.html)
-    *   [BannerAd.onError](../../ad/BannerAd.onError.html)
-    *   [RewardedVideoAd.show](../../ad/RewardedVideoAd.show.html)
-    *   [BannerAd.show](../../ad/BannerAd.show.html)
 *   [媒体](../../media/audio/wx.createInnerAudioContext.html)
     *   [音频](../../media/audio/wx.createInnerAudioContext.html)
         *   [wx.createInnerAudioContext](../../media/audio/wx.createInnerAudioContext.html)
@@ -474,37 +462,15 @@
 
 <tr>
 
-<td>icon</td>
-
-<td>string</td>
-
 <td></td>
-
-<td>是</td>
-
-<td>游戏圈按钮的图标</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>style</td>
-
-<td>Object</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>按钮的样式</td>
 
 </tr>
 
 </tbody>
 
 </table>
+
+| icon | string | | 是 | 游戏圈按钮的图标 | | | style | Object | | 是 | 按钮的样式 | |
 
 **object.icon 的合法值**
 
@@ -588,63 +554,7 @@
 
 <tr>
 
-<td>left</td>
-
-<td>number</td>
-
 <td></td>
-
-<td>是</td>
-
-<td>左上角横坐标</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>top</td>
-
-<td>number</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>左上角纵坐标</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>width</td>
-
-<td>number</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>宽度</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>height</td>
-
-<td>number</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>高度</td>
 
 </tr>
 
@@ -652,13 +562,15 @@
 
 </table>
 
+| left | number | | 是 | 左上角横坐标 | | | top | number | | 是 | 左上角纵坐标 | | | width | number | | 是 | 宽度 | | | height | number | | 是 | 高度 | |
+
 #### 返回值
 
 ##### [GameClubButton](GameClubButton.html)
 
 #### 示例代码
 
-    var button = wx.createGameClubButton({
+    let button = wx.createGameClubButton({
         icon: 'green',
         style: {
             left: 10,
@@ -666,9 +578,6 @@
             width: 40,
             height: 40
         }
-    })
-    button.onTap((res) = > {
-        console.log(res)
     })
 
 </section>

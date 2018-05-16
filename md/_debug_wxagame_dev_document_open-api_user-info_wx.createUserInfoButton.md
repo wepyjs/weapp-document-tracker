@@ -229,10 +229,17 @@
         *   [UserInfoButton.onTap](UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](UserInfoButton.offTap.html)
         *   [UserInfoButton.show](UserInfoButton.show.html)
-    *   [设置](../setting/wx.getSetting.html)
+    *   [设置](../setting/wx.createOpenSettingButton.html)
+        *   [wx.createOpenSettingButton](../setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../setting/wx.getSetting.html)
         *   [wx.openSetting](../setting/wx.openSetting.html)
         *   [AuthSetting](../setting/AuthSetting.html)
+        *   [OpenSettingButton](../setting/OpenSettingButton.html)
+        *   [OpenSettingButton.destroy](../setting/OpenSettingButton.destroy.html)
+        *   [OpenSettingButton.hide](../setting/OpenSettingButton.hide.html)
+        *   [OpenSettingButton.onTap](../setting/OpenSettingButton.onTap.html)
+        *   [OpenSettingButton.offTap](../setting/OpenSettingButton.offTap.html)
+        *   [OpenSettingButton.show](../setting/OpenSettingButton.show.html)
     *   [微信运动](../werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
     *   [授权](../authorize/wx.authorize.html)
@@ -240,7 +247,7 @@
     *   [游戏圈](../game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../game-club/wx.createGameClubButton.html)
         *   [GameClubButton](../game-club/GameClubButton.html)
-        *   [UserInfoButton.destroy](../game-club/UserInfoButton.destroy.html)
+        *   [GameClubButton.destroy](../game-club/GameClubButton.destroy.html)
         *   [GameClubButton.hide](../game-club/GameClubButton.hide.html)
         *   [GameClubButton.show](../game-club/GameClubButton.show.html)
     *   [客服消息](../customer-message/openCustomerServiceConversation.html)
@@ -322,25 +329,6 @@
 *   [广告](../../ad/wx.createBannerAd.html)
     *   [wx.createBannerAd](../../ad/wx.createBannerAd.html)
     *   [wx.createRewardedVideoAd](../../ad/wx.createRewardedVideoAd.html)
-    *   [BannerAd](../../ad/BannerAd.html)
-    *   [RewardedVideoAd](../../ad/RewardedVideoAd.html)
-    *   [BannerAd.destroy](../../ad/BannerAd.destroy.html)
-    *   [BannerAd.hide](../../ad/BannerAd.hide.html)
-    *   [RewardedVideoAd.load](../../ad/RewardedVideoAd.load.html)
-    *   [BannerAd.onLoad](../../ad/BannerAd.onLoad.html)
-    *   [BannerAd.offLoad](../../ad/BannerAd.offLoad.html)
-    *   [BannerAd.onResize](../../ad/BannerAd.onResize.html)
-    *   [BannerAd.offError](../../ad/BannerAd.offError.html)
-    *   [RewardedVideoAd.onClose](../../ad/RewardedVideoAd.onClose.html)
-    *   [BannerAd.offResize](../../ad/BannerAd.offResize.html)
-    *   [RewardedVideoAd.offClose](../../ad/RewardedVideoAd.offClose.html)
-    *   [RewardedVideoAd.offError](../../ad/RewardedVideoAd.offError.html)
-    *   [RewardedVideoAd.onLoad](../../ad/RewardedVideoAd.onLoad.html)
-    *   [RewardedVideoAd.offLoad](../../ad/RewardedVideoAd.offLoad.html)
-    *   [RewardedVideoAd.onError](../../ad/RewardedVideoAd.onError.html)
-    *   [BannerAd.onError](../../ad/BannerAd.onError.html)
-    *   [RewardedVideoAd.show](../../ad/RewardedVideoAd.show.html)
-    *   [BannerAd.show](../../ad/BannerAd.show.html)
 *   [媒体](../../media/audio/wx.createInnerAudioContext.html)
     *   [音频](../../media/audio/wx.createInnerAudioContext.html)
         *   [wx.createInnerAudioContext](../../media/audio/wx.createInnerAudioContext.html)
@@ -474,69 +462,15 @@
 
 <tr>
 
-<td>type</td>
-
-<td>string</td>
-
 <td></td>
-
-<td>是</td>
-
-<td>按钮的类型</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>text</td>
-
-<td>string</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>按钮上的文本，仅当 type 为 `text` 时有效</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>image</td>
-
-<td>string</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>按钮的背景图片，仅当 type 为 `image` 时有效</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>style</td>
-
-<td>Object</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>按钮的样式</td>
 
 </tr>
 
 </tbody>
 
 </table>
+
+| type | string | | 是 | 按钮的类型 | | | text | string | | 是 | 按钮上的文本，仅当 type 为 `text` 时有效 | | | image | string | | 是 | 按钮的背景图片，仅当 type 为 `image` 时有效 | | | style | Object | | 是 | 按钮的样式 | |
 
 **object.type 的合法值**
 
@@ -604,181 +538,15 @@
 
 <tr>
 
-<td>left</td>
-
-<td>number</td>
-
 <td></td>
-
-<td>是</td>
-
-<td>左上角横坐标</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>top</td>
-
-<td>number</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>左上角纵坐标</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>width</td>
-
-<td>number</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>宽度</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>height</td>
-
-<td>number</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>高度</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>backgroundColor</td>
-
-<td>string</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>背景颜色</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>borderColor</td>
-
-<td>string</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>边框颜色</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>borderWidth</td>
-
-<td>number</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>边框宽度</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>borderRadius</td>
-
-<td>number</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>边框圆角</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>textAlign</td>
-
-<td>string</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>文本的水平居中方式</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>fontSize</td>
-
-<td>number</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>字号</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>lineHeight</td>
-
-<td>number</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>文本的行高</td>
 
 </tr>
 
 </tbody>
 
 </table>
+
+| left | number | | 是 | 左上角横坐标 | | | top | number | | 是 | 左上角纵坐标 | | | width | number | | 是 | 宽度 | | | height | number | | 是 | 高度 | | | backgroundColor | string | | 是 | 背景颜色 | | | borderColor | string | | 是 | 边框颜色 | | | borderWidth | number | | 是 | 边框宽度 | | | borderRadius | number | | 是 | 边框圆角 | | | textAlign | string | | 是 | 文本的水平居中方式 | | | fontSize | number | | 是 | 字号 | | | lineHeight | number | | 是 | 文本的行高 | |
 
 **object.style.textAlign 的合法值**
 
@@ -832,7 +600,7 @@
 
 #### 示例代码
 
-    var button = wx.createUserInfoButton({
+    let button = wx.createUserInfoButton({
         type: 'text',
         text: '获取用户信息',
         style: {

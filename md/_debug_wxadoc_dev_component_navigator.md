@@ -153,13 +153,27 @@
 
 <tr>
 
+<td>target</td>
+
+<td>String</td>
+
+<td></td>
+
+<td>在哪个目标上发生跳转，默认当前小程序</td>
+
+<td>[2.0.7](../framework/compatibility.html "基础库 2.0.7 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>url</td>
 
 <td>String</td>
 
 <td></td>
 
-<td>应用内的跳转链接</td>
+<td>当前小程序内的跳转链接</td>
 
 <td></td>
 
@@ -190,6 +204,62 @@
 <td>当 open-type 为 'navigateBack' 时有效，表示回退的层数</td>
 
 <td></td>
+
+</tr>
+
+<tr>
+
+<td>app-id</td>
+
+<td>String</td>
+
+<td></td>
+
+<td>当target="miniProgram"时有效，要打开的小程序 appId</td>
+
+<td>[2.0.7](../framework/compatibility.html "基础库 2.0.7 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>path</td>
+
+<td>String</td>
+
+<td></td>
+
+<td>当target="miniProgram"时有效，打开的页面路径，如果为空则打开首页</td>
+
+<td>[2.0.7](../framework/compatibility.html "基础库 2.0.7 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>extra-data</td>
+
+<td>Object</td>
+
+<td></td>
+
+<td>当target="miniProgram"时有效，需要传递给目标小程序的数据，目标小程序可在 `App.onLaunch()`，`App.onShow()` 中获取到这份数据。[详情](../framework/app-service/app.html)</td>
+
+<td>[2.0.7](../framework/compatibility.html "基础库 2.0.7 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>version</td>
+
+<td>version</td>
+
+<td>release</td>
+
+<td>当target="miniProgram"时有效，要打开的小程序版本，有效值 develop（开发版），trial（体验版），release（正式版），仅在当前小程序为开发版或体验版时此参数有效；如果当前小程序是体验版或正式版，则打开的小程序必定是正式版。</td>
+
+<td>[2.0.7](../framework/compatibility.html "基础库 2.0.7 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -275,7 +345,7 @@
 
 <td>navigate</td>
 
-<td>对应 `wx.navigateTo` 的功能</td>
+<td>对应 `wx.navigateTo` 或 `wx.navigateToMiniProgram` 的功能</td>
 
 <td></td>
 
@@ -346,6 +416,7 @@
       <navigator url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator>
       <navigator url="../../redirect/redirect/redirect?title=redirect" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator>
       <navigator url="/page/index/index" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator>
+      <navigator target="miniProgram" open-type="navigate" app-id="" path="" extra-data="" version="release">打开绑定的小程序</navigator>
     </view>
 
     <!-- navigator.wxml -->

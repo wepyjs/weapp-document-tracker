@@ -229,10 +229,17 @@
         *   [UserInfoButton.onTap](../../open-api/user-info/UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](../../open-api/user-info/UserInfoButton.offTap.html)
         *   [UserInfoButton.show](../../open-api/user-info/UserInfoButton.show.html)
-    *   [设置](../../open-api/setting/wx.getSetting.html)
+    *   [设置](../../open-api/setting/wx.createOpenSettingButton.html)
+        *   [wx.createOpenSettingButton](../../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../../open-api/setting/wx.getSetting.html)
         *   [wx.openSetting](../../open-api/setting/wx.openSetting.html)
         *   [AuthSetting](../../open-api/setting/AuthSetting.html)
+        *   [OpenSettingButton](../../open-api/setting/OpenSettingButton.html)
+        *   [OpenSettingButton.destroy](../../open-api/setting/OpenSettingButton.destroy.html)
+        *   [OpenSettingButton.hide](../../open-api/setting/OpenSettingButton.hide.html)
+        *   [OpenSettingButton.onTap](../../open-api/setting/OpenSettingButton.onTap.html)
+        *   [OpenSettingButton.offTap](../../open-api/setting/OpenSettingButton.offTap.html)
+        *   [OpenSettingButton.show](../../open-api/setting/OpenSettingButton.show.html)
     *   [微信运动](../../open-api/werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../../open-api/werun/wx.getWeRunData.html)
     *   [授权](../../open-api/authorize/wx.authorize.html)
@@ -240,7 +247,7 @@
     *   [游戏圈](../../open-api/game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../../open-api/game-club/wx.createGameClubButton.html)
         *   [GameClubButton](../../open-api/game-club/GameClubButton.html)
-        *   [UserInfoButton.destroy](../../open-api/game-club/UserInfoButton.destroy.html)
+        *   [GameClubButton.destroy](../../open-api/game-club/GameClubButton.destroy.html)
         *   [GameClubButton.hide](../../open-api/game-club/GameClubButton.hide.html)
         *   [GameClubButton.show](../../open-api/game-club/GameClubButton.show.html)
     *   [客服消息](../../open-api/customer-message/openCustomerServiceConversation.html)
@@ -322,25 +329,6 @@
 *   [广告](../../ad/wx.createBannerAd.html)
     *   [wx.createBannerAd](../../ad/wx.createBannerAd.html)
     *   [wx.createRewardedVideoAd](../../ad/wx.createRewardedVideoAd.html)
-    *   [BannerAd](../../ad/BannerAd.html)
-    *   [RewardedVideoAd](../../ad/RewardedVideoAd.html)
-    *   [BannerAd.destroy](../../ad/BannerAd.destroy.html)
-    *   [BannerAd.hide](../../ad/BannerAd.hide.html)
-    *   [RewardedVideoAd.load](../../ad/RewardedVideoAd.load.html)
-    *   [BannerAd.onLoad](../../ad/BannerAd.onLoad.html)
-    *   [BannerAd.offLoad](../../ad/BannerAd.offLoad.html)
-    *   [BannerAd.onResize](../../ad/BannerAd.onResize.html)
-    *   [BannerAd.offError](../../ad/BannerAd.offError.html)
-    *   [RewardedVideoAd.onClose](../../ad/RewardedVideoAd.onClose.html)
-    *   [BannerAd.offResize](../../ad/BannerAd.offResize.html)
-    *   [RewardedVideoAd.offClose](../../ad/RewardedVideoAd.offClose.html)
-    *   [RewardedVideoAd.offError](../../ad/RewardedVideoAd.offError.html)
-    *   [RewardedVideoAd.onLoad](../../ad/RewardedVideoAd.onLoad.html)
-    *   [RewardedVideoAd.offLoad](../../ad/RewardedVideoAd.offLoad.html)
-    *   [RewardedVideoAd.onError](../../ad/RewardedVideoAd.onError.html)
-    *   [BannerAd.onError](../../ad/BannerAd.onError.html)
-    *   [RewardedVideoAd.show](../../ad/RewardedVideoAd.show.html)
-    *   [BannerAd.show](../../ad/BannerAd.show.html)
 *   [媒体](../../media/audio/wx.createInnerAudioContext.html)
     *   [音频](../../media/audio/wx.createInnerAudioContext.html)
         *   [wx.createInnerAudioContext](../../media/audio/wx.createInnerAudioContext.html)
@@ -516,53 +504,15 @@ webgl 上下文属性，仅当 contextType 为 webgl 时有效
 
 <tr>
 
-<td>antialias</td>
-
-<td>boolean</td>
-
-<td>false</td>
-
-<td>否</td>
-
-<td>表示是否抗锯齿</td>
-
 <td></td>
-
-</tr>
-
-<tr>
-
-<td>preserveDrawingBuffer</td>
-
-<td>boolean</td>
-
-<td>false</td>
-
-<td>否</td>
-
-<td>表示是否绘图完成后是否保留绘图缓冲区</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>antialiasSamples</td>
-
-<td>number</td>
-
-<td>2</td>
-
-<td>否</td>
-
-<td>抗锯齿样本数。最小值为 2，最大不超过系统限制数量，仅 iOS 支持</td>
 
 </tr>
 
 </tbody>
 
 </table>
+
+| antialias | boolean | false | 否 | 表示是否抗锯齿 | | | preserveDrawingBuffer | boolean | false | 否 | 表示是否绘图完成后是否保留绘图缓冲区 | | | antialiasSamples | number | 2 | 否 | 抗锯齿样本数。最小值为 2，最大不超过系统限制数量，仅 iOS 支持 | |
 
 #### 返回值
 

@@ -229,10 +229,17 @@
         *   [UserInfoButton.onTap](../open-api/user-info/UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](../open-api/user-info/UserInfoButton.offTap.html)
         *   [UserInfoButton.show](../open-api/user-info/UserInfoButton.show.html)
-    *   [设置](../open-api/setting/wx.getSetting.html)
+    *   [设置](../open-api/setting/wx.createOpenSettingButton.html)
+        *   [wx.createOpenSettingButton](../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../open-api/setting/wx.getSetting.html)
         *   [wx.openSetting](../open-api/setting/wx.openSetting.html)
         *   [AuthSetting](../open-api/setting/AuthSetting.html)
+        *   [OpenSettingButton](../open-api/setting/OpenSettingButton.html)
+        *   [OpenSettingButton.destroy](../open-api/setting/OpenSettingButton.destroy.html)
+        *   [OpenSettingButton.hide](../open-api/setting/OpenSettingButton.hide.html)
+        *   [OpenSettingButton.onTap](../open-api/setting/OpenSettingButton.onTap.html)
+        *   [OpenSettingButton.offTap](../open-api/setting/OpenSettingButton.offTap.html)
+        *   [OpenSettingButton.show](../open-api/setting/OpenSettingButton.show.html)
     *   [微信运动](../open-api/werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../open-api/werun/wx.getWeRunData.html)
     *   [授权](../open-api/authorize/wx.authorize.html)
@@ -240,7 +247,7 @@
     *   [游戏圈](../open-api/game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../open-api/game-club/wx.createGameClubButton.html)
         *   [GameClubButton](../open-api/game-club/GameClubButton.html)
-        *   [UserInfoButton.destroy](../open-api/game-club/UserInfoButton.destroy.html)
+        *   [GameClubButton.destroy](../open-api/game-club/GameClubButton.destroy.html)
         *   [GameClubButton.hide](../open-api/game-club/GameClubButton.hide.html)
         *   [GameClubButton.show](../open-api/game-club/GameClubButton.show.html)
     *   [客服消息](../open-api/customer-message/openCustomerServiceConversation.html)
@@ -322,25 +329,6 @@
 *   [广告](../ad/wx.createBannerAd.html)
     *   [wx.createBannerAd](../ad/wx.createBannerAd.html)
     *   [wx.createRewardedVideoAd](../ad/wx.createRewardedVideoAd.html)
-    *   [BannerAd](../ad/BannerAd.html)
-    *   [RewardedVideoAd](../ad/RewardedVideoAd.html)
-    *   [BannerAd.destroy](../ad/BannerAd.destroy.html)
-    *   [BannerAd.hide](../ad/BannerAd.hide.html)
-    *   [RewardedVideoAd.load](../ad/RewardedVideoAd.load.html)
-    *   [BannerAd.onLoad](../ad/BannerAd.onLoad.html)
-    *   [BannerAd.offLoad](../ad/BannerAd.offLoad.html)
-    *   [BannerAd.onResize](../ad/BannerAd.onResize.html)
-    *   [BannerAd.offError](../ad/BannerAd.offError.html)
-    *   [RewardedVideoAd.onClose](../ad/RewardedVideoAd.onClose.html)
-    *   [BannerAd.offResize](../ad/BannerAd.offResize.html)
-    *   [RewardedVideoAd.offClose](../ad/RewardedVideoAd.offClose.html)
-    *   [RewardedVideoAd.offError](../ad/RewardedVideoAd.offError.html)
-    *   [RewardedVideoAd.onLoad](../ad/RewardedVideoAd.onLoad.html)
-    *   [RewardedVideoAd.offLoad](../ad/RewardedVideoAd.offLoad.html)
-    *   [RewardedVideoAd.onError](../ad/RewardedVideoAd.onError.html)
-    *   [BannerAd.onError](../ad/BannerAd.onError.html)
-    *   [RewardedVideoAd.show](../ad/RewardedVideoAd.show.html)
-    *   [BannerAd.show](../ad/BannerAd.show.html)
 *   [媒体](../media/audio/wx.createInnerAudioContext.html)
     *   [音频](../media/audio/wx.createInnerAudioContext.html)
         *   [wx.createInnerAudioContext](../media/audio/wx.createInnerAudioContext.html)
@@ -450,44 +438,6 @@
 
 #### callback 回调函数
 
-##### 参数
-
-###### Object res
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>属性</th>
-
-<th>类型</th>
-
-<th>说明</th>
-
-<th>支持版本</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>shareTickets</td>
-
-<td>Array.<string></td>
-
-<td>每一项是一个 String 类型的 ShareTicket ，对应每个群。如果此次转发是带 shareTicket 的转发则会有回调此参数。可作为 wx.getShareInfo() 的参数来获取群 id</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
 ##### 返回值
 
 ###### ShareOption
@@ -543,42 +493,6 @@
 <td>string</td>
 
 <td>查询字符串，必须是 key1=val1&key2=val2 的格式。从这条转发消息进入后，可通过 wx.onLaunch() 或 wx.onShow 获取启动参数中的 query。</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>success</td>
-
-<td>function</td>
-
-<td>转发成功的回调函数</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>fail</td>
-
-<td>function</td>
-
-<td>转发失败的回调函数</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>complete</td>
-
-<td>function</td>
-
-<td>转发完成的回调函数</td>
 
 </tr>
 

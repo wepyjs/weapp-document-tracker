@@ -229,10 +229,17 @@
         *   [UserInfoButton.onTap](../open-api/user-info/UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](../open-api/user-info/UserInfoButton.offTap.html)
         *   [UserInfoButton.show](../open-api/user-info/UserInfoButton.show.html)
-    *   [设置](../open-api/setting/wx.getSetting.html)
+    *   [设置](../open-api/setting/wx.createOpenSettingButton.html)
+        *   [wx.createOpenSettingButton](../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../open-api/setting/wx.getSetting.html)
         *   [wx.openSetting](../open-api/setting/wx.openSetting.html)
         *   [AuthSetting](../open-api/setting/AuthSetting.html)
+        *   [OpenSettingButton](../open-api/setting/OpenSettingButton.html)
+        *   [OpenSettingButton.destroy](../open-api/setting/OpenSettingButton.destroy.html)
+        *   [OpenSettingButton.hide](../open-api/setting/OpenSettingButton.hide.html)
+        *   [OpenSettingButton.onTap](../open-api/setting/OpenSettingButton.onTap.html)
+        *   [OpenSettingButton.offTap](../open-api/setting/OpenSettingButton.offTap.html)
+        *   [OpenSettingButton.show](../open-api/setting/OpenSettingButton.show.html)
     *   [微信运动](../open-api/werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../open-api/werun/wx.getWeRunData.html)
     *   [授权](../open-api/authorize/wx.authorize.html)
@@ -240,7 +247,7 @@
     *   [游戏圈](../open-api/game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../open-api/game-club/wx.createGameClubButton.html)
         *   [GameClubButton](../open-api/game-club/GameClubButton.html)
-        *   [UserInfoButton.destroy](../open-api/game-club/UserInfoButton.destroy.html)
+        *   [GameClubButton.destroy](../open-api/game-club/GameClubButton.destroy.html)
         *   [GameClubButton.hide](../open-api/game-club/GameClubButton.hide.html)
         *   [GameClubButton.show](../open-api/game-club/GameClubButton.show.html)
     *   [客服消息](../open-api/customer-message/openCustomerServiceConversation.html)
@@ -322,25 +329,6 @@
 *   [广告](../ad/wx.createBannerAd.html)
     *   [wx.createBannerAd](../ad/wx.createBannerAd.html)
     *   [wx.createRewardedVideoAd](../ad/wx.createRewardedVideoAd.html)
-    *   [BannerAd](../ad/BannerAd.html)
-    *   [RewardedVideoAd](../ad/RewardedVideoAd.html)
-    *   [BannerAd.destroy](../ad/BannerAd.destroy.html)
-    *   [BannerAd.hide](../ad/BannerAd.hide.html)
-    *   [RewardedVideoAd.load](../ad/RewardedVideoAd.load.html)
-    *   [BannerAd.onLoad](../ad/BannerAd.onLoad.html)
-    *   [BannerAd.offLoad](../ad/BannerAd.offLoad.html)
-    *   [BannerAd.onResize](../ad/BannerAd.onResize.html)
-    *   [BannerAd.offError](../ad/BannerAd.offError.html)
-    *   [RewardedVideoAd.onClose](../ad/RewardedVideoAd.onClose.html)
-    *   [BannerAd.offResize](../ad/BannerAd.offResize.html)
-    *   [RewardedVideoAd.offClose](../ad/RewardedVideoAd.offClose.html)
-    *   [RewardedVideoAd.offError](../ad/RewardedVideoAd.offError.html)
-    *   [RewardedVideoAd.onLoad](../ad/RewardedVideoAd.onLoad.html)
-    *   [RewardedVideoAd.offLoad](../ad/RewardedVideoAd.offLoad.html)
-    *   [RewardedVideoAd.onError](../ad/RewardedVideoAd.onError.html)
-    *   [BannerAd.onError](../ad/BannerAd.onError.html)
-    *   [RewardedVideoAd.show](../ad/RewardedVideoAd.show.html)
-    *   [BannerAd.show](../ad/BannerAd.show.html)
 *   [媒体](../media/audio/wx.createInnerAudioContext.html)
     *   [音频](../media/audio/wx.createInnerAudioContext.html)
         *   [wx.createInnerAudioContext](../media/audio/wx.createInnerAudioContext.html)
@@ -472,85 +460,15 @@
 
 <tr>
 
-<td>filePath</td>
-
-<td>string</td>
-
 <td></td>
-
-<td>是</td>
-
-<td>要读取的文件的路径</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>encoding</td>
-
-<td>string</td>
-
-<td>utf8</td>
-
-<td>否</td>
-
-<td>指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>success</td>
-
-<td>function</td>
-
-<td></td>
-
-<td>否</td>
-
-<td>接口调用成功的回调函数</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>fail</td>
-
-<td>function</td>
-
-<td></td>
-
-<td>否</td>
-
-<td>接口调用失败的回调函数</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>complete</td>
-
-<td>function</td>
-
-<td></td>
-
-<td>否</td>
-
-<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
 </tr>
 
 </tbody>
 
 </table>
+
+| filePath | string | | 是 | 要读取的文件的路径 | | | encoding | string | utf8 | 否 | 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容 | | | success | function | | 否 | 接口调用成功的回调函数 | | | fail | function | | 否 | 接口调用失败的回调函数 | | | complete | function | | 否 | 接口调用结束的回调函数（调用成功、失败都会执行） | |
 
 **object.encoding 的合法值**
 

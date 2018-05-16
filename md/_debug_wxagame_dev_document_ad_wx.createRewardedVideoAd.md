@@ -229,10 +229,17 @@
         *   [UserInfoButton.onTap](../open-api/user-info/UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](../open-api/user-info/UserInfoButton.offTap.html)
         *   [UserInfoButton.show](../open-api/user-info/UserInfoButton.show.html)
-    *   [设置](../open-api/setting/wx.getSetting.html)
+    *   [设置](../open-api/setting/wx.createOpenSettingButton.html)
+        *   [wx.createOpenSettingButton](../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../open-api/setting/wx.getSetting.html)
         *   [wx.openSetting](../open-api/setting/wx.openSetting.html)
         *   [AuthSetting](../open-api/setting/AuthSetting.html)
+        *   [OpenSettingButton](../open-api/setting/OpenSettingButton.html)
+        *   [OpenSettingButton.destroy](../open-api/setting/OpenSettingButton.destroy.html)
+        *   [OpenSettingButton.hide](../open-api/setting/OpenSettingButton.hide.html)
+        *   [OpenSettingButton.onTap](../open-api/setting/OpenSettingButton.onTap.html)
+        *   [OpenSettingButton.offTap](../open-api/setting/OpenSettingButton.offTap.html)
+        *   [OpenSettingButton.show](../open-api/setting/OpenSettingButton.show.html)
     *   [微信运动](../open-api/werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../open-api/werun/wx.getWeRunData.html)
     *   [授权](../open-api/authorize/wx.authorize.html)
@@ -240,7 +247,7 @@
     *   [游戏圈](../open-api/game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../open-api/game-club/wx.createGameClubButton.html)
         *   [GameClubButton](../open-api/game-club/GameClubButton.html)
-        *   [UserInfoButton.destroy](../open-api/game-club/UserInfoButton.destroy.html)
+        *   [GameClubButton.destroy](../open-api/game-club/GameClubButton.destroy.html)
         *   [GameClubButton.hide](../open-api/game-club/GameClubButton.hide.html)
         *   [GameClubButton.show](../open-api/game-club/GameClubButton.show.html)
     *   [客服消息](../open-api/customer-message/openCustomerServiceConversation.html)
@@ -322,25 +329,6 @@
 *   [广告](wx.createBannerAd.html)
     *   [wx.createBannerAd](wx.createBannerAd.html)
     *   [wx.createRewardedVideoAd](wx.createRewardedVideoAd.html)
-    *   [BannerAd](BannerAd.html)
-    *   [RewardedVideoAd](RewardedVideoAd.html)
-    *   [BannerAd.destroy](BannerAd.destroy.html)
-    *   [BannerAd.hide](BannerAd.hide.html)
-    *   [RewardedVideoAd.load](RewardedVideoAd.load.html)
-    *   [BannerAd.onLoad](BannerAd.onLoad.html)
-    *   [BannerAd.offLoad](BannerAd.offLoad.html)
-    *   [BannerAd.onResize](BannerAd.onResize.html)
-    *   [BannerAd.offError](BannerAd.offError.html)
-    *   [RewardedVideoAd.onClose](RewardedVideoAd.onClose.html)
-    *   [BannerAd.offResize](BannerAd.offResize.html)
-    *   [RewardedVideoAd.offClose](RewardedVideoAd.offClose.html)
-    *   [RewardedVideoAd.offError](RewardedVideoAd.offError.html)
-    *   [RewardedVideoAd.onLoad](RewardedVideoAd.onLoad.html)
-    *   [RewardedVideoAd.offLoad](RewardedVideoAd.offLoad.html)
-    *   [RewardedVideoAd.onError](RewardedVideoAd.onError.html)
-    *   [BannerAd.onError](BannerAd.onError.html)
-    *   [RewardedVideoAd.show](RewardedVideoAd.show.html)
-    *   [BannerAd.show](BannerAd.show.html)
 *   [媒体](../media/audio/wx.createInnerAudioContext.html)
     *   [音频](../media/audio/wx.createInnerAudioContext.html)
         *   [wx.createInnerAudioContext](../media/audio/wx.createInnerAudioContext.html)
@@ -474,15 +462,7 @@
 
 <tr>
 
-<td>adUnitId</td>
-
-<td>string</td>
-
 <td></td>
-
-<td>是</td>
-
-<td>广告单元 id</td>
 
 </tr>
 
@@ -490,9 +470,11 @@
 
 </table>
 
+| adUnitId | string | | 是 | 广告单元 id | |
+
 #### 返回值
 
-##### [RewardedVideoAd](RewardedVideoAd.html)
+##### <a href="">RewardedVideoAd</a>
 
 激励视频广告组件
 
@@ -539,6 +521,6 @@
 
 </div>
 
-[](wx.createBannerAd.html)[](BannerAd.html)</div>
+[](wx.createBannerAd.html)[](../media/audio/wx.createInnerAudioContext.html)</div>
 
 </div>

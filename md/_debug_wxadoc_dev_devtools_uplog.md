@@ -139,6 +139,18 @@
 
 <section class="normal markdown-section">
 
+### 2018.05.16 基础库更新（2.0.8）
+
+1.  `U` **仅针对开发工具**，更新小程序/小游戏转发相关接口，移除转发回调
+
+### 2018.05.15 基础库更新（2.0.7）
+
+1.  `U` **仅针对开发工具**，废弃小程序/小游戏 `wx.openSetting` 接口
+2.  `U` **仅针对开发工具**，废弃小程序 `wx.navigateToMiniProgram` 接口
+3.  `U` 更新小程序组件 `<button>` 新增 `open-type` 属性有效值 `openSetting` [详情](../component/button.html)
+4.  `U` 更新小程序组件 `<navigator>` 新增 `target` 属性可跳转到绑定的小程序 [详情](../component/navigator.html)
+5.  `A` 新增小游戏接口 `wx.createOpenSettingButton` 接口 [详情](https://developers.weixin.qq.com/minigame/dev/document/open-api/setting/wx.createOpenSettingButton.html)
+
 ### 历史版本下载 2017.08.30 (0.22.203100)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_darwin&from=mpwiki)

@@ -229,10 +229,17 @@
         *   [UserInfoButton.onTap](../../open-api/user-info/UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](../../open-api/user-info/UserInfoButton.offTap.html)
         *   [UserInfoButton.show](../../open-api/user-info/UserInfoButton.show.html)
-    *   [设置](../../open-api/setting/wx.getSetting.html)
+    *   [设置](../../open-api/setting/wx.createOpenSettingButton.html)
+        *   [wx.createOpenSettingButton](../../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../../open-api/setting/wx.getSetting.html)
         *   [wx.openSetting](../../open-api/setting/wx.openSetting.html)
         *   [AuthSetting](../../open-api/setting/AuthSetting.html)
+        *   [OpenSettingButton](../../open-api/setting/OpenSettingButton.html)
+        *   [OpenSettingButton.destroy](../../open-api/setting/OpenSettingButton.destroy.html)
+        *   [OpenSettingButton.hide](../../open-api/setting/OpenSettingButton.hide.html)
+        *   [OpenSettingButton.onTap](../../open-api/setting/OpenSettingButton.onTap.html)
+        *   [OpenSettingButton.offTap](../../open-api/setting/OpenSettingButton.offTap.html)
+        *   [OpenSettingButton.show](../../open-api/setting/OpenSettingButton.show.html)
     *   [微信运动](../../open-api/werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../../open-api/werun/wx.getWeRunData.html)
     *   [授权](../../open-api/authorize/wx.authorize.html)
@@ -240,7 +247,7 @@
     *   [游戏圈](../../open-api/game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../../open-api/game-club/wx.createGameClubButton.html)
         *   [GameClubButton](../../open-api/game-club/GameClubButton.html)
-        *   [UserInfoButton.destroy](../../open-api/game-club/UserInfoButton.destroy.html)
+        *   [GameClubButton.destroy](../../open-api/game-club/GameClubButton.destroy.html)
         *   [GameClubButton.hide](../../open-api/game-club/GameClubButton.hide.html)
         *   [GameClubButton.show](../../open-api/game-club/GameClubButton.show.html)
     *   [客服消息](../../open-api/customer-message/openCustomerServiceConversation.html)
@@ -322,25 +329,6 @@
 *   [广告](../../ad/wx.createBannerAd.html)
     *   [wx.createBannerAd](../../ad/wx.createBannerAd.html)
     *   [wx.createRewardedVideoAd](../../ad/wx.createRewardedVideoAd.html)
-    *   [BannerAd](../../ad/BannerAd.html)
-    *   [RewardedVideoAd](../../ad/RewardedVideoAd.html)
-    *   [BannerAd.destroy](../../ad/BannerAd.destroy.html)
-    *   [BannerAd.hide](../../ad/BannerAd.hide.html)
-    *   [RewardedVideoAd.load](../../ad/RewardedVideoAd.load.html)
-    *   [BannerAd.onLoad](../../ad/BannerAd.onLoad.html)
-    *   [BannerAd.offLoad](../../ad/BannerAd.offLoad.html)
-    *   [BannerAd.onResize](../../ad/BannerAd.onResize.html)
-    *   [BannerAd.offError](../../ad/BannerAd.offError.html)
-    *   [RewardedVideoAd.onClose](../../ad/RewardedVideoAd.onClose.html)
-    *   [BannerAd.offResize](../../ad/BannerAd.offResize.html)
-    *   [RewardedVideoAd.offClose](../../ad/RewardedVideoAd.offClose.html)
-    *   [RewardedVideoAd.offError](../../ad/RewardedVideoAd.offError.html)
-    *   [RewardedVideoAd.onLoad](../../ad/RewardedVideoAd.onLoad.html)
-    *   [RewardedVideoAd.offLoad](../../ad/RewardedVideoAd.offLoad.html)
-    *   [RewardedVideoAd.onError](../../ad/RewardedVideoAd.onError.html)
-    *   [BannerAd.onError](../../ad/BannerAd.onError.html)
-    *   [RewardedVideoAd.show](../../ad/RewardedVideoAd.show.html)
-    *   [BannerAd.show](../../ad/BannerAd.show.html)
 *   [媒体](../audio/wx.createInnerAudioContext.html)
     *   [音频](../audio/wx.createInnerAudioContext.html)
         *   [wx.createInnerAudioContext](../audio/wx.createInnerAudioContext.html)
@@ -472,229 +460,15 @@
 
 <tr>
 
-<td>x</td>
-
-<td>number</td>
-
-<td>0</td>
-
-<td>否</td>
-
-<td>视频的左上角横坐标</td>
-
 <td></td>
-
-</tr>
-
-<tr>
-
-<td>y</td>
-
-<td>number</td>
-
-<td>0</td>
-
-<td>否</td>
-
-<td>视频的左上角纵坐标</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>width</td>
-
-<td>number</td>
-
-<td>300</td>
-
-<td>否</td>
-
-<td>视频的宽度</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>height</td>
-
-<td>number</td>
-
-<td>150</td>
-
-<td>否</td>
-
-<td>视频的高度</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>src</td>
-
-<td>number</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>视频的资源地址</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>poster</td>
-
-<td>number</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>视频的封面</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>initialTime</td>
-
-<td>number</td>
-
-<td>0</td>
-
-<td>否</td>
-
-<td>视频的初始播放位置，单位为 s 秒</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>playbackRate</td>
-
-<td>number</td>
-
-<td>1.0</td>
-
-<td>否</td>
-
-<td>视频的播放速率，有效值有 0.5、0.8、1.0、1.25、1.5</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>live</td>
-
-<td>number</td>
-
-<td>0</td>
-
-<td>否</td>
-
-<td>视频是否为直播</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>objectFit</td>
-
-<td>number</td>
-
-<td>'contain'</td>
-
-<td>否</td>
-
-<td>视频的缩放模式</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>controls</td>
-
-<td>number</td>
-
-<td>true</td>
-
-<td>否</td>
-
-<td>视频是否显示控件</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>autoplay</td>
-
-<td>number</td>
-
-<td>false</td>
-
-<td>否</td>
-
-<td>视频是否自动播放</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>loop</td>
-
-<td>number</td>
-
-<td>false</td>
-
-<td>否</td>
-
-<td>视频是否是否循环播放</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>muted</td>
-
-<td>number</td>
-
-<td>false</td>
-
-<td>否</td>
-
-<td>视频是否禁音播放</td>
 
 </tr>
 
 </tbody>
 
 </table>
+
+| x | number | 0 | 否 | 视频的左上角横坐标 | | | y | number | 0 | 否 | 视频的左上角纵坐标 | | | width | number | 300 | 否 | 视频的宽度 | | | height | number | 150 | 否 | 视频的高度 | | | src | number | | 是 | 视频的资源地址 | | | poster | number | | 是 | 视频的封面 | | | initialTime | number | 0 | 否 | 视频的初始播放位置，单位为 s 秒 | | | playbackRate | number | 1.0 | 否 | 视频的播放速率，有效值有 0.5、0.8、1.0、1.25、1.5 | | | live | number | 0 | 否 | 视频是否为直播 | | | objectFit | number | 'contain' | 否 | 视频的缩放模式 | | | controls | number | true | 否 | 视频是否显示控件 | | | autoplay | number | false | 否 | 视频是否自动播放 | | | loop | number | false | 否 | 视频是否是否循环播放 | | | muted | number | false | 否 | 视频是否禁音播放 | |
 
 **object.objectFit 的合法值**
 

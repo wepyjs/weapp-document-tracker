@@ -229,10 +229,17 @@
         *   [UserInfoButton.onTap](../user-info/UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](../user-info/UserInfoButton.offTap.html)
         *   [UserInfoButton.show](../user-info/UserInfoButton.show.html)
-    *   [设置](../setting/wx.getSetting.html)
+    *   [设置](../setting/wx.createOpenSettingButton.html)
+        *   [wx.createOpenSettingButton](../setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../setting/wx.getSetting.html)
         *   [wx.openSetting](../setting/wx.openSetting.html)
         *   [AuthSetting](../setting/AuthSetting.html)
+        *   [OpenSettingButton](../setting/OpenSettingButton.html)
+        *   [OpenSettingButton.destroy](../setting/OpenSettingButton.destroy.html)
+        *   [OpenSettingButton.hide](../setting/OpenSettingButton.hide.html)
+        *   [OpenSettingButton.onTap](../setting/OpenSettingButton.onTap.html)
+        *   [OpenSettingButton.offTap](../setting/OpenSettingButton.offTap.html)
+        *   [OpenSettingButton.show](../setting/OpenSettingButton.show.html)
     *   [微信运动](../werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
     *   [授权](../authorize/wx.authorize.html)
@@ -240,7 +247,7 @@
     *   [游戏圈](../game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../game-club/wx.createGameClubButton.html)
         *   [GameClubButton](../game-club/GameClubButton.html)
-        *   [UserInfoButton.destroy](../game-club/UserInfoButton.destroy.html)
+        *   [GameClubButton.destroy](../game-club/GameClubButton.destroy.html)
         *   [GameClubButton.hide](../game-club/GameClubButton.hide.html)
         *   [GameClubButton.show](../game-club/GameClubButton.show.html)
     *   [客服消息](../customer-message/openCustomerServiceConversation.html)
@@ -322,25 +329,6 @@
 *   [广告](../../ad/wx.createBannerAd.html)
     *   [wx.createBannerAd](../../ad/wx.createBannerAd.html)
     *   [wx.createRewardedVideoAd](../../ad/wx.createRewardedVideoAd.html)
-    *   [BannerAd](../../ad/BannerAd.html)
-    *   [RewardedVideoAd](../../ad/RewardedVideoAd.html)
-    *   [BannerAd.destroy](../../ad/BannerAd.destroy.html)
-    *   [BannerAd.hide](../../ad/BannerAd.hide.html)
-    *   [RewardedVideoAd.load](../../ad/RewardedVideoAd.load.html)
-    *   [BannerAd.onLoad](../../ad/BannerAd.onLoad.html)
-    *   [BannerAd.offLoad](../../ad/BannerAd.offLoad.html)
-    *   [BannerAd.onResize](../../ad/BannerAd.onResize.html)
-    *   [BannerAd.offError](../../ad/BannerAd.offError.html)
-    *   [RewardedVideoAd.onClose](../../ad/RewardedVideoAd.onClose.html)
-    *   [BannerAd.offResize](../../ad/BannerAd.offResize.html)
-    *   [RewardedVideoAd.offClose](../../ad/RewardedVideoAd.offClose.html)
-    *   [RewardedVideoAd.offError](../../ad/RewardedVideoAd.offError.html)
-    *   [RewardedVideoAd.onLoad](../../ad/RewardedVideoAd.onLoad.html)
-    *   [RewardedVideoAd.offLoad](../../ad/RewardedVideoAd.offLoad.html)
-    *   [RewardedVideoAd.onError](../../ad/RewardedVideoAd.onError.html)
-    *   [BannerAd.onError](../../ad/BannerAd.onError.html)
-    *   [RewardedVideoAd.show](../../ad/RewardedVideoAd.show.html)
-    *   [BannerAd.show](../../ad/BannerAd.show.html)
 *   [媒体](../../media/audio/wx.createInnerAudioContext.html)
     *   [音频](../../media/audio/wx.createInnerAudioContext.html)
         *   [wx.createInnerAudioContext](../../media/audio/wx.createInnerAudioContext.html)
@@ -474,69 +462,15 @@
 
 <tr>
 
-<td>keyList</td>
-
-<td>Array.<string></td>
-
 <td></td>
-
-<td>是</td>
-
-<td>要删除掉 key 列表</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>success</td>
-
-<td>function</td>
-
-<td></td>
-
-<td>否</td>
-
-<td>接口调用成功的回调函数</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>fail</td>
-
-<td>function</td>
-
-<td></td>
-
-<td>否</td>
-
-<td>接口调用失败的回调函数</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>complete</td>
-
-<td>function</td>
-
-<td></td>
-
-<td>否</td>
-
-<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
 </tr>
 
 </tbody>
 
 </table>
+
+| keyList | Array.<string> | | 是 | 要删除掉 key 列表 | | | success | function | | 否 | 接口调用成功的回调函数 | | | fail | function | | 否 | 接口调用失败的回调函数 | | | complete | function | | 否 | 接口调用结束的回调函数（调用成功、失败都会执行） | |
 
 </section>
 

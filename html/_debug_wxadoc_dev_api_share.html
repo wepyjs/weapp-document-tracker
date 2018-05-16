@@ -5505,70 +5505,6 @@
 <td></td>
 <td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.5.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.5.0</a></td>
 </tr>
-<tr>
-<td>success</td>
-<td>&#x8F6C;&#x53D1;&#x6210;&#x529F;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td>
-<td></td>
-<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.1.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.1.0</a></td>
-</tr>
-<tr>
-<td>fail</td>
-<td>&#x8F6C;&#x53D1;&#x5931;&#x8D25;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td>
-<td></td>
-<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.1.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.1.0</a></td>
-</tr>
-<tr>
-<td>complete</td>
-<td>&#x8F6C;&#x53D1;&#x7ED3;&#x675F;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF08;&#x8F6C;&#x53D1;&#x6210;&#x529F;&#x3001;&#x5931;&#x8D25;&#x90FD;&#x4F1A;&#x6267;&#x884C;</td>
-<td></td>
-<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.1.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.1.0</a></td>
-</tr>
-</tbody>
-</table>
-<p><strong>&#x56DE;&#x8C03;&#x7ED3;&#x679C;&#xFF1A;</strong></p>
-<table>
-<thead>
-<tr>
-<th>&#x56DE;&#x8C03;&#x7C7B;&#x578B;</th>
-<th>errMsg</th>
-<th>&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>success</td>
-<td>shareAppMessage:ok</td>
-<td>&#x8F6C;&#x53D1;&#x6210;&#x529F;</td>
-</tr>
-<tr>
-<td>fail</td>
-<td>shareAppMessage:fail cancel</td>
-<td>&#x7528;&#x6237;&#x53D6;&#x6D88;&#x8F6C;&#x53D1;</td>
-</tr>
-<tr>
-<td>fail</td>
-<td>shareAppMessage:fail (detail message)</td>
-<td>&#x8F6C;&#x53D1;&#x5931;&#x8D25;&#xFF0C;&#x5176;&#x4E2D; detail message &#x4E3A;&#x8BE6;&#x7EC6;&#x5931;&#x8D25;&#x4FE1;&#x606F;</td>
-</tr>
-</tbody>
-</table>
-<p><strong>success&#x56DE;&#x8C03;&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
-<table>
-<thead>
-<tr>
-<th>&#x53C2;&#x6570;</th>
-<th>&#x7C7B;&#x578B;</th>
-<th>&#x8BF4;&#x660E;</th>
-<th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>shareTickets</td>
-<td>StringArray</td>
-<td>shareTicket &#x6570;&#x7EC4;&#xFF0C;&#x6BCF;&#x4E00;&#x9879;&#x662F;&#x4E00;&#x4E2A; shareTicket &#xFF0C;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;&#x8F6C;&#x53D1;&#x5BF9;&#x8C61;</td>
-<td><a href="../framework/compatibility.html" title="&#x57FA;&#x7840;&#x5E93; 1.1.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;">1.1.0</a></td>
-</tr>
 </tbody>
 </table>
 <p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</strong></p>
@@ -5580,13 +5516,7 @@
     }
     <span class="hljs-keyword">return</span> {
       title: <span class="hljs-string">&apos;&#x81EA;&#x5B9A;&#x4E49;&#x8F6C;&#x53D1;&#x6807;&#x9898;&apos;</span>,
-      path: <span class="hljs-string">&apos;/page/user?id=123&apos;</span>,
-      success: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
-        <span class="hljs-comment">// &#x8F6C;&#x53D1;&#x6210;&#x529F;</span>
-      },
-      fail: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
-        <span class="hljs-comment">// &#x8F6C;&#x53D1;&#x5931;&#x8D25;</span>
-      }
+      path: <span class="hljs-string">&apos;/page/user?id=123&apos;</span>
     }
   }
 })
@@ -5823,7 +5753,7 @@
 </table>
 <p><strong>Tip:</strong> &#x5982;&#x9700;&#x8981;&#x5C55;&#x793A;&#x7FA4;&#x540D;&#x79F0;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<a href="../component/open-data.html">&#x5F00;&#x653E;&#x6570;&#x636E;&#x7EC4;&#x4EF6;</a></p>
 <h2 id="&#x83B7;&#x53D6;&#x66F4;&#x591A;&#x8F6C;&#x53D1;&#x4FE1;&#x606F;">&#x83B7;&#x53D6;&#x66F4;&#x591A;&#x8F6C;&#x53D1;&#x4FE1;&#x606F;</h2>
-<p>&#x901A;&#x5E38;&#x5F00;&#x53D1;&#x8005;&#x5E0C;&#x671B;&#x8F6C;&#x53D1;&#x51FA;&#x53BB;&#x7684;&#x5C0F;&#x7A0B;&#x5E8F;&#x88AB;&#x4E8C;&#x6B21;&#x6253;&#x5F00;&#x7684;&#x65F6;&#x5019;&#x80FD;&#x591F;&#x83B7;&#x53D6;&#x5230;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;&#x7FA4;&#x7684;&#x6807;&#x8BC6;&#x3002;&#x73B0;&#x5728;&#x901A;&#x8FC7;&#x8C03;&#x7528; <code>wx.showShareMenu</code> &#x5E76;&#x4E14;&#x8BBE;&#x7F6E; <code>withShareTicket</code> &#x4E3A; <code>true</code> &#xFF0C;&#x5F53;&#x7528;&#x6237;&#x5C06;&#x5C0F;&#x7A0B;&#x5E8F;&#x8F6C;&#x53D1;&#x5230;&#x4EFB;&#x4E00;&#x7FA4;&#x804A;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#x6B64;&#x6B21;&#x8F6C;&#x53D1;&#x7684;  <code>shareTicket</code>&#xFF0C;&#x6B64;&#x8F6C;&#x53D1;&#x5361;&#x7247;&#x5728;&#x7FA4;&#x804A;&#x4E2D;&#x88AB;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x6253;&#x5F00;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5728; <a href="../framework/app-service/app.html">App.onLaunch()</a> &#x6216; <a href="../framework/app-service/app.html">App.onShow</a>  &#x83B7;&#x53D6;&#x5230;&#x53E6;&#x4E00;&#x4E2A; <code>shareTicket</code>&#x3002;&#x8FD9;&#x4E24;&#x6B65;&#x83B7;&#x53D6;&#x5230;&#x7684; <code>shareTicket</code> &#x5747;&#x53EF;&#x901A;&#x8FC7; <a href="#wxgetshareinfoobject">wx.getShareInfo()</a> &#x63A5;&#x53E3;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#x76F8;&#x540C;&#x7684;&#x8F6C;&#x53D1;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x901A;&#x5E38;&#x5F00;&#x53D1;&#x8005;&#x5E0C;&#x671B;&#x8F6C;&#x53D1;&#x51FA;&#x53BB;&#x7684;&#x5C0F;&#x7A0B;&#x5E8F;&#x88AB;&#x4E8C;&#x6B21;&#x6253;&#x5F00;&#x7684;&#x65F6;&#x5019;&#x80FD;&#x591F;&#x83B7;&#x53D6;&#x5230;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;&#x7FA4;&#x7684;&#x6807;&#x8BC6;&#x3002;&#x73B0;&#x5728;&#x901A;&#x8FC7;&#x8C03;&#x7528; <code>wx.showShareMenu</code> &#x5E76;&#x4E14;&#x8BBE;&#x7F6E; <code>withShareTicket</code> &#x4E3A; <code>true</code> &#xFF0C;&#x5F53;&#x7528;&#x6237;&#x5C06;&#x5C0F;&#x7A0B;&#x5E8F;&#x8F6C;&#x53D1;&#x5230;&#x4EFB;&#x4E00;&#x7FA4;&#x804A;&#x4E4B;&#x540E;&#xFF0C;&#x6B64;&#x8F6C;&#x53D1;&#x5361;&#x7247;&#x5728;&#x7FA4;&#x804A;&#x4E2D;&#x88AB;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x6253;&#x5F00;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5728; <a href="../framework/app-service/app.html">App.onLaunch()</a> &#x6216; <a href="../framework/app-service/app.html">App.onShow</a>  &#x83B7;&#x53D6;&#x5230;&#x4E00;&#x4E2A; <code>shareTicket</code>&#x3002;&#x901A;&#x8FC7;&#x8C03;&#x7528; <a href="#wxgetshareinfoobject">wx.getShareInfo()</a> &#x63A5;&#x53E3;&#x4F20;&#x5165;&#x6B64; <code>shareTicket</code> &#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#x8F6C;&#x53D1;&#x4FE1;&#x606F;&#x3002;</p>
 <h2 id="&#x9875;&#x9762;&#x5185;&#x53D1;&#x8D77;&#x8F6C;&#x53D1;">&#x9875;&#x9762;&#x5185;&#x53D1;&#x8D77;&#x8F6C;&#x53D1;</h2>
 <blockquote>
 <p>&#x57FA;&#x7840;&#x5E93; 1.2.0 &#x5F00;&#x59CB;&#x652F;&#x6301;&#xFF0C;&#x4F4E;&#x7248;&#x672C;&#x9700;&#x505A;<a href="../framework/compatibility.html">&#x517C;&#x5BB9;&#x5904;&#x7406;</a></p>

@@ -505,6 +505,22 @@
 
 </tr>
 
+<tr>
+
+<td>bindopensetting</td>
+
+<td>Handler</td>
+
+<td></td>
+
+<td>在打开授权设置页后回调</td>
+
+<td>open-type="openSetting"</td>
+
+<td>[2.0.7](../framework/compatibility.html "基础库 2.0.7 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -701,6 +717,16 @@
 
 </tr>
 
+<tr>
+
+<td>openSetting</td>
+
+<td>打开授权设置页</td>
+
+<td>[2.0.7](../framework/compatibility.html "基础库 2.0.7 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -730,6 +756,7 @@
     <button bindtap="setLoading">点击设置以上按钮loading属性</button>
     <button open-type="contact">进入客服会话</button>
     <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+    <button open-type="openSetting">打开授权设置页</button>
 
     var types = ['default', 'primary', 'warn']
     var pageObject = {

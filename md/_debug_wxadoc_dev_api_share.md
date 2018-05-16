@@ -567,134 +567,6 @@
 
 </tr>
 
-<tr>
-
-<td>success</td>
-
-<td>转发成功的回调函数</td>
-
-<td></td>
-
-<td>[1.1.0](../framework/compatibility.html "基础库 1.1.0 开始支持，低版本需做兼容处理。")</td>
-
-</tr>
-
-<tr>
-
-<td>fail</td>
-
-<td>转发失败的回调函数</td>
-
-<td></td>
-
-<td>[1.1.0](../framework/compatibility.html "基础库 1.1.0 开始支持，低版本需做兼容处理。")</td>
-
-</tr>
-
-<tr>
-
-<td>complete</td>
-
-<td>转发结束的回调函数（转发成功、失败都会执行</td>
-
-<td></td>
-
-<td>[1.1.0](../framework/compatibility.html "基础库 1.1.0 开始支持，低版本需做兼容处理。")</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**回调结果：**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>回调类型</th>
-
-<th>errMsg</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>success</td>
-
-<td>shareAppMessage:ok</td>
-
-<td>转发成功</td>
-
-</tr>
-
-<tr>
-
-<td>fail</td>
-
-<td>shareAppMessage:fail cancel</td>
-
-<td>用户取消转发</td>
-
-</tr>
-
-<tr>
-
-<td>fail</td>
-
-<td>shareAppMessage:fail (detail message)</td>
-
-<td>转发失败，其中 detail message 为详细失败信息</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**success回调参数说明：**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>参数</th>
-
-<th>类型</th>
-
-<th>说明</th>
-
-<th>最低版本</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>shareTickets</td>
-
-<td>StringArray</td>
-
-<td>shareTicket 数组，每一项是一个 shareTicket ，对应一个转发对象</td>
-
-<td>[1.1.0](../framework/compatibility.html "基础库 1.1.0 开始支持，低版本需做兼容处理。")</td>
-
-</tr>
-
 </tbody>
 
 </table>
@@ -709,13 +581,7 @@
         }
         return {
           title: '自定义转发标题',
-          path: '/page/user?id=123',
-          success: function(res) {
-            // 转发成功
-          },
-          fail: function(res) {
-            // 转发失败
-          }
+          path: '/page/user?id=123'
         }
       }
     })
@@ -1156,7 +1022,7 @@
 
 ## 获取更多转发信息
 
-通常开发者希望转发出去的小程序被二次打开的时候能够获取到一些信息，例如群的标识。现在通过调用 `wx.showShareMenu` 并且设置 `withShareTicket` 为 `true` ，当用户将小程序转发到任一群聊之后，可以获取到此次转发的 `shareTicket`，此转发卡片在群聊中被其他用户打开时，可以在 [App.onLaunch()](../framework/app-service/app.html) 或 [App.onShow](../framework/app-service/app.html) 获取到另一个 `shareTicket`。这两步获取到的 `shareTicket` 均可通过 [wx.getShareInfo()](#wxgetshareinfoobject) 接口可以获取到相同的转发信息。
+通常开发者希望转发出去的小程序被二次打开的时候能够获取到一些信息，例如群的标识。现在通过调用 `wx.showShareMenu` 并且设置 `withShareTicket` 为 `true` ，当用户将小程序转发到任一群聊之后，此转发卡片在群聊中被其他用户打开时，可以在 [App.onLaunch()](../framework/app-service/app.html) 或 [App.onShow](../framework/app-service/app.html) 获取到一个 `shareTicket`。通过调用 [wx.getShareInfo()](#wxgetshareinfoobject) 接口传入此 `shareTicket` 可以获取到转发信息。
 
 ## 页面内发起转发
 
