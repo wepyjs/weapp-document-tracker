@@ -460,15 +460,101 @@
 
 <tr>
 
+<td>count</td>
+
+<td>number</td>
+
 <td></td>
+
+<td>是</td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>sizeType</td>
+
+<td>Array.<string></td>
+
+<td></td>
+
+<td>是</td>
+
+<td>所选的图片的尺寸</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>sourceType</td>
+
+<td>Array.<string></td>
+
+<td></td>
+
+<td>是</td>
+
+<td>选择图片的来源</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>success</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用成功的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>complete</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| count | number | | 是 | | | | sizeType | Array.<string> | | 是 | 所选的图片的尺寸 | | | sourceType | Array.<string> | | 是 | 选择图片的来源 | | | success | function | | 否 | 接口调用成功的回调函数 | | | fail | function | | 否 | 接口调用失败的回调函数 | | | complete | function | | 否 | 接口调用结束的回调函数（调用成功、失败都会执行） | |
 
 **object.sizeType 的合法值**
 

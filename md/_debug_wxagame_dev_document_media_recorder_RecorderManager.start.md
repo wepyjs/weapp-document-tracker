@@ -460,15 +460,101 @@
 
 <tr>
 
+<td>duration</td>
+
+<td>number</td>
+
+<td>60000（1 分钟）</td>
+
+<td>否</td>
+
+<td>录音的时长，单位 ms，最大值 600000（10 分钟）</td>
+
 <td></td>
+
+</tr>
+
+<tr>
+
+<td>sampleRate</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>采样率</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>numberOfChannels</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>录音通道数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>encodeBitRate</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>编码码率</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>format</td>
+
+<td>string</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>音频格式</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>frameSize</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>指定帧大小，单位 KB。传入 frameSize 后，每录制指定帧大小的内容后，会回调录制的文件内容，不指定则不会回调</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| duration | number | 60000（1 分钟） | 否 | 录音的时长，单位 ms，最大值 600000（10 分钟） | | | sampleRate | number | | 是 | 采样率 | | | numberOfChannels | number | | 是 | 录音通道数 | | | encodeBitRate | number | | 是 | 编码码率 | | | format | string | | 是 | 音频格式 | | | frameSize | number | | 是 | 指定帧大小，单位 KB。传入 frameSize 后，每录制指定帧大小的内容后，会回调录制的文件内容，不指定则不会回调 | |
 
 **object.sampleRate 的合法值**
 

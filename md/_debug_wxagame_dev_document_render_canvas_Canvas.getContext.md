@@ -504,15 +504,53 @@ webgl 上下文属性，仅当 contextType 为 webgl 时有效
 
 <tr>
 
+<td>antialias</td>
+
+<td>boolean</td>
+
+<td>false</td>
+
+<td>否</td>
+
+<td>表示是否抗锯齿</td>
+
 <td></td>
+
+</tr>
+
+<tr>
+
+<td>preserveDrawingBuffer</td>
+
+<td>boolean</td>
+
+<td>false</td>
+
+<td>否</td>
+
+<td>表示是否绘图完成后是否保留绘图缓冲区</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>antialiasSamples</td>
+
+<td>number</td>
+
+<td>2</td>
+
+<td>否</td>
+
+<td>抗锯齿样本数。最小值为 2，最大不超过系统限制数量，仅 iOS 支持</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| antialias | boolean | false | 否 | 表示是否抗锯齿 | | | preserveDrawingBuffer | boolean | false | 否 | 表示是否绘图完成后是否保留绘图缓冲区 | | | antialiasSamples | number | 2 | 否 | 抗锯齿样本数。最小值为 2，最大不超过系统限制数量，仅 iOS 支持 | |
 
 #### 返回值
 

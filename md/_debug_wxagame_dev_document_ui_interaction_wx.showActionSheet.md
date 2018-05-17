@@ -458,15 +458,85 @@
 
 <tr>
 
+<td>itemList</td>
+
+<td>Array.<string></td>
+
 <td></td>
+
+<td>是</td>
+
+<td>按钮的文字数组，数组长度最大为 6</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>itemColor</td>
+
+<td>string</td>
+
+<td>#000000</td>
+
+<td>否</td>
+
+<td>按钮的文字颜色</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>success</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用成功的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>complete</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| itemList | Array.<string> | | 是 | 按钮的文字数组，数组长度最大为 6 | | | itemColor | string | #000000 | 否 | 按钮的文字颜色 | | | success | function | | 否 | 接口调用成功的回调函数 | | | fail | function | | 否 | 接口调用失败的回调函数 | | | complete | function | | 否 | 接口调用结束的回调函数（调用成功、失败都会执行） | |
 
 </section>
 

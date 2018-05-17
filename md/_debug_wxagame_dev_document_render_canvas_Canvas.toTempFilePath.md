@@ -460,15 +460,181 @@
 
 <tr>
 
+<td>x</td>
+
+<td>number</td>
+
+<td>0</td>
+
+<td>否</td>
+
+<td>截取 canvas 的左上角横坐标</td>
+
 <td></td>
+
+</tr>
+
+<tr>
+
+<td>y</td>
+
+<td>number</td>
+
+<td>0</td>
+
+<td>否</td>
+
+<td>截取 canvas 的左上角纵坐标</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>width</td>
+
+<td>number</td>
+
+<td>canvas 的宽度</td>
+
+<td>否</td>
+
+<td>截取 canvas 的宽度</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>height</td>
+
+<td>number</td>
+
+<td>canvas 的高度</td>
+
+<td>否</td>
+
+<td>截取 canvas 的高度</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>destWidth</td>
+
+<td>number</td>
+
+<td>canvas 的宽度</td>
+
+<td>否</td>
+
+<td>目标文件的宽度，会将截取的部分拉伸或压缩至该数值</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>destHeight</td>
+
+<td>number</td>
+
+<td>canvas 的高度</td>
+
+<td>否</td>
+
+<td>目标文件的高度，会将截取的部分拉伸或压缩至该数值</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>fileType</td>
+
+<td>string</td>
+
+<td>png</td>
+
+<td>否</td>
+
+<td>目标文件的类型</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>quality</td>
+
+<td>number</td>
+
+<td>1.0</td>
+
+<td>否</td>
+
+<td>jpg图片的质量，仅当 fileType 为 jpg 时有效。取值范围为 0.0（最低）- 1.0（最高），不含 0。不在范围内时当作 1.0</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>success</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用成功的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>complete</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| x | number | 0 | 否 | 截取 canvas 的左上角横坐标 | | | y | number | 0 | 否 | 截取 canvas 的左上角纵坐标 | | | width | number | canvas 的宽度 | 否 | 截取 canvas 的宽度 | | | height | number | canvas 的高度 | 否 | 截取 canvas 的高度 | | | destWidth | number | canvas 的宽度 | 否 | 目标文件的宽度，会将截取的部分拉伸或压缩至该数值 | | | destHeight | number | canvas 的高度 | 否 | 目标文件的高度，会将截取的部分拉伸或压缩至该数值 | | | fileType | string | png | 否 | 目标文件的类型 | | | quality | number | 1.0 | 否 | jpg图片的质量，仅当 fileType 为 jpg 时有效。取值范围为 0.0（最低）- 1.0（最高），不含 0。不在范围内时当作 1.0 | | | success | function | | 否 | 接口调用成功的回调函数 | | | fail | function | | 否 | 接口调用失败的回调函数 | | | complete | function | | 否 | 接口调用结束的回调函数（调用成功、失败都会执行） | |
 
 **object.fileType 的合法值**
 

@@ -460,15 +460,85 @@
 
 <tr>
 
+<td>filePath</td>
+
+<td>string</td>
+
 <td></td>
+
+<td>是</td>
+
+<td>要读取的文件的路径</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>encoding</td>
+
+<td>string</td>
+
+<td>utf8</td>
+
+<td>否</td>
+
+<td>指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>success</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用成功的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>complete</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| filePath | string | | 是 | 要读取的文件的路径 | | | encoding | string | utf8 | 否 | 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容 | | | success | function | | 否 | 接口调用成功的回调函数 | | | fail | function | | 否 | 接口调用失败的回调函数 | | | complete | function | | 否 | 接口调用结束的回调函数（调用成功、失败都会执行） | |
 
 **object.encoding 的合法值**
 

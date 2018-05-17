@@ -462,15 +462,37 @@
 
 <tr>
 
+<td>icon</td>
+
+<td>string</td>
+
 <td></td>
+
+<td>是</td>
+
+<td>游戏圈按钮的图标</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>style</td>
+
+<td>Object</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>按钮的样式</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| icon | string | | 是 | 游戏圈按钮的图标 | | | style | Object | | 是 | 按钮的样式 | |
 
 **object.icon 的合法值**
 
@@ -554,15 +576,69 @@
 
 <tr>
 
+<td>left</td>
+
+<td>number</td>
+
 <td></td>
+
+<td>是</td>
+
+<td>左上角横坐标</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>top</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>左上角纵坐标</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>width</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>宽度</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>height</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>高度</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| left | number | | 是 | 左上角横坐标 | | | top | number | | 是 | 左上角纵坐标 | | | width | number | | 是 | 宽度 | | | height | number | | 是 | 高度 | |
 
 #### 返回值
 

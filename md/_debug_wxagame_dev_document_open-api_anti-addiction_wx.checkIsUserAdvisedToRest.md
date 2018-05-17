@@ -462,15 +462,69 @@
 
 <tr>
 
+<td>todayPlayedTime</td>
+
+<td>number</td>
+
 <td></td>
+
+<td>是</td>
+
+<td>今天已经玩游戏的时间，单位：秒</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>success</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用成功的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>complete</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| todayPlayedTime | number | | 是 | 今天已经玩游戏的时间，单位：秒 | | | success | function | | 否 | 接口调用成功的回调函数 | | | fail | function | | 否 | 接口调用失败的回调函数 | | | complete | function | | 否 | 接口调用结束的回调函数（调用成功、失败都会执行） | |
 
 #### success 回调函数
 

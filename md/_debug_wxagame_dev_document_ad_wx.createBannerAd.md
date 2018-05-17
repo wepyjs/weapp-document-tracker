@@ -462,15 +462,37 @@
 
 <tr>
 
+<td>adUnitId</td>
+
+<td>string</td>
+
 <td></td>
+
+<td>是</td>
+
+<td>广告单元 id</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>style</td>
+
+<td>Object</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>banner 广告组件的样式</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| adUnitId | string | | 是 | 广告单元 id | | | style | Object | | 是 | banner 广告组件的样式 | |
 
 **object.style 的结构**
 
@@ -500,15 +522,69 @@
 
 <tr>
 
+<td>left</td>
+
+<td>number</td>
+
 <td></td>
+
+<td>是</td>
+
+<td>banner 广告组件的左上角横坐标</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>top</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>banner 广告组件的左上角纵坐标</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>width</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>banner 广告组件的宽度</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>height</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>banner 广告组件的高度</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| left | number | | 是 | banner 广告组件的左上角横坐标 | | | top | number | | 是 | banner 广告组件的左上角纵坐标 | | | width | number | | 是 | banner 广告组件的宽度 | | | height | number | | 是 | banner 广告组件的高度 | |
 
 #### 返回值
 

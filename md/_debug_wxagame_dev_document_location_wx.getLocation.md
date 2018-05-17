@@ -460,15 +460,69 @@
 
 <tr>
 
+<td>type</td>
+
+<td>string</td>
+
+<td>wgs84</td>
+
+<td>否</td>
+
+<td>wgs84 返回 gps 坐标，gcj02 返回可用于 wx.openLocation 的坐标</td>
+
 <td></td>
+
+</tr>
+
+<tr>
+
+<td>success</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用成功的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>complete</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| type | string | wgs84 | 否 | wgs84 返回 gps 坐标，gcj02 返回可用于 wx.openLocation 的坐标 | | | success | function | | 否 | 接口调用成功的回调函数 | | | fail | function | | 否 | 接口调用失败的回调函数 | | | complete | function | | 否 | 接口调用结束的回调函数（调用成功、失败都会执行） | |
 
 #### success 回调函数
 

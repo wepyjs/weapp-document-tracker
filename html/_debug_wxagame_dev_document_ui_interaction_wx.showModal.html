@@ -5008,20 +5008,86 @@
 </thead>
 <tbody>
 <tr>
+<td>title</td>
+<td>string</td>
 <td></td>
+<td>&#x662F;</td>
+<td>&#x63D0;&#x793A;&#x7684;&#x6807;&#x9898;</td>
+<td></td>
+</tr>
+<tr>
+<td>content</td>
+<td>string</td>
+<td></td>
+<td>&#x662F;</td>
+<td>&#x63D0;&#x793A;&#x7684;&#x5185;&#x5BB9;</td>
+<td></td>
+</tr>
+<tr>
+<td>showCancel</td>
+<td>boolean</td>
+<td>true</td>
+<td>&#x5426;</td>
+<td>&#x662F;&#x5426;&#x663E;&#x793A;&#x53D6;&#x6D88;&#x6309;&#x94AE;</td>
+<td></td>
+</tr>
+<tr>
+<td>cancelText</td>
+<td>string</td>
+<td></td>
+<td>&#x662F;</td>
+<td>&#x53D6;&#x6D88;&#x6309;&#x94AE;&#x7684;&#x6587;&#x5B57;&#xFF0C;&#x6700;&#x591A; 4 &#x4E2A;&#x5B57;&#x7B26;&#x4E32;</td>
+<td></td>
+</tr>
+<tr>
+<td>cancelColor</td>
+<td>string</td>
+<td>#000000</td>
+<td>&#x5426;</td>
+<td>&#x53D6;&#x6D88;&#x6309;&#x94AE;&#x7684;&#x6587;&#x5B57;&#x989C;&#x8272;&#xFF0C;&#x5FC5;&#x987B;&#x662F; 16 &#x8FDB;&#x5236;&#x683C;&#x5F0F;&#x7684;&#x989C;&#x8272;&#x5B57;&#x7B26;&#x4E32;</td>
+<td></td>
+</tr>
+<tr>
+<td>confirmText</td>
+<td>string</td>
+<td></td>
+<td>&#x662F;</td>
+<td>&#x786E;&#x8BA4;&#x6309;&#x94AE;&#x7684;&#x6587;&#x5B57;&#xFF0C;&#x6700;&#x591A; 4 &#x4E2A;&#x5B57;&#x7B26;&#x4E32;</td>
+<td></td>
+</tr>
+<tr>
+<td>confirmColor</td>
+<td>string</td>
+<td>#3cc51f</td>
+<td>&#x5426;</td>
+<td>&#x786E;&#x8BA4;&#x6309;&#x94AE;&#x7684;&#x6587;&#x5B57;&#x989C;&#x8272;&#xFF0C;&#x5FC5;&#x987B;&#x662F; 16 &#x8FDB;&#x5236;&#x683C;&#x5F0F;&#x7684;&#x989C;&#x8272;&#x5B57;&#x7B26;&#x4E32;</td>
+<td></td>
+</tr>
+<tr>
+<td>success</td>
+<td>function</td>
+<td></td>
+<td>&#x5426;</td>
+<td>&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x6210;&#x529F;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td>
+<td></td>
+</tr>
+<tr>
+<td>fail</td>
+<td>function</td>
+<td></td>
+<td>&#x5426;</td>
+<td>&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x5931;&#x8D25;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td>
+<td></td>
+</tr>
+<tr>
+<td>complete</td>
+<td>function</td>
+<td></td>
+<td>&#x5426;</td>
+<td>&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x7ED3;&#x675F;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF08;&#x8C03;&#x7528;&#x6210;&#x529F;&#x3001;&#x5931;&#x8D25;&#x90FD;&#x4F1A;&#x6267;&#x884C;&#xFF09;</td>
 </tr>
 </tbody>
 </table>
-<p>| title | string |  | &#x662F; | &#x63D0;&#x793A;&#x7684;&#x6807;&#x9898; |   |
-| content | string |  | &#x662F; | &#x63D0;&#x793A;&#x7684;&#x5185;&#x5BB9; |   |
-| showCancel | boolean | true | &#x5426; | &#x662F;&#x5426;&#x663E;&#x793A;&#x53D6;&#x6D88;&#x6309;&#x94AE; |   |
-| cancelText | string |  | &#x662F; | &#x53D6;&#x6D88;&#x6309;&#x94AE;&#x7684;&#x6587;&#x5B57;&#xFF0C;&#x6700;&#x591A; 4 &#x4E2A;&#x5B57;&#x7B26;&#x4E32; |   |
-| cancelColor | string | #000000 | &#x5426; | &#x53D6;&#x6D88;&#x6309;&#x94AE;&#x7684;&#x6587;&#x5B57;&#x989C;&#x8272;&#xFF0C;&#x5FC5;&#x987B;&#x662F; 16 &#x8FDB;&#x5236;&#x683C;&#x5F0F;&#x7684;&#x989C;&#x8272;&#x5B57;&#x7B26;&#x4E32; |   |
-| confirmText | string |  | &#x662F; | &#x786E;&#x8BA4;&#x6309;&#x94AE;&#x7684;&#x6587;&#x5B57;&#xFF0C;&#x6700;&#x591A; 4 &#x4E2A;&#x5B57;&#x7B26;&#x4E32; |   |
-| confirmColor | string | #3cc51f | &#x5426; | &#x786E;&#x8BA4;&#x6309;&#x94AE;&#x7684;&#x6587;&#x5B57;&#x989C;&#x8272;&#xFF0C;&#x5FC5;&#x987B;&#x662F; 16 &#x8FDB;&#x5236;&#x683C;&#x5F0F;&#x7684;&#x989C;&#x8272;&#x5B57;&#x7B26;&#x4E32; |   |
-| success | function |  | &#x5426; | &#x63A5;&#x53E3;&#x8C03;&#x7528;&#x6210;&#x529F;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570; |   |
-| fail | function |  | &#x5426; | &#x63A5;&#x53E3;&#x8C03;&#x7528;&#x5931;&#x8D25;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570; |   |
-| complete | function |  | &#x5426; | &#x63A5;&#x53E3;&#x8C03;&#x7528;&#x7ED3;&#x675F;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF08;&#x8C03;&#x7528;&#x6210;&#x529F;&#x3001;&#x5931;&#x8D25;&#x90FD;&#x4F1A;&#x6267;&#x884C;&#xFF09; |   |</p>
 <h4 id="success-&#x56DE;&#x8C03;&#x51FD;&#x6570;">success &#x56DE;&#x8C03;&#x51FD;&#x6570;</h4>
 <h5 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h5>
 <h6 id="object-res">Object res</h6>

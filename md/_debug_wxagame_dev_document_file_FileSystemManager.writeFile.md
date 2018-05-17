@@ -460,15 +460,103 @@
 
 <tr>
 
+<td>filePath</td>
+
+<td>string</td>
+
 <td></td>
+
+<td>是</td>
+
+<td>要写入的文件路径</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>data</td>
+
+<td>string</td>
+
+<td>ArrayBuffer</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>要写入的文本或二进制数据</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>encoding</td>
+
+<td>string</td>
+
+<td>utf8</td>
+
+<td>否</td>
+
+<td>指定写入文件的字符编码</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>success</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用成功的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>complete</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| filePath | string | | 是 | 要写入的文件路径 | | | data | string|ArrayBuffer | | 是 | 要写入的文本或二进制数据 | | | encoding | string | utf8 | 否 | 指定写入文件的字符编码 | | | success | function | | 否 | 接口调用成功的回调函数 | | | fail | function | | 否 | 接口调用失败的回调函数 | | | complete | function | | 否 | 接口调用结束的回调函数（调用成功、失败都会执行） | |
 
 **object.encoding 的合法值**
 

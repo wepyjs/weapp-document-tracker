@@ -460,15 +460,85 @@
 
 <tr>
 
+<td>srcPath</td>
+
+<td>string</td>
+
 <td></td>
+
+<td>是</td>
+
+<td>源文件路径，只可以是普通文件</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>destPath</td>
+
+<td>string</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>目标文件路径</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>success</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用成功的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>complete</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| srcPath | string | | 是 | 源文件路径，只可以是普通文件 | | | destPath | string | | 是 | 目标文件路径 | | | success | function | | 否 | 接口调用成功的回调函数 | | | fail | function | | 否 | 接口调用失败的回调函数 | | | complete | function | | 否 | 接口调用结束的回调函数（调用成功、失败都会执行） | |
 
 #### fail 回调函数
 

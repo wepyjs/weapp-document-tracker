@@ -462,15 +462,85 @@
 
 <tr>
 
+<td>title</td>
+
+<td>string</td>
+
 <td></td>
+
+<td>是</td>
+
+<td>提示的内容</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>mask</td>
+
+<td>boolean</td>
+
+<td>false</td>
+
+<td>否</td>
+
+<td>是否显示透明蒙层</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>success</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用成功的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>complete</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| title | string | | 是 | 提示的内容 | | | mask | boolean | false | 否 | 是否显示透明蒙层 | | | success | function | | 否 | 接口调用成功的回调函数 | | | fail | function | | 否 | 接口调用失败的回调函数 | | | complete | function | | 否 | 接口调用结束的回调函数（调用成功、失败都会执行） | |
 
 </section>
 

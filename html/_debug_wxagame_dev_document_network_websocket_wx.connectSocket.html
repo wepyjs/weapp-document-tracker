@@ -5008,17 +5008,62 @@
 </thead>
 <tbody>
 <tr>
+<td>url</td>
+<td>string</td>
 <td></td>
+<td>&#x662F;</td>
+<td>&#x5F00;&#x53D1;&#x8005;&#x670D;&#x52A1;&#x5668;&#x63A5;&#x53E3;&#x5730;&#x5740;&#xFF0C;&#x5FC5;&#x987B;&#x662F; wss &#x534F;&#x8BAE;&#xFF0C;&#x4E14;&#x57DF;&#x540D;&#x5FC5;&#x987B;&#x662F;&#x540E;&#x53F0;&#x914D;&#x7F6E;&#x7684;&#x5408;&#x6CD5;&#x57DF;&#x540D;</td>
+<td></td>
+</tr>
+<tr>
+<td>header</td>
+<td>Object</td>
+<td></td>
+<td>&#x662F;</td>
+<td>HTTP Header&#xFF0C;Header &#x4E2D;&#x4E0D;&#x80FD;&#x8BBE;&#x7F6E; Referer</td>
+<td></td>
+</tr>
+<tr>
+<td>method</td>
+<td>string</td>
+<td>GET</td>
+<td>&#x5426;</td>
+<td>&#x6709;&#x6548;&#x503C;&#xFF1A;OPTIONS&#xFF0C;GET&#xFF0C;HEAD&#xFF0C;POST&#xFF0C;PUT&#xFF0C;DELETE&#xFF0C;TRACE&#xFF0C;CONNECT</td>
+<td></td>
+</tr>
+<tr>
+<td>protocols</td>
+<td>Array.&lt;string&gt;</td>
+<td></td>
+<td>&#x662F;</td>
+<td>&#x5B50;&#x534F;&#x8BAE;&#x6570;&#x7EC4;</td>
+<td></td>
+</tr>
+<tr>
+<td>success</td>
+<td>function</td>
+<td></td>
+<td>&#x5426;</td>
+<td>&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x6210;&#x529F;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td>
+<td></td>
+</tr>
+<tr>
+<td>fail</td>
+<td>function</td>
+<td></td>
+<td>&#x5426;</td>
+<td>&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x5931;&#x8D25;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td>
+<td></td>
+</tr>
+<tr>
+<td>complete</td>
+<td>function</td>
+<td></td>
+<td>&#x5426;</td>
+<td>&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x7ED3;&#x675F;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF08;&#x8C03;&#x7528;&#x6210;&#x529F;&#x3001;&#x5931;&#x8D25;&#x90FD;&#x4F1A;&#x6267;&#x884C;&#xFF09;</td>
 </tr>
 </tbody>
 </table>
-<p>| url | string |  | &#x662F; | &#x5F00;&#x53D1;&#x8005;&#x670D;&#x52A1;&#x5668;&#x63A5;&#x53E3;&#x5730;&#x5740;&#xFF0C;&#x5FC5;&#x987B;&#x662F; wss &#x534F;&#x8BAE;&#xFF0C;&#x4E14;&#x57DF;&#x540D;&#x5FC5;&#x987B;&#x662F;&#x540E;&#x53F0;&#x914D;&#x7F6E;&#x7684;&#x5408;&#x6CD5;&#x57DF;&#x540D; |   |
-| header | Object |  | &#x662F; | HTTP Header&#xFF0C;Header &#x4E2D;&#x4E0D;&#x80FD;&#x8BBE;&#x7F6E; Referer |   |
-| method | string | GET | &#x5426; | &#x6709;&#x6548;&#x503C;&#xFF1A;OPTIONS&#xFF0C;GET&#xFF0C;HEAD&#xFF0C;POST&#xFF0C;PUT&#xFF0C;DELETE&#xFF0C;TRACE&#xFF0C;CONNECT |   |
-| protocols | Array.&lt;string&gt; |  | &#x662F; | &#x5B50;&#x534F;&#x8BAE;&#x6570;&#x7EC4; |   |
-| success | function |  | &#x5426; | &#x63A5;&#x53E3;&#x8C03;&#x7528;&#x6210;&#x529F;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570; |   |
-| fail | function |  | &#x5426; | &#x63A5;&#x53E3;&#x8C03;&#x7528;&#x5931;&#x8D25;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570; |   |
-| complete | function |  | &#x5426; | &#x63A5;&#x53E3;&#x8C03;&#x7528;&#x7ED3;&#x675F;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF08;&#x8C03;&#x7528;&#x6210;&#x529F;&#x3001;&#x5931;&#x8D25;&#x90FD;&#x4F1A;&#x6267;&#x884C;&#xFF09; |   |</p>
 <p><strong>object.header &#x7684;&#x7ED3;&#x6784;</strong></p>
 
                                 

@@ -460,15 +460,101 @@
 
 <tr>
 
+<td>url</td>
+
+<td>string</td>
+
 <td></td>
+
+<td>是</td>
+
+<td>下载资源的 url</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>header</td>
+
+<td>Object</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>HTTP 请求的 Header，Header 中不能设置 Referer</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>filePath</td>
+
+<td>string</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>指定文件下载后存储的路径</td>
+
+<td>1.8.0</td>
+
+</tr>
+
+<tr>
+
+<td>success</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用成功的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>complete</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| url | string | | 是 | 下载资源的 url | | | header | Object | | 是 | HTTP 请求的 Header，Header 中不能设置 Referer | | | filePath | string | | 是 | 指定文件下载后存储的路径 | 1.8.0 | | success | function | | 否 | 接口调用成功的回调函数 | | | fail | function | | 否 | 接口调用失败的回调函数 | | | complete | function | | 否 | 接口调用结束的回调函数（调用成功、失败都会执行） | |
 
 **object.header 的结构**
 

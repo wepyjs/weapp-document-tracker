@@ -462,15 +462,21 @@
 
 <tr>
 
+<td>adUnitId</td>
+
+<td>string</td>
+
 <td></td>
+
+<td>是</td>
+
+<td>广告单元 id</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| adUnitId | string | | 是 | 广告单元 id | |
 
 #### 返回值
 

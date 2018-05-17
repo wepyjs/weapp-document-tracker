@@ -460,15 +460,117 @@
 
 <tr>
 
+<td>url</td>
+
+<td>string</td>
+
 <td></td>
+
+<td>是</td>
+
+<td>开发者服务器接口地址，必须是 wss 协议，且域名必须是后台配置的合法域名</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>header</td>
+
+<td>Object</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>HTTP Header，Header 中不能设置 Referer</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>method</td>
+
+<td>string</td>
+
+<td>GET</td>
+
+<td>否</td>
+
+<td>有效值：OPTIONS，GET，HEAD，POST，PUT，DELETE，TRACE，CONNECT</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>protocols</td>
+
+<td>Array.<string></td>
+
+<td></td>
+
+<td>是</td>
+
+<td>子协议数组</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>success</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用成功的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>complete</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| url | string | | 是 | 开发者服务器接口地址，必须是 wss 协议，且域名必须是后台配置的合法域名 | | | header | Object | | 是 | HTTP Header，Header 中不能设置 Referer | | | method | string | GET | 否 | 有效值：OPTIONS，GET，HEAD，POST，PUT，DELETE，TRACE，CONNECT | | | protocols | Array.<string> | | 是 | 子协议数组 | | | success | function | | 否 | 接口调用成功的回调函数 | | | fail | function | | 否 | 接口调用失败的回调函数 | | | complete | function | | 否 | 接口调用结束的回调函数（调用成功、失败都会执行） | |
 
 **object.header 的结构**
 

@@ -460,15 +460,133 @@
 
 <tr>
 
+<td>url</td>
+
+<td>string</td>
+
 <td></td>
+
+<td>是</td>
+
+<td>开发者服务器地址</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>filePath</td>
+
+<td>string</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>要上传文件资源的路径</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>name</td>
+
+<td>string</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>文件对应的 key，开发者在服务端可以通过这个 key 获取文件的二进制内容</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>header</td>
+
+<td>Object</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>HTTP 请求 Header，Header 中不能设置 Referer</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>formData</td>
+
+<td>Object</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>HTTP 请求中其他额外的 form data</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>success</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用成功的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>fail</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用失败的回调函数</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>complete</td>
+
+<td>function</td>
+
+<td></td>
+
+<td>否</td>
+
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
 </tr>
 
 </tbody>
 
 </table>
-
-| url | string | | 是 | 开发者服务器地址 | | | filePath | string | | 是 | 要上传文件资源的路径 | | | name | string | | 是 | 文件对应的 key，开发者在服务端可以通过这个 key 获取文件的二进制内容 | | | header | Object | | 否 | HTTP 请求 Header，Header 中不能设置 Referer | | | formData | Object | | 否 | HTTP 请求中其他额外的 form data | | | success | function | | 否 | 接口调用成功的回调函数 | | | fail | function | | 否 | 接口调用失败的回调函数 | | | complete | function | | 否 | 接口调用结束的回调函数（调用成功、失败都会执行） | |
 
 **object.header 的结构**
 
