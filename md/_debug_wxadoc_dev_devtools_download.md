@@ -139,9 +139,22 @@
 
 <section class="normal markdown-section">
 
-## 最新版本下载地址 (1.02.1805150)
+## 最新版本下载地址 (1.02.1805181)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
+
+### 2018.05.18 更新日志
+
+1.  `F` 修复 1.02.1805150 引入的 `<web-view/>` 组件显示异常的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1701153588&docid=00048ae52006b8894ac6e9a3153c00)
+2.  `F` 修复 1.02.1805150 引入的小屏幕电脑上模拟器容器没有滚动条的问题
+3.  `F` 修复 小程序 iPhoneX 模拟器刘海丢失的问题
+4.  `F` 修复 覆盖安装后启动的工具版本号还是旧版本的问题
+5.  `F` 修复 windows 安装界面乱码的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000e8c961101d84ecb969822353400&highline=%E5%AE%89%E8%A3%85%20%E4%B9%B1%E7%A0%81)
+6.  `F` 修复 自定义组件中节点动态删除导致 wxml 面板白屏的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0008a8f45b4e18ba44c66907651c00&token=1501432787&lang=zh_CN)
+7.  `F` 修复 小游戏调用 `wx.setPreferredFramesPerSecond` 后丢帧的问题
+8.  `F` 修复 小游戏使用 fs.writeFileSync 写入一个 ArrayBuffer 类型的数据，encoding 指定为 binary 时会导致写入的文件内容错误的问题
+9.  `F` 修复 使用插件时，插件中的图片没有显示的问题
+10.  `F` 修复 小程序中带有 sourcemap 时解析失败导致上传报错的问题
 
 ### 2018.05.15 更新日志
 

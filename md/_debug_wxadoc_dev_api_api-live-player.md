@@ -746,6 +746,6 @@
 
 </div>
 
-[](api-camera.html)[](api-live-pusher.html)</div>
+[](api-camera.html)[](api-live-player.html)</div>
 
 </div>

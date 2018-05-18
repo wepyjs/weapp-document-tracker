@@ -1239,6 +1239,6 @@
 
 </div>
 
-[](setNavigationBarColor.html)[](ui.html#wxsettopbartextobject)</div>
+[](setNavigationBarColor.html)[](ui-tabbar.html#wxsettabbarbadgeobject)</div>
 
 </div>

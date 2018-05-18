@@ -1088,6 +1088,6 @@
 
 </div>
 
-[](custommsg/callback_help.html)[](qrcode.html)</div>
+[](custommsg/callback_help.html)[](share.html#onshareappmessageoptions)</div>
 
 </div>

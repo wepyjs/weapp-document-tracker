@@ -1518,6 +1518,6 @@ access_token 是全局唯一接口调用凭据，开发者调用各接口时都�
 
 </div>
 
-[](api-pay.html#wxrequestpaymentobject)[](custommsg/receive.html)</div>
+[](api-pay.html#wxrequestpaymentobject)[](notice.html#使用说明)</div>
 
 </div>

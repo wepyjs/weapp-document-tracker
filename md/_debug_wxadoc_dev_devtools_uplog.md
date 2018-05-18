@@ -151,10 +151,6 @@
 4.  `U` 更新小程序组件 `<navigator>` 新增 `target` 属性可跳转到绑定的小程序 [详情](../component/navigator.html)
 5.  `A` 新增小游戏接口 `wx.createOpenSettingButton` 接口 [详情](https://developers.weixin.qq.com/minigame/dev/document/open-api/setting/wx.createOpenSettingButton.html)
 
-### 历史版本下载 2017.08.30 (0.22.203100)
-
-[windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_darwin&from=mpwiki)
-
 ### 2018.04.25 更新日志
 
 1.  `A` 新增 搜索动态页 [详情](https://mp.weixin.qq.com/servicezone/apidocs/html/%E5%BC%80%E5%8F%91%E5%89%8D%E5%BF%85%E8%AF%BB/%E4%BD%93%E9%AA%8Cdemo.html)
@@ -729,6 +725,10 @@
 3.  `A` 新增 发布腾讯云功能 [详情](https://mp.weixin.qq.com/debug/wxadoc/introduction/qcloud.html)
 4.  `U` 优化 全新的视觉和交互体验
 5.  `U` 优化 更新内核版本
+
+### 历史版本下载 2017.08.30 (0.22.203100)
+
+[windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=old_darwin&from=mpwiki)
 
 ### 基础库更新 (1.5.3)
 

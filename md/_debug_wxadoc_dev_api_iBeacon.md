@@ -1159,6 +1159,6 @@
 
 </div>
 
-[](bluetooth.html#蓝牙错误码errcode列表)[](device.html#wxsetscreenbrightnessobject)</div>
+[](bluetooth.html#蓝牙错误码errcode列表)[](iBeacon.html#wxstartbeacondiscoveryobject)</div>
 
 </div>

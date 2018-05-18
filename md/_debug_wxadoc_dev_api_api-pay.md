@@ -690,6 +690,6 @@
 
 </div>
 
-[](unionID.html)[](notice.html)</div>
+[](unionID.html)[](api-pay.html#wxrequestpaymentobject)</div>
 
 </div>

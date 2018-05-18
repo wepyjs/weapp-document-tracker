@@ -341,6 +341,6 @@
 
 </div>
 
-[](map.html#map)[](open-data.html)</div>
+[](map.html#map)[](canvas.html#canvas)</div>
 
 </div>

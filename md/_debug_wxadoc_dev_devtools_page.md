@@ -340,6 +340,6 @@
 
 </div>
 
-[](devtools.html)[](settings.html)</div>
+[](devtools.html)[](page.html#启动页)</div>
 
 </div>

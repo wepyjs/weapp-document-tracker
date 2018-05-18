@@ -1324,6 +1324,6 @@ POST数据示例：
 
 </div>
 
-[](checkIsSoterEnrolledInDevice.html)[](plugin.html)</div>
+[](checkIsSoterEnrolledInDevice.html)[](nearby.html#添加地点)</div>
 
 </div>

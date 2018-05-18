@@ -195,6 +195,6 @@
 
 </div>
 
-[](../../)[](file.html)</div>
+[](../../)[](getting-started.html)</div>
 
 </div>

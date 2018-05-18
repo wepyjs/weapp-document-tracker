@@ -616,6 +616,6 @@
 
 </div>
 
-[](monitor-report.html)[](../devtools/devtools.html)</div>
+[](monitor-report.html)[](setEnableDebug.html)</div>
 
 </div>

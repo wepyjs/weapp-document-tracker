@@ -662,6 +662,6 @@
 
 </div>
 
-[](we-run.html#wxgetwerundataobject)[](navigateBackMiniProgram.html)</div>
+[](we-run.html#wxgetwerundataobject)[](navigateToMiniProgram.html)</div>
 
 </div>

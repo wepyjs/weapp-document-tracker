@@ -550,6 +550,6 @@
 
 </div>
 
-[](createWorker.html)[](setEnableDebug.html)</div>
+[](createWorker.html)[](monitor-report.html)</div>
 
 </div>

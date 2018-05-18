@@ -996,6 +996,6 @@
 
 </div>
 
-[](device.html#wxvibrateshortobject)[](nfc.html)</div>
+[](device.html#wxvibrateshortobject)[](phone-contact.html#wxaddphonecontactobject)</div>
 
 </div>

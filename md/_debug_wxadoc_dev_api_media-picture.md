@@ -1192,6 +1192,6 @@
 
 </div>
 
-[](socket-task.html)[](media-record.html)</div>
+[](socket-task.html)[](media-picture.html)</div>
 
 </div>

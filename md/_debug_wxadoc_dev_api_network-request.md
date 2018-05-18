@@ -820,6 +820,6 @@
 
 </div>
 
-[](api-network.html)[](network-file.html)</div>
+[](api-network.html)[](network-request.html#wxrequestobject)</div>
 
 </div>

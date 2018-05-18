@@ -1251,6 +1251,6 @@
 
 </div>
 
-[](address.html#wxchooseaddressobject)[](setting.html)</div>
+[](address.html#wxchooseaddressobject)[](card.html#wxaddcardobject)</div>
 
 </div>

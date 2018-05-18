@@ -965,6 +965,6 @@
 
 </div>
 
-[](data.html#wxclearstoragesync)[](api-map.html)</div>
+[](data.html#wxclearstoragesync)[](location.html)</div>
 
 </div>

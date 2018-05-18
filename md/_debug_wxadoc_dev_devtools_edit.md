@@ -440,6 +440,6 @@ wxml 补全
 
 </div>
 
-[](shortcut.html)[](projectconfig.html)</div>
+[](shortcut.html)[](edit.html#文件格式)</div>
 
 </div>

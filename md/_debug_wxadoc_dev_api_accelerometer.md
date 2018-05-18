@@ -700,6 +700,6 @@
 
 </div>
 
-[](device.html#wxonnetworkstatuschangecallback)[](compass.html)</div>
+[](device.html#wxonnetworkstatuschangecallback)[](accelerometer.html#wxonaccelerometerchangecallback)</div>
 
 </div>

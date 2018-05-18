@@ -715,6 +715,6 @@
 
 </div>
 
-[](wxml-nodes-info.html#selectorqueryexeccallback)[](ext-api.html)</div>
+[](wxml-nodes-info.html#selectorqueryexeccallback)[](intersection-observer.html#wxcreateintersectionobserverthisoptions)</div>
 
 </div>

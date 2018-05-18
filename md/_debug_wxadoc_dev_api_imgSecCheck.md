@@ -679,6 +679,6 @@
 
 </div>
 
-[](plugin.html)[](msgSecCheck.html)</div>
+[](plugin.html)[](imgSecCheck.html)</div>
 
 </div>

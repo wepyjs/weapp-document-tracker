@@ -615,6 +615,6 @@
 
 </div>
 
-[](canvas/set-transform.html)[](wxml-nodes-info.html)</div>
+[](canvas/set-transform.html)[](pulldown.html#onpulldownrefresh)</div>
 
 </div>

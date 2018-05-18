@@ -639,6 +639,6 @@
 
 </div>
 
-[](analysis-report.html)[](createWorker.html)</div>
+[](analysis-report.html)[](getUpdateManager.html)</div>
 
 </div>

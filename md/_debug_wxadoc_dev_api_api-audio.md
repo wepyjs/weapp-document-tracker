@@ -599,6 +599,6 @@
 
 </div>
 
-[](getBackgroundAudioManager.html)[](createInnerAudioContext.html)</div>
+[](getBackgroundAudioManager.html)[](api-audio.html#wxcreateaudiocontextaudioid)</div>
 
 </div>

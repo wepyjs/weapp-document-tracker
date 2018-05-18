@@ -243,6 +243,6 @@
 
 </div>
 
-[](settings.html#通知设置)[](shortcut.html)</div>
+[](settings.html#通知设置)[](project.html#项目设置)</div>
 
 </div>

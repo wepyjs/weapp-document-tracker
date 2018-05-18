@@ -946,6 +946,6 @@
 
 </div>
 
-[](../notice.html#发送模板消息)[](conversation.html)</div>
+[](../notice.html#发送模板消息)[](receive.html#接收消息和事件)</div>
 
 </div>

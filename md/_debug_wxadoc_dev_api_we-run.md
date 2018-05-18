@@ -733,6 +733,6 @@ encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](
 
 </div>
 
-[](setting.html#wxgetsettingobject)[](navigateToMiniProgram.html)</div>
+[](setting.html#wxgetsettingobject)[](we-run.html#wxgetwerundataobject)</div>
 
 </div>

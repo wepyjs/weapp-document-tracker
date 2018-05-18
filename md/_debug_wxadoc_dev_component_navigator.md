@@ -475,6 +475,6 @@
 
 </div>
 
-[](textarea.html)[](audio.html)</div>
+[](textarea.html)[](navigator.html)</div>
 
 </div>

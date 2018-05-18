@@ -665,6 +665,6 @@
 
 </div>
 
-[](intersection-observer.html#intersectionobserverdisconnect)[](api-login.html)</div>
+[](intersection-observer.html#intersectionobserverdisconnect)[](ext-api.html#wxgetextconfigobject)</div>
 
 </div>
