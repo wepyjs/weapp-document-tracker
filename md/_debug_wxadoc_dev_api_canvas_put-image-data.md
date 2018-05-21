@@ -451,11 +451,11 @@
 
 <section class="normal markdown-section">
 
-# wx.canvasPutImageData(OBJECT)
+# wx.canvasPutImageData(OBJECT, this)
 
 > 基础库 1.9.0 开始支持，低版本需做[兼容处理](../../framework/compatibility.html)
 
-将像素数据绘制到画布的方法
+将像素数据绘制到画布的方法。在自定义组件下，第二个参数传入组件实例this，以操作组件内 `<canvas/>` 组件
 
 **OBJECT参数说明：**
 

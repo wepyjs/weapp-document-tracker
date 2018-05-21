@@ -89,6 +89,9 @@
     *   [转发](../open-ability/share.html)
     *   [用户数据的签名验证和加解密](../open-ability/signature.html)
     *   [UnionID 机制说明](../open-ability/union-id.html)
+*   [广告](../ad/banner-ad.html)
+    *   [Banner 广告](../ad/banner-ad.html)
+    *   [激励视频广告](../ad/rewarded-video-ad.html)
 
 </nav>
 

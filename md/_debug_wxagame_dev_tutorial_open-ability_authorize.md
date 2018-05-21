@@ -89,6 +89,9 @@
     *   [转发](share.html)
     *   [用户数据的签名验证和加解密](signature.html)
     *   [UnionID 机制说明](union-id.html)
+*   [广告](../ad/banner-ad.html)
+    *   [Banner 广告](../ad/banner-ad.html)
+    *   [激励视频广告](../ad/rewarded-video-ad.html)
 
 </nav>
 

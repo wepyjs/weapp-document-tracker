@@ -329,6 +329,25 @@
 *   [广告](wx.createBannerAd.html)
     *   [wx.createBannerAd](wx.createBannerAd.html)
     *   [wx.createRewardedVideoAd](wx.createRewardedVideoAd.html)
+    *   [BannerAd](BannerAd.html)
+    *   [RewardedVideoAd](RewardedVideoAd.html)
+    *   [BannerAd.destroy](BannerAd.destroy.html)
+    *   [BannerAd.hide](BannerAd.hide.html)
+    *   [RewardedVideoAd.load](RewardedVideoAd.load.html)
+    *   [BannerAd.onLoad](BannerAd.onLoad.html)
+    *   [BannerAd.offLoad](BannerAd.offLoad.html)
+    *   [BannerAd.onResize](BannerAd.onResize.html)
+    *   [BannerAd.offError](BannerAd.offError.html)
+    *   [RewardedVideoAd.onClose](RewardedVideoAd.onClose.html)
+    *   [BannerAd.offResize](BannerAd.offResize.html)
+    *   [RewardedVideoAd.offClose](RewardedVideoAd.offClose.html)
+    *   [RewardedVideoAd.offError](RewardedVideoAd.offError.html)
+    *   [RewardedVideoAd.onLoad](RewardedVideoAd.onLoad.html)
+    *   [RewardedVideoAd.offLoad](RewardedVideoAd.offLoad.html)
+    *   [RewardedVideoAd.onError](RewardedVideoAd.onError.html)
+    *   [BannerAd.onError](BannerAd.onError.html)
+    *   [RewardedVideoAd.show](RewardedVideoAd.show.html)
+    *   [BannerAd.show](BannerAd.show.html)
 *   [媒体](../media/audio/wx.createInnerAudioContext.html)
     *   [音频](../media/audio/wx.createInnerAudioContext.html)
         *   [wx.createInnerAudioContext](../media/audio/wx.createInnerAudioContext.html)
@@ -480,7 +499,7 @@
 
 #### 返回值
 
-##### <a href="">RewardedVideoAd</a>
+##### [RewardedVideoAd](RewardedVideoAd.html)
 
 激励视频广告组件
 
@@ -527,6 +546,6 @@
 
 </div>
 
-[](wx.createBannerAd.html)[](../media/audio/wx.createInnerAudioContext.html)</div>
+[](wx.createBannerAd.html)[](BannerAd.html)</div>
 
 </div>

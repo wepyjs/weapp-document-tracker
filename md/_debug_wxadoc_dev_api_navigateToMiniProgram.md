@@ -525,7 +525,7 @@
 
 <td>否</td>
 
-<td>要打开的小程序版本，有效值 develop（开发版），trial（体验版），release（正式版） ，仅在当前小程序为开发版或体验版时此参数有效；如果当前小程序是体验版或正式版，则打开的小程序必定是正式版。默认值 release</td>
+<td>要打开的小程序版本，有效值 develop（开发版），trial（体验版），release（正式版） ，仅在当前小程序为开发版或体验版时此参数有效；如果当前小程序是正式版，则打开的小程序必定是正式版。默认值 release</td>
 
 </tr>
 
@@ -662,6 +662,6 @@
 
 </div>
 
-[](we-run.html#wxgetwerundataobject)[](navigateToMiniProgram.html)</div>
+[](we-run.html#wxgetwerundataobject)[](navigateBackMiniProgram.html)</div>
 
 </div>

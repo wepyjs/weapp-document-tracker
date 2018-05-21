@@ -329,6 +329,25 @@
 *   [广告](../ad/wx.createBannerAd.html)
     *   [wx.createBannerAd](../ad/wx.createBannerAd.html)
     *   [wx.createRewardedVideoAd](../ad/wx.createRewardedVideoAd.html)
+    *   [BannerAd](../ad/BannerAd.html)
+    *   [RewardedVideoAd](../ad/RewardedVideoAd.html)
+    *   [BannerAd.destroy](../ad/BannerAd.destroy.html)
+    *   [BannerAd.hide](../ad/BannerAd.hide.html)
+    *   [RewardedVideoAd.load](../ad/RewardedVideoAd.load.html)
+    *   [BannerAd.onLoad](../ad/BannerAd.onLoad.html)
+    *   [BannerAd.offLoad](../ad/BannerAd.offLoad.html)
+    *   [BannerAd.onResize](../ad/BannerAd.onResize.html)
+    *   [BannerAd.offError](../ad/BannerAd.offError.html)
+    *   [RewardedVideoAd.onClose](../ad/RewardedVideoAd.onClose.html)
+    *   [BannerAd.offResize](../ad/BannerAd.offResize.html)
+    *   [RewardedVideoAd.offClose](../ad/RewardedVideoAd.offClose.html)
+    *   [RewardedVideoAd.offError](../ad/RewardedVideoAd.offError.html)
+    *   [RewardedVideoAd.onLoad](../ad/RewardedVideoAd.onLoad.html)
+    *   [RewardedVideoAd.offLoad](../ad/RewardedVideoAd.offLoad.html)
+    *   [RewardedVideoAd.onError](../ad/RewardedVideoAd.onError.html)
+    *   [BannerAd.onError](../ad/BannerAd.onError.html)
+    *   [RewardedVideoAd.show](../ad/RewardedVideoAd.show.html)
+    *   [BannerAd.show](../ad/BannerAd.show.html)
 *   [媒体](../media/audio/wx.createInnerAudioContext.html)
     *   [音频](../media/audio/wx.createInnerAudioContext.html)
         *   [wx.createInnerAudioContext](../media/audio/wx.createInnerAudioContext.html)
@@ -426,7 +445,7 @@
 
 <section class="normal markdown-section">
 
-### FileSystemManager.mkdirSync(string dirPath)
+### FileSystemManager.mkdirSync(string dirPath, boolean recursive)
 
 FileSystemManager.mkdir 的同步版本
 
@@ -435,6 +454,10 @@ FileSystemManager.mkdir 的同步版本
 ##### string dirPath
 
 创建的目录路径
+
+##### boolean recursive
+
+是否在递归创建该目录的上级目录后再创建该目录。如果对应的上级目录已经存在，则不创建该上级目录。如 dirPath 为 a/b/c/d 且 recursive 为 true，将创建 a 目录，再在 a 目录下创建 b 目录，以此类推直至创建 a/b/c 目录下的 d 目录。
 
 #### 错误
 

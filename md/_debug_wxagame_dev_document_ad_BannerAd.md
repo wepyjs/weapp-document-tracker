@@ -229,10 +229,17 @@
         *   [UserInfoButton.onTap](../open-api/user-info/UserInfoButton.onTap.html)
         *   [UserInfoButton.offTap](../open-api/user-info/UserInfoButton.offTap.html)
         *   [UserInfoButton.show](../open-api/user-info/UserInfoButton.show.html)
-    *   [设置](../open-api/setting/wx.getSetting.html)
+    *   [设置](../open-api/setting/wx.createOpenSettingButton.html)
+        *   [wx.createOpenSettingButton](../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../open-api/setting/wx.getSetting.html)
         *   [wx.openSetting](../open-api/setting/wx.openSetting.html)
         *   [AuthSetting](../open-api/setting/AuthSetting.html)
+        *   [OpenSettingButton](../open-api/setting/OpenSettingButton.html)
+        *   [OpenSettingButton.destroy](../open-api/setting/OpenSettingButton.destroy.html)
+        *   [OpenSettingButton.hide](../open-api/setting/OpenSettingButton.hide.html)
+        *   [OpenSettingButton.onTap](../open-api/setting/OpenSettingButton.onTap.html)
+        *   [OpenSettingButton.offTap](../open-api/setting/OpenSettingButton.offTap.html)
+        *   [OpenSettingButton.show](../open-api/setting/OpenSettingButton.show.html)
     *   [微信运动](../open-api/werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../open-api/werun/wx.getWeRunData.html)
     *   [授权](../open-api/authorize/wx.authorize.html)
@@ -240,7 +247,7 @@
     *   [游戏圈](../open-api/game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../open-api/game-club/wx.createGameClubButton.html)
         *   [GameClubButton](../open-api/game-club/GameClubButton.html)
-        *   [UserInfoButton.destroy](../open-api/game-club/UserInfoButton.destroy.html)
+        *   [GameClubButton.destroy](../open-api/game-club/GameClubButton.destroy.html)
         *   [GameClubButton.hide](../open-api/game-club/GameClubButton.hide.html)
         *   [GameClubButton.show](../open-api/game-club/GameClubButton.show.html)
     *   [客服消息](../open-api/customer-message/openCustomerServiceConversation.html)
@@ -515,6 +522,30 @@ banner 广告组件的样式。style 上的属性的值仅为开发者设置的�
 <td>number</td>
 
 <td>banner 广告组件的高度</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>realWidth</td>
+
+<td>number</td>
+
+<td>banner 广告组件经过缩放后真实的宽度</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>realHeight</td>
+
+<td>number</td>
+
+<td>banner 广告组件经过缩放后真实的高度</td>
 
 </tr>
 

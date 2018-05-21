@@ -329,6 +329,25 @@
 *   [广告](../../ad/wx.createBannerAd.html)
     *   [wx.createBannerAd](../../ad/wx.createBannerAd.html)
     *   [wx.createRewardedVideoAd](../../ad/wx.createRewardedVideoAd.html)
+    *   [BannerAd](../../ad/BannerAd.html)
+    *   [RewardedVideoAd](../../ad/RewardedVideoAd.html)
+    *   [BannerAd.destroy](../../ad/BannerAd.destroy.html)
+    *   [BannerAd.hide](../../ad/BannerAd.hide.html)
+    *   [RewardedVideoAd.load](../../ad/RewardedVideoAd.load.html)
+    *   [BannerAd.onLoad](../../ad/BannerAd.onLoad.html)
+    *   [BannerAd.offLoad](../../ad/BannerAd.offLoad.html)
+    *   [BannerAd.onResize](../../ad/BannerAd.onResize.html)
+    *   [BannerAd.offError](../../ad/BannerAd.offError.html)
+    *   [RewardedVideoAd.onClose](../../ad/RewardedVideoAd.onClose.html)
+    *   [BannerAd.offResize](../../ad/BannerAd.offResize.html)
+    *   [RewardedVideoAd.offClose](../../ad/RewardedVideoAd.offClose.html)
+    *   [RewardedVideoAd.offError](../../ad/RewardedVideoAd.offError.html)
+    *   [RewardedVideoAd.onLoad](../../ad/RewardedVideoAd.onLoad.html)
+    *   [RewardedVideoAd.offLoad](../../ad/RewardedVideoAd.offLoad.html)
+    *   [RewardedVideoAd.onError](../../ad/RewardedVideoAd.onError.html)
+    *   [BannerAd.onError](../../ad/BannerAd.onError.html)
+    *   [RewardedVideoAd.show](../../ad/RewardedVideoAd.show.html)
+    *   [BannerAd.show](../../ad/BannerAd.show.html)
 *   [媒体](../../media/audio/wx.createInnerAudioContext.html)
     *   [音频](../../media/audio/wx.createInnerAudioContext.html)
         *   [wx.createInnerAudioContext](../../media/audio/wx.createInnerAudioContext.html)
@@ -555,8 +574,6 @@
 </tbody>
 
 </table>
-
-**object.header 的结构**
 
 #### success 回调函数
 

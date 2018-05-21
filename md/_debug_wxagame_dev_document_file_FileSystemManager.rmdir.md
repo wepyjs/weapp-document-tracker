@@ -329,6 +329,25 @@
 *   [广告](../ad/wx.createBannerAd.html)
     *   [wx.createBannerAd](../ad/wx.createBannerAd.html)
     *   [wx.createRewardedVideoAd](../ad/wx.createRewardedVideoAd.html)
+    *   [BannerAd](../ad/BannerAd.html)
+    *   [RewardedVideoAd](../ad/RewardedVideoAd.html)
+    *   [BannerAd.destroy](../ad/BannerAd.destroy.html)
+    *   [BannerAd.hide](../ad/BannerAd.hide.html)
+    *   [RewardedVideoAd.load](../ad/RewardedVideoAd.load.html)
+    *   [BannerAd.onLoad](../ad/BannerAd.onLoad.html)
+    *   [BannerAd.offLoad](../ad/BannerAd.offLoad.html)
+    *   [BannerAd.onResize](../ad/BannerAd.onResize.html)
+    *   [BannerAd.offError](../ad/BannerAd.offError.html)
+    *   [RewardedVideoAd.onClose](../ad/RewardedVideoAd.onClose.html)
+    *   [BannerAd.offResize](../ad/BannerAd.offResize.html)
+    *   [RewardedVideoAd.offClose](../ad/RewardedVideoAd.offClose.html)
+    *   [RewardedVideoAd.offError](../ad/RewardedVideoAd.offError.html)
+    *   [RewardedVideoAd.onLoad](../ad/RewardedVideoAd.onLoad.html)
+    *   [RewardedVideoAd.offLoad](../ad/RewardedVideoAd.offLoad.html)
+    *   [RewardedVideoAd.onError](../ad/RewardedVideoAd.onError.html)
+    *   [BannerAd.onError](../ad/BannerAd.onError.html)
+    *   [RewardedVideoAd.show](../ad/RewardedVideoAd.show.html)
+    *   [BannerAd.show](../ad/BannerAd.show.html)
 *   [媒体](../media/audio/wx.createInnerAudioContext.html)
     *   [音频](../media/audio/wx.createInnerAudioContext.html)
         *   [wx.createInnerAudioContext](../media/audio/wx.createInnerAudioContext.html)
@@ -462,13 +481,29 @@
 
 <td>dirPath</td>
 
-<td>Object</td>
+<td>string</td>
 
 <td></td>
 
 <td>是</td>
 
 <td>要删除的目录路径</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>recursive</td>
+
+<td>boolean</td>
+
+<td>false</td>
+
+<td>否</td>
+
+<td>是否递归删除目录。如果为 true，则删除该目录和该目录下的所有子目录以及文件。</td>
 
 <td></td>
 
@@ -523,8 +558,6 @@
 </tbody>
 
 </table>
-
-**object.dirPath 的结构**
 
 #### fail 回调函数
 

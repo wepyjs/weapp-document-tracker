@@ -8,18 +8,13 @@
 
 <div class="header_ctrls">
 
-*   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
+*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
-*   [社区](https://developers.weixin.qq.com/)
+*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
 </div>
 
@@ -143,16 +138,6 @@
 
 <tr>
 
-<td>用户通过客服消息按钮进入会话</td>
-
-<td>1条</td>
-
-<td>1分钟</td>
-
-</tr>
-
-<tr>
-
 <td>用户发送信息</td>
 
 <td>5条</td>
@@ -169,7 +154,7 @@
 
 ## 调用客服消息接口发送客服消息
 
-当用户在小程序内打开客服会话，或是给小程序客服发消息，微信服务器会将消息（或事件）的数据包（JSON或者XML格式）POST到开发者填写的URL。开发者收到请求后可以调用接口进行异步回复。
+当用户给小程序客服发消息，微信服务器会将消息（或事件）的数据包（JSON或者XML格式）POST到开发者填写的URL。开发者收到请求后可以调用接口进行异步回复。
 
 **如小程序的客服消息权限集已授权给第三方平台，则所有的客服消息将推送到第三方平台的服务器，不再推送到开发者的服务器或推送到网页版客服工具**
 
@@ -283,6 +268,6 @@
 
 </div>
 
-[](./#公众号关联小程序)[](custom.html#功能介绍)</div>
+[](./#公众号关联小程序)[](qrcode.html)</div>
 
 </div>
