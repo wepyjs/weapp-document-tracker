@@ -793,6 +793,6 @@
 
 </div>
 
-[](pulldown.html#wxstoppulldownrefresh)[](wxml-nodes-info.html#wxcreateselectorquery)</div>
+[](pulldown.html#wxstoppulldownrefresh)[](intersection-observer.html)</div>
 
 </div>

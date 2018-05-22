@@ -113,11 +113,11 @@
 
 ## 音频播放
 
-小游戏内只有一种音频播放的方式，即使用 [InnerAudioContext](../../document/media/audio/InnerAudioContext.html) 来播放。
+小游戏内只有一种音频播放的方式，即使用 <a href="">InnerAudioContext</a> 来播放。
 
 ### 使用 InnerAudioContext 播放
 
-通过 [wx.createInnerAudioContext()](../../document/media/audio/wx.createInnerAudioContext.html) 接口可以创建一个音频实例 [innerAudioContext](../../document/media/audio/InnerAudioContext.html) ，通过这个实例可以播放音频。
+通过 [wx.createInnerAudioContext()](../../document/media/audio/wx.createInnerAudioContext.html) 接口可以创建一个音频实例 <a href="">innerAudioContext</a> ，通过这个实例可以播放音频。
 
     var audio = wx.createInnerAudioContext()
     audio.src = url // src 可以设置 http(s) 的路径，本地文件路径或者代码包文件路径
@@ -148,7 +148,7 @@
 
 ### 处理音频中断事件
 
-音频中断事件指的是在游戏期间，音频被系统打断时触发的事件。音频中断事件分为中断开始和中断结束事件，分别使用 [wx.onAudioInterruptionBegin()](../../document/system/system-event/wx.onAudioInterruptionBegin.html) 和 [wx.onAudioInterruptionEnd()](../../document/system/system-event/wx.onAudioInterruptionEnd.html) 来监听。
+音频中断事件指的是在游戏期间，音频被系统打断时触发的事件。音频中断事件分为中断开始和中断结束事件，分别使用 <a href="">wx.onAudioInterruptionBegin()</a> 和 <a href="">wx.onAudioInterruptionEnd()</a> 来监听。
 
 以下事件会触发音频中断开始事件：接到电话、闹钟响起、系统提醒、收到微信好友的语音/视频通话请求。被中断之后，小游戏内所有音频会被暂停，并在中断结束之前都不能再播放成功。
 
@@ -176,7 +176,7 @@
 
 #### 及时销毁不需要的音频实例
 
-如果一个音频不再需要使用了，可以调用 [InnerAudioContext.destroy()](../../document/media/audio/InnerAudioContext.destroy.html) 接口提前销毁这个实例。
+如果一个音频不再需要使用了，可以调用 <a href="">InnerAudioContext.destroy()</a> 接口提前销毁这个实例。
 
 #### Android 同时播放的音频数量限制
 

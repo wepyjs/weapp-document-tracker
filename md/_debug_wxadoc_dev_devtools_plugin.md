@@ -177,6 +177,14 @@
 
 上传插件时，同时会将 `project.config.json` 中 `miniprogramRoot` 指定的目录的内容作为插件使用 Demo 一起上传，这个 Demo 需要覆盖到插件的所有使用场景，便于插件的审核
 
+## 插件文档编写、预览和上传
+
+![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/uploadplugindoc.png)
+
+插件文档必须放置在插件项目根目录中的 `doc` 目录下，插件文档的入口文件是 `doc/README.md`，在 `README.md` 中引用的图片必须是 `doc` 目录下的本地图片。
+
+在开发者工具中编辑 `README.md` 时，在编辑器底部有预览的入口可以预览插件文档。编辑完成后，可以在 `README.md` 的编辑窗口中使用编辑器底部的上传入口上传插件文档。
+
 ## 插件使用
 
 在小程序项目的 `app.json` 的 `plugins` 字段中可以声明使用插件。如果当前的编译类型为小程序时，需要指定已发布的插件的版本号，开发者工具会根据版本号去拉取对应版本的插件进行编译。

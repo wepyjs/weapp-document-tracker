@@ -327,14 +327,14 @@ sharedCanvas 是主域和开放数据域都可以访问的一个离屏画布。�
 
 **触摸事件**
 
-*   [wx.onTouchStart()](../../document/system/touch-event/wx.onTouchStart.html)
-*   [wx.onTouchMove()](../../document/system/touch-event/wx.onTouchMove.html)
-*   [wx.onTouchEnd()](../../document/system/touch-event/wx.onTouchEnd.html)
-*   [wx.onTouchCancel()](../../document/system/touch-event/wx.onTouchCancel.html)
-*   [wx.offTouchStart()](../../document/system/touch-event/wx.offTouchStart.html)
-*   [wx.offTouchMove()](../../document/system/touch-event/wx.offTouchMove.html)
-*   [wx.offTouchEnd()](../../document/system/touch-event/wx.offTouchEnd.html)
-*   [wx.offTouchCancel()](../../document/system/touch-event/wx.offTouchCancel.html)
+*   <a href="">wx.onTouchStart()</a>
+*   <a href="">wx.onTouchMove()</a>
+*   <a href="">wx.onTouchEnd()</a>
+*   <a href="">wx.onTouchCancel()</a>
+*   <a href="">wx.offTouchStart()</a>
+*   <a href="">wx.offTouchMove()</a>
+*   <a href="">wx.offTouchEnd()</a>
+*   <a href="">wx.offTouchCancel()</a>
 
 **画布**
 
