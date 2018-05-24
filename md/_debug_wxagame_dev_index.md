@@ -414,10 +414,10 @@
 
 响应用户与屏幕的交互是游戏中必不可少的部分，小游戏参照 DOM 中的 TouchEvent 提供了以下监听触摸事件的 API：
 
-*   <a href="">wx.onTouchStart()</a>
-*   <a href="">wx.onTouchMove()</a>
-*   <a href="">wx.onTouchEnd()</a>
-*   <a href="">wx.onTouchCancel()</a>
+*   [wx.onTouchStart()](document/system/touch-event/wx.onTouchStart.html)
+*   [wx.onTouchMove()](document/system/touch-event/wx.onTouchMove.html)
+*   [wx.onTouchEnd()](document/system/touch-event/wx.onTouchEnd.html)
+*   [wx.onTouchCancel()](document/system/touch-event/wx.onTouchCancel.html)
 
     wx.onTouchStart(function (e) {
         console.log(e.touches)

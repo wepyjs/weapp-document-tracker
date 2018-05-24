@@ -127,13 +127,13 @@
 
 每次更新 canvas 之后，都需要重新调用一次接口。
 
-为了解决这里的问题，在 gl context 上引入了新方法 wxBindCanvasTexture，该方法接受一个canvas作为参数，并把这个canvas对应的texture绑定到gl上。
+为了解决这里的问题，在 gl context 上引入了新方法 [WebGLRenderingContext.wxBindCanvasTexture()](../../document/render/canvas/WebGLRenderingContext.wxBindCanvasTexture.html)，该方法接受一个 Canvas 作为参数，并把这个 Canvas 对应的 Texture 绑定到 gl 上。
 
     gl.wxBindCanvasTexture(gl.TEXTURE_2D, canvas)
 
-在此之后，只需要更新canvas即可。
+在此之后，只需要更新 Canvas 即可。
 
-目前该方法仅支持iOS。
+目前该方法仅支持 iOS。
 
 </section>
 

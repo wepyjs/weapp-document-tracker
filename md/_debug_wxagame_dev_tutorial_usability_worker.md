@@ -113,7 +113,7 @@
 
 ## 多线程 Worker
 
-对于游戏来说，每帧 16ms 是极其宝贵的，如果有一些可以异步处理的任务，可以放置于 <a href="">Worker</a> 中运行，待运行结束后，再把结果返回到主线程。<a href="">Worker</a> 运行于一个单独的全局上下文与线程中，不能直接调用主线程的方法，<a href="">Worker</a> 也不具备渲染的能力。 <a href="">Worker</a> 与主线程之间的数据传输，双方使用 <a href="">Worker.postMessage()</a> 来发送数据，<a href="">Worker.onMessage()</a> 来接收数据，传输的数据并不是直接共享，而是被复制的。
+对于游戏来说，每帧 16ms 是极其宝贵的，如果有一些可以异步处理的任务，可以放置于 [Worker](../../document/worker/Worker.html) 中运行，待运行结束后，再把结果返回到主线程。[Worker](../../document/worker/Worker.html) 运行于一个单独的全局上下文与线程中，不能直接调用主线程的方法，[Worker](../../document/worker/Worker.html) 也不具备渲染的能力。 [Worker](../../document/worker/Worker.html) 与主线程之间的数据传输，双方使用 [Worker.postMessage()](../../document/worker/Worker.postMessage.html) 来发送数据，[Worker.onMessage()](../../document/worker/Worker.onMessage.html) 来接收数据，传输的数据并不是直接共享，而是被复制的。
 
 #### 步骤
 
@@ -170,11 +170,11 @@
       msg: 'hello worker'
     })
 
-worker 对象的其它接口请看 <a href="">worker接口说明</a>
+worker 对象的其它接口请看 [worker接口说明](../../document/worker/Worker.html)
 
 #### Tips
 
-1.  Worker 最大并发数量限制为 1 个，创建下一个前请用 <a href="">Worker.terminate()</a> 结束当前 Worker
+1.  Worker 最大并发数量限制为 1 个，创建下一个前请用 [Worker.terminate()](../../document/worker/Worker.terminate.html) 结束当前 Worker
 2.  Worker 内代码只能 require 指定 Worker 路径内的文件，无法引用其它路径
 3.  Worker 的入口文件由 [wx.createWorker()](../../document/worker/wx.createWorker.html) 时指定，开发者可动态指定 Worker 入口文件
 4.  Worker 内不支持 `wx` 系列的 API

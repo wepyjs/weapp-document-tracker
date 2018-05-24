@@ -73,6 +73,7 @@
         *   [Canvas.toTempFilePath](../../render/canvas/Canvas.toTempFilePath.html)
         *   [Canvas.toDataURL](../../render/canvas/Canvas.toDataURL.html)
         *   [Canvas.toTempFilePathSync](../../render/canvas/Canvas.toTempFilePathSync.html)
+        *   [WebGLRenderingContext.wxBindCanvasTexture](../../render/canvas/WebGLRenderingContext.wxBindCanvasTexture.html)
     *   [图片](../../render/image/wx.createImage.html)
         *   [wx.createImage](../../render/image/wx.createImage.html)
         *   [Image](../../render/image/Image.html)
@@ -380,15 +381,18 @@
     *   [录音](wx.getRecorderManager.html)
         *   [wx.getRecorderManager](wx.getRecorderManager.html)
         *   [RecorderManager](RecorderManager.html)
-        *   [RecorderManager.onPause](RecorderManager.onPause.html)
         *   [RecorderManager.onStop](RecorderManager.onStop.html)
-        *   [RecorderManager.onFrameRecorded](RecorderManager.onFrameRecorded.html)
-        *   [RecorderManager.onError](RecorderManager.onError.html)
+        *   [RecorderManager.onPause](RecorderManager.onPause.html)
+        *   [RecorderManager.onInterruptionEnd](RecorderManager.onInterruptionEnd.html)
         *   [RecorderManager.onStart](RecorderManager.onStart.html)
+        *   [RecorderManager.onResume](RecorderManager.onResume.html)
+        *   [RecorderManager.onInterruptionBegin](RecorderManager.onInterruptionBegin.html)
+        *   [RecorderManager.onError](RecorderManager.onError.html)
+        *   [RecorderManager.onFrameRecorded](RecorderManager.onFrameRecorded.html)
         *   [RecorderManager.pause](RecorderManager.pause.html)
         *   [RecorderManager.resume](RecorderManager.resume.html)
-        *   [RecorderManager.stop](RecorderManager.stop.html)
         *   [RecorderManager.start](RecorderManager.start.html)
+        *   [RecorderManager.stop](RecorderManager.stop.html)
     *   [图片](../image/wx.chooseImage.html)
         *   [wx.chooseImage](../image/wx.chooseImage.html)
         *   [wx.previewImage](../image/wx.previewImage.html)
@@ -546,6 +550,6 @@
 
 </div>
 
-[](RecorderManager.onStop.html)[](RecorderManager.onError.html)</div>
+[](RecorderManager.onError.html)[](RecorderManager.pause.html)</div>
 
 </div>

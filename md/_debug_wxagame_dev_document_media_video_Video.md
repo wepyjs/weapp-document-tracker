@@ -73,6 +73,7 @@
         *   [Canvas.toTempFilePath](../../render/canvas/Canvas.toTempFilePath.html)
         *   [Canvas.toDataURL](../../render/canvas/Canvas.toDataURL.html)
         *   [Canvas.toTempFilePathSync](../../render/canvas/Canvas.toTempFilePathSync.html)
+        *   [WebGLRenderingContext.wxBindCanvasTexture](../../render/canvas/WebGLRenderingContext.wxBindCanvasTexture.html)
     *   [图片](../../render/image/wx.createImage.html)
         *   [wx.createImage](../../render/image/wx.createImage.html)
         *   [Image](../../render/image/Image.html)
@@ -380,15 +381,18 @@
     *   [录音](../recorder/wx.getRecorderManager.html)
         *   [wx.getRecorderManager](../recorder/wx.getRecorderManager.html)
         *   [RecorderManager](../recorder/RecorderManager.html)
-        *   [RecorderManager.onPause](../recorder/RecorderManager.onPause.html)
         *   [RecorderManager.onStop](../recorder/RecorderManager.onStop.html)
-        *   [RecorderManager.onFrameRecorded](../recorder/RecorderManager.onFrameRecorded.html)
-        *   [RecorderManager.onError](../recorder/RecorderManager.onError.html)
+        *   [RecorderManager.onPause](../recorder/RecorderManager.onPause.html)
+        *   [RecorderManager.onInterruptionEnd](../recorder/RecorderManager.onInterruptionEnd.html)
         *   [RecorderManager.onStart](../recorder/RecorderManager.onStart.html)
+        *   [RecorderManager.onResume](../recorder/RecorderManager.onResume.html)
+        *   [RecorderManager.onInterruptionBegin](../recorder/RecorderManager.onInterruptionBegin.html)
+        *   [RecorderManager.onError](../recorder/RecorderManager.onError.html)
+        *   [RecorderManager.onFrameRecorded](../recorder/RecorderManager.onFrameRecorded.html)
         *   [RecorderManager.pause](../recorder/RecorderManager.pause.html)
         *   [RecorderManager.resume](../recorder/RecorderManager.resume.html)
-        *   [RecorderManager.stop](../recorder/RecorderManager.stop.html)
         *   [RecorderManager.start](../recorder/RecorderManager.start.html)
+        *   [RecorderManager.stop](../recorder/RecorderManager.stop.html)
     *   [图片](../image/wx.chooseImage.html)
         *   [wx.chooseImage](../image/wx.chooseImage.html)
         *   [wx.previewImage](../image/wx.previewImage.html)
@@ -608,6 +612,34 @@
 ##### [Video.offError(function callback)](Video.offError.html)
 
 取消监听视频错误事件
+
+##### [Promise Video.play()](Video.play.html)
+
+播放视频
+
+##### [Promise Video.pause()](Video.pause.html)
+
+暂停视频
+
+##### [Promise Video.stop()](Video.stop.html)
+
+停止视频
+
+##### [Promise Video.seek(number time)](Video.seek.html)
+
+视频跳转
+
+##### [Promise Video.requestFullScreen()](Video.requestFullScreen.html)
+
+视频全屏
+
+##### [Promise Video.exitFullScreen()](Video.exitFullScreen.html)
+
+视频退出全屏
+
+##### [Video wx.createVideo(Object object)](wx.createVideo.html)
+
+创建视频
 
 </section>
 

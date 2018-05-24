@@ -73,6 +73,7 @@
         *   [Canvas.toTempFilePath](../render/canvas/Canvas.toTempFilePath.html)
         *   [Canvas.toDataURL](../render/canvas/Canvas.toDataURL.html)
         *   [Canvas.toTempFilePathSync](../render/canvas/Canvas.toTempFilePathSync.html)
+        *   [WebGLRenderingContext.wxBindCanvasTexture](../render/canvas/WebGLRenderingContext.wxBindCanvasTexture.html)
     *   [图片](../render/image/wx.createImage.html)
         *   [wx.createImage](../render/image/wx.createImage.html)
         *   [Image](../render/image/Image.html)
@@ -380,15 +381,18 @@
     *   [录音](../media/recorder/wx.getRecorderManager.html)
         *   [wx.getRecorderManager](../media/recorder/wx.getRecorderManager.html)
         *   [RecorderManager](../media/recorder/RecorderManager.html)
-        *   [RecorderManager.onPause](../media/recorder/RecorderManager.onPause.html)
         *   [RecorderManager.onStop](../media/recorder/RecorderManager.onStop.html)
-        *   [RecorderManager.onFrameRecorded](../media/recorder/RecorderManager.onFrameRecorded.html)
-        *   [RecorderManager.onError](../media/recorder/RecorderManager.onError.html)
+        *   [RecorderManager.onPause](../media/recorder/RecorderManager.onPause.html)
+        *   [RecorderManager.onInterruptionEnd](../media/recorder/RecorderManager.onInterruptionEnd.html)
         *   [RecorderManager.onStart](../media/recorder/RecorderManager.onStart.html)
+        *   [RecorderManager.onResume](../media/recorder/RecorderManager.onResume.html)
+        *   [RecorderManager.onInterruptionBegin](../media/recorder/RecorderManager.onInterruptionBegin.html)
+        *   [RecorderManager.onError](../media/recorder/RecorderManager.onError.html)
+        *   [RecorderManager.onFrameRecorded](../media/recorder/RecorderManager.onFrameRecorded.html)
         *   [RecorderManager.pause](../media/recorder/RecorderManager.pause.html)
         *   [RecorderManager.resume](../media/recorder/RecorderManager.resume.html)
-        *   [RecorderManager.stop](../media/recorder/RecorderManager.stop.html)
         *   [RecorderManager.start](../media/recorder/RecorderManager.start.html)
+        *   [RecorderManager.stop](../media/recorder/RecorderManager.stop.html)
     *   [图片](../media/image/wx.chooseImage.html)
         *   [wx.chooseImage](../media/image/wx.chooseImage.html)
         *   [wx.previewImage](../media/image/wx.previewImage.html)
@@ -466,6 +470,12 @@ UpdateManager 实例，用来管理更新，可通过 [wx.getUpdateManager](wx.g
 ##### [UpdateManager.onUpdateFailed(function callback)](UpdateManager.onUpdateFailed.html)
 
 监听更新包下载失败回调
+
+##### [UpdateManager.applyUpdate()](UpdateManager.applyUpdate.html)
+
+应用更新包并重启
+
+##### [UpdateManager wx.getUpdateManager()](wx.getUpdateManager.html)
 
 </section>
 

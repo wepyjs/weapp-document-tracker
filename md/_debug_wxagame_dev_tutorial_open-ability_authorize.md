@@ -249,7 +249,7 @@
 
 <td>scope.record</td>
 
-<td><a href="">wx.startRecord()</a>、<a href="">RecorderManager.start()</a></td>
+<td><a href="">wx.startRecord()</a>、[RecorderManager.start()](../../document/media/recorder/RecorderManager.start.html)</td>
 
 <td>录音功能</td>
 

@@ -73,6 +73,7 @@
         *   [Canvas.toTempFilePath](../../render/canvas/Canvas.toTempFilePath.html)
         *   [Canvas.toDataURL](../../render/canvas/Canvas.toDataURL.html)
         *   [Canvas.toTempFilePathSync](../../render/canvas/Canvas.toTempFilePathSync.html)
+        *   [WebGLRenderingContext.wxBindCanvasTexture](../../render/canvas/WebGLRenderingContext.wxBindCanvasTexture.html)
     *   [图片](../../render/image/wx.createImage.html)
         *   [wx.createImage](../../render/image/wx.createImage.html)
         *   [Image](../../render/image/Image.html)
@@ -380,15 +381,18 @@
     *   [录音](../recorder/wx.getRecorderManager.html)
         *   [wx.getRecorderManager](../recorder/wx.getRecorderManager.html)
         *   [RecorderManager](../recorder/RecorderManager.html)
-        *   [RecorderManager.onPause](../recorder/RecorderManager.onPause.html)
         *   [RecorderManager.onStop](../recorder/RecorderManager.onStop.html)
-        *   [RecorderManager.onFrameRecorded](../recorder/RecorderManager.onFrameRecorded.html)
-        *   [RecorderManager.onError](../recorder/RecorderManager.onError.html)
+        *   [RecorderManager.onPause](../recorder/RecorderManager.onPause.html)
+        *   [RecorderManager.onInterruptionEnd](../recorder/RecorderManager.onInterruptionEnd.html)
         *   [RecorderManager.onStart](../recorder/RecorderManager.onStart.html)
+        *   [RecorderManager.onResume](../recorder/RecorderManager.onResume.html)
+        *   [RecorderManager.onInterruptionBegin](../recorder/RecorderManager.onInterruptionBegin.html)
+        *   [RecorderManager.onError](../recorder/RecorderManager.onError.html)
+        *   [RecorderManager.onFrameRecorded](../recorder/RecorderManager.onFrameRecorded.html)
         *   [RecorderManager.pause](../recorder/RecorderManager.pause.html)
         *   [RecorderManager.resume](../recorder/RecorderManager.resume.html)
-        *   [RecorderManager.stop](../recorder/RecorderManager.stop.html)
         *   [RecorderManager.start](../recorder/RecorderManager.start.html)
+        *   [RecorderManager.stop](../recorder/RecorderManager.stop.html)
     *   [图片](../image/wx.chooseImage.html)
         *   [wx.chooseImage](../image/wx.chooseImage.html)
         *   [wx.previewImage](../image/wx.previewImage.html)
@@ -588,6 +592,26 @@ InnerAudioContext 实例，可通过 wx.createInnerAudioContext 接口获取实�
 ##### [InnerAudioContext.offSeeked(function callback)](InnerAudioContext.offSeeked.html)
 
 取消监听音频完成跳转操作的事件
+
+##### [InnerAudioContext.play()](InnerAudioContext.play.html)
+
+播放
+
+##### [InnerAudioContext.pause()](InnerAudioContext.pause.html)
+
+暂停。暂停后的音频再播放会从暂停处开始播放
+
+##### [InnerAudioContext.stop()](InnerAudioContext.stop.html)
+
+停止。停止后的音频再播放会从头开始播放。
+
+##### [InnerAudioContext.seek(number position)](InnerAudioContext.seek.html)
+
+跳转到指定位置，单位 s
+
+##### [InnerAudioContext.destroy()](InnerAudioContext.destroy.html)
+
+销毁当前实例
 
 </section>
 

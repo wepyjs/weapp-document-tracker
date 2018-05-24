@@ -138,7 +138,7 @@
 
 激励视频广告组件是自动拉取广告并进行更新的。在组件创建后会拉取一次广告，用户点击 `关闭广告` 后会去拉取下一条广告。
 
-如果拉取成功。<a href="">RewardedVideoAd.onLoad()</a> 会执行，<a href="">RewardedVideoAd.show()</a> 返回的 Promise 也会是一个 resolved Promise。两者的回调函数中都没有参数传递。
+如果拉取成功。[RewardedVideoAd.onLoad()](../../document/ad/RewardedVideoAd.onLoad.html) 会执行，[RewardedVideoAd.show()](../../document/ad/RewardedVideoAd.show.html) 返回的 Promise 也会是一个 resolved Promise。两者的回调函数中都没有参数传递。
 
     rewardedVideoAd.onLoad(() => {
       console.log('banner 广告加载成功')
@@ -147,20 +147,20 @@
     rewardedVideoAd.show()
     .then(() => console.log('banner 广告显示'))
 
-如果拉取失败，通过 <a href="">RewardedVideoAd.onError()</a> 注册的回调函数会执行，回调函数的参数是一个包含错误信息的对象。
+如果拉取失败，通过 [RewardedVideoAd.onError()](../../document/ad/RewardedVideoAd.onError.html) 注册的回调函数会执行，回调函数的参数是一个包含错误信息的对象。
 
     rewardedVideoAd.onError(err => {
       console.log(err)
     })
 
-<a href="">RewardedVideoAd.show()</a> 返回的 Promise 也会是一个 rejected Promise。
+[RewardedVideoAd.show()](../../document/ad/RewardedVideoAd.show.html) 返回的 Promise 也会是一个 rejected Promise。
 
     rewardedVideoAd.show()
     .catch(err => console.log(err))
 
 ### 拉取失败，重新拉取
 
-如果组件的某次自动拉取失败，那么之后调用的 show() 将会被 reject。此时可以调用 <a href="">RewardedVideoAd.load()</a> 手动重新拉取广告。
+如果组件的某次自动拉取失败，那么之后调用的 show() 将会被 reject。此时可以调用 [RewardedVideoAd.load()](../../document/ad/RewardedVideoAd.load.html) 手动重新拉取广告。
 
     rewardedVideoAd.show()
     .catch(err => {
@@ -175,7 +175,7 @@
 
 ### 监听用户关闭广告
 
-只有在用户点击激励视频广告组件上的 `关闭广告` 按钮时，广告才会关闭。这个事件可以通过 <a href="">RewardedVideoAd.onClose()</a> 监听。
+只有在用户点击激励视频广告组件上的 `关闭广告` 按钮时，广告才会关闭。这个事件可以通过 [RewardedVideoAd.onClose()](../../document/ad/RewardedVideoAd.onClose.html) 监听。
 
 `关闭广告` 按钮只有在广告视频完全播放完以后才会出现，`onClose` 触发时可以认为用户已经看完了广告。
 

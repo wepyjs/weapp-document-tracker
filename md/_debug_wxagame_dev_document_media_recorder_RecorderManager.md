@@ -73,6 +73,7 @@
         *   [Canvas.toTempFilePath](../../render/canvas/Canvas.toTempFilePath.html)
         *   [Canvas.toDataURL](../../render/canvas/Canvas.toDataURL.html)
         *   [Canvas.toTempFilePathSync](../../render/canvas/Canvas.toTempFilePathSync.html)
+        *   [WebGLRenderingContext.wxBindCanvasTexture](../../render/canvas/WebGLRenderingContext.wxBindCanvasTexture.html)
     *   [图片](../../render/image/wx.createImage.html)
         *   [wx.createImage](../../render/image/wx.createImage.html)
         *   [Image](../../render/image/Image.html)
@@ -380,15 +381,18 @@
     *   [录音](wx.getRecorderManager.html)
         *   [wx.getRecorderManager](wx.getRecorderManager.html)
         *   [RecorderManager](RecorderManager.html)
-        *   [RecorderManager.onPause](RecorderManager.onPause.html)
         *   [RecorderManager.onStop](RecorderManager.onStop.html)
-        *   [RecorderManager.onFrameRecorded](RecorderManager.onFrameRecorded.html)
-        *   [RecorderManager.onError](RecorderManager.onError.html)
+        *   [RecorderManager.onPause](RecorderManager.onPause.html)
+        *   [RecorderManager.onInterruptionEnd](RecorderManager.onInterruptionEnd.html)
         *   [RecorderManager.onStart](RecorderManager.onStart.html)
+        *   [RecorderManager.onResume](RecorderManager.onResume.html)
+        *   [RecorderManager.onInterruptionBegin](RecorderManager.onInterruptionBegin.html)
+        *   [RecorderManager.onError](RecorderManager.onError.html)
+        *   [RecorderManager.onFrameRecorded](RecorderManager.onFrameRecorded.html)
         *   [RecorderManager.pause](RecorderManager.pause.html)
         *   [RecorderManager.resume](RecorderManager.resume.html)
-        *   [RecorderManager.stop](RecorderManager.stop.html)
         *   [RecorderManager.start](RecorderManager.start.html)
+        *   [RecorderManager.stop](RecorderManager.stop.html)
     *   [图片](../image/wx.chooseImage.html)
         *   [wx.chooseImage](../image/wx.chooseImage.html)
         *   [wx.previewImage](../image/wx.previewImage.html)
@@ -471,6 +475,10 @@
 
 监听录音开始事件
 
+##### [RecorderManager.onResume(function callback)](RecorderManager.onResume.html)
+
+监听录音继续事件
+
 ##### [RecorderManager.onPause(function callback)](RecorderManager.onPause.html)
 
 监听录音暂停事件
@@ -486,6 +494,34 @@
 ##### [RecorderManager.onError(function callback)](RecorderManager.onError.html)
 
 监听录音错误事件
+
+##### [RecorderManager.onInterruptionBegin(function callback)](RecorderManager.onInterruptionBegin.html)
+
+监听录音因为受到系统占用而被中断开始，以下场景会触发此事件：微信语音聊天、微信视频聊天。此事件触发后，录音会被暂停。pause 事件在此事件后触发
+
+##### [RecorderManager.onInterruptionEnd(function callback)](RecorderManager.onInterruptionEnd.html)
+
+监听录音中断结束，在收到 interruptionBegin 事件之后，小程序内所有录音会暂停，收到此事件之后才可再次录音成功。
+
+##### [RecorderManager.start(Object object)](RecorderManager.start.html)
+
+开始录音
+
+##### [RecorderManager.pause()](RecorderManager.pause.html)
+
+暂停录音
+
+##### [RecorderManager.resume()](RecorderManager.resume.html)
+
+继续录音
+
+##### [RecorderManager.stop()](RecorderManager.stop.html)
+
+停止录音
+
+##### [RecorderManager wx.getRecorderManager()](wx.getRecorderManager.html)
+
+获取全局唯一的 RecorderManager
 
 </section>
 
@@ -526,6 +562,6 @@
 
 </div>
 
-[](wx.getRecorderManager.html)[](RecorderManager.onPause.html)</div>
+[](wx.getRecorderManager.html)[](RecorderManager.onStop.html)</div>
 
 </div>
