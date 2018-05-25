@@ -401,7 +401,7 @@
 
 <tr>
 
-<td>waiting-image-md5</td>
+<td>waiting-image-hash</td>
 
 <td>String</td>
 
