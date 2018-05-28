@@ -172,7 +172,7 @@ WXS 代码可以编写在 wxml 文件中的 `<wxs>` 标签内，或以 `.wxs` �
 
 **示例代码：**
 
-[在开发者工具中预览效果](wechatide://minicode/Ts3L3nmi63YO)
+[在开发者工具中预览效果](wechatide://minicode/KYgu1Km36pZP)
 
     // /pages/tools.wxs
 
@@ -209,7 +209,7 @@ WXS 代码可以编写在 wxml 文件中的 `<wxs>` 标签内，或以 `.wxs` �
 
 **示例代码：**
 
-[在开发者工具中预览效果](wechatide://minicode/H88vDnm668Y0)
+[在开发者工具中预览效果](wechatide://minicode/E4g94Kme6rZ6)
 
     // /pages/tools.wxs
 
@@ -302,7 +302,7 @@ module 属性值的命名必须符合下面两个规则：
 
 **示例代码：**
 
-[在开发者工具中预览效果](wechatide://minicode/jPeZCnmD6eYr)
+[在开发者工具中预览效果](wechatide://minicode/IzgmKKmn6tZ6)
 
     <!--wxml-->
 
@@ -332,7 +332,7 @@ src 属性可以用来引用其他的 `wxs` 文件模块。
 
 **示例代码：**
 
-[在开发者工具中预览效果](wechatide://minicode/kkm6JnmW6mYv)
+[在开发者工具中预览效果](wechatide://minicode/C7gYFKmh6vZI)
 
     // /pages/index/index.js
 

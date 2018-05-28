@@ -215,7 +215,7 @@
 
 **代码示例：**
 
-[在开发者工具中预览效果](wechatide://minicode/pLeYvnmW62Yd)
+[在开发者工具中预览效果](wechatide://minicode/jAgvwKm16bZD)
 
     /* 组件 custom-component.wxss */
     :host {
@@ -245,7 +245,7 @@
 
 **代码示例：**
 
-[在开发者工具中预览效果](wechatide://minicode/65emRnmA6pYk)
+[在开发者工具中预览效果](wechatide://minicode/rbgNNKmE6bZK)
 
     <!-- 页面的 WXML -->
     <custom-component my-class="red-text" />

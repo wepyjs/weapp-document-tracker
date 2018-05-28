@@ -147,7 +147,7 @@
 
 通过这个简单的例子来看：
 
-[在开发者工具中预览效果](wechatide://minicode/pfZXAmm26SY1)
+[在开发者工具中预览效果](wechatide://minicode/l0gLEKmv6gZa)
 
     <!-- This is our View -->
     <view> Hello {{name}}! </view>

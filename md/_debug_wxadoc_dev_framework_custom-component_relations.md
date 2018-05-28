@@ -144,7 +144,7 @@
 
 这个例子中， `custom-ul` 和 `custom-li` 都是自定义组件，它们有相互间的关系，相互间的通信往往比较复杂。此时在组件定义时加入 `relations` 定义段，可以解决这样的问题。示例：
 
-[在开发者工具中预览效果](wechatide://minicode/00qj0nmE6UYt)
+[在开发者工具中预览效果](wechatide://minicode/0kfvzKm56NZy)
 
     // path/to/custom-ul.js
     Component({

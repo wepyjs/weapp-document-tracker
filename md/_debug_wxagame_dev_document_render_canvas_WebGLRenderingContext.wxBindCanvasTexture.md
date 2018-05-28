@@ -449,19 +449,19 @@
 
 <section class="normal markdown-section">
 
-### WebGLRenderingContext.wxBindCanvasTexture(number WebGL, Canvas 需要绑定为)
+### WebGLRenderingContext.wxBindCanvasTexture(number texture, Canvas canvas)
 
 将一个 Canvas 对应的 Texture 绑定到 WebGL 上下文。
 
 #### 参数
 
-##### number WebGL
+##### number texture
 
-的纹理类型枚举值
+WebGL 的纹理类型枚举值
 
-##### [Canvas](Canvas.html) 需要绑定为
+##### [Canvas](Canvas.html) canvas
 
-Texture 的 Canvas
+需要绑定为 Texture 的 Canvas
 
 #### 示例代码
 

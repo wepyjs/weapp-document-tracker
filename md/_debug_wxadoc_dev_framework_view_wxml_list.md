@@ -195,7 +195,7 @@
 
 **示例代码：**
 
-[在开发者工具中预览效果](wechatide://minicode/r5L9Lnmw6EY9)
+[在开发者工具中预览效果](wechatide://minicode/tpg5tKmv6kZt)
 
     <switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;"> {{item.id}} </switch>
     <button bindtap="switch"> Switch </button>

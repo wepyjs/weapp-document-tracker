@@ -577,9 +577,7 @@
 
 <td>data</td>
 
-<td>Object</td>
-
-<td>string</td>
+<td>Object/string</td>
 
 <td>key对应的内容</td>
 

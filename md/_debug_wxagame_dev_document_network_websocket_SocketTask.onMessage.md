@@ -489,9 +489,7 @@
 
 <td>data</td>
 
-<td>string</td>
-
-<td>ArrayBuffer</td>
+<td>string/ArrayBuffer</td>
 
 <td>服务器返回的消息</td>
 

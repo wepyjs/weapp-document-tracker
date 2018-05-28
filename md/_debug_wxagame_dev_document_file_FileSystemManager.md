@@ -455,13 +455,9 @@
 
 #### 方法
 
-##### [Array.<string> FileSystemManager.readdirSync(string dirPath)](FileSystemManager.readdirSync.html)
+##### [FileSystemManager.getFileInfo(Object object)](FileSystemManager.getFileInfo.html)
 
-FileSystemManager.readdir 的同步版本
-
-##### [FileSystemManager.readdir(Object object)](FileSystemManager.readdir.html)
-
-读取目录内文件列表
+获取该小程序下的 本地临时文件 或 本地缓存文件 信息
 
 ##### [FileSystemManager.mkdirSync(string dirPath, boolean recursive)](FileSystemManager.mkdirSync.html)
 
@@ -479,18 +475,6 @@ FileSystemManager.readFile 的同步版本
 
 读取本地文件内容
 
-##### [Stats FileSystemManager.statSync(string path)](FileSystemManager.statSync.html)
-
-FileSystemManager.stat 的同步版本
-
-##### [Stats FileSystemManager.stat(Object object)](FileSystemManager.stat.html)
-
-获取文件 Stats 对象
-
-##### [FileSystemManager.unzip(Object object)](FileSystemManager.unzip.html)
-
-解压文件
-
 ##### [FileSystemManager.rmdirSync(string dirPath, boolean recursive)](FileSystemManager.rmdirSync.html)
 
 FileSystemManager.rmdir 的同步版本
@@ -498,6 +482,14 @@ FileSystemManager.rmdir 的同步版本
 ##### [FileSystemManager.rmdir(Object object)](FileSystemManager.rmdir.html)
 
 删除目录
+
+##### [Array.<string> FileSystemManager.readdirSync(string dirPath)](FileSystemManager.readdirSync.html)
+
+FileSystemManager.readdir 的同步版本
+
+##### [FileSystemManager.readdir(Object object)](FileSystemManager.readdir.html)
+
+读取目录内文件列表
 
 ##### [FileSystemManager.unlinkSync(string filePath)](FileSystemManager.unlinkSync.html)
 
@@ -514,6 +506,18 @@ FileSystemManager.rename 的同步版本
 ##### [FileSystemManager.rename(Object object)](FileSystemManager.rename.html)
 
 重命名文件，可以把文件从 oldPath 移动到 newPath
+
+##### [FileSystemManager.unzip(Object object)](FileSystemManager.unzip.html)
+
+解压文件
+
+##### [Stats FileSystemManager.statSync(string path)](FileSystemManager.statSync.html)
+
+FileSystemManager.stat 的同步版本
+
+##### [Stats FileSystemManager.stat(Object object)](FileSystemManager.stat.html)
+
+获取文件 Stats 对象
 
 ##### [FileSystemManager.writeFileSync(string filePath, string|ArrayBuffer data, string encoding)](FileSystemManager.writeFileSync.html)
 

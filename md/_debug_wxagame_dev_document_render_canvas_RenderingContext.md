@@ -455,7 +455,7 @@
 
 #### 方法
 
-##### [WebGLRenderingContext.wxBindCanvasTexture(number WebGL, Canvas 需要绑定为)](WebGLRenderingContext.wxBindCanvasTexture.html)
+##### [WebGLRenderingContext.wxBindCanvasTexture(number texture, Canvas canvas)](WebGLRenderingContext.wxBindCanvasTexture.html)
 
 将一个 Canvas 对应的 Texture 绑定到 WebGL 上下文。
 

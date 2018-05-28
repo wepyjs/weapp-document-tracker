@@ -501,9 +501,7 @@
 
 <td>data</td>
 
-<td>string</td>
-
-<td>object</td>
+<td>string/object</td>
 
 <td></td>
 
@@ -759,11 +757,7 @@
 
 <td>data</td>
 
-<td>string</td>
-
-<td>Object</td>
-
-<td>Arraybuffer</td>
+<td>string/Object/Arraybuffer</td>
 
 <td>开发者服务器返回的数据</td>
 

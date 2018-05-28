@@ -501,9 +501,7 @@
 
 <td>data</td>
 
-<td>Object</td>
-
-<td>string</td>
+<td>Object/string</td>
 
 <td></td>
 

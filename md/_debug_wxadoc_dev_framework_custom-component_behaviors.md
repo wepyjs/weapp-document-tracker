@@ -164,7 +164,7 @@
 
 **代码示例：**
 
-[在开发者工具中预览效果](wechatide://minicode/CHlNxnml6yYV)
+[在开发者工具中预览效果](wechatide://minicode/6SfsUKmE6iZC)
 
     // my-component.js
     var myBehavior = require('my-behavior')

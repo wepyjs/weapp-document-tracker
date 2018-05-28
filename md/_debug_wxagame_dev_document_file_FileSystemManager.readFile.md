@@ -669,9 +669,7 @@
 
 <td>data</td>
 
-<td>string</td>
-
-<td>ArrayBuffer</td>
+<td>string/ArrayBuffer</td>
 
 <td>文件内容</td>
 

@@ -461,7 +461,7 @@ Component构造器可用于定义组件，调用Component构造器时可以指�
 
 **代码示例：**
 
-[在开发者工具中预览效果](wechatide://minicode/54ff4nmb64YE)
+[在开发者工具中预览效果](wechatide://minicode/B7f1UKmO6pZV)
 
     Component({
 

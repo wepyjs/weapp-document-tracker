@@ -341,7 +341,7 @@
 
 **示例代码：**
 
-[在开发者工具中预览效果](wechatide://minicode/YMMjwnm364Yl)
+[在开发者工具中预览效果](wechatide://minicode/2PeBsKmn6EZ9)
 
     <view>{{text}}</view>
     <view>{{array[0].msg}}</view>
@@ -504,7 +504,7 @@
 
 **示例代码**
 
-[在开发者工具中预览效果](wechatide://minicode/UUUiDnms6TYX)
+[在开发者工具中预览效果](wechatide://minicode/mffqUKmr6fZU)
 
     Page({
       onShareAppMessage: function () {
@@ -521,7 +521,7 @@
 
 **示例代码：**
 
-[在开发者工具中预览效果](wechatide://minicode/rhFjFnmX6lYu)
+[在开发者工具中预览效果](wechatide://minicode/vUf6fKmX64Zn)
 
     <view bindtap="viewTap"> click me </view>
 
@@ -609,7 +609,7 @@ object 以 key，value 的形式表示将 this.data 中的 key 对应的值改�
 
 **示例代码：**
 
-[在开发者工具中预览效果](wechatide://minicode/h3xAxnmB6cY3)
+[在开发者工具中预览效果](wechatide://minicode/HofnzKmb6fZe)
 
     <!--index.wxml-->
     <view>{{text}}</view>
