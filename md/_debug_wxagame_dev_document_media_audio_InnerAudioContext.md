@@ -613,6 +613,10 @@ InnerAudioContext 实例，可通过 wx.createInnerAudioContext 接口获取实�
 
 销毁当前实例
 
+##### [InnerAudioContext wx.createInnerAudioContext()](wx.createInnerAudioContext.html)
+
+创建一个 InnerAudioContext 实例
+
 </section>
 
 </div>

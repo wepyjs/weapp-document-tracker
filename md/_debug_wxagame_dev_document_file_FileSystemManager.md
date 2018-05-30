@@ -455,10 +455,6 @@
 
 #### 方法
 
-##### [FileSystemManager.getFileInfo(Object object)](FileSystemManager.getFileInfo.html)
-
-获取该小程序下的 本地临时文件 或 本地缓存文件 信息
-
 ##### [FileSystemManager.mkdirSync(string dirPath, boolean recursive)](FileSystemManager.mkdirSync.html)
 
 FileSystemManager.mkdir 的同步版本
@@ -466,22 +462,6 @@ FileSystemManager.mkdir 的同步版本
 ##### [FileSystemManager.mkdir(Object object)](FileSystemManager.mkdir.html)
 
 创建目录
-
-##### [string|ArrayBuffer FileSystemManager.readFileSync(string filePath, string encoding)](FileSystemManager.readFileSync.html)
-
-FileSystemManager.readFile 的同步版本
-
-##### [FileSystemManager.readFile(Object object)](FileSystemManager.readFile.html)
-
-读取本地文件内容
-
-##### [FileSystemManager.rmdirSync(string dirPath, boolean recursive)](FileSystemManager.rmdirSync.html)
-
-FileSystemManager.rmdir 的同步版本
-
-##### [FileSystemManager.rmdir(Object object)](FileSystemManager.rmdir.html)
-
-删除目录
 
 ##### [Array.<string> FileSystemManager.readdirSync(string dirPath)](FileSystemManager.readdirSync.html)
 
@@ -491,13 +471,17 @@ FileSystemManager.readdir 的同步版本
 
 读取目录内文件列表
 
-##### [FileSystemManager.unlinkSync(string filePath)](FileSystemManager.unlinkSync.html)
+##### [FileSystemManager.writeFileSync(string filePath, string|ArrayBuffer data, string encoding)](FileSystemManager.writeFileSync.html)
 
-FileSystemManager.unlink 的同步版本
+FileSystemManager.writeFile 的同步版本
 
-##### [FileSystemManager.unlink(Object object)](FileSystemManager.unlink.html)
+##### [FileSystemManager.writeFile(Object object)](FileSystemManager.writeFile.html)
 
-删除文件
+写文件
+
+##### [FileSystemManager.unzip(Object object)](FileSystemManager.unzip.html)
+
+解压文件
 
 ##### [FileSystemManager.renameSync(string oldPath, string newPath)](FileSystemManager.renameSync.html)
 
@@ -507,9 +491,21 @@ FileSystemManager.rename 的同步版本
 
 重命名文件，可以把文件从 oldPath 移动到 newPath
 
-##### [FileSystemManager.unzip(Object object)](FileSystemManager.unzip.html)
+##### [FileSystemManager.unlinkSync(string filePath)](FileSystemManager.unlinkSync.html)
 
-解压文件
+FileSystemManager.unlink 的同步版本
+
+##### [FileSystemManager.unlink(Object object)](FileSystemManager.unlink.html)
+
+删除文件
+
+##### [FileSystemManager.rmdirSync(string dirPath, boolean recursive)](FileSystemManager.rmdirSync.html)
+
+FileSystemManager.rmdir 的同步版本
+
+##### [FileSystemManager.rmdir(Object object)](FileSystemManager.rmdir.html)
+
+删除目录
 
 ##### [Stats FileSystemManager.statSync(string path)](FileSystemManager.statSync.html)
 
@@ -519,13 +515,13 @@ FileSystemManager.stat 的同步版本
 
 获取文件 Stats 对象
 
-##### [FileSystemManager.writeFileSync(string filePath, string|ArrayBuffer data, string encoding)](FileSystemManager.writeFileSync.html)
+##### [string|ArrayBuffer FileSystemManager.readFileSync(string filePath, string encoding)](FileSystemManager.readFileSync.html)
 
-FileSystemManager.writeFile 的同步版本
+FileSystemManager.readFile 的同步版本
 
-##### [FileSystemManager.writeFile(Object object)](FileSystemManager.writeFile.html)
+##### [FileSystemManager.readFile(Object object)](FileSystemManager.readFile.html)
 
-写文件
+读取本地文件内容
 
 </section>
 

@@ -296,6 +296,27 @@ sharedCanvas 是主域和开放数据域都可以访问的一个离屏画布。�
     let context = canvas.getContext('2d')
     context.drawImage(sharedCanvas, 0, 0)
 
+sharedCanvas 的宽高只能在主域设置，不能在开放数据域中设置。
+
+    // game.js
+    sharedCanvas.width = 400
+    sharedCanvas.height = 200
+
+sharedCanvas 本质上也是一个离屏 Canvas，而重设 Canvas 的宽高会清空 Canvas 上的内容。所以要通知开放数据域去重绘 sharedCanvas。
+
+    // game.js
+
+    openDataContext.postMessage({
+      command: 'render'
+    })
+
+    // src/myOpenDataContext/index.js
+    openDataContext.onMessage(data => {
+      if (data.command === 'render') {
+        // ... 重绘 sharedCanvas
+      }
+    })
+
 ## 限制
 
 当小游戏启动开放数据域，即在 game.json 中添加 openDataContext 配置项时。小游戏环境会对主域和开放数据域应用一些限制。
@@ -306,10 +327,13 @@ sharedCanvas 是主域和开放数据域都可以访问的一个离屏画布。�
 2.  上屏 canvas 不能调用 toDataURL，其 context 不能调用 getImageData。
 3.  sharedCanvas 不能调用 toDataURL 和 getContext。
 4.  不能将上屏 canvas 和 sharedCanvas 以任意形式绘制到其他 canvas 上，包括 drawImage、createPattern、texImage2D、texSubImage2D。
+5.  sharedCanvas 的宽高只能在主域设置
 
 ![](../images/open-data/canvas-limit.png)
 
 ### 开放数据域
+
+1.  不能设置 sharedCanvas 的宽高
 
 开放数据域只能调用有限的 API，如下所示：
 

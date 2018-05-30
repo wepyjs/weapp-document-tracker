@@ -710,6 +710,25 @@ context.fillRect(<span class="hljs-number">0</span>, <span class="hljs-number">0
 <span class="hljs-keyword">let</span> context = canvas.getContext(<span class="hljs-string">&apos;2d&apos;</span>)
 context.drawImage(sharedCanvas, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>)
 </code></pre>
+<p>sharedCanvas &#x7684;&#x5BBD;&#x9AD8;&#x53EA;&#x80FD;&#x5728;&#x4E3B;&#x57DF;&#x8BBE;&#x7F6E;&#xFF0C;&#x4E0D;&#x80FD;&#x5728;&#x5F00;&#x653E;&#x6570;&#x636E;&#x57DF;&#x4E2D;&#x8BBE;&#x7F6E;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// game.js</span>
+sharedCanvas.width = <span class="hljs-number">400</span>
+sharedCanvas.height = <span class="hljs-number">200</span>
+</code></pre>
+<p>sharedCanvas &#x672C;&#x8D28;&#x4E0A;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x79BB;&#x5C4F; Canvas&#xFF0C;&#x800C;&#x91CD;&#x8BBE; Canvas &#x7684;&#x5BBD;&#x9AD8;&#x4F1A;&#x6E05;&#x7A7A; Canvas &#x4E0A;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x6240;&#x4EE5;&#x8981;&#x901A;&#x77E5;&#x5F00;&#x653E;&#x6570;&#x636E;&#x57DF;&#x53BB;&#x91CD;&#x7ED8; sharedCanvas&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// game.js</span>
+
+openDataContext.postMessage({
+  command: <span class="hljs-string">&apos;render&apos;</span>
+})
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// src/myOpenDataContext/index.js</span>
+openDataContext.onMessage(data =&gt; {
+  <span class="hljs-keyword">if</span> (data.command === <span class="hljs-string">&apos;render&apos;</span>) {
+    <span class="hljs-comment">// ... &#x91CD;&#x7ED8; sharedCanvas</span>
+  }
+})
+</code></pre>
 <h2 id="&#x9650;&#x5236;">&#x9650;&#x5236;</h2>
 <p>&#x5F53;&#x5C0F;&#x6E38;&#x620F;&#x542F;&#x52A8;&#x5F00;&#x653E;&#x6570;&#x636E;&#x57DF;&#xFF0C;&#x5373;&#x5728; game.json &#x4E2D;&#x6DFB;&#x52A0; openDataContext &#x914D;&#x7F6E;&#x9879;&#x65F6;&#x3002;&#x5C0F;&#x6E38;&#x620F;&#x73AF;&#x5883;&#x4F1A;&#x5BF9;&#x4E3B;&#x57DF;&#x548C;&#x5F00;&#x653E;&#x6570;&#x636E;&#x57DF;&#x5E94;&#x7528;&#x4E00;&#x4E9B;&#x9650;&#x5236;&#x3002;</p>
 <h3 id="&#x4E3B;&#x57DF;">&#x4E3B;&#x57DF;</h3>
@@ -718,9 +737,13 @@ context.drawImage(sharedCanvas, <span class="hljs-number">0</span>, <span class=
 <li>&#x4E0A;&#x5C4F; canvas &#x4E0D;&#x80FD;&#x8C03;&#x7528; toDataURL&#xFF0C;&#x5176; context &#x4E0D;&#x80FD;&#x8C03;&#x7528; getImageData&#x3002;</li>
 <li>sharedCanvas &#x4E0D;&#x80FD;&#x8C03;&#x7528; toDataURL &#x548C; getContext&#x3002;</li>
 <li>&#x4E0D;&#x80FD;&#x5C06;&#x4E0A;&#x5C4F; canvas &#x548C; sharedCanvas &#x4EE5;&#x4EFB;&#x610F;&#x5F62;&#x5F0F;&#x7ED8;&#x5236;&#x5230;&#x5176;&#x4ED6; canvas &#x4E0A;&#xFF0C;&#x5305;&#x62EC; drawImage&#x3001;createPattern&#x3001;texImage2D&#x3001;texSubImage2D&#x3002;</li>
+<li>sharedCanvas &#x7684;&#x5BBD;&#x9AD8;&#x53EA;&#x80FD;&#x5728;&#x4E3B;&#x57DF;&#x8BBE;&#x7F6E;</li>
 </ol>
 <p><img src="../images/open-data/canvas-limit.png" alt=""></p>
 <h3 id="&#x5F00;&#x653E;&#x6570;&#x636E;&#x57DF;">&#x5F00;&#x653E;&#x6570;&#x636E;&#x57DF;</h3>
+<ol>
+<li>&#x4E0D;&#x80FD;&#x8BBE;&#x7F6E; sharedCanvas &#x7684;&#x5BBD;&#x9AD8;</li>
+</ol>
 <p>&#x5F00;&#x653E;&#x6570;&#x636E;&#x57DF;&#x53EA;&#x80FD;&#x8C03;&#x7528;&#x6709;&#x9650;&#x7684; API&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
 <p><strong>&#x5E27;&#x7387;</strong></p>
 <ul>
