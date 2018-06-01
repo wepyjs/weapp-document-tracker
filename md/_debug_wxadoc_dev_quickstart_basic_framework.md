@@ -249,6 +249,6 @@ Page 是一个页面构造器，这个构造器就生成了一个页面。在生
 
 </div>
 
-[](file.html#JS-交互逻辑)[](framework.html#小程序的启动)</div>
+[](file.html#JS-交互逻辑)[](role.html)</div>
 
 </div>

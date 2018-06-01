@@ -1102,6 +1102,6 @@
 
 </div>
 
-[](network-request.html#wxrequestobject)[](network-file.html#wxuploadfileobject)</div>
+[](network-request.html#wxrequestobject)[](network-socket.html)</div>
 
 </div>

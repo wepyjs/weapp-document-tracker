@@ -1705,6 +1705,18 @@
 
 <tr>
 
+<td>timeout</td>
+
+<td>Number</td>
+
+<td>否</td>
+
+<td>超时时间，单位ms，不填表示不会超时</td>
+
+</tr>
+
+<tr>
+
 <td>success</td>
 
 <td>Function</td>

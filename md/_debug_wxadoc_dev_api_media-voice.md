@@ -644,6 +644,6 @@
 
 </div>
 
-[](getRecorderManager.html)[](media-voice.html#wxplayvoiceobject)</div>
+[](getRecorderManager.html)[](media-background-audio.html)</div>
 
 </div>

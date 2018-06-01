@@ -155,7 +155,7 @@
 
 1.  在目录树上右键，选择新建 Page，将自动生成页面所需要的 `wxml`、`wxss`、`js`、`json`
 
-2.  在 app.json 的 pages 字段，添加需要新建的页面的路径，将会自动生成改页面所需要的文件
+2.  在 app.json 的 pages 字段，添加需要新建的页面的路径，将会自动生成该页面所需要的文件
 
 ## 自动保存
 
@@ -440,6 +440,6 @@ wxml 补全
 
 </div>
 
-[](shortcut.html)[](edit.html#文件格式)</div>
+[](shortcut.html)[](projectconfig.html)</div>
 
 </div>

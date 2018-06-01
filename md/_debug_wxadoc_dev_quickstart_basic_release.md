@@ -185,6 +185,6 @@
 
 </div>
 
-[](role.html#小程序的版本)[](release.html#提交审核)</div>
+[](role.html#小程序的版本)[](../../demo.html)</div>
 
 </div>

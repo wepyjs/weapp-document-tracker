@@ -566,7 +566,7 @@
 服务器域名请在 `小程序后台-设置-开发设置-服务器域名` 中进行配置，配置时需要注意：
 
 *   域名只支持 `https` (`request`、`uploadFile`、`downloadFile`) 和 `wss` (`connectSocket`) 协议；
-*   域名不能使用 IP 地址或 localhost，且不能带端口号；
+*   域名不能使用 IP 地址或 localhost
 *   域名必须经过 ICP 备案；
 *   **出于安全考虑，`api.weixin.qq.com` 不能被配置为服务器域名，相关API也不能在小程序内调用。**开发者应将 appsecret 保存到后台服务器中，通过服务器使用 appsecret 获取 accesstoken，并调用相关 API。
 *   对于每个接口，分别可以配置最多 20 个域名

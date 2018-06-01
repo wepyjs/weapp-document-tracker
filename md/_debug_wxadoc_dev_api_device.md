@@ -1044,6 +1044,6 @@
 
 </div>
 
-[](api-caniuse.html)[](device.html#wxgetnetworktypeobject)</div>
+[](api-caniuse.html)[](accelerometer.html)</div>
 
 </div>

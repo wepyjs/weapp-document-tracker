@@ -847,6 +847,6 @@
 
 </div>
 
-[](ext-api.html#wxgetextconfigsync)[](api-login.html)</div>
+[](ext-api.html#wxgetextconfigsync)[](signature.html#wxchecksessionobject)</div>
 
 </div>

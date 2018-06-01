@@ -551,6 +551,6 @@
 
 </div>
 
-[](analysis-user.html)[](analysis-report.html)</div>
+[](analysis-user.html)[](getUpdateManager.html)</div>
 
 </div>

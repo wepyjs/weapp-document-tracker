@@ -858,6 +858,6 @@
 
 </div>
 
-[](media-voice.html#wxstopvoice)[](media-background-audio.html#wxgetbackgroundaudioplayerstateobject)</div>
+[](media-voice.html#wxstopvoice)[](getBackgroundAudioManager.html)</div>
 
 </div>

@@ -693,6 +693,6 @@
 
 </div>
 
-[](scancode.html#wxscancodeobject)[](clipboard.html#wxsetclipboarddataobject)</div>
+[](scancode.html#wxscancodeobject)[](bluetooth.html)</div>
 
 </div>

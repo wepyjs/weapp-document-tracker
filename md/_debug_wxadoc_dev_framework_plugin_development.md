@@ -215,11 +215,19 @@
 
     X-WECHAT-HOSTSIGN: {"noncestr":"NONCESTR", "timestamp":"TIMESTAMP", "signature":"SIGNATURE"}
 
-其中， `NONCESTR` 和 `TIMESTAMP` 是是用于计算签名 `SIGNATRUE` 的参数，签名算法为：
+其中， `NONCESTR` 是一个随机字符串， `TIMESTAMP` 是生成这个随机字符串和 `SIGNATURE` 的 UNIX 时间戳。它们是用于计算签名 `SIGNATRUE` 的参数，签名算法为：
 
-    SIGNATURE = sha1(APPID + NONCESTR + TIMESTAMP + TOKEN)
+    SIGNATURE = sha1([APPID, NONCESTR, TIMESTAMP, TOKEN].sort().join(''))
+
+具体来说，这个算法分为几个步骤：
+
+1.  `sort` 对 `APPID` `NONCESTR` `TIMESTAMP` `TOKEN` 四个值表示成字符串形式，按照字典序排序（同 JavaScript 数组的 sort 方法）；
+2.  `join` 将排好序的四个字符串直接连接在一起；
+3.  对连接结果使用 `sha1` 算法，其结果即 `SIGNATURE` 。
 
 插件开发者可以在服务器上使用这个算法校验签名。其中， `APPID` 是所在小程序的 AppId ； `TOKEN` 是插件 Token ，可以在小程序插件基本设置中找到。
+
+自基础库版本 [2.0.7](../compatibility.html "基础库 2.0.7 开始支持，低版本需做兼容处理。") 开始，在小程序运行期间，若网络状况正常， `NONCESTR` 和 `TIMESTAMP` 会每 10 分钟变更一次。如有必要，可以通过判断 `TIMESTAMP` 来确定当前签名是否依旧有效。
 
 </section>
 

@@ -331,6 +331,6 @@ Sensor panel 有两大功能：
 
 </div>
 
-[](projectconfig.html)[](debug.html#模拟器)</div>
+[](projectconfig.html)[](different.html)</div>
 
 </div>

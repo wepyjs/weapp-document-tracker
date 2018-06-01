@@ -2179,6 +2179,6 @@
 
 </div>
 
-[](analysis.html#概况趋势)[](analysis-visit.html#访问趋势)</div>
+[](analysis.html#概况趋势)[](analysis-user.html)</div>
 
 </div>

@@ -257,7 +257,7 @@
 
 <td>release</td>
 
-<td>当target="miniProgram"时有效，要打开的小程序版本，有效值 develop（开发版），trial（体验版），release（正式版），仅在当前小程序为开发版或体验版时此参数有效；如果当前小程序是体验版或正式版，则打开的小程序必定是正式版。</td>
+<td>当target="miniProgram"时有效，要打开的小程序版本，有效值 develop（开发版），trial（体验版），release（正式版），仅在当前小程序为开发版或体验版时此参数有效；如果当前小程序是正式版，则打开的小程序必定是正式版。</td>
 
 <td>[2.0.7](../framework/compatibility.html "基础库 2.0.7 开始支持，低版本需做兼容处理。")</td>
 
@@ -475,6 +475,6 @@
 
 </div>
 
-[](textarea.html)[](navigator.html)</div>
+[](textarea.html)[](audio.html)</div>
 
 </div>

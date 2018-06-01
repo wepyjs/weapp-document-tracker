@@ -702,6 +702,6 @@
 
 </div>
 
-[](api-login.html#wxloginobject)[](signature.html)</div>
+[](api-login.html#wxloginobject)[](authorize-index.html)</div>
 
 </div>

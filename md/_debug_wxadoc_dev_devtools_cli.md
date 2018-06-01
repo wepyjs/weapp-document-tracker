@@ -160,7 +160,7 @@ Windows: `<安装路径>/cli.bat`
     # 打开工具
     cli -o
     # 打开路径 /Users/username/demo 下的项目
-    cli -o base64@/Users/username/demo
+    cli -o /Users/username/demo
 
 ### 2\. 命令行登录
 

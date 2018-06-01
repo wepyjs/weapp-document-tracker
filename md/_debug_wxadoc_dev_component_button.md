@@ -845,6 +845,6 @@
 
 </div>
 
-[](progress.html)[](button.html)</div>
+[](progress.html)[](checkbox.html)</div>
 
 </div>

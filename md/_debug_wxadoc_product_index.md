@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -513,6 +518,8 @@
 
 <span id="1.3">1.3不得恶意提交小游戏，不得提交与小游戏后台开发模版相似度过高的小游戏，不得提交涉嫌抄袭已有游戏产品的小游戏；不得通过简单修改游戏美术设计、视觉效果、UI、元素、素材等方式提供多个玩法、内容、功能等基本一致的小游戏。</span>
 
+<span id="1.4">1.4小游戏软件著作权有对外授权的，你应向腾讯提供完整、真实、有效、明确的授权文件，腾讯将根据授权内容确定唯一发布上线的小游戏。如授权方允许多个主体同时提交、运营小游戏的，以先提交者为准。在先提交小游戏发布上线后，后续相关主体提交相同或近似小游戏的上线申请均不予接受。因此产生的争议，由你和授权各方协商解决，与腾讯无关。</span>
+
 ### 2.游戏内容规范
 
 <span id="2.1">2.1游戏名称</span>
@@ -658,6 +665,6 @@
 
 </div>
 
-[](reject.html)</div>
+[](./#一、原则及相关说明)</div>
 
 </div>

@@ -1132,6 +1132,6 @@
 
 </div>
 
-[](file.html#wxopendocumentobject)[](data.html#wxsetstorageobject)</div>
+[](file.html#wxopendocumentobject)[](location.html)</div>
 
 </div>

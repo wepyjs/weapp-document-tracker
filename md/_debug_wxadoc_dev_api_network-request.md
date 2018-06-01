@@ -778,8 +778,7 @@
 #### Bug & Tip
 
 1.  `tip`: content-type 默认为 'application/json';
-2.  `tip`: url 中不能有端口；
-3.  `bug`: 开发者工具 `0.10.102800` 版本，`header` 的 `content-type` 设置异常；
+2.  `bug`: 开发者工具 `0.10.102800` 版本，`header` 的 `content-type` 设置异常；
 
 </section>
 
@@ -820,6 +819,6 @@
 
 </div>
 
-[](api-network.html)[](network-request.html#wxrequestobject)</div>
+[](api-network.html)[](network-file.html)</div>
 
 </div>

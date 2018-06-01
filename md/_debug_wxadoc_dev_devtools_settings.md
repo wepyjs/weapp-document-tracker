@@ -221,6 +221,6 @@
 
 </div>
 
-[](page.html#独立窗口)[](settings.html#外观设置)</div>
+[](page.html#独立窗口)[](project.html)</div>
 
 </div>

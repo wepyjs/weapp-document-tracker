@@ -646,6 +646,6 @@
 
 </div>
 
-[](media-video.html#wxsavevideotophotosalbumobject)[](api-video.html#wxcreatevideocontextvideoid)</div>
+[](media-video.html#wxsavevideotophotosalbumobject)[](api-camera.html)</div>
 
 </div>

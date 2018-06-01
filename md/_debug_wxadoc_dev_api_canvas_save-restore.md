@@ -519,6 +519,6 @@
 
 </div>
 
-[](set-global-alpha.html)[](save-restore.html#restore)</div>
+[](set-global-alpha.html)[](draw.html)</div>
 
 </div>
