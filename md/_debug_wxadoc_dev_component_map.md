@@ -299,7 +299,7 @@
 
 <td></td>
 
-<td>点击标记点时触发</td>
+<td>点击标记点时触发，会返回marker的id</td>
 
 <td></td>
 
@@ -313,7 +313,7 @@
 
 <td></td>
 
-<td>点击标记点对应的气泡时触发</td>
+<td>点击标记点对应的气泡时触发，会返回marker的id</td>
 
 <td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -327,7 +327,7 @@
 
 <td></td>
 
-<td>点击控件时触发</td>
+<td>点击控件时触发，会返回control的id</td>
 
 <td></td>
 
@@ -1159,7 +1159,7 @@
 
 ##### controls
 
-在地图上显示控件，控件不随着地图移动
+在地图上显示控件，控件不随着地图移动。**即将废弃，请使用 [cover-view](cover-view.html)**
 
 <table>
 

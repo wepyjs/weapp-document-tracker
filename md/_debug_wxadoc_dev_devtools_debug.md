@@ -104,6 +104,7 @@
         *   [Console Panel](debug.html#console-panel)
         *   [Sensor Panel](debug.html#sensor-panel)
     *   [自定义数据上报](debug.html#自定义数据上报)
+    *   [自动预览](debug.html#自动预览)
     *   [特殊场景调试](different.html)
     *   [真机调试](remote-debug.html)
 *   [命令行调用](cli.html)
@@ -291,6 +292,24 @@ Sensor panel 有两大功能：
 同时可以在窗口中点击 “同步结果” 会同步显示上报的数据： ![12](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/report_mp.png)
 
 关闭窗口后，配置将全部失效，模拟器不再收到配置并不再触发上报（小程序中使用 `wx.reportAnalytics` API 进行的数据上报仍会在工具中输出）。 测试成功后，可到小程序后台发布事件配置，即可正式生效收集所定义的事件数据。
+
+## 自动预览
+
+自动预览可以实现编写小程序时快速预览，免去了每次查看小程序效果时都要扫码或者使用小程序开发助手的麻烦。只需按下快捷键，保持前台运行的微信即可自动唤出或刷新小程序。
+
+要使用自动预览功能，需要配合 6.6.7 及以上的微信客户端版本。
+
+![13](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/autopreview-toggle.png)
+
+要开始使用 “自动预览” 功能，可以在打开预览二维码的时候，点击 “自动预览” 标签以切换到自动预览模式。切换到自动预览模式后，只需按下预览快捷键，或者点击浮窗上的 “编译并预览” 按钮，即可触发自动预览。此时工具会上传代码，保持前台运行的微信客户端会自动刷新当前开发的小程序。
+
+当自动预览成功时，工具栏上的预览图标会显示为一个绿勾。如果预览出错，则会显示为一个红色惊叹号，可以点击查看详情。
+
+注意，自动预览功能仅限与登陆开发者工具的同账号微信使用。如需换回普通预览模式，只需要点击 “扫描二维码预览” 标签即可。
+
+用户可以在快捷键设置里自定义预览快捷键。
+
+![13](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/autopreview-shortcuts.png)
 
 </section>
 

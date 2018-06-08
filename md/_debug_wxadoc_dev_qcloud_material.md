@@ -104,6 +104,7 @@
         *   [Console Panel](../devtools/debug.html#console-panel)
         *   [Sensor Panel](../devtools/debug.html#sensor-panel)
     *   [自定义数据上报](../devtools/debug.html#自定义数据上报)
+    *   [自动预览](../devtools/debug.html#自动预览)
     *   [特殊场景调试](../devtools/different.html)
     *   [真机调试](../devtools/remote-debug.html)
 *   [命令行调用](../devtools/cli.html)
