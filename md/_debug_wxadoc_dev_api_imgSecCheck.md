@@ -457,7 +457,7 @@
 
 #### 请求地址
 
-    GET https://api.weixin.qq.com/wxa/img_sec_check?access_token=ACCESS_TOKEN
+    POST https://api.weixin.qq.com/wxa/img_sec_check?access_token=ACCESS_TOKEN
 
 #### 参数
 

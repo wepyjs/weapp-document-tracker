@@ -539,11 +539,27 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
 
 <tbody>
+
+<tr>
+
+<td>interval</td>
+
+<td>String</td>
+
+<td>否</td>
+
+<td>监听加速度数据回调函数的执行频率</td>
+
+<td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
 
 <tr>
 
@@ -554,6 +570,8 @@
 <td>否</td>
 
 <td>接口调用成功的回调函数</td>
+
+<td></td>
 
 </tr>
 
@@ -566,6 +584,8 @@
 <td>否</td>
 
 <td>接口调用失败的回调函数</td>
+
+<td></td>
 
 </tr>
 
@@ -585,9 +605,59 @@
 
 </table>
 
+**interval 的合法值**
+
+根据机型性能、当前 CPU 与内存的占用情况，interval 的设置与实际 wx.onAccelerometerChange() 回调函数的执行频率会有一些出入。
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>值</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>game</td>
+
+<td>适用于更新游戏的回调频率，在 20ms/次 左右</td>
+
+</tr>
+
+<tr>
+
+<td>ui</td>
+
+<td>适用于更新 UI 的回调频率，在 60ms/次 左右</td>
+
+</tr>
+
+<tr>
+
+<td>normal</td>
+
+<td>普通的回调频率，在 200ms/次 左右</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
 **示例代码：**
 
-    wx.startAccelerometer()
+    wx.startAccelerometer({
+        interval: 'game'
+    })
 
 ### wx.stopAccelerometer(OBJECT)
 

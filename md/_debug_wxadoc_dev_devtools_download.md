@@ -115,6 +115,7 @@
 *   [小程序插件开发](plugin.html)
 *   [云测试](monkey-test.html)
 *   [素材管理](../qcloud/material.html)
+*   [代码托管](../qcloud/tgit.html)
 *   [实现差异](details.html)
     *   [运行环境差异](details.html#运行环境差异)
     *   [ES6 支持情况](details.html#客户端es6-api-支持情况)
@@ -140,13 +141,18 @@
 
 <section class="normal markdown-section">
 
-## 最新版本下载地址 (1.02.1806080)
+## 最新版本下载地址 (1.02.1806120)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
 
+### 2018.06.12 更新日志
+
+1.  `A` 新增 TGit 工具栏入口 [详情](../qcloud/tgit.html)
+2.  `F` 修复 远程调试分包中使用插件报错的问题
+
 ### 2018.06.08 更新日志
 
-1.  `A` 新增 自动预览功能
+1.  `A` 新增 自动预览功能 [详情](debug.html#自动预览)
 2.  `A` 新增 远程调试 Network 面板
 3.  `A` 新增 模拟器静音功能
 4.  `A` 新增 代码断点检测及提示
