@@ -397,7 +397,7 @@
 
 <td></td>
 
-<td>当键盘输入时，触发input事件，event.detail = {value, cursor}，处理函数可以直接 return 一个字符串，将替换输入框的内容。</td>
+<td>键盘输入时触发，event.detail = {value, cursor, keyCode}，keyCode 为键值，2.1.0 起支持，处理函数可以直接 return 一个字符串，将替换输入框的内容。</td>
 
 <td></td>
 

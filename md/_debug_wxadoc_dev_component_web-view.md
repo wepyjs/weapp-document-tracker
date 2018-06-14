@@ -159,7 +159,7 @@ web-view 组件是一个可以用来承载网页的容器，会自动铺满整�
 
 <td></td>
 
-<td>webview 指向网页的链接。需登录[小程序管理后台](https://mp.weixin.qq.com/)配置域名白名单。</td>
+<td>webview 指向网页的链接。可打开关联的公众号的文章，其它网页需登录[小程序管理后台](https://mp.weixin.qq.com/)配置业务域名。</td>
 
 </tr>
 

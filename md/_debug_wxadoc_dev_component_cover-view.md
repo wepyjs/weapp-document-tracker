@@ -139,6 +139,14 @@
 
 <th>属性名</th>
 
+<th>类型</th>
+
+<th>默认值</th>
+
+<th>说明</th>
+
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -147,7 +155,15 @@
 
 <tr>
 
-<td>无</td>
+<td>scroll-top</td>
+
+<td>Number</td>
+
+<td></td>
+
+<td>设置顶部滚动偏移量，仅在设置了 overflow-y: scroll 成为滚动元素后生效</td>
+
+<td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -175,6 +191,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -191,6 +209,36 @@
 
 <td>图标路径，支持临时路径、网络地址（1.6.0起支持）。暂不支持base64格式。</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>bindload</td>
+
+<td>EventHandle</td>
+
+<td></td>
+
+<td>图片加载成功时触发</td>
+
+<td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>binderror</td>
+
+<td>EventHandle</td>
+
+<td></td>
+
+<td>图片加载失败时触发</td>
+
+<td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 </tbody>
@@ -199,16 +247,17 @@
 
 ##### Bug & Tips
 
-1.  `tip`: 基础库 1.9.90 起 `cover-view` 支持 `overflow: scroll`，但不支持动态更新 `overflow`
-2.  `tip`: 基础库 1.9.90 起最外层 `cover-view` 支持 `position: fixed`
-3.  `tip`: 基础库 1.9.0 起支持插在 `view` 等标签下。在此之前只可嵌套在原生组件`map`、`video`、`canvas`、`camera`内，避免嵌套在其他组件内。
-4.  `tip`: 基础库 1.6.0 起支持css transition动画，`transition-property`只支持`transform (translateX, translateY)`与`opacity`。
-5.  `tip`: 基础库 1.6.0 起支持css opacity。
-6.  `tip`: 事件模型遵循冒泡模型，但不会冒泡到原生组件。
-7.  `tip`: 文本建议都套上cover-view标签，避免排版错误。
-8.  `tip`: 只支持基本的定位、布局、文本样式。不支持设置`单边的border`、`background-image`、`shadow`、`overflow: visible`等。
-9.  `tip`: 建议子节点不要溢出父节点
-10.  `tip`: 默认设置的样式有：`white-space: nowrap;` `line-height: 1.2;` `display: block;`
+1.  `tip`: 基础库 2.1.0 起支持设置 `scale` `rotate` 的css样式，包括transition动画
+2.  `tip`: 基础库 1.9.90 起 `cover-view` 支持 `overflow: scroll`，但不支持动态更新 `overflow`
+3.  `tip`: 基础库 1.9.90 起最外层 `cover-view` 支持 `position: fixed`
+4.  `tip`: 基础库 1.9.0 起支持插在 `view` 等标签下。在此之前只可嵌套在原生组件`map`、`video`、`canvas`、`camera`内，避免嵌套在其他组件内。
+5.  `tip`: 基础库 1.6.0 起支持css transition动画，`transition-property`只支持`transform (translateX, translateY)`与`opacity`。
+6.  `tip`: 基础库 1.6.0 起支持css opacity。
+7.  `tip`: 事件模型遵循冒泡模型，但不会冒泡到原生组件。
+8.  `tip`: 文本建议都套上cover-view标签，避免排版错误。
+9.  `tip`: 只支持基本的定位、布局、文本样式。不支持设置`单边的border`、`background-image`、`shadow`、`overflow: visible`等。
+10.  `tip`: 建议子节点不要溢出父节点
+11.  `tip`: 默认设置的样式有：`white-space: nowrap;` `line-height: 1.2;` `display: block;`
 
 **示例：**
 

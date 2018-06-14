@@ -110,6 +110,7 @@
     *   [音频组件控制](api-audio.html)
         *   [wx.createAudioContext](api-audio.html#wxcreateaudiocontextaudioid)
         *   [wx.createInnerAudioContext](createInnerAudioContext.html)
+        *   [wx.getAvailableAudioSources](getAvailableAudioSources.html)
     *   [视频](media-video.html)
         *   [wx.chooseVideo](media-video.html#wxchoosevideoobject)
         *   [wx.saveVideoToPhotosAlbum](media-video.html#wxsavevideotophotosalbumobject)
@@ -120,6 +121,8 @@
     *   [实时音视频](api-live-player.html)
         *   [wx.createLivePlayerContext](api-live-player.html)
         *   [wx.createLivePusherContext](api-live-pusher.html)
+    *   [动态加载字体](media-fontFace.html)
+        *   [wx.loadFontFace](media-fontFace.html)
 *   [文件](file.html)
     *   [wx.saveFile](file.html#wxsavefileobject)
     *   [wx.getFileInfo](getFileInfo.html)
@@ -151,6 +154,8 @@
         *   [wx.getSystemInfo](systeminfo.html#wxgetsysteminfoobject)
         *   [wx.getSystemInfoSync](systeminfo.html#wxgetsysteminfosync)
         *   [wx.canIUse](api-caniuse.html)
+        *   [内存](memory.html)
+        *   [wx.onMemoryWarning](memory.html)
     *   [网络状态](device.html)
         *   [wx.getNetworkType](device.html#wxgetnetworktypeobject)
         *   [wx.onNetworkStatusChange](device.html#wxonnetworkstatuschangecallback)
@@ -243,6 +248,9 @@
         *   [wx.setTabBarItem](ui-tabbar.html#wxsettabbaritemobject)
         *   [wx.showTabBar](ui-tabbar.html#wxshowtabbarobject)
         *   [wx.hideTabBar](ui-tabbar.html#wxhidetabbarobject)
+    *   [设置窗口背景](ui-background.html)
+        *   [wx.setBackgroundColor](ui-background.html#wxsetbackgroundcolor)
+        *   [wx.setBackgroundTextStyle](ui-background.html#wxsetbackgroundtextstyle)
     *   [设置置顶信息](ui.html#wxsettopbartextobject)
         *   [wx.setTopBarText](ui.html#wxsettopbartextobject)
     *   [导航](ui-navigate.html)
@@ -432,6 +440,8 @@
     *   [监控数据上报](monitor-report.html)
 *   [调试接口](setEnableDebug.html)
     *   [打开/关闭调试](setEnableDebug.html)
+*   [日志](getLogManager.html)
+    *   [wx.getLogManager](getLogManager.html)
 
 </nav>
 
@@ -589,6 +599,8 @@
 
 <th>说明</th>
 
+<th>支持版本</th>
+
 </tr>
 
 </thead>
@@ -605,6 +617,8 @@
 
 <td>指定录音的时长，单位 ms ，如果传入了合法的 duration ，在到达指定的 duration 后会自动停止录音，最大值 600000（10 分钟）,默认值 60000（1 分钟）</td>
 
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 <tr>
@@ -616,6 +630,8 @@
 <td>否</td>
 
 <td>采样率，有效值 8000/16000/44100</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -629,6 +645,8 @@
 
 <td>录音通道数，有效值 1/2</td>
 
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 <tr>
@@ -640,6 +658,8 @@
 <td>否</td>
 
 <td>编码码率，有效值见下表格</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -653,6 +673,8 @@
 
 <td>音频格式，有效值 aac/mp3</td>
 
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 <tr>
@@ -664,6 +686,22 @@
 <td>否</td>
 
 <td>指定帧大小，单位 KB。传入 frameSize 后，每录制指定帧大小的内容后，会回调录制的文件内容，不指定则不会回调。暂仅支持 mp3 格式。</td>
+
+<td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>audioSource</td>
+
+<td>String</td>
+
+<td>否</td>
+
+<td>指定音频输入源，默认值为 'auto'</td>
+
+<td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -764,6 +802,8 @@
 </tbody>
 
 </table>
+
+audoSouce 有效值： | 值 | 说明 | 支持平台 | |------------|----------------------------------------------------------------|----------------------| | auto | 自动设置，默认使用手机麦克风，插上耳麦后自动切换使用耳机麦克风 | iOS/Android/devtools | | buildInMic | 手机麦克风 | iOS | | headsetMic | 耳机麦克风 | iOS | | mic | 麦克风（没插耳麦时是手机麦克风，插耳麦时是耳机麦克风 | Android | | camcorder | 摄像头的麦克风 | Android |
 
 **onStop(callback) 回调结果说明：**
 

@@ -551,13 +551,15 @@
 
 <td>default</td>
 
-<td></td>
+<td>默认大小</td>
 
 </tr>
 
 <tr>
 
 <td>mini</td>
+
+<td>小尺寸</td>
 
 </tr>
 
@@ -587,7 +589,7 @@
 
 <td>primary</td>
 
-<td></td>
+<td>绿色</td>
 
 </tr>
 
@@ -595,13 +597,15 @@
 
 <td>default</td>
 
-<td></td>
+<td>白色</td>
 
 </tr>
 
 <tr>
 
 <td>warn</td>
+
+<td>红色</td>
 
 </tr>
 
@@ -724,6 +728,16 @@
 <td>打开授权设置页</td>
 
 <td>[2.0.7](../framework/compatibility.html "基础库 2.0.7 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>feedback</td>
+
+<td>打开“意见反馈”页面，用户可提交反馈内容并上传[日志](../api/getLogManager.html)，开发者可以登录[小程序管理后台](https://mp.weixin.qq.com/)后进入左侧菜单“客服反馈”页面获取到反馈内容</td>
+
+<td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

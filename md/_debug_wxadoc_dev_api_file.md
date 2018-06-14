@@ -110,6 +110,7 @@
     *   [音频组件控制](api-audio.html)
         *   [wx.createAudioContext](api-audio.html#wxcreateaudiocontextaudioid)
         *   [wx.createInnerAudioContext](createInnerAudioContext.html)
+        *   [wx.getAvailableAudioSources](getAvailableAudioSources.html)
     *   [视频](media-video.html)
         *   [wx.chooseVideo](media-video.html#wxchoosevideoobject)
         *   [wx.saveVideoToPhotosAlbum](media-video.html#wxsavevideotophotosalbumobject)
@@ -120,6 +121,8 @@
     *   [实时音视频](api-live-player.html)
         *   [wx.createLivePlayerContext](api-live-player.html)
         *   [wx.createLivePusherContext](api-live-pusher.html)
+    *   [动态加载字体](media-fontFace.html)
+        *   [wx.loadFontFace](media-fontFace.html)
 *   [文件](file.html)
     *   [wx.saveFile](file.html#wxsavefileobject)
     *   [wx.getFileInfo](getFileInfo.html)
@@ -151,6 +154,8 @@
         *   [wx.getSystemInfo](systeminfo.html#wxgetsysteminfoobject)
         *   [wx.getSystemInfoSync](systeminfo.html#wxgetsysteminfosync)
         *   [wx.canIUse](api-caniuse.html)
+        *   [内存](memory.html)
+        *   [wx.onMemoryWarning](memory.html)
     *   [网络状态](device.html)
         *   [wx.getNetworkType](device.html#wxgetnetworktypeobject)
         *   [wx.onNetworkStatusChange](device.html#wxonnetworkstatuschangecallback)
@@ -243,6 +248,9 @@
         *   [wx.setTabBarItem](ui-tabbar.html#wxsettabbaritemobject)
         *   [wx.showTabBar](ui-tabbar.html#wxshowtabbarobject)
         *   [wx.hideTabBar](ui-tabbar.html#wxhidetabbarobject)
+    *   [设置窗口背景](ui-background.html)
+        *   [wx.setBackgroundColor](ui-background.html#wxsetbackgroundcolor)
+        *   [wx.setBackgroundTextStyle](ui-background.html#wxsetbackgroundtextstyle)
     *   [设置置顶信息](ui.html#wxsettopbartextobject)
         *   [wx.setTopBarText](ui.html#wxsettopbartextobject)
     *   [导航](ui-navigate.html)
@@ -432,6 +440,8 @@
     *   [监控数据上报](monitor-report.html)
 *   [调试接口](setEnableDebug.html)
     *   [打开/关闭调试](setEnableDebug.html)
+*   [日志](getLogManager.html)
+    *   [wx.getLogManager](getLogManager.html)
 
 </nav>
 
@@ -1138,6 +1148,6 @@
 
 </div>
 
-[](api-live-pusher.html)[](getFileInfo.html)</div>
+[](media-fontFace.html)[](getFileInfo.html)</div>
 
 </div>

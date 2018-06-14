@@ -200,6 +200,6 @@ _注意：因为申请测试会占用测试机器资源，所以一个 APPID 一
 
 </div>
 
-[](../api/setEnableDebug.html)[](page.html)</div>
+[](../api/getLogManager.html)[](page.html)</div>
 
 </div>

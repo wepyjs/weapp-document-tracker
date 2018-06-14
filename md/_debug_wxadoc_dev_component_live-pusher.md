@@ -415,6 +415,20 @@
 
 <tr>
 
+<td>zoom</td>
+
+<td>Boolean</td>
+
+<td>false</td>
+
+<td>调整焦距</td>
+
+<td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>background-mute</td>
 
 <td>Boolean</td>

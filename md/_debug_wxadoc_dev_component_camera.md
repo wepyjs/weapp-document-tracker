@@ -147,11 +147,27 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
 
 <tbody>
+
+<tr>
+
+<td>mode</td>
+
+<td>String</td>
+
+<td>normal</td>
+
+<td>有效值为 normal, scanCode</td>
+
+<td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
 
 <tr>
 
@@ -162,6 +178,8 @@
 <td>back</td>
 
 <td>前置或后置，值为front, back</td>
+
+<td></td>
 
 </tr>
 
@@ -175,6 +193,22 @@
 
 <td>闪光灯，值为auto, on, off</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>scan-area</td>
+
+<td>Array</td>
+
+<td></td>
+
+<td>扫码识别区域，格式为[x, y, w, h]，相对camera显示区域左上角，仅在 mode="scanCode" 时生效</td>
+
+<td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 <tr>
@@ -187,6 +221,8 @@
 
 <td>摄像头在非正常终止时触发，如退出后台等情况</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -198,6 +234,22 @@
 <td></td>
 
 <td>用户不允许使用摄像头时触发</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>bindscancode</td>
+
+<td>EventHandle</td>
+
+<td></td>
+
+<td>在成功识别到一维码时触发，仅在 mode="scanCode" 时生效</td>
+
+<td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

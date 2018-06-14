@@ -371,6 +371,20 @@
 
 <tr>
 
+<td>animation</td>
+
+<td>Boolean</td>
+
+<td>true</td>
+
+<td>是否使用动画</td>
+
+<td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>bindchange</td>
 
 <td>EventHandle</td>
@@ -391,7 +405,7 @@
 
 <td></td>
 
-<td>缩放过程中触发的事件，event.detail = {scale: scale}</td>
+<td>缩放过程中触发的事件，event.detail = {x: x, y: y, scale: scale}，其中x和y字段在[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")之后开始支持返回</td>
 
 <td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
 

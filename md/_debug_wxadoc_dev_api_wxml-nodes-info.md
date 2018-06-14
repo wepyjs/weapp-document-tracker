@@ -110,6 +110,7 @@
     *   [音频组件控制](api-audio.html)
         *   [wx.createAudioContext](api-audio.html#wxcreateaudiocontextaudioid)
         *   [wx.createInnerAudioContext](createInnerAudioContext.html)
+        *   [wx.getAvailableAudioSources](getAvailableAudioSources.html)
     *   [视频](media-video.html)
         *   [wx.chooseVideo](media-video.html#wxchoosevideoobject)
         *   [wx.saveVideoToPhotosAlbum](media-video.html#wxsavevideotophotosalbumobject)
@@ -120,6 +121,8 @@
     *   [实时音视频](api-live-player.html)
         *   [wx.createLivePlayerContext](api-live-player.html)
         *   [wx.createLivePusherContext](api-live-pusher.html)
+    *   [动态加载字体](media-fontFace.html)
+        *   [wx.loadFontFace](media-fontFace.html)
 *   [文件](file.html)
     *   [wx.saveFile](file.html#wxsavefileobject)
     *   [wx.getFileInfo](getFileInfo.html)
@@ -151,6 +154,8 @@
         *   [wx.getSystemInfo](systeminfo.html#wxgetsysteminfoobject)
         *   [wx.getSystemInfoSync](systeminfo.html#wxgetsysteminfosync)
         *   [wx.canIUse](api-caniuse.html)
+        *   [内存](memory.html)
+        *   [wx.onMemoryWarning](memory.html)
     *   [网络状态](device.html)
         *   [wx.getNetworkType](device.html#wxgetnetworktypeobject)
         *   [wx.onNetworkStatusChange](device.html#wxonnetworkstatuschangecallback)
@@ -243,6 +248,9 @@
         *   [wx.setTabBarItem](ui-tabbar.html#wxsettabbaritemobject)
         *   [wx.showTabBar](ui-tabbar.html#wxshowtabbarobject)
         *   [wx.hideTabBar](ui-tabbar.html#wxhidetabbarobject)
+    *   [设置窗口背景](ui-background.html)
+        *   [wx.setBackgroundColor](ui-background.html#wxsetbackgroundcolor)
+        *   [wx.setBackgroundTextStyle](ui-background.html#wxsetbackgroundtextstyle)
     *   [设置置顶信息](ui.html#wxsettopbartextobject)
         *   [wx.setTopBarText](ui.html#wxsettopbartextobject)
     *   [导航](ui-navigate.html)
@@ -432,6 +440,8 @@
     *   [监控数据上报](monitor-report.html)
 *   [调试接口](setEnableDebug.html)
     *   [打开/关闭调试](setEnableDebug.html)
+*   [日志](getLogManager.html)
+    *   [wx.getLogManager](getLogManager.html)
 
 </nav>
 
@@ -659,6 +669,8 @@
 
 <th>说明</th>
 
+<th>最低版本</th>
+
 </tr>
 
 </thead>
@@ -673,6 +685,8 @@
 
 <td>是否返回节点`id`</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -682,6 +696,8 @@
 <td>否</td>
 
 <td>是否返回节点`dataset`</td>
+
+<td></td>
 
 </tr>
 
@@ -693,6 +709,8 @@
 
 <td>是否返回节点布局位置（`left` `right` `top` `bottom`）</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -702,6 +720,8 @@
 <td>否</td>
 
 <td>是否返回节点尺寸（`width` `height`）</td>
+
+<td></td>
 
 </tr>
 
@@ -713,6 +733,8 @@
 
 <td>是否返回节点的 `scrollLeft` `scrollTop` ，节点必须是`scroll-view`或者viewport</td>
 
+<td></td>
+
 </tr>
 
 <tr>
@@ -723,11 +745,27 @@
 
 <td>指定属性名列表，返回节点对应属性名的当前属性值（只能获得组件文档中标注的常规属性值， `id` `class` `style` 和事件绑定的属性值不可获取）</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>computedStyle</td>
+
+<td>`[]`</td>
+
+<td>指定样式名列表，返回节点对应样式名的当前值</td>
+
+<td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+
 </tr>
 
 </tbody>
 
 </table>
+
+> 注意： computedStyle 的优先级高于 size，当同时在 computedStyle 里指定了 width/height 和传入了 size: true，则优先返回 computedStyle 获取到的 width/height。
 
 **示例代码：**
 
@@ -737,7 +775,8 @@
           dataset: true,
           size: true,
           scrollOffset: true,
-          properties: ['scrollX', 'scrollY']
+          properties: ['scrollX', 'scrollY'],
+          computedStyle: ['margin', 'backgroundColor']
         }, function(res){
           res.dataset    // 节点的dataset
           res.width      // 节点的宽度
@@ -746,6 +785,9 @@
           res.scrollTop  // 节点的竖直滚动位置
           res.scrollX    // 节点 scroll-x 属性的当前值
           res.scrollY    // 节点 scroll-y 属性的当前值
+          // 此处返回指定要返回的样式名
+          res.margin
+          res.backgroundColor
         }).exec()
       }
     })

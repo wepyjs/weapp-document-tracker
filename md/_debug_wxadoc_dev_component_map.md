@@ -789,7 +789,7 @@
 
 <td>x</td>
 
-<td>label的坐标，原点是 marker 对应的经纬度</td>
+<td>label的坐标（废弃）</td>
 
 <td>Number</td>
 
@@ -801,11 +801,35 @@
 
 <td>y</td>
 
-<td>label的坐标，原点是 marker 对应的经纬度</td>
+<td>label的坐标（废弃）</td>
 
 <td>Number</td>
 
 <td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>anchorX</td>
+
+<td>label的坐标，原点是 marker 对应的经纬度</td>
+
+<td>Number</td>
+
+<td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>anchorY</td>
+
+<td>label的坐标，原点是 marker 对应的经纬度</td>
+
+<td>Number</td>
+
+<td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 

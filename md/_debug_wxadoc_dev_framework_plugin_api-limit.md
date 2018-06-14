@@ -430,6 +430,14 @@
 
 <tr>
 
+<td>`wx.getHCEState`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>`wx.getImageInfo`</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
@@ -646,6 +654,14 @@
 
 <tr>
 
+<td>`wx.onHCEMessage`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>`wx.onNetworkStatusChange`</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
@@ -790,6 +806,14 @@
 
 <tr>
 
+<td>`wx.sendHCEMessage`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>`wx.setClipboardData`</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
@@ -894,6 +918,14 @@
 
 <tr>
 
+<td>`wx.startHCE`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>`wx.startRecord`</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
@@ -937,6 +969,14 @@
 <td>`wx.stopCompass`</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>`wx.stopHCE`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
