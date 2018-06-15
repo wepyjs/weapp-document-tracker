@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../)
+*   [教程](../ad/banner-ad.html)
 *   [API](../../document/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -64,11 +64,15 @@
 
 <nav role="navigation">
 
+*   [广告](../ad/banner-ad.html)
+    *   [Banner 广告](../ad/banner-ad.html)
+    *   [激励视频广告](../ad/rewarded-video-ad.html)
 *   [基础](../../)
     *   [快速上手](../../)
     *   [Adapter](../base/adapter.html)
     *   [对引擎的支持](../base/engine.html)
     *   [模块化](../base/module.html)
+    *   [分包加载](../base/subpackages.html)
 *   [能力](../ability/audio.html)
     *   [音频播放](../ability/audio.html)
     *   [文件系统](../ability/file-system.html)
@@ -89,9 +93,6 @@
     *   [转发](../open-ability/share.html)
     *   [用户数据的签名验证和加解密](../open-ability/signature.html)
     *   [UnionID 机制说明](../open-ability/union-id.html)
-*   [广告](../ad/banner-ad.html)
-    *   [Banner 广告](../ad/banner-ad.html)
-    *   [激励视频广告](../ad/rewarded-video-ad.html)
 
 </nav>
 
@@ -117,7 +118,7 @@
 
 在真机上，如果想要查看 console.log，console.error 等 API 输出的内容，需要在点击屏幕右上角的按钮打开的菜单里点击 `打开调试`。此时小程序会退出，重新打开后会发现右下角有一个 `vConsole` 按钮。点击 `vConsole` 按钮可以打开日志面板。
 
-![](../images/vConsole.jpg)
+![](../../image/vConsole.jpg)
 
 在真机上 console.log 等 API 无法输出有循环引用的对象。假设按照如下代码，尝试输出有循环引用的对象 a
 
@@ -168,6 +169,6 @@
 
 </div>
 
-[](../ability/file-system.html)[](debug.html)</div>
+[](../ability/file-system.html)[](performance.html)</div>
 
 </div>

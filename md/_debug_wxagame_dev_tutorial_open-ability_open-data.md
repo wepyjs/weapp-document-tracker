@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../)
+*   [教程](../ad/banner-ad.html)
 *   [API](../../document/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -64,11 +64,15 @@
 
 <nav role="navigation">
 
+*   [广告](../ad/banner-ad.html)
+    *   [Banner 广告](../ad/banner-ad.html)
+    *   [激励视频广告](../ad/rewarded-video-ad.html)
 *   [基础](../../)
     *   [快速上手](../../)
     *   [Adapter](../base/adapter.html)
     *   [对引擎的支持](../base/engine.html)
     *   [模块化](../base/module.html)
+    *   [分包加载](../base/subpackages.html)
 *   [能力](../ability/audio.html)
     *   [音频播放](../ability/audio.html)
     *   [文件系统](../ability/file-system.html)
@@ -89,9 +93,6 @@
     *   [转发](share.html)
     *   [用户数据的签名验证和加解密](signature.html)
     *   [UnionID 机制说明](union-id.html)
-*   [广告](../ad/banner-ad.html)
-    *   [Banner 广告](../ad/banner-ad.html)
-    *   [激励视频广告](../ad/rewarded-video-ad.html)
 
 </nav>
 
@@ -260,7 +261,7 @@ src/myOpenDataContext 是 `开放数据域的代码目录`，除 src/myOpenDataC
 
 如果想要展示通过关系链 API 获取到的用户数据，如绘制排行榜等业务场景，需要将排行榜绘制到 `sharedCanvas` 上，再在主域将 sharedCanvas 渲染上屏。
 
-![](../images/open-data/data-flow.png)
+![](../../image/open-data/data-flow.png)
 
     // src/myOpenDataContext/index.js
     let sharedCanvas = wx.getSharedCanvas()
@@ -329,7 +330,7 @@ sharedCanvas 本质上也是一个离屏 Canvas，而重设 Canvas 的宽高会�
 4.  不能将上屏 canvas 和 sharedCanvas 以任意形式绘制到其他 canvas 上，包括 drawImage、createPattern、texImage2D、texSubImage2D。
 5.  sharedCanvas 的宽高只能在主域设置
 
-![](../images/open-data/canvas-limit.png)
+![](../../image/open-data/canvas-limit.png)
 
 ### 开放数据域
 

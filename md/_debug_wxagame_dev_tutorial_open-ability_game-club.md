@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../)
+*   [教程](../ad/banner-ad.html)
 *   [API](../../document/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -64,11 +64,15 @@
 
 <nav role="navigation">
 
+*   [广告](../ad/banner-ad.html)
+    *   [Banner 广告](../ad/banner-ad.html)
+    *   [激励视频广告](../ad/rewarded-video-ad.html)
 *   [基础](../../)
     *   [快速上手](../../)
     *   [Adapter](../base/adapter.html)
     *   [对引擎的支持](../base/engine.html)
     *   [模块化](../base/module.html)
+    *   [分包加载](../base/subpackages.html)
 *   [能力](../ability/audio.html)
     *   [音频播放](../ability/audio.html)
     *   [文件系统](../ability/file-system.html)
@@ -89,9 +93,6 @@
     *   [转发](share.html)
     *   [用户数据的签名验证和加解密](signature.html)
     *   [UnionID 机制说明](union-id.html)
-*   [广告](../ad/banner-ad.html)
-    *   [Banner 广告](../ad/banner-ad.html)
-    *   [激励视频广告](../ad/rewarded-video-ad.html)
 
 </nav>
 
@@ -141,7 +142,7 @@
 
 <td>dark</td>
 
-<td>![](../images/game-club/dark.png)</td>
+<td>![](../../image/game-club/dark.png)</td>
 
 </tr>
 
@@ -149,7 +150,7 @@
 
 <td>green</td>
 
-<td>![](../images/game-club/green.png)</td>
+<td>![](../../image/game-club/green.png)</td>
 
 </tr>
 
@@ -157,7 +158,7 @@
 
 <td>white</td>
 
-<td>![](../images/game-club/white.png) （灰色背景仅用作显示图标，图标本身为白色）</td>
+<td>![](../../image/game-club/white.png) （灰色背景仅用作显示图标，图标本身为白色）</td>
 
 </tr>
 
@@ -165,7 +166,7 @@
 
 <td>light</td>
 
-<td>![](../images/game-club/light.png)</td>
+<td>![](../../image/game-club/light.png)</td>
 
 </tr>
 
@@ -179,11 +180,11 @@
 
 *   MP管理后台游戏圈配置界面
 
-![mp](../images/game-club/mp.jpg)
+![mp](../../image/game-club/mp.jpg)
 
 *   移动端游戏圈管理员操作界面
 
-![mp](../images/game-club/mobile.jpg)
+![mp](../../image/game-club/mobile.jpg)
 
 </section>
 

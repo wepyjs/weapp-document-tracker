@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../)
+*   [教程](../ad/banner-ad.html)
 *   [API](../../document/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -64,11 +64,15 @@
 
 <nav role="navigation">
 
+*   [广告](../ad/banner-ad.html)
+    *   [Banner 广告](../ad/banner-ad.html)
+    *   [激励视频广告](../ad/rewarded-video-ad.html)
 *   [基础](../../)
     *   [快速上手](../../)
     *   [Adapter](../base/adapter.html)
     *   [对引擎的支持](../base/engine.html)
     *   [模块化](../base/module.html)
+    *   [分包加载](../base/subpackages.html)
 *   [能力](../ability/audio.html)
     *   [音频播放](../ability/audio.html)
     *   [文件系统](../ability/file-system.html)
@@ -89,9 +93,6 @@
     *   [转发](share.html)
     *   [用户数据的签名验证和加解密](signature.html)
     *   [UnionID 机制说明](union-id.html)
-*   [广告](../ad/banner-ad.html)
-    *   [Banner 广告](../ad/banner-ad.html)
-    *   [激励视频广告](../ad/rewarded-video-ad.html)
 
 </nav>
 
@@ -125,7 +126,7 @@
       }
     })
 
-![](../images/authorize-API.jpg)
+![](../../image/authorize-API.jpg)
 
 ### 提前发起授权
 
@@ -135,7 +136,7 @@
       scope: 'scope.record'
     })
 
-![](../images/pre-authorize.jpg)
+![](../../image/pre-authorize.jpg)
 
 ### 处理用户拒绝授权
 
@@ -189,7 +190,7 @@
 
 **注意：只有申请过授权的 `scope` 会出现在设置页面。**
 
-![](../images/authorize-setting.jpg)
+![](../../image/authorize-setting.jpg)
 
 ### 重置授权记录
 
@@ -308,6 +309,6 @@
 
 </div>
 
-[](../usability/worker.html)[](authorize.html)</div>
+[](../usability/worker.html)[](game-club.html)</div>
 
 </div>

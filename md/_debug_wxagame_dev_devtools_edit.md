@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../)
+*   [教程](../tutorial/ad/banner-ad.html)
 *   [API](../document/render/canvas/wx.createCanvas.html)
 *   [工具](devtools.html)
 *   [腾讯云支持](../qcloud/qcloud.html)
@@ -547,6 +547,6 @@ setting 中可以指定以下设置
 
 </div>
 
-[](shortcut.html)[](edit.html#文件格式)</div>
+[](shortcut.html)[](debug.html)</div>
 
 </div>

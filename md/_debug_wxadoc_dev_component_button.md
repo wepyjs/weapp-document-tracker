@@ -741,6 +741,16 @@
 
 </tr>
 
+<tr>
+
+<td>exit</td>
+
+<td>退出小程序</td>
+
+<td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
 </tbody>
 
 </table>

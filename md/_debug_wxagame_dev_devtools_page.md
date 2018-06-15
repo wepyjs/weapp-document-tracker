@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../)
+*   [教程](../tutorial/ad/banner-ad.html)
 *   [API](../document/render/canvas/wx.createCanvas.html)
 *   [工具](devtools.html)
 *   [腾讯云支持](../qcloud/qcloud.html)
@@ -295,6 +295,6 @@
 
 </div>
 
-[](devtools.html)[](page.html#启动页)</div>
+[](devtools.html)[](settings.html)</div>
 
 </div>

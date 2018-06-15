@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../)
+*   [教程](../ad/banner-ad.html)
 *   [API](../../document/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -64,11 +64,15 @@
 
 <nav role="navigation">
 
+*   [广告](../ad/banner-ad.html)
+    *   [Banner 广告](../ad/banner-ad.html)
+    *   [激励视频广告](../ad/rewarded-video-ad.html)
 *   [基础](../../)
     *   [快速上手](../../)
     *   [Adapter](../base/adapter.html)
     *   [对引擎的支持](../base/engine.html)
     *   [模块化](../base/module.html)
+    *   [分包加载](../base/subpackages.html)
 *   [能力](../ability/audio.html)
     *   [音频播放](../ability/audio.html)
     *   [文件系统](../ability/file-system.html)
@@ -89,9 +93,6 @@
     *   [转发](share.html)
     *   [用户数据的签名验证和加解密](signature.html)
     *   [UnionID 机制说明](union-id.html)
-*   [广告](../ad/banner-ad.html)
-    *   [Banner 广告](../ad/banner-ad.html)
-    *   [激励视频广告](../ad/rewarded-video-ad.html)
 
 </nav>
 
@@ -125,13 +126,13 @@
 
 *   微信搜索
 
-![search](../images/search.png)
+![search](../../image/search.png)
 
 *   小游戏中心
 
-![PortalRankList1](../images/PortalRankList1.png)
+![PortalRankList1](../../image/PortalRankList1.png)
 
-![PortalRankList2](../images/PortalRankList2.png)
+![PortalRankList2](../../image/PortalRankList2.png)
 
 ### 配置步骤与相关字段说明
 
@@ -141,7 +142,7 @@
 
 #### 2\. 登录mp管理后台后，在游戏设置-排行榜配置中完成配置
 
-![RanklistConfig](../images/RankListConfig.png)
+![RanklistConfig](../../image/RankListConfig.png)
 
 <table>
 
@@ -217,7 +218,7 @@
 
 #### 3\. 完成提交后，需经微信审核通过，才可生效。
 
-![ConfigApperance](../images/ConfigApperance.png)
+![ConfigApperance](../../image/ConfigApperance.png)
 
 </section>
 

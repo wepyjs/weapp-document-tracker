@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../)
+*   [教程](../ad/banner-ad.html)
 *   [API](../../document/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -64,11 +64,15 @@
 
 <nav role="navigation">
 
+*   [广告](../ad/banner-ad.html)
+    *   [Banner 广告](../ad/banner-ad.html)
+    *   [激励视频广告](../ad/rewarded-video-ad.html)
 *   [基础](../../)
     *   [快速上手](../../)
     *   [Adapter](adapter.html)
     *   [对引擎的支持](engine.html)
     *   [模块化](module.html)
+    *   [分包加载](subpackages.html)
 *   [能力](../ability/audio.html)
     *   [音频播放](../ability/audio.html)
     *   [文件系统](../ability/file-system.html)
@@ -89,9 +93,6 @@
     *   [转发](../open-ability/share.html)
     *   [用户数据的签名验证和加解密](../open-ability/signature.html)
     *   [UnionID 机制说明](../open-ability/union-id.html)
-*   [广告](../ad/banner-ad.html)
-    *   [Banner 广告](../ad/banner-ad.html)
-    *   [激励视频广告](../ad/rewarded-video-ad.html)
 
 </nav>
 
@@ -168,7 +169,7 @@ weapp-adapter 会预先调用 wx.createCanvas() 创建一个上屏 Canvas，并�
 
 ### weapp-adapter 不是小游戏基础库的一部分
 
-小游戏基础库只提供 wx.createCanvas 和 wx.createImage 等 wx API 以及 setTimeout/setInterval/requestAnimationFrame 等常用的 JS 方法。在此之上的 weapp-adapter 是为了让基于浏览器环境的第三方代码更快地适配小游戏运行环境的一层适配层，并不是基础库的一部分。更准确地说，我们将 weapp-adapter 视为和游戏引擎都视为第三方库，需要开发者在小游戏项目中自行引入。
+小游戏基础库只提供 wx.createCanvas 和 wx.createImage 等 wx API 以及 setTimeout/setInterval/requestAnimationFrame 等常用的 JS 方法。在此之上的 weapp-adapter 是为了让基于浏览器环境的第三方代码更快地适配小游戏运行环境的一层适配层，并不是基础库的一部分。更准确地说，我们将 weapp-adapter 和游戏引擎都视为第三方库，需要开发者在小游戏项目中自行引入。
 
 目前，Cocos、Egret、Laya 已经完成了自身引擎及其工具对小游戏的适配和支持，访问对应的官方文档可以更快地接入小游戏的开发。
 

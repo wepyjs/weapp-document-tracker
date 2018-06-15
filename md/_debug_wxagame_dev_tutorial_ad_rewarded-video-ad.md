@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../)
+*   [教程](banner-ad.html)
 *   [API](../../document/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -64,11 +64,15 @@
 
 <nav role="navigation">
 
+*   [广告](banner-ad.html)
+    *   [Banner 广告](banner-ad.html)
+    *   [激励视频广告](rewarded-video-ad.html)
 *   [基础](../../)
     *   [快速上手](../../)
     *   [Adapter](../base/adapter.html)
     *   [对引擎的支持](../base/engine.html)
     *   [模块化](../base/module.html)
+    *   [分包加载](../base/subpackages.html)
 *   [能力](../ability/audio.html)
     *   [音频播放](../ability/audio.html)
     *   [文件系统](../ability/file-system.html)
@@ -89,9 +93,6 @@
     *   [转发](../open-ability/share.html)
     *   [用户数据的签名验证和加解密](../open-ability/signature.html)
     *   [UnionID 机制说明](../open-ability/union-id.html)
-*   [广告](banner-ad.html)
-    *   [Banner 广告](banner-ad.html)
-    *   [激励视频广告](rewarded-video-ad.html)
 
 </nav>
 
@@ -222,6 +223,6 @@
 
 </div>
 
-[](banner-ad.html)[](../../document/render/canvas/wx.createCanvas.html)</div>
+[](banner-ad.html)[](../../)</div>
 
 </div>
