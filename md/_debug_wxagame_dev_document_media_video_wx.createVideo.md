@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -792,6 +792,6 @@
 
 </div>
 
-[](../image/ImageFile.html)[](Video.html)</div>
+[](../image/ImageFile.html)[](wx.createVideo.html)</div>
 
 </div>

@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -448,6 +448,10 @@
 网络请求任务对象
 
 #### 方法
+
+##### [RequestTask.abort()](RequestTask.abort.html)
+
+中断请求任务
 
 ##### [RequestTask.abort()](RequestTask.abort.html)
 

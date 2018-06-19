@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../tutorial/ad/banner-ad.html)
+*   [教程](../../)
 *   [API](../render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -495,9 +495,7 @@
 
 <td>data</td>
 
-<td>Object</td>
-
-<td>string</td>
+<td>Object/string</td>
 
 <td></td>
 
@@ -552,42 +550,6 @@
 <td>否</td>
 
 <td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**object.data 的结构**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>属性</th>
-
-<th>类型</th>
-
-<th>默认值</th>
-
-<th>是否必填</th>
-
-<th>说明</th>
-
-<th>支持版本</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td></td>
 
 </tr>
 

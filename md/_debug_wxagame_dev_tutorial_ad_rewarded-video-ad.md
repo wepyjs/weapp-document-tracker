@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](banner-ad.html)
+*   [教程](../../)
 *   [API](../../document/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -64,9 +64,6 @@
 
 <nav role="navigation">
 
-*   [广告](banner-ad.html)
-    *   [Banner 广告](banner-ad.html)
-    *   [激励视频广告](rewarded-video-ad.html)
 *   [基础](../../)
     *   [快速上手](../../)
     *   [Adapter](../base/adapter.html)
@@ -93,6 +90,9 @@
     *   [转发](../open-ability/share.html)
     *   [用户数据的签名验证和加解密](../open-ability/signature.html)
     *   [UnionID 机制说明](../open-ability/union-id.html)
+*   [广告](banner-ad.html)
+    *   [Banner 广告](banner-ad.html)
+    *   [激励视频广告](rewarded-video-ad.html)
 
 </nav>
 
@@ -142,11 +142,11 @@
 如果拉取成功。[RewardedVideoAd.onLoad()](../../document/ad/RewardedVideoAd.onLoad.html) 会执行，[RewardedVideoAd.show()](../../document/ad/RewardedVideoAd.show.html) 返回的 Promise 也会是一个 resolved Promise。两者的回调函数中都没有参数传递。
 
     rewardedVideoAd.onLoad(() => {
-      console.log('banner 广告加载成功')
+      console.log('激励视频 广告加载成功')
     })
 
     rewardedVideoAd.show()
-    .then(() => console.log('banner 广告显示'))
+    .then(() => console.log('激励视频 广告显示'))
 
 如果拉取失败，通过 [RewardedVideoAd.onError()](../../document/ad/RewardedVideoAd.onError.html) 注册的回调函数会执行，回调函数的参数是一个包含错误信息的对象。
 
@@ -178,10 +178,57 @@
 
 只有在用户点击激励视频广告组件上的 `关闭广告` 按钮时，广告才会关闭。这个事件可以通过 [RewardedVideoAd.onClose()](../../document/ad/RewardedVideoAd.onClose.html) 监听。
 
-`关闭广告` 按钮只有在广告视频完全播放完以后才会出现，`onClose` 触发时可以认为用户已经看完了广告。
+小于 2.1.0 的基础库版本，`关闭按钮` 是在激励式视频播放结束后才出现，所以触发 onClose 时已经播放结束，`onClose` 触发时可以认为用户已经看完了广告。
 
-    rewardedVideoAd.onClose(() => {
-      // 用户点击了【关闭广告】按钮
+大于等于 2.1.0 的基础库版本，`关闭按钮` 将会常驻，如下图所示
+
+![](../../image/ad/rewarded-video-ad-landscape.png)
+
+[RewardedVideoAd.onClose()](../../document/ad/RewardedVideoAd.onClose.html) 的回调函数会传入一个参数 res，`res.isEnded` 描述广告被关闭时的状态。
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>属性</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>isEnded</td>
+
+<td>boolean</td>
+
+<td>视频是否是在用户完整观看的情况下被关闭的，true 表示用户是在视频播放完以后关闭的视频，false 表示用户在视频播放过程中关闭了视频</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+大于等于 2.1.0 的基础库版本，开发者需要根据 `res.isEnded` 判断是否视频是否播放结束、可以向用户下发奖励。
+
+    rewardedVideoAd.onClose(res => {
+        // 用户点击了【关闭广告】按钮
+        // 小于 2.1.0 的基础库版本，res 是一个 undefined
+        if (res && res.isEnded || res === undefined) {
+          // 正常播放结束，可以下发游戏奖励
+        }
+        else {
+            // 播放中途退出，不下发游戏奖励
+        }
     })
 
 </section>
@@ -223,6 +270,6 @@
 
 </div>
 
-[](banner-ad.html)[](../../)</div>
+[](banner-ad.html)[](../../document/render/canvas/wx.createCanvas.html)</div>
 
 </div>

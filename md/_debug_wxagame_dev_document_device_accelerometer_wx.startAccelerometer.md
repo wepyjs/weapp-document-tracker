@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -489,7 +489,7 @@
 
 <td>监听加速度数据回调函数的执行频率</td>
 
-<td></td>
+<td>2.1.0</td>
 
 </tr>
 

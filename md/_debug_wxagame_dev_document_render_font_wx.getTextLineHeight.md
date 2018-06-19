@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -681,6 +681,12 @@
 
 </table>
 
+#### 返回值
+
+##### number
+
+文本的行高
+
 </section>
 
 </div>
@@ -720,6 +726,6 @@
 
 </div>
 
-[](../image/Image.html)[](wx.loadFont.html)</div>
+[](../image/Image.html)[](wx.getTextLineHeight.html)</div>
 
 </div>

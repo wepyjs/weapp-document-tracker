@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -458,6 +458,14 @@
 ##### [OpenDataContext.postMessage(Object message)](OpenDataContext.postMessage.html)
 
 向开放数据域发送消息
+
+##### [OpenDataContext.postMessage(Object message)](OpenDataContext.postMessage.html)
+
+向开放数据域发送消息
+
+##### [OpenDataContext wx.getOpenDataContext()](wx.getOpenDataContext.html)
+
+获取开放数据域
 
 </section>
 

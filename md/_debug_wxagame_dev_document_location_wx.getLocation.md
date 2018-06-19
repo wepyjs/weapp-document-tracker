@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../tutorial/ad/banner-ad.html)
+*   [教程](../../)
 *   [API](../render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -493,6 +493,22 @@
 
 <tr>
 
+<td>altitude</td>
+
+<td>string</td>
+
+<td>false</td>
+
+<td>否</td>
+
+<td>传入 true 会返回高度信息，由于获取高度需要较高精确度，会减慢接口返回速度</td>
+
+<td>1.6.0</td>
+
+</tr>
+
+<tr>
+
 <td>success</td>
 
 <td>function</td>
@@ -692,6 +708,6 @@
 
 </div>
 
-[](../file/FileSystemManager.writeFileSync.html)[](../network/download/wx.downloadFile.html)</div>
+[](../file/FileSystemManager.writeFileSync.html)[](wx.getLocation.html)</div>
 
 </div>

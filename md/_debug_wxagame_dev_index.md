@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](tutorial/ad/banner-ad.html)
+*   [教程](./)
 *   [API](document/render/canvas/wx.createCanvas.html)
 *   [工具](devtools/devtools.html)
 *   [腾讯云支持](qcloud/qcloud.html)
@@ -64,9 +64,6 @@
 
 <nav role="navigation">
 
-*   [广告](tutorial/ad/banner-ad.html)
-    *   [Banner 广告](tutorial/ad/banner-ad.html)
-    *   [激励视频广告](tutorial/ad/rewarded-video-ad.html)
 *   [基础](./)
     *   [快速上手](./)
     *   [Adapter](tutorial/base/adapter.html)
@@ -93,6 +90,9 @@
     *   [转发](tutorial/open-ability/share.html)
     *   [用户数据的签名验证和加解密](tutorial/open-ability/signature.html)
     *   [UnionID 机制说明](tutorial/open-ability/union-id.html)
+*   [广告](tutorial/ad/banner-ad.html)
+    *   [Banner 广告](tutorial/ad/banner-ad.html)
+    *   [激励视频广告](tutorial/ad/rewarded-video-ad.html)
 
 </nav>
 
@@ -554,6 +554,6 @@ console.log 无法在真机上将存在循环引用的对象输出到 vConsole �
 
 </div>
 
-[](tutorial/ad/rewarded-video-ad.html)[](tutorial/base/adapter.html)</div>
+[](./)</div>
 
 </div>

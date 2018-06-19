@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../tutorial/ad/banner-ad.html)
+*   [教程](../../)
 *   [API](../render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -588,6 +588,22 @@ banner 广告组件的样式。style 上的属性的值仅为开发者设置的�
 ##### [BannerAd.offError(function callback)](BannerAd.offError.html)
 
 取消监听banner 广告错误事件
+
+##### [Promise BannerAd.show()](BannerAd.show.html)
+
+显示 banner 广告。
+
+##### [BannerAd.hide()](BannerAd.hide.html)
+
+隐藏 banner 广告
+
+##### [BannerAd.destroy()](BannerAd.destroy.html)
+
+销毁 banner 广告
+
+##### [BannerAd wx.createBannerAd(Object object)](wx.createBannerAd.html)
+
+创建 banner 广告组件。请通过 [wx.getSystemInfoSync()](../system/system-info/wx.getSystemInfoSync.html) 返回对象的 SDKVersion 判断基础库版本号 >= 2.0.4 后再使用该 API。同时，开发者工具上暂不支持调试该 API，请直接在真机上进行调试。
 
 </section>
 

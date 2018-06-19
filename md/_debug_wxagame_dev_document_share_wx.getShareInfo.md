@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../tutorial/ad/banner-ad.html)
+*   [教程](../../)
 *   [API](../render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -654,6 +654,6 @@ encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](
 
 </div>
 
-[](../open-api/sec-check/msgSecCheck.html)[](wx.hideShareMenu.html)</div>
+[](../open-api/sec-check/msgSecCheck.html)[](wx.getShareInfo.html)</div>
 
 </div>

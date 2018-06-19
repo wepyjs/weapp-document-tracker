@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -456,6 +456,10 @@
 ##### [DownloadTask.onProgressUpdate(function callback)](DownloadTask.onProgressUpdate.html)
 
 监听下载进度变化事件
+
+##### [DownloadTask.abort()](DownloadTask.abort.html)
+
+中断下载任务
 
 </section>
 

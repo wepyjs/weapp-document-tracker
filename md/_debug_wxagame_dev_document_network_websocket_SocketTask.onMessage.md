@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -483,9 +483,7 @@
 
 <td>data</td>
 
-<td>string</td>
-
-<td>ArrayBuffer</td>
+<td>string/ArrayBuffer</td>
 
 <td>服务器返回的消息</td>
 

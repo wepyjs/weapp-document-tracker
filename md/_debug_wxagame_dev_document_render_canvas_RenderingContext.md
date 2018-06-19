@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -446,6 +446,12 @@
 ### RenderingContext
 
 通过 Canvas.getContext('2d') 接口可以获取 CanvasRenderingContext2D 对象。CanvasRenderingContext2D 实现了 [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/) 定义的大部分属性、方法。通过 Canvas.getContext('webgl') 接口可以获取 WebGLRenderingContext 对象。 WebGLRenderingContext 实现了 [WebGL 1.0](https://www.khronos.org/registry/webgl/specs/latest/1.0/) 定义的所有属性、方法、常量。
+
+#### 方法
+
+##### [WebGLRenderingContext.wxBindCanvasTexture(number texture, Canvas canvas)](WebGLRenderingContext.wxBindCanvasTexture.html)
+
+将一个 Canvas 对应的 Texture 绑定到 WebGL 上下文。
 
 #### 2d 接口支持情况
 

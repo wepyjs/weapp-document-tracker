@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -712,6 +712,6 @@
 
 </div>
 
-[](../authorize/wx.authorize.html)[](../customer-message/wx.openCustomerServiceConversation.html)</div>
+[](../authorize/wx.authorize.html)[](wx.createGameClubButton.html)</div>
 
 </div>

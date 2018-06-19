@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -492,6 +492,6 @@
 
 </div>
 
-[](../font/wx.loadFont.html)[](cancelAnimationFrame.html)</div>
+[](../font/wx.loadFont.html)[](wx.setPreferredFramesPerSecond.html)</div>
 
 </div>

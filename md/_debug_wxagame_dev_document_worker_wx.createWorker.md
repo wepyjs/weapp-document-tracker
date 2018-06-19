@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../tutorial/ad/banner-ad.html)
+*   [教程](../../)
 *   [API](../render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -492,6 +492,6 @@ Worker 对象
 
 </div>
 
-[](../update/UpdateManager.onUpdateFailed.html)[](Worker.html)</div>
+[](../update/UpdateManager.onUpdateFailed.html)[](wx.createWorker.html)</div>
 
 </div>

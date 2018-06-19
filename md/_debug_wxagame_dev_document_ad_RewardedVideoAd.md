@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../tutorial/ad/banner-ad.html)
+*   [教程](../../)
 *   [API](../render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -486,6 +486,18 @@
 ##### [RewardedVideoAd.offClose(function callback)](RewardedVideoAd.offClose.html)
 
 取消监听用户点击 `关闭广告` 按钮的事件
+
+##### [Promise RewardedVideoAd.load()](RewardedVideoAd.load.html)
+
+隐藏激励视频广告
+
+##### [Promise RewardedVideoAd.show()](RewardedVideoAd.show.html)
+
+显示激励视频广告。激励视频广告将从屏幕下方推入。
+
+##### [RewardedVideoAd wx.createRewardedVideoAd(Object object)](wx.createRewardedVideoAd.html)
+
+创建激励视频广告组件。请通过 [wx.getSystemInfoSync()](../system/system-info/wx.getSystemInfoSync.html) 返回对象的 SDKVersion 判断基础库版本号 >= 2.0.4 后再使用该 API。同时，开发者工具上暂不支持调试该 API，请直接在真机上进行调试。
 
 </section>
 

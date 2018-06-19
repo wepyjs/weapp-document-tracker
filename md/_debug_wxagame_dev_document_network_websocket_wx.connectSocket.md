@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -589,41 +589,11 @@
 
 </table>
 
-**object.header 的结构**
+#### 返回值
 
-<table>
+##### [SocketTask](SocketTask.html)
 
-<thead>
-
-<tr>
-
-<th>属性</th>
-
-<th>类型</th>
-
-<th>默认值</th>
-
-<th>是否必填</th>
-
-<th>说明</th>
-
-<th>支持版本</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td></td>
-
-</tr>
-
-</tbody>
-
-</table>
+WebSocket 任务
 
 </section>
 
@@ -664,6 +634,6 @@
 
 </div>
 
-[](../request/RequestTask.abort.html)[](wx.closeSocket.html)</div>
+[](../request/RequestTask.abort.html)[](wx.connectSocket.html)</div>
 
 </div>

@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../tutorial/ad/banner-ad.html)
+*   [教程](../../)
 *   [API](../render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -446,6 +446,84 @@
 ### FileSystemManager
 
 文件管理器
+
+#### 方法
+
+##### [FileSystemManager.accessSync(string path)](FileSystemManager.accessSync.html)
+
+FileSystemManager.access 的同步版本
+
+##### [FileSystemManager.access(Object object)](FileSystemManager.access.html)
+
+判断文件/目录是否存在
+
+##### [FileSystemManager.mkdirSync(string dirPath, boolean recursive)](FileSystemManager.mkdirSync.html)
+
+FileSystemManager.mkdir 的同步版本
+
+##### [FileSystemManager.mkdir(Object object)](FileSystemManager.mkdir.html)
+
+创建目录
+
+##### [Array.<string> FileSystemManager.readdirSync(string dirPath)](FileSystemManager.readdirSync.html)
+
+FileSystemManager.readdir 的同步版本
+
+##### [FileSystemManager.readdir(Object object)](FileSystemManager.readdir.html)
+
+读取目录内文件列表
+
+##### [string|ArrayBuffer FileSystemManager.readFileSync(string filePath, string encoding)](FileSystemManager.readFileSync.html)
+
+FileSystemManager.readFile 的同步版本
+
+##### [FileSystemManager.readFile(Object object)](FileSystemManager.readFile.html)
+
+读取本地文件内容
+
+##### [FileSystemManager.renameSync(string oldPath, string newPath)](FileSystemManager.renameSync.html)
+
+FileSystemManager.rename 的同步版本
+
+##### [FileSystemManager.rename(Object object)](FileSystemManager.rename.html)
+
+重命名文件，可以把文件从 oldPath 移动到 newPath
+
+##### [FileSystemManager.unzip(Object object)](FileSystemManager.unzip.html)
+
+解压文件
+
+##### [FileSystemManager.unlinkSync(string filePath)](FileSystemManager.unlinkSync.html)
+
+FileSystemManager.unlink 的同步版本
+
+##### [FileSystemManager.unlink(Object object)](FileSystemManager.unlink.html)
+
+删除文件
+
+##### [FileSystemManager.rmdirSync(string dirPath, boolean recursive)](FileSystemManager.rmdirSync.html)
+
+FileSystemManager.rmdir 的同步版本
+
+##### [FileSystemManager.rmdir(Object object)](FileSystemManager.rmdir.html)
+
+删除目录
+
+##### [Stats FileSystemManager.statSync(string path)](FileSystemManager.statSync.html)
+
+FileSystemManager.stat 的同步版本
+
+##### [Stats FileSystemManager.stat(Object object)](FileSystemManager.stat.html)
+
+获取文件 Stats 对象
+
+##### [FileSystemManager.writeFileSync(string filePath, string|ArrayBuffer data, string encoding)](FileSystemManager.writeFileSync.html)
+
+FileSystemManager.writeFile 的同步版本
+
+##### [FileSystemManager.writeFile(Object object)](FileSystemManager.writeFile.html)
+
+写文件
 
 </section>
 

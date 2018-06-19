@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -586,6 +586,30 @@ InnerAudioContext 实例，可通过 wx.createInnerAudioContext 接口获取实�
 ##### [InnerAudioContext.offSeeked(function callback)](InnerAudioContext.offSeeked.html)
 
 取消监听音频完成跳转操作的事件
+
+##### [InnerAudioContext.play()](InnerAudioContext.play.html)
+
+播放
+
+##### [InnerAudioContext.pause()](InnerAudioContext.pause.html)
+
+暂停。暂停后的音频再播放会从暂停处开始播放
+
+##### [InnerAudioContext.stop()](InnerAudioContext.stop.html)
+
+停止。停止后的音频再播放会从头开始播放。
+
+##### [InnerAudioContext.seek(number position)](InnerAudioContext.seek.html)
+
+跳转到指定位置，单位 s
+
+##### [InnerAudioContext.destroy()](InnerAudioContext.destroy.html)
+
+销毁当前实例
+
+##### [InnerAudioContext wx.createInnerAudioContext()](wx.createInnerAudioContext.html)
+
+创建一个 InnerAudioContext 实例
 
 </section>
 

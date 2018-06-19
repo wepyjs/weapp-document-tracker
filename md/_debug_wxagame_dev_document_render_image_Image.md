@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -464,6 +464,12 @@
 ##### function onload
 
 图片加载完成后触发的回调函数
+
+#### 方法
+
+##### [Image wx.createImage()](wx.createImage.html)
+
+创建一个图片对象
 
 </section>
 

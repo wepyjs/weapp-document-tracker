@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -605,78 +605,6 @@
 
 </table>
 
-**object.header 的结构**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>属性</th>
-
-<th>类型</th>
-
-<th>默认值</th>
-
-<th>是否必填</th>
-
-<th>说明</th>
-
-<th>支持版本</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td></td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**object.formData 的结构**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>属性</th>
-
-<th>类型</th>
-
-<th>默认值</th>
-
-<th>是否必填</th>
-
-<th>说明</th>
-
-<th>支持版本</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td></td>
-
-</tr>
-
-</tbody>
-
-</table>
-
 #### success 回调函数
 
 ##### 参数
@@ -729,6 +657,14 @@
 
 </table>
 
+#### 返回值
+
+##### [UploadTask](UploadTask.html)
+
+> 基础库 1.4.0 开始支持，低版本需做兼容处理
+
+一个可以监听上传进度进度变化的事件和取消上传的对象
+
 </section>
 
 </div>
@@ -768,6 +704,6 @@
 
 </div>
 
-[](../websocket/SocketTask.send.html)[](UploadTask.html)</div>
+[](../websocket/SocketTask.send.html)[](wx.uploadFile.html)</div>
 
 </div>

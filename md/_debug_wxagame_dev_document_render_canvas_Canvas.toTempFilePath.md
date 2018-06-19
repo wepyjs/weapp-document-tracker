@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -690,6 +690,12 @@
 </tbody>
 
 </table>
+
+#### 返回值
+
+##### string
+
+canvas 生成的临时文件路径
 
 #### 示例代码
 

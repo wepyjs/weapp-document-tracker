@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -470,6 +470,22 @@
 ##### [string Canvas.toDataURL()](Canvas.toDataURL.html)
 
 把画布上的绘制内容以一个 data URI 的格式返回
+
+##### [RenderingContext Canvas.getContext(string contextType, Object contextAttributes)](Canvas.getContext.html)
+
+获取画布对象的绘图上下文
+
+##### [string Canvas.toDataURL()](Canvas.toDataURL.html)
+
+把画布上的绘制内容以一个 data URI 的格式返回
+
+##### [WebGLRenderingContext.wxBindCanvasTexture(number texture, Canvas canvas)](WebGLRenderingContext.wxBindCanvasTexture.html)
+
+将一个 Canvas 对应的 Texture 绑定到 WebGL 上下文。
+
+##### [Canvas wx.getSharedCanvas()](wx.getSharedCanvas.md)
+
+只有开放数据域能调用，获取主域和开放数据域共享的 sharedCanvas
 
 </section>
 

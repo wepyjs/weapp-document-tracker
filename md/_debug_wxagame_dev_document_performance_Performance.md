@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../tutorial/ad/banner-ad.html)
+*   [教程](../../)
 *   [API](../render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -448,6 +448,10 @@
 性能管理器
 
 #### 方法
+
+##### [number Performance.now()](Performance.now.html)
+
+可以获取当前时间以微秒为单位的时间戳
 
 ##### [number Performance.now()](Performance.now.html)
 

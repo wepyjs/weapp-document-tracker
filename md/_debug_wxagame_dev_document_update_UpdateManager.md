@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../tutorial/ad/banner-ad.html)
+*   [教程](../../)
 *   [API](../render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -464,6 +464,12 @@ UpdateManager 实例，用来管理更新，可通过 [wx.getUpdateManager](wx.g
 ##### [UpdateManager.onUpdateFailed(function callback)](UpdateManager.onUpdateFailed.html)
 
 监听更新包下载失败回调
+
+##### [UpdateManager.applyUpdate()](UpdateManager.applyUpdate.html)
+
+应用更新包并重启
+
+##### [UpdateManager wx.getUpdateManager()](wx.getUpdateManager.html)
 
 </section>
 

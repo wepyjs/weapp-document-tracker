@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -606,6 +606,34 @@
 ##### [Video.offError(function callback)](Video.offError.html)
 
 取消监听视频错误事件
+
+##### [Promise Video.play()](Video.play.html)
+
+播放视频
+
+##### [Promise Video.pause()](Video.pause.html)
+
+暂停视频
+
+##### [Promise Video.stop()](Video.stop.html)
+
+停止视频
+
+##### [Promise Video.seek(number time)](Video.seek.html)
+
+视频跳转
+
+##### [Promise Video.requestFullScreen()](Video.requestFullScreen.html)
+
+视频全屏
+
+##### [Promise Video.exitFullScreen()](Video.exitFullScreen.html)
+
+视频退出全屏
+
+##### [Video wx.createVideo(Object object)](wx.createVideo.html)
+
+创建视频
 
 </section>
 

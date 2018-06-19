@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -622,6 +622,6 @@
 
 </div>
 
-[](../login/code2accessToken.html)[](../user-info/wx.createUserInfoButton.html)</div>
+[](../login/code2accessToken.html)[](wx.checkIsUserAdvisedToRest.html)</div>
 
 </div>

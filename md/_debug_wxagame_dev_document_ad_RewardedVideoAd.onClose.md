@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../tutorial/ad/banner-ad.html)
+*   [教程](../../)
 *   [API](../render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -452,6 +452,48 @@
 ##### callback
 
 监听事件的回调函数
+
+#### callback 回调函数
+
+##### 参数
+
+###### res
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>属性</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+<th>支持版本</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>isEnd</td>
+
+<td>boolean</td>
+
+<td>视频是否是在用户完整观看的情况下被关闭的</td>
+
+<td>2.1.0</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 </section>
 

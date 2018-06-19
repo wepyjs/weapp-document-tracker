@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -495,9 +495,7 @@
 
 <td>data</td>
 
-<td>string</td>
-
-<td>object</td>
+<td>string/object</td>
 
 <td></td>
 
@@ -723,42 +721,6 @@
 
 </table>
 
-**object.header 的结构**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>属性</th>
-
-<th>类型</th>
-
-<th>默认值</th>
-
-<th>是否必填</th>
-
-<th>说明</th>
-
-<th>支持版本</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td></td>
-
-</tr>
-
-</tbody>
-
-</table>
-
 #### success 回调函数
 
 ##### 参数
@@ -789,11 +751,7 @@
 
 <td>data</td>
 
-<td>string</td>
-
-<td>Object</td>
-
-<td>Arraybuffer</td>
+<td>string/Object/Arraybuffer</td>
 
 <td>开发者服务器返回的数据</td>
 
@@ -829,69 +787,11 @@
 
 </table>
 
-**res.data 的结构**
+#### 返回值
 
-<table>
+##### [RequestTask](RequestTask.html)
 
-<thead>
-
-<tr>
-
-<th>属性</th>
-
-<th>类型</th>
-
-<th>说明</th>
-
-<th>支持版本</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td></td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**res.header 的结构**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>属性</th>
-
-<th>类型</th>
-
-<th>说明</th>
-
-<th>支持版本</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td></td>
-
-</tr>
-
-</tbody>
-
-</table>
+请求任务对象
 
 </section>
 
@@ -932,6 +832,6 @@
 
 </div>
 
-[](../download/DownloadTask.onProgressUpdate.html)[](RequestTask.html)</div>
+[](../download/DownloadTask.onProgressUpdate.html)[](wx.request.html)</div>
 
 </div>

@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../tutorial/ad/banner-ad.html)
+*   [教程](../)
 *   [API](../document/render/canvas/wx.createCanvas.html)
 *   [工具](../devtools/devtools.html)
 *   [腾讯云支持](qcloud.html)
@@ -282,6 +282,6 @@
 
 </div>
 
-[](../devtools/download.html)</div>
+[](../devtools/download.html)[](qcloud.html#介绍)</div>
 
 </div>

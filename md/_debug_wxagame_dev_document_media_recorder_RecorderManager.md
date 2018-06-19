@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -488,6 +488,26 @@
 ##### [RecorderManager.onError(function callback)](RecorderManager.onError.html)
 
 监听录音错误事件
+
+##### [RecorderManager.start(Object object)](RecorderManager.start.html)
+
+开始录音
+
+##### [RecorderManager.pause()](RecorderManager.pause.html)
+
+暂停录音
+
+##### [RecorderManager.resume()](RecorderManager.resume.html)
+
+继续录音
+
+##### [RecorderManager.stop()](RecorderManager.stop.html)
+
+停止录音
+
+##### [RecorderManager wx.getRecorderManager()](wx.getRecorderManager.html)
+
+获取全局唯一的 RecorderManager
 
 </section>
 

@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -456,6 +456,10 @@
 ##### [UploadTask.onProgressUpdate(function callback)](UploadTask.onProgressUpdate.html)
 
 监听上传进度变化事件
+
+##### [UploadTask.abort()](UploadTask.abort.html)
+
+中断上传任务
 
 </section>
 

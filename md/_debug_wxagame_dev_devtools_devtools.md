@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../tutorial/ad/banner-ad.html)
+*   [教程](../)
 *   [API](../document/render/canvas/wx.createCanvas.html)
 *   [工具](devtools.html)
 *   [腾讯云支持](../qcloud/qcloud.html)
@@ -65,20 +65,20 @@
 <nav role="navigation">
 
 *   [概览](devtools.html)
-    *   [界面](page.html)
-        *   [启动页](page.html#启动页)
-        *   [菜单栏](page.html#菜单栏)
-        *   [工具栏](page.html#工具栏)
-        *   [模拟器](page.html#模拟器)
-        *   [设置](settings.html)
-            *   [外观设置](settings.html#外观设置)
-            *   [编辑设置](settings.html#编辑设置)
-            *   [通知设置](settings.html#通知设置)
-            *   [代理设置](settings.html#代理设置)
-        *   [项目页卡](project.html)
-            *   [项目设置](project.html#项目设置)
-            *   [域名信息](project.html#域名信息)
-            *   [腾讯云状态](project.html#腾讯云状态)
+*   [界面](page.html)
+    *   [启动页](page.html#启动页)
+    *   [菜单栏](page.html#菜单栏)
+    *   [工具栏](page.html#工具栏)
+    *   [模拟器](page.html#模拟器)
+    *   [设置](settings.html)
+        *   [外观设置](settings.html#外观设置)
+        *   [编辑设置](settings.html#编辑设置)
+        *   [通知设置](settings.html#通知设置)
+        *   [代理设置](settings.html#代理设置)
+    *   [项目页卡](project.html)
+        *   [项目设置](project.html#项目设置)
+        *   [域名信息](project.html#域名信息)
+        *   [腾讯云状态](project.html#腾讯云状态)
     *   [快捷键](shortcut.html)
     *   [代码编辑](edit.html)
         *   [文件格式](edit.html#文件格式)
@@ -86,18 +86,18 @@
         *   [自动补全](edit.html#自动补全)
         *   [项目配置文件](edit.html#项目配置文件)
         *   [Git 状态展示](edit.html#Git 状态展示)
-    *   [调试](debug.html)
-        *   [模拟器](debug.html#模拟器)
-        *   [自定义编译](debug.html#自定义编译)
-        *   [前后台切换](debug.html#前后台切换)
-        *   [调试工具](debug.html#调试工具)
-            *   [Sources Panel](debug.html#sources-panel)
-            *   [Storage Panel](debug.html#storage-panel)
-            *   [Network Panel](debug.html#network-panel)
-            *   [Console Panel](debug.html#console-panel)
-    *   [命令行调用](cli.html)
-    *   [HTTP 调用](http.html)
-    *   [下载](download.html)
+*   [调试](debug.html)
+    *   [模拟器](debug.html#模拟器)
+    *   [自定义编译](debug.html#自定义编译)
+    *   [前后台切换](debug.html#前后台切换)
+    *   [调试工具](debug.html#调试工具)
+        *   [Sources Panel](debug.html#sources-panel)
+        *   [Storage Panel](debug.html#storage-panel)
+        *   [Network Panel](debug.html#network-panel)
+        *   [Console Panel](debug.html#console-panel)
+*   [命令行调用](cli.html)
+*   [HTTP 调用](http.html)
+*   [下载](download.html)
 
 </nav>
 
@@ -167,6 +167,6 @@
 
 </div>
 
-[](../document/midas-payment/midasPresent.html)[](page.html)</div>
+[](../document/midas-payment/midasPresent.html)[](devtools.html)</div>
 
 </div>

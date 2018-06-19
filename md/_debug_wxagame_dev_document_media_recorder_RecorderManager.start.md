@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -582,6 +582,8 @@
 <td>否</td>
 
 <td>指定录音的音频源，可通过 [wx.getAvailableAudioSources()](../audio/wx.getAvailableAudioSources.html) 获取当前可用的音频源</td>
+
+<td>2.1.0</td>
 
 </tr>
 

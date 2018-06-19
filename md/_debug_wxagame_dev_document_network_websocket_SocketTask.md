@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../../tutorial/ad/banner-ad.html)
+*   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
@@ -472,6 +472,14 @@ WebSocket 任务，可通过 wx.connectSocket() 接口创建返回
 ##### [SocketTask.onMessage(function callback)](SocketTask.onMessage.html)
 
 监听WebSocket 接受到服务器的消息事件
+
+##### [SocketTask.send(Object object)](SocketTask.send.html)
+
+通过 WebSocket 连接发送数据
+
+##### [SocketTask.close(Object object)](SocketTask.close.html)
+
+关闭 WebSocket 连接
 
 </section>
 

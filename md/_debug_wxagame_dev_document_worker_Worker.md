@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../tutorial/ad/banner-ad.html)
+*   [教程](../../)
 *   [API](../render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -460,6 +460,14 @@ Worker 实例，可通过 [wx.createWorker](wx.createWorker.html) 接口获取�
 ##### [Worker.onMessage(function callback)](Worker.onMessage.html)
 
 监听接收主线程/Worker 线程向当前线程发送的消息
+
+##### [Worker.postMessage(Object message)](Worker.postMessage.html)
+
+向主线程/Worker 线程发送的消息。
+
+##### [Worker.terminate()](Worker.terminate.html)
+
+结束当前 worker 线程，仅限在主线程 worker 对象上调用。
 
 </section>
 
