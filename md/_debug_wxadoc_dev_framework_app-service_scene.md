@@ -104,6 +104,7 @@
     *   [开发插件](../plugin/development.html)
     *   [使用插件](../plugin/using.html)
     *   [插件的限制](../plugin/api-limit.html)
+    *   [插件功能页](../plugin/functional-pages.html)
 *   [分包加载](../subpackages.html)
 *   [多线程](../workers.html)
 *   [基础库](../client-lib.html)
@@ -654,6 +655,14 @@
 <td>1097</td>
 
 <td>微信支付签约页</td>
+
+</tr>
+
+<tr>
+
+<td>1102</td>
+
+<td>服务号 profile 页服务预览</td>
 
 </tr>
 

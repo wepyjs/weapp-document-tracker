@@ -104,6 +104,7 @@
     *   [开发插件](plugin/development.html)
     *   [使用插件](plugin/using.html)
     *   [插件的限制](plugin/api-limit.html)
+    *   [插件功能页](plugin/functional-pages.html)
 *   [分包加载](subpackages.html)
 *   [多线程](workers.html)
 *   [基础库](client-lib.html)
@@ -252,6 +253,6 @@
 
 </div>
 
-[](plugin/api-limit.html)[](workers.html)</div>
+[](plugin/functional-pages.html)[](workers.html)</div>
 
 </div>

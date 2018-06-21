@@ -91,6 +91,7 @@
     *   [textarea](textarea.html)
 *   [导航](navigator.html)
     *   [navigator](navigator.html)
+    *   [functional-page-navigator](functional-page-navigator.html)
 *   [媒体组件](audio.html)
     *   [audio](audio.html#audio)
     *   [image](image.html)
@@ -258,6 +259,7 @@
 9.  `tip`: 只支持基本的定位、布局、文本样式。不支持设置`单边的border`、`background-image`、`shadow`、`overflow: visible`等。
 10.  `tip`: 建议子节点不要溢出父节点
 11.  `tip`: 默认设置的样式有：`white-space: nowrap;` `line-height: 1.2;` `display: block;`
+12.  `bug`: 自定义组件嵌套 `cover-view` 时，自定义组件的 slot 及其父节点暂不支持通过 wx:if 控制显隐，否则会导致 `cover-view` 不显示
 
 **示例：**
 

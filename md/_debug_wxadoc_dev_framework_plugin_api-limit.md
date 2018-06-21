@@ -104,6 +104,7 @@
     *   [开发插件](development.html)
     *   [使用插件](using.html)
     *   [插件的限制](api-limit.html)
+    *   [插件功能页](functional-pages.html)
 *   [分包加载](../subpackages.html)
 *   [多线程](../workers.html)
 *   [基础库](../client-lib.html)
@@ -137,6 +138,8 @@
 
 *   插件的请求域名列表与小程序相互独立；
 *   一些 API 不允许插件调用。
+
+注意，虽然一些 API 无法调用，但可以用组件来实现相应的功能。典型的例子是 `wx.navigateTo` 。
 
 目前，允许插件调用的 API 及其对应版本要求如下。
 
@@ -537,6 +540,14 @@
 <td>`wx.makeVoIPCall`</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>`wx.navigateBack`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -1071,6 +1082,6 @@
 
 </div>
 
-[](using.html)[](../subpackages.html)</div>
+[](using.html)[](functional-pages.html)</div>
 
 </div>

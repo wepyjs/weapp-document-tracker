@@ -91,6 +91,7 @@
     *   [textarea](textarea.html)
 *   [导航](navigator.html)
     *   [navigator](navigator.html)
+    *   [functional-page-navigator](functional-page-navigator.html)
 *   [媒体组件](audio.html)
     *   [audio](audio.html#audio)
     *   [image](image.html)
@@ -513,7 +514,7 @@
 
 <tr>
 
-<td>1001</td>
+<td>10001</td>
 
 <td>用户禁止使用摄像头</td>
 
@@ -521,7 +522,7 @@
 
 <tr>
 
-<td>1002</td>
+<td>10002</td>
 
 <td>用户禁止使用录音</td>
 

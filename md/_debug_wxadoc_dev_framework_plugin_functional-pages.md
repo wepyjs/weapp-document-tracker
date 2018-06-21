@@ -132,63 +132,81 @@
 
 <section class="normal markdown-section">
 
-# 使用插件
+# 插件功能页
 
-## 申请使用插件
+插件功能页从小程序基础库版本 [2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。") 开始支持。
 
-在使用插件前，首先要在小程序管理后台的“设置-第三方服务-插件管理”中添加插件。开发者可登录小程序管理后台，通过 appId 查找插件并添加。插件开发者通过申请后，方可在小程序中使用相应的插件。
+插件不能直接调用 `wx.login` 等较为敏感的接口。在需要访问一些敏感接口时，可以使用插件功能页的方式。使用插件功能页可以实现以下这些功能：
 
-## 引入插件代码包
+*   获取用户信息，包括 `openid` 和昵称等（相当于 `wx.login` 和 `wx.getUserInfo` 的功能）。
+*   支付（相当于 `wx.requestPayment` ）。
 
-对于插件的使用者，使用插件前要在 `app.json` 中声明需要使用的插件，例如：
+需要注意的是：插件使用支付功能，需要进行额外的权限申请，申请位置位于[管理后台](https://mp.weixin.qq.com)的“小程序插件 -> 基本设置 -> 支付能力”设置项中。另外，无论是否通过申请，主体为个人小程序在使用插件时，都无法正常使用插件里的支付功能。
 
-    {
-      "plugins": {
-        "myPlugin": {
-          "version": "1.0.0",
-          "provider": "wxxxxxxxxxxxxxxxxx"
-        }
-      }
-    }
+在具体使用功能页时，插件可以在插件的自定义组件中放置一个 `<functional-page-navigator>` 组件，用户在点击这个组件区域时，可以跳转到一个固定的页面，允许用户执行登录或其他操作。
 
-如上例所示， `plugins` 定义段中可以包含多个插件声明，每个插件声明中都必须指明插件的 appid 和需要使用的版本号。
+## 激活功能页特性
 
-## 使用插件的 js 接口
+功能页是 **插件所有者小程序** 中的一个特殊页面。
 
-在引入插件代码包之后，就可以在这个小程序中使用插件提供的自定义组件或者 js 接口。
+插件所有者小程序，指的是与插件 AppID 相同的小程序。例如，“小程序示例”小程序开发了一个“小程序示例插件”，无论这个插件被哪个小程序使用，这个插件的插件所有者小程序都是“小程序示例”。
 
-如果需要使用插件的 js 接口，可以使用 `requirePlugin` 方法：
-
-    var myPluginInterface = requirePlugin('myPlugin')
-
-    myPluginInterface.hello()
-
-## 使用插件的自定义组件
-
-使用插件提供的自定义组件，和使用普通自定义组件的方式相仿。在 `json` 文件定义需要引入的自定义组件时，使用 `plugin://` 协议即可，例如：
+启用插件功能页时，需要在插件所有者小程序 `app.json` 文件中添加 `functionalPages` 定义段，其值为 `true` 。
 
     {
-      "usingComponents": {
-        "hello-component": "plugin://myPlugin/hello-component"
-      }
+      "functionalPages": true
     }
 
-出于对插件的保护，插件提供的自定义组件在使用上有一定的限制：
+注意，新增或改变这个字段时，需要这个小程序发布新版本，才能在正式环境中使用插件功能页。
 
-*   页面中的 `this.selectComponent` 接口无法获得插件的自定义组件实例对象；
-*   `wx.createSelectorQuery` 等接口的 `>>>` 选择器无法选入插件内部。
+## 跳转到功能页
 
-## 使用插件的页面
-
-插件的页面从小程序基础库版本 [2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。") 开始支持。
-
-需要跳转到插件页面时， `url` 应使用 `plugin://` 前缀。
+在插件需要登录时，可以在插件的自定义组件中放置一个 `<functional-page-navigator>` 组件。
 
 **代码示例：**
 
-    <navigator url="plugin://myPlugin/hello-page">
-      Go to pages/hello-page!
-    </navigator>
+    <functional-page-navigator name="loginAndGetUserInfo" args="" version="develop" bind:success="loginSuccess">
+      <button>登录到插件</button>
+    </functional-page-navigator>
+
+用户在点击这个区域时，会自动跳转到插件所有者小程序的功能页。功能页会提示用户进行登录或其他相应的操作。操作结果会以组件事件的方式返回。
+
+具体用法和支持的功能页列表详见 [组件说明](../../component/functional-page-navigator.html) 。
+
+目前，功能页的跳转目前不支持在开发者工具中调试，请在真机上测试。
+
+## 功能页函数
+
+在使用支付功能页时，插件所有者小程序需要提供一个函数来响应支付请求。这个响应函数应当写在小程序根目录中的 `functional-pages/request-payment.js` 文件中，名为 `beforeRequestPayment` 。如果不提供这段代码，将通过 fail 事件返回失败。
+
+**注意：功能页函数不应 require 其他非 functional-pages 目录中的文件，其他非 functional-pages 目录中的文件也不应 require 这个目录中的文件。这样的 require 调用在未来将不被支持。**
+
+**代码示例：**
+
+    // functional-pages/request-payment.js
+    exports.beforeRequestPayment = function(paymentArgs, callback) {
+      paymentArgs // 就是 functional-page-navigator 的 args 属性中 paymentArgs
+
+      // 在这里可以执行一些支付前的参数处理逻辑，包括通知后台调用统一下单接口
+
+      // 在 callback 中需要返回两个参数： err 和 requestPaymentArgs
+      // err 应为 null （或者一些失败信息）
+      // requestPaymentArgs 将被用于调用 wx.requestPayment
+      callback(null, {
+        // 这里的参数与 wx.requestPayment 相同，除了 success/fail/complete 不被支持
+        timeStamp: timeStamp,
+        nonceStr: nonceStr,
+        package: package,
+        signType: signType,
+        paySign: paySign,
+      })
+    }
+
+**这个目录和文件应当被放置在插件所有者小程序代码中（而非插件代码中），它是插件所有者小程序的一部分（而非插件的一部分）。** 如果需要新增或更改这段代码，需要发布插件所有者小程序，才能在正式版中生效；需要重新预览插件所有者小程序，才能在开发版中生效。
+
+#### Bugs & Tips
+
+*   Bug：在微信版本 6.6.7 中，功能页被拉起时会触发 App 的部分生命周期并使得功能页启动时间变得比较长。在后续的微信版本中这一行为会发生变更，使 App 生命周期不再被触发。
 
 </section>
 
@@ -229,6 +247,6 @@
 
 </div>
 
-[](development.html)[](api-limit.html)</div>
+[](api-limit.html)[](../subpackages.html)</div>
 
 </div>

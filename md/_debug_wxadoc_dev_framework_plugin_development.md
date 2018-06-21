@@ -104,6 +104,7 @@
     *   [开发插件](development.html)
     *   [使用插件](using.html)
     *   [插件的限制](api-limit.html)
+    *   [插件功能页](functional-pages.html)
 *   [分包加载](../subpackages.html)
 *   [多线程](../workers.html)
 *   [基础库](../client-lib.html)
@@ -151,7 +152,7 @@
 
 ## 插件目录结构
 
-一个插件可以包含若干个自定义组件，和一组js接口。插件的目录内容如下：
+一个插件可以包含若干个自定义组件、页面，和一组js接口。插件的目录内容如下：
 
     plugin
     ├── components
@@ -159,6 +160,11 @@
     │   ├── hello-component.json
     │   ├── hello-component.wxml
     │   └── hello-component.wxss
+    ├── pages
+    │   ├── hello-page.js        // 插件提供的页面（可以有多个，自小程序基础库版本 [2.1.0](/framework/compatibility.md "基础库 2.1.0 开始支持，低版本需做兼容处理。") 开始支持）
+    │   ├── hello-page.json
+    │   ├── hello-page.wxml
+    │   └── hello-page.wxss
     ├── index.js                 // 插件的 js 接口
     └── plugin.json              // 插件配置文件
 
@@ -172,8 +178,23 @@
       "publicComponents": {
         "hello-component": "components/hello-component"
       },
+      "pages": {
+        "hello-page": "pages/hello-page"
+      },
       "main": "index.js"
     }
+
+## 插件页面跳转
+
+插件的页面从小程序基础库版本 [2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。") 开始支持。
+
+插件执行页面跳转的时候，只能使用 `navigator` 组件。当插件跳转到自身页面时， `url` 应设置为这样的形式： `plugin-private://PLUGIN_APPID/PATH/TO/PAGE` 。需要跳转到其他插件时，也可以这样设置 `url` 。
+
+**代码示例：**
+
+    <navigator url="plugin-private://wxidxxxxxxxxxxxxxx/pages/hello-page">
+      Go to pages/hello-page!
+    </navigator>
 
 ## 插件对外接口
 

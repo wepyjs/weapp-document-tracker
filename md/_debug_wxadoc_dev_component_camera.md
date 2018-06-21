@@ -91,6 +91,7 @@
     *   [textarea](textarea.html)
 *   [导航](navigator.html)
     *   [navigator](navigator.html)
+    *   [functional-page-navigator](functional-page-navigator.html)
 *   [媒体组件](audio.html)
     *   [audio](audio.html#audio)
     *   [image](image.html)
@@ -205,7 +206,7 @@
 
 <td></td>
 
-<td>扫码识别区域，格式为[x, y, w, h]，相对camera显示区域左上角，仅在 mode="scanCode" 时生效</td>
+<td>扫码识别区域，格式为[x, y, w, h]，x,y是相对于camera显示区域的左上角，w,h为区域宽度，单位px，仅在 mode="scanCode" 时生效</td>
 
 <td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -264,6 +265,7 @@
 1.  `tip`: `camera` 组件是由客户端创建的原生组件，它的层级是最高的，不能通过 z-index 控制层级。可使用 `cover-view` `cover-image`覆盖在上面。
 2.  `tip`: 同一页面只能插入一个 `camera` 组件。
 3.  `tip`: 请勿在 `scroll-view`、`swiper`、`picker-view`、`movable-view` 中使用 `camera` 组件。
+4.  `bug`: `scan-area` 属性目前存在识别区域不准的问题，建议先不指定
 
 **示例：**
 

@@ -91,6 +91,7 @@
     *   [textarea](textarea.html)
 *   [导航](navigator.html)
     *   [navigator](navigator.html)
+    *   [functional-page-navigator](functional-page-navigator.html)
 *   [媒体组件](audio.html)
     *   [audio](audio.html#audio)
     *   [image](image.html)
