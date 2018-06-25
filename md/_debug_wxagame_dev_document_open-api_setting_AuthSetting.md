@@ -229,17 +229,24 @@
         *   [wx.createUserInfoButton](../user-info/wx.createUserInfoButton.html)
         *   [wx.getUserInfo](../user-info/wx.getUserInfo.html)
         *   [UserInfo](../user-info/UserInfo.html)
+        *   [UserInfoButton](../user-info/UserInfoButton.html)
+        *   [UserInfoButton.onTap](../user-info/UserInfoButton.onTap.html)
     *   [设置](wx.createOpenSettingButton.html)
         *   [wx.createOpenSettingButton](wx.createOpenSettingButton.html)
         *   [wx.getSetting](wx.getSetting.html)
         *   [wx.openSetting](wx.openSetting.html)
         *   [AuthSetting](AuthSetting.html)
+        *   [OpenSettingButton](OpenSettingButton.html)
     *   [微信运动](../werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
     *   [授权](../authorize/wx.authorize.html)
         *   [wx.authorize](../authorize/wx.authorize.html)
     *   [游戏圈](../game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../game-club/wx.createGameClubButton.html)
+        *   [GameClubButton](../game-club/GameClubButton.html)
+    *   [意见反馈](../feedback/wx.createFeedbackButton.html)
+        *   [wx.createFeedbackButton](../feedback/wx.createFeedbackButton.html)
+        *   [FeedbackButton](../feedback/FeedbackButton.html)
     *   [客服消息](../customer-message/wx.openCustomerServiceConversation.html)
         *   [wx.openCustomerServiceConversation](../customer-message/wx.openCustomerServiceConversation.html)
     *   [开放数据域](../context/wx.getOpenDataContext.html)
@@ -518,6 +525,6 @@
 
 </div>
 
-[](wx.openSetting.html)[](../werun/wx.getWeRunData.html)</div>
+[](wx.openSetting.html)[](OpenSettingButton.html)</div>
 
 </div>

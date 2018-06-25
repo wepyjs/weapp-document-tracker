@@ -229,17 +229,24 @@
         *   [wx.createUserInfoButton](../user-info/wx.createUserInfoButton.html)
         *   [wx.getUserInfo](../user-info/wx.getUserInfo.html)
         *   [UserInfo](../user-info/UserInfo.html)
+        *   [UserInfoButton](../user-info/UserInfoButton.html)
+        *   [UserInfoButton.onTap](../user-info/UserInfoButton.onTap.html)
     *   [设置](../setting/wx.createOpenSettingButton.html)
         *   [wx.createOpenSettingButton](../setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../setting/wx.getSetting.html)
         *   [wx.openSetting](../setting/wx.openSetting.html)
         *   [AuthSetting](../setting/AuthSetting.html)
+        *   [OpenSettingButton](../setting/OpenSettingButton.html)
     *   [微信运动](../werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
     *   [授权](../authorize/wx.authorize.html)
         *   [wx.authorize](../authorize/wx.authorize.html)
     *   [游戏圈](../game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../game-club/wx.createGameClubButton.html)
+        *   [GameClubButton](../game-club/GameClubButton.html)
+    *   [意见反馈](../feedback/wx.createFeedbackButton.html)
+        *   [wx.createFeedbackButton](../feedback/wx.createFeedbackButton.html)
+        *   [FeedbackButton](../feedback/FeedbackButton.html)
     *   [客服消息](wx.openCustomerServiceConversation.html)
         *   [wx.openCustomerServiceConversation](wx.openCustomerServiceConversation.html)
     *   [开放数据域](../context/wx.getOpenDataContext.html)
@@ -445,7 +452,7 @@
 
 ### wx.openCustomerServiceConversation(Object object)
 
-> 基础库 2.0.3 开始支持，低版本需做兼容处理
+> 支持版本 >= 2.0.3
 
 进入客服会话，要求在用户发生过至少一次 touch 事件后才能调用。后台接入方式与小程序一致，详见 [客服消息接入](https://developers.weixin.qq.com/miniprogram/dev/api/custommsg/callback_help.html)
 
@@ -646,6 +653,6 @@
 
 </div>
 
-[](../game-club/wx.createGameClubButton.html)[](wx.openCustomerServiceConversation.html)</div>
+[](../feedback/FeedbackButton.html)[](wx.openCustomerServiceConversation.html)</div>
 
 </div>

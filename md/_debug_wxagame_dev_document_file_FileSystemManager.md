@@ -229,17 +229,24 @@
         *   [wx.createUserInfoButton](../open-api/user-info/wx.createUserInfoButton.html)
         *   [wx.getUserInfo](../open-api/user-info/wx.getUserInfo.html)
         *   [UserInfo](../open-api/user-info/UserInfo.html)
+        *   [UserInfoButton](../open-api/user-info/UserInfoButton.html)
+        *   [UserInfoButton.onTap](../open-api/user-info/UserInfoButton.onTap.html)
     *   [设置](../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.createOpenSettingButton](../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../open-api/setting/wx.getSetting.html)
         *   [wx.openSetting](../open-api/setting/wx.openSetting.html)
         *   [AuthSetting](../open-api/setting/AuthSetting.html)
+        *   [OpenSettingButton](../open-api/setting/OpenSettingButton.html)
     *   [微信运动](../open-api/werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../open-api/werun/wx.getWeRunData.html)
     *   [授权](../open-api/authorize/wx.authorize.html)
         *   [wx.authorize](../open-api/authorize/wx.authorize.html)
     *   [游戏圈](../open-api/game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../open-api/game-club/wx.createGameClubButton.html)
+        *   [GameClubButton](../open-api/game-club/GameClubButton.html)
+    *   [意见反馈](../open-api/feedback/wx.createFeedbackButton.html)
+        *   [wx.createFeedbackButton](../open-api/feedback/wx.createFeedbackButton.html)
+        *   [FeedbackButton](../open-api/feedback/FeedbackButton.html)
     *   [客服消息](../open-api/customer-message/wx.openCustomerServiceConversation.html)
         *   [wx.openCustomerServiceConversation](../open-api/customer-message/wx.openCustomerServiceConversation.html)
     *   [开放数据域](../open-api/context/wx.getOpenDataContext.html)
@@ -449,21 +456,21 @@
 
 #### 方法
 
-##### [FileSystemManager.accessSync(string path)](FileSystemManager.accessSync.html)
+##### [FileSystemManager.renameSync(string oldPath, string newPath)](FileSystemManager.renameSync.html)
 
-FileSystemManager.access 的同步版本
+FileSystemManager.rename 的同步版本
 
-##### [FileSystemManager.access(Object object)](FileSystemManager.access.html)
+##### [FileSystemManager.rename(Object object)](FileSystemManager.rename.html)
 
-判断文件/目录是否存在
+重命名文件，可以把文件从 oldPath 移动到 newPath
 
-##### [FileSystemManager.mkdirSync(string dirPath, boolean recursive)](FileSystemManager.mkdirSync.html)
+##### [FileSystemManager.rmdirSync(string dirPath, boolean recursive)](FileSystemManager.rmdirSync.html)
 
-FileSystemManager.mkdir 的同步版本
+FileSystemManager.rmdir 的同步版本
 
-##### [FileSystemManager.mkdir(Object object)](FileSystemManager.mkdir.html)
+##### [FileSystemManager.rmdir(Object object)](FileSystemManager.rmdir.html)
 
-创建目录
+删除目录
 
 ##### [Array.<string> FileSystemManager.readdirSync(string dirPath)](FileSystemManager.readdirSync.html)
 
@@ -473,25 +480,13 @@ FileSystemManager.readdir 的同步版本
 
 读取目录内文件列表
 
-##### [string|ArrayBuffer FileSystemManager.readFileSync(string filePath, string encoding)](FileSystemManager.readFileSync.html)
+##### [FileSystemManager.mkdirSync(string dirPath, boolean recursive)](FileSystemManager.mkdirSync.html)
 
-FileSystemManager.readFile 的同步版本
+FileSystemManager.mkdir 的同步版本
 
-##### [FileSystemManager.readFile(Object object)](FileSystemManager.readFile.html)
+##### [FileSystemManager.mkdir(Object object)](FileSystemManager.mkdir.html)
 
-读取本地文件内容
-
-##### [FileSystemManager.renameSync(string oldPath, string newPath)](FileSystemManager.renameSync.html)
-
-FileSystemManager.rename 的同步版本
-
-##### [FileSystemManager.rename(Object object)](FileSystemManager.rename.html)
-
-重命名文件，可以把文件从 oldPath 移动到 newPath
-
-##### [FileSystemManager.unzip(Object object)](FileSystemManager.unzip.html)
-
-解压文件
+创建目录
 
 ##### [FileSystemManager.unlinkSync(string filePath)](FileSystemManager.unlinkSync.html)
 
@@ -501,13 +496,17 @@ FileSystemManager.unlink 的同步版本
 
 删除文件
 
-##### [FileSystemManager.rmdirSync(string dirPath, boolean recursive)](FileSystemManager.rmdirSync.html)
+##### [FileSystemManager.unzip(Object object)](FileSystemManager.unzip.html)
 
-FileSystemManager.rmdir 的同步版本
+解压文件
 
-##### [FileSystemManager.rmdir(Object object)](FileSystemManager.rmdir.html)
+##### [string|ArrayBuffer FileSystemManager.readFileSync(string filePath, string encoding)](FileSystemManager.readFileSync.html)
 
-删除目录
+FileSystemManager.readFile 的同步版本
+
+##### [FileSystemManager.readFile(Object object)](FileSystemManager.readFile.html)
+
+读取本地文件内容
 
 ##### [Stats FileSystemManager.statSync(string path)](FileSystemManager.statSync.html)
 

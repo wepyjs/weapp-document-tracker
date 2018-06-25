@@ -229,17 +229,24 @@
         *   [wx.createUserInfoButton](../../open-api/user-info/wx.createUserInfoButton.html)
         *   [wx.getUserInfo](../../open-api/user-info/wx.getUserInfo.html)
         *   [UserInfo](../../open-api/user-info/UserInfo.html)
+        *   [UserInfoButton](../../open-api/user-info/UserInfoButton.html)
+        *   [UserInfoButton.onTap](../../open-api/user-info/UserInfoButton.onTap.html)
     *   [设置](../../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.createOpenSettingButton](../../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../../open-api/setting/wx.getSetting.html)
         *   [wx.openSetting](../../open-api/setting/wx.openSetting.html)
         *   [AuthSetting](../../open-api/setting/AuthSetting.html)
+        *   [OpenSettingButton](../../open-api/setting/OpenSettingButton.html)
     *   [微信运动](../../open-api/werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../../open-api/werun/wx.getWeRunData.html)
     *   [授权](../../open-api/authorize/wx.authorize.html)
         *   [wx.authorize](../../open-api/authorize/wx.authorize.html)
     *   [游戏圈](../../open-api/game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../../open-api/game-club/wx.createGameClubButton.html)
+        *   [GameClubButton](../../open-api/game-club/GameClubButton.html)
+    *   [意见反馈](../../open-api/feedback/wx.createFeedbackButton.html)
+        *   [wx.createFeedbackButton](../../open-api/feedback/wx.createFeedbackButton.html)
+        *   [FeedbackButton](../../open-api/feedback/FeedbackButton.html)
     *   [客服消息](../../open-api/customer-message/wx.openCustomerServiceConversation.html)
         *   [wx.openCustomerServiceConversation](../../open-api/customer-message/wx.openCustomerServiceConversation.html)
     *   [开放数据域](../../open-api/context/wx.getOpenDataContext.html)
@@ -529,7 +536,7 @@
 
 ##### 参数
 
-###### SystemInfo res
+###### Object res
 
 <table>
 
@@ -559,7 +566,7 @@
 
 <td>手机品牌</td>
 
-<td>1.5.0</td>
+<td>>= 1.5.0</td>
 
 </tr>
 
@@ -595,7 +602,7 @@
 
 <td>屏幕宽度</td>
 
-<td>1.1.0</td>
+<td>>= 1.1.0</td>
 
 </tr>
 
@@ -607,7 +614,7 @@
 
 <td>屏幕高度</td>
 
-<td>1.1.0</td>
+<td>>= 1.1.0</td>
 
 </tr>
 
@@ -691,7 +698,7 @@
 
 <td>用户字体大小设置。以“我-设置-通用-字体大小”中的设置为准，单位 px。</td>
 
-<td>1.5.0</td>
+<td>>= 1.5.0</td>
 
 </tr>
 
@@ -703,7 +710,7 @@
 
 <td>客户端基础库版本</td>
 
-<td>1.1.0</td>
+<td>>= 1.1.0</td>
 
 </tr>
 
@@ -715,7 +722,7 @@
 
 <td>性能等级，-2 或 0：该设备无法运行小游戏，-1：性能未知，>=1 设备性能值，该值越高，设备性能越好(目前设备最高不到50)</td>
 
-<td>1.8.0</td>
+<td>>= 1.8.0</td>
 
 </tr>
 
@@ -727,7 +734,7 @@
 
 <td>电量，范围 1 - 100</td>
 
-<td>1.9.0</td>
+<td>>= 1.9.0</td>
 
 </tr>
 
@@ -739,7 +746,7 @@
 
 <td>wifi 信号强度，范围 0 - 4</td>
 
-<td>1.9.0</td>
+<td>>= 1.9.0</td>
 
 </tr>
 

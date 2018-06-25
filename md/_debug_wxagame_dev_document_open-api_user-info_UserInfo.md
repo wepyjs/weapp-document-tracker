@@ -229,17 +229,24 @@
         *   [wx.createUserInfoButton](wx.createUserInfoButton.html)
         *   [wx.getUserInfo](wx.getUserInfo.html)
         *   [UserInfo](UserInfo.html)
+        *   [UserInfoButton](UserInfoButton.html)
+        *   [UserInfoButton.onTap](UserInfoButton.onTap.html)
     *   [设置](../setting/wx.createOpenSettingButton.html)
         *   [wx.createOpenSettingButton](../setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../setting/wx.getSetting.html)
         *   [wx.openSetting](../setting/wx.openSetting.html)
         *   [AuthSetting](../setting/AuthSetting.html)
+        *   [OpenSettingButton](../setting/OpenSettingButton.html)
     *   [微信运动](../werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
     *   [授权](../authorize/wx.authorize.html)
         *   [wx.authorize](../authorize/wx.authorize.html)
     *   [游戏圈](../game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../game-club/wx.createGameClubButton.html)
+        *   [GameClubButton](../game-club/GameClubButton.html)
+    *   [意见反馈](../feedback/wx.createFeedbackButton.html)
+        *   [wx.createFeedbackButton](../feedback/wx.createFeedbackButton.html)
+        *   [FeedbackButton](../feedback/FeedbackButton.html)
     *   [客服消息](../customer-message/wx.openCustomerServiceConversation.html)
         *   [wx.openCustomerServiceConversation](../customer-message/wx.openCustomerServiceConversation.html)
     *   [开放数据域](../context/wx.getOpenDataContext.html)
@@ -457,69 +464,7 @@
 
 ##### string avatarUrl
 
-用户头像图片 url。最后一个数值代表正方形头像大小（有0、46、64、96、132数值可选，0代表640*640正方形头像），用户没有头像时该项为空。若用户更换头像，原有头像 url 将失效。
-
-**avatarUrl 的合法值**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>值</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>0</td>
-
-<td>640x640 的正方形头像</td>
-
-</tr>
-
-<tr>
-
-<td>46</td>
-
-<td>46x46 的正方形头像</td>
-
-</tr>
-
-<tr>
-
-<td>64</td>
-
-<td>64x64 的正方形头像</td>
-
-</tr>
-
-<tr>
-
-<td>96</td>
-
-<td>96x96 的正方形头像</td>
-
-</tr>
-
-<tr>
-
-<td>132</td>
-
-<td>132x132 的正方形头像</td>
-
-</tr>
-
-</tbody>
-
-</table>
+用户头像图片的 URL。URL 最后一个数值代表正方形头像大小（有 0、46、64、96、132 数值可选，0 代表 640x640 的正方形头像，46 表示 46x46 的正方形头像，剩余数值以此类推），用户没有头像时该项为空。若用户更换头像，原有头像 url 将失效。
 
 ##### number gender
 
@@ -622,6 +567,6 @@
 
 </div>
 
-[](wx.getUserInfo.html)[](../setting/wx.createOpenSettingButton.html)</div>
+[](wx.getUserInfo.html)[](UserInfoButton.html)</div>
 
 </div>

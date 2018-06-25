@@ -229,17 +229,24 @@
         *   [wx.createUserInfoButton](wx.createUserInfoButton.html)
         *   [wx.getUserInfo](wx.getUserInfo.html)
         *   [UserInfo](UserInfo.html)
+        *   [UserInfoButton](UserInfoButton.html)
+        *   [UserInfoButton.onTap](UserInfoButton.onTap.html)
     *   [设置](../setting/wx.createOpenSettingButton.html)
         *   [wx.createOpenSettingButton](../setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../setting/wx.getSetting.html)
         *   [wx.openSetting](../setting/wx.openSetting.html)
         *   [AuthSetting](../setting/AuthSetting.html)
+        *   [OpenSettingButton](../setting/OpenSettingButton.html)
     *   [微信运动](../werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
     *   [授权](../authorize/wx.authorize.html)
         *   [wx.authorize](../authorize/wx.authorize.html)
     *   [游戏圈](../game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../game-club/wx.createGameClubButton.html)
+        *   [GameClubButton](../game-club/GameClubButton.html)
+    *   [意见反馈](../feedback/wx.createFeedbackButton.html)
+        *   [wx.createFeedbackButton](../feedback/wx.createFeedbackButton.html)
+        *   [FeedbackButton](../feedback/FeedbackButton.html)
     *   [客服消息](../customer-message/wx.openCustomerServiceConversation.html)
         *   [wx.openCustomerServiceConversation](../customer-message/wx.openCustomerServiceConversation.html)
     *   [开放数据域](../context/wx.getOpenDataContext.html)
@@ -445,7 +452,7 @@
 
 ### UserInfoButton wx.createUserInfoButton(Object object)
 
-> 基础库 2.0.1 开始支持，低版本需做兼容处理
+> 支持版本 >= 2.0.1
 
 创建用户信息按钮
 
@@ -537,13 +544,45 @@
 
 <td>按钮的样式</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>withCredentials</td>
+
+<td>boolean</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>是否带上登录态信息。当 withCredentials 为 true 时，要求此前有调用过 wx.login 且登录态尚未过期，此时返回的数据会包含 encryptedData, iv 等敏感信息；当 withCredentials 为 false 时，不要求有登录态，返回的数据不包含 encryptedData, iv 等敏感信息。</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>lang</td>
+
+<td>string</td>
+
+<td>en</td>
+
+<td>否</td>
+
+<td>描述用户信息的语言</td>
+
 </tr>
 
 </tbody>
 
 </table>
 
-**object.type 的合法值**
+**type 的合法值**
 
 <table>
 
@@ -581,7 +620,53 @@
 
 </table>
 
-**object.style 的结构**
+**object.lang 的合法值**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>值</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>en</td>
+
+<td>英文</td>
+
+</tr>
+
+<tr>
+
+<td>zh_CN</td>
+
+<td>简体中文</td>
+
+</tr>
+
+<tr>
+
+<td>zh_TW</td>
+
+<td>繁体中文</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**style 的结构**
 
 <table>
 
@@ -785,7 +870,7 @@
 
 </table>
 
-**object.style.textAlign 的合法值**
+**style.textAlign 的合法值**
 
 <table>
 
@@ -833,7 +918,7 @@
 
 #### 返回值
 
-##### <a href="">UserInfoButton</a>
+##### [UserInfoButton](UserInfoButton.html)
 
 #### 示例代码
 

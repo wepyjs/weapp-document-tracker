@@ -229,17 +229,24 @@
         *   [wx.createUserInfoButton](../user-info/wx.createUserInfoButton.html)
         *   [wx.getUserInfo](../user-info/wx.getUserInfo.html)
         *   [UserInfo](../user-info/UserInfo.html)
+        *   [UserInfoButton](../user-info/UserInfoButton.html)
+        *   [UserInfoButton.onTap](../user-info/UserInfoButton.onTap.html)
     *   [设置](../setting/wx.createOpenSettingButton.html)
         *   [wx.createOpenSettingButton](../setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../setting/wx.getSetting.html)
         *   [wx.openSetting](../setting/wx.openSetting.html)
         *   [AuthSetting](../setting/AuthSetting.html)
+        *   [OpenSettingButton](../setting/OpenSettingButton.html)
     *   [微信运动](../werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
     *   [授权](wx.authorize.html)
         *   [wx.authorize](wx.authorize.html)
     *   [游戏圈](../game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../game-club/wx.createGameClubButton.html)
+        *   [GameClubButton](../game-club/GameClubButton.html)
+    *   [意见反馈](../feedback/wx.createFeedbackButton.html)
+        *   [wx.createFeedbackButton](../feedback/wx.createFeedbackButton.html)
+        *   [FeedbackButton](../feedback/FeedbackButton.html)
     *   [客服消息](../customer-message/wx.openCustomerServiceConversation.html)
         *   [wx.openCustomerServiceConversation](../customer-message/wx.openCustomerServiceConversation.html)
     *   [开放数据域](../context/wx.getOpenDataContext.html)
@@ -445,7 +452,7 @@
 
 ### wx.authorize(Object object)
 
-> 基础库 1.2.0 开始支持，低版本需做兼容处理
+> 支持版本 >= 1.2.0
 
 提前向用户发起授权请求。调用后会立刻弹窗询问用户是否同意授权小程序使用某项功能或获取用户的某些数据，但不会实际调用对应接口。如果用户之前已经同意授权，则不会出现弹窗，直接返回成功。
 

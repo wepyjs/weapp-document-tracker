@@ -108,6 +108,7 @@
     *   [特殊场景调试](different.html)
     *   [真机调试](remote-debug.html)
 *   [命令行调用](cli.html)
+*   [测试号](sandbox.html)
 *   [HTTP 调用](http.html)
 *   [小程序开发助手](mydev.html)
 *   [代码片段](minicode.html)
@@ -493,6 +494,6 @@ HTTP 方法：GET
 
 </div>
 
-[](cli.html)[](mydev.html)</div>
+[](sandbox.html)[](mydev.html)</div>
 
 </div>

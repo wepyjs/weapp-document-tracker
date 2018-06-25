@@ -108,6 +108,7 @@
     *   [特殊场景调试](different.html)
     *   [真机调试](remote-debug.html)
 *   [命令行调用](cli.html)
+*   [测试号](sandbox.html)
 *   [HTTP 调用](http.html)
 *   [小程序开发助手](mydev.html)
 *   [代码片段](minicode.html)
@@ -164,7 +165,7 @@
 
 当符合以下条件时，可以在本地创建一个小程序项目
 
-1.  需要一个小程序的 [AppID](../#1-获取微信小程序的-appid)；如没有 AppID，可以选择体验模式，但**体验模式无法进行代码真机预览和上传等操作，部分 API 无法正常调用**；
+1.  需要一个小程序的 [AppID](../#1-获取微信小程序的-appid)；如没有 AppID，可以选择申请使用[测试号](sandbox.html)。
 2.  登录的微信号需要是该 AppID 的开发者；
 3.  需要选择一个空目录，或者选择的非空目录下存在 [`app.json`](../framework/config.html) 或者 `project.config.json`。当选择空目录时，可以选择是否在该目录下生成一个简单的项目。
 

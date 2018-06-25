@@ -229,17 +229,24 @@
         *   [wx.createUserInfoButton](../user-info/wx.createUserInfoButton.html)
         *   [wx.getUserInfo](../user-info/wx.getUserInfo.html)
         *   [UserInfo](../user-info/UserInfo.html)
+        *   [UserInfoButton](../user-info/UserInfoButton.html)
+        *   [UserInfoButton.onTap](../user-info/UserInfoButton.onTap.html)
     *   [设置](../setting/wx.createOpenSettingButton.html)
         *   [wx.createOpenSettingButton](../setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../setting/wx.getSetting.html)
         *   [wx.openSetting](../setting/wx.openSetting.html)
         *   [AuthSetting](../setting/AuthSetting.html)
+        *   [OpenSettingButton](../setting/OpenSettingButton.html)
     *   [微信运动](../werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
     *   [授权](../authorize/wx.authorize.html)
         *   [wx.authorize](../authorize/wx.authorize.html)
     *   [游戏圈](wx.createGameClubButton.html)
         *   [wx.createGameClubButton](wx.createGameClubButton.html)
+        *   [GameClubButton](GameClubButton.html)
+    *   [意见反馈](../feedback/wx.createFeedbackButton.html)
+        *   [wx.createFeedbackButton](../feedback/wx.createFeedbackButton.html)
+        *   [FeedbackButton](../feedback/FeedbackButton.html)
     *   [客服消息](../customer-message/wx.openCustomerServiceConversation.html)
         *   [wx.openCustomerServiceConversation](../customer-message/wx.openCustomerServiceConversation.html)
     *   [开放数据域](../context/wx.getOpenDataContext.html)
@@ -445,7 +452,7 @@
 
 ### GameClubButton wx.createGameClubButton(Object object)
 
-> 基础库 2.0.3 开始支持，低版本需做兼容处理
+> 支持版本 >= 2.0.3
 
 创建游戏圈按钮。游戏圈按钮被点击后会跳转到小游戏的游戏圈。更多关于游戏圈的信息见 [游戏圈使用指南](../../../tutorial/open-ability/game-club.html)
 
@@ -479,7 +486,7 @@
 
 <tr>
 
-<td>icon</td>
+<td>type</td>
 
 <td>string</td>
 
@@ -487,7 +494,39 @@
 
 <td>是</td>
 
-<td>游戏圈按钮的图标</td>
+<td>按钮的类型</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>text</td>
+
+<td>string</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>按钮上的文本，仅当 type 为 `text` 时有效</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>image</td>
+
+<td>string</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>按钮的背景图片，仅当 type 为 `image` 时有效</td>
 
 <td></td>
 
@@ -504,6 +543,60 @@
 <td>是</td>
 
 <td>按钮的样式</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>icon</td>
+
+<td>string</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>游戏圈按钮的图标，仅当 object.type 参数为 image 时有效。</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**type 的合法值**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>值</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>text</td>
+
+<td>可以设置背景色和文本的按钮</td>
+
+</tr>
+
+<tr>
+
+<td>image</td>
+
+<td>只能设置背景贴图的按钮，背景贴图会直接拉伸到按钮的宽高</td>
 
 </tr>
 
@@ -565,7 +658,7 @@
 
 </table>
 
-**object.style 的结构**
+**style 的结构**
 
 <table>
 
@@ -651,6 +744,164 @@
 
 <td>高度</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>backgroundColor</td>
+
+<td>string</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>背景颜色</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>borderColor</td>
+
+<td>string</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>边框颜色</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>borderWidth</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>边框宽度</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>borderRadius</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>边框圆角</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>textAlign</td>
+
+<td>string</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>文本的水平居中方式</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>fontSize</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>字号</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>lineHeight</td>
+
+<td>number</td>
+
+<td></td>
+
+<td>是</td>
+
+<td>文本的行高</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**style.textAlign 的合法值**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>值</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>left</td>
+
+<td>居左</td>
+
+</tr>
+
+<tr>
+
+<td>center</td>
+
+<td>居中</td>
+
+</tr>
+
+<tr>
+
+<td>right</td>
+
+<td>居右</td>
+
 </tr>
 
 </tbody>
@@ -659,7 +910,7 @@
 
 #### 返回值
 
-##### <a href="">GameClubButton</a>
+##### [GameClubButton](GameClubButton.html)
 
 #### 示例代码
 

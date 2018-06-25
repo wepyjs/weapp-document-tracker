@@ -229,17 +229,24 @@
         *   [wx.createUserInfoButton](../../open-api/user-info/wx.createUserInfoButton.html)
         *   [wx.getUserInfo](../../open-api/user-info/wx.getUserInfo.html)
         *   [UserInfo](../../open-api/user-info/UserInfo.html)
+        *   [UserInfoButton](../../open-api/user-info/UserInfoButton.html)
+        *   [UserInfoButton.onTap](../../open-api/user-info/UserInfoButton.onTap.html)
     *   [设置](../../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.createOpenSettingButton](../../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../../open-api/setting/wx.getSetting.html)
         *   [wx.openSetting](../../open-api/setting/wx.openSetting.html)
         *   [AuthSetting](../../open-api/setting/AuthSetting.html)
+        *   [OpenSettingButton](../../open-api/setting/OpenSettingButton.html)
     *   [微信运动](../../open-api/werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../../open-api/werun/wx.getWeRunData.html)
     *   [授权](../../open-api/authorize/wx.authorize.html)
         *   [wx.authorize](../../open-api/authorize/wx.authorize.html)
     *   [游戏圈](../../open-api/game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../../open-api/game-club/wx.createGameClubButton.html)
+        *   [GameClubButton](../../open-api/game-club/GameClubButton.html)
+    *   [意见反馈](../../open-api/feedback/wx.createFeedbackButton.html)
+        *   [wx.createFeedbackButton](../../open-api/feedback/wx.createFeedbackButton.html)
+        *   [FeedbackButton](../../open-api/feedback/FeedbackButton.html)
     *   [客服消息](../../open-api/customer-message/wx.openCustomerServiceConversation.html)
         *   [wx.openCustomerServiceConversation](../../open-api/customer-message/wx.openCustomerServiceConversation.html)
     *   [开放数据域](../../open-api/context/wx.getOpenDataContext.html)
@@ -445,7 +452,7 @@
 
 ### wx.getBatteryInfo(Object object)
 
-获取设备电量
+获取设备电量。同步 API [wx.getBatteryInfoSync](wx.getBatteryInfoSync.html) 在 iOS 上不可用。
 
 #### 参数
 
@@ -529,7 +536,7 @@
 
 ##### 参数
 
-###### BatteryInfo res
+###### Object res
 
 <table>
 
@@ -558,6 +565,18 @@
 <td>string</td>
 
 <td>设备电量，范围 1 - 100</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>isCharging</td>
+
+<td>boolean</td>
+
+<td>是否正在充电中</td>
 
 </tr>
 

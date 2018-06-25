@@ -229,17 +229,24 @@
         *   [wx.createUserInfoButton](../user-info/wx.createUserInfoButton.html)
         *   [wx.getUserInfo](../user-info/wx.getUserInfo.html)
         *   [UserInfo](../user-info/UserInfo.html)
+        *   [UserInfoButton](../user-info/UserInfoButton.html)
+        *   [UserInfoButton.onTap](../user-info/UserInfoButton.onTap.html)
     *   [设置](wx.createOpenSettingButton.html)
         *   [wx.createOpenSettingButton](wx.createOpenSettingButton.html)
         *   [wx.getSetting](wx.getSetting.html)
         *   [wx.openSetting](wx.openSetting.html)
         *   [AuthSetting](AuthSetting.html)
+        *   [OpenSettingButton](OpenSettingButton.html)
     *   [微信运动](../werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
     *   [授权](../authorize/wx.authorize.html)
         *   [wx.authorize](../authorize/wx.authorize.html)
     *   [游戏圈](../game-club/wx.createGameClubButton.html)
         *   [wx.createGameClubButton](../game-club/wx.createGameClubButton.html)
+        *   [GameClubButton](../game-club/GameClubButton.html)
+    *   [意见反馈](../feedback/wx.createFeedbackButton.html)
+        *   [wx.createFeedbackButton](../feedback/wx.createFeedbackButton.html)
+        *   [FeedbackButton](../feedback/FeedbackButton.html)
     *   [客服消息](../customer-message/wx.openCustomerServiceConversation.html)
         *   [wx.openCustomerServiceConversation](../customer-message/wx.openCustomerServiceConversation.html)
     *   [开放数据域](../context/wx.getOpenDataContext.html)
@@ -443,107 +450,19 @@
 
 <section class="normal markdown-section">
 
-### OpenSettingButton wx.createOpenSettingButton(Object object)
+### OpenSettingButton wx.createOpenSettingButton(string type, string text, string image, Object style)
 
-> 基础库 2.0.7 开始支持，低版本需做兼容处理
+> 支持版本 >= 2.0.7
 
 创建打开设置页面的按钮
 
 #### 参数
 
-##### Object object
+##### string type
 
-<table>
+按钮的类型
 
-<thead>
-
-<tr>
-
-<th>属性</th>
-
-<th>类型</th>
-
-<th>默认值</th>
-
-<th>是否必填</th>
-
-<th>说明</th>
-
-<th>支持版本</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>type</td>
-
-<td>string</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>按钮的类型</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>text</td>
-
-<td>string</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>按钮上的文本，仅当 type 为 `text` 时有效</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>image</td>
-
-<td>string</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>按钮的背景图片，仅当 type 为 `image` 时有效</td>
-
-<td></td>
-
-</tr>
-
-<tr>
-
-<td>style</td>
-
-<td>Object</td>
-
-<td></td>
-
-<td>是</td>
-
-<td>按钮的样式</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**object.type 的合法值**
+**type 的合法值**
 
 <table>
 
@@ -581,7 +500,17 @@
 
 </table>
 
-**object.style 的结构**
+##### string text
+
+按钮上的文本，仅当 type 为 `text` 时有效
+
+##### string image
+
+按钮的背景图片，仅当 type 为 `image` 时有效
+
+##### Object style
+
+按钮的样式
 
 <table>
 
@@ -785,7 +714,7 @@
 
 </table>
 
-**object.style.textAlign 的合法值**
+**style.textAlign 的合法值**
 
 <table>
 
@@ -833,7 +762,7 @@
 
 #### 返回值
 
-##### <a href="">OpenSettingButton</a>
+##### [OpenSettingButton](OpenSettingButton.html)
 
 #### 示例代码
 
@@ -893,6 +822,6 @@
 
 </div>
 
-[](../user-info/UserInfo.html)[](wx.createOpenSettingButton.html)</div>
+[](../user-info/UserInfoButton.onTap.html)[](wx.createOpenSettingButton.html)</div>
 
 </div>

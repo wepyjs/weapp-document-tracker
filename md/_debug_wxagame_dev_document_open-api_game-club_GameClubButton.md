@@ -137,29 +137,34 @@
     *   [振动](../../device/vibrate/wx.vibrateShort.html)
         *   [wx.vibrateShort](../../device/vibrate/wx.vibrateShort.html)
         *   [wx.vibrateLong](../../device/vibrate/wx.vibrateLong.html)
+    *   [转屏](../../device/orientation/wx.onDeviceOrientationChange.html)
+        *   [wx.onDeviceOrientationChange](../../device/orientation/wx.onDeviceOrientationChange.html)
+        *   [wx.offDeviceOrientationChange](../../device/orientation/wx.offDeviceOrientationChange.html)
 *   [文件](../../file/wx.getFileSystemManager.html)
     *   [wx.getFileSystemManager](../../file/wx.getFileSystemManager.html)
     *   [FileSystemManager](../../file/FileSystemManager.html)
     *   [Stats](../../file/Stats.html)
+    *   [FileSystemManager.appendFile](../../file/FileSystemManager.appendFile.html)
     *   [FileSystemManager.access](../../file/FileSystemManager.access.html)
     *   [FileSystemManager.accessSync](../../file/FileSystemManager.accessSync.html)
+    *   [FileSystemManager.appendFileSync](../../file/FileSystemManager.appendFileSync.html)
     *   [FileSystemManager.copyFile](../../file/FileSystemManager.copyFile.html)
     *   [FileSystemManager.copyFileSync](../../file/FileSystemManager.copyFileSync.html)
-    *   [FileSystemManager.getFileInfo](../../file/FileSystemManager.getFileInfo.html)
     *   [FileSystemManager.getSavedFileList](../../file/FileSystemManager.getSavedFileList.html)
+    *   [FileSystemManager.getFileInfo](../../file/FileSystemManager.getFileInfo.html)
     *   [Stats.isDirectory](../../file/Stats.isDirectory.html)
     *   [Stats.isFile](../../file/Stats.isFile.html)
     *   [FileSystemManager.mkdir](../../file/FileSystemManager.mkdir.html)
     *   [FileSystemManager.mkdirSync](../../file/FileSystemManager.mkdirSync.html)
     *   [FileSystemManager.removeSavedFile](../../file/FileSystemManager.removeSavedFile.html)
-    *   [FileSystemManager.readFile](../../file/FileSystemManager.readFile.html)
-    *   [FileSystemManager.rename](../../file/FileSystemManager.rename.html)
-    *   [FileSystemManager.rmdir](../../file/FileSystemManager.rmdir.html)
-    *   [FileSystemManager.readdir](../../file/FileSystemManager.readdir.html)
-    *   [FileSystemManager.readdirSync](../../file/FileSystemManager.readdirSync.html)
+    *   [FileSystemManager.readFileSync](../../file/FileSystemManager.readFileSync.html)
     *   [FileSystemManager.renameSync](../../file/FileSystemManager.renameSync.html)
     *   [FileSystemManager.rmdirSync](../../file/FileSystemManager.rmdirSync.html)
-    *   [FileSystemManager.readFileSync](../../file/FileSystemManager.readFileSync.html)
+    *   [FileSystemManager.readdir](../../file/FileSystemManager.readdir.html)
+    *   [FileSystemManager.rename](../../file/FileSystemManager.rename.html)
+    *   [FileSystemManager.readFile](../../file/FileSystemManager.readFile.html)
+    *   [FileSystemManager.rmdir](../../file/FileSystemManager.rmdir.html)
+    *   [FileSystemManager.readdirSync](../../file/FileSystemManager.readdirSync.html)
     *   [FileSystemManager.saveFile](../../file/FileSystemManager.saveFile.html)
     *   [FileSystemManager.stat](../../file/FileSystemManager.stat.html)
     *   [FileSystemManager.saveFileSync](../../file/FileSystemManager.saveFileSync.html)
@@ -225,22 +230,13 @@
         *   [wx.getUserInfo](../user-info/wx.getUserInfo.html)
         *   [UserInfo](../user-info/UserInfo.html)
         *   [UserInfoButton](../user-info/UserInfoButton.html)
-        *   [UserInfoButton.destroy](../user-info/UserInfoButton.destroy.html)
-        *   [UserInfoButton.hide](../user-info/UserInfoButton.hide.html)
         *   [UserInfoButton.onTap](../user-info/UserInfoButton.onTap.html)
-        *   [UserInfoButton.offTap](../user-info/UserInfoButton.offTap.html)
-        *   [UserInfoButton.show](../user-info/UserInfoButton.show.html)
     *   [设置](../setting/wx.createOpenSettingButton.html)
         *   [wx.createOpenSettingButton](../setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../setting/wx.getSetting.html)
         *   [wx.openSetting](../setting/wx.openSetting.html)
         *   [AuthSetting](../setting/AuthSetting.html)
         *   [OpenSettingButton](../setting/OpenSettingButton.html)
-        *   [OpenSettingButton.destroy](../setting/OpenSettingButton.destroy.html)
-        *   [OpenSettingButton.hide](../setting/OpenSettingButton.hide.html)
-        *   [OpenSettingButton.onTap](../setting/OpenSettingButton.onTap.html)
-        *   [OpenSettingButton.offTap](../setting/OpenSettingButton.offTap.html)
-        *   [OpenSettingButton.show](../setting/OpenSettingButton.show.html)
     *   [微信运动](../werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
     *   [授权](../authorize/wx.authorize.html)
@@ -248,11 +244,11 @@
     *   [游戏圈](wx.createGameClubButton.html)
         *   [wx.createGameClubButton](wx.createGameClubButton.html)
         *   [GameClubButton](GameClubButton.html)
-        *   [GameClubButton.destroy](GameClubButton.destroy.html)
-        *   [GameClubButton.hide](GameClubButton.hide.html)
-        *   [GameClubButton.show](GameClubButton.show.html)
-    *   [客服消息](../customer-message/openCustomerServiceConversation.html)
-        *   [openCustomerServiceConversation](../customer-message/openCustomerServiceConversation.html)
+    *   [意见反馈](../feedback/wx.createFeedbackButton.html)
+        *   [wx.createFeedbackButton](../feedback/wx.createFeedbackButton.html)
+        *   [FeedbackButton](../feedback/FeedbackButton.html)
+    *   [客服消息](../customer-message/wx.openCustomerServiceConversation.html)
+        *   [wx.openCustomerServiceConversation](../customer-message/wx.openCustomerServiceConversation.html)
     *   [开放数据域](../context/wx.getOpenDataContext.html)
         *   [wx.getOpenDataContext](../context/wx.getOpenDataContext.html)
         *   [wx.onMessage](../context/wx.onMessage.html)
@@ -290,7 +286,14 @@
     *   [wx.removeStorageSync](../../storage/wx.removeStorageSync.html)
     *   [wx.setStorage](../../storage/wx.setStorage.html)
     *   [wx.setStorageSync](../../storage/wx.setStorageSync.html)
-*   [界面](../../ui/interaction/wx.hideToast.html)
+*   [分包加载](../../subpackages/wx.loadSubpackage.html)
+    *   [wx.loadSubpackage](../../subpackages/wx.loadSubpackage.html)
+    *   [LoadSubpackageTask](../../subpackages/LoadSubpackageTask.html)
+    *   [LoadSubpackageTask.onProgressUpdate](../../subpackages/LoadSubpackageTask.onProgressUpdate.html)
+*   [界面](../../ui/menu/wx.getMenuButtonBoundingClientRect.html)
+    *   [菜单](../../ui/menu/wx.getMenuButtonBoundingClientRect.html)
+        *   [wx.getMenuButtonBoundingClientRect](../../ui/menu/wx.getMenuButtonBoundingClientRect.html)
+        *   [wx.setMenuStyle](../../ui/menu/wx.setMenuStyle.html)
     *   [交互](../../ui/interaction/wx.hideToast.html)
         *   [wx.hideToast](../../ui/interaction/wx.hideToast.html)
         *   [wx.hideLoading](../../ui/interaction/wx.hideLoading.html)
@@ -307,8 +310,7 @@
         *   [wx.onKeyboardComplete](../../ui/keyboard/wx.onKeyboardComplete.html)
         *   [wx.offKeyboardComplete](../../ui/keyboard/wx.offKeyboardComplete.html)
         *   [wx.showKeyboard](../../ui/keyboard/wx.showKeyboard.html)
-    *   [菜单](../../ui/menu/wx.setMenuStyle.html)
-        *   [wx.setMenuStyle](../../ui/menu/wx.setMenuStyle.html)
+        *   [wx.updateKeyboard](../../ui/keyboard/wx.updateKeyboard.html)
     *   [状态栏](../../ui/statusbar/wx.setStatusBarStyle.html)
         *   [wx.setStatusBarStyle](../../ui/statusbar/wx.setStatusBarStyle.html)
     *   [窗口](../../ui/window/wx.onWindowResize.html)
@@ -327,53 +329,32 @@
     *   [Worker.onMessage](../../worker/Worker.onMessage.html)
     *   [Worker.postMessage](../../worker/Worker.postMessage.html)
     *   [Worker.terminate](../../worker/Worker.terminate.html)
-*   [广告](../../ad/wx.createBannerAd.html)
-    *   [wx.createBannerAd](../../ad/wx.createBannerAd.html)
-    *   [wx.createRewardedVideoAd](../../ad/wx.createRewardedVideoAd.html)
-    *   [BannerAd](../../ad/BannerAd.html)
-    *   [RewardedVideoAd](../../ad/RewardedVideoAd.html)
-    *   [BannerAd.destroy](../../ad/BannerAd.destroy.html)
-    *   [BannerAd.hide](../../ad/BannerAd.hide.html)
-    *   [RewardedVideoAd.load](../../ad/RewardedVideoAd.load.html)
-    *   [BannerAd.onLoad](../../ad/BannerAd.onLoad.html)
-    *   [BannerAd.offLoad](../../ad/BannerAd.offLoad.html)
-    *   [BannerAd.onResize](../../ad/BannerAd.onResize.html)
-    *   [BannerAd.offError](../../ad/BannerAd.offError.html)
-    *   [RewardedVideoAd.onClose](../../ad/RewardedVideoAd.onClose.html)
-    *   [BannerAd.offResize](../../ad/BannerAd.offResize.html)
-    *   [RewardedVideoAd.offClose](../../ad/RewardedVideoAd.offClose.html)
-    *   [RewardedVideoAd.offError](../../ad/RewardedVideoAd.offError.html)
-    *   [RewardedVideoAd.onLoad](../../ad/RewardedVideoAd.onLoad.html)
-    *   [RewardedVideoAd.offLoad](../../ad/RewardedVideoAd.offLoad.html)
-    *   [RewardedVideoAd.onError](../../ad/RewardedVideoAd.onError.html)
-    *   [BannerAd.onError](../../ad/BannerAd.onError.html)
-    *   [RewardedVideoAd.show](../../ad/RewardedVideoAd.show.html)
-    *   [BannerAd.show](../../ad/BannerAd.show.html)
 *   [媒体](../../media/audio/wx.createInnerAudioContext.html)
     *   [音频](../../media/audio/wx.createInnerAudioContext.html)
         *   [wx.createInnerAudioContext](../../media/audio/wx.createInnerAudioContext.html)
+        *   [wx.getAvailableAudioSources](../../media/audio/wx.getAvailableAudioSources.html)
         *   [InnerAudioContext](../../media/audio/InnerAudioContext.html)
         *   [InnerAudioContext.destroy](../../media/audio/InnerAudioContext.destroy.html)
         *   [InnerAudioContext.offCanplay](../../media/audio/InnerAudioContext.offCanplay.html)
-        *   [InnerAudioContext.onPause](../../media/audio/InnerAudioContext.onPause.html)
-        *   [InnerAudioContext.onStop](../../media/audio/InnerAudioContext.onStop.html)
+        *   [InnerAudioContext.offPause](../../media/audio/InnerAudioContext.offPause.html)
         *   [InnerAudioContext.offStop](../../media/audio/InnerAudioContext.offStop.html)
         *   [InnerAudioContext.onEnded](../../media/audio/InnerAudioContext.onEnded.html)
         *   [InnerAudioContext.offEnded](../../media/audio/InnerAudioContext.offEnded.html)
         *   [InnerAudioContext.onTimeUpdate](../../media/audio/InnerAudioContext.onTimeUpdate.html)
+        *   [InnerAudioContext.offTimeUpdate](../../media/audio/InnerAudioContext.offTimeUpdate.html)
         *   [InnerAudioContext.onPlay](../../media/audio/InnerAudioContext.onPlay.html)
-        *   [InnerAudioContext.onError](../../media/audio/InnerAudioContext.onError.html)
-        *   [InnerAudioContext.offPause](../../media/audio/InnerAudioContext.offPause.html)
-        *   [InnerAudioContext.onWaiting](../../media/audio/InnerAudioContext.onWaiting.html)
+        *   [InnerAudioContext.offError](../../media/audio/InnerAudioContext.offError.html)
+        *   [InnerAudioContext.onStop](../../media/audio/InnerAudioContext.onStop.html)
         *   [InnerAudioContext.offWaiting](../../media/audio/InnerAudioContext.offWaiting.html)
         *   [InnerAudioContext.onSeeking](../../media/audio/InnerAudioContext.onSeeking.html)
         *   [InnerAudioContext.offSeeking](../../media/audio/InnerAudioContext.offSeeking.html)
         *   [InnerAudioContext.onSeeked](../../media/audio/InnerAudioContext.onSeeked.html)
         *   [InnerAudioContext.offSeeked](../../media/audio/InnerAudioContext.offSeeked.html)
+        *   [InnerAudioContext.onPause](../../media/audio/InnerAudioContext.onPause.html)
         *   [InnerAudioContext.offPlay](../../media/audio/InnerAudioContext.offPlay.html)
-        *   [InnerAudioContext.offTimeUpdate](../../media/audio/InnerAudioContext.offTimeUpdate.html)
+        *   [InnerAudioContext.onError](../../media/audio/InnerAudioContext.onError.html)
         *   [InnerAudioContext.onCanplay](../../media/audio/InnerAudioContext.onCanplay.html)
-        *   [InnerAudioContext.offError](../../media/audio/InnerAudioContext.offError.html)
+        *   [InnerAudioContext.onWaiting](../../media/audio/InnerAudioContext.onWaiting.html)
         *   [InnerAudioContext.pause](../../media/audio/InnerAudioContext.pause.html)
         *   [InnerAudioContext.play](../../media/audio/InnerAudioContext.play.html)
         *   [InnerAudioContext.stop](../../media/audio/InnerAudioContext.stop.html)
@@ -381,18 +362,16 @@
     *   [录音](../../media/recorder/wx.getRecorderManager.html)
         *   [wx.getRecorderManager](../../media/recorder/wx.getRecorderManager.html)
         *   [RecorderManager](../../media/recorder/RecorderManager.html)
-        *   [RecorderManager.onStop](../../media/recorder/RecorderManager.onStop.html)
-        *   [RecorderManager.onPause](../../media/recorder/RecorderManager.onPause.html)
-        *   [RecorderManager.onInterruptionEnd](../../media/recorder/RecorderManager.onInterruptionEnd.html)
         *   [RecorderManager.onStart](../../media/recorder/RecorderManager.onStart.html)
-        *   [RecorderManager.onResume](../../media/recorder/RecorderManager.onResume.html)
-        *   [RecorderManager.onInterruptionBegin](../../media/recorder/RecorderManager.onInterruptionBegin.html)
-        *   [RecorderManager.onError](../../media/recorder/RecorderManager.onError.html)
+        *   [RecorderManager.onPause](../../media/recorder/RecorderManager.onPause.html)
+        *   [RecorderManager.onStop](../../media/recorder/RecorderManager.onStop.html)
         *   [RecorderManager.onFrameRecorded](../../media/recorder/RecorderManager.onFrameRecorded.html)
+        *   [RecorderManager.onError](../../media/recorder/RecorderManager.onError.html)
+        *   [RecorderManager.onResume](../../media/recorder/RecorderManager.onResume.html)
         *   [RecorderManager.pause](../../media/recorder/RecorderManager.pause.html)
         *   [RecorderManager.resume](../../media/recorder/RecorderManager.resume.html)
-        *   [RecorderManager.start](../../media/recorder/RecorderManager.start.html)
         *   [RecorderManager.stop](../../media/recorder/RecorderManager.stop.html)
+        *   [RecorderManager.start](../../media/recorder/RecorderManager.start.html)
     *   [图片](../../media/image/wx.chooseImage.html)
         *   [wx.chooseImage](../../media/image/wx.chooseImage.html)
         *   [wx.previewImage](../../media/image/wx.previewImage.html)
@@ -419,6 +398,28 @@
         *   [Video.requestFullScreen](../../media/video/Video.requestFullScreen.html)
         *   [Video.stop](../../media/video/Video.stop.html)
         *   [Video.seek](../../media/video/Video.seek.html)
+*   [广告](../../ad/wx.createBannerAd.html)
+    *   [wx.createBannerAd](../../ad/wx.createBannerAd.html)
+    *   [wx.createRewardedVideoAd](../../ad/wx.createRewardedVideoAd.html)
+    *   [BannerAd](../../ad/BannerAd.html)
+    *   [RewardedVideoAd](../../ad/RewardedVideoAd.html)
+    *   [BannerAd.destroy](../../ad/BannerAd.destroy.html)
+    *   [BannerAd.hide](../../ad/BannerAd.hide.html)
+    *   [RewardedVideoAd.load](../../ad/RewardedVideoAd.load.html)
+    *   [RewardedVideoAd.onLoad](../../ad/RewardedVideoAd.onLoad.html)
+    *   [BannerAd.offLoad](../../ad/BannerAd.offLoad.html)
+    *   [BannerAd.offError](../../ad/BannerAd.offError.html)
+    *   [RewardedVideoAd.offClose](../../ad/RewardedVideoAd.offClose.html)
+    *   [BannerAd.onLoad](../../ad/BannerAd.onLoad.html)
+    *   [BannerAd.offResize](../../ad/BannerAd.offResize.html)
+    *   [RewardedVideoAd.onClose](../../ad/RewardedVideoAd.onClose.html)
+    *   [BannerAd.onError](../../ad/BannerAd.onError.html)
+    *   [RewardedVideoAd.offLoad](../../ad/RewardedVideoAd.offLoad.html)
+    *   [RewardedVideoAd.onError](../../ad/RewardedVideoAd.onError.html)
+    *   [RewardedVideoAd.offError](../../ad/RewardedVideoAd.offError.html)
+    *   [BannerAd.onResize](../../ad/BannerAd.onResize.html)
+    *   [RewardedVideoAd.show](../../ad/RewardedVideoAd.show.html)
+    *   [BannerAd.show](../../ad/BannerAd.show.html)
 *   [定时器](../../timer/clearTimeout.html)
     *   [clearTimeout](../../timer/clearTimeout.html)
     *   [clearInterval](../../timer/clearInterval.html)
@@ -451,13 +452,187 @@
 
 ### GameClubButton
 
-游戏圈按钮
+游戏圈按钮。游戏圈按钮被点击后会跳转到小游戏的游戏圈。更多关于游戏圈的信息见 [游戏圈使用指南](../../../tutorial/open-ability/game-club.html)
 
 #### 属性
 
-##### Object style
+##### Object object
 
-按钮的样式
+<table>
+
+<thead>
+
+<tr>
+
+<th>属性</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+<th>支持版本</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>type</td>
+
+<td>string</td>
+
+<td>按钮的类型</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>text</td>
+
+<td>string</td>
+
+<td>按钮上的文本，仅当 type 为 `text` 时有效</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>image</td>
+
+<td>string</td>
+
+<td>按钮的背景图片，仅当 type 为 `image` 时有效</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>style</td>
+
+<td>Object</td>
+
+<td>按钮的样式</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>icon</td>
+
+<td>string</td>
+
+<td>游戏圈按钮的图标，仅当 object.type 参数为 image 时有效。</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**type 的合法值**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>值</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>text</td>
+
+<td>可以设置背景色和文本的按钮</td>
+
+</tr>
+
+<tr>
+
+<td>image</td>
+
+<td>只能设置背景贴图的按钮，背景贴图会直接拉伸到按钮的宽高</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**object.icon 的合法值**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>值</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>green</td>
+
+<td>绿色的图标</td>
+
+</tr>
+
+<tr>
+
+<td>white</td>
+
+<td>白色的图标</td>
+
+</tr>
+
+<tr>
+
+<td>dark</td>
+
+<td>有黑色圆角背景的白色图标</td>
+
+</tr>
+
+<tr>
+
+<td>light</td>
+
+<td>有白色圆角背景的绿色图标</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**style 的结构**
 
 <table>
 
@@ -523,37 +698,141 @@
 
 <td>高度</td>
 
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>backgroundColor</td>
+
+<td>string</td>
+
+<td>背景颜色</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>borderColor</td>
+
+<td>string</td>
+
+<td>边框颜色</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>borderWidth</td>
+
+<td>number</td>
+
+<td>边框宽度</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>borderRadius</td>
+
+<td>number</td>
+
+<td>边框圆角</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>textAlign</td>
+
+<td>string</td>
+
+<td>文本的水平居中方式</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>fontSize</td>
+
+<td>number</td>
+
+<td>字号</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>lineHeight</td>
+
+<td>number</td>
+
+<td>文本的行高</td>
+
 </tr>
 
 </tbody>
 
 </table>
 
-#### 方法
+**style.textAlign 的合法值**
 
-##### [GameClubButton.show()](GameClubButton.show.html)
+<table>
 
-显示游戏圈按钮
+<thead>
 
-##### [GameClubButton.hide()](GameClubButton.hide.html)
+<tr>
 
-隐藏游戏圈按钮
+<th>值</th>
 
-##### [GameClubButton.destroy()](GameClubButton.destroy.html)
+<th>说明</th>
 
-销毁游戏圈按钮
+</tr>
 
-##### [GameClubButton.show()](GameClubButton.show.html)
+</thead>
 
-显示游戏圈按钮
+<tbody>
 
-##### [GameClubButton.hide()](GameClubButton.hide.html)
+<tr>
 
-隐藏游戏圈按钮
+<td>left</td>
 
-##### [GameClubButton.destroy()](GameClubButton.destroy.html)
+<td>居左</td>
 
-销毁游戏圈按钮
+</tr>
+
+<tr>
+
+<td>center</td>
+
+<td>居中</td>
+
+</tr>
+
+<tr>
+
+<td>right</td>
+
+<td>居右</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 </section>
 
@@ -594,6 +873,6 @@
 
 </div>
 
-[](wx.createGameClubButton.html)[](GameClubButton.destroy.html)</div>
+[](wx.createGameClubButton.html)[](../feedback/wx.createFeedbackButton.html)</div>
 
 </div>
