@@ -363,6 +363,8 @@
         *   [UnionID机制说明](../unionID.html)
     *   [微信支付](../api-pay.html)
         *   [wx.requestPayment](../api-pay.html#wxrequestpaymentobject)
+    *   [接口调用凭证](../token.html)
+        *   [获取access token](../token.html#获取-access_token)
     *   [模板消息](../notice.html)
         *   [使用说明](../notice.html#使用说明)
         *   [模版消息管理](../notice.html#模版消息管理)

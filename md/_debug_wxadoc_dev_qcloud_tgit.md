@@ -108,6 +108,7 @@
     *   [特殊场景调试](../devtools/different.html)
     *   [真机调试](../devtools/remote-debug.html)
 *   [命令行调用](../devtools/cli.html)
+*   [测试号](../devtools/sandbox.html)
 *   [HTTP 调用](../devtools/http.html)
 *   [小程序开发助手](../devtools/mydev.html)
 *   [代码片段](../devtools/minicode.html)

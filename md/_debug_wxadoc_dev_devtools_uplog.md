@@ -154,27 +154,28 @@
 8.  `A` 新增 API `wx.getMenuButtonBoundingClientRect` 获取菜单按钮布局信息接口 [详情](https://developers.weixin.qq.com/minigame/dev/document/ui/wx.getMenuButtonBoundingClientRect.html)
 9.  `A` 新增 API `wx.onDeviceOrientationChange` 监听屏幕方向的改变 [详情](https://developers.weixin.qq.com/minigame/dev/document/device/orientation/wx.onDeviceOrientationChange.html)
 10.  `A` 新增 API `FileSystemManager.appendFile` 追加文件内容 [详情](https://developers.weixin.qq.com/minigame/dev/document/file/FileSystemManager.appendFile.html)
-11.  `A` 新增小游戏 API `wx.updateKeyboard` 更新键盘 [详情](https://developers.weixin.qq.com/minigame/dev/document/ui/keyboard/wx.updateKeyboard.html)
-12.  `A` 新增小游戏 API `wx.loadSubpackage` 加载分包 [详情](https://developers.weixin.qq.com/minigame/dev/tutorial/base/subpackages.html)
-13.  `U` 更新 组件 `<button />` 可以嵌套在原生组件内，显示在原生组件之上 [详情](../component/button.html)
-14.  `U` 更新 组件 `<button />` 新增 `open-type` 值为 `feedback`，打开“意见反馈”页面 [详情](../component/button.html)
-15.  `U` 更新 组件 `<cover-view />` `<cover-image />` 新增 `scroll-top` 属性 [详情](../component/cover-view.html)
-16.  `U` 更新 组件 `<cover-view />` `<cover-image />` 支持 rotate 和 scale 的样式设置 [详情](../component/cover-view.html)
-17.  `U` 更新 组件 `<cover-image />` 新增 `bindload` 和 `binderror` 事件 [详情](../component/cover-view.html)
-18.  `U` 更新 组件 `<movable-view />` 新增 `animation` 属性 [详情](../component/movable-view.html)
-19.  `U` 更新 组件 `<live-pusher />` 新增 `zoom` 属性支持调整焦距 [详情](../component/live-pusher.html)
-20.  `U` 更新 组件 `<input />` 在 `bindinput` 时返回 `keyCode` 键值 [详情](../component/input.html)
-21.  `U` 更新 API `wx.startAccelerometer` 新增 `interval` 参数指定回调频率 [详情](../api/accelerometer.html#wxstartaccelerometerobject)
-22.  `F` 修复 API `wx.reportAnalytics` 在插件下调用异常的问题
-23.  `F` 修复 API `wx.hideToast` 在 iOS 下无法让前面的 `showLoading` 消失的问题
-24.  `F` 修复 组件 `<image />` 在连续更新src时导致显示不正确的问题
-25.  `F` 修复 组件 `<image />` 设置 border-radius 出现闪动的问题
-26.  `F` 修复 组件 `<canvas />` 设置的shadow会影响fillStyle的问题
-27.  `F` 修复 组件 `<movable-view />` 缩放的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000ecad1f3c210c5bbc67ea8750000)
-28.  `F` 修复 组件 `<input />` 在某些情况下未被正常销毁的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a8c18c480908ed8c641ac75f400)
-29.  `F` 修复 组件 `<video />` 设置 playbackRate 为 1.25 无效的问题
-30.  `F` 修复 组件 `<map />` 在开发者工具双击地图缩放不触发 `bindregionchange` 的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000c64a0f388b0f19fa6fe2cb51c00)
-31.  `F` 修复 框架 在 video 全屏后有setData操作时导致字体变大的问题
+11.  `A` 新增 API `wx.setBackgroundColor` 和 `wx.setBackgroundTextStyle` 动态设置背景相关信息 [详情](../api/ui-background.html)
+12.  `A` 新增小游戏 API `wx.updateKeyboard` 更新键盘 [详情](https://developers.weixin.qq.com/minigame/dev/document/ui/keyboard/wx.updateKeyboard.html)
+13.  `A` 新增小游戏 API `wx.loadSubpackage` 加载分包 [详情](https://developers.weixin.qq.com/minigame/dev/tutorial/base/subpackages.html)
+14.  `U` 更新 组件 `<button />` 可以嵌套在原生组件内，显示在原生组件之上 [详情](../component/button.html)
+15.  `U` 更新 组件 `<button />` 新增 `open-type` 值为 `feedback`，打开“意见反馈”页面 [详情](../component/button.html)
+16.  `U` 更新 组件 `<cover-view />` `<cover-image />` 新增 `scroll-top` 属性 [详情](../component/cover-view.html)
+17.  `U` 更新 组件 `<cover-view />` `<cover-image />` 支持 rotate 和 scale 的样式设置 [详情](../component/cover-view.html)
+18.  `U` 更新 组件 `<cover-image />` 新增 `bindload` 和 `binderror` 事件 [详情](../component/cover-view.html)
+19.  `U` 更新 组件 `<movable-view />` 新增 `animation` 属性 [详情](../component/movable-view.html)
+20.  `U` 更新 组件 `<live-pusher />` 新增 `zoom` 属性支持调整焦距 [详情](../component/live-pusher.html)
+21.  `U` 更新 组件 `<input />` 在 `bindinput` 时返回 `keyCode` 键值 [详情](../component/input.html)
+22.  `U` 更新 API `wx.startAccelerometer` 新增 `interval` 参数指定回调频率 [详情](../api/accelerometer.html#wxstartaccelerometerobject)
+23.  `F` 修复 API `wx.reportAnalytics` 在插件下调用异常的问题
+24.  `F` 修复 API `wx.hideToast` 在 iOS 下无法让前面的 `showLoading` 消失的问题
+25.  `F` 修复 组件 `<image />` 在连续更新src时导致显示不正确的问题
+26.  `F` 修复 组件 `<image />` 设置 border-radius 出现闪动的问题
+27.  `F` 修复 组件 `<canvas />` 设置的shadow会影响fillStyle的问题
+28.  `F` 修复 组件 `<movable-view />` 缩放的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000ecad1f3c210c5bbc67ea8750000)
+29.  `F` 修复 组件 `<input />` 在某些情况下未被正常销毁的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a8c18c480908ed8c641ac75f400)
+30.  `F` 修复 组件 `<video />` 设置 playbackRate 为 1.25 无效的问题
+31.  `F` 修复 组件 `<map />` 在开发者工具双击地图缩放不触发 `bindregionchange` 的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000c64a0f388b0f19fa6fe2cb51c00)
+32.  `F` 修复 框架 在 video 全屏后有setData操作时导致字体变大的问题
 
 ### 2018.05.18 更新日志
 

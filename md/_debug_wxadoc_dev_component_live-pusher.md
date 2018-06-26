@@ -490,7 +490,7 @@
 
 **注意：**
 
-*   `<live-player />` 默认宽度为100%、无默认高度，请通过wxss设置宽高。
+*   `<live-pusher />` 默认宽度为100%、无默认高度，请通过wxss设置宽高。
 *   开发者工具上暂不支持。
 *   相关api：[wx.createLivePusherContext](../api/api-live-pusher.html)
 

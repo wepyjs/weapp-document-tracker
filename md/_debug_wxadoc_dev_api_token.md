@@ -463,13 +463,27 @@
 
 <section class="normal markdown-section">
 
-### wx.getFileInfo(OBJECT)
+access_token 是全局唯一接口调用凭据，开发者调用各接口时都需使用 access_token，请妥善保存。access_token 的存储至少要保留512个字符空间。access_token 的有效期目前为2个小时，需定时刷新，重复获取将导致上次获取的 access_token 失效。
 
-> 基础库 1.4.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+### 获取 access_token
 
-获取文件信息
+公众平台的 API 调用所需的 access_token 的使用及生成方式说明：
 
-**OBJECT参数说明：**
+1.  为了保密 appsecrect，第三方需要一个 access_token 获取和刷新的中控服务器。而其他业务逻辑服务器所使用的 access_token 均来自于该中控服务器，不应该各自去刷新，否则会造成 access_token 覆盖而影响业务；
+2.  目前 access_token 的有效期通过返回的 expires_in 来传达，目前是7200秒之内的值。中控服务器需要根据这个有效时间提前去刷新新 access_token。在刷新过程中，中控服务器对外输出的依然是老 access_token，此时公众平台后台会保证在刷新短时间内，新老 access_token 都可用，这保证了第三方业务的平滑过渡；
+3.  access_token 的有效时间可能会在未来有调整，所以中控服务器不仅需要内部定时主动刷新，还需要提供被动刷新 access_token 的接口，这样便于业务服务器在 API 调用获知 access_token 已超时的情况下，可以触发 access_token 的刷新流程。
+
+开发者可以使用 AppID 和 AppSecret 调用本接口来获取 access_token。AppID 和 AppSecret 可登录微信公众平台官网-设置-开发设置中获得（需要已经绑定成为开发者，且帐号没有异常状态）。AppSecret 生成后请自行保存，因为在公众平台每次生成查看都会导致 AppSecret 被重置。注意调用所有微信接口时均需使用 https 协议。如果第三方不使用中控服务器，而是选择各个业务逻辑点各自去刷新 access_token，那么就可能会产生冲突，导致服务不稳定。
+
+**接口地址：**
+
+    https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET
+
+**HTTP请求方式:**
+
+    GET
+
+**参数说明 :**
 
 <table>
 
@@ -477,9 +491,7 @@
 
 <tr>
 
-<th>参数名</th>
-
-<th>类型</th>
+<th>参数</th>
 
 <th>必填</th>
 
@@ -493,61 +505,31 @@
 
 <tr>
 
-<td>filePath</td>
-
-<td>String</td>
+<td>grant_type</td>
 
 <td>是</td>
 
-<td>本地文件路径</td>
+<td>获取 access_token 填写 client_credential</td>
 
 </tr>
 
 <tr>
 
-<td>digestAlgorithm</td>
+<td>appid</td>
 
-<td>String</td>
+<td>是</td>
 
-<td>否</td>
-
-<td>计算文件摘要的算法，默认值 md5，有效值：md5，sha1</td>
+<td>第三方用户唯一凭证</td>
 
 </tr>
 
 <tr>
 
-<td>success</td>
+<td>secret</td>
 
-<td>Function</td>
+<td>是</td>
 
-<td>否</td>
-
-<td>接口调用成功的回调函数</td>
-
-</tr>
-
-<tr>
-
-<td>fail</td>
-
-<td>Function</td>
-
-<td>否</td>
-
-<td>接口调用失败的回调函数</td>
-
-</tr>
-
-<tr>
-
-<td>complete</td>
-
-<td>Function</td>
-
-<td>否</td>
-
-<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+<td>第三方用户唯一凭证密钥，即appsecret</td>
 
 </tr>
 
@@ -555,7 +537,11 @@
 
 </table>
 
-**success返回参数说明：**
+**返回参数说明：**
+
+正常情况下，微信会返回下述 JSON 数据包给开发者：
+
+    {"access_token": "ACCESS_TOKEN", "expires_in": 7200}
 
 <table>
 
@@ -563,9 +549,7 @@
 
 <tr>
 
-<th>参数名</th>
-
-<th>类型</th>
+<th>参数</th>
 
 <th>说明</th>
 
@@ -577,31 +561,17 @@
 
 <tr>
 
-<td>size</td>
+<td>access_token</td>
 
-<td>Number</td>
-
-<td>文件大小，单位：B</td>
+<td>获取到的凭证</td>
 
 </tr>
 
 <tr>
 
-<td>digest</td>
+<td>expires_in</td>
 
-<td>String</td>
-
-<td>按照传入的 digestAlgorithm 计算得出的的文件摘要</td>
-
-</tr>
-
-<tr>
-
-<td>errMsg</td>
-
-<td>String</td>
-
-<td>调用结果</td>
+<td>凭证有效时间，单位：秒</td>
 
 </tr>
 
@@ -609,14 +579,9 @@
 
 </table>
 
-**示例代码：**
+错误时微信会返回错误码等信息，JSON 数据包示例如下（该示例为 AppID 无效错误）:
 
-    wx.getFileInfo({
-        success(res) {
-            console.log(res.size)
-            console.log(res.digest)
-        }
-    })
+    {"errcode": 40013, "errmsg": "invalid appid"}
 
 </section>
 
@@ -657,6 +622,6 @@
 
 </div>
 
-[](file.html#wxsavefileobject)[](file.html#wxgetsavedfilelistobject)</div>
+[](api-pay.html#wxrequestpaymentobject)[](notice.html)</div>
 
 </div>

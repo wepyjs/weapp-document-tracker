@@ -363,6 +363,8 @@
         *   [UnionID机制说明](unionID.html)
     *   [微信支付](api-pay.html)
         *   [wx.requestPayment](api-pay.html#wxrequestpaymentobject)
+    *   [接口调用凭证](token.html)
+        *   [获取access token](token.html#获取-access_token)
     *   [模板消息](notice.html)
         *   [使用说明](notice.html#使用说明)
         *   [模版消息管理](notice.html#模版消息管理)
@@ -1237,7 +1239,7 @@
 
 <tr>
 
-<td>[wx.setBackgroundColor](api/ui-background.md#wxsetbackgroundcolor)</td>
+<td>[wx.setBackgroundColor](ui-background.html#wxsetbackgroundcolor)</td>
 
 <td>动态设置窗口的背景色</td>
 
@@ -1245,7 +1247,7 @@
 
 <tr>
 
-<td>[wx.setBackgroundTextStyle](api/ui-background.md#wxsetbackgroundtextstyle)</td>
+<td>[wx.setBackgroundTextStyle](ui-background.html#wxsetbackgroundtextstyle)</td>
 
 <td>动态设置下拉背景字体、loading 图的样式</td>
 

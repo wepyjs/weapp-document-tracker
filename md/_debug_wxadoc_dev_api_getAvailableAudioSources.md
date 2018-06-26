@@ -363,6 +363,8 @@
         *   [UnionID机制说明](unionID.html)
     *   [微信支付](api-pay.html)
         *   [wx.requestPayment](api-pay.html#wxrequestpaymentobject)
+    *   [接口调用凭证](token.html)
+        *   [获取access token](token.html#获取-access_token)
     *   [模板消息](notice.html)
         *   [使用说明](notice.html#使用说明)
         *   [模版消息管理](notice.html#模版消息管理)
@@ -461,7 +463,7 @@
 
 <section class="normal markdown-section">
 
-### wx.getRecorderManager(OBJECT)
+### wx.getAvailableAudioSources(OBJECT)
 
 > 基础库 2.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
@@ -561,7 +563,79 @@
 
 </table>
 
-audoSouce 有效值： | 值 | 说明 | 支持平台 | |------------|----------------------------------------------------------------|----------------------| | auto | 自动设置，默认使用手机麦克风，插上耳麦后自动切换使用耳机麦克风 | iOS/Android/devtools | | buildInMic | 手机麦克风 | iOS | | headsetMic | 耳机麦克风 | iOS | | mic | 麦克风（没插耳麦时是手机麦克风，插耳麦时是耳机麦克风 | Android | | camcorder | 摄像头的麦克风 | Android |
+audioSource 有效值：
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>值</th>
+
+<th>说明</th>
+
+<th>支持平台</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>auto</td>
+
+<td>自动设置，默认使用手机麦克风，插上耳麦后自动切换使用耳机麦克风</td>
+
+<td>iOS/Android/devtools</td>
+
+</tr>
+
+<tr>
+
+<td>buildInMic</td>
+
+<td>手机麦克风</td>
+
+<td>iOS</td>
+
+</tr>
+
+<tr>
+
+<td>headsetMic</td>
+
+<td>耳机麦克风</td>
+
+<td>iOS</td>
+
+</tr>
+
+<tr>
+
+<td>mic</td>
+
+<td>麦克风（没插耳麦时是手机麦克风，插耳麦时是耳机麦克风</td>
+
+<td>Android</td>
+
+</tr>
+
+<tr>
+
+<td>camcorder</td>
+
+<td>摄像头的麦克风</td>
+
+<td>Android</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 </section>
 
