@@ -41,7 +41,7 @@
 
 </div>
 
-*   [教程](../../)
+*   [教程](../ad/banner-ad.html)
 *   [API](../../document/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
@@ -64,6 +64,9 @@
 
 <nav role="navigation">
 
+*   [广告](../ad/banner-ad.html)
+    *   [Banner 广告](../ad/banner-ad.html)
+    *   [激励视频广告](../ad/rewarded-video-ad.html)
 *   [基础](../../)
     *   [快速上手](../../)
     *   [Adapter](adapter.html)
@@ -90,9 +93,6 @@
     *   [转发](../open-ability/share.html)
     *   [用户数据的签名验证和加解密](../open-ability/signature.html)
     *   [UnionID 机制说明](../open-ability/union-id.html)
-*   [广告](../ad/banner-ad.html)
-    *   [Banner 广告](../ad/banner-ad.html)
-    *   [激励视频广告](../ad/rewarded-video-ad.html)
 
 </nav>
 
@@ -149,19 +149,21 @@
 
     {
       ...
-      subpackages: [
+      "subpackages": [
         {
-          name: 'stage1',
-          root: 'stage1/' // 可以指定一个目录，目录根目录下的 game.js 会作为入口文件，目录下所有资源将会统一打包
+          "name": "stage1",
+          "root": "stage1/" // 可以指定一个目录，目录根目录下的 game.js 会作为入口文件，目录下所有资源将会统一打包
         }, {
-          name: 'stage2',
-          root: 'stage2.js' // 也可以指定一个 JS 文件
+          "name": "stage2",
+          "root": "stage2.js" // 也可以指定一个 JS 文件
         }
       ]
       ...
     }
 
 配置在 `subpackages` 字段内的目录或 js 文件，将按照配置打包成一个个「分包」，没有配置在 `subpackages` 中的目录和 js，将会被打包到主包中。
+
+**注：目前不支持将开放数据域目录（即 `openDataContext` 配置目录）设置为分包或置于某个分包下。**
 
 ### 2\. 分包加载
 
@@ -192,6 +194,12 @@
 由微信后台编译来处理旧版本客户端的兼容，后台会编译两份代码包，一份是分包后代码，另外一份是整包的兼容代码。对于老客户端，会去下载整包代码启动。
 
 **开发者在基础库 2.1.0 以下的版本不需要调用 wx.loadSubpackage 触发加载，2.1.0 以下版本不存在 wx.loadSubpackage 方法。**
+
+老版本下，需要开发者调用 `require` 触发分包入口文件的加载，例如：
+
+    require('stage1/game.js')
+
+如果不打算兼容老版本，开发者可以通过 mp 小程序后台配置端屏蔽 2.1.0 以下基础库的用户。
 
 ### 已知 BUG
 
