@@ -472,7 +472,7 @@
 
 <tr>
 
-<td width="106" valign="center" rowspan="7">
+<td width="106" valign="center" rowspan="15">
 
 <span>生活服务</span>
 
@@ -480,55 +480,7 @@
 
 <td width="149" valign="bottom">
 
-<span>票务</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>生活缴费</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
 <span>家政</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>外送</span>
 
 </td>
 
@@ -567,6 +519,122 @@
 <td width="301" valign="bottom">
 
 <span>/</span>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="149" valign="center" rowspan="11">
+
+<span>丽人</span>
+
+</td>
+
+<td width="301" valign="bottom">
+
+<span>美甲</span>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="301" valign="bottom">
+
+<span>美容</span>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="301" valign="bottom">
+
+<span>美睫</span>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="301" valign="bottom">
+
+<span>美发</span>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="301" valign="bottom">
+
+<span>纹身</span>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="301" valign="bottom">
+
+<span>祛痘</span>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="301" valign="bottom">
+
+<span>纤体瘦身</span>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="301" valign="bottom">
+
+<span>SPA</span>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="301" valign="bottom">
+
+<span>舞蹈</span>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="301" valign="bottom">
+
+<span>瑜伽</span>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="301" valign="bottom">
+
+<span>其他</span>
 
 </td>
 
@@ -896,7 +964,7 @@
 
 <tr>
 
-<td width="106" valign="center" rowspan="6">
+<td width="106" valign="center" rowspan="3">
 
 <span>商业服务</span>
 
@@ -906,25 +974,15 @@
 
 <tr>
 
-<td width="149" valign="center" rowspan="2">
+<td width="149" valign="bottom">
 
-<span>法律服务</span>
+<span>律师</span>
 
 </td>
 
 <td width="301" valign="bottom">
 
-<span>法律咨询</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="301" valign="bottom">
-
-<span>在线法律服务</span>
+<span>/</span>
 
 </td>
 
@@ -935,38 +993,6 @@
 <td width="149" valign="bottom">
 
 <span>会展服务</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>一般财务服务</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>农林牧渔</span>
 
 </td>
 
