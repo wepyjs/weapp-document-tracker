@@ -1938,7 +1938,7 @@
 [在开发者工具中预览效果](wechatide://minicode/OF4Y9Gme6rZ4)
 
     wx.closeBLEConnection({
-      deviceId:deviceId
+      deviceId:deviceId,
       success: function (res) {
         console.log(res)
       }

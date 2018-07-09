@@ -1210,13 +1210,17 @@
       }
     })
 
+`navigateToMiniProgram`接口即将废弃，新版本中请使用`<navigator>`组件来使用此功能
+
+    <navigator target="miniProgram" app-id="wxeb490c6f9b154ef9" extra-data="{{data}}">会员卡开卡</navigator>
+
 **返回说明**
 
 在 App.onShow 里判断从会员开卡小程序返回的数据data
 
 1.  判断 data.referrerInfo.appId 是否为开卡小程序 appId `wxeb490c6f9b154ef9`，如果不是则中止判断
 2.  判断是否有 data.referrerInfo.extraData 是否有数据，如果没有，表示用户未激活直接左滑/点返回键返回，或者用户已经激活
-3.  若用户激活成功，可以从 data.referrerInfo.extraData 中获取 activate_ticket card_id code 参数用于下一步操作
+3.  若用户激活成功，可以从 data.referrerInfo.extraData 中获取 activate_ticket，card_id，code 参数用于下一步操作
 
 #### Tip
 

@@ -531,7 +531,7 @@
 
 <tr>
 
-<td>dHeigt</td>
+<td>dHeight</td>
 
 <td>Number</td>
 
@@ -565,7 +565,7 @@
 
 <td>Number</td>
 
-<td>源图像的矩形选择框的高度</td>
+<td>源图像的矩形选择框的宽度</td>
 
 </tr>
 

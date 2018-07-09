@@ -114,9 +114,9 @@
 *   [代码片段](../devtools/minicode.html)
 *   [第三方平台](../devtools/ext.html)
 *   [小程序插件开发](../devtools/plugin.html)
-*   [云测试](../devtools/monkey-test.html)
 *   [素材管理](material.html)
 *   [代码托管](tgit.html)
+*   [云测试](../devtools/monkey-test.html)
 *   [实现差异](../devtools/details.html)
     *   [运行环境差异](../devtools/details.html#运行环境差异)
     *   [ES6 支持情况](../devtools/details.html#客户端es6-api-支持情况)
@@ -242,6 +242,6 @@
 
 </div>
 
-[](material.html)[](../devtools/details.html)</div>
+[](material.html)[](../devtools/monkey-test.html)</div>
 
 </div>

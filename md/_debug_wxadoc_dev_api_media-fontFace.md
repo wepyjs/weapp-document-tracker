@@ -625,7 +625,7 @@
 
     wx.loadFontFace({
       family: 'Bitstream Vera Serif Bold',
-      source: 'url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf")',
+      source: 'url("https://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf")',
       success: function(res) {
         console.log(res.status) //  loaded
       },

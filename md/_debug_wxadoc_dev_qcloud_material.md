@@ -114,9 +114,9 @@
 *   [代码片段](../devtools/minicode.html)
 *   [第三方平台](../devtools/ext.html)
 *   [小程序插件开发](../devtools/plugin.html)
-*   [云测试](../devtools/monkey-test.html)
 *   [素材管理](material.html)
 *   [代码托管](tgit.html)
+*   [云测试](../devtools/monkey-test.html)
 *   [实现差异](../devtools/details.html)
     *   [运行环境差异](../devtools/details.html#运行环境差异)
     *   [ES6 支持情况](../devtools/details.html#客户端es6-api-支持情况)
@@ -245,6 +245,6 @@ _注：小程序管理员在 mp 管理后台跳转到腾讯云管理界面后，
 
 </div>
 
-[](../devtools/monkey-test.html)[](tgit.html)</div>
+[](../devtools/plugin.html)[](tgit.html)</div>
 
 </div>

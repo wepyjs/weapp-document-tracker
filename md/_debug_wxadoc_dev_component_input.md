@@ -314,7 +314,7 @@
 
 <td>"done"</td>
 
-<td>设置键盘右下角按钮的文字</td>
+<td>设置键盘右下角按钮的文字，仅在type='text'时生效</td>
 
 <td>[1.1.0](../framework/compatibility.html "基础库 1.1.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -651,6 +651,7 @@
 2.  `bug` : 微信版本 `6.3.30`, placeholder 在聚焦时出现重影问题；
 3.  `tip` : input 组件是一个 native 组件，字体是系统字体，所以无法设置 font-family；
 4.  `tip` : 在 input 聚焦期间，避免使用 css 动画；
+5.  `tip` : 对于将 `input` 封装在自定义组件中、而 `from` 在自定义组件外的情况， `form` 将不能获得这个自定义组件中 `input` 的值。此时需要使用自定义组件的 [内置 behaviors](../framework/custom-component/behaviors.html) `wx://form-field`。
 
 </section>
 

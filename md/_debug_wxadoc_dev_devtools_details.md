@@ -114,9 +114,9 @@
 *   [代码片段](minicode.html)
 *   [第三方平台](ext.html)
 *   [小程序插件开发](plugin.html)
-*   [云测试](monkey-test.html)
 *   [素材管理](../qcloud/material.html)
 *   [代码托管](../qcloud/tgit.html)
+*   [云测试](monkey-test.html)
 *   [实现差异](details.html)
     *   [运行环境差异](details.html#运行环境差异)
     *   [ES6 支持情况](details.html#客户端es6-api-支持情况)
@@ -1091,6 +1091,6 @@
 
 </div>
 
-[](../qcloud/tgit.html)[](notsupport.html)</div>
+[](monkey-test.html)[](notsupport.html)</div>
 
 </div>
