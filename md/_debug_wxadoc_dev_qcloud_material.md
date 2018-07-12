@@ -107,6 +107,7 @@
     *   [自动预览](../devtools/debug.html#自动预览)
     *   [特殊场景调试](../devtools/different.html)
     *   [真机调试](../devtools/remote-debug.html)
+    *   [多帐号调试](../devtools/multiaccount.html)
 *   [命令行调用](../devtools/cli.html)
 *   [测试号](../devtools/sandbox.html)
 *   [HTTP 调用](../devtools/http.html)

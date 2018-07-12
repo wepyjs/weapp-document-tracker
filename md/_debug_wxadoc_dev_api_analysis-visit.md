@@ -1159,6 +1159,16 @@
 
 <td>value 场景下的值（均为整数型）</td>
 
+<td>该场景访问pv</td>
+
+</tr>
+
+<tr>
+
+<td>access_source_visit_uv</td>
+
+<td>该场景访问uv</td>
+
 </tr>
 
 </tbody>

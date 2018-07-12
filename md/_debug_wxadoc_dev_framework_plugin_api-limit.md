@@ -481,6 +481,14 @@
 
 <tr>
 
+<td>`wx.getShareInfo`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。") （仅限插件页面中调用）</td>
+
+</tr>
+
+<tr>
+
 <td>`wx.getStorage`</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
@@ -521,6 +529,22 @@
 
 <tr>
 
+<td>`wx.hideNavigationBarLoading`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。") （仅限插件页面中调用）</td>
+
+</tr>
+
+<tr>
+
+<td>`wx.hideShareMenu`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。") （仅限插件页面中调用）</td>
+
+</tr>
+
+<tr>
+
 <td>`wx.hideToast`</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
@@ -547,7 +571,7 @@
 
 <td>`wx.navigateBack`</td>
 
-<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。") （仅限插件页面中调用）</td>
 
 </tr>
 
@@ -683,7 +707,7 @@
 
 <td>`wx.onUserCaptureScreen`</td>
 
-<td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
+<td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。") （仅限插件页面中调用）</td>
 
 </tr>
 
@@ -700,6 +724,14 @@
 <td>`wx.openLocation`</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>`wx.pageScrollTo`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。") （仅限插件页面中调用）</td>
 
 </tr>
 
@@ -841,6 +873,38 @@
 
 <tr>
 
+<td>`wx.setNavigationBarAlpha`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。") （仅限插件页面中调用）</td>
+
+</tr>
+
+<tr>
+
+<td>`wx.setNavigationBarColor`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。") （仅限插件页面中调用）</td>
+
+</tr>
+
+<tr>
+
+<td>`wx.setNavigationBarTitle`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。") （仅限插件页面中调用）</td>
+
+</tr>
+
+<tr>
+
+<td>`wx.setPageStyle`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。") （仅限插件页面中调用）</td>
+
+</tr>
+
+<tr>
+
 <td>`wx.setScreenBrightness`</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
@@ -889,6 +953,22 @@
 
 <tr>
 
+<td>`wx.showNavigationBarLoading`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。") （仅限插件页面中调用）</td>
+
+</tr>
+
+<tr>
+
+<td>`wx.showShareMenu`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。") （仅限插件页面中调用）</td>
+
+</tr>
+
+<tr>
+
 <td>`wx.showToast`</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
@@ -932,6 +1012,14 @@
 <td>`wx.startHCE`</td>
 
 <td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>`wx.startPullDownRefresh`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。") （仅限插件页面中调用）</td>
 
 </tr>
 
@@ -993,6 +1081,14 @@
 
 <tr>
 
+<td>`wx.stopPullDownRefresh`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。") （仅限插件页面中调用）</td>
+
+</tr>
+
+<tr>
+
 <td>`wx.stopRecord`</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
@@ -1004,6 +1100,14 @@
 <td>`wx.stopVoice`</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>`wx.updateShareMenu`</td>
+
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。") （仅限插件页面中调用）</td>
 
 </tr>
 

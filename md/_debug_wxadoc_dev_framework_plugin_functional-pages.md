@@ -183,7 +183,10 @@
 4.  此时点击预览可以生成插件预览二维码，用测试用的真机扫码即可预览功能页；如果更改了插件代码，通常重复3、4两个步骤即可。
 5.  如果过了一段时间之后，跳转功能页时出现“开发版已过期”这样的提示，从第1步开始重试一次。
 
-注意：在插件提审前，要先发布设置了 `"functionalPages": true` 的插件所有者小程序。
+注意，在插件提审前，需要：
+
+1.  确保已发布设置了 `"functionalPages": true` 的插件所有者小程序；
+2.  确保所有的 `functional-page-navigator` 组件属性设置为 `version="release"` 。
 
 ## 功能页函数
 
@@ -213,6 +216,39 @@
     }
 
 **这个目录和文件应当被放置在插件所有者小程序代码中（而非插件代码中），它是插件所有者小程序的一部分（而非插件的一部分）。** 如果需要新增或更改这段代码，需要发布插件所有者小程序，才能在正式版中生效；需要重新预览插件所有者小程序，才能在开发版中生效。
+
+## 功能页常见问题 FAQ
+
+*   Q：如何正确编辑插件所有者小程序？
+*   A：应该在开发者工具的“小程序”类型项目中编辑，而不是在“插件”类型的项目中编辑。比如，“小程序示例插件”的所有者小程序是“小程序示例”，它们的 AppID 都是 `wxidxxxxxxxxxxxxxx` ，如果是初次开发“小程序示例”小程序，可以在开发者工具中创建一个小程序项目，其 AppID 为 `wxidxxxxxxxxxxxxxx` ；如果之前开发过“小程序示例”小程序，直接打开之前的小程序项目即可。
+
+*   Q：点击 `<functional-page-navigator>` 之后没有任何反应。
+
+*   A：请检查引用插件的小程序和插件本身是不是同一个 AppID ，如果是，这种情况下使用 `<functional-page-navigator>` 不会有任何反应。
+
+*   Q：点击 `<functional-page-navigator>` 之后，展示了一个页面提示“页面不存在”。
+
+*   A：这种情况是因为插件所有者小程序没有正确设置 `"functionalPages": true` 。如果 `functional-page-navigator` 的 `version="develop"` ，这部手机需要扫码并进入插件所有者小程序一次；如果 `version="release"` ，请确保包含 `"functionalPages": true` 的插件所有者小程序已被发布。
+
+*   Q：点击 `<functional-page-navigator version="develop">` 之后，弹窗提示“小程序开发版已过期”。
+
+*   A：遇到这种情况，重新扫码并进入插件所有者小程序一次即可。
+
+*   Q：点击 `<functional-page-navigator name="requestPayment">` 之后，展示了一个页面提示“该功能无法使用”。
+
+*   A：在使用插件功能页时，小程序不能是个人小程序，同时，插件也需要额外的步骤申请开通插件支付权限（位于 [管理后台](https://mp.weixin.qq.com) -> 小程序插件 -> 基本设置 -> 支付能力 ）。
+
+*   Q：点击 `<functional-page-navigator name="requestPayment">` 之后，点击页面中的“支付”按钮，立刻退出了支付功能页。
+
+*   A：这通常是因为没有找到功能页函数 `beforeRequestPayment` ，请检查插件所有者小程序的 `functional-pages/request-payment.js` 文件和其中的 `beforeRequestPayment` 函数是否存在。
+
+*   Q：点击 `<functional-page-navigator>` 之后，展示了一个仅有返回按钮的页面。
+
+*   A：请检查 `<functional-page-navigator>` 的 `name` 属性是否被正确设置。
+
+*   Q：开发版可以正常跳转，但审核反馈不能跳转。
+
+*   A：请发布设置了 `"functionalPages": true` 的插件所有者小程序，且所有的 `functional-page-navigator` 组件属性设置为 `version="release"` 。
 
 #### Bugs & Tips
 

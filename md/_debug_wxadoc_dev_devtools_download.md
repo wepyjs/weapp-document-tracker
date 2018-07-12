@@ -107,6 +107,7 @@
     *   [自动预览](debug.html#自动预览)
     *   [特殊场景调试](different.html)
     *   [真机调试](remote-debug.html)
+    *   [多帐号调试](multiaccount.html)
 *   [命令行调用](cli.html)
 *   [测试号](sandbox.html)
 *   [HTTP 调用](http.html)
@@ -142,66 +143,37 @@
 
 <section class="normal markdown-section">
 
-## 最新版本下载地址 (1.02.1806120)
+## 最新版本下载地址 (1.02.1807120)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
 
-### 2018.06.14 基础库更新（2.1.0）
+### 2018.07.12 开发者工具更新
 
-1.  `A` 新增 API `wx.loadFontFace` 支持动态加载字体 [详情](../api/media-fontFace.html)
-2.  `A` 新增 API `wx.getLogManager` 可记录用户操作日志，供用户提交意见反馈内容时，提交给开发者协助定位问题 [详情](../api/getLogManager.html)
-3.  `A` 新增 API `wx.setBackgroundColor` 和 `wx.setBackgroundTextStyle` 动态设置背景相关信息 [详情](../api/ui-background.html)
-4.  `A` 新增 组件 `<camera />` 的 `scanCode` 模式，支持识别一维码 [详情](../component/camera.html)
-5.  `U` 更新 API `wx.createSelectorQuery` 可获取节点的样式信息 [详情](../api/wxml-nodes-info.html)
-6.  `U` 更新 API `wx.scanCode` 返回参数新增 `rawData` 字段 [详情](../api/scancode.html)
-7.  `U` 更新 API `wx.createLivePusher` 新增 `toggleTorch` 方法支持切换闪光灯 [详情](../api/api-live-pusher.html)
-8.  `U` 更新 组件 `<button />` 可以嵌套在原生组件内，显示在原生组件之上 [详情](../component/button.html)
-9.  `U` 更新 组件 `<button />` 新增 `open-type` 值为 `feedback`，打开“意见反馈”页面 [详情](../component/button.html)
-10.  `U` 更新 组件 `<cover-view />` `<cover-image />` 新增 `scroll-top` 属性 [详情](../component/cover-view.html)
-11.  `U` 更新 组件 `<cover-view />` `<cover-image />` 支持 rotate 和 scale 的样式设置 [详情](../component/cover-view.html)
-12.  `U` 更新 组件 `<cover-image />` 新增 `bindload` 和 `binderror` 事件 [详情](../component/cover-view.html)
-13.  `U` 更新 组件 `<movable-view />` 新增 `animation` 属性 [详情](../component/movable-view.html)
-14.  `U` 更新 组件 `<live-pusher />` 新增 `zoom` 属性支持调整焦距 [详情](../component/live-pusher.html)
-15.  `U` 更新 组件 `<input />` 在 `bindinput` 时返回 `keyCode` 键值 [详情](../component/input.html)
-16.  `F` 修复 API `wx.reportAnalytics` 在插件下调用异常的问题
-17.  `F` 修复 API `wx.hideToast` 在 iOS 下无法让前面的 `showLoading` 消失的问题
-18.  `F` 修复 组件 `<image />` 在连续更新src时导致显示不正确的问题
-19.  `F` 修复 组件 `<image />` 设置 border-radius 出现闪动的问题
-20.  `F` 修复 组件 `<canvas />` 设置的shadow会影响fillStyle的问题
-21.  `F` 修复 组件 `<movable-view />` 缩放的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000ecad1f3c210c5bbc67ea8750000)
-22.  `F` 修复 组件 `<input />` 在某些情况下未被正常销毁的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a8c18c480908ed8c641ac75f400)
-23.  `F` 修复 组件 `<video />` 设置 playbackRate 为 1.25 无效的问题
-24.  `F` 修复 组件 `<map />` 在开发者工具双击地图缩放不触发 `bindregionchange` 的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000c64a0f388b0f19fa6fe2cb51c00)
-25.  `F` 修复 框架 在 video 全屏后有setData操作时导致字体变大的问题
+1.  `A` 新增 多帐号调试 [详情](multiaccount.html)
+2.  `A` 新增 iPad 及横屏调试
+3.  `A` 新增 素材管理支持 svg 文件
+4.  `A` 新增 编辑器全局搜索支持更多文本文件
+5.  `U` 优化 编辑器菜单采用原生菜单，避免被其他界面遮盖导致显示不全
+6.  `F` 修复 远程调试网络面板某些请求会有乱码的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=00062eac0849301f0ef6e04e456000&highline=network)
+7.  `F` 修复 自定义组件在 1.6.3 基础库开发者工具报错的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1271211997&docid=0006ee3b930f30600f0783b2756400)
+8.  `F` 修复 快速编译，快速弹出/收回模拟器导致开发者工具黑屏的问题
+9.  `F` 修复 断网后点击登录会出现开发者工具白屏的问题
+10.  `F` 修复 用户代码触发开发者工具上传的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=244138274&docid=000c6cc9da8930e5a5e6f02fe5b800)
+11.  `F` 修复 `wx.setBackgroundColor` 和 `wx.setBackgroundTextStyle` 在页面生命周期使用会报错的问题
+12.  `F` 修复 插件功能页 json 配置没有生效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1553985152&docid=00000874b98458b575f64f2235bc00)
+13.  `F` 修复 界面调试样式覆盖规则计算错误的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a4ae7cec2581962e6c49e45bc00&token=940403363&lang=zh_CN)
+14.  `F` 修复 `wx.createAudioInstance` src 是本地项目文件，动态设置 volume = 0 再设置回 1 后没有声音的问题
+15.  `F` 修复 小游戏分包加载时，分包大小只包含 JS 文件的问题
+16.  `F` 修复 小游戏使用分包时，2.1.0 以下基础库无法调试的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0000c4809ac1b0e0930765bb256800&highline=%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%88%86%E5%8C%85)
+17.  `F` 修复 小游戏 `wx.createUserInfoButton` 无法使用本地图片的问题
+18.  `F` 修复 通过二维码编译的场景值不符合预期的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000406dedf83d84f89d67245c5d000)
+19.  `F` 修复 `wx.showToast` icon = 'none' 时无法穿透的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000e60e87f8de0448df60e66356000&token=1196209900&lang=zh_CN)
+20.  `F` 修复 自定义分析窗口无法再次打开的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=00062a02f68e40a996b65363951800&comment_lvl=3)
+21.  `F` 修复 分包根目录名字后缀相同时报错的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1382542218&docid=0008e2c47f0f3018860775ff45c800)
 
-### 2018.06.12 更新日志
+### 上一版本下载地址 (1.02.1806120)
 
-1.  `A` 新增 TGit 工具栏入口 [详情](../qcloud/tgit.html)
-2.  `F` 修复 远程调试分包中使用插件报错的问题
-
-### 2018.06.08 更新日志
-
-1.  `A` 新增 自动预览功能 [详情](debug.html#自动预览)
-2.  `A` 新增 远程调试 Network 面板
-3.  `A` 新增 模拟器静音功能
-4.  `A` 新增 代码断点检测及提示
-5.  `A` 新增 支持插件页面
-6.  `A` 新增 上传插件时推荐版本号
-7.  `A` 新增 Storage 面板清除按钮及数据详情展示
-8.  `A` 新增 项目详情 appid 复制按钮
-9.  `F` 修复 Win10 1803 版本出现自动编译的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000eccb1c5c0f81579c6986175b000)
-10.  `F` 修复 1.02.1805181 引入的组件中使用抽象节点 componentGenerics 时异常的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a245810cdc8ddeac6f40d451000)
-11.  `F` 修复 因在循环中使用断点导致重新编译时提示重启耗时过久的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000e04fde747882576c6092a05b400)
-12.  `F` 修复 项目中引入新插件时报错，需要切换一下基础库才能使用的问题
-13.  `F` 修复 navigationStyle 为 custom 时显示异常的问题
-14.  `F` 修复 `wx.setTabbarItem` 后重新编译无法恢复的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0000e67eff0af04773d6352c95bc00)
-15.  `F` 修复 远程调试 typescript 源文件内容丢失的问题
-16.  `F` 修复 压缩后的 js 文件无法正常格式化的问题
-17.  `F` 修复 小游戏视频广告在模拟器缩放的情况下尺寸异常的问题
-
-### 上一版本下载地址 (1.02.1805181)
-
-[windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki&download_version=1021805181&version_type=1) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki&download_version=1021805181&version_type=1) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki&download_version=1021805181&version_type=1)
+[windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki&download_version=1021806120&version_type=1) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki&download_version=1021806120&version_type=1) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki&download_version=1021806120&version_type=1)
 
 ## 历史更新日志
 

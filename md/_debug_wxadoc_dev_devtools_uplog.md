@@ -107,6 +107,7 @@
     *   [自动预览](debug.html#自动预览)
     *   [特殊场景调试](different.html)
     *   [真机调试](remote-debug.html)
+    *   [多帐号调试](multiaccount.html)
 *   [命令行调用](cli.html)
 *   [测试号](sandbox.html)
 *   [HTTP 调用](http.html)
@@ -176,6 +177,33 @@
 30.  `F` 修复 组件 `<video />` 设置 playbackRate 为 1.25 无效的问题
 31.  `F` 修复 组件 `<map />` 在开发者工具双击地图缩放不触发 `bindregionchange` 的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000c64a0f388b0f19fa6fe2cb51c00)
 32.  `F` 修复 框架 在 video 全屏后有setData操作时导致字体变大的问题
+
+### 2018.06.12 更新日志
+
+[windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki&download_version=1021806120&version_type=1) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki&download_version=1021806120&version_type=1) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki&download_version=1021806120&version_type=1)
+
+1.  `A` 新增 TGit 工具栏入口 [详情](../qcloud/tgit.html)
+2.  `F` 修复 远程调试分包中使用插件报错的问题
+
+### 2018.06.08 更新日志
+
+1.  `A` 新增 自动预览功能 [详情](debug.html#自动预览)
+2.  `A` 新增 远程调试 Network 面板
+3.  `A` 新增 模拟器静音功能
+4.  `A` 新增 代码断点检测及提示
+5.  `A` 新增 支持插件页面
+6.  `A` 新增 上传插件时推荐版本号
+7.  `A` 新增 Storage 面板清除按钮及数据详情展示
+8.  `A` 新增 项目详情 appid 复制按钮
+9.  `F` 修复 Win10 1803 版本出现自动编译的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000eccb1c5c0f81579c6986175b000)
+10.  `F` 修复 1.02.1805181 引入的组件中使用抽象节点 componentGenerics 时异常的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a245810cdc8ddeac6f40d451000)
+11.  `F` 修复 因在循环中使用断点导致重新编译时提示重启耗时过久的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000e04fde747882576c6092a05b400)
+12.  `F` 修复 项目中引入新插件时报错，需要切换一下基础库才能使用的问题
+13.  `F` 修复 navigationStyle 为 custom 时显示异常的问题
+14.  `F` 修复 `wx.setTabbarItem` 后重新编译无法恢复的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0000e67eff0af04773d6352c95bc00)
+15.  `F` 修复 远程调试 typescript 源文件内容丢失的问题
+16.  `F` 修复 压缩后的 js 文件无法正常格式化的问题
+17.  `F` 修复 小游戏视频广告在模拟器缩放的情况下尺寸异常的问题
 
 ### 2018.05.18 更新日志
 
