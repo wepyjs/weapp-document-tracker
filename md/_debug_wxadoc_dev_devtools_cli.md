@@ -191,12 +191,16 @@ Windows: `<安装路径>/cli.bat`
 
 **`--preview-qr-output [format[@path]]`**: 指定二维码输出形式，语义同登录用的选项 --login-qr-output。
 
+**`--preview-info-ouput <path>`**: 指定后，会将本次预览的额外信息以 json 格式输出至指定路径，如代码包大小、分包大小信息。
+
 示例：
 
     # 预览，在终端中打印登录二维码
     cli -p /Users/username/demo
     # 预览，二维码转成 base64 并存到文件 /Users/username/code.txt
     cli -p /Users/username/demo --preview-qr-output base64@/Users/username/code.txt
+    # 预览，并将预览代码包大小等信息存入 /Users/username/info.json
+    cli -p /Users/username/demo --preview-info-output /Users/username/info.json
 
 ### 4\. 命令行上传代码
 
@@ -208,10 +212,14 @@ Windows: `<安装路径>/cli.bat`
 
 **`--upload-desc <desc>`**: 上传代码时的备注。
 
+**`--upload-info-ouput <path>`**: 指定后，会将本次上传的额外信息以 json 格式输出至指定路径，如代码包大小、分包大小信息。
+
 示例：
 
     # 上传路径 /Users/username/demo 下的项目，指定版本号为 1.0.0，版本备注为 initial release
     cli -u 1.0.0@/Users/username/demo --upload-desc 'initial release'
+    # 上传并将代码包大小等信息存入 /Users/username/info.json
+    cli -u 1.0.0@/Users/username/demo --upload-desc 'initial release' --preview-info-output /Users/username/info.json
 
 ### 5\. 支持自动化测试
 

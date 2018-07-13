@@ -706,7 +706,7 @@
 
 <td></td>
 
-<td>value 改变时触发 change 事件，event.detail = {value: value}</td>
+<td>value 改变时触发 change 事件，event.detail = {value: value, code: code, postcode: postcode}，其中字段code是统计用区划代码，postcode是邮政编码</td>
 
 <td></td>
 

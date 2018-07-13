@@ -116,7 +116,7 @@
 
 激励视频广告组件是由客户端原生的图片、文本、视频控件组成的，层级最高，会覆盖在上屏 Canvas 上。
 
-开发者可以调用 [wx.createRewardedVideoAd](../../document/ad/wx.createRewardedVideoAd.html) 创建激励视频广告组件。该方法返回的是一个全局单例。
+开发者可以调用 <a href="">wx.createRewardedVideoAd</a> 创建激励视频广告组件。该方法返回的是一个全局单例。
 
     let video1 = wx.createRewardedVideoAd({ adUnitId: 'xxxx' })
     let video2 = wx.createRewardedVideoAd({ adUnitId: 'xxxx' })
@@ -139,7 +139,7 @@
 
 激励视频广告组件是自动拉取广告并进行更新的。在组件创建后会拉取一次广告，用户点击 `关闭广告` 后会去拉取下一条广告。
 
-如果拉取成功。[RewardedVideoAd.onLoad()](../../document/ad/RewardedVideoAd.onLoad.html) 会执行，[RewardedVideoAd.show()](../../document/ad/RewardedVideoAd.show.html) 返回的 Promise 也会是一个 resolved Promise。两者的回调函数中都没有参数传递。
+如果拉取成功。<a href="">RewardedVideoAd.onLoad()</a> 会执行，<a href="">RewardedVideoAd.show()</a> 返回的 Promise 也会是一个 resolved Promise。两者的回调函数中都没有参数传递。
 
     rewardedVideoAd.onLoad(() => {
       console.log('激励视频 广告加载成功')
@@ -148,20 +148,20 @@
     rewardedVideoAd.show()
     .then(() => console.log('激励视频 广告显示'))
 
-如果拉取失败，通过 [RewardedVideoAd.onError()](../../document/ad/RewardedVideoAd.onError.html) 注册的回调函数会执行，回调函数的参数是一个包含错误信息的对象。
+如果拉取失败，通过 <a href="">RewardedVideoAd.onError()</a> 注册的回调函数会执行，回调函数的参数是一个包含错误信息的对象。
 
     rewardedVideoAd.onError(err => {
       console.log(err)
     })
 
-[RewardedVideoAd.show()](../../document/ad/RewardedVideoAd.show.html) 返回的 Promise 也会是一个 rejected Promise。
+<a href="">RewardedVideoAd.show()</a> 返回的 Promise 也会是一个 rejected Promise。
 
     rewardedVideoAd.show()
     .catch(err => console.log(err))
 
 ### 拉取失败，重新拉取
 
-如果组件的某次自动拉取失败，那么之后调用的 show() 将会被 reject。此时可以调用 [RewardedVideoAd.load()](../../document/ad/RewardedVideoAd.load.html) 手动重新拉取广告。
+如果组件的某次自动拉取失败，那么之后调用的 show() 将会被 reject。此时可以调用 <a href="">RewardedVideoAd.load()</a> 手动重新拉取广告。
 
     rewardedVideoAd.show()
     .catch(err => {
@@ -176,7 +176,7 @@
 
 ### 监听用户关闭广告
 
-只有在用户点击激励视频广告组件上的 `关闭广告` 按钮时，广告才会关闭。这个事件可以通过 [RewardedVideoAd.onClose()](../../document/ad/RewardedVideoAd.onClose.html) 监听。
+只有在用户点击激励视频广告组件上的 `关闭广告` 按钮时，广告才会关闭。这个事件可以通过 <a href="">RewardedVideoAd.onClose()</a> 监听。
 
 小于 2.1.0 的基础库版本，`关闭按钮` 是在激励式视频播放结束后才出现，所以触发 onClose 时已经播放结束，`onClose` 触发时可以认为用户已经看完了广告。
 
@@ -184,7 +184,7 @@
 
 ![](../../image/ad/rewarded-video-ad-landscape.png)
 
-[RewardedVideoAd.onClose()](../../document/ad/RewardedVideoAd.onClose.html) 的回调函数会传入一个参数 res，`res.isEnded` 描述广告被关闭时的状态。
+<a href="">RewardedVideoAd.onClose()</a> 的回调函数会传入一个参数 res，`res.isEnded` 描述广告被关闭时的状态。
 
 <table>
 

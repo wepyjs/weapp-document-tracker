@@ -322,6 +322,16 @@ HTTP 方法：GET
 
 </tr>
 
+<tr>
+
+<td style="text-align:center">infooutput</td>
+
+<td>否</td>
+
+<td>指指定后，会将本次预览的额外信息以 json 格式输出至指定路径，如代码包大小、分包大小信息。</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -334,6 +344,8 @@ HTTP 方法：GET
     http://127.0.0.1:端口号/preview?projectpath=%2FUsers%2Fusername%2Fdemo&format=base64
     # 预览路径为 /Users/username/demo 的项目，返回 base64 格式的二维码，并写入 /Users/username/logincode.txt
     http://127.0.0.1:端口号/preview?projectpath=%2FUsers%2Fusername%2Fdemo&format=base64&qroutput=%2FUsers%2Fusername%2Flogincode.txt
+    # 预览路径为 /Users/username/demo 的项目，返回图片格式的二维码，并将预览信息输出至 /Users/username/info.json
+    http://127.0.0.1:端口号/preview?projectpath=%2FUsers%2Fusername%2Fdemo&infooutput=%2Users%2username%2info.json
 
 ### 4\. 上传
 
@@ -391,6 +403,16 @@ HTTP 方法：GET
 
 </tr>
 
+<tr>
+
+<td style="text-align:center">infooutput</td>
+
+<td>否</td>
+
+<td>指定后，会将本次上传的额外信息以 json 格式输出至指定路径，如代码包大小、分包大小信息。</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -401,6 +423,8 @@ HTTP 方法：GET
     http://127.0.0.1:端口号/upload?projectpath=%2FUsers%2Fusername%2Fdemo&version=v1.0.0
     # 上传路径为 /Users/username/demo 的项目，指定版本号为 v1.0.0，并带上备注
     http://127.0.0.1:端口号/upload?projectpath=%2FUsers%2Fusername%2Fdemo&version=v1.0.0&desc=test
+    # 上传路径为 /Users/username/demo 的项目，指定版本号为 v1.0.0，并将上传信息输出至 /Users/username/info.json 
+    http://127.0.0.1:端口号/upload?projectpath=%2FUsers%2Fusername%2Fdemo&version=v1.0.0&infooutput=%2Users%2username%2info.json
 
 ### 5\. 自动化测试
 
