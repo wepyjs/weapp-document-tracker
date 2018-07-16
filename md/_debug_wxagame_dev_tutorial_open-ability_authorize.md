@@ -309,6 +309,6 @@
 
 </div>
 
-[](../usability/worker.html)[](authorize.html)</div>
+[](../usability/worker.html)[](game-club.html)</div>
 
 </div>

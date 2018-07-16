@@ -281,6 +281,6 @@
 
 </div>
 
-[](../devtools/download.html)[](qcloud.html#介绍)</div>
+[](../devtools/download.html)</div>
 
 </div>

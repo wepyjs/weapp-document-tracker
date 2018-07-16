@@ -167,6 +167,6 @@
 
 </div>
 
-[](../document/midas-payment/midasPresent.html)[](devtools.html)</div>
+[](../document/midas-payment/midasPresent.html)[](page.html)</div>
 
 </div>

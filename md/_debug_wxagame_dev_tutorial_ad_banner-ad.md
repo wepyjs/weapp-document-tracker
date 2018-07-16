@@ -116,7 +116,7 @@
 
 Banner 广告组件是由客户端原生的图片、文本控件组成的原生组件，层级最高，会覆盖在上屏 Canvas 上。
 
-开发者可以调用 <a href="">wx.createBannerAd</a> 创建 Banner 广告组件。Banner 广告组件在创建后会自动拉取广告数据并进行渲染，开发者只需要控制 Banner 广告组件的位置和显示/隐藏即可。
+开发者可以调用 [wx.createBannerAd](../../document/ad/wx.createBannerAd.html) 创建 Banner 广告组件。Banner 广告组件在创建后会自动拉取广告数据并进行渲染，开发者只需要控制 Banner 广告组件的位置和显示/隐藏即可。
 
     let bannerAd = wx.createBannerAd({
       adUnitId: 'xxxx',
@@ -131,28 +131,28 @@ Banner 广告组件是由客户端原生的图片、文本控件组成的原生�
 
 ### 显示/隐藏
 
-Banner 广告组件默认是隐藏的，需要调用 <a href="">BannerAd.show()</a> 进行显示。
+Banner 广告组件默认是隐藏的，需要调用 [BannerAd.show()](../../document/ad/BannerAd.show.html) 进行显示。
 
     bannerAd.show()
 
-当切换到没有 Banner 广告组件的场景或页面时，调用 <a href="">BannerAd.hide()</a> 隐藏 Banner 广告组件。
+当切换到没有 Banner 广告组件的场景或页面时，调用 [BannerAd.hide()](../../document/ad/BannerAd.hide.html) 隐藏 Banner 广告组件。
 
     bannerAd.hide()
 
 ### 广告拉取成功与失败
 
-BannerAd 在创建后会拉取广告。如果拉取失败，通过 <a href="">BannerAd.onError()</a> 注册的回调函数会执行，回调函数的参数是一个包含错误信息的对象。
+BannerAd 在创建后会拉取广告。如果拉取失败，通过 [BannerAd.onError()](../../document/ad/BannerAd.onError.html) 注册的回调函数会执行，回调函数的参数是一个包含错误信息的对象。
 
     bannerAd.onError(err => {
       console.log(err)
     })
 
-<a href="">BannerAd.show()</a> 返回的 Promise 也会是一个 rejected Promise。
+[BannerAd.show()](../../document/ad/BannerAd.show.html) 返回的 Promise 也会是一个 rejected Promise。
 
     bannerAd.show()
     .catch(err => console.log(err))
 
-反之，如果拉取成功。<a href="">BannerAd.onLoad()</a> 会执行，<a href="">BannerAd.show()</a> 返回的 Promise 也会是一个 resolved Promise。两者的回调函数中都没有参数传递。
+反之，如果拉取成功。[BannerAd.onLoad()](../../document/ad/BannerAd.onLoad.html) 会执行，[BannerAd.show()](../../document/ad/BannerAd.show.html) 返回的 Promise 也会是一个 resolved Promise。两者的回调函数中都没有参数传递。
 
     bannerAd.onLoad(() => {
       console.log('banner 广告加载成功')
@@ -184,7 +184,7 @@ Banner 广告组件的尺寸会根据开发者设置的宽度，即 `style.width
 当 `style.width` 小于 300 时，会取作 300。 当 `style.width` 大于屏幕宽度时，会取作屏幕宽度。  
 在组件内部会以此值为基准，根据 Banner 广告的标准尺寸，进行缩放。
 
-每当缩放发生且缩放后的尺寸不同时，通过 <a href="">BannerAd.onResize()</a> 注册的回调函数就会执行。回调函数的参数是一个包含 BannerAd 缩放后的宽和高的对象。BannerAd 的 `style.realWidth` 和 `style.realHeight` 到经过缩放后的宽和高。
+每当缩放发生且缩放后的尺寸不同时，通过 [BannerAd.onResize()](../../document/ad/BannerAd.onResize.html) 注册的回调函数就会执行。回调函数的参数是一个包含 BannerAd 缩放后的宽和高的对象。BannerAd 的 `style.realWidth` 和 `style.realHeight` 到经过缩放后的宽和高。
 
     bannerAd.onResize(res => {
       console.log(res.width, res.height)
@@ -248,6 +248,6 @@ Banner 广告组件的尺寸会根据开发者设置的宽度，即 `style.width
 
 </div>
 
-[](../open-ability/union-id.html)[](banner-ad.html)</div>
+[](../open-ability/union-id.html)[](rewarded-video-ad.html)</div>
 
 </div>

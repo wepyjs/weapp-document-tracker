@@ -232,6 +232,6 @@ Console panel 有两大功能：
 
 </div>
 
-[](edit.html#Git 状态展示)[](debug.html#模拟器)</div>
+[](edit.html#Git 状态展示)[](cli.html)</div>
 
 </div>

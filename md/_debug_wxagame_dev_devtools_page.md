@@ -295,6 +295,6 @@
 
 </div>
 
-[](devtools.html)[](page.html#启动页)</div>
+[](devtools.html)[](settings.html)</div>
 
 </div>
