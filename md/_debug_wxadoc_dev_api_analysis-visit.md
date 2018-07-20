@@ -320,12 +320,12 @@
         *   [strokeText](canvas/stroke-text.html)
         *   [lineDashOffset](canvas/line-dash-offset.html)
         *   [createPattern](canvas/create-pattern.html)
-        *   <span>shadowBlur</span>
-        *   <span>shadowColor</span>
-        *   <span>shadowOffsetX</span>
-        *   <span>shadowOffsetY</span>
+        *   [shadowBlur](canvas/set-shadow.html#canvascontextshadowblur)
+        *   [shadowColor](canvas/set-shadow.html#canvascontextshadowcolor)
+        *   [shadowOffsetX](canvas/set-shadow.html#canvascontextshadowoffsetx)
+        *   [shadowOffsetY](canvas/set-shadow.html#canvascontextshadowoffsety)
         *   [font](canvas/font.html)
-        *   <span>transform</span>
+        *   [transform](canvas/transform.html)
         *   [setTransform](canvas/set-transform.html)
     *   [下拉刷新](pulldown.html)
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
@@ -465,7 +465,7 @@
 
 ### 访问分析
 
-获取小程序访问分析数据，数据说明参见[访问分析](https://mp.weixin.qq.com/debug/wxadoc/analysis/regular/#%E8%AE%BF%E9%97%AE%E5%88%86%E6%9E%90)
+获取小程序访问分析数据，数据说明参见[访问分析](https://mp.weixin.qq.com/debug/wxadoc/analysis/regular/#&)
 
 #### 访问趋势
 
@@ -839,7 +839,7 @@
 
 </table>
 
-**注意：请求json和返回json与天的一致，这里限定查询一个自然月的数据，时间必须按照自然月的方式输入： 如：20170201(月初), 20170228(月末)**
+注意：请求json和返回json与天的一致，这里限定查询一个自然周的数据，时间必须按照自然周的方式输入： 如：20170306(周一), 20170312(周日)
 
 **POST 内容示例：**
 
@@ -1179,73 +1179,369 @@
 
 访问来源：(index="access_source_session_cnt")
 
-> 1：小程序历史列表
-> 
-> 2：搜索
-> 
-> 3：会话
-> 
-> 4：二维码
-> 
-> 5：公众号主页
-> 
-> 6：聊天顶部
-> 
-> 7：系统桌面
-> 
-> 8：小程序主页
-> 
-> 9：附近的小程序
-> 
-> 10：其他
-> 
-> 11：模板消息
-> 
-> 12：客服消息
-> 
-> 13: 公众号菜单
-> 
-> 14: APP分享
-> 
-> 15: 支付完成页
-> 
-> 16: 长按识别二维码
-> 
-> 17: 相册选取二维码
-> 
-> 18: 公众号文章
-> 
-> 19：钱包
-> 
-> 20：卡包
-> 
-> 21：小程序内卡券
-> 
-> 22：其他小程序
-> 
-> 23：其他小程序返回
-> 
-> 24：卡券适用门店列表
-> 
-> 25：搜索框快捷入口
-> 
-> 26：小程序客服消息
-> 
-> 27：公众号下发
-> 
-> 28: 会话左下角菜单
-> 
-> 29: 小程序任务栏
-> 
-> 30: 长按小程序菜单圆点
-> 
-> 31: 连wifi成功页
-> 
-> 32: 城市服务
-> 
-> 33: 微信广告
-> 
-> 34: 其他移动应用
+场景值说明参见[场景值](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/scene.html)
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>key</th>
+
+<th>访问来源</th>
+
+<th>对应场景值</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>1</td>
+
+<td>小程序历史列表</td>
+
+<td>1001</td>
+
+</tr>
+
+<tr>
+
+<td>2</td>
+
+<td>搜索</td>
+
+<td>1005 1006 1027 1042 1053</td>
+
+</tr>
+
+<tr>
+
+<td>3</td>
+
+<td>会话</td>
+
+<td>1007 1008 1044 1096</td>
+
+</tr>
+
+<tr>
+
+<td>4</td>
+
+<td>扫一扫二维码</td>
+
+<td>1011 1047</td>
+
+</tr>
+
+<tr>
+
+<td>5</td>
+
+<td>公众号主页</td>
+
+<td>1020</td>
+
+</tr>
+
+<tr>
+
+<td>6</td>
+
+<td>聊天顶部</td>
+
+<td>1022</td>
+
+</tr>
+
+<tr>
+
+<td>7</td>
+
+<td>系统桌面</td>
+
+<td>1023</td>
+
+</tr>
+
+<tr>
+
+<td>8</td>
+
+<td>小程序主页</td>
+
+<td>1024</td>
+
+</tr>
+
+<tr>
+
+<td>9</td>
+
+<td>附近的小程序</td>
+
+<td>1026 1068</td>
+
+</tr>
+
+<tr>
+
+<td>11</td>
+
+<td>模板消息</td>
+
+<td>1014 1043</td>
+
+</tr>
+
+<tr>
+
+<td>13</td>
+
+<td>公众号菜单</td>
+
+<td>1035</td>
+
+</tr>
+
+<tr>
+
+<td>14</td>
+
+<td>APP分享</td>
+
+<td>1036</td>
+
+</tr>
+
+<tr>
+
+<td>15</td>
+
+<td>支付完成页</td>
+
+<td>1034</td>
+
+</tr>
+
+<tr>
+
+<td>16</td>
+
+<td>长按识别二维码</td>
+
+<td>1012 1048</td>
+
+</tr>
+
+<tr>
+
+<td>17</td>
+
+<td>相册选取二维码</td>
+
+<td>1013 1049</td>
+
+</tr>
+
+<tr>
+
+<td>18</td>
+
+<td>公众号文章</td>
+
+<td>1058</td>
+
+</tr>
+
+<tr>
+
+<td>19</td>
+
+<td>钱包</td>
+
+<td>1019</td>
+
+</tr>
+
+<tr>
+
+<td>20</td>
+
+<td>卡包</td>
+
+<td>1028</td>
+
+</tr>
+
+<tr>
+
+<td>21</td>
+
+<td>小程序内卡券</td>
+
+<td>1029</td>
+
+</tr>
+
+<tr>
+
+<td>22</td>
+
+<td>其他小程序</td>
+
+<td>1037</td>
+
+</tr>
+
+<tr>
+
+<td>23</td>
+
+<td>其他小程序返回</td>
+
+<td>1038</td>
+
+</tr>
+
+<tr>
+
+<td>24</td>
+
+<td>卡券适用门店列表</td>
+
+<td>1052</td>
+
+</tr>
+
+<tr>
+
+<td>25</td>
+
+<td>搜索框快捷入口</td>
+
+<td>1054</td>
+
+</tr>
+
+<tr>
+
+<td>26</td>
+
+<td>小程序客服消息</td>
+
+<td>1073 1081</td>
+
+</tr>
+
+<tr>
+
+<td>27</td>
+
+<td>公众号下发</td>
+
+<td>1074 1082</td>
+
+</tr>
+
+<tr>
+
+<td>29</td>
+
+<td>任务栏-最近使用</td>
+
+<td>1089</td>
+
+</tr>
+
+<tr>
+
+<td>30</td>
+
+<td>长按小程序菜单圆点</td>
+
+<td>1090</td>
+
+</tr>
+
+<tr>
+
+<td>31</td>
+
+<td>连wifi成功页</td>
+
+<td>1078</td>
+
+</tr>
+
+<tr>
+
+<td>32</td>
+
+<td>城市服务</td>
+
+<td>1092</td>
+
+</tr>
+
+<tr>
+
+<td>33</td>
+
+<td>微信广告</td>
+
+<td>1045 1046 1067 1084</td>
+
+</tr>
+
+<tr>
+
+<td>34</td>
+
+<td>其他移动应用</td>
+
+<td>1069</td>
+
+</tr>
+
+<tr>
+
+<td>35</td>
+
+<td>发现入口-我的小程序</td>
+
+<td>1103</td>
+
+</tr>
+
+<tr>
+
+<td>36</td>
+
+<td>任务栏-我的小程序</td>
+
+<td>1104</td>
+
+</tr>
+
+<tr>
+
+<td>10</td>
+
+<td>其他</td>
+
+<td>除上述外其余场景值</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 访问时长：(index="access_staytime_info")
 
@@ -1595,7 +1891,7 @@
 
 </table>
 
-**注意：请求json和返回json与天的一致，这里限定查询一个自然周的数据，时间必须按照自然周的方式输入： 如：20170306(周一), 20170312(周日)**
+注意：请求json和返回json与天的一致，这里限定查询一个自然周的数据，时间必须按照自然周的方式输入： 如：20170306(周一), 20170312(周日)
 
 **POST 内容示例：**
 
@@ -1764,7 +2060,7 @@
 
 </table>
 
-**注意：请求json和返回json与天的一致，这里限定查询一个自然月的数据，时间必须按照自然月的方式输入： 如：20170201(月初), 20170228(月末)**
+注意：请求json和返回json与天的一致，这里限定查询一个自然月的数据，时间必须按照自然月的方式输入： 如：20170201(月初), 20170228(月末)
 
 **POST 内容示例：**
 
@@ -2195,7 +2491,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

@@ -120,7 +120,7 @@
 
 ​ 微信团队一直致力于将微信打造成一个强大的、全方位的服务工具。在此基础上，我们推出了微信小程序这个产品，提供给微信小程序的开发者在微信内搭建和实现特定服务、功能的平台。通过全面开放的能力，我们将更多连接的可能给予企业和服务提供者，并为微信小程序提供基础的接入能力、运营环境和规则体系，进而帮助更多的企业和服务提供者建立自己的品牌，将商业机会带给整个微信产业链。
 
-​ 在开始微信小程序的开发前，我们希望微信小程序开发者（以下也称为“你”）已经仔细阅读了[《微信小程序接入指南》](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)、[《微信小程序设计规范》](https://mp.weixin.qq.com/debug/wxadoc/design/index.html&)、[《微信小程序开发指南》](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html&)等，如果你选择了游戏类目，你还需仔细阅读[《微信小游戏接入指南》](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)、[《微信小游戏开发指南》](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)等；同时，我们也为你准备了微信小程序平台常见拒绝情形。希望这些指南和规范，能够一定程度上帮助你解决开发、运营微信小程序过程中所遇到的疑问。
+​ 在开始微信小程序的开发前，我们希望微信小程序开发者（以下也称为“你”）已经仔细阅读了[《微信小程序接入指南》](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)、[《微信小程序设计规范》](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)、[《微信小程序开发指南》](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)等，如果你选择了游戏类目，你还需仔细阅读[《微信小游戏接入指南》](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)、[《微信小游戏开发指南》](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)等；同时，我们也为你准备了微信小程序平台常见拒绝情形。希望这些指南和规范，能够一定程度上帮助你解决开发、运营微信小程序过程中所遇到的疑问。
 
 ​ 我们希望你提交的微信小程序，能够符合微信团队一直以来的价值观，那就是：一切以用户价值为依归、让创造发挥价值、好的产品是用完即走，以及让商业化存在于无形之中。在切实符合用户的合理需求和利益的前提下，通过微信小程序所提供的功能和服务，为海量微信用户提供具有持续价值和高品质的服务。我们期待你来提交你的微信小程序。
 
@@ -157,6 +157,10 @@
 <span id="2.6">2.6微信小程序的名称不得以电话、邮件、日历、斗地主、麻将等广义归纳类、普遍且不具有识别性的词汇来命名，从而干扰搜索结果。</span>
 
 <span id="2.7">2.7无正当理由，小程序的名称和简介、描述不得与已有小程序或公众号重复或混淆，不得以添加无实质意义的字母、符号等任何方式作为避开、绕开微信小程序的平台规则及规范。</span>
+
+<span id="2.8">2.8使用与主体信息不完全相符的微信小程序名称、icon、简介、描述、所提供的功能等信息，不得对用户产生以下不适宜的混淆、误认、联想或影响：</span> （1）以为是相关政府机构、事业单位、社会团体等组织机构开发、运营的；
+
+（2）以为是具有相关政府机构、事业单位、社会团体等背景、色彩的组织机构开发、运营的，即使客观上并不存在与该信息对应的组织机构。
 
 ### 3.功能设置规范
 
@@ -510,7 +514,7 @@
 
 <span id="16.8">16.8小程序卡片页的分享样式、内容、结构、外观等，均不得以任何形式与腾讯官方提供的红包等功能的样式图片、文字文案产生相同、相似或引起混淆的效果。</span>
 
-![](https://mp.weixin.qq.com/debug/wxadoc/product/image/i.png)
+![](https://developers.weixin.qq.com/miniprogram/product/image/i.png)
 
 ## 三、小游戏特别规范
 
@@ -661,7 +665,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
@@ -671,6 +675,6 @@
 
 </div>
 
-[](./#一、原则及相关说明)</div>
+[](reject.html)</div>
 
 </div>
