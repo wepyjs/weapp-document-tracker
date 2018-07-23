@@ -92,7 +92,6 @@
         *   [发布](release.html#发布)
         *   [运营数据](release.html#运营数据)
 *   [体验小程序](../../demo.html)
-*   [更新日志](../../devtools/new.html)
 
 </nav>
 
@@ -132,7 +131,7 @@
 
 ## 运营数据
 
-有两种方式可以方便的看到小程序的 [运营数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html&)
+有两种方式可以方便的看到小程序的 [运营数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
 
 方法一：
 
@@ -144,7 +143,7 @@
 
 使用小程序数据助手，在微信中方便的查看运营数据
 
-![mydev](https://mp.weixin.qq.com/debug/wxadoc/dev/image/quickstart/mydata.jpeg)
+![mydev](https://developers.weixin.qq.com/miniprogram/dev/image/quickstart/mydata.jpeg)
 
 </section>
 
@@ -175,7 +174,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

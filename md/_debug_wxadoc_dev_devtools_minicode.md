@@ -149,11 +149,11 @@
 
 在工具选择项目的界面中，右侧可以选择代码片段页卡，查看所有本地代码片段，在右下角可以点击创建代码片段。
 
-![minicode](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/minicode/select-project.jpg)
+![minicode](https://developers.weixin.qq.com/miniprogram/dev/image/devtools/minicode/select-project.jpg)
 
 创建代码片段需要填入代码片段名称、本地存放目录。AppID 不是必填项，如果需要演示依赖 AppID 的操作则需填写。如果存放目录是空目录，则可在下方选择小程序、小游戏等的快速启动模板。
 
-![minicode](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/minicode/create-minicode.jpg)
+![minicode](https://developers.weixin.qq.com/miniprogram/dev/image/devtools/minicode/create-minicode.jpg)
 
 信息填写正确后，点击创建即可完成创建并打开代码片段。
 
@@ -165,7 +165,7 @@
 2.  详情页中会展示上次分享的链接，并可以一键复制
 3.  代码片段的快速启动模板与普通项目的快速启动模板不同，体积更小，功能更精简
 
-![minicode](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/minicode/project.jpg)
+![minicode](https://developers.weixin.qq.com/miniprogram/dev/image/devtools/minicode/project.jpg)
 
 ### 分享代码片段
 
@@ -177,25 +177,25 @@
 
 分享的小程序代码片段最大大小为 100KB，小游戏代码片段最大为 200KB。
 
-![minicode](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/minicode/share.png)
+![minicode](https://developers.weixin.qq.com/miniprogram/dev/image/devtools/minicode/share.png)
 
 分享成功后会展示分享链接，可复制分享给其他开发者，其他开发者在工具中选择导入代码片段并粘贴链接即可导入。
 
-![minicode](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/minicode/share-success.png)
+![minicode](https://developers.weixin.qq.com/miniprogram/dev/image/devtools/minicode/share-success.png)
 
 分享的链接除了可以粘贴到导入页导入外，还可以设置为可点击的链接。如果 `html` `<a>` 标签的 `href` 属性设置为分享的链接，如 `<a href="wechatide://minicode/76b799966b6ead1837edac517cc02e02">代码片段示例</a>`，则用户点击此链接时会自动打开工具进入代码片段导入页，最后点击导入即可完成导入。在开发者社区发帖时，如果想要提供 demo 示例，如果想要提供 demo 示例，可以插入一个链接为代码片段分享链接的超链接。
 
-![minicode](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/minicode/share-bbs.png)
+![minicode](https://developers.weixin.qq.com/miniprogram/dev/image/devtools/minicode/share-bbs.png)
 
 ### 导入代码片段
 
 在选择代码片段的页面的右下角可以点击导入进入导入页，或者点击菜单栏上的项目选项卡下的导入代码片段来打开导入页。导入时需要填写分享链接或代码片段 ID。链接的最后一部分即是代码片段的 ID，如 `wechatide://minicode/76b799966b6ead1837edac517cc02e02` 的 ID 为 `76b799966b6ead1837edac517cc02e02`。
 
-![minicode](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/minicode/import-minicode.jpg)
+![minicode](https://developers.weixin.qq.com/miniprogram/dev/image/devtools/minicode/import-minicode.jpg)
 
 导入时可选择存放目录和 AppID。存放目录默认是在临时文件夹。
 
-![minicode](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools/minicode/import-minicode-info.jpg)
+![minicode](https://developers.weixin.qq.com/miniprogram/dev/image/devtools/minicode/import-minicode-info.jpg)
 
 </section>
 
@@ -226,7 +226,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

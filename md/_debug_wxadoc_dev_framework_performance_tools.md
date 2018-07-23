@@ -107,12 +107,15 @@
     *   [插件功能页](../plugin/functional-pages.html)
 *   [分包加载](../subpackages.html)
 *   [多线程](../workers.html)
-*   [基础库](../client-lib.html)
+*   [基础库](../client-lib/)
+    *   [版本分布](../client-lib/version.html)
+    *   [与客户端版本对应关系](../client-lib/client.html)
 *   [兼容](../compatibility.html)
 *   [运行机制](../operating-mechanism.html)
 *   [性能](./)
     *   [优化建议](tips.html)
     *   [分析工具](tools.html)
+*   [基础库更新日志](../release.html)
 
 </nav>
 
@@ -146,13 +149,13 @@
 
 > 可以通过 `adb devices` 命令确定设备是否已和 PC 建立起连接
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/performance/trace-tool.png)
+![image](https://developers.weixin.qq.com/miniprogram/dev/image/performance/trace-tool.png)
 
 # 性能面板
 
 从微信 6.5.8 开始，我们提供了性能面板让开发者了解小程序的性能。开发者可以在开发版小程序下打开性能面板，打开方法：进入开发版小程序，进入右上角更多按钮，点击「显示性能窗口」。
 
-![image](https://mp.weixin.qq.com/debug/wxadoc/dev/image/performance/panel.jpg)
+![image](https://developers.weixin.qq.com/miniprogram/dev/image/performance/panel.jpg)
 
 ## 性能面板指标说明
 
@@ -277,7 +280,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
@@ -287,6 +290,6 @@
 
 </div>
 
-[](tips.html)[](../../component/)</div>
+[](tips.html)[](../release.html)</div>
 
 </div>

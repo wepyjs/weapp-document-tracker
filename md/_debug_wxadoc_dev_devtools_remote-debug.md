@@ -151,7 +151,7 @@
 
 要发起一个真机远程调试流程，需要先点击开发者工具的工具栏上 “远程调试” 按钮。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/remote-debug/button.jpg)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/remote-debug/button.jpg)
 
 此时，工具会将本地代码进行处理打包并上传，就绪之后，使用手机客户端扫描二维码即可弹出调试窗口，开始远程调试。
 
@@ -161,7 +161,7 @@
 
 要结束调试，直接关闭此调试窗口，或点击右下角 “结束调试” 按钮即可。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/remote-debug/window.jpg)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/remote-debug/window.jpg)
 
 远程调试窗口分为两部分，分别是左侧的调试器视图、右侧的信息视图。开发者可以在调试器里直接进行代码的调试，并查看 Storage 情况；信息视图则可以查看目前与手机和服务器的连接情况，以及发生的错误信息等。
 
@@ -169,29 +169,29 @@
 
 在远程调试的调试器里，开发者可以在 Console 面板里对代码进行调试，在 Sources 面板里查看小程序的源代码并进行断点单步调试，在 Storage 面板里查看小程序的 Storage 使用情况等。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/remote-debug/console.jpg)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/remote-debug/console.jpg)
 
 注意，要在 Console 里对小程序进行调试，需要将调试的上下文切换到 VM Context 1，如图所示。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/remote-debug/context.jpg)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/remote-debug/context.jpg)
 
 在 Sources 面板查看源代码时，开发者所有的文件路径都是以 `weapp://` 开头的。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/remote-debug/sources.jpg)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/remote-debug/sources.jpg)
 
 除了可以在调试器进行单步调试，开发者还能在代码中手动插入 `debugger;` 语句进行断点调试。因此，如果想要在小程序启动的尽早时刻断点，可以在进入远程调试之前，编辑代码手动在需要断点处的代码插入 `debugger;` 语句来实现。
 
 WXML、AppData、Storage 面板的操作和开发者工具调试模拟器时的操作一致。注意，如果在右侧信息视图取消勾选了 “使用工具端的 Storage”，则所有的 Storage 数据将被存储在手机上，将不再出现 Storage 面板。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/remote-debug/storage.jpg)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/remote-debug/storage.jpg)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/remote-debug/appdata.jpg)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/remote-debug/appdata.jpg)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/remote-debug/wxml.jpg)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/remote-debug/wxml.jpg)
 
 ### 信息视图
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/remote-debug/info.jpg)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/remote-debug/info.jpg)
 
 右侧的信息视图展示了手机、网络连接的信息。手机信息展示手机的型号、系统、名称、微信版本等信息，以及通信延时。通信延时越小，与手机的通信越流畅。
 
@@ -205,7 +205,7 @@ WXML、AppData、Storage 面板的操作和开发者工具调试模拟器时的�
 
 > 当手机无网络或者进入了断点状态时，将会出现一个浮层提示并阻止进一步的操作。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/remote-debug/iphone.jpg)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/remote-debug/iphone.jpg)
 
 </section>
 
@@ -236,7 +236,7 @@ WXML、AppData、Storage 面板的操作和开发者工具调试模拟器时的�
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

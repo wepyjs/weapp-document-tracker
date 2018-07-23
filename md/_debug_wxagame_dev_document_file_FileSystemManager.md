@@ -189,19 +189,9 @@
         *   [UploadTask](../network/upload/UploadTask.html)
         *   [UploadTask.abort](../network/upload/UploadTask.abort.html)
         *   [UploadTask.onProgressUpdate](../network/upload/UploadTask.onProgressUpdate.html)
-*   [开放接口](../open-api/data/wx.getFriendCloudStorage.html)
-    *   [开放数据](../open-api/data/wx.getFriendCloudStorage.html)
-        *   [wx.getFriendCloudStorage](../open-api/data/wx.getFriendCloudStorage.html)
-        *   [wx.getUserCloudStorage](../open-api/data/wx.getUserCloudStorage.html)
-        *   [wx.getUserInfo](../open-api/data/wx.getUserInfo.html)
-        *   [wx.getGroupCloudStorage](../open-api/data/wx.getGroupCloudStorage.html)
-        *   [wx.getSharedCanvas](../open-api/data/wx.getSharedCanvas.html)
-        *   [wx.removeUserCloudStorage](../open-api/data/wx.removeUserCloudStorage.html)
-        *   [wx.setUserCloudStorage](../open-api/data/wx.setUserCloudStorage.html)
-        *   [KVData](../open-api/data/KVData.html)
-        *   [UserGameData](../open-api/data/UserGameData.html)
-        *   [removeUserStorage](../open-api/data/removeUserStorage.html)
-        *   [setUserStorage](../open-api/data/setUserStorage.html)
+*   [开放接口](../open-api/miniprogram-navigate/wx.navigateToMiniProgram.html)
+    *   [小程序跳转](../open-api/miniprogram-navigate/wx.navigateToMiniProgram.html)
+        *   [wx.navigateToMiniProgram](../open-api/miniprogram-navigate/wx.navigateToMiniProgram.html)
     *   [登录](../open-api/login/wx.checkSession.html)
         *   [wx.checkSession](../open-api/login/wx.checkSession.html)
         *   [wx.login](../open-api/login/wx.login.html)
@@ -228,6 +218,18 @@
         *   [OpenSettingButton.show](../open-api/setting/OpenSettingButton.show.html)
     *   [微信运动](../open-api/werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../open-api/werun/wx.getWeRunData.html)
+    *   [开放数据](../open-api/data/wx.getFriendCloudStorage.html)
+        *   [wx.getFriendCloudStorage](../open-api/data/wx.getFriendCloudStorage.html)
+        *   [wx.getUserCloudStorage](../open-api/data/wx.getUserCloudStorage.html)
+        *   [wx.getUserInfo](../open-api/data/wx.getUserInfo.html)
+        *   [wx.getGroupCloudStorage](../open-api/data/wx.getGroupCloudStorage.html)
+        *   [wx.getSharedCanvas](../open-api/data/wx.getSharedCanvas.html)
+        *   [wx.removeUserCloudStorage](../open-api/data/wx.removeUserCloudStorage.html)
+        *   [wx.setUserCloudStorage](../open-api/data/wx.setUserCloudStorage.html)
+        *   [KVData](../open-api/data/KVData.html)
+        *   [UserGameData](../open-api/data/UserGameData.html)
+        *   [removeUserStorage](../open-api/data/removeUserStorage.html)
+        *   [setUserStorage](../open-api/data/setUserStorage.html)
     *   [授权](../open-api/authorize/wx.authorize.html)
         *   [wx.authorize](../open-api/authorize/wx.authorize.html)
     *   [游戏圈](../open-api/game-club/wx.createGameClubButton.html)
@@ -473,18 +475,6 @@
 
 #### 方法
 
-##### [FileSystemManager.getFileInfo(Object object)](FileSystemManager.getFileInfo.html)
-
-获取该小程序下的 本地临时文件 或 本地缓存文件 信息
-
-##### [FileSystemManager.copyFileSync(string srcPath, string destPath)](FileSystemManager.copyFileSync.html)
-
-FileSystemManager.copyFile 的同步版本
-
-##### [FileSystemManager.copyFile(Object object)](FileSystemManager.copyFile.html)
-
-复制文件
-
 ##### [Array.<string> FileSystemManager.readdirSync(string dirPath)](FileSystemManager.readdirSync.html)
 
 FileSystemManager.readdir 的同步版本
@@ -492,14 +482,6 @@ FileSystemManager.readdir 的同步版本
 ##### [FileSystemManager.readdir(Object object)](FileSystemManager.readdir.html)
 
 读取目录内文件列表
-
-##### [string|ArrayBuffer FileSystemManager.readFileSync(string filePath, string encoding)](FileSystemManager.readFileSync.html)
-
-FileSystemManager.readFile 的同步版本
-
-##### [FileSystemManager.readFile(Object object)](FileSystemManager.readFile.html)
-
-读取本地文件内容
 
 ##### [FileSystemManager.renameSync(string oldPath, string newPath)](FileSystemManager.renameSync.html)
 
@@ -509,6 +491,14 @@ FileSystemManager.rename 的同步版本
 
 重命名文件，可以把文件从 oldPath 移动到 newPath
 
+##### [string|ArrayBuffer FileSystemManager.readFileSync(string filePath, string encoding)](FileSystemManager.readFileSync.html)
+
+FileSystemManager.readFile 的同步版本
+
+##### [FileSystemManager.readFile(Object object)](FileSystemManager.readFile.html)
+
+读取本地文件内容
+
 ##### [FileSystemManager.mkdirSync(string dirPath)](FileSystemManager.mkdirSync.html)
 
 FileSystemManager.mkdir 的同步版本
@@ -516,6 +506,26 @@ FileSystemManager.mkdir 的同步版本
 ##### [FileSystemManager.mkdir(Object object)](FileSystemManager.mkdir.html)
 
 创建目录
+
+##### [FileSystemManager.unzip(Object object)](FileSystemManager.unzip.html)
+
+解压文件
+
+##### [FileSystemManager.rmdirSync(string dirPath)](FileSystemManager.rmdirSync.html)
+
+FileSystemManager.rmdir 的同步版本
+
+##### [FileSystemManager.rmdir(Object object)](FileSystemManager.rmdir.html)
+
+删除目录
+
+##### [FileSystemManager.writeFileSync(string filePath, string|ArrayBuffer data, string encoding)](FileSystemManager.writeFileSync.html)
+
+FileSystemManager.writeFile 的同步版本
+
+##### [FileSystemManager.writeFile(Object object)](FileSystemManager.writeFile.html)
+
+写文件
 
 ##### [FileSystemManager.unlinkSync(string filePath)](FileSystemManager.unlinkSync.html)
 
@@ -532,26 +542,6 @@ FileSystemManager.stat 的同步版本
 ##### [Stats FileSystemManager.stat(Object object)](FileSystemManager.stat.html)
 
 获取文件 Stats 对象
-
-##### [FileSystemManager.unzip(Object object)](FileSystemManager.unzip.html)
-
-解压文件
-
-##### [FileSystemManager.writeFileSync(string filePath, string|ArrayBuffer data, string encoding)](FileSystemManager.writeFileSync.html)
-
-FileSystemManager.writeFile 的同步版本
-
-##### [FileSystemManager.writeFile(Object object)](FileSystemManager.writeFile.html)
-
-写文件
-
-##### [FileSystemManager.rmdirSync(string dirPath)](FileSystemManager.rmdirSync.html)
-
-FileSystemManager.rmdir 的同步版本
-
-##### [FileSystemManager.rmdir(Object object)](FileSystemManager.rmdir.html)
-
-删除目录
 
 </section>
 

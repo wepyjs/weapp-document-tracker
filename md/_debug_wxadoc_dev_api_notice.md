@@ -320,12 +320,12 @@
         *   [strokeText](canvas/stroke-text.html)
         *   [lineDashOffset](canvas/line-dash-offset.html)
         *   [createPattern](canvas/create-pattern.html)
-        *   <span>shadowBlur</span>
-        *   <span>shadowColor</span>
-        *   <span>shadowOffsetX</span>
-        *   <span>shadowOffsetY</span>
+        *   [shadowBlur](canvas/set-shadow.html#canvascontextshadowblur)
+        *   [shadowColor](canvas/set-shadow.html#canvascontextshadowcolor)
+        *   [shadowOffsetX](canvas/set-shadow.html#canvascontextshadowoffsetx)
+        *   [shadowOffsetY](canvas/set-shadow.html#canvascontextshadowoffsety)
         *   [font](canvas/font.html)
-        *   <span>transform</span>
+        *   [transform](canvas/transform.html)
         *   [setTransform](canvas/set-transform.html)
     *   [下拉刷新](pulldown.html)
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
@@ -482,7 +482,7 @@
 
 登录[https://mp.weixin.qq.com](https://mp.weixin.qq.com) 获取模板，如果没有合适的模板，可以申请添加新模板，审核通过后可使用，详见[模板审核说明](#审核说明)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/mp-notice.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/mp-notice.png)
 
 步骤二：页面的 [`<form/>`](../component/form.html) 组件，属性`report-submit`为`true`时，可以声明为需发模板消息，此时点击按钮提交表单可以获取`formId`，用于发送模板消息。或者当用户完成[支付行为](api-pay.html)，可以获取`prepay_id`用于发送模板消息。
 
@@ -1301,7 +1301,7 @@
 
 **使用效果：**
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/notice.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/notice.png)
 
 ### 下发条件说明
 
@@ -1398,7 +1398,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

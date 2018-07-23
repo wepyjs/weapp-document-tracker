@@ -19,6 +19,7 @@
 *   [数据](javascript:;)
     *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
     *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -34,7 +35,7 @@
 
 <div class="top_sub_nav">
 
-<div class="top_title_wap"><span class="icon_title undefined"></span>
+<div class="top_title_wap"><span class="icon_title"></span>
 
 微信小程序数据分析
 
@@ -59,7 +60,7 @@
 
 <div class="book-summary">
 
-<div class="book-summary-home" id="js-summary-home"><a><span class="icon_home_s undefined"></span><span class="s_title_2">数据分析首页</span></a></div>
+<div class="book-summary-home" id="js-summary-home"><a><span class="icon_home_s"></span><span class="s_title_2">数据分析首页</span></a></div>
 
 <nav role="navigation">
 
@@ -100,25 +101,25 @@
 
 ## 昨日概况
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/2_1.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/2_1.png)
 
 查看昨日关键用户指标，反映小程序昨日用户活跃概况，以及对比一天前、一周前、一月前的增长率。
 
 ## 趋势概况
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/2_2.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/2_2.png)
 
 查看关键指标的趋势，包括累计访问用户数、打开次数、访问次数、访问人数、新访问用户数、分享次数、分享人数、人均停留时长、次均停留时长（参见【指标解释】），可选择时间进行对比。
 
 ## Top页面
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/2_3.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/2_3.png)
 
 查看用户最常访问的页面，以及页面访问次数和占比（单个页面访问次数/总访问次数），区分入口页和受访页。其中，入口页指用户进入小程序访问的第一个页面；受访页指用户访问的每一个页面。
 
 # 实时统计
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/3_1.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/3_1.png)
 
 查看实时用户访问数据，可以选择所有页面或单个页面为分析对象，可以选择具体的时间粒度（1分钟、5分钟、10分钟、30分钟、1小时），可以按时间进行对比。为了更好地查看数据趋势，时间粒度为分钟时，请注意合理选择时间范围。
 
@@ -128,7 +129,7 @@
 
 ## 访问趋势
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/4_1.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/4_1.png)
 
 查看小程序的用户访问趋势，包括打开次数、访问次数、访问人数、新用户数、人均访问时长、次均访问时长、平均访问深度。（参见【指标解释】）
 
@@ -136,7 +137,7 @@
 
 ## 访问分布
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/4_2.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/4_2.png)
 
 访问来源，即用户访问小程序的具体场景，如小程序历史列表、二维码等。你可以查看各个场景的小程序打开次数，分析小程序的用户渠道。
 
@@ -146,7 +147,7 @@
 
 ## 访问留存
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/4_4.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/4_4.png)
 
 查看选定时间范围内，小程序用户的访问留存情况。可以选择时间粒度，按天、周、月查看。当时间粒度为周或月时，人数去重。
 
@@ -156,7 +157,7 @@
 
 ## 访问页面
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/4_3.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/4_3.png)
 
 查看选定时间范围内，每个小程序页面的访问次数、访问人数、次均使用时长、入口页次数、退出页次数、退出率、分享次数、分享人数。（参见【指标解释】）
 
@@ -168,23 +169,23 @@
 
 ## 性别及年龄分布
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/6_1.png) 查看新增或活跃用户的性别及年龄分布，由于部分用户属性数据缺失，可能出现“未知”。
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/6_1.png) 查看新增或活跃用户的性别及年龄分布，由于部分用户属性数据缺失，可能出现“未知”。
 
 ## 地区分布
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/6_2.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/6_2.png)
 
 查看新增或活跃用户的主要省份分布，图表仅展示用户数最多的top10，可以在页面底部查看或下载完整数据进一步分析。由于部分用户属性数据缺失，可能出现“未知”。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/6_3.png) 查看新增或活跃用户的主要城市分布，支持筛选展示全国或单个省份下的城市数据，可以在页面底部查看或下载完整数据进一步分析。由于部分用户属性数据缺失，可能出现“未知”。
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/6_3.png) 查看新增或活跃用户的主要城市分布，支持筛选展示全国或单个省份下的城市数据，可以在页面底部查看或下载完整数据进一步分析。由于部分用户属性数据缺失，可能出现“未知”。
 
 ## 终端及机型分布
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/6_4.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/6_4.png)
 
 查看新增或活跃用户的终端及机型分布，其中终端包括iPhone、Android和其他，机型暂只提供用户数最多的top20。由于部分用户机型数据缺失，可能出现“未知”。
 
-详情数据表汇总以上年龄、性别、省份、城市、终端、机型数据，可以下载后进一步分析。 ![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/6_5.png)
+详情数据表汇总以上年龄、性别、省份、城市、终端、机型数据，可以下载后进一步分析。 ![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/6_5.png)
 
 </section>
 
@@ -215,7 +216,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
@@ -225,6 +226,6 @@
 
 </div>
 
-[](../#指标解释)[](./#概况)</div>
+[](../#指标解释)[](../custom/)</div>
 
 </div>

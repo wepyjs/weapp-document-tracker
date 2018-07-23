@@ -143,15 +143,37 @@
 
 <section class="normal markdown-section">
 
-## 最新版本下载地址 (1.02.1807200)
+## 最新版本下载地址 (1.02.1807120)
 
 [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
 
-### 2018.07.20
+### 2018.07.12 开发者工具更新
 
-1.  `F` 修复 1.02.1807120 带来的编译不生效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1453523220&docid=0004c87e6cc528e510179691150800&inwindow=1)
-2.  `F` 修复 界面调试样式覆盖规则计算错误的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a4ae7cec2581962e6c49e45bc00&token=940403363&lang=zh_CN)
-3.  `F` 修复 分包根目录名字后缀相同时报错的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1382542218&docid=0008e2c47f0f3018860775ff45c800)
+1.  `A` 新增 多帐号调试 [详情](multiaccount.html)
+2.  `A` 新增 iPad 及横屏调试
+3.  `A` 新增 素材管理支持 svg 文件
+4.  `A` 新增 编辑器全局搜索支持更多文本文件
+5.  `U` 优化 编辑器菜单采用原生菜单，避免被其他界面遮盖导致显示不全
+6.  `F` 修复 远程调试网络面板某些请求会有乱码的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=00062eac0849301f0ef6e04e456000&highline=network)
+7.  `F` 修复 自定义组件在 1.6.3 基础库开发者工具报错的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1271211997&docid=0006ee3b930f30600f0783b2756400)
+8.  `F` 修复 快速编译，快速弹出/收回模拟器导致开发者工具黑屏的问题
+9.  `F` 修复 断网后点击登录会出现开发者工具白屏的问题
+10.  `F` 修复 用户代码触发开发者工具上传的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=244138274&docid=000c6cc9da8930e5a5e6f02fe5b800)
+11.  `F` 修复 `wx.setBackgroundColor` 和 `wx.setBackgroundTextStyle` 在页面生命周期使用会报错的问题
+12.  `F` 修复 插件功能页 json 配置没有生效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1553985152&docid=00000874b98458b575f64f2235bc00)
+13.  `F` 修复 界面调试样式覆盖规则计算错误的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a4ae7cec2581962e6c49e45bc00&token=940403363&lang=zh_CN)
+14.  `F` 修复 `wx.createAudioInstance` src 是本地项目文件，动态设置 volume = 0 再设置回 1 后没有声音的问题
+15.  `F` 修复 小游戏分包加载时，分包大小只包含 JS 文件的问题
+16.  `F` 修复 小游戏使用分包时，2.1.0 以下基础库无法调试的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=0000c4809ac1b0e0930765bb256800&highline=%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%88%86%E5%8C%85)
+17.  `F` 修复 小游戏 `wx.createUserInfoButton` 无法使用本地图片的问题
+18.  `F` 修复 通过二维码编译的场景值不符合预期的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000406dedf83d84f89d67245c5d000)
+19.  `F` 修复 `wx.showToast` icon = 'none' 时无法穿透的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000e60e87f8de0448df60e66356000&token=1196209900&lang=zh_CN)
+20.  `F` 修复 自定义分析窗口无法再次打开的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=00062a02f68e40a996b65363951800&comment_lvl=3)
+21.  `F` 修复 分包根目录名字后缀相同时报错的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1382542218&docid=0008e2c47f0f3018860775ff45c800)
+
+### 上一版本下载地址 (1.02.1806120)
+
+[windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki&download_version=1021806120&version_type=1) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki&download_version=1021806120&version_type=1) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki&download_version=1021806120&version_type=1)
 
 ## 历史更新日志
 

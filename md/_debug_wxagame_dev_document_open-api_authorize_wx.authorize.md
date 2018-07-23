@@ -189,19 +189,9 @@
         *   [UploadTask](../../network/upload/UploadTask.html)
         *   [UploadTask.abort](../../network/upload/UploadTask.abort.html)
         *   [UploadTask.onProgressUpdate](../../network/upload/UploadTask.onProgressUpdate.html)
-*   [开放接口](../data/wx.getFriendCloudStorage.html)
-    *   [开放数据](../data/wx.getFriendCloudStorage.html)
-        *   [wx.getFriendCloudStorage](../data/wx.getFriendCloudStorage.html)
-        *   [wx.getUserCloudStorage](../data/wx.getUserCloudStorage.html)
-        *   [wx.getUserInfo](../data/wx.getUserInfo.html)
-        *   [wx.getGroupCloudStorage](../data/wx.getGroupCloudStorage.html)
-        *   [wx.getSharedCanvas](../data/wx.getSharedCanvas.html)
-        *   [wx.removeUserCloudStorage](../data/wx.removeUserCloudStorage.html)
-        *   [wx.setUserCloudStorage](../data/wx.setUserCloudStorage.html)
-        *   [KVData](../data/KVData.html)
-        *   [UserGameData](../data/UserGameData.html)
-        *   [removeUserStorage](../data/removeUserStorage.html)
-        *   [setUserStorage](../data/setUserStorage.html)
+*   [开放接口](../miniprogram-navigate/wx.navigateToMiniProgram.html)
+    *   [小程序跳转](../miniprogram-navigate/wx.navigateToMiniProgram.html)
+        *   [wx.navigateToMiniProgram](../miniprogram-navigate/wx.navigateToMiniProgram.html)
     *   [登录](../login/wx.checkSession.html)
         *   [wx.checkSession](../login/wx.checkSession.html)
         *   [wx.login](../login/wx.login.html)
@@ -228,6 +218,18 @@
         *   [OpenSettingButton.show](../setting/OpenSettingButton.show.html)
     *   [微信运动](../werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
+    *   [开放数据](../data/wx.getFriendCloudStorage.html)
+        *   [wx.getFriendCloudStorage](../data/wx.getFriendCloudStorage.html)
+        *   [wx.getUserCloudStorage](../data/wx.getUserCloudStorage.html)
+        *   [wx.getUserInfo](../data/wx.getUserInfo.html)
+        *   [wx.getGroupCloudStorage](../data/wx.getGroupCloudStorage.html)
+        *   [wx.getSharedCanvas](../data/wx.getSharedCanvas.html)
+        *   [wx.removeUserCloudStorage](../data/wx.removeUserCloudStorage.html)
+        *   [wx.setUserCloudStorage](../data/wx.setUserCloudStorage.html)
+        *   [KVData](../data/KVData.html)
+        *   [UserGameData](../data/UserGameData.html)
+        *   [removeUserStorage](../data/removeUserStorage.html)
+        *   [setUserStorage](../data/setUserStorage.html)
     *   [授权](wx.authorize.html)
         *   [wx.authorize](wx.authorize.html)
     *   [游戏圈](../game-club/wx.createGameClubButton.html)
@@ -606,6 +608,6 @@
 
 </div>
 
-[](../werun/wx.getWeRunData.html)[](../game-club/wx.createGameClubButton.html)</div>
+[](../data/setUserStorage.html)[](../game-club/wx.createGameClubButton.html)</div>
 
 </div>

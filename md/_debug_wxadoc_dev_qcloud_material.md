@@ -145,7 +145,7 @@
 
 ## 素材管理
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/material.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/material.png)
 
 素材管理将为你一键开通腾讯云的 "对象存储（COS）" 和 "内容分发网络（CDN）" 的产品功能：
 
@@ -192,18 +192,18 @@
 *   单击【腾讯云】，进入腾讯云工具页面，单击【开通】
 *   使用小程序绑定的微信扫码即可将小程序授权给腾讯云，开通之后会自动进去腾讯云微信小程序控制台，显示开发环境已开通，此时可以进行后续操作
 
-![进入微信公众平台后台](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/1.png)
+![进入微信公众平台后台](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/1.png)
 
-![开通腾讯云](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/2.png)
+![开通腾讯云](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/2.png)
 
 ### 二、前往腾讯云开通 素材管理 服务
 
 *   单击【腾讯云】logo 下方的 【后台管理】按钮，进入腾讯云管理界面
 *   进入小游戏服务页面 [https://console.cloud.tencent.com/lagame](https://console.cloud.tencent.com/lagame)，点击【开通服务】
 
-![单击后台管理按钮](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/enter.jpeg)
+![单击后台管理按钮](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/enter.jpeg)
 
-![开通素材管理服务](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/openmaterial.jpeg)
+![开通素材管理服务](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/openmaterial.jpeg)
 
 _注：小程序管理员在 mp 管理后台跳转到腾讯云管理界面后，浏览器中输入 [https://console.cloud.tencent.com/lagame](https://console.cloud.tencent.com/lagame) 跳转到开通页面_
 
@@ -236,7 +236,7 @@ _注：小程序管理员在 mp 管理后台跳转到腾讯云管理界面后，
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

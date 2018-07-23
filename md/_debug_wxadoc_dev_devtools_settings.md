@@ -156,7 +156,7 @@
 *   字号
 *   行距
 
-![appearance](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/setting_appearance.png)
+![appearance](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/setting_appearance.png)
 
 ### 编辑设置
 
@@ -172,19 +172,19 @@
 
 如果选中了 “总是在新标签页打开文件”，则在编辑器目录树点击文件时，总是会在一个新标签页中打开此文件，而非在临时标签页中打开。
 
-![edit](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/setting_edit.png)
+![edit](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/setting_edit.png)
 
 ### 代理设置
 
 可以配置不使用代理，或使用系统代理，或使用自定义代理。
 
-![proxy](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/setting_proxy.png)
+![proxy](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/setting_proxy.png)
 
 ### 通知设置
 
 可以设置是否接收系统消息、开发者社区消息、监控报警消息。
 
-![bbs](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/setting_notice.png)
+![bbs](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/setting_notice.png)
 
 </section>
 
@@ -215,7 +215,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

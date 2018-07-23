@@ -120,7 +120,7 @@
 
 绑定了开发者帐号的小游戏，可以通过下面3种途径获取UnionID。
 
-1.  调用接口[wx.getUserInfo](../../document/open-api/user-info/wx.getUserInfo.html)，从解密数据中获取 UnionID。注意本接口需要用户授权，请开发者妥善处理用户拒绝授权后的情况。
+1.  调用接口[wx.getUserInfo](../../document/open-api/data/wx.getUserInfo.html)，从解密数据中获取 UnionID。注意本接口需要用户授权，请开发者妥善处理用户拒绝授权后的情况。
 
 2.  如果开发者帐号下存在**同主体的**公众号，并且该用户已经关注了该公众号。开发者可以直接通过[wx.login](../../document/open-api/login/wx.login.html)获取到该用户UnionID，无须用户再次授权。
 

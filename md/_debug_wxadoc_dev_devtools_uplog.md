@@ -147,12 +147,6 @@
 
 [查看基础库更新日志](../framework/release.html)
 
-### 2018.07.20
-
-1.  `F` 修复 1.02.1807120 带来的编译不生效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1453523220&docid=0004c87e6cc528e510179691150800&inwindow=1)
-2.  `F` 修复 界面调试样式覆盖规则计算错误的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a4ae7cec2581962e6c49e45bc00&token=940403363&lang=zh_CN)
-3.  `F` 修复 分包根目录名字后缀相同时报错的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1382542218&docid=0008e2c47f0f3018860775ff45c800)
-
 ### 2018.07.12
 
 1.  `A` 新增 多帐号调试 [详情](multiaccount.html)

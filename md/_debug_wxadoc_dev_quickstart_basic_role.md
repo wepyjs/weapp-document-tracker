@@ -92,7 +92,6 @@
         *   [发布](release.html#发布)
         *   [运营数据](release.html#运营数据)
 *   [体验小程序](../../demo.html)
-*   [更新日志](../../devtools/new.html)
 
 </nav>
 
@@ -122,7 +121,7 @@
 
 管理入口位于：[小程序管理后台](https://mp.weixin.qq.com) - 用户身份 – 成员管理
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/quickstart/role.jpg)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/quickstart/role.jpg)
 
 <table>
 
@@ -264,7 +263,7 @@
 
 可以使用小程序开发者助手方便快捷的预览和体验线上版本，体验版本以及开发版本。
 
-![mydev](https://mp.weixin.qq.com/debug/wxadoc/dev/image/quickstart/mydev.jpg)
+![mydev](https://developers.weixin.qq.com/miniprogram/dev/image/quickstart/mydev.jpg)
 
 在[下个章节](release.html)，我们来看看如何发布一个小程序，让你的成果被所有的微信用户所使用到。
 
@@ -297,7 +296,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

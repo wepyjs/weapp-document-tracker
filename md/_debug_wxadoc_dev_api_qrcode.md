@@ -320,12 +320,12 @@
         *   [strokeText](canvas/stroke-text.html)
         *   [lineDashOffset](canvas/line-dash-offset.html)
         *   [createPattern](canvas/create-pattern.html)
-        *   <span>shadowBlur</span>
-        *   <span>shadowColor</span>
-        *   <span>shadowOffsetX</span>
-        *   <span>shadowOffsetY</span>
+        *   [shadowBlur](canvas/set-shadow.html#canvascontextshadowblur)
+        *   [shadowColor](canvas/set-shadow.html#canvascontextshadowcolor)
+        *   [shadowOffsetX](canvas/set-shadow.html#canvascontextshadowoffsetx)
+        *   [shadowOffsetY](canvas/set-shadow.html#canvascontextshadowoffsety)
         *   [font](canvas/font.html)
-        *   <span>transform</span>
+        *   [transform](canvas/transform.html)
         *   [setTransform](canvas/set-transform.html)
     *   [下拉刷新](pulldown.html)
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
@@ -467,11 +467,11 @@
 
 通过后台接口可以获取小程序任意页面的二维码，扫描该二维码可以直接进入小程序对应的页面。目前微信支持两种二维码，小程序码（左），小程序二维码（右），如下所示：
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qrcode/qrcode.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/qrcode/qrcode.png)
 
 可以使用开发工具 1.02.1803130 及以后版本通过二维码编译功能调试所获得的二维码
 
-## ![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/qrcodecompile.png)
+## ![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/qrcodecompile.png)
 
 为满足不同需求和场景，这里提供了三个接口，开发者可挑选适合自己的接口。 A接口，生成小程序码，可接受path参数较长，生成个数受限。 B接口，生成小程序码，可接受页面参数较短，生成个数不受限。 C接口，生成二维码，可接受path参数较长，生成个数受限。
 
@@ -798,7 +798,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

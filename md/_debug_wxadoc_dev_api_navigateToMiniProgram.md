@@ -320,12 +320,12 @@
         *   [strokeText](canvas/stroke-text.html)
         *   [lineDashOffset](canvas/line-dash-offset.html)
         *   [createPattern](canvas/create-pattern.html)
-        *   <span>shadowBlur</span>
-        *   <span>shadowColor</span>
-        *   <span>shadowOffsetX</span>
-        *   <span>shadowOffsetY</span>
+        *   [shadowBlur](canvas/set-shadow.html#canvascontextshadowblur)
+        *   [shadowColor](canvas/set-shadow.html#canvascontextshadowcolor)
+        *   [shadowOffsetX](canvas/set-shadow.html#canvascontextshadowoffsetx)
+        *   [shadowOffsetY](canvas/set-shadow.html#canvascontextshadowoffsety)
         *   [font](canvas/font.html)
-        *   <span>transform</span>
+        *   [transform](canvas/transform.html)
         *   [setTransform](canvas/set-transform.html)
     *   [下拉刷新](pulldown.html)
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
@@ -633,7 +633,7 @@
 
 1.  `tip`: 在开发者工具上调用此 API 并不会真实的跳转到另外的小程序，但是开发者工具会校验本次调用跳转是否成功[详情](../devtools/different.html#小程序跳转的调试支持)
 2.  `tip`: 开发者工具上支持被跳转的小程序处理接收参数的调试[详情](../devtools/different.html#小程序跳转的调试支持)
-3.  `tip`: 只有同一公众号下的关联的小程序之间才可相互跳转 [详情](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html#%E5%85%AC%E4%BC%97%E5%8F%B7%E5%85%B3%E8%81%94%E5%B0%8F%E7%A8%8B%E5%BA%8F)
+3.  `tip`: 只有同一公众号下的关联的小程序之间才可相互跳转 [详情](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html#&)
 
 </section>
 
@@ -664,7 +664,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

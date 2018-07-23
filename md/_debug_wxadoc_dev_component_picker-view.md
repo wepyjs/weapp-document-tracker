@@ -286,7 +286,7 @@
       }
     })
 
-![picker_view](https://mp.weixin.qq.com/debug/wxadoc/dev/image/picker_view.png)
+![picker_view](https://developers.weixin.qq.com/miniprogram/dev/image/picker_view.png)
 
 #### Tips
 
@@ -321,7 +321,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

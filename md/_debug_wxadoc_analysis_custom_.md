@@ -19,6 +19,7 @@
 *   [数据](javascript:;)
     *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
     *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -34,7 +35,7 @@
 
 <div class="top_sub_nav">
 
-<div class="top_title_wap"><span class="icon_title undefined"></span>
+<div class="top_title_wap"><span class="icon_title"></span>
 
 微信小程序数据分析
 
@@ -59,7 +60,7 @@
 
 <div class="book-summary">
 
-<div class="book-summary-home" id="js-summary-home"><a><span class="icon_home_s undefined"></span><span class="s_title_2">数据分析首页</span></a></div>
+<div class="book-summary-home" id="js-summary-home"><a><span class="icon_home_s"></span><span class="s_title_2">数据分析首页</span></a></div>
 
 <nav role="navigation">
 
@@ -139,15 +140,15 @@
 
 登录[https://mp.weixin.qq.com](https://mp.weixin.qq.com/) ，进入“数据分析” – “自定义分析” - “事件管理”，点击 “新建事件”。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_1.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_1.png)
 
 以加入购物车事件为例，填写事件英文和中文名称：
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_2.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_2.png)
 
 填写事件配置，定义如何收集数据：
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_3.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_3.png)
 
 这个例子中，用一个动作上报“加入购物车”事件。
 
@@ -185,31 +186,31 @@
 
 确定配置后，点击“检查字段”。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_4.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_4.png)
 
 此时会提示add_to_cart事件包含的具体字段，继续补充字段的名称、数据类型和备注信息。
 
 ### 测试和发布
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_5.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_5.png)
 
 确认字段信息后，点击“保存并测试”，保存当前配置并测试上报的数据是否符合预期。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_6.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_6.png)
 
 选择一个开发者，点击“下一步”，事件配置将会实时同步到所选开发者的设备上。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_7.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_7.png)
 
 配置成功同步到设备上后，按提示在开发者的设备上打开对应小程序中进行测试操作，点击商品详情页中的“加入购物车”按钮，进行数据上报。操作完成后点击“同步结果”，可能有1-2分钟延迟。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_8.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_8.png)
 
 数据上报成功后，可在当前窗口查看上报详情。如果数据符合预期，认为测试成功，点击“关闭”回到事件编辑页面。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_9.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_9.png)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_10.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_10.png)
 
 点击“保存并发布”并确认操作，该事件配置正式生效，大概5分钟后，即可开始收集所有用户的数据。注意：发布后，事件已有字段的名称和数据类型不可更改，但可继续修改配置、新增字段。
 
@@ -223,9 +224,9 @@
 
 进入“数据分析” – “自定义分析” – “事件分析”
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_11.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_11.png)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_12.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_12.png)
 
 **事件：**选择“下单”；
 
@@ -239,11 +240,11 @@
 
 完成后点击“查询”。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_13.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_13.png)
 
 数据开始计算，根据数据量大小不同，可能有一定的等待时间。你可以点击“收进后台”，在当前页面进行新的查询，也可以在历史查询记录中查看之前的数据。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_14.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_14.png)
 
 统计完成后，当前页面将展示各个城市的下单总次数、总人数。由于分组项太多，图表仅展示部分数据，你可以设置“显示其他数据”来选择希望查看的城市和指标；详细数据将会显示全部城市的数据，可以查看或下载。
 
@@ -251,25 +252,25 @@
 
 进入“数据分析” – “自定义分析” – “漏斗分析”
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_15.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_15.png)
 
 首次进入时，点击“新建漏斗”创建漏斗。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_16.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_16.png)
 
 填写漏斗名称，确认一个简洁清晰的名称，有利于对应分析。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_17.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_17.png)
 
 设置漏斗步骤，每个步骤对应一个事件，本漏斗中设置步骤是查看商品-查看详情-加入购物车-下单-支付。每个步骤确认后点击右下角“添加步骤”继续添加下一个步骤。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_18.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_18.png)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_19.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_19.png)
 
 完成后回到数据查询页，设置查询条件。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_20.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_20.png)
 
 **漏斗名称：**选择已创建的“购买转化漏斗”；
 
@@ -281,7 +282,7 @@
 
 点击查询，查看数据结果。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_21.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_21.png)
 
 图表显示，12.22-12.31内，查看商品的人数共985人。这些用户到后面每个步骤的转化率依次为93.50%，84.04%，74.68%，65.92%.详情数据会展示了每个步骤的具体数据，可以下载查看。
 
@@ -305,13 +306,13 @@
 
 目前，字段类型支持32位整数型及字符型。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_22.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_22.png)
 
 ### 事件的编辑与发布
 
 可以通过新增事件创建一个事件，修改事件来编辑一个事件，事件只有**发布**之后，才在收集和分析数据时正式生效。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_23.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_23.png)
 
 **“新增事件”**可以增加新的事件。
 
@@ -325,27 +326,27 @@
 
 或者点击“新建事件”创建事件。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_24.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_24.png)
 
 新增事件时，需要填写事件的英文名称和中文名称。
 
 英文名称可由小写字母、下划线、数字组成，并以小写字母开头，长度为32字以内，并且不能跟已有的事件的英文名称相同；中文名称在32字符以内，不能跟已有的事件的中文名称相同。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_25.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_25.png)
 
-编辑事件，首先需要编辑这个事件的配置，即如何收集数据，配置的具体细节见[事件上报配置说明](https://mp.weixin.qq.com/debug/wxadoc/analysis/custom/#%E4%BA%8B%E4%BB%B6%E4%B8%8A%E6%8A%A5%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E)
+编辑事件，首先需要编辑这个事件的配置，即如何收集数据，配置的具体细节见[事件上报配置说明](https://mp.weixin.qq.com/debug/wxadoc/analysis/custom/#&)
 
 如图，表示在view_product事件中，将使用product_id, product_name, product_price, product_category, product_producer这些字段，收集页面上的信息，如果这些字段之前没有被view_product事件使用过，那么将添加到事件里。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_26.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_26.png)
 
 编辑事件配置后，点击“检查字段”，会检查上报的配置里指定了哪些字段，是否需要添加到事件里。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_27.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_27.png)
 
 如图，这个例子中五个字段对于事件来说还未发布使用过，都是新增字段。其中，product_category，product_id,product_name, product_price 在其他事件里定义过了，其类型和含义都是确定的（如前面所说，字段的定义是全局的），而product_producer没有定义过，需要补充信息。
 
-详细说明参见[事件字段说明](https://mp.weixin.qq.com/debug/wxadoc/analysis/custom/#%E4%BA%8B%E4%BB%B6%E5%AD%97%E6%AE%B5%E8%AF%B4%E6%98%8E)
+详细说明参见[事件字段说明](https://mp.weixin.qq.com/debug/wxadoc/analysis/custom/#&)
 
 补充字段定义后，可以点击**“保存”**，将本次修改保存下来。
 
@@ -355,7 +356,7 @@
 
 #### 重置为线上版本
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_28.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_28.png)
 
 修改事件配置后，如果不符合实际需求，可以点击“重置为线上版本”撤销修改。
 
@@ -373,7 +374,7 @@
 
 事件上报配置的每一项都是一个动作，可以由一到多个动作组成。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_29.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_29.png)
 
 动作的各项含义如下：
 
@@ -464,15 +465,15 @@
 
 在viewList页面点击viewProduct按钮时上报
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_30.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_30.png)
 
-如果数据需要跨多个页面收集，那么就需要多个动作来完成上报了，比如下面的例子，在viewList页面收集到product_id, product_name, product_category的数据，然后进入viewProduct页面时收集到product_price的数据，并上报。 ![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_31.png)
+如果数据需要跨多个页面收集，那么就需要多个动作来完成上报了，比如下面的例子，在viewList页面收集到product_id, product_name, product_category的数据，然后进入viewProduct页面时收集到product_price的数据，并上报。 ![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_31.png)
 
 在viewList页面和viewDetail页面，都有加入购物车按钮.addToCart，都需要上报数据到“加入购物车”事件，例子如下：
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_32.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_32.png)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_33.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_33.png)
 
 #### 使用API进行上报
 
@@ -480,11 +481,11 @@
 
 在事件修改页面选择”API上报“
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_69.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_69.png)
 
 根据需要增加字段。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_70.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_70.png)
 
 确认无误后，即可保存进行下一步操作。
 
@@ -492,11 +493,11 @@
 
 点击"生成代码"生成API上报示例代码。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_71.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_71.png)
 
 生成的代码，整数型字段默认为0，字符型字段默认为""，按需要修改即可。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_72.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_72.png)
 
 **Tips**
 
@@ -511,7 +512,7 @@
 
 **“已有字段”**表示是事件已发布版已经有的字段。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_34.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_34.png)
 
 对于已有字段，只能修改字段备注，在发布后将会正式生效。
 
@@ -521,7 +522,7 @@
 
 **1\. 新增字段在其他事件中已定义过**
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_35.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_35.png)
 
 product_price是新增字段，但已在其他事件中定义过。检查字段后会提示：字段已被定义，应保持一致，不可修改。
 
@@ -529,17 +530,17 @@ product_price是新增字段，但已在其他事件中定义过。检查字段�
 
 如下图，如果修改了事件配置时，将事件配置data里已有的一个字段删去：
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_36.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_36.png)
 
 检查字段时会提示：该字段在当前配置中未使用。这代表product_name不再收集数据。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_37.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_37.png)
 
 **3\. 已停用字段重新使用**
 
 如果重新在事件配置中的data加入之前已移除的product_name字段，那么会继续使用product_name收集数据。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_38.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_38.png)
 
 检查字段后会提示：该字段已定义过，在当前配置中重新使用，请注意数据一致性。这代表product_name将重新开始收集数据。
 
@@ -557,19 +558,19 @@ product_price是新增字段，但已在其他事件中定义过。检查字段�
 
 ### 测试事件配置
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_39.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_39.png)
 
 确认字段信息后，点击“保存并测试”，保存当前配置并测试上报的数据是否符合预期。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_40.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_40.png)
 
 选择一个开发者，点击“下一步”，事件配置将会实时同步到所选开发者的设备上。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_41.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_41.png)
 
 配置成功同步到设备上后，按提示在开发者的设备上打开对应小程序中进行测试操作，点击商品详情页中的“加入购物车”按钮，进行数据上报。操作完成后点击“同步结果”，可能有1-2分钟延迟。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_42.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_42.png)
 
 如果未获取到数据，请检查客户端版本是否为 6.5.4 以上，操作是否正确，以及是否已超过等待时间（通常为1-2分钟），客户端是否有上报日志，确认没问题可重新“同步结果”。
 
@@ -587,13 +588,13 @@ product_price是新增字段，但已在其他事件中定义过。检查字段�
 
 > [自定义分析] 上报成功
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_43.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_43.png)
 
 数据上报成功后，可在当前窗口查看上报详情。如果数据符合预期，认为测试成功，点击“关闭”回到事件编辑页面。
 
 ### 发布事件配置
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_44.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_44.png)
 
 点击“保存并发布”并确认操作，该事件配置正式生效，大概5-10分钟后，即可开始收集所有用户的数据。注意：发布后，事件已有字段的名称和数据类型不可更改，但可继续修改配置、新增字段。
 
@@ -613,17 +614,17 @@ product_price是新增字段，但已在其他事件中定义过。检查字段�
 
 #### 选择事件
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_45.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_45.png)
 
 在事件下拉列表中，将展示出所有已经在事件管理中创建的事件，每次事件分析只能选择一个事件。
 
 #### 选择指标
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_46.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_46.png)
 
 在指标下拉列表中，选择需要分析的默认或自定义指标。每次分析最多可以选择5个指标，并且不能重复。你可以通过右侧的“+”添加指标。其中：
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_47.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_47.png)
 
 每个事件都可以统计如下指标，可以直接选择：
 
@@ -633,7 +634,7 @@ product_price是新增字段，但已在其他事件中定义过。检查字段�
 > 
 > 人均次数：每个用户触发该事件次数的平均值，即总次数/去重人数
 
-也可以基于事件管理中的自定义属性字段，选择想要分析的其他指标。你需要从下拉列表中分别选择属性字段和需要计算的指标。 ![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_48.png)
+也可以基于事件管理中的自定义属性字段，选择想要分析的其他指标。你需要从下拉列表中分别选择属性字段和需要计算的指标。 ![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_48.png)
 
 对于不同数据类型的字段，有对应不同的指标可供选择。具体的对应关系如下：
 
@@ -677,7 +678,7 @@ product_price是新增字段，但已在其他事件中定义过。检查字段�
 
 #### 选择分组
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_49.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_49.png)
 
 在分组下拉列表中，可以选择查看数据的分组维度，包括系统默认属性和自定义属性。每次分析最多可以选择5个分组，并且不能重复。你可以通过右侧的“+”添加分组。
 
@@ -687,7 +688,7 @@ product_price是新增字段，但已在其他事件中定义过。检查字段�
 
 #### 设置过滤条件
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_50.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_50.png)
 
 分析时，可以选择或输入你想要过滤的条件。每次分析最多可以选择5个过滤条件。所有条件之间的关系必须全部为“并且”，或全部为“或者”，前者表示满足所有条件，后者表示满足至少一项条件。当切换其中一处的关系时，所有其他关系也会随之切换。你可以通过下方的“+”添加过滤条件。
 
@@ -741,51 +742,51 @@ product_price是新增字段，但已在其他事件中定义过。检查字段�
 
 #### 选择时间范围
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_51.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_51.png)
 
 选择查询分析的时间范围，支持今天、昨天、最近7天以及自定义时间范围。当天的数据也可以及时查看。
 
 #### 选择时间粒度
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_52.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_52.png)
 
 可以选择查询数据的时间粒度，包括按小时、按天，按总体。选择总体时，将展示所选时间范围内的汇总数据。
 
 ### 查看事件分析结果
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_53.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_53.png)
 
 数据计算可能需要一定时间，你可以选择在当前页面等待，或点击“历史查询记录”查看之前的数据，或点击“收进后台”，开始新的查询。
 
 #### 查看图表
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_54.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_54.png)
 
 当查询条件过于复杂，指标和分组过多时，图表默认展示数值最大的10个分组和指标。可以点击图例，选择是否显示该分组和指标。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_55.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_55.png)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_56.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_56.png)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_57.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_57.png)
 
 如果默认数据中没有希望查看的数据，可以通过“显示其他数据”，来选择你希望查看的分组和指标，并进行对比。最多可选择10项。
 
 #### 查看详情
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_58.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_58.png)
 
 详细数据将分页展示所有分组和指标的详情。其中，第一列为时间，其他列分别为分组、指标。可以下载数据结果，以便进行进一步分析。
 
 ### 查看事件分析记录
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_59.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_59.png)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_60.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_60.png)
 
 在数据查询页，或查询等待过程中，你可以进入历史查询记录页查看已进行过的数据查询。所有历史查询记录默认保存一段时间。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_61.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_61.png)
 
 **查询名称：**显示查询的事件名和指标名；
 
@@ -823,13 +824,13 @@ product_price是新增字段，但已在其他事件中定义过。检查字段�
 
 #### 漏斗步骤
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_62.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_62.png)
 
 创建漏斗时，每一步对应一个事件，在一个漏斗中，一个事件只能出现一次。
 
 #### 过滤条件
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_63.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_63.png)
 
 在漏斗的每一个事件中，可以针对事件本身的自定义字段设置过滤条件。这里提供的过滤规则与事件分析中的设置过滤条件规则相同。例如，希望分析A类商品的购买转化数据，可以设置过滤条件“商品种类为A”。
 
@@ -837,19 +838,19 @@ product_price是新增字段，但已在其他事件中定义过。检查字段�
 
 #### 选择漏斗
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_64.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_64.png)
 
 在漏斗名称下拉列表中，选择想要分析的漏斗。每次分析只能选择一个漏斗。
 
 #### 选择分组
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_65.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_65.png)
 
 在分组下拉列表中，将展示出所有我们内部定义的属性，选择想要分析的分组属性。每次分析最多只能选择1个分组。不选时，将统计总体数据。
 
 #### 设置过滤条件
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_66.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_66.png)
 
 分析时，可以选择或输入你想要过滤的条件。每次分析最多可以选择5个过滤条件。所有条件之间的关系必须全部为“并且”，或全部为“或者”，前者表示满足所有条件，后者表示满足至少一项条件。当切换其中一处的关系时，所有其他关系也会随之切换。你可以通过下方的“+”添加过滤条件。
 
@@ -857,7 +858,7 @@ product_price是新增字段，但已在其他事件中定义过。检查字段�
 
 #### 选择时间范围
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_67.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_67.png)
 
 选择查询分析的时间范围，支持今天、昨天、最近7天以及自定义时间范围。当天的数据也可以及时查看。
 
@@ -887,7 +888,7 @@ product_price是新增字段，但已在其他事件中定义过。检查字段�
 
 #### 查看图表
 
-![](https://mp.weixin.qq.com/debug/wxadoc/analysis/image/weanalytics/5_68.png)
+![](https://developers.weixin.qq.com/miniprogram/analysis/image/weanalytics/5_68.png)
 
 图表将展示漏斗中每个步骤的总人数，及相对前一个步骤的转化率。
 
@@ -924,7 +925,7 @@ product_price是新增字段，但已在其他事件中定义过。检查字段�
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
@@ -934,6 +935,6 @@ product_price是新增字段，但已在其他事件中定义过。检查字段�
 
 </div>
 
-[](../regular/#终端及机型分布)[](./#快速入门)</div>
+[](../regular/#终端及机型分布)[](../assistant/)</div>
 
 </div>

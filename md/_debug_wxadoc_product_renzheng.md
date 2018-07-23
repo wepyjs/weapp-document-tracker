@@ -108,21 +108,21 @@
 
 入口一：“设置->基本信息->微信认证”点击“详情”进入。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/product/image/a.png)
+![](https://developers.weixin.qq.com/miniprogram/product/image/a.png)
 
 入口二：小程序发布流程页（政府、媒体、其他组织类帐号）
 
-![](https://mp.weixin.qq.com/debug/wxadoc/product/image/c.png)
+![](https://developers.weixin.qq.com/miniprogram/product/image/c.png)
 
 ## 二、申请微信认证操作流程
 
 1.  签署《微信公众平台认证服务协议》，勾选同意，点击下一步。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/product/image/d.png)
+![](https://developers.weixin.qq.com/miniprogram/product/image/d.png)
 
 1.  填写资料：选择认证主体类型，提交相应的认证材料。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/product/image/e.png)
+![](https://developers.weixin.qq.com/miniprogram/product/image/e.png)
 
 选择完类型后进入填写认证资料页面，各类型需要提交的资质材料包括但不限于：　
 
@@ -144,7 +144,7 @@
 
     用户可选择开具普通发票（定额发票）、增值税专用发票。其中增值税专用发票还需提交《税务登记证》（办理三证合一的企业直接上传新的营业执照）、《银行开户证明》，审核公司会对资质进行审核。资质审核通过后由腾讯公司开具并寄送发票。
 
-    ![](https://mp.weixin.qq.com/debug/wxadoc/product/image/g.png)
+    ![](https://developers.weixin.qq.com/miniprogram/product/image/g.png)
 
     ​
 
@@ -154,7 +154,7 @@
 
     微信支付过程如下：
 
-    ![](https://mp.weixin.qq.com/debug/wxadoc/product/image/h.png)
+    ![](https://developers.weixin.qq.com/miniprogram/product/image/h.png)
 
     ​
 
@@ -343,7 +343,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
@@ -353,6 +353,6 @@
 
 </div>
 
-[](service.html#七、【其它】)[](renzheng.html#一、申请微信认证入口)</div>
+[](service.html#七、【其它】)[](material.html)</div>
 
 </div>

@@ -8,13 +8,18 @@
 
 <div class="header_ctrls">
 
-*   [介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [介绍](javascript:;)
+    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
 *   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 *   [开发](javascript:;)
     *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
     *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
 *   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
-*   [数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+*   [数据](javascript:;)
+    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
+    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -104,7 +109,7 @@
 
 2、已使用过的小程序客服消息会聚合显示在微信会话“小程序客服消息”内，用户可以在小程序外查看历史客服消息，并给小程序客服发消息。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/x11.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/x11.png)
 
 客服消息下发条件：小程序用户在小程序内唤起客服会话或用户给小程序客服发送消息，具体下发时间有效期及消息条数限制见客服消息[下发条件说明](#下发条件说明)
 
@@ -162,13 +167,13 @@
 
 登录小程序，在“设置-开发设置-消息推送”启用消息推送功能并完成相关信息配置（包括服务器地址、Token、及加密方式等）。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/c1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/c1.png)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/b1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/b1.png)
 
 启用并设置服务器配置后，用户发送的消息以及开发者需要的事件推送，都将被微信转发至开发者URL中。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/d1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/d1.png)
 
 ### 接口调用
 
@@ -188,7 +193,7 @@
 
 使用网页版客服工具前，小程序管理员需在小程序后台完成客服人员的绑定。目前小程序支持绑定不多于100个客服人员。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/a1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/a1.png)
 
 ### 客服工具使用说明
 
@@ -196,13 +201,13 @@
 
 已被绑定的小程序客服人员可扫码登录[微信公众平台网页版客服工具](https://mpkf.weixin.qq.com)，并选择对应的小程序帐号，登录后即可看到与小程序对话的用户，可选择接入对话。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/i1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/i1.png)
 
 #### 切换客服状态
 
 点击在线状态，可以选择在线状态、离开状态或退出登录
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/f1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/f1.png)
 
 #### 接收消息
 
@@ -212,13 +217,13 @@
 
 重新接入：退出登录，或对话超过半小时，需要重新接入，激活对话
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/m1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/m1.png)
 
 #### 发送消息
 
 已经接入的会话，客服人员可以在48小时内和用户进行对话，目前支持发送文本、图片类型的消息。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/h1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/h1.png)
 
 ## 使用规范
 
@@ -258,7 +263,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

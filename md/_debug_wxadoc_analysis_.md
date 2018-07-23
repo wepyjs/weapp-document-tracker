@@ -19,6 +19,7 @@
 *   [数据](javascript:;)
     *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
     *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+*   [社区](https://developers.weixin.qq.com/)
 
 </div>
 
@@ -34,7 +35,7 @@
 
 <div class="top_sub_nav">
 
-<div class="top_title_wap"><span class="icon_title undefined"></span>
+<div class="top_title_wap"><span class="icon_title"></span>
 
 微信小程序数据分析
 
@@ -59,7 +60,7 @@
 
 <div class="book-summary">
 
-<div class="book-summary-home" id="js-summary-home"><a><span class="icon_home_s undefined"></span><span class="s_title_2">数据分析首页</span></a></div>
+<div class="book-summary-home" id="js-summary-home"><a><span class="icon_home_s"></span><span class="s_title_2">数据分析首页</span></a></div>
 
 <nav role="navigation">
 
@@ -192,7 +193,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
@@ -202,6 +203,6 @@
 
 </div>
 
-[](./#功能概述)</div>
+[](regular/)</div>
 
 </div>

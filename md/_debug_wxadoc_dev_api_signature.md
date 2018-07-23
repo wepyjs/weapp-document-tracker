@@ -320,12 +320,12 @@
         *   [strokeText](canvas/stroke-text.html)
         *   [lineDashOffset](canvas/line-dash-offset.html)
         *   [createPattern](canvas/create-pattern.html)
-        *   <span>shadowBlur</span>
-        *   <span>shadowColor</span>
-        *   <span>shadowOffsetX</span>
-        *   <span>shadowOffsetY</span>
+        *   [shadowBlur](canvas/set-shadow.html#canvascontextshadowblur)
+        *   [shadowColor](canvas/set-shadow.html#canvascontextshadowcolor)
+        *   [shadowOffsetX](canvas/set-shadow.html#canvascontextshadowoffsetx)
+        *   [shadowOffsetY](canvas/set-shadow.html#canvascontextshadowoffsety)
         *   [font](canvas/font.html)
-        *   <span>transform</span>
+        *   [transform](canvas/transform.html)
         *   [setTransform](canvas/set-transform.html)
     *   [下拉刷新](pulldown.html)
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
@@ -467,7 +467,7 @@
 
 小程序可以通过各种前端接口获取微信提供的开放数据。 考虑到开发者服务器也需要获取这些开放数据，微信会对这些数据做签名和加密处理。 开发者后台拿到开放数据后可以对数据进行校验签名和解密，来保证数据不被篡改。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/signature.jpg)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/signature.jpg)
 
 签名校验以及数据加解密涉及用户的会话密钥session_key。 开发者应该事先通过 [wx.login](api-login.html) 登录流程获取会话密钥 session_key 并保存在服务器。为了数据不被篡改，开发者不应该把session_key传到小程序客户端等服务器外的环境。
 
@@ -704,7 +704,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

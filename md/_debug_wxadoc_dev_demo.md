@@ -92,7 +92,6 @@
         *   [发布](quickstart/basic/release.html#发布)
         *   [运营数据](quickstart/basic/release.html#运营数据)
 *   [体验小程序](demo.html)
-*   [更新日志](devtools/new.html)
 
 </nav>
 
@@ -114,9 +113,9 @@
 
 下载微信客户端版本号：6.3.27 及以上 [下载源码 版本20170111](demo/demo.zip)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/demo.jpg)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/demo.jpg)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/demo.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/demo.png)
 
 </section>
 
@@ -147,7 +146,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
@@ -157,6 +156,6 @@
 
 </div>
 
-[](quickstart/basic/release.html#运营数据)[](devtools/new.html)</div>
+[](quickstart/basic/release.html#运营数据)[](framework/MINA.html)</div>
 
 </div>

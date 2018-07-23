@@ -114,7 +114,7 @@
 
 ## 二维码跳转规则
 
-注意：从2017年5月开始，微信客户端支持二维码规则根据“子路径匹配”。如原有现在二维码链接为 `http://www.qq.com/a/123456` ,其中12345为业务参数，则可配置规则 `http://www.qq.com/a/` 实现扫码打开小程序。
+注意：从2017年5月开始，微信客户端支持二维码规则根据“子路径匹配”。如原有二维码链接为 `http://www.qq.com/a/123456` ，其中12345为业务参数，则可配置规则 `http://www.qq.com/a/` 实现扫码打开小程序。
 
 微信客户端扫码将按以下匹配规则控制跳转：
 
@@ -206,9 +206,9 @@
 
 登录小程序后台，进入“设置-开发设置-扫普通链接二维码打开小程序”，开启功能后即可配置二维码规则。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qrcode0.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode0.png)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qrcode1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode1.png)
 
 ### 二维码规则
 
@@ -228,7 +228,7 @@
 
 如：若开发者A配置二维码规则：[https://wx.qq.com/mp?id=123，并选择“占用所有子规则“，其他开发者将不可以配置满足前缀匹配的子规则如https://wx.qq.com/mp?id=1234。](https://wx.qq.com/mp?id=123，并选择“占用所有子规则“，其他开发者将不可以配置满足前缀匹配的子规则如https://wx.qq.com/mp?id=1234。)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qrcode5.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode5.png)
 
 如提示“此规则已被占用”，请联系对应小程序开发者沟通解决。
 
@@ -238,7 +238,7 @@
 
 验证文件放置规则： 放置于URL中声明的最后一级子目录下，若无子目录，则放置于host所属服务器的顶层目录下。请根据页面提示将验证文件放置在指定的目录下。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qrcode3.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode3.png)
 
 ### 小程序功能页面
 
@@ -254,7 +254,7 @@
 
 开发者可根据开发进度选择在开发板/体验版/线上版本测试“普通二维码跳转小程序”的功能。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qrcode7.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode7.png)
 
 #### 测试链接
 
@@ -266,7 +266,7 @@
 
 测试完成后开发者可将二维码跳转规则发布现网，发布后扫描所有符合匹配规则的二维码，将跳转至指定的小程序页面。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/qrcode4.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode4.png)
 
 为确保用户体验，小程序必须先发布代码才可以发布二维码跳转规则。
 
@@ -301,7 +301,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
@@ -311,6 +311,6 @@
 
 </div>
 
-[](custom.html#发送消息)[](qrcode.html#功能介绍)</div>
+[](custom.html#发送消息)[](plugin.html)</div>
 
 </div>

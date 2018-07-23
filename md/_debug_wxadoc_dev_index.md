@@ -92,7 +92,6 @@
         *   [发布](quickstart/basic/release.html#发布)
         *   [运营数据](quickstart/basic/release.html#运营数据)
 *   [体验小程序](demo.html)
-*   [更新日志](devtools/new.html)
 
 </nav>
 
@@ -120,13 +119,13 @@
 
 点击 [https://mp.weixin.qq.com/wxopen/waregister?action=step1](https://mp.weixin.qq.com/wxopen/waregister?action=step1) 根据指引填写信息和提交相应的资料，就可以拥有自己的小程序帐号。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/quickstart/basic/register.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/quickstart/basic/register.png)
 
 在这个小程序管理平台，你可以管理你的小程序的权限，查看数据报表，发布小程序等操作。
 
 登录 [https://mp.weixin.qq.com](https://mp.weixin.qq.com) ，我们可以在菜单 “设置”-“开发设置” 看到小程序的 **AppID** 了 。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/quickstart/basic/setting.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/quickstart/basic/setting.png)
 
 小程序的 AppID 相当于小程序平台的一个身份证，后续你会在很多地方要用到 AppID (注意这里要区别于服务号或订阅号的 AppID)。
 
@@ -142,7 +141,7 @@
 
 新建项目选择小程序项目，选择代码存放的硬盘路径，填入刚刚申请到的小程序的 AppID，给你的项目起一个好听的名字，最后，勾选 "创建 QuickStart 项目" (注意: 你要选择一个空的目录才会有这个选项)，点击确定，你就得到了你的第一个小程序了，点击顶部菜单编译就可以在 IDE 预览你的第一个小程序。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/quickstart/basic/first-program.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/quickstart/basic/first-program.png)
 
 接下来我们来预览一下这个小程序的效果。
 
@@ -150,7 +149,7 @@
 
 点击工具上的编译按钮，可以在工具的左侧模拟器界面看到这个小程序的表现，也可以点击预览按钮，通过微信的扫一扫在手机上体验你的第一个小程序。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/quickstart/basic/preview.jpg)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/quickstart/basic/preview.jpg)
 
 通过这个章节，你已经成功创建了你的第一个小程序，并且在微信客户端上体验到它流畅的表现。
 
@@ -185,7 +184,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

@@ -320,12 +320,12 @@
         *   [strokeText](canvas/stroke-text.html)
         *   [lineDashOffset](canvas/line-dash-offset.html)
         *   [createPattern](canvas/create-pattern.html)
-        *   <span>shadowBlur</span>
-        *   <span>shadowColor</span>
-        *   <span>shadowOffsetX</span>
-        *   <span>shadowOffsetY</span>
+        *   [shadowBlur](canvas/set-shadow.html#canvascontextshadowblur)
+        *   [shadowColor](canvas/set-shadow.html#canvascontextshadowcolor)
+        *   [shadowOffsetX](canvas/set-shadow.html#canvascontextshadowoffsetx)
+        *   [shadowOffsetY](canvas/set-shadow.html#canvascontextshadowoffsety)
         *   [font](canvas/font.html)
-        *   <span>transform</span>
+        *   [transform](canvas/transform.html)
         *   [setTransform](canvas/set-transform.html)
     *   [下拉刷新](pulldown.html)
         *   [Page.onPullDownRefresh](pulldown.html#onpulldownrefresh)
@@ -519,7 +519,7 @@
 
 <td>String</td>
 
-<td>包括敏感数据在内的完整用户信息的加密数据，详细见[加密数据解密算法](https://mp.weixin.qq.com/debug/wxadoc/dev/api/signature.html#%E5%8A%A0%E5%AF%86%E6%95%B0%E6%8D%AE%E8%A7%A3%E5%AF%86%E7%AE%97%E6%B3%95)</td>
+<td>包括敏感数据在内的完整用户信息的加密数据，详细见[加密数据解密算法](https://mp.weixin.qq.com/debug/wxadoc/dev/api/signature.html#&)</td>
 
 </tr>
 
@@ -529,7 +529,7 @@
 
 <td>String</td>
 
-<td>加密算法的初始向量，详细见[加密数据解密算法](https://mp.weixin.qq.com/debug/wxadoc/dev/api/signature.html#%E5%8A%A0%E5%AF%86%E6%95%B0%E6%8D%AE%E8%A7%A3%E5%AF%86%E7%AE%97%E6%B3%95)</td>
+<td>加密算法的初始向量，详细见[加密数据解密算法](https://mp.weixin.qq.com/debug/wxadoc/dev/api/signature.html#&)</td>
 
 </tr>
 
@@ -537,7 +537,7 @@
 
 </table>
 
-encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](https://mp.weixin.qq.com/debug/wxadoc/dev/api/signature.html#%E5%8A%A0%E5%AF%86%E6%95%B0%E6%8D%AE%E8%A7%A3%E5%AF%86%E7%AE%97%E6%B3%95)
+encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](https://mp.weixin.qq.com/debug/wxadoc/dev/api/signature.html#&)
 
     {
         "phoneNumber": "13580006666",  
@@ -631,7 +631,7 @@ encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

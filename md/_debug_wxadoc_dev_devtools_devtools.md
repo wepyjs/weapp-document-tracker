@@ -152,14 +152,14 @@
 
 为了更好的开发体验，我们从视觉、交互、性能等方面对开发者工具进行升级，推出了 1.0.0 版本。
 
-![devtools](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/main.png)
+![devtools](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/main.png)
 
 在原有功能的基础上，新增了两个开发辅助功能：
 
 1.  使用腾讯云，快速搭建小程序后台运行环境； [详情](https://mp.weixin.qq.com/debug/wxadoc/introduction/qcloud.html)
 2.  申请测试报告，了解小程序在真实的移动设备上运行性能和运行效果。
 
-![qcloud](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/qcloud.png) ![test](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/test.png)
+![qcloud](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/qcloud.png) ![test](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/test.png)
 
 _注意：因为申请测试会占用测试机器资源，所以一个 APPID 一天只能申请一次测试报告。_
 
@@ -192,7 +192,7 @@ _注意：因为申请测试会占用测试机器资源，所以一个 APPID 一
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

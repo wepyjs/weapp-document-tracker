@@ -320,12 +320,12 @@
         *   [strokeText](stroke-text.html)
         *   [lineDashOffset](line-dash-offset.html)
         *   [createPattern](create-pattern.html)
-        *   <span>shadowBlur</span>
-        *   <span>shadowColor</span>
-        *   <span>shadowOffsetX</span>
-        *   <span>shadowOffsetY</span>
+        *   [shadowBlur](set-shadow.html#canvascontextshadowblur)
+        *   [shadowColor](set-shadow.html#canvascontextshadowcolor)
+        *   [shadowOffsetX](set-shadow.html#canvascontextshadowoffsetx)
+        *   [shadowOffsetY](set-shadow.html#canvascontextshadowoffsety)
         *   [font](font.html)
-        *   <span>transform</span>
+        *   [transform](transform.html)
         *   [setTransform](set-transform.html)
     *   [下拉刷新](../pulldown.html)
         *   [Page.onPullDownRefresh](../pulldown.html#onpulldownrefresh)
@@ -488,7 +488,7 @@ clip() 方法从原始画布中剪切任意形状和尺寸。一旦剪切了某�
       }
     })
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/canvas/clip.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/clip.png)
 
 </section>
 
@@ -519,7 +519,7 @@ clip() 方法从原始画布中剪切任意形状和尺寸。一旦剪切了某�
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

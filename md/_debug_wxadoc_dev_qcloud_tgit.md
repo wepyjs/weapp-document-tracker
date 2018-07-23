@@ -155,7 +155,7 @@
 
 开发者可登录小程序管理后台，在 “设置-开发者工具” 内开通 TGit 功能。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/tgit/tgit1.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/tgit/tgit1.png)
 
 2.配置项目信息、管理员信息
 
@@ -163,39 +163,39 @@
 
 **用户名配置完成后，会生成完整的 TGit 用户名，用于在 TGit 内验证身份，可在权限控制页面查看完整用户名。**
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/tgit/tgit3.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/tgit/tgit3.png)
 
 提交后，查看完整的 TGit 用户名，TGit 内验证身份需要填写完整用户名。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/tgit/tgit8.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/tgit/tgit8.png)
 
 ​
 
 3.开通后，进入“查看权限”，可查看和配置 TGit 项目成员信息
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/tgit/tgit6.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/tgit/tgit6.png)
 
 4.添加 TGit 项目成员
 
 (1)选择成员：通过微信号搜索，选择小程序的一个开发者添加到项目中。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/tgit/tgit7.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/tgit/tgit7.png)
 
 (2)填写 TGit 用户名
 
 填写用户名，**注意：在添加成员后，可在成员配置页面查看成员完整的用户名，使用 git clone 命令时需要使用完整的用户名进行验证。**
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/tgit/tgit9.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/tgit/tgit9.png)
 
 **注：开通 TGit，添加项目成员操作耗时较久，请耐心等待**
 
 ## 微信开发者工具
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/tgit/toolbar.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/tgit/toolbar.png)
 
 在微信开发者工具的工具栏上可以通过 “代码仓库” 按钮快速进入 TGit 管理后台
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/tgit/devmaster.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/tgit/devmaster.png)
 
 ## 如何使用
 
@@ -233,7 +233,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

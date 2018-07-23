@@ -277,11 +277,11 @@
 
 开通入口：小程序管理后台-小程序插件
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/p_1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_1.png)
 
 填写插件基本信息，插件的基本信息将在插件申请流程、小程序基本信息页中展示。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/p_2.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_2.png)
 
 #### 填写开发信息并完成开发
 
@@ -289,7 +289,7 @@
 
 开发者工具内设置请见：[《插件开发指南》](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/plugin.html)
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/p_3.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_3.png)
 
 #### 插件版本管理
 
@@ -297,7 +297,7 @@
 
 在开发者工具上传代码后，开发者可”小程序管理后台-小程序插件-开发管理“内管理插件版本。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/p_4.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_4.png)
 
 #### 提交版本审核
 
@@ -323,7 +323,7 @@
 
 开发者可在”小程序管理后台-小程序插件-申请管理“内处理插件的接入申请。插件开发者可在24小时内选择”通过“或”拒绝“申请方使用插件。
 
-![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/p_5.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_5.png)
 
 ## 使用插件
 
@@ -339,7 +339,7 @@
 
     小程序开发者可在“小程序管理后台-设置-第三方服务-插件管理”中查找需要的插件，并申请使用。插件开发者在24小时内通过后，小程序开发者可在小程序内使用该插件。
 
-    ![](https://mp.weixin.qq.com/debug/wxadoc/introduction/image/p_6.png)
+    ![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_6.png)
 
 2.  在小程序代码中使用插件
 
@@ -374,7 +374,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
@@ -384,6 +384,6 @@
 
 </div>
 
-[](qrcode.html#发布)[](plugin.html#小程序插件功能介绍)</div>
+[](qrcode.html#发布)</div>
 
 </div>

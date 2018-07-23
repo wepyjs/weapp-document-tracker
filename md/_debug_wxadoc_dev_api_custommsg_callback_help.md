@@ -320,12 +320,12 @@
         *   [strokeText](../canvas/stroke-text.html)
         *   [lineDashOffset](../canvas/line-dash-offset.html)
         *   [createPattern](../canvas/create-pattern.html)
-        *   <span>shadowBlur</span>
-        *   <span>shadowColor</span>
-        *   <span>shadowOffsetX</span>
-        *   <span>shadowOffsetY</span>
+        *   [shadowBlur](../canvas/set-shadow.html#canvascontextshadowblur)
+        *   [shadowColor](../canvas/set-shadow.html#canvascontextshadowcolor)
+        *   [shadowOffsetX](../canvas/set-shadow.html#canvascontextshadowoffsetx)
+        *   [shadowOffsetY](../canvas/set-shadow.html#canvascontextshadowoffsety)
         *   [font](../canvas/font.html)
-        *   <span>transform</span>
+        *   [transform](../canvas/transform.html)
         *   [setTransform](../canvas/set-transform.html)
     *   [下拉刷新](../pulldown.html)
         *   [Page.onPullDownRefresh](../pulldown.html#onpulldownrefresh)
@@ -485,7 +485,7 @@ URL是开发者用来接收微信消息和事件的接口URL。 Token可由开�
 
 模式的选择与服务器配置在提交后都会立即生效，请开发者谨慎填写及选择。切换加密方式和数据格式需要提前配置好相关代码，详情请参考[消息加解密说明](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419318479&token=&lang=zh_CN)。
 
-![填写服务器配置](https://mp.weixin.qq.com/debug/wxadoc/dev/image/callback_help.png)
+![填写服务器配置](https://developers.weixin.qq.com/miniprogram/dev/image/callback_help.png)
 
 #### 第二步：验证消息的确来自微信服务器
 
@@ -603,7 +603,7 @@ PHP示例代码下载：[下载](https://wximg.gtimg.com/shake_tv/mpwiki/cryptoD
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

@@ -189,19 +189,9 @@
         *   [UploadTask](../../network/upload/UploadTask.html)
         *   [UploadTask.abort](../../network/upload/UploadTask.abort.html)
         *   [UploadTask.onProgressUpdate](../../network/upload/UploadTask.onProgressUpdate.html)
-*   [开放接口](../../open-api/data/wx.getFriendCloudStorage.html)
-    *   [开放数据](../../open-api/data/wx.getFriendCloudStorage.html)
-        *   [wx.getFriendCloudStorage](../../open-api/data/wx.getFriendCloudStorage.html)
-        *   [wx.getUserCloudStorage](../../open-api/data/wx.getUserCloudStorage.html)
-        *   [wx.getUserInfo](../../open-api/data/wx.getUserInfo.html)
-        *   [wx.getGroupCloudStorage](../../open-api/data/wx.getGroupCloudStorage.html)
-        *   [wx.getSharedCanvas](../../open-api/data/wx.getSharedCanvas.html)
-        *   [wx.removeUserCloudStorage](../../open-api/data/wx.removeUserCloudStorage.html)
-        *   [wx.setUserCloudStorage](../../open-api/data/wx.setUserCloudStorage.html)
-        *   [KVData](../../open-api/data/KVData.html)
-        *   [UserGameData](../../open-api/data/UserGameData.html)
-        *   [removeUserStorage](../../open-api/data/removeUserStorage.html)
-        *   [setUserStorage](../../open-api/data/setUserStorage.html)
+*   [开放接口](../../open-api/miniprogram-navigate/wx.navigateToMiniProgram.html)
+    *   [小程序跳转](../../open-api/miniprogram-navigate/wx.navigateToMiniProgram.html)
+        *   [wx.navigateToMiniProgram](../../open-api/miniprogram-navigate/wx.navigateToMiniProgram.html)
     *   [登录](../../open-api/login/wx.checkSession.html)
         *   [wx.checkSession](../../open-api/login/wx.checkSession.html)
         *   [wx.login](../../open-api/login/wx.login.html)
@@ -228,6 +218,18 @@
         *   [OpenSettingButton.show](../../open-api/setting/OpenSettingButton.show.html)
     *   [微信运动](../../open-api/werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../../open-api/werun/wx.getWeRunData.html)
+    *   [开放数据](../../open-api/data/wx.getFriendCloudStorage.html)
+        *   [wx.getFriendCloudStorage](../../open-api/data/wx.getFriendCloudStorage.html)
+        *   [wx.getUserCloudStorage](../../open-api/data/wx.getUserCloudStorage.html)
+        *   [wx.getUserInfo](../../open-api/data/wx.getUserInfo.html)
+        *   [wx.getGroupCloudStorage](../../open-api/data/wx.getGroupCloudStorage.html)
+        *   [wx.getSharedCanvas](../../open-api/data/wx.getSharedCanvas.html)
+        *   [wx.removeUserCloudStorage](../../open-api/data/wx.removeUserCloudStorage.html)
+        *   [wx.setUserCloudStorage](../../open-api/data/wx.setUserCloudStorage.html)
+        *   [KVData](../../open-api/data/KVData.html)
+        *   [UserGameData](../../open-api/data/UserGameData.html)
+        *   [removeUserStorage](../../open-api/data/removeUserStorage.html)
+        *   [setUserStorage](../../open-api/data/setUserStorage.html)
     *   [授权](../../open-api/authorize/wx.authorize.html)
         *   [wx.authorize](../../open-api/authorize/wx.authorize.html)
     *   [游戏圈](../../open-api/game-club/wx.createGameClubButton.html)
@@ -630,6 +632,10 @@ InnerAudioContext 实例，可通过 wx.createInnerAudioContext 接口获取实�
 ##### [InnerAudioContext.destroy()](InnerAudioContext.destroy.html)
 
 销毁当前实例
+
+##### [InnerAudioContext wx.createInnerAudioContext()](wx.createInnerAudioContext.html)
+
+创建一个 InnerAudioContext 实例
 
 </section>
 

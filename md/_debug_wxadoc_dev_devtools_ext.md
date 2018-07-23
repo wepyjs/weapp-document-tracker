@@ -167,7 +167,7 @@
 
 对于第三方平台小程序，可以在项目页卡查看到相关的 open3rd 信息以及当前的第三方的 3rdMiniProgramAppid ，如若项目配置了相关的 extAppid ，那么项目页卡中也会有相关信息。
 
-![ext](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/ext.png)
+![ext](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/ext.png)
 
 ## 小程序模板开发
 
@@ -400,7 +400,7 @@ _tips: 可以使用工具的命令行接口 或者 http 接口来实现自动化
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

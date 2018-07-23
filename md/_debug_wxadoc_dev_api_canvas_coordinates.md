@@ -320,12 +320,12 @@
         *   [strokeText](stroke-text.html)
         *   [lineDashOffset](line-dash-offset.html)
         *   [createPattern](create-pattern.html)
-        *   <span>shadowBlur</span>
-        *   <span>shadowColor</span>
-        *   <span>shadowOffsetX</span>
-        *   <span>shadowOffsetY</span>
+        *   [shadowBlur](set-shadow.html#canvascontextshadowblur)
+        *   [shadowColor](set-shadow.html#canvascontextshadowcolor)
+        *   [shadowOffsetX](set-shadow.html#canvascontextshadowoffsetx)
+        *   [shadowOffsetY](set-shadow.html#canvascontextshadowoffsety)
         *   [font](font.html)
-        *   <span>transform</span>
+        *   [transform](transform.html)
         *   [setTransform](set-transform.html)
     *   [下拉刷新](../pulldown.html)
         *   [Page.onPullDownRefresh](../pulldown.html#onpulldownrefresh)
@@ -515,7 +515,7 @@ canvas 是在一个二维的网格当中。
 
 当你把手指放到 canvas 中，就会在下边显示出触碰点的坐标：
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/canvas/coordinates.gif)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/coordinates.gif)
 
 </section>
 
@@ -546,7 +546,7 @@ canvas 是在一个二维的网格当中。
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

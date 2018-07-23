@@ -92,7 +92,6 @@
         *   [发布](release.html#发布)
         *   [运营数据](release.html#运营数据)
 *   [体验小程序](../../demo.html)
-*   [更新日志](../../devtools/new.html)
 
 </nav>
 
@@ -258,7 +257,7 @@ WXSS 具有 CSS 大部分的特性，小程序在 WXSS 也做了一些扩充和�
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

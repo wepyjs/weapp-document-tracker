@@ -153,17 +153,17 @@
 
 ## 如何使用
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/account_box.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/account_box.png)
 
 使用不同于主帐号的微信扫描二维码可以添加一个测试帐号，**如果该测试帐号登录了其他开发者工具客户端，登录态将失效**
 
 点击 ‘+’、‘-’ 我们可以添加多个测试号，或者删除已添加的测试号；按住 ‘ctrl’ 键，鼠标可以多选
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/account_box2.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/account_box2.png)
 
 我们可以同时勾选多个帐号，打开多个调试窗口来调试同一个项目；调试窗口与项目主窗口不同，只有模拟器和调试器；对项目代码编辑还是需要在项目主窗口进行，代码保存后，各个调试窗口可以同步执行最新的代码
 
-![](https://mp.weixin.qq.com/debug/wxadoc/dev/image/devtools2/account_box3.png)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/account_box3.png)
 
 </section>
 
@@ -194,7 +194,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

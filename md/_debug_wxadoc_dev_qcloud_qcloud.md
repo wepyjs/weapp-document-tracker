@@ -128,17 +128,17 @@
 > 
 > 此时通过小程序开发者工具查看腾讯云状态并不会显示已开通，已开通状态会在第一次部署开发环境之后才会同步到微信开发者工具上。
 
-![进入微信公众平台后台](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/1.png)
+![进入微信公众平台后台](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/1.png)
 
-![开通腾讯云](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/2.png)
+![开通腾讯云](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/2.png)
 
-![腾讯云微信小程序控制台](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/3.png)
+![腾讯云微信小程序控制台](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/3.png)
 
 ### 安装开发工具
 
 下载并安装最新版本的 [微信开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html) ，使用小程序绑定的微信号扫码登录开发者工具。
 
-![微信开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/4.png)
+![微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/4.png)
 
 ### 导入 NodeJS DEMO 和配置
 
@@ -146,7 +146,7 @@
 
 2.  输入小程序 AppID，项目目录选择一个 **空的目录** ，接着选择【建立腾讯云 Node.js 启动模板】，点击确定创建小程序项目。
 
-    ![微信开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/5.png)
+    ![微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/5.png)
 
 3.  安装依赖
 
@@ -156,29 +156,29 @@
 
         cd server && npm install
 
-    ![安装依赖](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/6.png)
+    ![安装依赖](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/6.png)
 
 4.  点击界面右上角的【腾讯云】图标，在下拉的菜单栏中选择【上传测试代码】。
 
-    ![上传按钮](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/7.png)
+    ![上传按钮](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/7.png)
 
 5.  首次使用推荐使用，选择【模块上传】并勾选全部选项，然后勾选【部署后自动安装依赖】，点击【确定】开始上传代码。后续修改服务端代码后，推荐选择智能上传，工具仅仅上传有修改过的代码。
 
-    ![选择模块](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/8.png)
+    ![选择模块](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/8.png)
 
-    ![上传成功](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/9.png)
+    ![上传成功](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/9.png)
 
 6.  上传代码完成之后，点击右上角的【详情】按钮，接着选择【腾讯云状态】即可看到腾讯云自动分配给你的开发环境域名：
 
-    ![查看开发域名](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/10.png)
+    ![查看开发域名](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/10.png)
 
 7.  如果当前小程序是首次使用腾讯云小程序服务，需要完整复制（包括 `https://`）开发环境 request 域名，然后在编辑器中打开 `client/config.js` 文件，将复制的域名填入 `host` 中并保存，保存之后编辑器会自动编译小程序，左边的模拟器窗口即可实时显示出客户端的 Demo：
 
-    ![修改客户端配置](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/11.png)
+    ![修改客户端配置](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/11.png)
 
 8.  在模拟器中点击【登录】，看到显示“登录成功”，即为开通完成，可以开始你的其他开发了。
 
-    ![登录测试](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/12.png)
+    ![登录测试](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/12.png)
 
 ### 导入 PHP DEMO 和配置
 
@@ -186,35 +186,35 @@
 
     **tips:需要注意的是，如果当前小程序已经开通了 NodeJS 环境，需要点击工具右上角详情按钮，选择腾讯云状态，点击切换语言**
 
-    ![微信开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/changelanguage.png)
+    ![微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/changelanguage.png)
 
     **在腾讯云管理后台中可以选择切换语言环境**
 
-    ![微信开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/changelanguage2.png)
+    ![微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/changelanguage2.png)
 
 2.  输入小程序 AppID，项目目录选择一个**空的目录**，接着选择【建立腾讯云 PHP 启动模板】，点击确定创建小程序项目。
 
-    ![微信开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/13.png)
+    ![微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/13.png)
 
 3.  再次点击【确定】进入开发者工具。
 
-    ![开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/14.png)
+    ![开发者工具](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/14.png)
 
 4.  点击界面右上角的【腾讯云】图标，在下拉的菜单栏中选择【上传测试代码】。
 
-    ![上传按钮](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/15.png)
+    ![上传按钮](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/15.png)
 
 5.  上传代码完成之后，点击右上角的【详情】按钮，接着选择【腾讯云状态】即可看到腾讯云自动分配给你的开发环境域名。
 
-    ![查看开发域名](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/10.png)
+    ![查看开发域名](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/10.png)
 
 6.  完整复制（包括 `https://`）开发环境 request 域名，然后在编辑器中打开 `client/config.js` 文件，将复制的域名填入 `host` 中并保存，保存之后编辑器会自动编译小程序，左边的模拟器窗口即可实时显示出客户端的 Demo。
 
-    ![修改客户端配置](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/11.png)
+    ![修改客户端配置](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/11.png)
 
 7.  在模拟器中点击【登录】，看到显示“登录成功”，即为开通完成，可以开始你的其他开发了。
 
-    ![登录测试](https://mp.weixin.qq.com/debug/wxadoc/dev/image/qcloud/12.png) ```
+    ![登录测试](https://developers.weixin.qq.com/miniprogram/dev/image/qcloud/12.png)
 
 ### 其他具体开发文档
 
@@ -273,7 +273,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
