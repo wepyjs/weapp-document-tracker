@@ -108,9 +108,11 @@
     *   [特殊场景调试](../devtools/different.html)
     *   [真机调试](../devtools/remote-debug.html)
     *   [多帐号调试](../devtools/multiaccount.html)
+*   [npm 支持](../devtools/npm.html)
+*   [体验评分](../devtools/audits.html)
 *   [命令行调用](../devtools/cli.html)
-*   [测试号](../devtools/sandbox.html)
 *   [HTTP 调用](../devtools/http.html)
+*   [测试号](../devtools/sandbox.html)
 *   [小程序开发助手](../devtools/mydev.html)
 *   [代码片段](../devtools/minicode.html)
 *   [第三方平台](../devtools/ext.html)
@@ -123,6 +125,7 @@
     *   [ES6 支持情况](../devtools/details.html#客户端es6-api-支持情况)
     *   [API 实现差异](../devtools/notsupport.html)
 *   [下载](../devtools/download.html)
+*   [Beta 版下载](../devtools/beta.html)
 *   [历史更新日志](../devtools/uplog.html)
 
 </nav>

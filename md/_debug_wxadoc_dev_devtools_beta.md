@@ -146,131 +146,18 @@
 
 <section class="normal markdown-section">
 
-由于运行环境的差异，下列 API 在开发者工具的实现与客户端不一致，请使用真机调试
+同 [正式](download.html) 版本不同，本页面提供的是开发者工具**测试版本**的下载，我们将一些新的特性和 bug 修复以 beta 方式先发布。
 
-<table>
+## 小程序新版工具内测
 
-<thead>
+新版本的小程序开发工具全新提供了两大功能
 
-<tr>
+*   NPM 支持：小程序支持使用 npm 安装第三方依赖 [详情](npm.html)
+*   体验评分：工具调试器增加 Audits 面板，可以检测小程序体验好坏并给出建议 [详情](audits.html)
 
-<th>API</th>
+### 下载地址
 
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>wx.checkIsSupportSoterAuthentication</td>
-
-<td>设备不支持</td>
-
-</tr>
-
-<tr>
-
-<td>wx.startSoterAuthentication</td>
-
-<td>设备不支持</td>
-
-</tr>
-
-<tr>
-
-<td>wx.chooseInvoiceTitle</td>
-
-<td>模拟数据返回</td>
-
-</tr>
-
-<tr>
-
-<td>wx.addPhoneContact</td>
-
-<td>设备不支持</td>
-
-</tr>
-
-<tr>
-
-<td>wx.onUserCaptureScreen</td>
-
-<td>设备不支持</td>
-
-</tr>
-
-<tr>
-
-<td>wx.startBeaconDiscovery</td>
-
-<td>设备不支持</td>
-
-</tr>
-
-<tr>
-
-<td>wx.stopBeaconDiscovery</td>
-
-<td>设备不支持</td>
-
-</tr>
-
-<tr>
-
-<td>wx.getBeacons</td>
-
-<td>设备不支持</td>
-
-</tr>
-
-<tr>
-
-<td>wx.onBeaconUpdate</td>
-
-<td>设备不支持</td>
-
-</tr>
-
-<tr>
-
-<td>wx.onBeaconServiceChange</td>
-
-<td>设备不支持</td>
-
-</tr>
-
-<tr>
-
-<td>wx.makePhoneCall</td>
-
-<td>弹窗提示接口调用成功</td>
-
-</tr>
-
-<tr>
-
-<td>wx.onCompassChange</td>
-
-<td>设备不支持</td>
-
-</tr>
-
-<tr>
-
-<td>wx.chooseAddress</td>
-
-<td>模拟数据返回</td>
-
-</tr>
-
-</tbody>
-
-</table>
+[windows 64](https://dldir1.qq.com/WechatWebDev/beta/201807241/wechat_devtools_1.10.1807240_x64.exe) 、 [windows 32](https://dldir1.qq.com/WechatWebDev/beta/201807241/wechat_devtools_1.10.1807240_ia32.exe) 、 [mac](https://dldir1.qq.com/WechatWebDev/beta/201807241/wechat_devtools_1.10.1807240.dmg)
 
 </section>
 
@@ -311,6 +198,6 @@
 
 </div>
 
-[](details.html#客户端es6-api-支持情况)[](download.html)</div>
+[](download.html)[](uplog.html)</div>
 
 </div>

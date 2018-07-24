@@ -108,9 +108,11 @@
     *   [特殊场景调试](different.html)
     *   [真机调试](remote-debug.html)
     *   [多帐号调试](multiaccount.html)
+*   [npm 支持](npm.html)
+*   [体验评分](audits.html)
 *   [命令行调用](cli.html)
-*   [测试号](sandbox.html)
 *   [HTTP 调用](http.html)
+*   [测试号](sandbox.html)
 *   [小程序开发助手](mydev.html)
 *   [代码片段](minicode.html)
 *   [第三方平台](ext.html)
@@ -123,6 +125,7 @@
     *   [ES6 支持情况](details.html#客户端es6-api-支持情况)
     *   [API 实现差异](notsupport.html)
 *   [下载](download.html)
+*   [Beta 版下载](beta.html)
 *   [历史更新日志](uplog.html)
 
 </nav>
@@ -206,6 +209,6 @@
 
 </div>
 
-[](cli.html)[](http.html)</div>
+[](http.html)[](mydev.html)</div>
 
 </div>

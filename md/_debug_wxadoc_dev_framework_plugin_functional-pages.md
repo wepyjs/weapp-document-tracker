@@ -204,6 +204,7 @@
       paymentArgs // 就是 functional-page-navigator 的 args 属性中 paymentArgs
 
       // 在这里可以执行一些支付前的参数处理逻辑，包括通知后台调用统一下单接口
+      // 小程序 API 也可以调用，如 wx.login 和 wx.getStorage （如同在插件所有者小程序代码中调用这些接口）
 
       // 在 callback 中需要返回两个参数： err 和 requestPaymentArgs
       // err 应为 null （或者一些失败信息）

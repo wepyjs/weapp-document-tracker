@@ -108,9 +108,11 @@
     *   [特殊场景调试](different.html)
     *   [真机调试](remote-debug.html)
     *   [多帐号调试](multiaccount.html)
+*   [npm 支持](npm.html)
+*   [体验评分](audits.html)
 *   [命令行调用](cli.html)
-*   [测试号](sandbox.html)
 *   [HTTP 调用](http.html)
+*   [测试号](sandbox.html)
 *   [小程序开发助手](mydev.html)
 *   [代码片段](minicode.html)
 *   [第三方平台](ext.html)
@@ -123,6 +125,7 @@
     *   [ES6 支持情况](details.html#客户端es6-api-支持情况)
     *   [API 实现差异](notsupport.html)
 *   [下载](download.html)
+*   [Beta 版下载](beta.html)
 *   [历史更新日志](uplog.html)
 
 </nav>
@@ -146,6 +149,12 @@
 # 开发者工具更新日志
 
 [查看基础库更新日志](../framework/release.html)
+
+### 2018.07.20
+
+1.  `F` 修复 1.02.1807120 带来的编译不生效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1453523220&docid=0004c87e6cc528e510179691150800&inwindow=1)
+2.  `F` 修复 界面调试样式覆盖规则计算错误的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a4ae7cec2581962e6c49e45bc00&token=940403363&lang=zh_CN)
+3.  `F` 修复 分包根目录名字后缀相同时报错的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1382542218&docid=0008e2c47f0f3018860775ff45c800)
 
 ### 2018.07.12
 
@@ -624,7 +633,7 @@
 *   更新 API `shareAppMessage` 支持分享时自定义卡片配图
 *   更新 组件 `<button />` 支持客服会话分享小程序卡片及传入源页面信息
 *   优化后台拉起小程序时 reLaunch 逻辑
-*   新增 开发者工具预览版 [详情](beta.md)
+*   新增 开发者工具预览版 [详情](beta.html)
 
 ### 工具更新
 
@@ -1013,6 +1022,6 @@
 
 </div>
 
-[](download.html)[](../qcloud/qcloud.html)</div>
+[](beta.html)[](../qcloud/qcloud.html)</div>
 
 </div>
