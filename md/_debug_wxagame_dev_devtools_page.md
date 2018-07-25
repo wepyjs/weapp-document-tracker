@@ -125,7 +125,7 @@
 
 在登录页，可以使用微信扫码登陆开发者工具，开发者工具将使用这个微信帐号的信息进行小程序的开发和调试。
 
-![登录](../image/devtools2/login.png)
+![登录](https://developers.weixin.qq.com/minigame/dev/image/devtools2/login.png)
 
 ### 模式选择
 
@@ -134,7 +134,7 @@
 1.  公众号网页调试。选择公众号网页调试，将直接进入公众号网页项目调试界面，在地址栏输入 URL，即可调试该网页的微信授权以及微信 JS-SDK 功能。
 2.  小程序调试。选择小程序调试，将进入小程序本地项目管理页，可以新建、删除本地的项目，或者选择进入已存在的本地项目。
 
-![模式选择](../image/devtools2/mode.png)
+![模式选择](https://developers.weixin.qq.com/minigame/dev/image/devtools2/mode.png)
 
 ### 新建项目
 
@@ -144,19 +144,19 @@
 2.  登录的微信号需要是该 AppID 的开发者；
 3.  需要选择一个空目录，或者选择的非空目录下存在 [`game.json`](../#文件结构) 或者 `project.config.json`。当选择空目录时，可以选择是否在该目录下生成一个简单的项目。
 
-![新建项目](../image/devtools2/addproject.png)
+![新建项目](https://developers.weixin.qq.com/minigame/dev/image/devtools2/addproject.png)
 
 ### 管理项目
 
 对本地项目进行删除和批量删除
 
-![管理项目](../image/devtools2/projectmanage.png)
+![管理项目](https://developers.weixin.qq.com/minigame/dev/image/devtools2/projectmanage.png)
 
 ## 主界面
 
 开发者工具主界面，从上到下，从左到右，分别为：菜单栏、工具栏、模拟器、编辑器、调试器 五大部分。
 
-![](../image/devtools2/parts.png)
+![](https://developers.weixin.qq.com/minigame/dev/image/devtools2/parts.png)
 
 ### 菜单栏
 
@@ -228,23 +228,23 @@
 
 点击用户头像可以打开个人中心，在这里可以便捷的切换用户和查看开发者工具收到的消息。
 
-![](../image/devtools2/noticecenter.png)
+![](https://developers.weixin.qq.com/minigame/dev/image/devtools2/noticecenter.png)
 
 用户头像右侧是控制主界面模块显示/隐藏的按钮。至少需要有一个模块显示。
 
-![](../image/devtools2/showandhide.gif)
+![](https://developers.weixin.qq.com/minigame/dev/image/devtools2/showandhide.gif)
 
 工具栏中间，可以选择普通编译，也可以新建并选择自定义条件进行编译和预览。
 
 通过切后台按钮，可以模拟小程序进入后台的情况
 
-![](../image/devtools2/background.png)
+![](https://developers.weixin.qq.com/minigame/dev/image/devtools2/background.png)
 
 工具栏上提供了清缓存的快速入口。可以便捷的清除工具上的文件缓存、数据缓存、还有后台的授权数据，方便开发者调试。
 
 工具栏右侧是开发辅助功能的区域，在这里可以上传代码、查看项目信息
 
-![](../image/devtools2/righttools.png)
+![](https://developers.weixin.qq.com/minigame/dev/image/devtools2/righttools.png)
 
 ### 模拟器
 
@@ -252,7 +252,7 @@
 
 开发者可以选择不同的设备，也可以添加自定义设备来调试小程序在不同尺寸机型上的适配问题。
 
-![](../image/devtools2/device.png)
+![](https://developers.weixin.qq.com/minigame/dev/image/devtools2/device.png)
 
 在模拟器底部的状态栏，可以直观地看到当前运行小程序的场景值，页面路径及页面参数
 
@@ -285,7 +285,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

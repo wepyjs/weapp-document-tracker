@@ -152,12 +152,12 @@
 
 新版本的小程序开发工具全新提供了两大功能
 
-*   NPM 支持：小程序支持使用 npm 安装第三方依赖 [详情](npm.html)
+*   npm 支持：小程序支持使用 npm 安装第三方依赖 [详情](npm.html)
 *   体验评分：工具调试器增加 Audits 面板，可以检测小程序体验好坏并给出建议 [详情](audits.html)
 
-### 下载地址
+### 下载地址 (1.10.1807250)
 
-[windows 64](https://dldir1.qq.com/WechatWebDev/beta/201807241/wechat_devtools_1.10.1807240_x64.exe) 、 [windows 32](https://dldir1.qq.com/WechatWebDev/beta/201807241/wechat_devtools_1.10.1807240_ia32.exe) 、 [mac](https://dldir1.qq.com/WechatWebDev/beta/201807241/wechat_devtools_1.10.1807240.dmg)
+[windows 64](https://dldir1.qq.com/WechatWebDev/beta/201807250/wechat_devtools_1.10.1807250_x64.exe) 、 [windows 32](https://dldir1.qq.com/WechatWebDev/beta/201807250/wechat_devtools_1.10.1807250_ia32.exe) 、 [mac](https://dldir1.qq.com/WechatWebDev/beta/201807250/wechat_devtools_1.10.1807250.dmg)
 
 </section>
 

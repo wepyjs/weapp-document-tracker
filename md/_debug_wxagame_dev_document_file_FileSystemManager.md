@@ -113,13 +113,13 @@
     *   [网络](../device/network/wx.getNetworkType.html)
         *   [wx.getNetworkType](../device/network/wx.getNetworkType.html)
         *   [wx.onNetworkStatusChange](../device/network/wx.onNetworkStatusChange.html)
+    *   [振动](../device/vibrate/wx.vibrateShort.html)
+        *   [wx.vibrateShort](../device/vibrate/wx.vibrateShort.html)
+        *   [wx.vibrateLong](../device/vibrate/wx.vibrateLong.html)
     *   [屏幕](../device/screen/wx.getScreenBrightness.html)
         *   [wx.getScreenBrightness](../device/screen/wx.getScreenBrightness.html)
         *   [wx.setKeepScreenOn](../device/screen/wx.setKeepScreenOn.html)
         *   [wx.setScreenBrightness](../device/screen/wx.setScreenBrightness.html)
-    *   [振动](../device/vibrate/wx.vibrateShort.html)
-        *   [wx.vibrateShort](../device/vibrate/wx.vibrateShort.html)
-        *   [wx.vibrateLong](../device/vibrate/wx.vibrateLong.html)
     *   [转屏](../device/orientation/wx.onDeviceOrientationChange.html)
         *   [wx.onDeviceOrientationChange](../device/orientation/wx.onDeviceOrientationChange.html)
         *   [wx.offDeviceOrientationChange](../device/orientation/wx.offDeviceOrientationChange.html)
@@ -159,6 +159,34 @@
     *   [FileSystemManager.writeFileSync](FileSystemManager.writeFileSync.html)
 *   [位置](../location/wx.getLocation.html)
     *   [wx.getLocation](../location/wx.getLocation.html)
+*   [系统](../system/system-event/wx.onAudioInterruptionBegin.html)
+    *   [系统事件](../system/system-event/wx.onAudioInterruptionBegin.html)
+        *   [wx.onAudioInterruptionBegin](../system/system-event/wx.onAudioInterruptionBegin.html)
+        *   [wx.offAudioInterruptionBegin](../system/system-event/wx.offAudioInterruptionBegin.html)
+        *   [wx.onAudioInterruptionEnd](../system/system-event/wx.onAudioInterruptionEnd.html)
+        *   [wx.offAudioInterruptionEnd](../system/system-event/wx.offAudioInterruptionEnd.html)
+        *   [wx.onError](../system/system-event/wx.onError.html)
+        *   [wx.offError](../system/system-event/wx.offError.html)
+    *   [生命周期](../system/life-cycle/wx.exitMiniProgram.html)
+        *   [wx.exitMiniProgram](../system/life-cycle/wx.exitMiniProgram.html)
+        *   [wx.getLaunchOptionsSync](../system/life-cycle/wx.getLaunchOptionsSync.html)
+        *   [wx.onHide](../system/life-cycle/wx.onHide.html)
+        *   [wx.offHide](../system/life-cycle/wx.offHide.html)
+        *   [wx.onShow](../system/life-cycle/wx.onShow.html)
+        *   [wx.offShow](../system/life-cycle/wx.offShow.html)
+    *   [系统信息](../system/system-info/wx.getSystemInfo.html)
+        *   [wx.getSystemInfo](../system/system-info/wx.getSystemInfo.html)
+        *   [wx.getSystemInfoSync](../system/system-info/wx.getSystemInfoSync.html)
+    *   [触摸事件](../system/touch-event/wx.onTouchStart.html)
+        *   [wx.onTouchStart](../system/touch-event/wx.onTouchStart.html)
+        *   [wx.offTouchStart](../system/touch-event/wx.offTouchStart.html)
+        *   [wx.onTouchMove](../system/touch-event/wx.onTouchMove.html)
+        *   [wx.offTouchMove](../system/touch-event/wx.offTouchMove.html)
+        *   [wx.onTouchEnd](../system/touch-event/wx.onTouchEnd.html)
+        *   [wx.offTouchEnd](../system/touch-event/wx.offTouchEnd.html)
+        *   [wx.onTouchCancel](../system/touch-event/wx.onTouchCancel.html)
+        *   [wx.offTouchCancel](../system/touch-event/wx.offTouchCancel.html)
+        *   [Touch](../system/touch-event/Touch.html)
 *   [网络](../network/download/wx.downloadFile.html)
     *   [下载](../network/download/wx.downloadFile.html)
         *   [wx.downloadFile](../network/download/wx.downloadFile.html)
@@ -198,15 +226,28 @@
         *   [code2accessToken](../open-api/login/code2accessToken.html)
     *   [防沉迷](../open-api/anti-addiction/wx.checkIsUserAdvisedToRest.html)
         *   [wx.checkIsUserAdvisedToRest](../open-api/anti-addiction/wx.checkIsUserAdvisedToRest.html)
+    *   [开放数据](../open-api/data/wx.getUserInfo.html)
+        *   [wx.getUserInfo](../open-api/data/wx.getUserInfo.html)
+        *   [wx.getGroupCloudStorage](../open-api/data/wx.getGroupCloudStorage.html)
+        *   [wx.getUserCloudStorage](../open-api/data/wx.getUserCloudStorage.html)
+        *   [wx.getFriendCloudStorage](../open-api/data/wx.getFriendCloudStorage.html)
+        *   [wx.getSharedCanvas](../open-api/data/wx.getSharedCanvas.html)
+        *   [wx.removeUserCloudStorage](../open-api/data/wx.removeUserCloudStorage.html)
+        *   [wx.setUserCloudStorage](../open-api/data/wx.setUserCloudStorage.html)
+        *   [KVData](../open-api/data/KVData.html)
+        *   [UserGameData](../open-api/data/UserGameData.html)
+        *   [removeUserStorage](../open-api/data/removeUserStorage.html)
+        *   [setUserStorage](../open-api/data/setUserStorage.html)
     *   [用户信息](../open-api/user-info/wx.createUserInfoButton.html)
         *   [wx.createUserInfoButton](../open-api/user-info/wx.createUserInfoButton.html)
-        *   [wx.getUserInfo](../open-api/user-info/wx.getUserInfo.html)
         *   [UserInfo](../open-api/user-info/UserInfo.html)
         *   [UserInfoButton](../open-api/user-info/UserInfoButton.html)
         *   [UserInfoButton.destroy](../open-api/user-info/UserInfoButton.destroy.html)
         *   [UserInfoButton.hide](../open-api/user-info/UserInfoButton.hide.html)
         *   [UserInfoButton.onTap](../open-api/user-info/UserInfoButton.onTap.html)
         *   [UserInfoButton.show](../open-api/user-info/UserInfoButton.show.html)
+    *   [微信运动](../open-api/werun/wx.getWeRunData.html)
+        *   [wx.getWeRunData](../open-api/werun/wx.getWeRunData.html)
     *   [设置](../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.createOpenSettingButton](../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../open-api/setting/wx.getSetting.html)
@@ -216,20 +257,6 @@
         *   [OpenSettingButton.destroy](../open-api/setting/OpenSettingButton.destroy.html)
         *   [OpenSettingButton.hide](../open-api/setting/OpenSettingButton.hide.html)
         *   [OpenSettingButton.show](../open-api/setting/OpenSettingButton.show.html)
-    *   [微信运动](../open-api/werun/wx.getWeRunData.html)
-        *   [wx.getWeRunData](../open-api/werun/wx.getWeRunData.html)
-    *   [开放数据](../open-api/data/wx.getFriendCloudStorage.html)
-        *   [wx.getFriendCloudStorage](../open-api/data/wx.getFriendCloudStorage.html)
-        *   [wx.getUserCloudStorage](../open-api/data/wx.getUserCloudStorage.html)
-        *   [wx.getUserInfo](../open-api/data/wx.getUserInfo.html)
-        *   [wx.getGroupCloudStorage](../open-api/data/wx.getGroupCloudStorage.html)
-        *   [wx.getSharedCanvas](../open-api/data/wx.getSharedCanvas.html)
-        *   [wx.removeUserCloudStorage](../open-api/data/wx.removeUserCloudStorage.html)
-        *   [wx.setUserCloudStorage](../open-api/data/wx.setUserCloudStorage.html)
-        *   [KVData](../open-api/data/KVData.html)
-        *   [UserGameData](../open-api/data/UserGameData.html)
-        *   [removeUserStorage](../open-api/data/removeUserStorage.html)
-        *   [setUserStorage](../open-api/data/setUserStorage.html)
     *   [授权](../open-api/authorize/wx.authorize.html)
         *   [wx.authorize](../open-api/authorize/wx.authorize.html)
     *   [游戏圈](../open-api/game-club/wx.createGameClubButton.html)
@@ -256,48 +283,12 @@
     *   [内容安全](../open-api/sec-check/imgSecCheck.html)
         *   [imgSecCheck](../open-api/sec-check/imgSecCheck.html)
         *   [msgSecCheck](../open-api/sec-check/msgSecCheck.html)
-*   [转发](../share/wx.getShareInfo.html)
-    *   [wx.getShareInfo](../share/wx.getShareInfo.html)
-    *   [wx.hideShareMenu](../share/wx.hideShareMenu.html)
-    *   [wx.onShareAppMessage](../share/wx.onShareAppMessage.html)
-    *   [wx.offShareAppMessage](../share/wx.offShareAppMessage.html)
-    *   [wx.showShareMenu](../share/wx.showShareMenu.html)
-    *   [wx.shareAppMessage](../share/wx.shareAppMessage.html)
-    *   [wx.updateShareMenu](../share/wx.updateShareMenu.html)
 *   [性能](../performance/wx.getPerformance.html)
     *   [wx.getPerformance](../performance/wx.getPerformance.html)
     *   [wx.triggerGC](../performance/wx.triggerGC.html)
     *   [Performance](../performance/Performance.html)
     *   [onMemoryWarning](../performance/onMemoryWarning.html)
     *   [Performance.now](../performance/Performance.now.html)
-*   [系统](../system/life-cycle/wx.exitMiniProgram.html)
-    *   [生命周期](../system/life-cycle/wx.exitMiniProgram.html)
-        *   [wx.exitMiniProgram](../system/life-cycle/wx.exitMiniProgram.html)
-        *   [wx.getLaunchOptionsSync](../system/life-cycle/wx.getLaunchOptionsSync.html)
-        *   [wx.onHide](../system/life-cycle/wx.onHide.html)
-        *   [wx.offHide](../system/life-cycle/wx.offHide.html)
-        *   [wx.onShow](../system/life-cycle/wx.onShow.html)
-        *   [wx.offShow](../system/life-cycle/wx.offShow.html)
-    *   [系统信息](../system/system-info/wx.getSystemInfo.html)
-        *   [wx.getSystemInfo](../system/system-info/wx.getSystemInfo.html)
-        *   [wx.getSystemInfoSync](../system/system-info/wx.getSystemInfoSync.html)
-    *   [系统事件](../system/system-event/wx.onAudioInterruptionBegin.html)
-        *   [wx.onAudioInterruptionBegin](../system/system-event/wx.onAudioInterruptionBegin.html)
-        *   [wx.offAudioInterruptionBegin](../system/system-event/wx.offAudioInterruptionBegin.html)
-        *   [wx.onAudioInterruptionEnd](../system/system-event/wx.onAudioInterruptionEnd.html)
-        *   [wx.offAudioInterruptionEnd](../system/system-event/wx.offAudioInterruptionEnd.html)
-        *   [wx.onError](../system/system-event/wx.onError.html)
-        *   [wx.offError](../system/system-event/wx.offError.html)
-    *   [触摸事件](../system/touch-event/wx.onTouchStart.html)
-        *   [wx.onTouchStart](../system/touch-event/wx.onTouchStart.html)
-        *   [wx.offTouchStart](../system/touch-event/wx.offTouchStart.html)
-        *   [wx.onTouchMove](../system/touch-event/wx.onTouchMove.html)
-        *   [wx.offTouchMove](../system/touch-event/wx.offTouchMove.html)
-        *   [wx.onTouchEnd](../system/touch-event/wx.onTouchEnd.html)
-        *   [wx.offTouchEnd](../system/touch-event/wx.offTouchEnd.html)
-        *   [wx.onTouchCancel](../system/touch-event/wx.onTouchCancel.html)
-        *   [wx.offTouchCancel](../system/touch-event/wx.offTouchCancel.html)
-        *   [Touch](../system/touch-event/Touch.html)
 *   [调试](../debug/wx.setEnableDebug.html)
     *   [wx.setEnableDebug](../debug/wx.setEnableDebug.html)
 *   [分包加载](../subpackages/wx.loadSubpackage.html)
@@ -343,6 +334,36 @@
     *   [Worker.onMessage](../worker/Worker.onMessage.html)
     *   [Worker.postMessage](../worker/Worker.postMessage.html)
     *   [Worker.terminate](../worker/Worker.terminate.html)
+*   [转发](../share/wx.getShareInfo.html)
+    *   [wx.getShareInfo](../share/wx.getShareInfo.html)
+    *   [wx.hideShareMenu](../share/wx.hideShareMenu.html)
+    *   [wx.onShareAppMessage](../share/wx.onShareAppMessage.html)
+    *   [wx.offShareAppMessage](../share/wx.offShareAppMessage.html)
+    *   [wx.showShareMenu](../share/wx.showShareMenu.html)
+    *   [wx.shareAppMessage](../share/wx.shareAppMessage.html)
+    *   [wx.updateShareMenu](../share/wx.updateShareMenu.html)
+*   [广告](../ad/wx.createBannerAd.html)
+    *   [wx.createBannerAd](../ad/wx.createBannerAd.html)
+    *   [wx.createRewardedVideoAd](../ad/wx.createRewardedVideoAd.html)
+    *   [BannerAd](../ad/BannerAd.html)
+    *   [RewardedVideoAd](../ad/RewardedVideoAd.html)
+    *   [BannerAd.destroy](../ad/BannerAd.destroy.html)
+    *   [BannerAd.hide](../ad/BannerAd.hide.html)
+    *   [RewardedVideoAd.load](../ad/RewardedVideoAd.load.html)
+    *   [RewardedVideoAd.onLoad](../ad/RewardedVideoAd.onLoad.html)
+    *   [BannerAd.offLoad](../ad/BannerAd.offLoad.html)
+    *   [BannerAd.offError](../ad/BannerAd.offError.html)
+    *   [RewardedVideoAd.offClose](../ad/RewardedVideoAd.offClose.html)
+    *   [BannerAd.onLoad](../ad/BannerAd.onLoad.html)
+    *   [BannerAd.offResize](../ad/BannerAd.offResize.html)
+    *   [RewardedVideoAd.onClose](../ad/RewardedVideoAd.onClose.html)
+    *   [BannerAd.onError](../ad/BannerAd.onError.html)
+    *   [RewardedVideoAd.offLoad](../ad/RewardedVideoAd.offLoad.html)
+    *   [RewardedVideoAd.onError](../ad/RewardedVideoAd.onError.html)
+    *   [RewardedVideoAd.offError](../ad/RewardedVideoAd.offError.html)
+    *   [BannerAd.onResize](../ad/BannerAd.onResize.html)
+    *   [RewardedVideoAd.show](../ad/RewardedVideoAd.show.html)
+    *   [BannerAd.show](../ad/BannerAd.show.html)
 *   [媒体](../media/audio/wx.createInnerAudioContext.html)
     *   [音频](../media/audio/wx.createInnerAudioContext.html)
         *   [wx.createInnerAudioContext](../media/audio/wx.createInnerAudioContext.html)
@@ -373,6 +394,11 @@
         *   [InnerAudioContext.play](../media/audio/InnerAudioContext.play.html)
         *   [InnerAudioContext.stop](../media/audio/InnerAudioContext.stop.html)
         *   [InnerAudioContext.seek](../media/audio/InnerAudioContext.seek.html)
+    *   [图片](../media/image/wx.chooseImage.html)
+        *   [wx.chooseImage](../media/image/wx.chooseImage.html)
+        *   [wx.previewImage](../media/image/wx.previewImage.html)
+        *   [wx.saveImageToPhotosAlbum](../media/image/wx.saveImageToPhotosAlbum.html)
+        *   [ImageFile](../media/image/ImageFile.html)
     *   [录音](../media/recorder/wx.getRecorderManager.html)
         *   [wx.getRecorderManager](../media/recorder/wx.getRecorderManager.html)
         *   [RecorderManager](../media/recorder/RecorderManager.html)
@@ -388,11 +414,6 @@
         *   [RecorderManager.resume](../media/recorder/RecorderManager.resume.html)
         *   [RecorderManager.start](../media/recorder/RecorderManager.start.html)
         *   [RecorderManager.stop](../media/recorder/RecorderManager.stop.html)
-    *   [图片](../media/image/wx.chooseImage.html)
-        *   [wx.chooseImage](../media/image/wx.chooseImage.html)
-        *   [wx.previewImage](../media/image/wx.previewImage.html)
-        *   [wx.saveImageToPhotosAlbum](../media/image/wx.saveImageToPhotosAlbum.html)
-        *   [ImageFile](../media/image/ImageFile.html)
     *   [视频](../media/video/wx.createVideo.html)
         *   [wx.createVideo](../media/video/wx.createVideo.html)
         *   [Video](../media/video/Video.html)
@@ -414,31 +435,6 @@
         *   [Video.requestFullScreen](../media/video/Video.requestFullScreen.html)
         *   [Video.stop](../media/video/Video.stop.html)
         *   [Video.seek](../media/video/Video.seek.html)
-*   [开放数据域](../context/onMessage.html)
-    *   [onMessage](../context/onMessage.html)
-    *   [postMessage](../context/postMessage.html)
-*   [广告](../ad/wx.createBannerAd.html)
-    *   [wx.createBannerAd](../ad/wx.createBannerAd.html)
-    *   [wx.createRewardedVideoAd](../ad/wx.createRewardedVideoAd.html)
-    *   [BannerAd](../ad/BannerAd.html)
-    *   [RewardedVideoAd](../ad/RewardedVideoAd.html)
-    *   [BannerAd.destroy](../ad/BannerAd.destroy.html)
-    *   [BannerAd.hide](../ad/BannerAd.hide.html)
-    *   [RewardedVideoAd.load](../ad/RewardedVideoAd.load.html)
-    *   [RewardedVideoAd.onLoad](../ad/RewardedVideoAd.onLoad.html)
-    *   [BannerAd.offLoad](../ad/BannerAd.offLoad.html)
-    *   [BannerAd.offError](../ad/BannerAd.offError.html)
-    *   [RewardedVideoAd.offClose](../ad/RewardedVideoAd.offClose.html)
-    *   [BannerAd.onLoad](../ad/BannerAd.onLoad.html)
-    *   [BannerAd.offResize](../ad/BannerAd.offResize.html)
-    *   [RewardedVideoAd.onClose](../ad/RewardedVideoAd.onClose.html)
-    *   [BannerAd.onError](../ad/BannerAd.onError.html)
-    *   [RewardedVideoAd.offLoad](../ad/RewardedVideoAd.offLoad.html)
-    *   [RewardedVideoAd.onError](../ad/RewardedVideoAd.onError.html)
-    *   [RewardedVideoAd.offError](../ad/RewardedVideoAd.offError.html)
-    *   [BannerAd.onResize](../ad/BannerAd.onResize.html)
-    *   [RewardedVideoAd.show](../ad/RewardedVideoAd.show.html)
-    *   [BannerAd.show](../ad/BannerAd.show.html)
 *   [定时器](../timer/clearTimeout.html)
     *   [clearTimeout](../timer/clearTimeout.html)
     *   [clearInterval](../timer/clearInterval.html)
@@ -475,29 +471,69 @@
 
 #### 方法
 
-##### [Array.<string> FileSystemManager.readdirSync(string dirPath)](FileSystemManager.readdirSync.html)
+##### [FileSystemManager.access(Object object)](FileSystemManager.access.html)
 
-FileSystemManager.readdir 的同步版本
+判断文件/目录是否存在
+
+##### [FileSystemManager.appendFile(Object object)](FileSystemManager.appendFile.html)
+
+在文件结尾追加内容
+
+##### [FileSystemManager.saveFile(Object object)](FileSystemManager.saveFile.html)
+
+保存临时文件到本地。此接口会移动临时文件，因此调用成功后，tempFilePath 将不可用。
+
+##### [FileSystemManager.getSavedFileList()](FileSystemManager.getSavedFileList.html)
+
+获取该小程序下已保存的本地缓存文件列表
+
+##### [FileSystemManager.removeSavedFile(Object object)](FileSystemManager.removeSavedFile.html)
+
+删除该小程序下已保存的本地缓存文件
+
+##### [FileSystemManager.copyFile(Object object)](FileSystemManager.copyFile.html)
+
+复制文件
+
+##### [FileSystemManager.getFileInfo(Object object)](FileSystemManager.getFileInfo.html)
+
+获取该小程序下的 本地临时文件 或 本地缓存文件 信息
+
+##### [FileSystemManager.mkdir(Object object)](FileSystemManager.mkdir.html)
+
+创建目录
 
 ##### [FileSystemManager.readdir(Object object)](FileSystemManager.readdir.html)
 
 读取目录内文件列表
 
-##### [FileSystemManager.renameSync(string oldPath, string newPath)](FileSystemManager.renameSync.html)
+##### [FileSystemManager.readFile(Object object)](FileSystemManager.readFile.html)
 
-FileSystemManager.rename 的同步版本
+读取本地文件内容
 
 ##### [FileSystemManager.rename(Object object)](FileSystemManager.rename.html)
 
 重命名文件，可以把文件从 oldPath 移动到 newPath
 
-##### [string|ArrayBuffer FileSystemManager.readFileSync(string filePath, string encoding)](FileSystemManager.readFileSync.html)
+##### [FileSystemManager.rmdir(Object object)](FileSystemManager.rmdir.html)
 
-FileSystemManager.readFile 的同步版本
+删除目录
 
-##### [FileSystemManager.readFile(Object object)](FileSystemManager.readFile.html)
+##### [Stats FileSystemManager.stat(Object object)](FileSystemManager.stat.html)
 
-读取本地文件内容
+获取文件 Stats 对象
+
+##### [FileSystemManager.unlink(Object object)](FileSystemManager.unlink.html)
+
+删除文件
+
+##### [FileSystemManager.unzip(Object object)](FileSystemManager.unzip.html)
+
+解压文件
+
+##### [FileSystemManager.writeFile(Object object)](FileSystemManager.writeFile.html)
+
+写文件
 
 ##### [FileSystemManager.mkdirSync(string dirPath)](FileSystemManager.mkdirSync.html)
 
@@ -507,9 +543,29 @@ FileSystemManager.mkdir 的同步版本
 
 创建目录
 
-##### [FileSystemManager.unzip(Object object)](FileSystemManager.unzip.html)
+##### [Array.<string> FileSystemManager.readdirSync(string dirPath)](FileSystemManager.readdirSync.html)
 
-解压文件
+FileSystemManager.readdir 的同步版本
+
+##### [FileSystemManager.readdir(Object object)](FileSystemManager.readdir.html)
+
+读取目录内文件列表
+
+##### [string|ArrayBuffer FileSystemManager.readFileSync(string filePath, string encoding)](FileSystemManager.readFileSync.html)
+
+FileSystemManager.readFile 的同步版本
+
+##### [FileSystemManager.readFile(Object object)](FileSystemManager.readFile.html)
+
+读取本地文件内容
+
+##### [FileSystemManager.renameSync(string oldPath, string newPath)](FileSystemManager.renameSync.html)
+
+FileSystemManager.rename 的同步版本
+
+##### [FileSystemManager.rename(Object object)](FileSystemManager.rename.html)
+
+重命名文件，可以把文件从 oldPath 移动到 newPath
 
 ##### [FileSystemManager.rmdirSync(string dirPath)](FileSystemManager.rmdirSync.html)
 
@@ -519,13 +575,13 @@ FileSystemManager.rmdir 的同步版本
 
 删除目录
 
-##### [FileSystemManager.writeFileSync(string filePath, string|ArrayBuffer data, string encoding)](FileSystemManager.writeFileSync.html)
+##### [Stats FileSystemManager.statSync(string path)](FileSystemManager.statSync.html)
 
-FileSystemManager.writeFile 的同步版本
+FileSystemManager.stat 的同步版本
 
-##### [FileSystemManager.writeFile(Object object)](FileSystemManager.writeFile.html)
+##### [Stats FileSystemManager.stat(Object object)](FileSystemManager.stat.html)
 
-写文件
+获取文件 Stats 对象
 
 ##### [FileSystemManager.unlinkSync(string filePath)](FileSystemManager.unlinkSync.html)
 
@@ -535,13 +591,17 @@ FileSystemManager.unlink 的同步版本
 
 删除文件
 
-##### [Stats FileSystemManager.statSync(string path)](FileSystemManager.statSync.html)
+##### [FileSystemManager.unzip(Object object)](FileSystemManager.unzip.html)
 
-FileSystemManager.stat 的同步版本
+解压文件
 
-##### [Stats FileSystemManager.stat(Object object)](FileSystemManager.stat.html)
+##### [FileSystemManager.writeFileSync(string filePath, string|ArrayBuffer data, string encoding)](FileSystemManager.writeFileSync.html)
 
-获取文件 Stats 对象
+FileSystemManager.writeFile 的同步版本
+
+##### [FileSystemManager.writeFile(Object object)](FileSystemManager.writeFile.html)
+
+写文件
 
 </section>
 
@@ -572,7 +632,7 @@ FileSystemManager.stat 的同步版本
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

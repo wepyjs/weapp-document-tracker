@@ -140,7 +140,7 @@ Unity 目前还没有对小游戏进行适配。不过小游戏提供了对大�
 
 小游戏的运行环境是一个不同于浏览器的宿主环境，没有提供 BOM 和 DOM API，提供的是 wx API。通过 wx API，开发者可以调用 Native 提供的绘制、音视频、网络、文件等能力。
 
-![](../../image/framework-1.png)
+![](https://developers.weixin.qq.com/minigame/dev/image/framework-1.png)
 
 如果你想创建画布，你需要调用 [wx.createCanvas()](../../document/render/canvas/wx.createCanvas.html)
 
@@ -174,7 +174,7 @@ Unity 目前还没有对小游戏进行适配。不过小游戏提供了对大�
 
 除了修改引擎，还有一种适配方式，即在引擎和游戏逻辑代码之间加一层模拟 BOM 和 DOM API 的适配层，我们称之为 Adapter。这层适配层在全局通过 wx API 模拟了引擎会访问到的那部分 window 和 document 对象的属性和方法，使引擎感受不到环境的差异。
 
-![](../../image/framework-2.png)
+![](https://developers.weixin.qq.com/minigame/dev/image/framework-2.png)
 
 Adapter 是用户代码，不是基础库的一部分。关于 Adapter 的介绍，参见教程 [Adapter](adapter.html)。
 
@@ -207,7 +207,7 @@ Adapter 是用户代码，不是基础库的一部分。关于 Adapter 的介绍
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

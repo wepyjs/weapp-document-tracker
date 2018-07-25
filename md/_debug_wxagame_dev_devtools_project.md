@@ -127,7 +127,7 @@
 
 开发者可以在此选择任意基础库版本，用于开发和调试旧版本兼容问题。
 
-![clientlib](../image/devtools2/clientlib.png)
+![clientlib](https://developers.weixin.qq.com/minigame/dev/image/devtools2/clientlib.png)
 
 ### ES6 转 ES5
 
@@ -149,13 +149,13 @@
 
 正式发布的小程序的网络请求是需要校验合法域名以及域名的 TLS 版本，可以在 mp 管理后台进行配置。 在开发过程中可以开启此选项，开发工具将不会校验安全域名，以及 TLS 版本，帮助在开发过程中更方便的完成调试工作。
 
-![edit](../image/devtools2/righttools.png)
+![edit](https://developers.weixin.qq.com/minigame/dev/image/devtools2/righttools.png)
 
 ## 域名信息
 
 将显示小程序的安全域名信息，合法域名可在 mp 管理后台进行设置。
 
-![host](../image/devtools2/host.png)
+![host](https://developers.weixin.qq.com/minigame/dev/image/devtools2/host.png)
 
 </section>
 
@@ -186,7 +186,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

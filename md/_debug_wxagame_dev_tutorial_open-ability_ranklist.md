@@ -126,13 +126,13 @@
 
 *   微信搜索
 
-![search](../../image/search.png)
+![search](https://developers.weixin.qq.com/minigame/dev/image/search.png)
 
 *   小游戏中心
 
-![PortalRankList1](../../image/PortalRankList1.png)
+![PortalRankList1](https://developers.weixin.qq.com/minigame/dev/image/PortalRankList1.png)
 
-![PortalRankList2](../../image/PortalRankList2.png)
+![PortalRankList2](https://developers.weixin.qq.com/minigame/dev/image/PortalRankList2.png)
 
 ### 配置步骤与相关字段说明
 
@@ -142,7 +142,7 @@
 
 #### 2\. 登录mp管理后台后，在游戏设置-排行榜配置中完成配置
 
-![RanklistConfig](../../image/RankListConfig.png)
+![RanklistConfig](https://developers.weixin.qq.com/minigame/dev/image/RankListConfig.png)
 
 <table>
 
@@ -218,7 +218,7 @@
 
 #### 3\. 完成提交后，需经微信审核通过，才可生效。
 
-![ConfigApperance](../../image/ConfigApperance.png)
+![ConfigApperance](https://developers.weixin.qq.com/minigame/dev/image/ConfigApperance.png)
 
 </section>
 
@@ -249,7 +249,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

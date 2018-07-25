@@ -123,7 +123,7 @@
 
 模拟器模拟微信小程序在客户端真实的逻辑表现，对于绝大部分的 API 均能够在模拟器上呈现出正确的状态。
 
-![emulat](../image/devtools2/simulator.png)
+![emulat](https://developers.weixin.qq.com/minigame/dev/image/devtools2/simulator.png)
 
 ## 自定义编译
 
@@ -133,13 +133,13 @@
 
 **注：编译条件跟项目相关，每个项目可以保存自己相关的编译条件**
 
-![wxml](../image/devtools2/customcompile.png)
+![wxml](https://developers.weixin.qq.com/minigame/dev/image/devtools2/customcompile.png)
 
 ## 前后台切换
 
 工具栏中前后台切换帮助开发者模拟一些客户端的环境操作。例如当用户从小程序中回到聊天窗口，会触发一个小程序被设置为后台的回调。
 
-![5](../image/devtools2/background.png)
+![5](https://developers.weixin.qq.com/minigame/dev/image/devtools2/background.png)
 
 ## 调试工具
 
@@ -149,7 +149,7 @@
 
 Sources panel 用于显示当前项目的脚本文件，同浏览器开发不同，微信小程序框架会对脚本文件进行编译的工作，所以在 Sources panel 中开发者看到的文件是经过处理之后的脚本文件，开发者的代码都会被包裹在 define 函数中，并且对于 Page 代码，在尾部会有 require 的主动调用。
 
-![sources](../image/devtools2/source.png)
+![sources](https://developers.weixin.qq.com/minigame/dev/image/devtools2/source.png)
 
 **注：当代码运行到断点的时候，整个小程序都停止了，所以模拟器会出现白屏或者无法操作的情况**
 
@@ -159,13 +159,13 @@ Storage panel 用于显示当前项目使用 `wx.setStorage` 或者 `wx.setStora
 
 可以直接在 Storage panel 上对数据进行删除（按 delete 键）、新增、修改
 
-![storage](../image/devtools2/storage.gif)
+![storage](https://developers.weixin.qq.com/minigame/dev/image/devtools2/storage.gif)
 
 ### Network panel
 
 Network Panel 用于观察和显示 request 和 socket 的请求情况
 
-![network](../image/devtools/network.png)
+![network](https://developers.weixin.qq.com/minigame/dev/image/devtools/network.png)
 
 **注：uploadFile 和 downloadFile 暂时不支持在 Network Panel 中查看**
 
@@ -175,11 +175,11 @@ Console panel 有两大功能：
 
 *   开发者可以在此输入和调试代码
 
-    ![console](../image/devtools2/console.gif)
+    ![console](https://developers.weixin.qq.com/minigame/dev/image/devtools2/console.gif)
 
 *   小程序的错误输出，会显示在此处
 
-    ![4](../image/devtools2/console.png)
+    ![4](https://developers.weixin.qq.com/minigame/dev/image/devtools2/console.png)
 
 *   在控制台中可以输入以下命令
 
@@ -222,7 +222,7 @@ Console panel 有两大功能：
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

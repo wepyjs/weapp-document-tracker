@@ -122,17 +122,17 @@
 
 新建项目选择小程序项目，选择代码存放的硬盘路径，并输入 AppId。
 
-你可以前往 [小游戏注册](https://developers.weixin.qq.com/minigame/introduction/index.html#%E5%B0%8F%E6%B8%B8%E6%88%8F%E6%B3%A8%E5%86%8C) 通过注册小游戏帐号来获得 AppId，也可以使用无 AppId 的体验模式。给你的项目起一个好听的名字，最后，勾选“建立游戏快速启动模板”（注意：你要选择一个空的目录才会有这个选项），点击确定，你就得到了你的第一个小游戏了。 ![](tutorial/images/select-game.jpg)
+你可以前往 [小游戏注册](https://developers.weixin.qq.com/minigame/introduction/index.html#%E5%B0%8F%E6%B8%B8%E6%88%8F%E6%B3%A8%E5%86%8C) 通过注册小游戏帐号来获得 AppId，也可以使用无 AppId 的体验模式。给你的项目起一个好听的名字，最后，勾选“建立游戏快速启动模板”（注意：你要选择一个空的目录才会有这个选项），点击确定，你就得到了你的第一个小游戏了。 ![](https://developers.weixin.qq.com/minigame/dev/image/select-game.jpg)
 
 点击顶部菜单编译就可以在 IDE 预览你的第一个小游戏。
 
-![](tutorial/images/first-game.jpg)
+![](https://developers.weixin.qq.com/minigame/dev/image/first-game.jpg)
 
 ### 真机预览
 
 点击工具上的编译按钮，可以在工具的左侧模拟器界面看到这个小游戏的表现。点击预览按钮，通过微信的扫一扫在手机上体验你的第一个小游戏。
 
-![](tutorial/images/phone-preview.jpg)
+![](https://developers.weixin.qq.com/minigame/dev/image/phone-preview.jpg)
 
 ### 文件结构
 
@@ -262,7 +262,7 @@
 
 <td>String</td>
 
-<td>多线程 Worker 配置项，详细请参考 [Worker文档](tutorial/usability/worker.html)</td>
+<td>多线程 Worker 配置项，详细请参考 <a href="">Worker文档</a></td>
 
 <td>无</td>
 
@@ -328,7 +328,7 @@
 
 #### 创建 Canvas
 
-调用 [wx.createCanvas()](document/render/canvas/wx.createCanvas.html) 接口，可以创建一个 [Canvas](document/render/canvas/Canvas.html) 对象。
+调用 <a href="">wx.createCanvas()</a> 接口，可以创建一个 <a href="">Canvas</a> 对象。
 
     var canvas = wx.createCanvas()
 
@@ -336,7 +336,7 @@
 
     console.log(canvas.width, canvas.height)
 
-在整个小游戏代码中首次调用 wx.createCanvas() 创建的是上屏 Canvas，之后调用则创建的是离屏 Canvas。如果你的项目中使用了官方提供的 [Adapter](tutorial/base/adapter.html) 即 weapp-adapter.js（关于什么是 Adpater 请参考官方教程 [Adapter](tutorial/base/adapter.html)），那么你此时创建的会是一个离屏 Canvas。因为在 weapp-adapter.js 已经调用了一次 wx.createCanvas()，并把返回的 canvas 作为全局变量暴露出来。假设你的项目目录结构如下：
+在整个小游戏代码中首次调用 wx.createCanvas() 创建的是上屏 Canvas，之后调用则创建的是离屏 Canvas。如果你的项目中使用了官方提供的 <a href="">Adapter</a> 即 weapp-adapter.js（关于什么是 Adpater 请参考官方教程 <a href="">Adapter</a>），那么你此时创建的会是一个离屏 Canvas。因为在 weapp-adapter.js 已经调用了一次 wx.createCanvas()，并把返回的 canvas 作为全局变量暴露出来。假设你的项目目录结构如下：
 
     ├── game.js
     ├── weapp-adapter.js
@@ -360,7 +360,7 @@
     context.fillStyle = 'red'
     context.fillRect(0, 0, 100, 100)
 
-通过 [Canvas.getContext()](document/render/canvas/Canvas.getContext.html) 方法可以获取 2d 或 WebGL 渲染上下文 [RenderingContext](document/render/canvas/RenderingContext.html)，调用渲染上下文的绘制方法可以在 Canvas 上进行绘制。小游戏基本上支持 2d 和 WebGL 1.0 所有的属性和方法，详情请见 [RenderingContext](document/render/canvas/RenderingContext.html)。由于使用 WebGL 的绘制过程较为复杂，所以本文中的示例代码都以 2d 渲染上下文的绘制方法编写。
+通过 <a href="">Canvas.getContext()</a> 方法可以获取 2d 或 WebGL 渲染上下文 <a href="">RenderingContext</a>，调用渲染上下文的绘制方法可以在 Canvas 上进行绘制。小游戏基本上支持 2d 和 WebGL 1.0 所有的属性和方法，详情请见 <a href="">RenderingContext</a>。由于使用 WebGL 的绘制过程较为复杂，所以本文中的示例代码都以 2d 渲染上下文的绘制方法编写。
 
 通过设置 width 和 height 属性可以改变 Canvas 对象的宽高，但这也会导致 Canvas 内容的清空和渲染上下文的重置。
 
@@ -369,7 +369,7 @@
 
 #### 显示图片
 
-通过 [wx.createImage()](document/render/image/wx.createImage.html) 接口，可以创建一个 [Image](document/render/image/Image.html) 对象。Image 对象可以加载图片。当 Image 对象被绘制到 Canvas 上时，图片才会显示在屏幕上。
+通过 <a href="">wx.createImage()</a> 接口，可以创建一个 <a href="">Image</a> 对象。Image 对象可以加载图片。当 Image 对象被绘制到 Canvas 上时，图片才会显示在屏幕上。
 
     var image = wx.createImage()
 
@@ -402,23 +402,23 @@
 
 在 JavaScript 中，一般通过 setInterval/setTimeout/requestAnimationFrame 来实现动画效果。小游戏对这些 API 提供了支持：
 
-*   [setInterval()](document/timer/setInterval.html)
-*   [setTimeout()](document/timer/setTimeout.html)
-*   [requestAnimationFrame()](document/render/frame/requestAnimationFrame.html)
-*   [clearInterval()](document/timer/clearInterval.html)
-*   [clearTimeout()](document/timer/clearTimeout.html)
-*   [cancelAnimationFrame()](document/render/frame/cancelAnimationFrame.html)
+*   <a href="">setInterval()</a>
+*   <a href="">setTimeout()</a>
+*   <a href="">requestAnimationFrame()</a>
+*   <a href="">clearInterval()</a>
+*   <a href="">clearTimeout()</a>
+*   <a href="">cancelAnimationFrame()</a>
 
-另外，还可以通过 [wx.setPreferredFramesPerSecond()](document/render/frame/wx.setPreferredFramesPerSecond.html) 修改执行 requestAnimationFrame 回调函数的频率，以降低性能消耗。
+另外，还可以通过 <a href="">wx.setPreferredFramesPerSecond()</a> 修改执行 requestAnimationFrame 回调函数的频率，以降低性能消耗。
 
 #### 触摸事件
 
 响应用户与屏幕的交互是游戏中必不可少的部分，小游戏参照 DOM 中的 TouchEvent 提供了以下监听触摸事件的 API：
 
-*   [wx.onTouchStart()](document/system/touch-event/wx.onTouchStart.html)
-*   [wx.onTouchMove()](document/system/touch-event/wx.onTouchMove.html)
-*   [wx.onTouchEnd()](document/system/touch-event/wx.onTouchEnd.html)
-*   [wx.onTouchCancel()](document/system/touch-event/wx.onTouchCancel.html)
+*   <a href="">wx.onTouchStart()</a>
+*   <a href="">wx.onTouchMove()</a>
+*   <a href="">wx.onTouchEnd()</a>
+*   <a href="">wx.onTouchCancel()</a>
 
     wx.onTouchStart(function (e) {
         console.log(e.touches)
@@ -544,7 +544,7 @@ console.log 无法在真机上将存在循环引用的对象输出到 vConsole �
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

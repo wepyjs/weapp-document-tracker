@@ -142,7 +142,7 @@
 
 <td>dark</td>
 
-<td>![](../../image/game-club/dark.png)</td>
+<td>![](https://developers.weixin.qq.com/minigame/dev/image/game-club/dark.png)</td>
 
 </tr>
 
@@ -150,7 +150,7 @@
 
 <td>green</td>
 
-<td>![](../../image/game-club/green.png)</td>
+<td>![](https://developers.weixin.qq.com/minigame/dev/image/game-club/green.png)</td>
 
 </tr>
 
@@ -158,7 +158,7 @@
 
 <td>white</td>
 
-<td>![](../../image/game-club/white.png) （灰色背景仅用作显示图标，图标本身为白色）</td>
+<td>![](https://developers.weixin.qq.com/minigame/dev/image/game-club/white.png) （灰色背景仅用作显示图标，图标本身为白色）</td>
 
 </tr>
 
@@ -166,7 +166,7 @@
 
 <td>light</td>
 
-<td>![](../../image/game-club/light.png)</td>
+<td>![](https://developers.weixin.qq.com/minigame/dev/image/game-club/light.png)</td>
 
 </tr>
 
@@ -180,11 +180,11 @@
 
 *   MP管理后台游戏圈配置界面
 
-![mp](../../image/game-club/mp.jpg)
+![mp](https://developers.weixin.qq.com/minigame/dev/image/game-club/mp.jpg)
 
 *   移动端游戏圈管理员操作界面
 
-![mp](../../image/game-club/mobile.jpg)
+![mp](https://developers.weixin.qq.com/minigame/dev/image/game-club/mobile.jpg)
 
 </section>
 
@@ -215,7 +215,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

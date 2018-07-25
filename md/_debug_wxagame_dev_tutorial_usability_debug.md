@@ -118,7 +118,7 @@
 
 在真机上，如果想要查看 console.log，console.error 等 API 输出的内容，需要在点击屏幕右上角的按钮打开的菜单里点击 `打开调试`。此时小程序会退出，重新打开后会发现右下角有一个 `vConsole` 按钮。点击 `vConsole` 按钮可以打开日志面板。
 
-![](../../image/vConsole.jpg)
+![](https://developers.weixin.qq.com/minigame/dev/image/vConsole.jpg)
 
 在真机上 console.log 等 API 无法输出有循环引用的对象。假设按照如下代码，尝试输出有循环引用的对象 a
 
@@ -159,7 +159,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

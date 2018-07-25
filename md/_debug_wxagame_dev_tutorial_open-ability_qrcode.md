@@ -116,7 +116,7 @@
 
 小游戏的二维码与小程序有着相同的样式和获取方式。通过后台接口可以获取小游戏的二维码，扫描该二维码可以直接进入小游戏。目前微信支持两种二维码，小程序码（左），小程序二维码（右），如下所示：
 
-![](../../image/qrcode.png)
+![](https://developers.weixin.qq.com/minigame/dev/image/qrcode.png)
 
 ### 获取小程序码
 
@@ -398,7 +398,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

@@ -120,7 +120,7 @@
 
 绑定了开发者帐号的小游戏，可以通过下面3种途径获取UnionID。
 
-1.  调用接口[wx.getUserInfo](../../document/open-api/data/wx.getUserInfo.html)，从解密数据中获取 UnionID。注意本接口需要用户授权，请开发者妥善处理用户拒绝授权后的情况。
+1.  调用接口[wx.getUserInfo](../../document/open-api/user-info/wx.getUserInfo.md)，从解密数据中获取 UnionID。注意本接口需要用户授权，请开发者妥善处理用户拒绝授权后的情况。
 
 2.  如果开发者帐号下存在**同主体的**公众号，并且该用户已经关注了该公众号。开发者可以直接通过[wx.login](../../document/open-api/login/wx.login.html)获取到该用户UnionID，无须用户再次授权。
 
@@ -134,13 +134,13 @@
 
 登录微信开放平台(open.weixin.qq.com) – 帐号中心 – 开发者资质认证
 
-![img](../../image/open.png)
+![img](https://developers.weixin.qq.com/minigame/dev/image/open.png)
 
 绑定流程：
 
 登录微信开放平台（open.weixin.qq.com）—管理中心—公众帐号—绑定公众帐号
 
-![img](../../image/union_bind.png)
+![img](https://developers.weixin.qq.com/minigame/dev/image/union_bind.png)
 
 </section>
 
@@ -171,7 +171,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

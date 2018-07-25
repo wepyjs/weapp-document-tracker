@@ -182,7 +182,7 @@
 
 大于等于 2.1.0 的基础库版本，`关闭按钮` 将会常驻，如下图所示
 
-![](../../image/ad/rewarded-video-ad-landscape.png)
+![](https://developers.weixin.qq.com/minigame/dev/image/ad/rewarded-video-ad-landscape.png)
 
 [RewardedVideoAd.onClose()](../../document/ad/RewardedVideoAd.onClose.html) 的回调函数会传入一个参数 res，`res.isEnded` 描述广告被关闭时的状态。
 
@@ -260,7 +260,7 @@
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)

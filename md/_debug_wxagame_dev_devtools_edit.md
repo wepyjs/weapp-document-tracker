@@ -159,15 +159,15 @@
 
 js 补全
 
-![](../image/devtools2/jsautocomplete2.gif)
+![](https://developers.weixin.qq.com/minigame/dev/image/devtools2/jsautocomplete2.gif)
 
 代码模板支持
 
-![](../image/devtools2/jsautocomplete.gif)
+![](https://developers.weixin.qq.com/minigame/dev/image/devtools2/jsautocomplete.gif)
 
 json 补全
 
-![3](../image/devtools2/jsoncomplete.gif)
+![3](https://developers.weixin.qq.com/minigame/dev/image/devtools2/jsoncomplete.gif)
 
 ## 项目配置文件
 
@@ -312,7 +312,7 @@ setting 中可以指定以下设置
 
 文件图标状态的含义如下：
 
-![](../image/devtools2/git/directory.jpg)
+![](https://developers.weixin.qq.com/minigame/dev/image/devtools2/git/directory.jpg)
 
 <table>
 
@@ -438,19 +438,19 @@ setting 中可以指定以下设置
 
 如果某一文件存在修改（Modified），可以右键点击此文件，并选择 “与上一版本比较”，则可以查看当前工作区文件与 HEAD 版本的比较。
 
-![](../image/devtools2/git/contextmenu.jpg)
+![](https://developers.weixin.qq.com/minigame/dev/image/devtools2/git/contextmenu.jpg)
 
-![](../image/devtools2/git/diff.jpg)
+![](https://developers.weixin.qq.com/minigame/dev/image/devtools2/git/diff.jpg)
 
 ### 文件编辑
 
 存在 Git 仓库时，状态栏会展示此 Git 仓库目前的分支信息。例如，下图表明目前 Git 仓库处于 `v2` 分支。
 
-![](../image/devtools2/git/statusbar.jpg)
+![](https://developers.weixin.qq.com/minigame/dev/image/devtools2/git/statusbar.jpg)
 
 同时，编辑文件内容时，将会在所编辑代码左侧实时显示相对于上一版本内容的比较。
 
-![](../image/devtools2/git/linediff.jpg)
+![](https://developers.weixin.qq.com/minigame/dev/image/devtools2/git/linediff.jpg)
 
 样式说明如下：
 
@@ -506,7 +506,7 @@ setting 中可以指定以下设置
 
 勾选后，在编辑文件进行内容比较时，所有 Windows 风格的回车符将被当作 Unix 风格的回车符对待。
 
-![](../image/devtools2/git/windowsreturnsettings.jpg)
+![](https://developers.weixin.qq.com/minigame/dev/image/devtools2/git/windowsreturnsettings.jpg)
 
 </section>
 
@@ -537,7 +537,7 @@ setting 中可以指定以下设置
 <div class="foot" id="footer">
 
 *   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676)
+*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
