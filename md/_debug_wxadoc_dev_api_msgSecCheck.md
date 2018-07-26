@@ -21,6 +21,9 @@
     *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
 *   [社区](https://developers.weixin.qq.com/)
 
+*   [中文](javascript:;)<span class="split-line">/</span>
+*   [EN](javascript:;)
+
 </div>
 
 </div>
@@ -55,6 +58,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](javascript:;)<span class="split-line">/</span>
+*   [EN](javascript:;)
 
 </div>
 
@@ -519,7 +525,7 @@
 
 <td>是</td>
 
-<td>要检测的文本内容，长度不超过 500KB</td>
+<td>要检测的文本内容，长度不超过 500KB，编码格式为utf-8</td>
 
 </tr>
 
@@ -651,6 +657,13 @@
 
      curl -d '{ "content":"hello world!" }'
      'https://api.weixin.qq.com/wxa/msg_sec_check?access_token=ACCESS_TOKEN'
+
+#### 测试用例
+
+    特3456书yuuo莞6543李zxcz蒜7782法fgnv级     
+    完2347全dfji试3726测asad感3847知qwez到
+
+开发者可使用以上两段文本进行测试，若接口errcode返回87014(内容含有违法违规内容)，则对接成功。
 
 </section>
 

@@ -21,6 +21,9 @@
     *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
 *   [社区](https://developers.weixin.qq.com/)
 
+*   [中文](javascript:;)<span class="split-line">/</span>
+*   [EN](javascript:;)
+
 </div>
 
 </div>
@@ -55,6 +58,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](javascript:;)<span class="split-line">/</span>
+*   [EN](javascript:;)
 
 </div>
 
