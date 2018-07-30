@@ -8,17 +8,17 @@
 
 <div class="header_ctrls">
 
-*   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+*   [小程序介绍](javascript:;)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18073100)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18073100)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18073100)
 *   [开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18073100)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18073100)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18073100)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18073100)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18073100)
 *   [社区](https://developers.weixin.qq.com/)
 
 </div>
@@ -41,10 +41,10 @@
 
 </div>
 
-*   [微信小程序接入指南](./)
-*   [客服功能使用指南](custom.html)
-*   [扫码打开小程序接入指南](qrcode.html)
-*   [插件接入指南](plugin.html)
+*   [微信小程序接入指南](.)
+*   [客服功能使用指南](./custom.html)
+*   [扫码打开小程序接入指南](./qrcode.html)
+*   [插件接入指南](./plugin.html)
 
 </div>
 
@@ -64,18 +64,18 @@
 
 <nav role="navigation">
 
-*   [功能介绍](custom.html#功能介绍)
-*   [下发条件说明](custom.html#下发条件说明)
-*   [调用客服消息接口发送客服消息](custom.html#调用客服消息接口发送客服消息)
-    *   [填写消息推送配置](custom.html#填写消息推送配置)
-    *   [接口调用](custom.html#接口调用)
-*   [网页版客服工具](custom.html#网页版客服工具)
-    *   [绑定客服人员](custom.html#绑定客服人员)
-    *   [客服工具使用说明](custom.html#客服工具使用说明)
-        *   [登录并接入](custom.html#登录并接入)
-        *   [切换客服状态](custom.html#切换客服状态)
-        *   [接收消息](custom.html#接收消息)
-        *   [发送消息](custom.html#发送消息)
+*   [功能介绍](./custom.html#功能介绍)
+*   [下发条件说明](./custom.html#下发条件说明)
+*   [调用客服消息接口发送客服消息](./custom.html#调用客服消息接口发送客服消息)
+    *   [填写消息推送配置](./custom.html#填写消息推送配置)
+    *   [接口调用](./custom.html#接口调用)
+*   [网页版客服工具](./custom.html#网页版客服工具)
+    *   [绑定客服人员](./custom.html#绑定客服人员)
+    *   [客服工具使用说明](./custom.html#客服工具使用说明)
+        *   [登录并接入](./custom.html#登录并接入)
+        *   [切换客服状态](./custom.html#切换客服状态)
+        *   [接收消息](./custom.html#接收消息)
+        *   [发送消息](./custom.html#发送消息)
 
 </nav>
 
@@ -105,11 +105,11 @@
 
 客服消息会话入口有两个：
 
-1、小程序内：开发者在小程序内添加[客服消息按钮组件](https://mp.weixin.qq.com/debug/wxadoc/dev/component/contact-button.html)，用户可在小程序内唤起客服会话页面，给小程序发消息；
+1、小程序内：开发者在小程序内添加[客服消息按钮组件](https://developers.weixin.qq.com/miniprogram/dev/component/contact-button.html?t=18073100)，用户可在小程序内唤起客服会话页面，给小程序发消息；
 
 2、已使用过的小程序客服消息会聚合显示在微信会话“小程序客服消息”内，用户可以在小程序外查看历史客服消息，并给小程序客服发消息。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/x11.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/x11.png?t=18073100)
 
 客服消息下发条件：小程序用户在小程序内唤起客服会话或用户给小程序客服发送消息，具体下发时间有效期及消息条数限制见客服消息[下发条件说明](#下发条件说明)
 
@@ -167,21 +167,21 @@
 
 登录小程序，在“设置-开发设置-消息推送”启用消息推送功能并完成相关信息配置（包括服务器地址、Token、及加密方式等）。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/c1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/c1.png?t=18073100)
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/b1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/b1.png?t=18073100)
 
 启用并设置服务器配置后，用户发送的消息以及开发者需要的事件推送，都将被微信转发至开发者URL中。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/d1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/d1.png?t=18073100)
 
 ### 接口调用
 
-[小程序客服消息API文档](https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html)
+[小程序客服消息API文档](https://developers.weixin.qq.com/miniprogram/dev/api/custommsg/receive.html?t=18073100)
 
 ## 网页版客服工具
 
-小程序也可以直接使用[微信公众平台网页版客服工具](https://mpkf.weixin.qq.com)进行客服消息回复。
+小程序也可以直接使用[微信公众平台网页版客服工具](https://mpkf.weixin.qq.com/)进行客服消息回复。
 
 若小程序没有启用消息推送，则用户发送的消息将会被转发至网页版客服工具，客服人员可在网页版客服工具中接入并回复用户。
 
@@ -193,21 +193,21 @@
 
 使用网页版客服工具前，小程序管理员需在小程序后台完成客服人员的绑定。目前小程序支持绑定不多于100个客服人员。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/a1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/a1.png?t=18073100)
 
 ### 客服工具使用说明
 
 #### 登录并接入
 
-已被绑定的小程序客服人员可扫码登录[微信公众平台网页版客服工具](https://mpkf.weixin.qq.com)，并选择对应的小程序帐号，登录后即可看到与小程序对话的用户，可选择接入对话。
+已被绑定的小程序客服人员可扫码登录[微信公众平台网页版客服工具](https://mpkf.weixin.qq.com/)，并选择对应的小程序帐号，登录后即可看到与小程序对话的用户，可选择接入对话。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/i1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/i1.png?t=18073100)
 
 #### 切换客服状态
 
 点击在线状态，可以选择在线状态、离开状态或退出登录
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/f1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/f1.png?t=18073100)
 
 #### 接收消息
 
@@ -217,17 +217,17 @@
 
 重新接入：退出登录，或对话超过半小时，需要重新接入，激活对话
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/m1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/m1.png?t=18073100)
 
 #### 发送消息
 
 已经接入的会话，客服人员可以在48小时内和用户进行对话，目前支持发送文本、图片类型的消息。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/h1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/h1.png?t=18073100)
 
 ## 使用规范
 
-小程序客服消息使用除必须遵守[微信小程序平台运营规范](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)外，还不能违反以下规则，包括但不限于：
+小程序客服消息使用除必须遵守[《微信小程序平台运营规范》](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18073100)外，还不能违反以下规则，包括但不限于：
 
 1.  不允许恶意诱导用户进行可能触发客服消息下发的操作，以达到可向用户下发客服消息目的
 2.  不允许恶意骚扰，下发与用户发送的消息没有关联的、对用户造成骚扰的消息
@@ -262,8 +262,8 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [关于腾讯](https://www.tencent.com/zh-cn/index.html)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=1484641676)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
@@ -273,6 +273,6 @@
 
 </div>
 
-[](./#公众号关联小程序)[](qrcode.html)</div>
+[](.)[](./qrcode.html)</div>
 
 </div>

@@ -9,16 +9,16 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18073023)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18073023)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18073023)
 *   [开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18073023)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18073023)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18073023)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18073023)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18073023)
 *   [社区](https://developers.weixin.qq.com/)
 
 </div>
@@ -41,11 +41,11 @@
 
 </div>
 
-*   [运营规范](./)
-*   [常见拒绝情形](reject.html)
-*   [服务条款](service.html)
-*   [微信认证指引](renzheng.html)
-*   [特殊行业所需资质材料](material.html)
+*   [运营规范](.)
+*   [常见拒绝情形](./reject.html)
+*   [服务条款](./service.html)
+*   [微信认证指引](./renzheng.html)
+*   [特殊行业所需资质材料](./material.html)
 
 </div>
 
@@ -65,7 +65,7 @@
 
 <nav role="navigation">
 
-*   [特殊行业所需资质材料](material.html)
+*   [特殊行业所需资质材料](./material.html)
 
 </nav>
 
@@ -959,8 +959,8 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [关于腾讯](https://www.tencent.com/zh-cn/index.html)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=1484641676)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
@@ -970,6 +970,6 @@
 
 </div>
 
-[](renzheng.html#十八、认证时能否更换认证主体（认证申请机构）？)</div>
+[](./renzheng.html)</div>
 
 </div>

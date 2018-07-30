@@ -9,16 +9,16 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18073023)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18073023)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18073023)
 *   [开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18073023)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18073023)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18073023)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18073023)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18073023)
 *   [社区](https://developers.weixin.qq.com/)
 
 </div>
@@ -41,11 +41,11 @@
 
 </div>
 
-*   [运营规范](./)
-*   [常见拒绝情形](reject.html)
-*   [服务条款](service.html)
-*   [微信认证指引](renzheng.html)
-*   [特殊行业所需资质材料](material.html)
+*   [运营规范](.)
+*   [常见拒绝情形](./reject.html)
+*   [服务条款](./service.html)
+*   [微信认证指引](./renzheng.html)
+*   [特殊行业所需资质材料](./material.html)
 
 </div>
 
@@ -65,13 +65,13 @@
 
 <nav role="navigation">
 
-*   [一、协议的范围](service.html#一、【协议的范围】)
-*   [二、小程序注册与审核](service.html#二、【小程序注册与审核】)
-*   [三、小程序认证](service.html#三、【小程序认证】)
-*   [四、用户个人信息保护](service.html#四、【用户个人信息保护】)
-*   [五、知识产权声明](service.html#五、【知识产权声明】)
-*   [六、法律责任](service.html#六、【法律责任】)
-*   [七、其他](service.html#七、【其它】)
+*   [一、协议的范围](./service.html#一、【协议的范围】)
+*   [二、小程序注册与审核](./service.html#二、【小程序注册与审核】)
+*   [三、小程序认证](./service.html#三、【小程序认证】)
+*   [四、用户个人信息保护](./service.html#四、【用户个人信息保护】)
+*   [五、知识产权声明](./service.html#五、【知识产权声明】)
+*   [六、法律责任](./service.html#六、【法律责任】)
+*   [七、其它](./service.html#七、【其它】)
 
 </nav>
 
@@ -103,7 +103,7 @@
 
 ## 一、【协议的范围】
 
-1.1 本条款是你与腾讯之间关于你使用小程序服务所订立的协议。“用户”是指注册、登录、使用微信小程序的个人或组织，在本条款中更多地称为“你”或“开发者”。“其他用户”是指包括其他微信小程序用户、微信公众帐号<a href=""></a>用户和微信用户等除用户本人外与小程序服务相关的用户。
+1.1 本条款是你与腾讯之间关于你使用小程序服务所订立的协议。“用户”是指注册、登录、使用微信小程序的个人或组织，在本条款中更多地称为“你”或“开发者”。“其他用户”是指包括其他微信小程序用户、微信公众帐号用户和微信用户等除用户本人外与小程序服务相关的用户。
 
 1.2 本服务是指腾讯根据本条款向用户提供的技术服务，包括远程接口调用、前端框架开发、服务连接渠道、数据加密传输以及与此相关的互联网应用技术等。微信用户使用小程序即成为该小程序的服务用户（在与本条款不冲突的情况下，“服务用户”也适用于[《微信公众平台服务协议》](https://mp.weixin.qq.com/cgi-bin/announce?action=getannouncement&key=1503979103&version=1&lang=zh_CN&platform=2)中“关注用户”相关条款的约束），微信小程序可以通过小程序平台为相关用户提供应用服务。
 
@@ -235,8 +235,8 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [关于腾讯](https://www.tencent.com/zh-cn/index.html)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=1484641676)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
@@ -246,6 +246,6 @@
 
 </div>
 
-[](reject.html#36-UI-规范)[](renzheng.html)</div>
+[](./reject.html)[](./renzheng.html)</div>
 
 </div>

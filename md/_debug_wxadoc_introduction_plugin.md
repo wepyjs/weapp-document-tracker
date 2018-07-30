@@ -8,17 +8,17 @@
 
 <div class="header_ctrls">
 
-*   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+*   [小程序介绍](javascript:;)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18073100)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18073100)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18073100)
 *   [开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18073100)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18073100)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18073100)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18073100)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18073100)
 *   [社区](https://developers.weixin.qq.com/)
 
 </div>
@@ -41,10 +41,10 @@
 
 </div>
 
-*   [微信小程序接入指南](./)
-*   [客服功能使用指南](custom.html)
-*   [扫码打开小程序接入指南](qrcode.html)
-*   [插件接入指南](plugin.html)
+*   [微信小程序接入指南](.)
+*   [客服功能使用指南](./custom.html)
+*   [扫码打开小程序接入指南](./qrcode.html)
+*   [插件接入指南](./plugin.html)
 
 </div>
 
@@ -64,11 +64,11 @@
 
 <nav role="navigation">
 
-*   [小程序插件功能介绍](plugin.html#小程序插件功能介绍)
-*   [开发插件](plugin.html#开发插件)
-    *   [开放范围及服务类目](plugin.html#开放范围及服务类目)
-    *   [插件开发流程](plugin.html#插件开发流程)
-*   [使用插件](plugin.html#使用插件)
+*   [小程序插件功能介绍](./plugin.html#小程序插件功能介绍)
+*   [开发插件](./plugin.html#开发插件)
+    *   [开放范围及服务类目](./plugin.html#开放范围及服务类目)
+    *   [插件开发流程](./plugin.html#插件开发流程)
+*   [使用插件](./plugin.html#使用插件)
 
 </nav>
 
@@ -88,7 +88,7 @@
 
 <section class="normal markdown-section">
 
-## 小程序插件功能介绍
+# 小程序插件功能介绍
 
 插件，是可被添加到小程序内直接使用的功能组件。开发者可以像开发小程序一样开发一个插件，供其他小程序使用。同时，小程序开发者可直接在小程序内使用插件，无需重复开发，为用户提供更丰富的服务。
 
@@ -256,6 +256,8 @@
 
 <td style="text-align:left">所有二级类目</td>
 
+<td></td>
+
 </tr>
 
 </tbody>
@@ -277,19 +279,19 @@
 
 开通入口：小程序管理后台-小程序插件
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_1.png?t=18073100)
 
 填写插件基本信息，插件的基本信息将在插件申请流程、小程序基本信息页中展示。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_2.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_2.png?t=18073100)
 
 #### 填写开发信息并完成开发
 
 设置插件的服务器域名及Token信息后，即可在开发者工具中开发插件。
 
-开发者工具内设置请见：[《插件开发指南》](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/plugin.html)
+开发者工具内设置请见：[《插件开发指南》](https://developers.weixin.qq.com/miniprogram/dev/devtools/plugin.html?t=18073100)
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_3.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_3.png?t=18073100)
 
 #### 插件版本管理
 
@@ -297,7 +299,7 @@
 
 在开发者工具上传代码后，开发者可”小程序管理后台-小程序插件-开发管理“内管理插件版本。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_4.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_4.png?t=18073100)
 
 #### 提交版本审核
 
@@ -305,11 +307,11 @@
 
 提交审核时，插件开发者需要填写以下信息：插件服务类目、标签及功能描述。
 
-插件服务类目：插件可从当前小程序已通过的服务类目中选择一个。已开放类目表格见[插件开放范围及类目](#开放范围及服务类目)。
+*   插件服务类目：插件可从当前小程序已通过的服务类目中选择一个。已开放类目表格见[插件开放范围及类目](#开放范围及服务类目)。
 
-标签：请填写与插件提供的服务相关的标签
+*   标签：请填写与插件提供的服务相关的标签
 
-功能描述：为便于审核团队体验及审核插件功能，请开发者填写基本介绍及插件的使用说明。
+*   功能描述：为便于审核团队体验及审核插件功能，请开发者填写基本介绍及插件的使用说明。
 
 #### 版本发布
 
@@ -323,27 +325,27 @@
 
 开发者可在”小程序管理后台-小程序插件-申请管理“内处理插件的接入申请。插件开发者可在24小时内选择”通过“或”拒绝“申请方使用插件。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_5.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_5.png?t=18073100)
 
 ## 使用插件
 
 小程序开发者可便捷地把插件添加到自己的小程序内，丰富小程序的服务。当用户在使用小程序时，将可以在小程序内使用插件提供的服务。
 
-#### 开放范围
+### 开放范围
 
 所有小程序
 
-#### 接入流程
+### 接入流程
 
 1.  在小程序管理后台添加插件
 
     小程序开发者可在“小程序管理后台-设置-第三方服务-插件管理”中查找需要的插件，并申请使用。插件开发者在24小时内通过后，小程序开发者可在小程序内使用该插件。
 
-    ![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_6.png)
+    ![](https://developers.weixin.qq.com/miniprogram/introduction/image/p_6.png?t=18073100)
 
 2.  在小程序代码中使用插件
 
-    详见[《插件开发文档》](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/plugin/index.html)
+    详见[《插件开发文档》](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/index.html?t=18073100)
 
 </section>
 
@@ -373,8 +375,8 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [关于腾讯](https://www.tencent.com/zh-cn/index.html)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=1484641676)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
@@ -384,6 +386,6 @@
 
 </div>
 
-[](qrcode.html#发布)</div>
+[](./qrcode.html)</div>
 
 </div>

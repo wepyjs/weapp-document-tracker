@@ -8,17 +8,17 @@
 
 <div class="header_ctrls">
 
-*   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+*   [小程序介绍](javascript:;)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18073100)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18073100)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18073100)
 *   [开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18073100)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18073100)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18073100)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18073100)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18073100)
 *   [社区](https://developers.weixin.qq.com/)
 
 </div>
@@ -41,10 +41,10 @@
 
 </div>
 
-*   [微信小程序接入指南](./)
-*   [客服功能使用指南](custom.html)
-*   [扫码打开小程序接入指南](qrcode.html)
-*   [插件接入指南](plugin.html)
+*   [微信小程序接入指南](.)
+*   [客服功能使用指南](./custom.html)
+*   [扫码打开小程序接入指南](./qrcode.html)
+*   [插件接入指南](./plugin.html)
 
 </div>
 
@@ -64,37 +64,37 @@
 
 <nav role="navigation">
 
-*   [产品定位及功能介绍](./#产品定位及功能介绍)
-*   [小程序注册](./#小程序注册)
-    *   [注册小程序帐号](./#注册小程序帐号)
-    *   [选择注册的帐号类型](./#选择注册的帐号类型)
-    *   [填写邮箱和密码](./#填写邮箱和密码)
-    *   [激活邮箱](./#激活邮箱)
-    *   [填写主体信息](./#填写主体信息)
-        *   [选择主体类型](./#选择主体类型)
-        *   [填写主体信息并选择验证方式](./#填写主体信息并选择验证方式)
-        *   [填写管理员信息](./#填写管理员信息)
-        *   [确认主体信息不可变更](./#确认主体信息不可变更)
-        *   [点击确认完成注册流程](./#点击确认完成注册流程)
-*   [小程序信息完善及开发前准备](./#小程序信息完善及开发前准备)
-    *   [登录小程序管理平台](./#登录小程序管理平台)
-    *   [完善小程序信息](./#完善小程序信息)
-    *   [面向个人开发者开放的服务类目](./#面向个人开发者开放的服务类目)
-    *   [开发前准备](./#开发前准备)
-        *   [绑定开发者](./#绑定开发者)
-        *   [获取AppID](./#获取appid)
-*   [代码审核与发布](./#代码审核与发布)
-    *   [提交审核](./#提交审核)
-    *   [审核信息填写](./#审核信息填写)
-        *   [配置功能页面](./#配置功能页面)
-        *   [测试帐号](./#测试帐号)
-        *   [完成提交](./#完成提交)
-        *   [代码发布](./#代码发布)
-*   [开发者工具的使用](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/devtools.html)
-*   [小程序申请微信认证](./#小程序申请微信认证)
-*   [小程序申请微信支付](./#小程序申请微信支付)
-*   [小程序绑定微信开放平台帐号](./#小程序绑定微信开放平台帐号)
-*   [公众号关联小程序](./#公众号关联小程序)
+*   [产品定位及功能介绍](.#产品定位及功能介绍)
+*   [小程序注册](.#小程序注册)
+    *   [注册小程序帐号](.#注册小程序帐号)
+    *   [选择注册的帐号类型](.#选择注册的帐号类型)
+    *   [填写邮箱和密码](.#填写邮箱和密码)
+    *   [激活邮箱](.#激活邮箱)
+    *   [填写主体信息](.#填写主体信息)
+        *   [选择主体类型](.#选择主体类型)
+        *   [填写主体信息并选择验证方式](.#填写主体信息并选择验证方式)
+        *   [填写管理员信息](.#填写管理员信息)
+        *   [确认主体信息不可变更](.#确认主体信息不可变更)
+        *   [点击确认完成注册流程](.#点击确认完成注册流程)
+*   [小程序信息完善及开发前准备](.#小程序信息完善及开发前准备)
+    *   [登录小程序管理平台](.#登录小程序管理平台)
+    *   [完善小程序信息](.#完善小程序信息)
+    *   [面向个人开发者开放的服务类目](.#面向个人开发者开放的服务类目)
+    *   [开发前准备](.#开发前准备)
+        *   [绑定开发者](.#绑定开发者)
+        *   [获取AppID](.#获取appid)
+*   [代码审核与发布](.#代码审核与发布)
+    *   [提交审核](.#提交审核)
+    *   [审核信息填写](.#审核信息填写)
+        *   [配置功能页面](.#配置功能页面)
+        *   [测试帐号](.#测试帐号)
+        *   [完成提交](.#完成提交)
+        *   [代码发布](.#代码发布)
+*   [开发者工具的使用](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html?t=18073100)
+*   [小程序申请微信认证](.#小程序申请微信认证)
+*   [小程序申请微信支付](.#小程序申请微信支付)
+*   [小程序绑定微信开放平台帐号](.#小程序绑定微信开放平台帐号)
+*   [公众号关联小程序](.#公众号关联小程序)
 
 </nav>
 
@@ -122,9 +122,9 @@
 
 ## 注册小程序帐号
 
-在微信公众平台官网首页（mp.weixin.qq.com）点击右上角的“立即注册”按钮。
+在微信公众平台官网首页（[mp.weixin.qq.com](https://mp.weixin.qq.com/)）点击右上角的“立即注册”按钮。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/a.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/a.png?t=18073100)
 
 ## 选择注册的帐号类型
 
@@ -144,7 +144,7 @@
 
 ### 选择主体类型
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/03271.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/03271.png?t=18073100)
 
 主体类型说明如下：
 
@@ -218,31 +218,35 @@
 
 ### 填写主体信息并选择验证方式
 
-*   企业类型帐号可选择两种主体验证方式。 方式一：需要用公司的对公账户向腾讯公司打款来验证主体身份。打款信息在提交主体信息后可以查看到。 方式二：通过微信认证验证主体身份，需支付300元认证费。认证通过前，小程序部分功能暂无法使用。
+*   企业类型帐号可选择两种主体验证方式。
+    *   方式一：需要用公司的对公账户向腾讯公司打款来验证主体身份。打款信息在提交主体信息后可以查看到。
+    *   方式二：通过微信认证验证主体身份，需支付300元认证费。认证通过前，小程序部分功能暂无法使用。
 
-    ![](https://developers.weixin.qq.com/miniprogram/introduction/image/2.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/2.png?t=18073100)
 
 *   政府、媒体、其他组织类型帐号，必须通过微信认证验证主体身份。认证通过前，小程序部分功能暂无法使用。
 
-    ![](https://developers.weixin.qq.com/miniprogram/introduction/image/3.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/3.png?t=18073100)
 
 *   微信认证入口：登录小程序 - 设置 - 微信认证详情
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/w.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/w.png?t=18073100)
 
 ### 填写管理员信息
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/4.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/4.png?t=18073100)
 
 ### 确认主体信息不可变更
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/5.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/5.png?t=18073100)
 
 ### 点击确认完成注册流程
 
-选择对公打款的用户，请根据页面提示，向指定的收款帐号汇入指定金额。 **注意：请在10天内完成汇款，否则将注册失败**
+选择对公打款的用户，请根据页面提示，向指定的收款帐号汇入指定金额。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/6.png)
+**注意：请在10天内完成汇款，否则将注册失败。**
+
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/6.png?t=18073100)
 
 选择通过微信认证验证主体身份的用户，完成注册流程后请尽快进行微信认证，认证完成之前部分功能暂不可使用。
 
@@ -250,9 +254,9 @@
 
 ## 登录小程序管理平台
 
-完成注册后，在微信公众平台官网首页（mp.weixin.qq.com）的登录入口直接登录
+完成注册后，在微信公众平台官网首页（[mp.weixin.qq.com](https://mp.weixin.qq.com/)）的登录入口直接登录。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/a.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/a.png?t=18073100)
 
 ## 完善小程序信息
 
@@ -260,13 +264,13 @@
 
 选择对公打款的用户，完成汇款验证后，可以补充小程序名称信息，上传小程序头像，填写小程序介绍并选择服务范围。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/u.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/u.png?t=18073100)
 
-选择通过微信认证验证主体身份的用户，需先完成微信认证后，才可以补充小程序名称信息，上传小程序头像，填写小程序介绍并选择服务范围。 ![](https://developers.weixin.qq.com/miniprogram/introduction/image/7.png)
+选择通过微信认证验证主体身份的用户，需先完成微信认证后，才可以补充小程序名称信息，上传小程序头像，填写小程序介绍并选择服务范围。 ![](https://developers.weixin.qq.com/miniprogram/introduction/image/7.png?t=18073100)
 
 **提示：**
 
-*   如果选择了特殊行业的服务类目，需要提供资质材料提交审核。点击查看所需[资质材料](https://mp.weixin.qq.com/wxopen/wawiki?action=dir_list&type=manage&path=product/material)
+*   如果选择了特殊行业的服务类目，需要提供资质材料提交审核。点击查看所需[资质材料](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18073100)
 
 ## 面向个人开发者开放的服务类目
 
@@ -1050,7 +1054,7 @@
 
 ### 绑定开发者
 
-登录微信公众平台小程序，进入用户身份- 开发者，新增绑定开发者。
+登录微信公众平台小程序，进入用户身份-开发者，新增绑定开发者。
 
 个人主体小程序最多可绑定5个开发者，10个体验者。
 
@@ -1058,15 +1062,15 @@
 
 已认证的小程序最多可绑定20个开发者，40个体验者。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/g.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/g.png?t=18073100)
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/h.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/h.png?t=18073100)
 
 ### 获取AppID
 
 进入“设置-开发设置”，获取AppID信息。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/i.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/i.png?t=18073100)
 
 # 代码审核与发布
 
@@ -1074,7 +1078,7 @@
 
 登录微信公众平台小程序，进入开发管理，开发版本中展示已上传的代码，管理员可提交审核或是删除代码。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/q.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/q.png?t=18073100)
 
 ## 审核信息填写
 
@@ -1082,29 +1086,31 @@
 
 填写重要业务页面的类目与标签，重要业务页面组数不多于5组。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/s.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/s.png?t=18073100)
 
 ### 测试帐号
 
 当小程序需要开发者提供测试帐号才能完成审核体验时，小程序在首次提交审核时将被打回，再次提交审核时将开放提供测试帐号的入口，该入口将由开发者提供帐号给微信审核人员审核微信小程序时登录使用。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/03272.jpg)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/03272.jpg?t=18073100)
 
 ### 完成提交
 
 提交审核完成后，开发管理页中审核版本模块展示审核进度。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/t.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/t.png?t=18073100)
 
 **提示：**
 
-*   开发者可参考[《微信小程序平台常见拒绝情形》](https://mp.weixin.qq.com/wxopen/wawiki?action=dir_list&type=manage&path=product/reject)，详细了解审核标准。
+*   开发者可参考[《微信小程序平台常见拒绝情形》](https://developers.weixin.qq.com/miniprogram/product/reject.html?t=18073100)，详细了解审核标准。
 
 ### 代码发布
 
 代码审核通过，需要开发者手动点击发布，小程序才会发布到线上提供服务。
 
-**注意：** 内测期间，代码发布按钮不可点击。
+**注意：**
+
+内测期间，代码发布按钮不可点击。
 
 # 小程序申请微信认证
 
@@ -1114,13 +1120,13 @@
 
 认证入口：登录小程序—设置—基本设置—微信认证—详情
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/x.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/x.png?t=18073100)
 
 # 小程序申请微信支付
 
 已认证的小程序可申请微信支付。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/y.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/y.png?t=18073100)
 
 # 小程序绑定微信开放平台帐号
 
@@ -1130,9 +1136,9 @@
 
 了解“获取用户信息”接口请查看开发文档—API—开放接口—用户信息。
 
-**绑定小程序流程说明：**登录微信开放平台（open.weixin.qq.com）—管理中心—公众帐号—绑定公众帐号
+**绑定小程序流程说明**：登录微信开放平台（[open.weixin.qq.com](https://open.weixin.qq.com/)）—管理中心—公众帐号—绑定公众帐号
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/z.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/z.png?t=18073100)
 
 注意：微信开放平台帐号必须完成开发者资质认证才可以绑定小程序。
 
@@ -1151,9 +1157,9 @@
 
 登录公众号后台-小程序-小程序管理-添加-关联小程序
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/06211.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/06211.png?t=18073100)
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/06212.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/06212.png?t=18073100)
 
 </section>
 
@@ -1183,8 +1189,8 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [关于腾讯](https://www.tencent.com/zh-cn/index.html)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=1484641676)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
 *   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
@@ -1194,6 +1200,6 @@
 
 </div>
 
-</div>
+[](./custom.html)</div>
 
 </div>
