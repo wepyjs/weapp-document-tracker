@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091122)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091122)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091122)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091122)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091122)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091122)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091122)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091122)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/project.html?t=18091122)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/project.html?t=18091122)
 
 </div>
 
@@ -44,9 +47,9 @@
 *   [简易教程](../)
 *   [框架](../framework/MINA.html)
 *   [组件](../component/)
-*   [API](../api/)
-*   [工具](devtools.html)
-*   [腾讯云支持](../qcloud/qcloud.html)
+*   [API](../api/network/download/wx.downloadFile.html)
+*   [工具](./devtools.html)
+*   [小程序·云开发](../wxcloud/basis/getting-started.html)
 
 </div>
 
@@ -55,6 +58,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/project.html?t=18091122)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/project.html?t=18091122)
 
 </div>
 
@@ -66,67 +72,65 @@
 
 <nav role="navigation">
 
-*   [概览](devtools.html)
-*   [界面](page.html)
-    *   [启动页](page.html#启动页)
-    *   [菜单栏](page.html#菜单栏)
-    *   [工具栏](page.html#工具栏)
-    *   [工具栏管理](page.html#工具栏管理)
-    *   [模拟器](page.html#模拟器)
-    *   [独立窗口](page.html#独立窗口)
-    *   [设置](settings.html)
-        *   [外观设置](settings.html#外观设置)
-        *   [编辑设置](settings.html#编辑设置)
-        *   [代理设置](settings.html#代理设置)
-        *   [通知设置](settings.html#通知设置)
-    *   [项目页卡](project.html)
-        *   [项目设置](project.html#项目设置)
-        *   [域名信息](project.html#域名信息)
-        *   [腾讯云状态](project.html#腾讯云状态)
-*   [快捷键](shortcut.html)
-*   [代码编辑](edit.html)
-    *   [文件格式](edit.html#文件格式)
-    *   [文件类型](edit.html#文件支持)
-    *   [自动补全](edit.html#自动补全)
-    *   [Git 状态展示](edit.html#git-状态展示)
-    *   [项目配置文件](projectconfig.html)
-*   [小程序调试](debug.html)
-    *   [模拟器](debug.html#模拟器)
-    *   [自定义编译](debug.html#自定义编译)
-    *   [自定义预处理](debug.html#自定义预处理)
-    *   [前后台切换](debug.html#前后台切换)
-    *   [调试工具](debug.html#调试工具)
-        *   [Wxml Panel](debug.html#wxml-panel)
-        *   [Sources Panel](debug.html#sources-panel)
-        *   [AppData Panel](debug.html#appdata-panel)
-        *   [Storage Panel](debug.html#storage-panel)
-        *   [Network Panel](debug.html#network-panel)
-        *   [Console Panel](debug.html#console-panel)
-        *   [Sensor Panel](debug.html#sensor-panel)
-    *   [自定义数据上报](debug.html#自定义数据上报)
-    *   [自动预览](debug.html#自动预览)
-    *   [特殊场景调试](different.html)
-    *   [真机调试](remote-debug.html)
-    *   [多帐号调试](multiaccount.html)
-*   [npm 支持](npm.html)
-*   [体验评分](audits.html)
-*   [命令行调用](cli.html)
-*   [HTTP 调用](http.html)
-*   [测试号](sandbox.html)
-*   [小程序开发助手](mydev.html)
-*   [代码片段](minicode.html)
-*   [第三方平台](ext.html)
-*   [小程序插件开发](plugin.html)
+*   [概览](./devtools.html)
+*   [界面](./page.html)
+    *   [启动页](./page.html#启动页)
+    *   [菜单栏](./page.html#菜单栏)
+    *   [工具栏](./page.html#工具栏)
+    *   [工具栏管理](./page.html#工具栏管理)
+    *   [模拟器](./page.html#模拟器)
+    *   [独立窗口](./page.html#独立窗口)
+    *   [设置](./settings.html)
+        *   [外观设置](./settings.html#外观设置)
+        *   [编辑设置](./settings.html#编辑设置)
+        *   [代理设置](./settings.html#代理设置)
+        *   [通知设置](./settings.html#通知设置)
+    *   [项目页卡](./project.html)
+        *   [项目设置](./project.html#项目设置)
+        *   [域名信息](./project.html#域名信息)
+        *   [腾讯云状态](./project.html#腾讯云状态)
+*   [快捷键](./shortcut.html)
+*   [代码编辑](./edit.html)
+    *   [文件格式](./edit.html#文件格式)
+    *   [文件类型](./edit.html#文件支持)
+    *   [自动补全](./edit.html#自动补全)
+    *   [Git 状态展示](./edit.html#git-状态展示)
+    *   [项目配置文件](./projectconfig.html)
+*   [小程序调试](./debug.html)
+    *   [模拟器](./debug.html#模拟器)
+    *   [自定义编译](./debug.html#自定义编译)
+    *   [自定义预处理](./debug.html#自定义预处理)
+    *   [前后台切换](./debug.html#前后台切换)
+    *   [调试工具](./debug.html#调试工具)
+        *   [Wxml Panel](./debug.html#wxml-panel)
+        *   [Sources Panel](./debug.html#sources-panel)
+        *   [AppData Panel](./debug.html#appdata-panel)
+        *   [Storage Panel](./debug.html#storage-panel)
+        *   [Network Panel](./debug.html#network-panel)
+        *   [Console Panel](./debug.html#console-panel)
+        *   [Sensor Panel](./debug.html#sensor-panel)
+    *   [自定义数据上报](./debug.html#自定义数据上报)
+    *   [自动预览](./debug.html#自动预览)
+    *   [特殊场景调试](./different.html)
+    *   [真机调试](./remote-debug.html)
+    *   [多帐号调试](./multiaccount.html)
+*   [npm 支持](./npm.html)
+*   [体验评分](./audits.html)
+*   [Git 版本管理](./git.html)
+*   [命令行调用](./cli.html)
+*   [HTTP 调用](./http.html)
+*   [测试号](./sandbox.html)
+*   [小程序开发助手](./mydev.html)
+*   [代码片段](./minicode.html)
+*   [第三方平台](./ext.html)
+*   [小程序插件开发](./plugin.html)
 *   [素材管理](../qcloud/material.html)
 *   [代码托管](../qcloud/tgit.html)
-*   [云测试](monkey-test.html)
-*   [实现差异](details.html)
-    *   [运行环境差异](details.html#运行环境差异)
-    *   [ES6 支持情况](details.html#客户端es6-api-支持情况)
-    *   [API 实现差异](notsupport.html)
-*   [下载](download.html)
-*   [Beta 版下载](beta.html)
-*   [历史更新日志](uplog.html)
+*   [云测试](./monkey-test.html)
+*   [API 实现差异](./notsupport.html)
+*   [下载](./download.html)
+*   [Beta 版下载](./beta.html)
+*   [历史更新日志](./uplog.html)
 
 </nav>
 
@@ -156,22 +160,9 @@
 
 开发者可以在此选择任意基础库版本，用于开发和调试旧版本兼容问题。
 
-![clientlib](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/clientlib.png)
+![clientlib](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/clientlib.png?t=18091122)
 
 ## 项目设置
-
-微信小程序运行在三端：iOS、Android 和 用于调试的开发者工具。
-
-三端的脚本执行环境以及用于渲染非原生组件的环境是各不相同的：
-
-*   在 iOS 上，小程序的 javascript 代码是运行在 JavaScriptCore 中，是由 WKWebView 来渲染的，环境有 iOS8、iOS9、iOS10
-*   在 Android 上，小程序的 javascript 代码是通过 X5 JSCore来解析，是由 [X5](http://x5.tencent.com/guide?id=4000) 基于 Mobile Chrome 53/57 内核来渲染的
-*   在 开发工具上， 小程序的 javascript 代码是运行在 nwjs 中，是由 Chrome Webview 来渲染的
-
-尽管三端的环境是十分相似的，但是还是有些许区别：
-
-*   `ES6` 语法支持不一致。[详情](details.html#es6-api-支持情况)
-*   `wxss` 渲染表现不一致。尽管可以通过开启样式补全来规避大部分的问题 ，还是建议开发者需要在 iOS 和 Android 上分别检查小程序的真实表现。
 
 ### ES6 转 ES5
 
@@ -193,7 +184,7 @@
 
 正式发布的小程序的网络请求是需要校验合法域名以及域名的 TLS 版本，可以在 mp 管理后台进行配置。 在开发过程中可以开启此选项，开发工具将不会校验安全域名，以及 TLS 版本，帮助在开发过程中更方便的完成调试工作。
 
-![edit](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/righttools.png)
+![edit](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/righttools.png?t=18091122)
 
 ### 启用多核心编译
 
@@ -203,13 +194,13 @@
 
 将显示小程序的安全域名信息，合法域名可在 mp 管理后台进行设置。
 
-![host](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/host.png)
+![host](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/host.png?t=18091122)
 
 ## 腾讯云状态
 
 使用腾讯云功能，可以在这里看到腾讯云状态、开发环境信息和域名信息。
 
-![qcloud](https://developers.weixin.qq.com/miniprogram/dev/image/devtools2/qcloudinfo.png)
+![qcloud](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/qcloudinfo.png?t=18091122)
 
 </section>
 
@@ -239,10 +230,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -250,6 +241,6 @@
 
 </div>
 
-[](settings.html#通知设置)[](shortcut.html)</div>
+[](./settings.html)</div>
 
 </div>

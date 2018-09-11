@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091022)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091022)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091022)
 *   [小游戏开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091022)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091022)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091022)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091022)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091022)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/open-ability/qrcode.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/open-ability/qrcode.html?t=18091022)
 
 </div>
 
@@ -42,9 +45,9 @@
 </div>
 
 *   [教程](../../)
-*   [API](../../document/render/canvas/wx.createCanvas.html)
+*   [API](../../api/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
-*   [腾讯云支持](../../qcloud/qcloud.html)
+*   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 
 </div>
 
@@ -53,6 +56,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/open-ability/qrcode.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/open-ability/qrcode.html?t=18091022)
 
 </div>
 
@@ -78,18 +84,18 @@
     *   [性能](../usability/performance.html)
     *   [小游戏更新](../usability/update.html)
     *   [多线程 Worker](../usability/worker.html)
-*   [开放能力](authorize.html)
-    *   [用户授权](authorize.html)
-    *   [游戏圈使用指南](game-club.html)
-    *   [用户登录态签名](http-signature.html)
-    *   [米大师支付签名](midas-signature.html)
-    *   [关系链数据使用指南](open-data.html)
-    *   [虚拟支付](payment.html)
-    *   [获取二维码](qrcode.html)
-    *   [排行榜配置指引](ranklist.html)
-    *   [转发](share.html)
-    *   [用户数据的签名验证和加解密](signature.html)
-    *   [UnionID 机制说明](union-id.html)
+*   [开放能力](./authorize.html)
+    *   [用户授权](./authorize.html)
+    *   [游戏圈使用指南](./game-club.html)
+    *   [用户登录态签名](./http-signature.html)
+    *   [米大师支付签名](./midas-signature.html)
+    *   [关系链数据使用指南](./open-data.html)
+    *   [虚拟支付](./payment.html)
+    *   [获取二维码](./qrcode.html)
+    *   [排行榜配置指引](./ranklist.html)
+    *   [转发](./share.html)
+    *   [用户数据的签名验证和加解密](./signature.html)
+    *   [UnionID 机制说明](./union-id.html)
 *   [广告](../ad/banner-ad.html)
     *   [Banner 广告](../ad/banner-ad.html)
     *   [激励视频广告](../ad/rewarded-video-ad.html)
@@ -116,7 +122,7 @@
 
 小游戏的二维码与小程序有着相同的样式和获取方式。通过后台接口可以获取小游戏的二维码，扫描该二维码可以直接进入小游戏。目前微信支持两种二维码，小程序码（左），小程序二维码（右），如下所示：
 
-![](https://developers.weixin.qq.com/minigame/dev/image/qrcode.png)
+![](https://developers.weixin.qq.com/minigame/dev/tutorial/image/qrcode.png?t=18091022)
 
 ### 获取小程序码
 
@@ -397,10 +403,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -408,6 +414,6 @@
 
 </div>
 
-[](payment.html)[](ranklist.html)</div>
+[](./payment.html)[](./ranklist.html)</div>
 
 </div>

@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [小程序介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18073100)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18073100)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18073100)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090718)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18090718)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18090718)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18073100)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18073100)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18073100)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18090718)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18090718)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18090718)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18073100)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18073100)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090718)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18090718)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/qrcode.html?t=18090718)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/qrcode.html?t=18090718)
 
 </div>
 
@@ -53,6 +56,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/qrcode.html?t=18090718)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/qrcode.html?t=18090718)
 
 </div>
 
@@ -206,9 +212,9 @@
 
 登录小程序后台，进入“设置-开发设置-扫普通链接二维码打开小程序”，开启功能后即可配置二维码规则。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode0.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode0.png?t=18090718)
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode1.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode1.png?t=18090718)
 
 ### 二维码规则
 
@@ -226,7 +232,7 @@
 
 如：若开发者A配置二维码规则：`https://wx.qq.com/mp?id=123`，并选择“占用所有子规则“，其他开发者将不可以配置满足前缀匹配的子规则如`https://wx.qq.com/mp?id=1234`。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode5.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode5.png?t=18090718)
 
 如提示“此规则已被占用”，请联系对应小程序开发者沟通解决。
 
@@ -236,7 +242,7 @@
 
 验证文件放置规则： 放置于URL中声明的最后一级子目录下，若无子目录，则放置于host所属服务器的顶层目录下。请根据页面提示将验证文件放置在指定的目录下。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode3.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode3.png?t=18090718)
 
 ### 小程序功能页面
 
@@ -252,7 +258,7 @@
 
 开发者可根据开发进度选择在开发板/体验版/线上版本测试“普通二维码跳转小程序”的功能。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode7.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode7.png?t=18090718)
 
 #### 测试链接
 
@@ -264,7 +270,7 @@
 
 测试完成后开发者可将二维码跳转规则发布现网，发布后扫描所有符合匹配规则的二维码，将跳转至指定的小程序页面。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode4.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode4.png?t=18090718)
 
 为确保用户体验，小程序必须先发布代码才可以发布二维码跳转规则。
 
@@ -298,10 +304,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](https://www.tencent.com/zh-cn/index.html)
-*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=1484641676)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 

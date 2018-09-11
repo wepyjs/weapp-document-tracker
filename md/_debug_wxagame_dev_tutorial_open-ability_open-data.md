@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091022)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091022)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091022)
 *   [小游戏开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091022)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091022)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091022)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091022)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091022)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/open-ability/open-data.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/open-ability/open-data.html?t=18091022)
 
 </div>
 
@@ -42,9 +45,9 @@
 </div>
 
 *   [教程](../../)
-*   [API](../../document/render/canvas/wx.createCanvas.html)
+*   [API](../../api/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
-*   [腾讯云支持](../../qcloud/qcloud.html)
+*   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 
 </div>
 
@@ -53,6 +56,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/open-ability/open-data.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/open-ability/open-data.html?t=18091022)
 
 </div>
 
@@ -78,18 +84,18 @@
     *   [性能](../usability/performance.html)
     *   [小游戏更新](../usability/update.html)
     *   [多线程 Worker](../usability/worker.html)
-*   [开放能力](authorize.html)
-    *   [用户授权](authorize.html)
-    *   [游戏圈使用指南](game-club.html)
-    *   [用户登录态签名](http-signature.html)
-    *   [米大师支付签名](midas-signature.html)
-    *   [关系链数据使用指南](open-data.html)
-    *   [虚拟支付](payment.html)
-    *   [获取二维码](qrcode.html)
-    *   [排行榜配置指引](ranklist.html)
-    *   [转发](share.html)
-    *   [用户数据的签名验证和加解密](signature.html)
-    *   [UnionID 机制说明](union-id.html)
+*   [开放能力](./authorize.html)
+    *   [用户授权](./authorize.html)
+    *   [游戏圈使用指南](./game-club.html)
+    *   [用户登录态签名](./http-signature.html)
+    *   [米大师支付签名](./midas-signature.html)
+    *   [关系链数据使用指南](./open-data.html)
+    *   [虚拟支付](./payment.html)
+    *   [获取二维码](./qrcode.html)
+    *   [排行榜配置指引](./ranklist.html)
+    *   [转发](./share.html)
+    *   [用户数据的签名验证和加解密](./signature.html)
+    *   [UnionID 机制说明](./union-id.html)
 *   [广告](../ad/banner-ad.html)
     *   [Banner 广告](../ad/banner-ad.html)
     *   [激励视频广告](../ad/rewarded-video-ad.html)
@@ -112,7 +118,7 @@
 
 <section class="normal markdown-section">
 
-# 关系链数据使用指南
+## 关系链数据使用指南
 
 一个微信用户的关系链数据包括两部分：
 
@@ -121,8 +127,8 @@
 
 为了丰富游戏的社交玩法，我们提供了获取关系链数据的 API：
 
-*   [wx.getFriendCloudStorage()](../../document/open-api/data/wx.getFriendCloudStorage.html) 获取当前用户也玩该小游戏的好友的用户数据
-*   [wx.getGroupCloudStorage()](../../document/open-api/data/wx.getGroupCloudStorage.html) 获取当前用户在某个群中也玩该小游戏的成员的用户数据
+*   [wx.getFriendCloudStorage()](../../api/open-api/data/wx.getFriendCloudStorage.html) 获取当前用户也玩该小游戏的好友的用户数据
+*   [wx.getGroupCloudStorage()](../../api/open-api/data/wx.getGroupCloudStorage.html) 获取当前用户在某个群中也玩该小游戏的成员的用户数据
 
 这两个 API 的返回结果都是一个对象数组，数组的每一个元素都是一个表示用户数据的对象，其结构如下：
 
@@ -188,15 +194,15 @@
 
 </table>
 
-用户的 `游戏数据` 指的是用户的段位、战绩等游戏业务特有的数据，通过调用 [wx.setUserCloudStorage()](../../document/open-api/data/wx.setUserCloudStorage.html) 可以将当前用户的游戏数据托管在微信后台。只有被托管过数据的用户，才会被视为 `玩过` 该小游戏的用户，才会出现在 [wx.getFriendCloudStorage()](../../document/open-api/data/wx.getFriendCloudStorage.html) 和 [wx.getGroupCloudStorage()](../../document/open-api/data/wx.getGroupCloudStorage.html) 返回的对象数组中。
+用户的 `游戏数据` 指的是用户的段位、战绩等游戏业务特有的数据，通过调用 [wx.setUserCloudStorage()](../../api/open-api/data/wx.setUserCloudStorage.html) 可以将当前用户的游戏数据托管在微信后台。只有被托管过数据的用户，才会被视为 `玩过` 该小游戏的用户，才会出现在 [wx.getFriendCloudStorage()](../../api/open-api/data/wx.getFriendCloudStorage.html) 和 [wx.getGroupCloudStorage()](../../api/open-api/data/wx.getGroupCloudStorage.html) 返回的对象数组中。
 
 除此之外，我们还提供了以下 API：
 
-*   [wx.removeUserCloudStorage()](../../document/open-api/data/wx.removeUserCloudStorage.html) 删除用户托管数据中指定字段的数据
-*   [wx.getUserCloudStorage()](../../document/open-api/data/wx.getUserCloudStorage.html) 获取当前用户的托管数据
+*   [wx.removeUserCloudStorage()](../../api/open-api/data/wx.removeUserCloudStorage.html) 删除用户托管数据中指定字段的数据
+*   [wx.getUserCloudStorage()](../../api/open-api/data/wx.getUserCloudStorage.html) 获取当前用户的托管数据
 
-[wx.getUserCloudStorage](../../document/open-api/data/wx.getUserCloudStorage.html)、[wx.getFriendCloudStorage()](../../document/open-api/data/wx.getFriendCloudStorage.html) 和 [wx.getGroupCloudStorage()](../../document/open-api/data/wx.getGroupCloudStorage.html) 只能在 `开放数据域` 中调用。  
-[wx.setUserCloudStorage()](../../document/open-api/data/wx.setUserCloudStorage.html) 和 [wx.removeUserCloudStorage()](../../document/open-api/data/wx.removeUserCloudStorage.html) 可以同时在 `主域` 和开放数据域中调用。
+[wx.getUserCloudStorage](../../api/open-api/data/wx.getUserCloudStorage.html)、[wx.getFriendCloudStorage()](../../api/open-api/data/wx.getFriendCloudStorage.html) 和 [wx.getGroupCloudStorage()](../../api/open-api/data/wx.getGroupCloudStorage.html) 只能在 `开放数据域` 中调用。  
+[wx.setUserCloudStorage()](../../api/open-api/data/wx.setUserCloudStorage.html) 和 [wx.removeUserCloudStorage()](../../api/open-api/data/wx.removeUserCloudStorage.html) 可以同时在 `主域` 和开放数据域中调用。
 
 ## 开放数据域
 
@@ -237,7 +243,7 @@ src/myOpenDataContext 是 `开放数据域的代码目录`，除 src/myOpenDataC
 
 开放数据域不能向主域发送消息。
 
-主域可以向开放数据域发送消息。调用 [wx.getOpenDataContext()](../../document/open-api/context/wx.getOpenDataContext.html) 方法可以获取开放数据域实例，调用实例上的 [OpenDataContext.postMessage()](../../document/open-api/context/OpenDataContext.postMessage.html) 方法可以向开放数据域发送消息。
+主域可以向开放数据域发送消息。调用 [wx.getOpenDataContext()](../../api/open-api/context/wx.getOpenDataContext.html) 方法可以获取开放数据域实例，调用实例上的 [OpenDataContext.postMessage()](../../api/open-api/context/OpenDataContext.postMessage.html) 方法可以向开放数据域发送消息。
 
     // game.js
     let openDataContext = wx.getOpenDataContext()
@@ -246,7 +252,7 @@ src/myOpenDataContext 是 `开放数据域的代码目录`，除 src/myOpenDataC
       year: (new Date()).getFullYear()
     })
 
-在开放数据域中通过 [wx.onMessage()](../../document/open-api/context/wx.onMessage.html) 方法可以监听从主域发来的消息。
+在开放数据域中通过 [wx.onMessage()](../../api/open-api/context/wx.onMessage.html) 方法可以监听从主域发来的消息。
 
     // src/myOpenDataContext/index.js
     wx.onMessage(data => {
@@ -261,7 +267,7 @@ src/myOpenDataContext 是 `开放数据域的代码目录`，除 src/myOpenDataC
 
 如果想要展示通过关系链 API 获取到的用户数据，如绘制排行榜等业务场景，需要将排行榜绘制到 `sharedCanvas` 上，再在主域将 sharedCanvas 渲染上屏。
 
-![](https://developers.weixin.qq.com/minigame/dev/image/open-data/data-flow.png)
+![](https://developers.weixin.qq.com/minigame/dev/tutorial/image/open-data/data-flow.png?t=18091022)
 
     // src/myOpenDataContext/index.js
     let sharedCanvas = wx.getSharedCanvas()
@@ -330,7 +336,7 @@ sharedCanvas 本质上也是一个离屏 Canvas，而重设 Canvas 的宽高会�
 4.  不能将上屏 canvas 和 sharedCanvas 以任意形式绘制到其他 canvas 上，包括 drawImage、createPattern、texImage2D、texSubImage2D。
 5.  sharedCanvas 的宽高只能在主域设置
 
-![](https://developers.weixin.qq.com/minigame/dev/image/open-data/canvas-limit.png)
+![](https://developers.weixin.qq.com/minigame/dev/tutorial/image/open-data/canvas-limit.png?t=18091022)
 
 ### 开放数据域
 
@@ -340,50 +346,50 @@ sharedCanvas 本质上也是一个离屏 Canvas，而重设 Canvas 的宽高会�
 
 **帧率**
 
-*   [requestAnimationFrame()](../../document/render/frame/requestAnimationFrame.html)
-*   [cancelAnimationFrame()](../../document/render/frame/cancelAnimationFrame.html)
+*   [requestAnimationFrame()](../../api/render/frame/requestAnimationFrame.html)
+*   [cancelAnimationFrame()](../../api/render/frame/cancelAnimationFrame.html)
 
 **Timer**
 
-*   [setTimeout()](../../document/timer/setTimeout.html)
-*   [clearTimeout()](../../document/timer/clearTimeout.html)
-*   [setInterval()](../../document/timer/setInterval.html)
-*   [clearInterval()](../../document/timer/clearInterval.html)
+*   [setTimeout()](../../api/timer/setTimeout.html)
+*   [clearTimeout()](../../api/timer/clearTimeout.html)
+*   [setInterval()](../../api/timer/setInterval.html)
+*   [clearInterval()](../../api/timer/clearInterval.html)
 
 **触摸事件**
 
-*   [wx.onTouchStart()](../../document/system/touch-event/wx.onTouchStart.html)
-*   [wx.onTouchMove()](../../document/system/touch-event/wx.onTouchMove.html)
-*   [wx.onTouchEnd()](../../document/system/touch-event/wx.onTouchEnd.html)
-*   [wx.onTouchCancel()](../../document/system/touch-event/wx.onTouchCancel.html)
-*   [wx.offTouchStart()](../../document/system/touch-event/wx.offTouchStart.html)
-*   [wx.offTouchMove()](../../document/system/touch-event/wx.offTouchMove.html)
-*   [wx.offTouchEnd()](../../document/system/touch-event/wx.offTouchEnd.html)
-*   [wx.offTouchCancel()](../../document/system/touch-event/wx.offTouchCancel.html)
+*   [wx.onTouchStart()](../../api/system/touch-event/wx.onTouchStart.html)
+*   [wx.onTouchMove()](../../api/system/touch-event/wx.onTouchMove.html)
+*   [wx.onTouchEnd()](../../api/system/touch-event/wx.onTouchEnd.html)
+*   [wx.onTouchCancel()](../../api/system/touch-event/wx.onTouchCancel.html)
+*   [wx.offTouchStart()](../../api/system/touch-event/wx.offTouchStart.html)
+*   [wx.offTouchMove()](../../api/system/touch-event/wx.offTouchMove.html)
+*   [wx.offTouchEnd()](../../api/system/touch-event/wx.offTouchEnd.html)
+*   [wx.offTouchCancel()](../../api/system/touch-event/wx.offTouchCancel.html)
 
 **画布**
 
-*   [wx.createCanvas()](../../document/render/canvas/wx.createCanvas.html)
+*   [wx.createCanvas()](../../api/render/canvas/wx.createCanvas.html)
 
 开放数据域的所有 canvas 只支持 `2d` 渲染模式
 
 **图片**
 
-*   [wx.createImage()](../../document/render/image/wx.createImage.html)
+*   [wx.createImage()](../../api/render/image/wx.createImage.html)
 
-开放数据域的 Image 只能使用本地或微信 CDN 的图片，不能使用开发者自己服务器上的图片。对于非本地或非微信 CDN 的图片，可以先从主域 [wx.downloadFile()](../../document/network/download/wx.downloadFile.html) 下载图片文件，再通过 <a href="">wx.postMessage()</a> 把文件路径传给开放数据域去使用。
+开放数据域的 Image 只能使用本地或微信 CDN 的图片，不能使用开发者自己服务器上的图片。对于非本地或非微信 CDN 的图片，可以先从主域 [wx.downloadFile()](../../api/network/download/wx.downloadFile.html) 下载图片文件，再通过 [OpenDataContext.postMessage()](../../api/open-api/context/OpenDataContext.postMessage.html) 把文件路径传给开放数据域去使用。
 
 **开放数据**
 
-*   [wx.getFriendCloudStorage()](../../document/open-api/data/wx.getFriendCloudStorage.html)
-*   [wx.getGroupCloudStorage()](../../document/open-api/data/wx.getGroupCloudStorage.html)
-*   [wx.getUserCloudStorage()](../../document/open-api/data/wx.getUserCloudStorage.html)
-*   [wx.setUserCloudStorage()](../../document/open-api/data/wx.setUserCloudStorage.html)
-*   [wx.removeUserCloudStorage()](../../document/open-api/data/wx.removeUserCloudStorage.html)
+*   [wx.getFriendCloudStorage()](../../api/open-api/data/wx.getFriendCloudStorage.html)
+*   [wx.getGroupCloudStorage()](../../api/open-api/data/wx.getGroupCloudStorage.html)
+*   [wx.getUserCloudStorage()](../../api/open-api/data/wx.getUserCloudStorage.html)
+*   [wx.setUserCloudStorage()](../../api/open-api/data/wx.setUserCloudStorage.html)
+*   [wx.removeUserCloudStorage()](../../api/open-api/data/wx.removeUserCloudStorage.html)
 
 **监听主域消息**
 
-*   [wx.onMessage()](../../document/open-api/context/wx.onMessage.html)
+*   [wx.onMessage()](../../api/open-api/context/wx.onMessage.html)
 
 </section>
 
@@ -413,10 +419,10 @@ sharedCanvas 本质上也是一个离屏 Canvas，而重设 Canvas 的宽高会�
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -424,6 +430,6 @@ sharedCanvas 本质上也是一个离屏 Canvas，而重设 Canvas 的宽高会�
 
 </div>
 
-[](midas-signature.html)[](payment.html)</div>
+[](./midas-signature.html)[](./payment.html)</div>
 
 </div>

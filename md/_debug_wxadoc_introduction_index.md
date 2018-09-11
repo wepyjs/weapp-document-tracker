@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [小程序介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18073100)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18073100)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18073100)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090718)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18090718)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18090718)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18073100)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18073100)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18073100)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18090718)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18090718)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18090718)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18073100)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18073100)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090718)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18090718)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090718)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/index.html?t=18090718)
 
 </div>
 
@@ -54,6 +57,9 @@
 
 </div>
 
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090718)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/index.html?t=18090718)
+
 </div>
 
 </div>
@@ -79,7 +85,7 @@
 *   [小程序信息完善及开发前准备](.#小程序信息完善及开发前准备)
     *   [登录小程序管理平台](.#登录小程序管理平台)
     *   [完善小程序信息](.#完善小程序信息)
-    *   [面向个人开发者开放的服务类目](.#面向个人开发者开放的服务类目)
+    *   [小程序开放的服务类目](.#小程序开放的服务类目)
     *   [开发前准备](.#开发前准备)
         *   [绑定开发者](.#绑定开发者)
         *   [获取AppID](.#获取appid)
@@ -90,7 +96,7 @@
         *   [测试帐号](.#测试帐号)
         *   [完成提交](.#完成提交)
         *   [代码发布](.#代码发布)
-*   [开发者工具的使用](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html?t=18073100)
+*   [开发者工具的使用](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html?t=18090718)
 *   [小程序申请微信认证](.#小程序申请微信认证)
 *   [小程序申请微信支付](.#小程序申请微信支付)
 *   [小程序绑定微信开放平台帐号](.#小程序绑定微信开放平台帐号)
@@ -124,7 +130,7 @@
 
 在微信公众平台官网首页（[mp.weixin.qq.com](https://mp.weixin.qq.com/)）点击右上角的“立即注册”按钮。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/a.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/a.png?t=18090718)
 
 ## 选择注册的帐号类型
 
@@ -144,7 +150,7 @@
 
 ### 选择主体类型
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/03271.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/03271.png?t=18090718)
 
 主体类型说明如下：
 
@@ -222,23 +228,23 @@
     *   方式一：需要用公司的对公账户向腾讯公司打款来验证主体身份。打款信息在提交主体信息后可以查看到。
     *   方式二：通过微信认证验证主体身份，需支付300元认证费。认证通过前，小程序部分功能暂无法使用。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/2.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/2.png?t=18090718)
 
 *   政府、媒体、其他组织类型帐号，必须通过微信认证验证主体身份。认证通过前，小程序部分功能暂无法使用。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/3.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/3.png?t=18090718)
 
 *   微信认证入口：登录小程序 - 设置 - 微信认证详情
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/w.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/w.png?t=18090718)
 
 ### 填写管理员信息
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/4.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/4.png?t=18090718)
 
 ### 确认主体信息不可变更
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/5.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/5.png?t=18090718)
 
 ### 点击确认完成注册流程
 
@@ -246,7 +252,7 @@
 
 **注意：请在10天内完成汇款，否则将注册失败。**
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/6.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/6.png?t=18090718)
 
 选择通过微信认证验证主体身份的用户，完成注册流程后请尽快进行微信认证，认证完成之前部分功能暂不可使用。
 
@@ -256,7 +262,7 @@
 
 完成注册后，在微信公众平台官网首页（[mp.weixin.qq.com](https://mp.weixin.qq.com/)）的登录入口直接登录。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/a.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/a.png?t=18090718)
 
 ## 完善小程序信息
 
@@ -264,791 +270,23 @@
 
 选择对公打款的用户，完成汇款验证后，可以补充小程序名称信息，上传小程序头像，填写小程序介绍并选择服务范围。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/u.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/u.png?t=18090718)
 
-选择通过微信认证验证主体身份的用户，需先完成微信认证后，才可以补充小程序名称信息，上传小程序头像，填写小程序介绍并选择服务范围。 ![](https://developers.weixin.qq.com/miniprogram/introduction/image/7.png?t=18073100)
+选择通过微信认证验证主体身份的用户，需先完成微信认证后，才可以补充小程序名称信息，上传小程序头像，填写小程序介绍并选择服务范围。 ![](https://developers.weixin.qq.com/miniprogram/introduction/image/7.png?t=18090718)
 
-**提示：**
+## 小程序开放的服务类目
 
-*   如果选择了特殊行业的服务类目，需要提供资质材料提交审核。点击查看所需[资质材料](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18073100)
+### 非个人主体小程序开放的服务类目
 
-## 面向个人开发者开放的服务类目
+非个人主体类型小程序，可参考当前已开放的服务类目[小程序开放的服务类目-非个人主体](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18090718#%E9%9D%9E%E4%B8%AA%E4%BA%BA%E4%B8%BB%E4%BD%93%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E6%94%BE%E7%9A%84%E6%9C%8D%E5%8A%A1%E7%B1%BB%E7%9B%AE)
 
-**面向个人开发者开放的服务类目，会随着相关政策、法律法规以及平台规定的变化而变化，请开发者以提交时开放的类目为准，本文档仅供参考。**
+### 个人主体小程序开放的服务类目
 
-<table>
+非个人主体类型小程序，可参考当前已开放的服务类目[小程序开放的服务类目-个人主体](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18090718#%E4%B8%AA%E4%BA%BA%E4%B8%BB%E4%BD%93%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E6%94%BE%E7%9A%84%E6%9C%8D%E5%8A%A1%E7%B1%BB%E7%9B%AE)
 
-<tbody>
+### 海外主体小程序开放的服务类目
 
-<tr>
-
-<td>
-
-**<span>一级分类</span>**
-
-</td>
-
-<td width="149" valign="bottom">
-
-**<span>二级分类</span>**
-
-</td>
-
-<td width="301" valign="bottom">
-
-**<span>三级分类</span>**
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="106" valign="center" rowspan="4">
-
-<span>快递业与邮政</span>
-
-</td>
-
-<td width="149" valign="center" rowspan="2">
-
-<span>快递、物流</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>寄件/收件</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="301" valign="bottom">
-
-<span>查件 </span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>邮政</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>装卸搬运</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="106" valign="center" rowspan="5">
-
-<span>教育</span>
-
-</td>
-
-<td width="149" valign="bottom">
-
-<span>教育信息服务</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>特殊人群教育</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>婴幼儿教育</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>在线教育</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>教育装备</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="106" valign="center">
-
-<span>出行与交通</span>
-
-</td>
-
-<td width="149" valign="bottom">
-
-<span>代驾</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="106" valign="center" rowspan="15">
-
-<span>生活服务</span>
-
-</td>
-
-<td width="149" valign="bottom">
-
-<span>家政</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>环保回收/废品回收</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>摄影/扩印</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="center" rowspan="11">
-
-<span>丽人</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>美甲</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="301" valign="bottom">
-
-<span>美容</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="301" valign="bottom">
-
-<span>美睫</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="301" valign="bottom">
-
-<span>美发</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="301" valign="bottom">
-
-<span>纹身</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="301" valign="bottom">
-
-<span>祛痘</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="301" valign="bottom">
-
-<span>纤体瘦身</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="301" valign="bottom">
-
-<span>SPA</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="301" valign="bottom">
-
-<span>舞蹈</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="301" valign="bottom">
-
-<span>瑜伽</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="301" valign="bottom">
-
-<span>其他</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>婚庆服务</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="106" valign="center" rowspan="3">
-
-<span>餐饮</span>
-
-</td>
-
-<td width="149" valign="bottom">
-
-<span>点评与推荐</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>菜谱</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>餐厅排队</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="106" valign="center" rowspan="2">
-
-<span>旅游</span>
-
-</td>
-
-<td width="149" valign="bottom">
-
-<span>旅游攻略</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>出境WiFi</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="106" valign="center" rowspan="13">
-
-<span>工具</span>
-
-</td>
-
-<td width="149" valign="bottom">
-
-<span>记账</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>日历</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>天气</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>办公</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>字典</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>图片/音频/视频</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>计算类</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>报价/比价</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>信息查询</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>　</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>效率</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>预约</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>健康管理</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>企业管理</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="106" valign="center" rowspan="3">
-
-<span>商业服务</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>律师</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>会展服务</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="106" valign="center" rowspan="2">
-
-<span>体育</span>
-
-</td>
-
-<td width="149" valign="bottom">
-
-<span>体育培训</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="149" valign="bottom">
-
-<span>在线健身</span>
-
-</td>
-
-<td width="301" valign="bottom">
-
-<span>/</span>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+非个人主体类型小程序，可参考当前已开放的服务类目[小程序开放的服务类目-海外外主体](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18090718#%E6%B5%B7%E5%A4%96%E4%B8%BB%E4%BD%93%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E6%94%BE%E7%9A%84%E6%9C%8D%E5%8A%A1%E7%B1%BB%E7%9B%AE)
 
 ## 开发前准备
 
@@ -1062,15 +300,15 @@
 
 已认证的小程序最多可绑定20个开发者，40个体验者。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/g.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/g.png?t=18090718)
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/h.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/h.png?t=18090718)
 
 ### 获取AppID
 
 进入“设置-开发设置”，获取AppID信息。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/i.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/i.png?t=18090718)
 
 # 代码审核与发布
 
@@ -1078,7 +316,7 @@
 
 登录微信公众平台小程序，进入开发管理，开发版本中展示已上传的代码，管理员可提交审核或是删除代码。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/q.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/q.png?t=18090718)
 
 ## 审核信息填写
 
@@ -1086,23 +324,23 @@
 
 填写重要业务页面的类目与标签，重要业务页面组数不多于5组。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/s.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/s.png?t=18090718)
 
 ### 测试帐号
 
 当小程序需要开发者提供测试帐号才能完成审核体验时，小程序在首次提交审核时将被打回，再次提交审核时将开放提供测试帐号的入口，该入口将由开发者提供帐号给微信审核人员审核微信小程序时登录使用。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/03272.jpg?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/03272.jpg?t=18090718)
 
 ### 完成提交
 
 提交审核完成后，开发管理页中审核版本模块展示审核进度。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/t.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/t.png?t=18090718)
 
 **提示：**
 
-*   开发者可参考[《微信小程序平台常见拒绝情形》](https://developers.weixin.qq.com/miniprogram/product/reject.html?t=18073100)，详细了解审核标准。
+*   开发者可参考[《微信小程序平台常见拒绝情形》](https://developers.weixin.qq.com/miniprogram/product/reject.html?t=18090718)，详细了解审核标准。
 
 ### 代码发布
 
@@ -1120,13 +358,13 @@
 
 认证入口：登录小程序—设置—基本设置—微信认证—详情
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/x.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/x.png?t=18090718)
 
 # 小程序申请微信支付
 
 已认证的小程序可申请微信支付。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/y.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/y.png?t=18090718)
 
 # 小程序绑定微信开放平台帐号
 
@@ -1138,7 +376,7 @@
 
 **绑定小程序流程说明**：登录微信开放平台（[open.weixin.qq.com](https://open.weixin.qq.com/)）—管理中心—公众帐号—绑定公众帐号
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/z.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/z.png?t=18090718)
 
 注意：微信开放平台帐号必须完成开发者资质认证才可以绑定小程序。
 
@@ -1157,9 +395,9 @@
 
 登录公众号后台-小程序-小程序管理-添加-关联小程序
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/06211.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/06211.png?t=18090718)
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/06212.png?t=18073100)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/06212.png?t=18090718)
 
 </section>
 
@@ -1189,10 +427,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](https://www.tencent.com/zh-cn/index.html)
-*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=1484641676)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 

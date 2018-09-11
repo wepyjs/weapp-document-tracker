@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091022)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091022)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091022)
 *   [小游戏开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091022)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091022)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091022)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091022)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091022)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/ad/rewarded-video-ad.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/ad/rewarded-video-ad.html?t=18091022)
 
 </div>
 
@@ -42,9 +45,9 @@
 </div>
 
 *   [教程](../../)
-*   [API](../../document/render/canvas/wx.createCanvas.html)
+*   [API](../../api/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
-*   [腾讯云支持](../../qcloud/qcloud.html)
+*   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 
 </div>
 
@@ -53,6 +56,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/ad/rewarded-video-ad.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/ad/rewarded-video-ad.html?t=18091022)
 
 </div>
 
@@ -90,9 +96,9 @@
     *   [转发](../open-ability/share.html)
     *   [用户数据的签名验证和加解密](../open-ability/signature.html)
     *   [UnionID 机制说明](../open-ability/union-id.html)
-*   [广告](banner-ad.html)
-    *   [Banner 广告](banner-ad.html)
-    *   [激励视频广告](rewarded-video-ad.html)
+*   [广告](./banner-ad.html)
+    *   [Banner 广告](./banner-ad.html)
+    *   [激励视频广告](./rewarded-video-ad.html)
 
 </nav>
 
@@ -116,7 +122,7 @@
 
 激励视频广告组件是由客户端原生的图片、文本、视频控件组成的，层级最高，会覆盖在上屏 Canvas 上。
 
-开发者可以调用 [wx.createRewardedVideoAd](../../document/ad/wx.createRewardedVideoAd.html) 创建激励视频广告组件。该方法返回的是一个全局单例。
+开发者可以调用 [wx.createRewardedVideoAd](../../api/ad/wx.createRewardedVideoAd.html) 创建激励视频广告组件。该方法返回的是一个全局单例。
 
     let video1 = wx.createRewardedVideoAd({ adUnitId: 'xxxx' })
     let video2 = wx.createRewardedVideoAd({ adUnitId: 'xxxx' })
@@ -129,7 +135,7 @@
 
 ### 显示/隐藏
 
-激励视频广告组件默认是隐藏的，需要调用 <a href="">RewaredVideoAd.show()</a> 进行显示。
+激励视频广告组件默认是隐藏的，需要调用 [RewardedVideoAd.show()](../../api/ad/RewardedVideoAd.show.html) 进行显示。
 
     bannerAd.show()
 
@@ -139,7 +145,7 @@
 
 激励视频广告组件是自动拉取广告并进行更新的。在组件创建后会拉取一次广告，用户点击 `关闭广告` 后会去拉取下一条广告。
 
-如果拉取成功。[RewardedVideoAd.onLoad()](../../document/ad/RewardedVideoAd.onLoad.html) 会执行，[RewardedVideoAd.show()](../../document/ad/RewardedVideoAd.show.html) 返回的 Promise 也会是一个 resolved Promise。两者的回调函数中都没有参数传递。
+如果拉取成功。[RewardedVideoAd.onLoad()](../../api/ad/RewardedVideoAd.onLoad.html) 会执行，[RewardedVideoAd.show()](../../api/ad/RewardedVideoAd.show.html) 返回的 Promise 也会是一个 resolved Promise。两者的回调函数中都没有参数传递。
 
     rewardedVideoAd.onLoad(() => {
       console.log('激励视频 广告加载成功')
@@ -148,20 +154,20 @@
     rewardedVideoAd.show()
     .then(() => console.log('激励视频 广告显示'))
 
-如果拉取失败，通过 [RewardedVideoAd.onError()](../../document/ad/RewardedVideoAd.onError.html) 注册的回调函数会执行，回调函数的参数是一个包含错误信息的对象。
+如果拉取失败，通过 [RewardedVideoAd.onError()](../../api/ad/RewardedVideoAd.onError.html) 注册的回调函数会执行，回调函数的参数是一个包含错误信息的对象。[常见异常错误参考文档](../../api/ad/RewardedVideoAd.onError.html)
 
     rewardedVideoAd.onError(err => {
       console.log(err)
     })
 
-[RewardedVideoAd.show()](../../document/ad/RewardedVideoAd.show.html) 返回的 Promise 也会是一个 rejected Promise。
+[RewardedVideoAd.show()](../../api/ad/RewardedVideoAd.show.html) 返回的 Promise 也会是一个 rejected Promise。
 
     rewardedVideoAd.show()
     .catch(err => console.log(err))
 
 ### 拉取失败，重新拉取
 
-如果组件的某次自动拉取失败，那么之后调用的 show() 将会被 reject。此时可以调用 [RewardedVideoAd.load()](../../document/ad/RewardedVideoAd.load.html) 手动重新拉取广告。
+如果组件的某次自动拉取失败，那么之后调用的 show() 将会被 reject。此时可以调用 [RewardedVideoAd.load()](../../api/ad/RewardedVideoAd.load.html) 手动重新拉取广告。
 
     rewardedVideoAd.show()
     .catch(err => {
@@ -176,15 +182,15 @@
 
 ### 监听用户关闭广告
 
-只有在用户点击激励视频广告组件上的 `关闭广告` 按钮时，广告才会关闭。这个事件可以通过 [RewardedVideoAd.onClose()](../../document/ad/RewardedVideoAd.onClose.html) 监听。
+只有在用户点击激励视频广告组件上的 `关闭广告` 按钮时，广告才会关闭。这个事件可以通过 [RewardedVideoAd.onClose()](../../api/ad/RewardedVideoAd.onClose.html) 监听。
 
 小于 2.1.0 的基础库版本，`关闭按钮` 是在激励式视频播放结束后才出现，所以触发 onClose 时已经播放结束，`onClose` 触发时可以认为用户已经看完了广告。
 
 大于等于 2.1.0 的基础库版本，`关闭按钮` 将会常驻，如下图所示
 
-![](https://developers.weixin.qq.com/minigame/dev/image/ad/rewarded-video-ad-landscape.png)
+![](https://developers.weixin.qq.com/minigame/dev/tutorial/image/ad/rewarded-video-ad-landscape.png?t=18091022)
 
-[RewardedVideoAd.onClose()](../../document/ad/RewardedVideoAd.onClose.html) 的回调函数会传入一个参数 res，`res.isEnded` 描述广告被关闭时的状态。
+[RewardedVideoAd.onClose()](../../api/ad/RewardedVideoAd.onClose.html) 的回调函数会传入一个参数 res，`res.isEnded` 描述广告被关闭时的状态。
 
 <table>
 
@@ -259,10 +265,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -270,6 +276,6 @@
 
 </div>
 
-[](banner-ad.html)[](../../document/render/canvas/wx.createCanvas.html)</div>
+[](./banner-ad.html)</div>
 
 </div>

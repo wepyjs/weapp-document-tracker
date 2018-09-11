@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18073100)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18073100)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18073100)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18080816)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18080816)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18080816)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18073100)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18073100)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18073100)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18080816)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18080816)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18080816)
 *   [小游戏数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18073100)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18073100)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18080816)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18080816)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18073100)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/minigame/en/analysis/index.html?t=18073100)
+*   [中文](https://developers.weixin.qq.com/minigame/analysis/assistant.html?t=18080816)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/analysis/assistant.html?t=18080816)
 
 </div>
 
@@ -56,8 +56,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18073100)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/minigame/en/analysis/index.html?t=18073100)
+*   [中文](https://developers.weixin.qq.com/minigame/analysis/assistant.html?t=18080816)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/analysis/assistant.html?t=18080816)
 
 </div>
 
@@ -94,11 +94,11 @@
 
 “小游戏数据助手”是微信公众平台发布的官方小程序，支持相关的开发和运营人员查看自身小游戏的运营数据，扫描下面小程序码可立即体验。
 
-![](https://developers.weixin.qq.com/minigame/analysis/image/aa.png?t=18073100)
+![](https://developers.weixin.qq.com/minigame/analysis/image/aa.png?t=18080816)
 
 “小游戏数据助手”当前功能模块包括数据概况、访问分析（访问趋势、访问分布、留存分析、实时统计）、收入分析和用户画像（年龄性别、省份城市、终端机型），数据与MP后台常规分析一致。
 
-![](https://developers.weixin.qq.com/minigame/analysis/image/bb.png?t=18073100)
+![](https://developers.weixin.qq.com/minigame/analysis/image/bb.png?t=18080816)
 
 # 使用说明
 
@@ -139,7 +139,7 @@
 *   [关于腾讯](https://www.tencent.com/zh-cn/index.html)
 *   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=1484641676)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 

@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18081820)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18081820)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18081820)
 *   [小游戏开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18081820)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18081820)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18081820)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18081820)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18081820)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/document/ad/RewardedVideoAd.offError.html?t=18081820)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/document/ad/RewardedVideoAd.offError.html?t=18081820)
 
 </div>
 
@@ -44,6 +47,7 @@
 *   [教程](../../)
 *   [API](../render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
+*   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
 
 </div>
@@ -53,6 +57,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/document/ad/RewardedVideoAd.offError.html?t=18081820)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/document/ad/RewardedVideoAd.offError.html?t=18081820)
 
 </div>
 
@@ -226,20 +233,9 @@
         *   [code2accessToken](../open-api/login/code2accessToken.html)
     *   [防沉迷](../open-api/anti-addiction/wx.checkIsUserAdvisedToRest.html)
         *   [wx.checkIsUserAdvisedToRest](../open-api/anti-addiction/wx.checkIsUserAdvisedToRest.html)
-    *   [开放数据](../open-api/data/wx.getUserInfo.html)
-        *   [wx.getUserInfo](../open-api/data/wx.getUserInfo.html)
-        *   [wx.getGroupCloudStorage](../open-api/data/wx.getGroupCloudStorage.html)
-        *   [wx.getUserCloudStorage](../open-api/data/wx.getUserCloudStorage.html)
-        *   [wx.getFriendCloudStorage](../open-api/data/wx.getFriendCloudStorage.html)
-        *   [wx.getSharedCanvas](../open-api/data/wx.getSharedCanvas.html)
-        *   [wx.removeUserCloudStorage](../open-api/data/wx.removeUserCloudStorage.html)
-        *   [wx.setUserCloudStorage](../open-api/data/wx.setUserCloudStorage.html)
-        *   [KVData](../open-api/data/KVData.html)
-        *   [UserGameData](../open-api/data/UserGameData.html)
-        *   [removeUserStorage](../open-api/data/removeUserStorage.html)
-        *   [setUserStorage](../open-api/data/setUserStorage.html)
     *   [用户信息](../open-api/user-info/wx.createUserInfoButton.html)
         *   [wx.createUserInfoButton](../open-api/user-info/wx.createUserInfoButton.html)
+        *   [wx.getUserInfo](../open-api/user-info/wx.getUserInfo.html)
         *   [UserInfo](../open-api/user-info/UserInfo.html)
         *   [UserInfoButton](../open-api/user-info/UserInfoButton.html)
         *   [UserInfoButton.destroy](../open-api/user-info/UserInfoButton.destroy.html)
@@ -248,6 +244,18 @@
         *   [UserInfoButton.show](../open-api/user-info/UserInfoButton.show.html)
     *   [微信运动](../open-api/werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../open-api/werun/wx.getWeRunData.html)
+    *   [开放数据](../open-api/data/wx.getFriendCloudStorage.html)
+        *   [wx.getFriendCloudStorage](../open-api/data/wx.getFriendCloudStorage.html)
+        *   [wx.getUserCloudStorage](../open-api/data/wx.getUserCloudStorage.html)
+        *   [wx.getGroupCloudStorage](../open-api/data/wx.getGroupCloudStorage.html)
+        *   [wx.getSharedCanvas](../open-api/data/wx.getSharedCanvas.html)
+        *   [wx.removeUserCloudStorage](../open-api/data/wx.removeUserCloudStorage.html)
+        *   [wx.setUserCloudStorage](../open-api/data/wx.setUserCloudStorage.html)
+        *   [KVData](../open-api/data/KVData.html)
+        *   [UserGameData](../open-api/data/UserGameData.html)
+        *   [removeUserStorage](../open-api/data/removeUserStorage.html)
+        *   [setUserStorage](../open-api/data/setUserStorage.html)
+        *   [OpenDataContext-wx.getUserInfo](../open-api/data/OpenDataContext-wx.getUserInfo.html)
     *   [设置](../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.createOpenSettingButton](../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../open-api/setting/wx.getSetting.html)
@@ -342,28 +350,28 @@
     *   [wx.showShareMenu](../share/wx.showShareMenu.html)
     *   [wx.shareAppMessage](../share/wx.shareAppMessage.html)
     *   [wx.updateShareMenu](../share/wx.updateShareMenu.html)
-*   [广告](wx.createBannerAd.html)
-    *   [wx.createBannerAd](wx.createBannerAd.html)
-    *   [wx.createRewardedVideoAd](wx.createRewardedVideoAd.html)
-    *   [BannerAd](BannerAd.html)
-    *   [RewardedVideoAd](RewardedVideoAd.html)
-    *   [BannerAd.destroy](BannerAd.destroy.html)
-    *   [BannerAd.hide](BannerAd.hide.html)
-    *   [RewardedVideoAd.load](RewardedVideoAd.load.html)
-    *   [RewardedVideoAd.onLoad](RewardedVideoAd.onLoad.html)
-    *   [BannerAd.offLoad](BannerAd.offLoad.html)
-    *   [BannerAd.offError](BannerAd.offError.html)
-    *   [RewardedVideoAd.offClose](RewardedVideoAd.offClose.html)
-    *   [BannerAd.onLoad](BannerAd.onLoad.html)
-    *   [BannerAd.offResize](BannerAd.offResize.html)
-    *   [RewardedVideoAd.onClose](RewardedVideoAd.onClose.html)
-    *   [BannerAd.onError](BannerAd.onError.html)
-    *   [RewardedVideoAd.offLoad](RewardedVideoAd.offLoad.html)
-    *   [RewardedVideoAd.onError](RewardedVideoAd.onError.html)
-    *   [RewardedVideoAd.offError](RewardedVideoAd.offError.html)
-    *   [BannerAd.onResize](BannerAd.onResize.html)
-    *   [RewardedVideoAd.show](RewardedVideoAd.show.html)
-    *   [BannerAd.show](BannerAd.show.html)
+*   [广告](./wx.createBannerAd.html)
+    *   [wx.createBannerAd](./wx.createBannerAd.html)
+    *   [wx.createRewardedVideoAd](./wx.createRewardedVideoAd.html)
+    *   [BannerAd](./BannerAd.html)
+    *   [RewardedVideoAd](./RewardedVideoAd.html)
+    *   [BannerAd.destroy](./BannerAd.destroy.html)
+    *   [BannerAd.hide](./BannerAd.hide.html)
+    *   [RewardedVideoAd.load](./RewardedVideoAd.load.html)
+    *   [RewardedVideoAd.onLoad](./RewardedVideoAd.onLoad.html)
+    *   [BannerAd.offLoad](./BannerAd.offLoad.html)
+    *   [BannerAd.offError](./BannerAd.offError.html)
+    *   [RewardedVideoAd.offClose](./RewardedVideoAd.offClose.html)
+    *   [BannerAd.onLoad](./BannerAd.onLoad.html)
+    *   [BannerAd.offResize](./BannerAd.offResize.html)
+    *   [RewardedVideoAd.onClose](./RewardedVideoAd.onClose.html)
+    *   [BannerAd.onError](./BannerAd.onError.html)
+    *   [RewardedVideoAd.offLoad](./RewardedVideoAd.offLoad.html)
+    *   [RewardedVideoAd.onError](./RewardedVideoAd.onError.html)
+    *   [RewardedVideoAd.offError](./RewardedVideoAd.offError.html)
+    *   [BannerAd.onResize](./BannerAd.onResize.html)
+    *   [RewardedVideoAd.show](./RewardedVideoAd.show.html)
+    *   [BannerAd.show](./BannerAd.show.html)
 *   [媒体](../media/audio/wx.createInnerAudioContext.html)
     *   [音频](../media/audio/wx.createInnerAudioContext.html)
         *   [wx.createInnerAudioContext](../media/audio/wx.createInnerAudioContext.html)
@@ -475,6 +483,142 @@
 
 取消监听事件的回调函数
 
+#### 错误码信息与解决方案表
+
+错误码是通过onError获取到的错误信息。调试期间，可以通过异常返回来捕获信息。 在小程序发布上线之后，如果遇到异常问题，可以在[“运维中心“](https://mp.weixin.qq.com/)里面搜寻错误日志，还可以针对异常返回加上适当的监控信息。
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>代码</th>
+
+<th>异常情况</th>
+
+<th>理由</th>
+
+<th>解决方案</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>1000</td>
+
+<td>后端错误调用失败</td>
+
+<td>该项错误不是开发者的异常情况</td>
+
+<td>一般情况下忽略一段时间即可恢复。</td>
+
+</tr>
+
+<tr>
+
+<td>1001</td>
+
+<td>参数错误</td>
+
+<td>使用方法错误</td>
+
+<td>可以前往developers.weixin.qq.com确认具体教程（小程序和小游戏分别有各自的教程，可以在顶部选项中，“设计”一栏的右侧进行切换。</td>
+
+</tr>
+
+<tr>
+
+<td>1002</td>
+
+<td>广告单元无效</td>
+
+<td>可能是拼写错误、或者误用了其他APP的广告ID</td>
+
+<td>请重新前往mp.weixin.qq.com确认广告位ID。</td>
+
+</tr>
+
+<tr>
+
+<td>1003</td>
+
+<td>内部错误</td>
+
+<td>该项错误不是开发者的异常情况</td>
+
+<td>一般情况下忽略一段时间即可恢复。</td>
+
+</tr>
+
+<tr>
+
+<td>1004</td>
+
+<td>无适合的广告</td>
+
+<td>广告不是每一次都会出现，这次没有出现可能是由于该用户不适合浏览广告</td>
+
+<td>属于正常情况，且开发者需要针对这种情况做形态上的兼容。</td>
+
+</tr>
+
+<tr>
+
+<td>1005</td>
+
+<td>广告组件审核中</td>
+
+<td>你的广告正在被审核，无法展现广告</td>
+
+<td>请前往mp.weixin.qq.com确认审核状态，且开发者需要针对这种情况做形态上的兼容。</td>
+
+</tr>
+
+<tr>
+
+<td>1006</td>
+
+<td>广告组件被驳回</td>
+
+<td>你的广告审核失败，无法展现广告</td>
+
+<td>请前往mp.weixin.qq.com确认审核状态，且开发者需要针对这种情况做形态上的兼容。</td>
+
+</tr>
+
+<tr>
+
+<td>1007</td>
+
+<td>广告组件被驳回</td>
+
+<td>你的广告能力已经被封禁，封禁期间无法展现广告</td>
+
+<td>请前往mp.weixin.qq.com确认小程序广告封禁状态。</td>
+
+</tr>
+
+<tr>
+
+<td>1008</td>
+
+<td>广告单元已关闭</td>
+
+<td>该广告位的广告能力已经被关闭</td>
+
+<td>请前往mp.weixin.qq.com重新打开对应广告位的展现。</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
 </section>
 
 </div>
@@ -503,10 +647,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [关于腾讯](https://www.tencent.com/zh-cn/index.html)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=1484641676)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -514,6 +658,6 @@
 
 </div>
 
-[](RewardedVideoAd.onError.html)[](BannerAd.onResize.html)</div>
+[](./RewardedVideoAd.onError.html)[](./BannerAd.onResize.html)</div>
 
 </div>

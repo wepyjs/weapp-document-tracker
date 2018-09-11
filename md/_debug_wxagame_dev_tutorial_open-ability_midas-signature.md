@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091022)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091022)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091022)
 *   [小游戏开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091022)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091022)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091022)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091022)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091022)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/open-ability/midas-signature.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/open-ability/midas-signature.html?t=18091022)
 
 </div>
 
@@ -42,9 +45,9 @@
 </div>
 
 *   [教程](../../)
-*   [API](../../document/render/canvas/wx.createCanvas.html)
+*   [API](../../api/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
-*   [腾讯云支持](../../qcloud/qcloud.html)
+*   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 
 </div>
 
@@ -53,6 +56,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/open-ability/midas-signature.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/open-ability/midas-signature.html?t=18091022)
 
 </div>
 
@@ -78,18 +84,18 @@
     *   [性能](../usability/performance.html)
     *   [小游戏更新](../usability/update.html)
     *   [多线程 Worker](../usability/worker.html)
-*   [开放能力](authorize.html)
-    *   [用户授权](authorize.html)
-    *   [游戏圈使用指南](game-club.html)
-    *   [用户登录态签名](http-signature.html)
-    *   [米大师支付签名](midas-signature.html)
-    *   [关系链数据使用指南](open-data.html)
-    *   [虚拟支付](payment.html)
-    *   [获取二维码](qrcode.html)
-    *   [排行榜配置指引](ranklist.html)
-    *   [转发](share.html)
-    *   [用户数据的签名验证和加解密](signature.html)
-    *   [UnionID 机制说明](union-id.html)
+*   [开放能力](./authorize.html)
+    *   [用户授权](./authorize.html)
+    *   [游戏圈使用指南](./game-club.html)
+    *   [用户登录态签名](./http-signature.html)
+    *   [米大师支付签名](./midas-signature.html)
+    *   [关系链数据使用指南](./open-data.html)
+    *   [虚拟支付](./payment.html)
+    *   [获取二维码](./qrcode.html)
+    *   [排行榜配置指引](./ranklist.html)
+    *   [转发](./share.html)
+    *   [用户数据的签名验证和加解密](./signature.html)
+    *   [UnionID 机制说明](./union-id.html)
 *   [广告](../ad/banner-ad.html)
     *   [Banner 广告](../ad/banner-ad.html)
     *   [激励视频广告](../ad/rewarded-video-ad.html)
@@ -118,11 +124,13 @@
 
 *   原始请求信息
 
-1) 米大师密钥：zNLgAGgqsEWJOg1nFVaO5r7fAlIQxr1u 2) HTTP请求方式: POST 3) 请求的URI： /cgi-bin/midas/getbalance
+1.  米大师密钥：zNLgAGgqsEWJOg1nFVaO5r7fAlIQxr1u
+2.  HTTP请求方式: POST
+3.  请求的URI： /cgi-bin/midas/getbalance
 
 *   sig签名
 
-1) 参与米大师签名请求参数
+1.  参与米大师签名请求参数
 
         "openid":"odkx20ENSNa2w5y3g_qOkOvBNM1g",
         "appid":"wx1234567",
@@ -131,22 +139,22 @@
         "zone_id":"1",
         "pf":"android"
 
-2) 对参与米大师签名的参数按照key=value的格式，并按照参数名ASCII字典序升序排序如下：
+1.  对参与米大师签名的参数按照key=value的格式，并按照参数名ASCII字典序升序排序如下：
 
     stringA="appid=wx1234567&offer_id=12345678&openid=odkx20ENSNa2w5y3g_qOkOvBNM1g&pf=android&ts=1507530737&zone_id=1"
 
-3) 拼接uri、method和米大师密钥：
+1.  拼接uri、method和米大师密钥：
 
     stringSignTemp=stringA+"&org_loc=/cgi-bin/midas/getbalance&method=POST&secret=zNLgAGgqsEWJOg1nFVaO5r7fAlIQxr1u"
 
-4) 把米大师密钥作为key，使用HMAC-SHA256得到签名。
+1.  把米大师密钥作为key，使用HMAC-SHA256得到签名。
 
     sig=hmac_sha256(key,stringSignTemp)
        ="1ad64e8dcb2ec1dc486b7fdf01f4a15159fc623dc3422470e51cf6870734726b"
 
 *   mp_sig签名
 
-1) 参与开平签名请求参数
+1.  参与开平签名请求参数
 
         "access_token":"ACCESSTOKEN",
         "openid":"odkx20ENSNa2w5y3g_qOkOvBNM1g",
@@ -157,15 +165,15 @@
         "pf":"android",
         "sig":"1ad64e8dcb2ec1dc486b7fdf01f4a15159fc623dc3422470e51cf6870734726b"
 
-2) 对参与开平签名的参数按照key=value的格式，并按照参数名ASCII字典序升序排序如下：
+1.  对参与开平签名的参数按照key=value的格式，并按照参数名ASCII字典序升序排序如下：
 
     stringA="access_token=ACCESSTOKEN&appid=wx1234567&offer_id=12345678&openid=odkx20ENSNa2w5y3g_qOkOvBNM1g&pf=android&sig=1ad64e8dcb2ec1dc486b7fdf01f4a15159fc623dc3422470e51cf6870734726b&ts=1507530737&zone_id=1"
 
-3) 拼接uri、method和session_key：
+1.  拼接uri、method和session_key：
 
     stringSignTemp=stringA+"&org_loc=/cgi-bin/midas/getbalance&method=POST&session_key=V7Q38/i2KXaqrQyl2Yx9Hg=="
 
-4) 把session_key作为key，使用HMAC-SHA256得到签名。
+1.  把session_key作为key，使用HMAC-SHA256得到签名。
 
     mp_sig=hmac_sha256(key,stringSignTemp)
           ="ff4c5bb39dea1002a8f03be0438724e1a8bcea5ebce8f221f9b9fea3bcf3bf76"
@@ -198,10 +206,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -209,6 +217,6 @@
 
 </div>
 
-[](http-signature.html)[](open-data.html)</div>
+[](./http-signature.html)[](./open-data.html)</div>
 
 </div>

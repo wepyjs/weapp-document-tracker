@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091022)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091022)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091022)
 *   [小游戏开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091022)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091022)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091022)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091022)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091022)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/usability/worker.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/usability/worker.html?t=18091022)
 
 </div>
 
@@ -42,9 +45,9 @@
 </div>
 
 *   [教程](../../)
-*   [API](../../document/render/canvas/wx.createCanvas.html)
+*   [API](../../api/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
-*   [腾讯云支持](../../qcloud/qcloud.html)
+*   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 
 </div>
 
@@ -53,6 +56,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/usability/worker.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/usability/worker.html?t=18091022)
 
 </div>
 
@@ -73,11 +79,11 @@
 *   [能力](../ability/audio.html)
     *   [音频播放](../ability/audio.html)
     *   [文件系统](../ability/file-system.html)
-*   [可用性](debug.html)
-    *   [调试](debug.html)
-    *   [性能](performance.html)
-    *   [小游戏更新](update.html)
-    *   [多线程 Worker](worker.html)
+*   [可用性](./debug.html)
+    *   [调试](./debug.html)
+    *   [性能](./performance.html)
+    *   [小游戏更新](./update.html)
+    *   [多线程 Worker](./worker.html)
 *   [开放能力](../open-ability/authorize.html)
     *   [用户授权](../open-ability/authorize.html)
     *   [游戏圈使用指南](../open-ability/game-club.html)
@@ -114,7 +120,7 @@
 
 ## 多线程 Worker
 
-对于游戏来说，每帧 16ms 是极其宝贵的，如果有一些可以异步处理的任务，可以放置于 [Worker](../../document/worker/Worker.html) 中运行，待运行结束后，再把结果返回到主线程。[Worker](../../document/worker/Worker.html) 运行于一个单独的全局上下文与线程中，不能直接调用主线程的方法，[Worker](../../document/worker/Worker.html) 也不具备渲染的能力。 [Worker](../../document/worker/Worker.html) 与主线程之间的数据传输，双方使用 [Worker.postMessage()](../../document/worker/Worker.postMessage.html) 来发送数据，[Worker.onMessage()](../../document/worker/Worker.onMessage.html) 来接收数据，传输的数据并不是直接共享，而是被复制的。
+对于游戏来说，每帧 16ms 是极其宝贵的，如果有一些可以异步处理的任务，可以放置于 [Worker](../../api/worker/Worker.html) 中运行，待运行结束后，再把结果返回到主线程。[Worker](../../api/worker/Worker.html) 运行于一个单独的全局上下文与线程中，不能直接调用主线程的方法，[Worker](../../api/worker/Worker.html) 也不具备渲染的能力。 [Worker](../../api/worker/Worker.html) 与主线程之间的数据传输，双方使用 [Worker.postMessage()](../../api/worker/Worker.postMessage.html) 来发送数据，[Worker.onMessage()](../../api/worker/Worker.onMessage.html) 来接收数据，传输的数据并不是直接共享，而是被复制的。
 
 #### 步骤
 
@@ -171,13 +177,13 @@
       msg: 'hello worker'
     })
 
-worker 对象的其它接口请看 [worker接口说明](../../document/worker/Worker.html)
+worker 对象的其它接口请看 [worker接口说明](../../api/worker/Worker.html)
 
 #### Tips
 
-1.  Worker 最大并发数量限制为 1 个，创建下一个前请用 [Worker.terminate()](../../document/worker/Worker.terminate.html) 结束当前 Worker
+1.  Worker 最大并发数量限制为 1 个，创建下一个前请用 [Worker.terminate()](../../api/worker/Worker.terminate.html) 结束当前 Worker
 2.  Worker 内代码只能 require 指定 Worker 路径内的文件，无法引用其它路径
-3.  Worker 的入口文件由 [wx.createWorker()](../../document/worker/wx.createWorker.html) 时指定，开发者可动态指定 Worker 入口文件
+3.  Worker 的入口文件由 [wx.createWorker()](../../api/worker/wx.createWorker.html) 时指定，开发者可动态指定 Worker 入口文件
 4.  Worker 内不支持 `wx` 系列的 API
 5.  Workers 之间不支持发送消息
 
@@ -209,10 +215,10 @@ worker 对象的其它接口请看 [worker接口说明](../../document/worker/Wo
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -220,6 +226,6 @@ worker 对象的其它接口请看 [worker接口说明](../../document/worker/Wo
 
 </div>
 
-[](update.html)[](../open-ability/authorize.html)</div>
+[](./update.html)</div>
 
 </div>

@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091022)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091022)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091022)
 *   [小游戏开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091022)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091022)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091022)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091022)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091022)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/open-ability/authorize.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/open-ability/authorize.html?t=18091022)
 
 </div>
 
@@ -42,9 +45,9 @@
 </div>
 
 *   [教程](../../)
-*   [API](../../document/render/canvas/wx.createCanvas.html)
+*   [API](../../api/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
-*   [腾讯云支持](../../qcloud/qcloud.html)
+*   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 
 </div>
 
@@ -53,6 +56,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/open-ability/authorize.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/open-ability/authorize.html?t=18091022)
 
 </div>
 
@@ -78,18 +84,18 @@
     *   [性能](../usability/performance.html)
     *   [小游戏更新](../usability/update.html)
     *   [多线程 Worker](../usability/worker.html)
-*   [开放能力](authorize.html)
-    *   [用户授权](authorize.html)
-    *   [游戏圈使用指南](game-club.html)
-    *   [用户登录态签名](http-signature.html)
-    *   [米大师支付签名](midas-signature.html)
-    *   [关系链数据使用指南](open-data.html)
-    *   [虚拟支付](payment.html)
-    *   [获取二维码](qrcode.html)
-    *   [排行榜配置指引](ranklist.html)
-    *   [转发](share.html)
-    *   [用户数据的签名验证和加解密](signature.html)
-    *   [UnionID 机制说明](union-id.html)
+*   [开放能力](./authorize.html)
+    *   [用户授权](./authorize.html)
+    *   [游戏圈使用指南](./game-club.html)
+    *   [用户登录态签名](./http-signature.html)
+    *   [米大师支付签名](./midas-signature.html)
+    *   [关系链数据使用指南](./open-data.html)
+    *   [虚拟支付](./payment.html)
+    *   [获取二维码](./qrcode.html)
+    *   [排行榜配置指引](./ranklist.html)
+    *   [转发](./share.html)
+    *   [用户数据的签名验证和加解密](./signature.html)
+    *   [UnionID 机制说明](./union-id.html)
 *   [广告](../ad/banner-ad.html)
     *   [Banner 广告](../ad/banner-ad.html)
     *   [激励视频广告](../ad/rewarded-video-ad.html)
@@ -126,17 +132,17 @@
       }
     })
 
-![](https://developers.weixin.qq.com/minigame/dev/image/authorize-API.jpg)
+![](https://developers.weixin.qq.com/minigame/dev/tutorial/image/authorize-API.jpg?t=18091022)
 
 ### 提前发起授权
 
-如果需要提前发起授权获得用户同意，则可调用 [wx.authorize()](../../document/open-api/authorize/wx.authorize.html) 来提前发起授权。
+如果需要提前发起授权获得用户同意，则可调用 [wx.authorize()](../../api/open-api/authorize/wx.authorize.html) 来提前发起授权。
 
     wx.authorize({
       scope: 'scope.record'
     })
 
-![](https://developers.weixin.qq.com/minigame/dev/image/pre-authorize.jpg)
+![](https://developers.weixin.qq.com/minigame/dev/tutorial/image/pre-authorize.jpg?t=18091022)
 
 ### 处理用户拒绝授权
 
@@ -147,7 +153,7 @@
         wx.getUserInfo({
           fail: function (res) {
             // iOS 和 Android 对于拒绝授权的回调 errMsg 没有统一，需要做一下兼容处理
-            if (res.errMsg.indexOf('auth deny') > -1 ||     res.errMsg.indexOf('auth denied') > -1 ) {
+            if (res.errMsg.indexOf('auth deny') > -1 || 	res.errMsg.indexOf('auth denied') > -1 ) {
               // 处理用户拒绝授权的情况
             }
           }
@@ -159,7 +165,7 @@
       scope: 'scope.record',
       fail: function (res) {
         // iOS 和 Android 对于拒绝授权的回调 errMsg 没有统一，需要做一下兼容处理
-        if (res.errMsg.indexOf('auth deny') > -1 ||     res.errMsg.indexOf('auth denied') > -1 ) {
+        if (res.errMsg.indexOf('auth deny') > -1 || 	res.errMsg.indexOf('auth denied') > -1 ) {
           // 处理用户拒绝授权的情况
         }    
       }
@@ -167,7 +173,7 @@
 
 ### 获取用户授权设置
 
-通过调用 [wx.getSetting()](../../document/open-api/setting/wx.getSetting.html) 接口可以获取用户当前的授权处理信息。
+通过调用 [wx.getSetting()](../../api/open-api/setting/wx.getSetting.html) 接口可以获取用户当前的授权处理信息。
 
     wx.getSetting({
       success: function (res) {
@@ -184,13 +190,13 @@
 
 ### 引导用户重新授权
 
-如果用户拒绝过某个 `scope` 的授权申请，则后续这个 `scope` 下的相关 API 调用都会直接失败，用 [wx.authorize()](../../document/open-api/authorize/wx.authorize.html) 申请此 `scope` 也会直接失败，而不会弹窗询问用户。这种情况下，需要引导用户主动到设置页面打开相应的 `scope` 权限。
+如果用户拒绝过某个 `scope` 的授权申请，则后续这个 `scope` 下的相关 API 调用都会直接失败，用 [wx.authorize()](../../api/open-api/authorize/wx.authorize.html) 申请此 `scope` 也会直接失败，而不会弹窗询问用户。这种情况下，需要引导用户主动到设置页面打开相应的 `scope` 权限。
 
 授权页面的进入路径为：右上角菜单->关于（小程序名字）->右上角菜单->设置
 
 **注意：只有申请过授权的 `scope` 会出现在设置页面。**
 
-![](https://developers.weixin.qq.com/minigame/dev/image/authorize-setting.jpg)
+![](https://developers.weixin.qq.com/minigame/dev/tutorial/image/authorize-setting.jpg?t=18091022)
 
 ### 重置授权记录
 
@@ -220,7 +226,7 @@
 
 <td>scope.userInfo</td>
 
-<td>[wx.getUserInfo()](../../document/open-api/data/wx.getUserInfo.html)</td>
+<td>[wx.getUserInfo()](../../api/open-api/user-info/wx.getUserInfo.html)</td>
 
 <td>用户信息</td>
 
@@ -230,7 +236,7 @@
 
 <td>scope.userLocation</td>
 
-<td>[wx.getLocation()](../../document/location/wx.getLocation.html)</td>
+<td>[wx.getLocation()](../../api/location/wx.getLocation.html)</td>
 
 <td>地理位置</td>
 
@@ -240,7 +246,7 @@
 
 <td>scope.werun</td>
 
-<td>[wx.getWeRunData()](../../document/open-api/werun/wx.getWeRunData.html)</td>
+<td>[wx.getWeRunData()](../../api/open-api/werun/wx.getWeRunData.html)</td>
 
 <td>微信运动步数</td>
 
@@ -250,7 +256,7 @@
 
 <td>scope.record</td>
 
-<td><a href="">wx.startRecord()</a>、[RecorderManager.start()](../../document/media/recorder/RecorderManager.start.html)</td>
+<td>[RecorderManager.start()](../../api/media/recorder/RecorderManager.start.html)</td>
 
 <td>录音功能</td>
 
@@ -260,7 +266,7 @@
 
 <td>scope.writePhotosAlbum</td>
 
-<td>[wx.saveImageToPhotosAlbum()](../../document/media/image/wx.saveImageToPhotosAlbum.html)</td>
+<td>[wx.saveImageToPhotosAlbum()](../../api/media/image/wx.saveImageToPhotosAlbum.html)</td>
 
 <td>保存到相册</td>
 
@@ -298,10 +304,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -309,6 +315,6 @@
 
 </div>
 
-[](../usability/worker.html)[](game-club.html)</div>
+[](../usability/debug.html)[](../ad/banner-ad.html)</div>
 
 </div>

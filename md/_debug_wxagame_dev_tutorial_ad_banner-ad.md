@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091022)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091022)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091022)
 *   [小游戏开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091022)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091022)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091022)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091022)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091022)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/ad/banner-ad.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/ad/banner-ad.html?t=18091022)
 
 </div>
 
@@ -42,9 +45,9 @@
 </div>
 
 *   [教程](../../)
-*   [API](../../document/render/canvas/wx.createCanvas.html)
+*   [API](../../api/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
-*   [腾讯云支持](../../qcloud/qcloud.html)
+*   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 
 </div>
 
@@ -53,6 +56,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/ad/banner-ad.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/ad/banner-ad.html?t=18091022)
 
 </div>
 
@@ -90,9 +96,9 @@
     *   [转发](../open-ability/share.html)
     *   [用户数据的签名验证和加解密](../open-ability/signature.html)
     *   [UnionID 机制说明](../open-ability/union-id.html)
-*   [广告](banner-ad.html)
-    *   [Banner 广告](banner-ad.html)
-    *   [激励视频广告](rewarded-video-ad.html)
+*   [广告](./banner-ad.html)
+    *   [Banner 广告](./banner-ad.html)
+    *   [激励视频广告](./rewarded-video-ad.html)
 
 </nav>
 
@@ -116,7 +122,7 @@
 
 Banner 广告组件是由客户端原生的图片、文本控件组成的原生组件，层级最高，会覆盖在上屏 Canvas 上。
 
-开发者可以调用 [wx.createBannerAd](../../document/ad/wx.createBannerAd.html) 创建 Banner 广告组件。Banner 广告组件在创建后会自动拉取广告数据并进行渲染，开发者只需要控制 Banner 广告组件的位置和显示/隐藏即可。
+开发者可以调用 [wx.createBannerAd](../../api/ad/wx.createBannerAd.html) 创建 Banner 广告组件。Banner 广告组件在创建后会自动拉取广告数据并进行渲染，开发者只需要控制 Banner 广告组件的位置和显示/隐藏即可。
 
     let bannerAd = wx.createBannerAd({
       adUnitId: 'xxxx',
@@ -131,28 +137,28 @@ Banner 广告组件是由客户端原生的图片、文本控件组成的原生�
 
 ### 显示/隐藏
 
-Banner 广告组件默认是隐藏的，需要调用 [BannerAd.show()](../../document/ad/BannerAd.show.html) 进行显示。
+Banner 广告组件默认是隐藏的，需要调用 [BannerAd.show()](../../api/ad/BannerAd.show.html) 进行显示。
 
     bannerAd.show()
 
-当切换到没有 Banner 广告组件的场景或页面时，调用 [BannerAd.hide()](../../document/ad/BannerAd.hide.html) 隐藏 Banner 广告组件。
+当切换到没有 Banner 广告组件的场景或页面时，调用 [BannerAd.hide()](../../api/ad/BannerAd.hide.html) 隐藏 Banner 广告组件。
 
     bannerAd.hide()
 
 ### 广告拉取成功与失败
 
-BannerAd 在创建后会拉取广告。如果拉取失败，通过 [BannerAd.onError()](../../document/ad/BannerAd.onError.html) 注册的回调函数会执行，回调函数的参数是一个包含错误信息的对象。
+BannerAd 在创建后会拉取广告。如果拉取失败，通过 [BannerAd.onError()](../../api/ad/BannerAd.onError.html) 注册的回调函数会执行，回调函数的参数是一个包含错误信息的对象。[常见异常错误参考文档](../../api/ad/BannerAd.onError.html)
 
     bannerAd.onError(err => {
       console.log(err)
     })
 
-[BannerAd.show()](../../document/ad/BannerAd.show.html) 返回的 Promise 也会是一个 rejected Promise。
+[BannerAd.show()](../../api/ad/BannerAd.show.html) 返回的 Promise 也会是一个 rejected Promise。
 
     bannerAd.show()
     .catch(err => console.log(err))
 
-反之，如果拉取成功。[BannerAd.onLoad()](../../document/ad/BannerAd.onLoad.html) 会执行，[BannerAd.show()](../../document/ad/BannerAd.show.html) 返回的 Promise 也会是一个 resolved Promise。两者的回调函数中都没有参数传递。
+反之，如果拉取成功。[BannerAd.onLoad()](../../api/ad/BannerAd.onLoad.html) 会执行，[BannerAd.show()](../../api/ad/BannerAd.show.html) 返回的 Promise 也会是一个 resolved Promise。两者的回调函数中都没有参数传递。
 
     bannerAd.onLoad(() => {
       console.log('banner 广告加载成功')
@@ -177,14 +183,14 @@ BannerAd 在创建后会拉取广告。如果拉取失败，通过 [BannerAd.onE
     bannerAd.show()
     bannerAd.style.width = 400
 
-Banner 广告组件的尺寸会根据开发者设置的宽度，即 `style.width` 进行等比缩放，缩放的范围是 300 到 `屏幕宽度`。屏幕宽度是以逻辑像素为单位的宽度，通过 [wx.getSystemInfoSync()](../../document/system/system-info/wx.getSystemInfoSync.html) 可以获取到。
+Banner 广告组件的尺寸会根据开发者设置的宽度，即 `style.width` 进行等比缩放，缩放的范围是 300 到 `屏幕宽度`。屏幕宽度是以逻辑像素为单位的宽度，通过 [wx.getSystemInfoSync()](../../api/system/system-info/wx.getSystemInfoSync.html) 可以获取到。
 
     let { screenWidth } = wx.getSystemInfoSync()
 
 当 `style.width` 小于 300 时，会取作 300。 当 `style.width` 大于屏幕宽度时，会取作屏幕宽度。  
 在组件内部会以此值为基准，根据 Banner 广告的标准尺寸，进行缩放。
 
-每当缩放发生且缩放后的尺寸不同时，通过 [BannerAd.onResize()](../../document/ad/BannerAd.onResize.html) 注册的回调函数就会执行。回调函数的参数是一个包含 BannerAd 缩放后的宽和高的对象。BannerAd 的 `style.realWidth` 和 `style.realHeight` 到经过缩放后的宽和高。
+每当缩放发生且缩放后的尺寸不同时，通过 [BannerAd.onResize()](../../api/ad/BannerAd.onResize.html) 注册的回调函数就会执行。回调函数的参数是一个包含 BannerAd 缩放后的宽和高的对象。BannerAd 的 `style.realWidth` 和 `style.realHeight` 到经过缩放后的宽和高。
 
     bannerAd.onResize(res => {
       console.log(res.width, res.height)
@@ -237,10 +243,10 @@ Banner 广告组件的尺寸会根据开发者设置的宽度，即 `style.width
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -248,6 +254,6 @@ Banner 广告组件的尺寸会根据开发者设置的宽度，即 `style.width
 
 </div>
 
-[](../open-ability/union-id.html)[](rewarded-video-ad.html)</div>
+[](../open-ability/authorize.html)[](./rewarded-video-ad.html)</div>
 
 </div>

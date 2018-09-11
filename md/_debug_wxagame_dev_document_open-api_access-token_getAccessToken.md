@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18081820)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18081820)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18081820)
 *   [小游戏开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18081820)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18081820)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18081820)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18081820)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18081820)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/document/open-api/access-token/getAccessToken.html?t=18081820)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/document/open-api/access-token/getAccessToken.html?t=18081820)
 
 </div>
 
@@ -44,6 +47,7 @@
 *   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
+*   [小程序·云开发](../../../wxcloud/basis/getting-started.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
 
 </div>
@@ -53,6 +57,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/document/open-api/access-token/getAccessToken.html?t=18081820)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/document/open-api/access-token/getAccessToken.html?t=18081820)
 
 </div>
 
@@ -226,20 +233,9 @@
         *   [code2accessToken](../login/code2accessToken.html)
     *   [防沉迷](../anti-addiction/wx.checkIsUserAdvisedToRest.html)
         *   [wx.checkIsUserAdvisedToRest](../anti-addiction/wx.checkIsUserAdvisedToRest.html)
-    *   [开放数据](../data/wx.getUserInfo.html)
-        *   [wx.getUserInfo](../data/wx.getUserInfo.html)
-        *   [wx.getGroupCloudStorage](../data/wx.getGroupCloudStorage.html)
-        *   [wx.getUserCloudStorage](../data/wx.getUserCloudStorage.html)
-        *   [wx.getFriendCloudStorage](../data/wx.getFriendCloudStorage.html)
-        *   [wx.getSharedCanvas](../data/wx.getSharedCanvas.html)
-        *   [wx.removeUserCloudStorage](../data/wx.removeUserCloudStorage.html)
-        *   [wx.setUserCloudStorage](../data/wx.setUserCloudStorage.html)
-        *   [KVData](../data/KVData.html)
-        *   [UserGameData](../data/UserGameData.html)
-        *   [removeUserStorage](../data/removeUserStorage.html)
-        *   [setUserStorage](../data/setUserStorage.html)
     *   [用户信息](../user-info/wx.createUserInfoButton.html)
         *   [wx.createUserInfoButton](../user-info/wx.createUserInfoButton.html)
+        *   [wx.getUserInfo](../user-info/wx.getUserInfo.html)
         *   [UserInfo](../user-info/UserInfo.html)
         *   [UserInfoButton](../user-info/UserInfoButton.html)
         *   [UserInfoButton.destroy](../user-info/UserInfoButton.destroy.html)
@@ -248,6 +244,18 @@
         *   [UserInfoButton.show](../user-info/UserInfoButton.show.html)
     *   [微信运动](../werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
+    *   [开放数据](../data/wx.getFriendCloudStorage.html)
+        *   [wx.getFriendCloudStorage](../data/wx.getFriendCloudStorage.html)
+        *   [wx.getUserCloudStorage](../data/wx.getUserCloudStorage.html)
+        *   [wx.getGroupCloudStorage](../data/wx.getGroupCloudStorage.html)
+        *   [wx.getSharedCanvas](../data/wx.getSharedCanvas.html)
+        *   [wx.removeUserCloudStorage](../data/wx.removeUserCloudStorage.html)
+        *   [wx.setUserCloudStorage](../data/wx.setUserCloudStorage.html)
+        *   [KVData](../data/KVData.html)
+        *   [UserGameData](../data/UserGameData.html)
+        *   [removeUserStorage](../data/removeUserStorage.html)
+        *   [setUserStorage](../data/setUserStorage.html)
+        *   [OpenDataContext-wx.getUserInfo](../data/OpenDataContext-wx.getUserInfo.html)
     *   [设置](../setting/wx.createOpenSettingButton.html)
         *   [wx.createOpenSettingButton](../setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../setting/wx.getSetting.html)
@@ -278,8 +286,8 @@
         *   [wx.onMessage](../context/wx.onMessage.html)
         *   [OpenDataContext](../context/OpenDataContext.html)
         *   [OpenDataContext.postMessage](../context/OpenDataContext.postMessage.html)
-    *   [接口调用凭证](getAccessToken.html)
-        *   [getAccessToken](getAccessToken.html)
+    *   [接口调用凭证](./getAccessToken.html)
+        *   [getAccessToken](./getAccessToken.html)
     *   [内容安全](../sec-check/imgSecCheck.html)
         *   [imgSecCheck](../sec-check/imgSecCheck.html)
         *   [msgSecCheck](../sec-check/msgSecCheck.html)
@@ -467,7 +475,7 @@
 
 ### getAccessToken
 
-获取小程序 access_token 。access_token 介绍详见 [https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421140183](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421140183)
+获取小程序 access_token 。access_token 介绍详见 https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421140183
 
 #### 请求地址
 
@@ -565,6 +573,16 @@
 
 <tr>
 
+<td>access_token</td>
+
+<td>string</td>
+
+<td>获取到的凭证</td>
+
+</tr>
+
+<tr>
+
 <td>errcode</td>
 
 <td>number</td>
@@ -607,55 +625,41 @@
 
 <tr>
 
+<td>-1</td>
+
+<td>系统繁忙，此时请开发者稍候再试</td>
+
+</tr>
+
+<tr>
+
 <td>0</td>
 
-<td>内容正常</td>
+<td>请求成功</td>
 
 </tr>
 
 <tr>
 
-<td>87014</td>
+<td>40001</td>
 
-<td>内容含有违法违规内容</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**errMsg 的合法值**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>值</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>"ok"</td>
-
-<td>内容正常</td>
+<td>AppSecret错误或者AppSecret不属于这个小程序，请开发者确认AppSecret的正确性</td>
 
 </tr>
 
 <tr>
 
-<td>"risky</td>
+<td>40002</td>
 
-<td>content" 内容含有违法违规内容</td>
+<td>请确保grant_type字段值为client_credential</td>
+
+</tr>
+
+<tr>
+
+<td>40164</td>
+
+<td>调用接口的IP地址不在白名单中，请在接口IP白名单中进行设置</td>
 
 </tr>
 
@@ -691,10 +695,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [关于腾讯](https://www.tencent.com/zh-cn/index.html)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=1484641676)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -702,6 +706,6 @@
 
 </div>
 
-[](../context/OpenDataContext.postMessage.html)[](../sec-check/imgSecCheck.html)</div>
+[](../context/wx.getOpenDataContext.html)[](../sec-check/imgSecCheck.html)</div>
 
 </div>

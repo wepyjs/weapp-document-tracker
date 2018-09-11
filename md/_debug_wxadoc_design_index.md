@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18073022)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18073022)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18073022)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18082920)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18082920)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18082920)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18073022)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18073022)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18073022)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18082920)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18082920)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18082920)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18073022)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18073022)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18082920)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18082920)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18082920)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/design/index.html?t=18082920)
 
 </div>
 
@@ -50,6 +53,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18082920)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/design/index.html?t=18082920)
 
 </div>
 
@@ -113,15 +119,15 @@
 
 #### 案例示意1
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/1emphasis.dont.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/1emphasis.dont.png?t=18082920)
 
 #### 案例示意2
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/1emphasis.dont2.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/1emphasis.dont2.png?t=18082920)
 
 ### 流程明确
 
-为了让用户顺畅地使用页面，在用户进行某一个操作流程时，应避免出现用户目标流程之外的内容而打断用户。 ![](https://developers.weixin.qq.com/miniprogram/design/image/2flow.dont.png?t=18073022)
+为了让用户顺畅地使用页面，在用户进行某一个操作流程时，应避免出现用户目标流程之外的内容而打断用户。 ![](https://developers.weixin.qq.com/miniprogram/design/image/2flow.dont.png?t=18082920)
 
 ## 清晰明确
 
@@ -133,25 +139,25 @@
 
 #### 小程序菜单
 
-小程序的所有页面，包括小程序内嵌网页和插件，微信都会在其右上角放置官方小程序菜单，样式如图。开发者不可对其内容自定义，但可选择深浅两种基本配色以适应页面设计风格。 官方小程序菜单将放置在界面固定位置，开发者在设计界面时请预留出该区域空间，若需要在此区域附近放置可交互元素，要特别注意交互事件是否会冲突，操作是否容易被使用 ![](https://developers.weixin.qq.com/miniprogram/design/image/3navigation.iOS.png?t=18073022)
+小程序的所有页面，包括小程序内嵌网页和插件，微信都会在其右上角放置官方小程序菜单，样式如图。开发者不可对其内容自定义，但可选择深浅两种基本配色以适应页面设计风格。 官方小程序菜单将放置在界面固定位置，开发者在设计界面时请预留出该区域空间，若需要在此区域附近放置可交互元素，要特别注意交互事件是否会冲突，操作是否容易被使用 ![](https://developers.weixin.qq.com/miniprogram/design/image/3navigation.iOS.png?t=18082920)
 
 #### 小程序菜单深浅配色方案（iOS和Android）
 
-开发者可在满足可用性的前提下，从微信提供的深浅两套配色的小程序菜单中选择合适的方案，以适应小程序页面设计风格。 ![](https://developers.weixin.qq.com/miniprogram/design/image/3navigation.color.png?t=18073022)
+开发者可在满足可用性的前提下，从微信提供的深浅两套配色的小程序菜单中选择合适的方案，以适应小程序页面设计风格。 ![](https://developers.weixin.qq.com/miniprogram/design/image/3navigation.color.png?t=18082920)
 
 #### 页面内导航
 
-开发者可根据自身功能设计需要在页面内添加自有导航。并保持不同页面间导航一致，指向清晰，有路可退。受限于手机屏幕尺寸的限制，小程序页面的导航应尽量简单。建议开发者设计的自有导航样式与微信官方小程序菜单样式保持一定差异，以便区分。 ![](https://developers.weixin.qq.com/miniprogram/design/image/3navigation.customize.png?t=18073022)
+开发者可根据自身功能设计需要在页面内添加自有导航。并保持不同页面间导航一致，指向清晰，有路可退。受限于手机屏幕尺寸的限制，小程序页面的导航应尽量简单。建议开发者设计的自有导航样式与微信官方小程序菜单样式保持一定差异，以便区分。 ![](https://developers.weixin.qq.com/miniprogram/design/image/3navigation.customize.png?t=18082920)
 
 开发者可为小程序页面添加标签分页（Tab）导航。标签分页栏可固定在页面顶部或者底部，便于用户在不同的分页间做切换。标签数量不得少于2个，最多不得超过5个，为确保点击区域，建议标签数量不超过4项。一个页面也不应出现一组以上的标签分页栏。
 
 其中小程序首页可选择微信提供的原生底部标签分页样式，该样式仅供小程序首页使用。开发时可自定义图标样式、标签文案以及文案颜色等，具体设置项如图标尺寸等参考可参考开发文档和WeUI基础控件库。
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/3navigation.page.bottom.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/3navigation.page.bottom.png?t=18082920)
 
 顶部标签分页栏颜色可自定义。在自定义颜色选择中，务必注意保持分页栏标签的可用性、可视性和可操作性。
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/3navigation.page.top.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/3navigation.page.top.png?t=18082920)
 
 ### 减少等待，反馈及时
 
@@ -161,35 +167,35 @@
 
 小程序启动页是小程序在微信内一定程度上展现品牌特征的页面之一。本页面将突出展示小程序品牌特征和加载状态。启动页除品牌标志（Logo）展示外，页面上的其他所有元素如加载进度指示，均由微信统一提供且不能更改，无需开发者开发。
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/4miniapp.loading.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/4miniapp.loading.png?t=18082920)
 
 #### 页面下拉刷新加载
 
 在微信小程序内，微信提供标准的页面下拉刷新加载能力和样式，开发者无需自行开发。
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/4pull-to-refresh.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/4pull-to-refresh.png?t=18082920)
 
 #### 页面内加载反馈
 
 开发者可在小程序里自定义页面内容的加载样式。建议不管是使用在局部还是全局加载，自定义加载样式都应该尽可能简洁，并使用简单动画告知用户加载过程。
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/4loading.page.feedback.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/4loading.page.feedback.png?t=18082920)
 
 #### 模态加载
 
 模态的加载样式将覆盖整个页面的，由于无法明确告知具体加载的位置或内容将可能引起用户的焦虑感，因此应谨慎使用。除了在某些全局性操作下不要使用模态的加载。
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/4loading.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/4loading.png?t=18082920)
 
 #### 局部加载反馈
 
 局部加载反馈即只在触发加载的页面局部进行反馈，这样的反馈机制更加有针对性，页面跳动小，是微信推荐的反馈方式。例如：
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/4loading.feedback.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/4loading.feedback.png?t=18082920)
 
 #### 全局加载反馈
 
-开发者可以参考图中样式，使用标题栏提示加载小程序页面内容的过程。例如： ![](https://developers.weixin.qq.com/miniprogram/design/image/4loading.title.png?t=18073022)
+开发者可以参考图中样式，使用标题栏提示加载小程序页面内容的过程。例如： ![](https://developers.weixin.qq.com/miniprogram/design/image/4loading.title.png?t=18082920)
 
 #### 加载反馈注意事项
 
@@ -205,31 +211,31 @@
 
 对于页面局部的操作，可在操作区域予以直接反馈，例如点击多选控件前后如下图。对于常用控件，微信设计中心将提供控件库，其中的控件都已提供完整操作反馈。
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/5local.feedback.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/5local.feedback.png?t=18082920)
 
 #### 页面全局操作结果——图标型弹出提示
 
 图标型弹出提示适用于轻量级的成功提示，1.5秒后自动消失，并不打断流程，对用户影响较小，适用于不需要强调的操作提醒，例如成功提示。特别注意该形式不适用于错误提示，因为错误提示需明确告知用户，因而不适合使用一闪而过的弹出式提示。
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/5global.toast.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/5global.toast.png?t=18082920)
 
 #### 页面全局操作结果——文字型弹出提示
 
 文字型弹出提示适用于需要轻量化地用文字解释当前状态或提醒不严重的错误。1.5秒后自动消失，不打断流程，对用户影响较小。
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/5wording.toast.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/5wording.toast.png?t=18082920)
 
 #### 页面全局操作结果——模态对话框
 
 对于需要用户明确知晓的操作结果状态可通过模态对话框来提示，并可附带下一步操作指引。
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/5global.popup.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/5global.popup.png?t=18082920)
 
 #### 页面全局操作结果—结果页
 
 对于操作结果已经是当前流程的终结的情况，可使用操作结果页来反馈。这种方式最为强烈和明确的告知用户操作已经完成，并可根据实际情况给出下一步操作的指引。
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/5global.result.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/5global.result.png?t=18082920)
 
 ### 异常可控，有路可退
 
@@ -241,7 +247,7 @@
 
 表单报错，在表单顶部告知错误原因，并标识出错误字段提示用户修改。
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/6error.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/6error.png?t=18082920)
 
 ## 便捷优雅
 
@@ -253,11 +259,11 @@
 
 例如下图中，在添加银行卡时，采用摄像头识别接口来帮助用户输入。除此之外微信团队还对外开放例如地理位置接口等多种微信小程序接口 ，充分利用这些接口将大大提高用户输入的效率和准确性，进而优化体验。
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/7less-input.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/7less-input.png?t=18082920)
 
 除了利用接口外，在不得不让用户进行手动输入时，应尽量让用户做选择而不是键盘输入。一方面，回忆易于记忆，让用户在有限的选项中做选择通常来说是容易于完全靠记忆输入；另一方面，仍然是考虑到手机键盘密集的单键输入极易造成输入错误。 例如图中，在用户搜索时提供搜索历史快捷选项将帮助用户快速进行搜索，而减少或避免不必要是键盘输入。
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/7less-input2.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/7less-input2.png?t=18082920)
 
 ### 避免误操作
 
@@ -279,43 +285,43 @@
 
 微信内字体的使用与所运行的系统字体保持一致，常用字号为20, 18, 17, 16,14 13, 11(pt)，使用场景具体如下：
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/8Font.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/8Font.png?t=18082920)
 
 #### 字体颜色
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/8Font.color.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/8Font.color.png?t=18082920)
 
 主内容 Black 黑色，次要内容 Grey 灰色；时间戳与表单缺省值 Light 灰色；大段的说明内容而且属于主要内容用 Semi 黑。
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/8Font.color2.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/8Font.color2.png?t=18082920)
 
 蓝色为链接用色，绿色为完成字样色，红色为出错用色 Press 与 Disable 状态分别降低透明度为20%与10%。
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/8Font.color3.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/8Font.color3.png?t=18082920)
 
 ### 列表
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/9List.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/9List.png?t=18082920)
 
 ### 表单输入
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/10Input.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/10Input.png?t=18082920)
 
 ### 按钮
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/11button.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/11button.png?t=18082920)
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/11button2.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/11button2.png?t=18082920)
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/11button3.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/11button3.png?t=18082920)
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/11button4.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/11button4.png?t=18082920)
 
 ### 图标
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/12icon.png?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/12icon.png?t=18082920)
 
-![](https://developers.weixin.qq.com/miniprogram/design/image/13titlebar.jpg?t=18073022)
+![](https://developers.weixin.qq.com/miniprogram/design/image/13titlebar.jpg?t=18082920)
 
 ## 资源下载
 
@@ -355,10 +361,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](https://www.tencent.com/zh-cn/index.html)
-*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=1484641676)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 

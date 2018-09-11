@@ -8,17 +8,21 @@
 
 <div class="header_ctrls">
 
-*   [小游戏介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+*   [小程序介绍](javascript:;)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090718)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18090718)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18090718)
 *   [开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18090718)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18090718)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18090718)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090718)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18090718)
+*   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/qrcode.html?t=18090718)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/qrcode.html?t=18090718)
 
 </div>
 
@@ -36,13 +40,14 @@
 
 <div class="top_title_wap"><span class="icon_title icon_doc"></span>
 
-微信小游戏接入指南
+微信小程序接入指南
 
 </div>
 
-*   [微信小游戏接入指南](./index.html)
-*   [扫码打开小程序接入指南](qrcode.html)
-*   [腾讯云支持](qcloud.html)
+*   [微信小程序接入指南](.)
+*   [客服功能使用指南](./custom.html)
+*   [扫码打开小程序接入指南](./qrcode.html)
+*   [插件接入指南](./plugin.html)
 
 </div>
 
@@ -51,6 +56,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/qrcode.html?t=18090718)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/qrcode.html?t=18090718)
 
 </div>
 
@@ -62,19 +70,19 @@
 
 <nav role="navigation">
 
-*   [功能介绍](qrcode.html#功能介绍)
-*   [开放范围](qrcode.html#开放范围)
-*   [二维码跳转规则](qrcode.html#二维码跳转规则)
-*   [二维码内容获取](qrcode.html#二维码内容获取)
-*   [配置流程](qrcode.html#配置流程)
-    *   [二维码规则](qrcode.html#二维码规则)
-    *   [前缀占用规则](qrcode.html#前缀占用规则)
-    *   [校验文件](qrcode.html#校验文件)
-    *   [小程序功能页面](qrcode.html#小程序功能页面)
-    *   [测试调试](qrcode.html#测试调试)
-        *   [测试链接](qrcode.html#测试链接)
-        *   [测试范围](qrcode.html#测试范围)
-    *   [发布](qrcode.html#发布)
+*   [功能介绍](./qrcode.html#功能介绍)
+*   [开放范围](./qrcode.html#开放范围)
+*   [二维码跳转规则](./qrcode.html#二维码跳转规则)
+*   [二维码内容获取](./qrcode.html#二维码内容获取)
+*   [配置流程](./qrcode.html#配置流程)
+    *   [二维码规则](./qrcode.html#二维码规则)
+    *   [前缀占用规则](./qrcode.html#前缀占用规则)
+    *   [校验文件](./qrcode.html#校验文件)
+    *   [小程序功能页面](./qrcode.html#小程序功能页面)
+    *   [测试调试](./qrcode.html#测试调试)
+        *   [测试链接](./qrcode.html#测试链接)
+        *   [测试范围](./qrcode.html#测试范围)
+    *   [发布](./qrcode.html#发布)
 
 </nav>
 
@@ -112,13 +120,13 @@
 
 ## 二维码跳转规则
 
-注意：从2017年5月开始，微信客户端支持二维码规则根据“子路径匹配”。如原有现在二维码链接为 `http://www.qq.com/a/123456` ,其中12345为业务参数，则可配置规则 `http://www.qq.com/a/` 实现扫码打开小程序。
+注意：从2017年5月开始，微信客户端支持二维码规则根据“子路径匹配”。如原有二维码链接为 `http://www.qq.com/a/123456` ，其中12345为业务参数，则可配置规则 `http://www.qq.com/a/` 实现扫码打开小程序。
 
 微信客户端扫码将按以下匹配规则控制跳转：
 
 1.  二维码链接的协议、域名与已配置的二维码规则一致。
-2.  二维码链接属于后台配置的二维码规则的子路径。(如需支持子路径匹配，请确认后台配置的二维码规则以“/”结尾)
-3.  如果二维码规则包含参数，链接“？”后为参数部分，参数要求前缀匹配
+2.  二维码链接属于后台配置的二维码规则的子路径。（如需支持子路径匹配，请确认后台配置的二维码规则以`/`结尾）
+3.  如果二维码规则包含参数，链接`?`后为参数部分，参数要求前缀匹配。
 
 常见匹配错误类型：
 
@@ -142,9 +150,9 @@
 
 <tr>
 
-<td style="text-align:center">[http://www.qq.com/a/b](http://www.qq.com/a/b)</td>
+<td style="text-align:center">http://www.qq.com/a/b</td>
 
-<td style="text-align:center">[https://www.qq.com/a/b](https://www.qq.com/a/b)</td>
+<td style="text-align:center">https://www.qq.com/a/b</td>
 
 <td>协议不一致</td>
 
@@ -152,9 +160,9 @@
 
 <tr>
 
-<td style="text-align:center">[https://www.qq.com/a/b](https://www.qq.com/a/b)</td>
+<td style="text-align:center">https://www.qq.com/a/b</td>
 
-<td style="text-align:center">[https://www.weixin.qq.com/a/b](https://www.weixin.qq.com/a/b)</td>
+<td style="text-align:center">https://www.weixin.qq.com/a/b</td>
 
 <td>域名不一</td>
 
@@ -162,9 +170,9 @@
 
 <tr>
 
-<td style="text-align:center">[https://www.qq.com/a/b?id=123](https://www.qq.com/a/b?id=123&)</td>
+<td style="text-align:center">https://www.qq.com/a/b?id=123</td>
 
-<td style="text-align:center">[https://www.qq.com/a/b?id=132](https://www.qq.com/a/b?id=132&)</td>
+<td style="text-align:center">https://www.qq.com/a/b?id=132</td>
 
 <td>参数不满足前缀匹配</td>
 
@@ -172,9 +180,9 @@
 
 <tr>
 
-<td style="text-align:center">[https://www.qq.com/a/b](https://www.qq.com/a/b)</td>
+<td style="text-align:center">https://www.qq.com/a/b</td>
 
-<td style="text-align:center">[https://www.qq.com/a/bc](https://www.qq.com/a/bc)</td>
+<td style="text-align:center">https://www.qq.com/a/bc</td>
 
 <td>不属于子路径</td>
 
@@ -182,11 +190,11 @@
 
 <tr>
 
-<td style="text-align:center">[https://www.qq.com/a/b](https://www.qq.com/a/b)</td>
+<td style="text-align:center">https://www.qq.com/a/b</td>
 
-<td style="text-align:center">[https://www.qq.com/a/b/123](https://www.qq.com/a/b/123)</td>
+<td style="text-align:center">https://www.qq.com/a/b/123</td>
 
-<td>规则没有以“/”结尾，不支持子路径匹配</td>
+<td>规则没有以`/`结尾，不支持子路径匹配</td>
 
 </tr>
 
@@ -198,15 +206,15 @@
 
 在小程序后台配置二维码跳转小程序规则之后即可使用微信（6.5.6及其以上客户端版本）扫码打开小程序。
 
-二维码链接内容会以参数q的形式带给页面，在onLoad事件中提取"q"参数并自行UrlDecode一次，即可获取原二维码的完整内容。
+二维码链接内容会以参数`q`的形式带给页面，在onLoad事件中提取`q`参数并自行`decodeURIComponent`一次，即可获取原二维码的完整内容。
 
 ## 配置流程
 
 登录小程序后台，进入“设置-开发设置-扫普通链接二维码打开小程序”，开启功能后即可配置二维码规则。
 
-![](image/qrcode0.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode0.png?t=18090718)
 
-![](image/qrcode1.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode1.png?t=18090718)
 
 ### 二维码规则
 
@@ -214,19 +222,17 @@
 
 1.  二维码规则的域名须通过ICP备案的验证。
 
-2.  支持http、https、ftp开头的链接（如：[http://wx.qq.com、https://wx.qq.com/mp/、https://wx.qq.com/mp?id=123）。](http://wx.qq.xn--comhttps-hm3g//wx.qq.com/mp/%E3%80%81https://wx.qq.com/mp?id=123%EF%BC%89%E3%80%82&)
+2.  支持http、https、ftp开头的链接（如：`http://wx.qq.com`、`https://wx.qq.com/mp/`、`https://wx.qq.com/mp?id=123`）。
 
 3.  一个小程序帐号可配置不多于10个二维码前缀规则。
-
-    ​
 
 ### 前缀占用规则
 
 开发者可选择是否占用符合二维码匹配规则的所有子规则。如选择占用，则其他帐号不可申请使用满足该前缀匹配规则的其他子规则。
 
-如：若开发者A配置二维码规则：[https://wx.qq.com/mp?id=123，并选择“占用所有子规则“，其他开发者将不可以配置满足前缀匹配的子规则如https://wx.qq.com/mp?id=1234。](https://wx.qq.com/mp?id=123%EF%BC%8C%E5%B9%B6%E9%80%89%E6%8B%A9%E2%80%9C%E5%8D%A0%E7%94%A8%E6%89%80%E6%9C%89%E5%AD%90%E8%A7%84%E5%88%99%E2%80%9C%EF%BC%8C%E5%85%B6%E4%BB%96%E5%BC%80%E5%8F%91%E8%80%85%E5%B0%86%E4%B8%8D%E5%8F%AF%E4%BB%A5%E9%85%8D%E7%BD%AE%E6%BB%A1%E8%B6%B3%E5%89%8D%E7%BC%80%E5%8C%B9%E9%85%8D%E7%9A%84%E5%AD%90%E8%A7%84%E5%88%99%E5%A6%82https://wx.qq.com/mp?id=1234%E3%80%82&)
+如：若开发者A配置二维码规则：`https://wx.qq.com/mp?id=123`，并选择“占用所有子规则“，其他开发者将不可以配置满足前缀匹配的子规则如`https://wx.qq.com/mp?id=1234`。
 
-![](image/qrcode5.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode5.png?t=18090718)
 
 如提示“此规则已被占用”，请联系对应小程序开发者沟通解决。
 
@@ -236,11 +242,11 @@
 
 验证文件放置规则： 放置于URL中声明的最后一级子目录下，若无子目录，则放置于host所属服务器的顶层目录下。请根据页面提示将验证文件放置在指定的目录下。
 
-![](image/qrcode3.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode3.png?t=18090718)
 
 ### 小程序功能页面
 
-配置扫描二维码后打开的小程序功能页面路径，如：pages/index/index。
+配置扫描二维码后打开的小程序功能页面路径，如：`pages/index/index`。
 
 ### 测试调试
 
@@ -252,7 +258,7 @@
 
 开发者可根据开发进度选择在开发板/体验版/线上版本测试“普通二维码跳转小程序”的功能。
 
-![](image/qrcode7.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode7.png?t=18090718)
 
 #### 测试链接
 
@@ -264,7 +270,7 @@
 
 测试完成后开发者可将二维码跳转规则发布现网，发布后扫描所有符合匹配规则的二维码，将跳转至指定的小程序页面。
 
-![](image/qrcode4.png)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/qrcode4.png?t=18090718)
 
 为确保用户体验，小程序必须先发布代码才可以发布二维码跳转规则。
 
@@ -298,10 +304,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9&)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -309,6 +315,6 @@
 
 </div>
 
-[](./index.html#公众号关联小程序)[](qrcode.html#功能介绍)</div>
+[](./custom.html)[](./plugin.html)</div>
 
 </div>

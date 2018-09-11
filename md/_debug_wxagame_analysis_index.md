@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18073100)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18073100)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18073100)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090519)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18090519)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18090519)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18073100)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18073100)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18073100)
-*   [小游戏数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18073100)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18073100)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18090519)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18090519)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18090519)
+*   [小程序数据](javascript:;)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090519)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18090519)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18073100)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/minigame/en/analysis/index.html?t=18073100)
+*   [中文](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090519)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/analysis/index.html?t=18090519)
 
 </div>
 
@@ -40,13 +40,14 @@
 
 <div class="top_title_wap"><span class="icon_title icon_doc"></span>
 
-微信小游戏数据分析
+微信小程序数据分析
 
 </div>
 
 *   [功能概述](.)
-*   [常规分析](./Analysis.html)
-*   [小游戏数据助手](./assistant.html)
+*   [常规分析](./regular/)
+*   [自定义分析](./custom/)
+*   [小程序数据助手](./assistant/)
 
 </div>
 
@@ -56,8 +57,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18073100)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/minigame/en/analysis/index.html?t=18073100)
+*   [中文](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090519)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/analysis/index.html?t=18090519)
 
 </div>
 
@@ -93,23 +94,29 @@
 
 # 功能概述
 
-小游戏数据分析，是面向小游戏开发者、运营者的数据分析工具，提供关键指标统计、实时访问监控、收入分析等，帮助小游戏迭代优化和运营。主要功能包括每日例行统计的标准分析和趋势分析。
+小程序数据分析，是面向小程序开发者、运营者的数据分析工具，提供关键指标统计、实时访问监控、自定义分析等，帮助小程序产品迭代优化和运营。主要功能包括每日例行统计的标准分析，以及满足用户个性化需求的自定义分析。
 
 ## 常规分析
 
-**概况**：提供小游戏关键指标趋势以及top页面访问数据，快速了解小游戏概况；
+**概况**：提供小程序关键指标趋势以及top页面访问数据，快速了解小程序发展概况；
 
-**访问分析**：提供小游戏用户访问规模、来源、频次、时长、深度、留存以及页面详情等数据，具体分析用户新增、活跃和留存情况；
+**访问分析**：提供小程序用户访问规模、来源、频次、时长、深度、留存以及页面详情等数据，具体分析用户新增、活跃和留存情况；
 
-**实时统计**：提供小游戏实时访问数据，满足实时监控需求；
+**实时统计**：提供小程序实时访问数据，满足实时监控需求；
 
-**收入分析**：提供小游戏收入数据，包括单日总收入、首次付费用户、付费渗透率等；
+**用户画像**：提供小程序的用户画像数据，包括用户年龄、性别、地区、终端及机型分布。
 
-**用户画像**：提供小游戏的用户画像数据，包括用户年龄、性别、地区、终端及机型分布。
+详情查看[常规分析](regular/index.html)
+
+## 自定义分析
+
+**自定义分析**：配置自定义上报，精细跟踪用户在小程序内的行为，结合用户属性、系统属性、事件属性进行灵活多维的事件分析和漏斗分析，满足小程序的个性化分析需求。
+
+详情查看[自定义分析](custom/index.html)
 
 # 名词解释
 
-**用户**：使用过小游戏的微信用户，根据openid来判断。
+**用户**：使用过小程序的微信用户，根据openid来判断。
 
 **页面**：小程序的页面，以页面路径表示，如index,  product/list。
 
@@ -119,85 +126,55 @@
 
 **退出页**：用户离开小程序时最后访问的页面称为退出页，例如用户从页面A跳转到页面B，从页面B退出小程序，B为退出页，A不是
 
-**场景**：用户打开小游戏时的场景，如通过扫描二维码打开小程序，场景为二维码。
+**场景**：用户打开小程序时的场景，如通过扫描二维码打开小程序，场景为二维码。
 
-**访问**：用户浏览小游戏的行为。
+**访问**：用户浏览小程序页面的行为。
 
-**分享**：用户点击小游戏内或小游戏外菜单，将小游戏及其页面分享给好友的行为。
+**添加**：用户将小程序添加为”我的小程序“的行为。
 
-**新增**：用户首次访问小游戏，即称为新增。
+**分享**：用户点击小程序内或小程序外菜单，将小程序及其页面分享给好友的行为。
 
-**活跃**：用户在一段时间内访问过小游戏即称为活跃。
+**新增**：用户首次访问小程序页面，即称为新增。
 
-**留存**：某个时间段内新增或活跃的用户，经过一段时间后仍然使用小游戏，即称为留存。
+**活跃**：用户在一段时间内访问过小程序即称为活跃。
+
+**停留**：用户从打开小程序内页面，到主动关闭或超时退出小程序的过程。切换到后台、显示到聊天顶部，均不算停留在小程序。
+
+**留存**：区分新增留存和活跃留存，某个时间段内新增或活跃的用户，经过一段时间后仍然使用小程序，即称为留存。
 
 **事件**：自定义分析中进行用户行为数据收集和分析的模型，表示某个用户行为。
 
+**漏斗**：自定义分析中由一系列事件组成的数据分析模型，用于分析业务流程中每个步骤的用户转化与流失。
+
 # 指标解释
 
-**累计注册用户数**：历史累计登录的用户数，同一用户多次访问不重复计。
+**打开次数**：打开小程序总次数。用户从打开小程序到主动关闭或超时退出小程序的过程，计为一次。
 
-**活跃用户数**：访问小游戏的总用户数，同一用户多次访问不重复计。
+**访问次数**：访问小程序页面的总次数。多个页面之间跳转、同一页面的重复访问计为多次访问。
 
-**新增注册用户数**：首次登录的用户数，同一用户多次访问不重复计。
+**访问人数**：访问小程序页面的总用户数，同一用户多次访问不重复计。
 
-**人均停留时长**：平均每个用户停留在小游戏的总时长，即小游戏停留总时长/访问人数。
+**新访问人数**：首次访问小程序页面的用户数，同一用户多次访问不重复计。
 
-**活跃用户数**：登录小游戏的总用户数，同一用户多次访问不重复计。
+**总添加人数**：历史累计将小程序添加为“我的小程序”的总用户数（去除已取消添加人数）。
 
-**新增注册用户数**：首次登录的用户数，同一用户多次访问不重复计。
+**新添加人数**：昨日比前日相比净新增的添加人数 。
 
-**付费用户数**：在小游戏内付费的用户数，同一用户多次付费不重复计。
+**人均停留时长**：平均每个用户停留在小程序页面的总时长，即总停留时长/访问人数。
 
-**首次付费用户数**：首次在小游戏内付费的用户数，同一用户多次付费不重复计。
+**次均停留时长**：平均每次打开小程序停留在小程序页面的总时长，即总停留时长/打开次数。
 
-**单日总收入**：所有用户在小游戏内付费总金额。
+**平均访问深度**：平均每次打开小程序访问的去重页面数。
 
-**单日安卓收入**：安卓平台，所有用户在小游戏内付费总金额。
+**入口页次数**：小程序页面作为入口页的访问次数，例如用户从页面A进入小程序，跳转到页面B，A为入口页，B不是。
 
-**单日iOS收入**：iOS平台，所有用户在小游戏内付费总金额。
+**退出页次数**：小程序页面作为退出页的访问次数，例如用户从页面A跳转到页面B，从页面B退出小程序，B为退出页，A不是。
 
-**单日新增付费用户收入**：首次在小游戏付费的用户，在小游戏内付费总金额。
+**退出率**：小程序页面作为退出页的访问次数占比，即退出页次数/访问次数。
 
-**实时访问次数**：实时数据处理同步可能有15分钟以内的延迟，只统计已发布的线上版本使用数据。
+**分享次数**：分享小程序页面的总次数。
 
-**累计注册用户数**：历史累计登录的用户数，同一用户多次访问不重复计。
-
-**活跃用户数**：访问小游戏的总用户数，同一用户多次访问不重复计。
-
-**访问次数**：访问小游戏总次数，用户每打开小游戏计为一次。
-
-**新增注册用户数**：首次登录的用户数，同一用户多次访问不重复计。
-
-**人均停留时长**：平均每个用户停留在小游戏的总时长，即小游戏停留总时长/访问人数。
-
-**分享次数**：分享小游戏的总次数。
-
-**分享用户数**：分享小游戏的总用户数，同一用户多次分享不重复计。
-
-**新增用户留存**：指定时间新增（即首次访问小游戏）的用户，在之后的第N天（或周、月），再次访问小游戏的用户数占比。
-
-**活跃用户留存**：指定时间活跃（即访问小游戏）的用户，在之后的第N天（或周、月），再次访问小游戏的用户数占比。
-
-**付费新增用户留存**：指定时间新增（即首次访问小游戏）的付费用户，在之后的第N天（或周、月），再次访问小游戏的用户数占比。
-
-**付费活跃用户留存**：指定时间活跃（即访问小游戏）的付费用户，在之后的第N天（或周、月），再次访问小游戏的用户数占比。
-
-**单日总收入**：所有用户在小游戏内付费总金额。
-
-**累计总收入**：历史累计所有用户在小游戏内付费总金额。
-
-**付费用户数**：在小游戏内付费的用户数，同一用户多次付费不重复计。
-
-**首次付费用户数**：首次在小游戏内付费的用户数，同一用户多次付费不重复计。
-
-**渗透率**：平均付费用户数的比例，即当天付费用户数/当天活跃用户数。
-
-**平均付费用户收入**：平均每个付费用户数付费金额，即小游戏收入/小游戏付费用户数。
-
-**平均用户收入**：平均每个用户数付费金额，即小游戏收入/小游戏注册用户数。
-
-**首付占比**：平均首次付费用户数占付费用户数比例，即首次付费用户数/付费用户数。
+**分享人数**：分享小程序页面的总人数，同一用户多次分享不重复计。
 
 </section>
 
@@ -227,10 +204,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](https://www.tencent.com/zh-cn/index.html)
-*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=1484641676)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -238,6 +215,6 @@
 
 </div>
 
-[](./Analysis.html)</div>
+[](./regular/)</div>
 
 </div>

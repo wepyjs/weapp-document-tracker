@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18081820)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18081820)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18081820)
 *   [小游戏开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18081820)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18081820)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18081820)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18081820)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18081820)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/document/storage/wx.clearStorage.html?t=18081820)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/document/storage/wx.clearStorage.html?t=18081820)
 
 </div>
 
@@ -44,6 +47,7 @@
 *   [教程](../../)
 *   [API](../render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
+*   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 *   [腾讯云支持](../../qcloud/qcloud.html)
 
 </div>
@@ -53,6 +57,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/document/storage/wx.clearStorage.html?t=18081820)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/document/storage/wx.clearStorage.html?t=18081820)
 
 </div>
 
@@ -84,17 +91,17 @@
         *   [wx.setPreferredFramesPerSecond](../render/frame/wx.setPreferredFramesPerSecond.html)
         *   [cancelAnimationFrame](../render/frame/cancelAnimationFrame.html)
         *   [requestAnimationFrame](../render/frame/requestAnimationFrame.html)
-*   [数据缓存](wx.clearStorage.html)
-    *   [wx.clearStorage](wx.clearStorage.html)
-    *   [wx.clearStorageSync](wx.clearStorageSync.html)
-    *   [wx.getStorage](wx.getStorage.html)
-    *   [wx.getStorageInfo](wx.getStorageInfo.html)
-    *   [wx.getStorageSync](wx.getStorageSync.html)
-    *   [wx.getStorageInfoSync](wx.getStorageInfoSync.html)
-    *   [wx.removeStorage](wx.removeStorage.html)
-    *   [wx.removeStorageSync](wx.removeStorageSync.html)
-    *   [wx.setStorage](wx.setStorage.html)
-    *   [wx.setStorageSync](wx.setStorageSync.html)
+*   [数据缓存](./wx.clearStorage.html)
+    *   [wx.clearStorage](./wx.clearStorage.html)
+    *   [wx.clearStorageSync](./wx.clearStorageSync.html)
+    *   [wx.getStorage](./wx.getStorage.html)
+    *   [wx.getStorageInfo](./wx.getStorageInfo.html)
+    *   [wx.getStorageSync](./wx.getStorageSync.html)
+    *   [wx.getStorageInfoSync](./wx.getStorageInfoSync.html)
+    *   [wx.removeStorage](./wx.removeStorage.html)
+    *   [wx.removeStorageSync](./wx.removeStorageSync.html)
+    *   [wx.setStorage](./wx.setStorage.html)
+    *   [wx.setStorageSync](./wx.setStorageSync.html)
 *   [设备](../device/accelerometer/wx.onAccelerometerChange.html)
     *   [加速计](../device/accelerometer/wx.onAccelerometerChange.html)
         *   [wx.onAccelerometerChange](../device/accelerometer/wx.onAccelerometerChange.html)
@@ -226,20 +233,9 @@
         *   [code2accessToken](../open-api/login/code2accessToken.html)
     *   [防沉迷](../open-api/anti-addiction/wx.checkIsUserAdvisedToRest.html)
         *   [wx.checkIsUserAdvisedToRest](../open-api/anti-addiction/wx.checkIsUserAdvisedToRest.html)
-    *   [开放数据](../open-api/data/wx.getUserInfo.html)
-        *   [wx.getUserInfo](../open-api/data/wx.getUserInfo.html)
-        *   [wx.getGroupCloudStorage](../open-api/data/wx.getGroupCloudStorage.html)
-        *   [wx.getUserCloudStorage](../open-api/data/wx.getUserCloudStorage.html)
-        *   [wx.getFriendCloudStorage](../open-api/data/wx.getFriendCloudStorage.html)
-        *   [wx.getSharedCanvas](../open-api/data/wx.getSharedCanvas.html)
-        *   [wx.removeUserCloudStorage](../open-api/data/wx.removeUserCloudStorage.html)
-        *   [wx.setUserCloudStorage](../open-api/data/wx.setUserCloudStorage.html)
-        *   [KVData](../open-api/data/KVData.html)
-        *   [UserGameData](../open-api/data/UserGameData.html)
-        *   [removeUserStorage](../open-api/data/removeUserStorage.html)
-        *   [setUserStorage](../open-api/data/setUserStorage.html)
     *   [用户信息](../open-api/user-info/wx.createUserInfoButton.html)
         *   [wx.createUserInfoButton](../open-api/user-info/wx.createUserInfoButton.html)
+        *   [wx.getUserInfo](../open-api/user-info/wx.getUserInfo.html)
         *   [UserInfo](../open-api/user-info/UserInfo.html)
         *   [UserInfoButton](../open-api/user-info/UserInfoButton.html)
         *   [UserInfoButton.destroy](../open-api/user-info/UserInfoButton.destroy.html)
@@ -248,6 +244,18 @@
         *   [UserInfoButton.show](../open-api/user-info/UserInfoButton.show.html)
     *   [微信运动](../open-api/werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../open-api/werun/wx.getWeRunData.html)
+    *   [开放数据](../open-api/data/wx.getFriendCloudStorage.html)
+        *   [wx.getFriendCloudStorage](../open-api/data/wx.getFriendCloudStorage.html)
+        *   [wx.getUserCloudStorage](../open-api/data/wx.getUserCloudStorage.html)
+        *   [wx.getGroupCloudStorage](../open-api/data/wx.getGroupCloudStorage.html)
+        *   [wx.getSharedCanvas](../open-api/data/wx.getSharedCanvas.html)
+        *   [wx.removeUserCloudStorage](../open-api/data/wx.removeUserCloudStorage.html)
+        *   [wx.setUserCloudStorage](../open-api/data/wx.setUserCloudStorage.html)
+        *   [KVData](../open-api/data/KVData.html)
+        *   [UserGameData](../open-api/data/UserGameData.html)
+        *   [removeUserStorage](../open-api/data/removeUserStorage.html)
+        *   [setUserStorage](../open-api/data/setUserStorage.html)
+        *   [OpenDataContext-wx.getUserInfo](../open-api/data/OpenDataContext-wx.getUserInfo.html)
     *   [设置](../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.createOpenSettingButton](../open-api/setting/wx.createOpenSettingButton.html)
         *   [wx.getSetting](../open-api/setting/wx.getSetting.html)
@@ -541,6 +549,8 @@
 
 <td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
+<td></td>
+
 </tr>
 
 </tbody>
@@ -575,10 +585,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [关于腾讯](https://www.tencent.com/zh-cn/index.html)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=1484641676)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -586,6 +596,6 @@
 
 </div>
 
-[](../render/frame/requestAnimationFrame.html)[](wx.clearStorageSync.html)</div>
+[](../render/canvas/wx.createCanvas.html)[](../device/accelerometer/wx.onAccelerometerChange.html)</div>
 
 </div>

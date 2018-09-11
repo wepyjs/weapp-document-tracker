@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091022)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091022)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091022)
 *   [小游戏开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091022)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091022)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091022)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091022)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091022)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/base/engine.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/base/engine.html?t=18091022)
 
 </div>
 
@@ -42,9 +45,9 @@
 </div>
 
 *   [教程](../../)
-*   [API](../../document/render/canvas/wx.createCanvas.html)
+*   [API](../../api/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
-*   [腾讯云支持](../../qcloud/qcloud.html)
+*   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 
 </div>
 
@@ -53,6 +56,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/base/engine.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/base/engine.html?t=18091022)
 
 </div>
 
@@ -66,10 +72,10 @@
 
 *   [基础](../../)
     *   [快速上手](../../)
-    *   [Adapter](adapter.html)
-    *   [对引擎的支持](engine.html)
-    *   [模块化](module.html)
-    *   [分包加载](subpackages.html)
+    *   [Adapter](./adapter.html)
+    *   [对引擎的支持](./engine.html)
+    *   [模块化](./module.html)
+    *   [分包加载](./subpackages.html)
 *   [能力](../ability/audio.html)
     *   [音频播放](../ability/audio.html)
     *   [文件系统](../ability/file-system.html)
@@ -124,7 +130,7 @@
 *   Egret：[http://developer.egret.com/cn/github/egret-docs/Engine2D/minigame/introduction/index.html](http://developer.egret.com/cn/github/egret-docs/Engine2D/minigame/introduction/index.html)
 *   LayaBox：[https://ldc.layabox.com/doc/?nav=zh-as-5-0-1](https://ldc.layabox.com/doc/?nav=zh-as-5-0-1)
 
-Unity 目前还没有对小游戏进行适配。不过小游戏提供了对大部分 Canvas 2d 和 WebGL 1.0 特性的支持，支持情况参见 [RenderingContext](../../document/render/canvas/RenderingContext.html)，有能力的开发者可以尝试自行适配。
+Unity 目前还没有对小游戏进行适配。不过小游戏提供了对大部分 Canvas 2d 和 WebGL 1.0 特性的支持，支持情况参见 [RenderingContext](../../api/render/canvas/RenderingContext.html)，有能力的开发者可以尝试自行适配。
 
 ### 小游戏是一个不同于浏览器的运行环境
 
@@ -140,21 +146,21 @@ Unity 目前还没有对小游戏进行适配。不过小游戏提供了对大�
 
 小游戏的运行环境是一个不同于浏览器的宿主环境，没有提供 BOM 和 DOM API，提供的是 wx API。通过 wx API，开发者可以调用 Native 提供的绘制、音视频、网络、文件等能力。
 
-![](https://developers.weixin.qq.com/minigame/dev/image/framework-1.png)
+![](https://developers.weixin.qq.com/minigame/dev/tutorial/image/framework-1.png?t=18091022)
 
-如果你想创建画布，你需要调用 [wx.createCanvas()](../../document/render/canvas/wx.createCanvas.html)
+如果你想创建画布，你需要调用 [wx.createCanvas()](../../api/render/canvas/wx.createCanvas.html)
 
     let canvas = wx.createCanvas()
     let context = canvas.getContext('2d')
 
-如果你想创建一个音频对象，你需要调用 [wx.createInnerAudioContext()](../../document/media/audio/wx.createInnerAudioContext.html)
+如果你想创建一个音频对象，你需要调用 [wx.createInnerAudioContext()](../../api/media/audio/wx.createInnerAudioContext.html)
 
     let audio = wx.createInnerAudioContext()
     // src 地址仅作演示，并不真实存在
     audio.src = 'bgm.mp3'
     audio.play()
 
-如果你想获取屏幕的宽高，你需要调用 [wx.getSystemInfoSync()](../../document/system/system-info/wx.getSystemInfoSync.html)
+如果你想获取屏幕的宽高，你需要调用 [wx.getSystemInfoSync()](../../api/system/system-info/wx.getSystemInfoSync.html)
 
     let { screenWidth, screenHeight } = wx.getSystemInfoSync()
 
@@ -174,7 +180,7 @@ Unity 目前还没有对小游戏进行适配。不过小游戏提供了对大�
 
 除了修改引擎，还有一种适配方式，即在引擎和游戏逻辑代码之间加一层模拟 BOM 和 DOM API 的适配层，我们称之为 Adapter。这层适配层在全局通过 wx API 模拟了引擎会访问到的那部分 window 和 document 对象的属性和方法，使引擎感受不到环境的差异。
 
-![](https://developers.weixin.qq.com/minigame/dev/image/framework-2.png)
+![](https://developers.weixin.qq.com/minigame/dev/tutorial/image/framework-2.png?t=18091022)
 
 Adapter 是用户代码，不是基础库的一部分。关于 Adapter 的介绍，参见教程 [Adapter](adapter.html)。
 
@@ -206,10 +212,10 @@ Adapter 是用户代码，不是基础库的一部分。关于 Adapter 的介绍
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -217,6 +223,6 @@ Adapter 是用户代码，不是基础库的一部分。关于 Adapter 的介绍
 
 </div>
 
-[](adapter.html)[](module.html)</div>
+[](./adapter.html)[](./module.html)</div>
 
 </div>

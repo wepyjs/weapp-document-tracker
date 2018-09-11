@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18081820)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18081820)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18081820)
 *   [小游戏开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18081820)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18081820)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18081820)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18081820)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18081820)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/document/open-api/setting/AuthSetting.html?t=18081820)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/document/open-api/setting/AuthSetting.html?t=18081820)
 
 </div>
 
@@ -44,6 +47,7 @@
 *   [教程](../../../)
 *   [API](../../render/canvas/wx.createCanvas.html)
 *   [工具](../../../devtools/devtools.html)
+*   [小程序·云开发](../../../wxcloud/basis/getting-started.html)
 *   [腾讯云支持](../../../qcloud/qcloud.html)
 
 </div>
@@ -53,6 +57,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/document/open-api/setting/AuthSetting.html?t=18081820)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/document/open-api/setting/AuthSetting.html?t=18081820)
 
 </div>
 
@@ -226,20 +233,9 @@
         *   [code2accessToken](../login/code2accessToken.html)
     *   [防沉迷](../anti-addiction/wx.checkIsUserAdvisedToRest.html)
         *   [wx.checkIsUserAdvisedToRest](../anti-addiction/wx.checkIsUserAdvisedToRest.html)
-    *   [开放数据](../data/wx.getUserInfo.html)
-        *   [wx.getUserInfo](../data/wx.getUserInfo.html)
-        *   [wx.getGroupCloudStorage](../data/wx.getGroupCloudStorage.html)
-        *   [wx.getUserCloudStorage](../data/wx.getUserCloudStorage.html)
-        *   [wx.getFriendCloudStorage](../data/wx.getFriendCloudStorage.html)
-        *   [wx.getSharedCanvas](../data/wx.getSharedCanvas.html)
-        *   [wx.removeUserCloudStorage](../data/wx.removeUserCloudStorage.html)
-        *   [wx.setUserCloudStorage](../data/wx.setUserCloudStorage.html)
-        *   [KVData](../data/KVData.html)
-        *   [UserGameData](../data/UserGameData.html)
-        *   [removeUserStorage](../data/removeUserStorage.html)
-        *   [setUserStorage](../data/setUserStorage.html)
     *   [用户信息](../user-info/wx.createUserInfoButton.html)
         *   [wx.createUserInfoButton](../user-info/wx.createUserInfoButton.html)
+        *   [wx.getUserInfo](../user-info/wx.getUserInfo.html)
         *   [UserInfo](../user-info/UserInfo.html)
         *   [UserInfoButton](../user-info/UserInfoButton.html)
         *   [UserInfoButton.destroy](../user-info/UserInfoButton.destroy.html)
@@ -248,15 +244,27 @@
         *   [UserInfoButton.show](../user-info/UserInfoButton.show.html)
     *   [微信运动](../werun/wx.getWeRunData.html)
         *   [wx.getWeRunData](../werun/wx.getWeRunData.html)
-    *   [设置](wx.createOpenSettingButton.html)
-        *   [wx.createOpenSettingButton](wx.createOpenSettingButton.html)
-        *   [wx.getSetting](wx.getSetting.html)
-        *   [wx.openSetting](wx.openSetting.html)
-        *   [AuthSetting](AuthSetting.html)
-        *   [OpenSettingButton](OpenSettingButton.html)
-        *   [OpenSettingButton.destroy](OpenSettingButton.destroy.html)
-        *   [OpenSettingButton.hide](OpenSettingButton.hide.html)
-        *   [OpenSettingButton.show](OpenSettingButton.show.html)
+    *   [开放数据](../data/wx.getFriendCloudStorage.html)
+        *   [wx.getFriendCloudStorage](../data/wx.getFriendCloudStorage.html)
+        *   [wx.getUserCloudStorage](../data/wx.getUserCloudStorage.html)
+        *   [wx.getGroupCloudStorage](../data/wx.getGroupCloudStorage.html)
+        *   [wx.getSharedCanvas](../data/wx.getSharedCanvas.html)
+        *   [wx.removeUserCloudStorage](../data/wx.removeUserCloudStorage.html)
+        *   [wx.setUserCloudStorage](../data/wx.setUserCloudStorage.html)
+        *   [KVData](../data/KVData.html)
+        *   [UserGameData](../data/UserGameData.html)
+        *   [removeUserStorage](../data/removeUserStorage.html)
+        *   [setUserStorage](../data/setUserStorage.html)
+        *   [OpenDataContext-wx.getUserInfo](../data/OpenDataContext-wx.getUserInfo.html)
+    *   [设置](./wx.createOpenSettingButton.html)
+        *   [wx.createOpenSettingButton](./wx.createOpenSettingButton.html)
+        *   [wx.getSetting](./wx.getSetting.html)
+        *   [wx.openSetting](./wx.openSetting.html)
+        *   [AuthSetting](./AuthSetting.html)
+        *   [OpenSettingButton](./OpenSettingButton.html)
+        *   [OpenSettingButton.destroy](./OpenSettingButton.destroy.html)
+        *   [OpenSettingButton.hide](./OpenSettingButton.hide.html)
+        *   [OpenSettingButton.show](./OpenSettingButton.show.html)
     *   [授权](../authorize/wx.authorize.html)
         *   [wx.authorize](../authorize/wx.authorize.html)
     *   [游戏圈](../game-club/wx.createGameClubButton.html)
@@ -529,10 +537,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
+*   [关于腾讯](https://www.tencent.com/zh-cn/index.html)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=1484641676)
 *   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -540,6 +548,6 @@
 
 </div>
 
-[](wx.openSetting.html)[](OpenSettingButton.html)</div>
+[](./wx.openSetting.html)[](./OpenSettingButton.html)</div>
 
 </div>

@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091122)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091122)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091122)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091122)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091122)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091122)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091122)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091122)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html?t=18091122)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/download.html?t=18091122)
 
 </div>
 
@@ -44,9 +47,9 @@
 *   [简易教程](../)
 *   [框架](../framework/MINA.html)
 *   [组件](../component/)
-*   [API](../api/)
-*   [工具](devtools.html)
-*   [腾讯云支持](../qcloud/qcloud.html)
+*   [API](../api/network/download/wx.downloadFile.html)
+*   [工具](./devtools.html)
+*   [小程序·云开发](../wxcloud/basis/getting-started.html)
 
 </div>
 
@@ -55,6 +58,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html?t=18091122)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/download.html?t=18091122)
 
 </div>
 
@@ -66,67 +72,65 @@
 
 <nav role="navigation">
 
-*   [概览](devtools.html)
-*   [界面](page.html)
-    *   [启动页](page.html#启动页)
-    *   [菜单栏](page.html#菜单栏)
-    *   [工具栏](page.html#工具栏)
-    *   [工具栏管理](page.html#工具栏管理)
-    *   [模拟器](page.html#模拟器)
-    *   [独立窗口](page.html#独立窗口)
-    *   [设置](settings.html)
-        *   [外观设置](settings.html#外观设置)
-        *   [编辑设置](settings.html#编辑设置)
-        *   [代理设置](settings.html#代理设置)
-        *   [通知设置](settings.html#通知设置)
-    *   [项目页卡](project.html)
-        *   [项目设置](project.html#项目设置)
-        *   [域名信息](project.html#域名信息)
-        *   [腾讯云状态](project.html#腾讯云状态)
-*   [快捷键](shortcut.html)
-*   [代码编辑](edit.html)
-    *   [文件格式](edit.html#文件格式)
-    *   [文件类型](edit.html#文件支持)
-    *   [自动补全](edit.html#自动补全)
-    *   [Git 状态展示](edit.html#git-状态展示)
-    *   [项目配置文件](projectconfig.html)
-*   [小程序调试](debug.html)
-    *   [模拟器](debug.html#模拟器)
-    *   [自定义编译](debug.html#自定义编译)
-    *   [自定义预处理](debug.html#自定义预处理)
-    *   [前后台切换](debug.html#前后台切换)
-    *   [调试工具](debug.html#调试工具)
-        *   [Wxml Panel](debug.html#wxml-panel)
-        *   [Sources Panel](debug.html#sources-panel)
-        *   [AppData Panel](debug.html#appdata-panel)
-        *   [Storage Panel](debug.html#storage-panel)
-        *   [Network Panel](debug.html#network-panel)
-        *   [Console Panel](debug.html#console-panel)
-        *   [Sensor Panel](debug.html#sensor-panel)
-    *   [自定义数据上报](debug.html#自定义数据上报)
-    *   [自动预览](debug.html#自动预览)
-    *   [特殊场景调试](different.html)
-    *   [真机调试](remote-debug.html)
-    *   [多帐号调试](multiaccount.html)
-*   [npm 支持](npm.html)
-*   [体验评分](audits.html)
-*   [命令行调用](cli.html)
-*   [HTTP 调用](http.html)
-*   [测试号](sandbox.html)
-*   [小程序开发助手](mydev.html)
-*   [代码片段](minicode.html)
-*   [第三方平台](ext.html)
-*   [小程序插件开发](plugin.html)
+*   [概览](./devtools.html)
+*   [界面](./page.html)
+    *   [启动页](./page.html#启动页)
+    *   [菜单栏](./page.html#菜单栏)
+    *   [工具栏](./page.html#工具栏)
+    *   [工具栏管理](./page.html#工具栏管理)
+    *   [模拟器](./page.html#模拟器)
+    *   [独立窗口](./page.html#独立窗口)
+    *   [设置](./settings.html)
+        *   [外观设置](./settings.html#外观设置)
+        *   [编辑设置](./settings.html#编辑设置)
+        *   [代理设置](./settings.html#代理设置)
+        *   [通知设置](./settings.html#通知设置)
+    *   [项目页卡](./project.html)
+        *   [项目设置](./project.html#项目设置)
+        *   [域名信息](./project.html#域名信息)
+        *   [腾讯云状态](./project.html#腾讯云状态)
+*   [快捷键](./shortcut.html)
+*   [代码编辑](./edit.html)
+    *   [文件格式](./edit.html#文件格式)
+    *   [文件类型](./edit.html#文件支持)
+    *   [自动补全](./edit.html#自动补全)
+    *   [Git 状态展示](./edit.html#git-状态展示)
+    *   [项目配置文件](./projectconfig.html)
+*   [小程序调试](./debug.html)
+    *   [模拟器](./debug.html#模拟器)
+    *   [自定义编译](./debug.html#自定义编译)
+    *   [自定义预处理](./debug.html#自定义预处理)
+    *   [前后台切换](./debug.html#前后台切换)
+    *   [调试工具](./debug.html#调试工具)
+        *   [Wxml Panel](./debug.html#wxml-panel)
+        *   [Sources Panel](./debug.html#sources-panel)
+        *   [AppData Panel](./debug.html#appdata-panel)
+        *   [Storage Panel](./debug.html#storage-panel)
+        *   [Network Panel](./debug.html#network-panel)
+        *   [Console Panel](./debug.html#console-panel)
+        *   [Sensor Panel](./debug.html#sensor-panel)
+    *   [自定义数据上报](./debug.html#自定义数据上报)
+    *   [自动预览](./debug.html#自动预览)
+    *   [特殊场景调试](./different.html)
+    *   [真机调试](./remote-debug.html)
+    *   [多帐号调试](./multiaccount.html)
+*   [npm 支持](./npm.html)
+*   [体验评分](./audits.html)
+*   [Git 版本管理](./git.html)
+*   [命令行调用](./cli.html)
+*   [HTTP 调用](./http.html)
+*   [测试号](./sandbox.html)
+*   [小程序开发助手](./mydev.html)
+*   [代码片段](./minicode.html)
+*   [第三方平台](./ext.html)
+*   [小程序插件开发](./plugin.html)
 *   [素材管理](../qcloud/material.html)
 *   [代码托管](../qcloud/tgit.html)
-*   [云测试](monkey-test.html)
-*   [实现差异](details.html)
-    *   [运行环境差异](details.html#运行环境差异)
-    *   [ES6 支持情况](details.html#客户端es6-api-支持情况)
-    *   [API 实现差异](notsupport.html)
-*   [下载](download.html)
-*   [Beta 版下载](beta.html)
-*   [历史更新日志](uplog.html)
+*   [云测试](./monkey-test.html)
+*   [API 实现差异](./notsupport.html)
+*   [下载](./download.html)
+*   [Beta 版下载](./beta.html)
+*   [历史更新日志](./uplog.html)
 
 </nav>
 
@@ -146,15 +150,31 @@
 
 <section class="normal markdown-section">
 
-## 最新版本下载地址 (1.02.1807200)
+## 最新版本下载地址 (1.02.1809110)
 
-[windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
+[Windows 64位](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) / [Windows 32位](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) / [Mac OS](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
 
-### 2018.07.20
+> Windows 仅支持 Windows 7 及以上版本。
 
-1.  `F` 修复 1.02.1807120 带来的编译不生效的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1453523220&docid=0004c87e6cc528e510179691150800&inwindow=1)
-2.  `F` 修复 界面调试样式覆盖规则计算错误的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=000a4ae7cec2581962e6c49e45bc00&token=940403363&lang=zh_CN)
-3.  `F` 修复 分包根目录名字后缀相同时报错的问题 [详情](https://developers.weixin.qq.com/blogdetail?action=get_post_info&lang=zh_CN&token=1382542218&docid=0008e2c47f0f3018860775ff45c800)
+### 2018.09.11
+
+1.  `F` 修复 1.02.1809101 版本在32位 windows 机器出现 wxml 编译失败导致异常的问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000e6086cb49f86d8757f244a51000)
+
+### 2018.09.10
+
+1.  `A` 新增 小程序·云开发 [详情](../wxcloud/basis/getting-started.html)
+2.  `F` 修复 部分 windows 机器第一次点击预览会闪烁黑屏的问题
+3.  `F` 修复 WXS 的 switch case 负数报错 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000e00d6360240388a379e80f5b400)
+4.  `F` 修复 无法调试客服按钮 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000e820732467086d1373557151c00)
+5.  `F` 修复 开发者工具调用 `wx.getAccountInfoSync` 获取到的appid为空 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000ae876f94d50acfe2721d745b400)
+6.  `F` 修复 第三方平台调用 `wx.getAccountInfoSync` 返回的不是 extAppId [反馈详情](https://developers.weixin.qq.com/community/develop/doc/0000223050ca607748577774f51800)
+7.  `F` 修复 编译前预处理命令不生效 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/00046074f90e808ee8476382f5b000)
+8.  `F` 修复 packOptions.ignore 指定了在小程序目录内的文件的话会导致小程序无法启动 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000cac40978aa8c007d69f0055b400)
+
+对 Beta 版用户的额外更新说明（相对于 Beta 版工具的额外更新内容）：
+
+1.  `A` 新增 小游戏云开发 QuickStart
+2.  `F` 修复 云开发控制台数据库经纬度显示反了 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/00082c809f0f80872847f3f55568)
 
 ## 历史更新日志
 
@@ -188,10 +208,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -199,6 +219,6 @@
 
 </div>
 
-[](notsupport.html)[](beta.html)</div>
+[](./notsupport.html)[](./beta.html)</div>
 
 </div>

@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091022)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091022)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091022)
 *   [小游戏开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091022)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091022)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091022)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091022)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091022)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/ability/file-system.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/ability/file-system.html?t=18091022)
 
 </div>
 
@@ -42,9 +45,9 @@
 </div>
 
 *   [教程](../../)
-*   [API](../../document/render/canvas/wx.createCanvas.html)
+*   [API](../../api/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
-*   [腾讯云支持](../../qcloud/qcloud.html)
+*   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 
 </div>
 
@@ -53,6 +56,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/ability/file-system.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/ability/file-system.html?t=18091022)
 
 </div>
 
@@ -70,9 +76,9 @@
     *   [对引擎的支持](../base/engine.html)
     *   [模块化](../base/module.html)
     *   [分包加载](../base/subpackages.html)
-*   [能力](audio.html)
-    *   [音频播放](audio.html)
-    *   [文件系统](file-system.html)
+*   [能力](./audio.html)
+    *   [音频播放](./audio.html)
+    *   [文件系统](./file-system.html)
 *   [可用性](../usability/debug.html)
     *   [调试](../usability/debug.html)
     *   [性能](../usability/performance.html)
@@ -114,7 +120,7 @@
 
 ## 文件系统
 
-文件系统是小程序提供的一套以小程序和用户维度隔离的存储以及一套相应的管理接口。通过 [wx.getFileSystemManager()](../../document/file/wx.getFileSystemManager.html) 可以获取到全局唯一的文件系统管理器，所有文件系统的管理操作通过 [FileSystemManager](../../document/file/FileSystemManager.html) 来调用。
+文件系统是小程序提供的一套以小程序和用户维度隔离的存储以及一套相应的管理接口。通过 [wx.getFileSystemManager()](../../api/file/wx.getFileSystemManager.html) 可以获取到全局唯一的文件系统管理器，所有文件系统的管理操作通过 [FileSystemManager](../../api/file/FileSystemManager.html) 来调用。
 
     var fs = wx.getFileSystemManager()
 
@@ -135,7 +141,7 @@
 
 #### 访问代码包文件
 
-代码包文件的访问方式是从项目根目录开始写文件路径，不支持相对路径的写法。 ![image.png](https://developers.weixin.qq.com/minigame/dev/image/code-package.png)
+代码包文件的访问方式是从项目根目录开始写文件路径，不支持相对路径的写法。 ![image.png](https://developers.weixin.qq.com/minigame/dev/tutorial/image/code-package.png?t=18091022)
 
 #### 修改代码包文件
 
@@ -143,7 +149,7 @@
 
 ### 本地文件
 
-本地文件指的是小程序被用户添加到手机后，会有一块独立的文件存储区域，以用户维度隔离。即同一台手机，每个微信用户不能访问到其他登录用户的文件，同一个用户不同 appId 之间的文件也不能互相访问。 ![本地文件沙盒.png](https://developers.weixin.qq.com/minigame/dev/image/file-sandbox.png)
+本地文件指的是小程序被用户添加到手机后，会有一块独立的文件存储区域，以用户维度隔离。即同一台手机，每个微信用户不能访问到其他登录用户的文件，同一个用户不同 appId 之间的文件也不能互相访问。 ![本地文件沙盒.png](https://developers.weixin.qq.com/minigame/dev/tutorial/image/file-sandbox.png?t=18091022)
 
 本地文件的文件路径均为以下格式：
 
@@ -153,7 +159,7 @@
 
 #### 本地临时文件
 
-本地临时文件只能通过调用特定接口产生，不能直接写入内容。本地临时文件产生后，仅在当前生命周期内有效，重启之后即不可用。因此，**不可把本地临时文件路径存储起来下次使用**。如果需要下次在使用，可通过 [FileSystemManager.saveFile()](../../document/file/FileSystemManager.saveFile.html) 或 [FileSystemManager.copyFile()](../../document/file/FileSystemManager.copyFile.html) 接口把本地临时文件转换成本地缓存文件或本地用户文件。
+本地临时文件只能通过调用特定接口产生，不能直接写入内容。本地临时文件产生后，仅在当前生命周期内有效，重启之后即不可用。因此，**不可把本地临时文件路径存储起来下次使用**。如果需要下次在使用，可通过 [FileSystemManager.saveFile()](../../api/file/FileSystemManager.saveFile.html) 或 [FileSystemManager.copyFile()](../../api/file/FileSystemManager.copyFile.html) 接口把本地临时文件转换成本地缓存文件或本地用户文件。
 
 ##### 示例
 
@@ -165,7 +171,7 @@
 
 #### 本地缓存文件
 
-本地缓存文件只能通过调用特定接口产生，不能直接写入内容。本地缓存文件产生后，重启之后仍可用。本地缓存文件只能通过 [FileSystemManager.saveFile()](../../document/file/FileSystemManager.saveFile.html) 接口将本地临时文件保存获得。
+本地缓存文件只能通过调用特定接口产生，不能直接写入内容。本地缓存文件产生后，重启之后仍可用。本地缓存文件只能通过 [FileSystemManager.saveFile()](../../api/file/FileSystemManager.saveFile.html) 接口将本地临时文件保存获得。
 
 ##### 示例
 
@@ -280,10 +286,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -291,6 +297,6 @@
 
 </div>
 
-[](audio.html)[](../usability/debug.html)</div>
+[](./audio.html)</div>
 
 </div>

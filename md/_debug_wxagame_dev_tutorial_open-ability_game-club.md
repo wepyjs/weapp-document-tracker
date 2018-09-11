@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-    *   [小游戏介绍](https://mp.weixin.qq.com/debug/wxagame/introduction/index.html)
-*   [设计](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091022)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091022)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091022)
 *   [小游戏开发](javascript:;)
-    *   [小程序开发](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
-    *   [小游戏开发](https://mp.weixin.qq.com/debug/wxagame/dev/index.html)
-*   [运营](https://mp.weixin.qq.com/debug/wxadoc/product/index.html)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091022)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091022)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091022)
 *   [数据](javascript:;)
-    *   [小程序数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html)
-    *   [小游戏数据](https://mp.weixin.qq.com/debug/wxagame/analysis/index.html)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091022)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091022)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/open-ability/game-club.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/open-ability/game-club.html?t=18091022)
 
 </div>
 
@@ -42,9 +45,9 @@
 </div>
 
 *   [教程](../../)
-*   [API](../../document/render/canvas/wx.createCanvas.html)
+*   [API](../../api/render/canvas/wx.createCanvas.html)
 *   [工具](../../devtools/devtools.html)
-*   [腾讯云支持](../../qcloud/qcloud.html)
+*   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 
 </div>
 
@@ -53,6 +56,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/minigame/dev/tutorial/open-ability/game-club.html?t=18091022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/minigame/en/dev/tutorial/open-ability/game-club.html?t=18091022)
 
 </div>
 
@@ -78,18 +84,18 @@
     *   [性能](../usability/performance.html)
     *   [小游戏更新](../usability/update.html)
     *   [多线程 Worker](../usability/worker.html)
-*   [开放能力](authorize.html)
-    *   [用户授权](authorize.html)
-    *   [游戏圈使用指南](game-club.html)
-    *   [用户登录态签名](http-signature.html)
-    *   [米大师支付签名](midas-signature.html)
-    *   [关系链数据使用指南](open-data.html)
-    *   [虚拟支付](payment.html)
-    *   [获取二维码](qrcode.html)
-    *   [排行榜配置指引](ranklist.html)
-    *   [转发](share.html)
-    *   [用户数据的签名验证和加解密](signature.html)
-    *   [UnionID 机制说明](union-id.html)
+*   [开放能力](./authorize.html)
+    *   [用户授权](./authorize.html)
+    *   [游戏圈使用指南](./game-club.html)
+    *   [用户登录态签名](./http-signature.html)
+    *   [米大师支付签名](./midas-signature.html)
+    *   [关系链数据使用指南](./open-data.html)
+    *   [虚拟支付](./payment.html)
+    *   [获取二维码](./qrcode.html)
+    *   [排行榜配置指引](./ranklist.html)
+    *   [转发](./share.html)
+    *   [用户数据的签名验证和加解密](./signature.html)
+    *   [UnionID 机制说明](./union-id.html)
 *   [广告](../ad/banner-ad.html)
     *   [Banner 广告](../ad/banner-ad.html)
     *   [激励视频广告](../ad/rewarded-video-ad.html)
@@ -118,7 +124,7 @@
 
 #### 接入方式
 
-开发者可直接调用 [wx.createGameClubButton()](../../document/open-api/game-club/wx.createGameClubButton.html) 创建打开游戏圈的按钮。
+开发者可直接调用 [wx.createGameClubButton()](../../api/open-api/game-club/wx.createGameClubButton.html) 创建打开游戏圈的按钮。
 
 同时，根据游戏界面的不同UI风格，我们在组件内提供以下 4 种 icon 样式可供选择：
 
@@ -142,7 +148,7 @@
 
 <td>dark</td>
 
-<td>![](https://developers.weixin.qq.com/minigame/dev/image/game-club/dark.png)</td>
+<td>![](https://developers.weixin.qq.com/minigame/dev/tutorial/image/game-club/dark.png?t=18091022)</td>
 
 </tr>
 
@@ -150,7 +156,7 @@
 
 <td>green</td>
 
-<td>![](https://developers.weixin.qq.com/minigame/dev/image/game-club/green.png)</td>
+<td>![](https://developers.weixin.qq.com/minigame/dev/tutorial/image/game-club/green.png?t=18091022)</td>
 
 </tr>
 
@@ -158,7 +164,7 @@
 
 <td>white</td>
 
-<td>![](https://developers.weixin.qq.com/minigame/dev/image/game-club/white.png) （灰色背景仅用作显示图标，图标本身为白色）</td>
+<td>![](https://developers.weixin.qq.com/minigame/dev/tutorial/image/game-club/white.png?t=18091022)（灰色背景仅用作显示图标，图标本身为白色）</td>
 
 </tr>
 
@@ -166,7 +172,7 @@
 
 <td>light</td>
 
-<td>![](https://developers.weixin.qq.com/minigame/dev/image/game-club/light.png)</td>
+<td>![](https://developers.weixin.qq.com/minigame/dev/tutorial/image/game-club/light.png?t=18091022)</td>
 
 </tr>
 
@@ -180,11 +186,11 @@
 
 *   MP管理后台游戏圈配置界面
 
-![mp](https://developers.weixin.qq.com/minigame/dev/image/game-club/mp.jpg)
+![mp](https://developers.weixin.qq.com/minigame/dev/tutorial/image/game-club/mp.jpg?t=18091022)
 
 *   移动端游戏圈管理员操作界面
 
-![mp](https://developers.weixin.qq.com/minigame/dev/image/game-club/mobile.jpg)
+![mp](https://developers.weixin.qq.com/minigame/dev/tutorial/image/game-club/mobile.jpg?t=18091022)
 
 </section>
 
@@ -214,10 +220,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](http://www.tencent.com/zh-cn/index.shtml)
-*   [文档中心](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
@@ -225,6 +231,6 @@
 
 </div>
 
-[](authorize.html)[](http-signature.html)</div>
+[](./authorize.html)[](./http-signature.html)</div>
 
 </div>

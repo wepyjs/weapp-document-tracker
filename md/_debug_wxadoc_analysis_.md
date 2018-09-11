@@ -9,17 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18073100)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18073100)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18073100)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090519)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18090519)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18090519)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18073100)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18073100)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18073100)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18090519)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18090519)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18090519)
 *   [小程序数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18073100)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18073100)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090519)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18090519)
 *   [社区](https://developers.weixin.qq.com/)
+
+*   [中文](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090519)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/analysis/index.html?t=18090519)
 
 </div>
 
@@ -53,6 +56,9 @@
 <form><label for="search-input" class="search-icon" id="js-search-icon"></label><input type="text" id="search-input" name="search-input" placeholder="搜索"> </form>
 
 </div>
+
+*   [中文](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090519)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/analysis/index.html?t=18090519)
 
 </div>
 
@@ -198,10 +204,10 @@
 
 <div class="foot" id="footer">
 
-*   [关于腾讯](https://www.tencent.com/zh-cn/index.html)
-*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=1484641676)
-*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9)
-*   [客服中心](http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html)
+*   [关于腾讯](https://www.tencent.com/)
+*   [文档中心](https://developers.weixin.qq.com/miniprogram/introduction/index.html)
+*   [辟谣中心](https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo)
+*   [客服中心](https://kf.qq.com/product/wx_xcx.html)
 *   [联系邮箱](mailto:weixinmp@qq.com)
 *   Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.
 
