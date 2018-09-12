@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091122)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091122)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091122)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091218)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091218)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091218)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091122)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091122)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091122)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091218)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091218)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091218)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091122)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091122)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091218)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091218)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference/quota.html?t=18091122)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference/quota.html?t=18091122)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference/quota.html?t=18091218)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference/quota.html?t=18091218)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference/quota.html?t=18091122)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference/quota.html?t=18091122)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference/quota.html?t=18091218)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference/quota.html?t=18091218)
 
 </div>
 
@@ -354,7 +354,7 @@
 
 <td></td>
 
-<td>同时连接数</td>
+<td>同时连接数 <sup>[3](#quota_footnote_func_concurrent_req)</sup></td>
 
 <td>20</td>
 
@@ -376,7 +376,7 @@
 
 <td>运行内存</td>
 
-<td>最大 256 MB <sup>[3](#quota_footnote_mem)</sup></td>
+<td>最大 256 MB <sup>[4](#quota_footnote_mem)</sup></td>
 
 </tr>
 
@@ -404,7 +404,7 @@
 
 <td></td>
 
-<td>同时连接数</td>
+<td>同时连接数 <sup>[5](#quota_footnote_db_concurrent_req)</sup></td>
 
 <td>20</td>
 
@@ -464,13 +464,17 @@
 
 </table>
 
-如需申请上调，开发者可以"申请调整小程序云开发调用资源上限"为主题，发送邮件至：[miniprogram@tencent.com](mailto:miniprogram@tencent.com?Subject=申请调整小程序云开发调用资源上限) 申请调整，并在正文中注明小程序帐号 AppID、需要调整的资源上限(仅限资源配额中所列内容)、小程序服务类目(可在小程序基本设置中查询)、资源调整原因以及产品计划上线时间
+以上均是一个环境的配额，不是所有环境的总和限制。
+
+如需申请上调，开发者可以"申请调整小程序云开发调用资源上限"为主题，发送邮件至：[miniprogram@tencent.com](mailto:miniprogram@tencent.com?Subject=申请调整小程序云开发调用资源上限) 申请调整，并在正文中注明小程序帐号 AppID、需要调整的资源上限(仅限资源配额中所列内容)、小程序服务类目(可在小程序基本设置中查询)、资源调整原因以及产品计划上线时间。
 
 注：
 
-1.  <a id="quota_footnote_cdn"></a>指开启了 CDN 加速后，CDN 回源存储时产生的流量
-2.  <a id="quota_footnote_gbs"></a>资源使用量 = 函数配置内存 X 运行计费时长。用户资源使用量，是由函数配置内存，乘以函数运行时的计费时长得出，其中配置内存转换为 GB 单位，计费时长由毫秒（ms）转换为秒（s）单位，因此，资源使用量的计算单位为 GBs（GB-秒）。例如，配置为 256MB 的函数，单次运行了 1760 ms，计费时长为 1800 ms，则单次运行的资源使用量为 (256/1024)*(1800/1000) = 0.45 GBs。针对函数的每次运行，均会计算资源使用量，并按月汇总求和，作为当月的资源使用量。
-3.  <a id="quota_footnote_mem"></a>云函数运行时最大可用内存为 256 MB，在控制台云函数运行日志中展示的内存信息是当次运行实际内存占用，可能低于 256 MB，计费时按配置内存即 256 MB 计算
+1.  <a id="quota_footnote_cdn"></a>指开启了 CDN 加速后，CDN 回源存储时产生的流量。
+2.  <a id="quota_footnote_gbs"></a>资源使用量 = 函数配置内存 X 运行计费时长。用户资源使用量，是由函数配置内存，乘以函数运行时的计费时长得出，其中配置内存转换为 GB 单位，计费时长由毫秒（ms）转换为秒。（s）单位，因此，资源使用量的计算单位为 GBs（GB-秒）。例如，配置为 256MB 的函数，单次运行了 1760 ms，计费时长为 1800 ms，则单次运行的资源使用量为 (256/1024)*(1800/1000) = 0.45 GBs。针对函数的每次运行，均会计算资源使用量，并按月汇总求和，作为当月的资源使用量。
+3.  <a id="quota_footnote_func_concurrent_req"></a>云函数并发运行数量，如同时有三十个云函数调用请求，则有二十个会同时执行，剩下十个请求会被拒绝；每个云环境分别有一个同时连接数限制、独立计数。
+4.  <a id="quota_footnote_mem"></a>云函数运行时最大可用内存为 256 MB，在控制台云函数运行日志中展示的内存信息是当次运行实际内存占用，可能低于 256 MB，计费时按配置内存即 256 MB 计算。
+5.  <a id="quota_footnote_db_concurrent_req"></a>数据库请求并发数量，如同时有三十个数据库操作请求，则有二十个会同时执行，剩下十个在队列中等待有空余资源再执行；小程序端和云函数端发起的数据库操作算入同一个同时连接数限制，每个云环境分别有一个同时连接数限制、独立计数。
 
 </section>
 

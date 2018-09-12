@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091122)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091122)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091122)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091218)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091218)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091218)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091122)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091122)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091122)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091218)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091218)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091218)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091122)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091122)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091218)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091218)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/init.html?t=18091122)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/init.html?t=18091122)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/init.html?t=18091218)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/init.html?t=18091218)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/init.html?t=18091122)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/init.html?t=18091122)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/init.html?t=18091218)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/init.html?t=18091218)
 
 </div>
 
@@ -244,14 +244,12 @@
 
     const db = wx.cloud.database()
 
-如需获取其他环境的数据库引用，可以在调用时传入一个含 `config` 字段的参数，在其中通过 `env` 字段指定要使用的环境。此时方法会返回一个对测试环境数据库的引用。
+如需获取其他环境的数据库引用，可以在调用时传入一个对象参数，在其中通过 `env` 字段指定要使用的环境。此时方法会返回一个对测试环境数据库的引用。
 
 示例：假设有一个环境名为 `test`，用做测试环境，那么可以如下获取测试环境数据库：
 
     const testDB = wx.cloud.database({
-      config: {
-        env: 'test'
-      }
+      env: 'test'
     })
 
 要操作一个集合，需先获取它的引用。在获取了数据库的引用后，就可以通过数据库引用上的 `collection` 方法获取一个集合的引用了，比如获取待办事项清单集合：

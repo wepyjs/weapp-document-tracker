@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091122)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091122)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091122)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091218)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091218)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091218)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091122)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091122)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091122)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091218)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091218)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091218)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091122)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091122)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091218)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091218)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/database/database.html?t=18091122)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/database.html?t=18091122)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/database/database.html?t=18091218)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/database.html?t=18091218)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/database/database.html?t=18091122)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/database.html?t=18091122)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/database/database.html?t=18091218)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/database.html?t=18091218)
 
 </div>
 
@@ -272,15 +272,15 @@
 
 <tr>
 
-<td>config</td>
+<td>env</td>
 
-<td>Object</td>
+<td>string</td>
 
 <td>否</td>
 
-<td></td>
+<td>-</td>
 
-<td>数据库实例配置，局部覆写 cloud.init 中定义的配置</td>
+<td>环境 ID</td>
 
 </tr>
 
@@ -301,9 +301,7 @@
     const cloud = require('wx-server-sdk')
     cloud.init()
     const testDB = cloud.database({
-      config: {
-        env: 'test'
-      }
+      env: 'test'
     })
 
 也可以通过 `init` 传入默认环境的方式使得获取数据库时默认是默认环境数据库：

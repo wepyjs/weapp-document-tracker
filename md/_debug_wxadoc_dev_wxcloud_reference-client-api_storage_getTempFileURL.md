@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091122)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091122)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091122)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091218)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091218)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091218)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091122)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091122)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091122)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091218)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091218)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091218)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091122)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091122)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091218)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091218)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/storage/getTempFileURL.html?t=18091122)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-client-api/storage/getTempFileURL.html?t=18091122)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/storage/getTempFileURL.html?t=18091218)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-client-api/storage/getTempFileURL.html?t=18091218)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/storage/getTempFileURL.html?t=18091122)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-client-api/storage/getTempFileURL.html?t=18091122)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/storage/getTempFileURL.html?t=18091218)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-client-api/storage/getTempFileURL.html?t=18091218)
 
 </div>
 
@@ -364,7 +364,67 @@ success 返回参数
 
 **fileList 数组中的每一个元素是有如下字段的 Object**
 
-| 字段 | 说明 | 数据类型 | | fileID | 云文件 ID | String | | tempFileURL | 临时文件路径 | String | | status | 状态码，0 为成功 | Number | | errMsg | 成功为 ok，失败为失败原因 | String |
+<table>
+
+<thead>
+
+<tr>
+
+<th>字段</th>
+
+<th>说明</th>
+
+<th>数据类型</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>fileID</td>
+
+<td>云文件 ID</td>
+
+<td>String</td>
+
+</tr>
+
+<tr>
+
+<td>tempFileURL</td>
+
+<td>临时文件路径</td>
+
+<td>String</td>
+
+</tr>
+
+<tr>
+
+<td>status</td>
+
+<td>状态码，0 为成功</td>
+
+<td>Number</td>
+
+</tr>
+
+<tr>
+
+<td>errMsg</td>
+
+<td>成功为 ok，失败为失败原因</td>
+
+<td>String</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 fail 返回参数
 
