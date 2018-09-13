@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091218)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091218)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091218)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091317)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091317)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091317)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091218)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091218)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091218)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091317)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091317)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091317)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091218)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091218)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091317)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091317)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/import.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/import.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/import.html?t=18091317)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/import.html?t=18091317)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/import.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/import.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/import.html?t=18091317)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/import.html?t=18091317)
 
 </div>
 
@@ -123,7 +123,6 @@
         *   [collection.get](../../reference-client-api/database/collection.get.html)
         *   [doc.get](../../reference-client-api/database/doc.get.html)
         *   [collection.add](../../reference-client-api/database/collection.add.html)
-        *   [collection.update](../../reference-client-api/database/collection.update.html)
         *   [doc.update](../../reference-client-api/database/doc.update.html)
         *   [doc.set](../../reference-client-api/database/doc.set.html)
         *   [doc.remove](../../reference-client-api/database/doc.remove.html)
@@ -244,11 +243,13 @@
 
 要导入数据，需打开云开发控制台，切换到 “数据库” 标签页，并选择要导入数据的集合，点击 “导入” 按钮。
 
-![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/cloudconsole-database-import-dialog.jpg?t=18091218)
+![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/cloudconsole-database-import-dialog.jpg?t=18091317)
 
 选择要导入的 CSV 或者 JSON 文件，以及冲突处理模式，点击 “导入” 按钮即可开始导入。
 
-其中，JSON、CVS 文件的内容格式类似 MongoDB 的导出格式，例如：
+## 文件格式
+
+JSON、CVS 文件的内容格式类似 MongoDB 的导出格式，例如：
 
 JSON：
 
@@ -267,11 +268,25 @@ CVS：
     xxxxxx,45
     yyyyyy,21
 
+需要注意以下几点：
+
+1、JSON 数据不是数组，而是类似 [JSON Lines](http://jsonlines.org/examples/)，即各个记录对象之间使用 `\n` 分隔，而非逗号；
+
+2、JSON 数据每个键值对的键名首尾不能是 `.`，例如 `".a"`、`"abc."`，且不能包含多个连续的 `.`，例如 `"a..b"`；
+
+3、键名不能重复，且不能有歧义，例如 `{"a": 1, "a": 2}` 或 `{"a": {"b": 1}, "a.b": 2}`；
+
+4、时间格式须为 ISODate 格式，例如 `"date": { "$date" : "2018-08-31T17:30:00.882Z" }`；
+
+5、当使用 Insert 冲突处理模式时，同一文件不能存在重复的 `_id` 字段，或与数据库已有记录相同的 `_id` 字段；
+
+6、CSV 格式的数据默认以第一行作为导入后的所有键名，余下的每一行则是与首行键名一一对应的键值记录。
+
 目前提供了 Insert、Upsert 两种冲突处理模式。Insert 模式会在导入时总是插入新记录，Upsert 则会判断有无该条记录，如果有则更新记录，否则就插入一条新记录。
 
 导入完成后，可以在提示信息中看到本次导入记录的情况。
 
-![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/cloudconsole-database-import-success.jpg?t=18091218)
+![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/cloudconsole-database-import-success.jpg?t=18091317)
 
 </section>
 

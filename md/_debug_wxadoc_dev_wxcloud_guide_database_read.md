@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091218)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091218)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091218)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091312)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091312)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091312)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091218)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091218)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091218)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091312)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091312)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091312)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091218)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091218)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091312)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091312)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/read.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/read.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/read.html?t=18091312)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/read.html?t=18091312)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/read.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/read.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/read.html?t=18091312)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/read.html?t=18091312)
 
 </div>
 
@@ -123,7 +123,6 @@
         *   [collection.get](../../reference-client-api/database/collection.get.html)
         *   [doc.get](../../reference-client-api/database/doc.get.html)
         *   [collection.add](../../reference-client-api/database/collection.add.html)
-        *   [collection.update](../../reference-client-api/database/collection.update.html)
         *   [doc.update](../../reference-client-api/database/doc.update.html)
         *   [doc.set](../../reference-client-api/database/doc.set.html)
         *   [doc.remove](../../reference-client-api/database/doc.remove.html)
@@ -259,7 +258,7 @@
           color: 'white',
           size: 'large'
         },
-        location: Point(23.33, 113.33),
+        location: Point(113.33, 23.33), // 113.33°E，23.33°N
         done: false
       },
       {
@@ -275,7 +274,7 @@
           color: 'yellow',
           size: 'normal'
         },
-        location: Point(23.22, 113.22),
+        location: Point(113.22, 23.22), // 113.22°E，23.22°N
         done: false
       }
       // more...
