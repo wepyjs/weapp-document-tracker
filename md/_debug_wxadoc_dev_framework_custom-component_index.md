@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091218)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091218)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091218)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091415)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091415)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091415)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091218)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091218)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091218)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091415)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091415)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091415)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091218)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091218)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091415)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091415)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/index.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/index.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/index.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/index.html?t=18091415)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/index.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/index.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/index.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/index.html?t=18091415)
 
 </div>
 
@@ -277,6 +277,8 @@
     </view>
 
 自定义组件的 `wxml` 节点结构在与数据结合之后，将被插入到引用位置内。
+
+**注意：为页面添加 usingComponents 会使得页面的逻辑发生一些细微变化（具体而言，页面会具有一些组件的特征）。如果页面比较复杂，需要测试一下页面逻辑是否有变化。**
 
 **Tips**:
 

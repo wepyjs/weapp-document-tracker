@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091317)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091317)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091317)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091417)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091417)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091417)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091317)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091317)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091317)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091417)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091417)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091417)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091317)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091317)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091417)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091417)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/import.html?t=18091317)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/import.html?t=18091317)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/import.html?t=18091417)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/import.html?t=18091417)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/import.html?t=18091317)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/import.html?t=18091317)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/import.html?t=18091417)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/import.html?t=18091417)
 
 </div>
 
@@ -207,6 +207,7 @@
         *   [command.pop](../../reference-server-api/database/command.pop.html)
         *   [command.shift](../../reference-server-api/database/command.shift.html)
         *   [command.unshfit](../../reference-server-api/database/command.unshift.html)
+        *   [db.createCollection](../../reference-server-api/database/db.createCollection.html)
         *   [get](../../reference-server-api/database/get.html)
         *   [update](../../reference-server-api/database/update.html)
         *   [remove](../../reference-server-api/database/remove.html)
@@ -243,13 +244,13 @@
 
 要导入数据，需打开云开发控制台，切换到 “数据库” 标签页，并选择要导入数据的集合，点击 “导入” 按钮。
 
-![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/cloudconsole-database-import-dialog.jpg?t=18091317)
+![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/cloudconsole-database-import-dialog.jpg?t=18091417)
 
 选择要导入的 CSV 或者 JSON 文件，以及冲突处理模式，点击 “导入” 按钮即可开始导入。
 
 ## 文件格式
 
-JSON、CVS 文件的内容格式类似 MongoDB 的导出格式，例如：
+JSON、CVS 文件必须是 UTF-8 的编码格式，且其内容类似 MongoDB 的导出格式，例如：
 
 JSON：
 
@@ -286,7 +287,7 @@ CVS：
 
 导入完成后，可以在提示信息中看到本次导入记录的情况。
 
-![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/cloudconsole-database-import-success.jpg?t=18091317)
+![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/cloudconsole-database-import-success.jpg?t=18091417)
 
 </section>
 

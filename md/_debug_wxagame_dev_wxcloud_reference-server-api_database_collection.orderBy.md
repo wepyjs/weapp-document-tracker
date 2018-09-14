@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091312)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091312)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091312)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091417)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091417)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091417)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091312)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091312)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091312)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091417)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091417)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091417)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091312)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091312)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091417)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091417)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/database/collection.orderBy.html?t=18091312)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/collection.orderBy.html?t=18091312)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/database/collection.orderBy.html?t=18091417)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/collection.orderBy.html?t=18091417)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/database/collection.orderBy.html?t=18091312)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/collection.orderBy.html?t=18091312)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/database/collection.orderBy.html?t=18091417)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/collection.orderBy.html?t=18091417)
 
 </div>
 
@@ -207,6 +207,7 @@
         *   [command.pop](./command.pop.html)
         *   [command.shift](./command.shift.html)
         *   [command.unshfit](./command.unshift.html)
+        *   [db.createCollection](./db.createCollection.html)
         *   [get](./get.html)
         *   [update](./update.html)
         *   [remove](./remove.html)
@@ -247,9 +248,9 @@
 
 方法接受一个必填字符串参数 fieldName 用于定义需要排序的字段，一个字符串参数 order 定义排序顺序。order 只能取 `asc` 或 `desc`。
 
-如果需要对嵌套字段排序，需要用 "点表示法" 连接嵌套字段，比如 `style.color` 表示字段 `style` 里的嵌套字段 `color`。
+同时也支持按多个字段排序，多次调用 `orderBy` 即可，多字段排序时的顺序会按照 `orderBy` 调用顺序先后对多个字段排序
 
-**示例代码**
+**示例代码：按一个字段排序**
 
 按进度排升序取待办事项
 
@@ -257,11 +258,21 @@
     cloud.init()
     const db = cloud.database()
     exports.main = async (event, context) => {
-      try {
-        return await db.collection('todos').orderBy('progress', 'asc').get()
-      } catch(e) {
-        console.error(e)
-      }
+      return await db.collection('todos').orderBy('progress', 'asc').get()
+    }
+
+**示例代码：按多个字段排序**
+
+先按 progress 排降序（progress 越大越靠前）、再按 description 排升序（字母序越前越靠前）取待办事项：
+
+    const cloud = require('wx-server-sdk')
+    cloud.init()
+    const db = cloud.database()
+    exports.main = async (event, context) => {
+      return await db.collection('todos')
+        .orderBy('progress', 'desc')
+        .orderBy('description', 'asc')
+        .get()
     }
 
 </section>

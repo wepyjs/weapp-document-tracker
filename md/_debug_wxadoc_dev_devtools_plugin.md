@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091218)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091218)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091218)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091415)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091415)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091415)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091218)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091218)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091218)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091415)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091415)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091415)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091218)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091218)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091415)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091415)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/plugin.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/plugin.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/plugin.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/plugin.html?t=18091415)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/plugin.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/plugin.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/plugin.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/plugin.html?t=18091415)
 
 </div>
 
@@ -154,7 +154,7 @@
 
 小程序的 AppID 可以创建小程序插件项目，插件是独立于小程序之外的，但是 AppID 是公用的，所以不要使用原有的小程序项目进行插件开发。 在创建项目页面，选择一个空文件夹作为项目路径，可以选择创建小程序插件快速启动模板
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/createplugin.png?t=18091218)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/createplugin.png?t=18091415)
 
 快速启动模板说明：
 
@@ -180,7 +180,7 @@
 
 ## 插件上传
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/uploadplugin.png?t=18091218)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/uploadplugin.png?t=18091415)
 
 上传插件代码前，需要指定版本号，格式为 数字.数字.数字 ，每个数字最大为 999。
 
@@ -190,7 +190,7 @@
 
 ## 插件文档编写、预览和上传
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/uploadplugindoc.png?t=18091218)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/uploadplugindoc.png?t=18091415)
 
 插件文档必须放置在插件项目根目录中的 `doc` 目录下，插件文档的入口文件是 `doc/README.md`，在 `README.md` 中引用的图片必须是 `doc` 目录下的本地图片。
 

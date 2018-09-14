@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091218)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091218)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091218)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091415)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091415)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091415)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091218)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091218)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091218)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091415)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091415)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091415)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091218)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091218)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091415)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091415)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/signature.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/signature.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/signature.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/signature.html?t=18091415)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/signature.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/signature.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/signature.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/signature.html?t=18091415)
 
 </div>
 
@@ -204,7 +204,7 @@
 
 小程序可以通过各种前端接口获取微信提供的开放数据。考虑到开发者服务器也需要获取这些开放数据，微信会对这些数据做签名和加密处理。开发者后台拿到开放数据后可以对数据进行校验签名和解密，来保证数据不被篡改。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/signature.jpg?t=18091218)
+![](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/signature.jpg?t=18091415)
 
 签名校验以及数据加解密涉及用户的会话密钥 session_key。 开发者应该事先通过 [wx.login](../../api/open-api/login/wx.login.html) 登录流程获取会话密钥 session_key 并保存在服务器。为了数据不被篡改，开发者不应该把 session_key 传到小程序客户端等服务器外的环境。
 
@@ -324,7 +324,7 @@
 
 开发者如果遇到因为 session_key 不正确而校验签名失败或解密失败，请关注下面几个与 session_key 有关的注意事项。
 
-1.  [wx.login](../../api/open-api/login/wx.login.html) 调用时，用户的 session_key **可能**会被更新而致使旧 session_key 失效（刷新机制存在最短周期，如果同一个用户短时间内多次调用 [wx.login](../../api/open-api/login/wx.login.html)，并非每次调用都导致 session_key 刷新）。开发者应该在明确需要重新登录时才调用 [wx.login](../../api/open-api/login/wx.login.html)，及时通过 [code2accessToken](../../api/open-api/login/code2accessToken.html) 接口更新服务器存储的 session_key。
+1.  [wx.login](../../api/open-api/login/wx.login.html) 调用时，用户的 session_key **可能**会被更新而致使旧 session_key 失效（刷新机制存在最短周期，如果同一个用户短时间内多次调用 [wx.login](../../api/open-api/login/wx.login.html)，并非每次调用都导致 session_key 刷新）。开发者应该在明确需要重新登录时才调用 [wx.login](../../api/open-api/login/wx.login.html)，及时通过 [code2Session](../../api/open-api/login/code2Session.html) 接口更新服务器存储的 session_key。
 2.  微信不会把 session_key 的有效期告知开发者。我们会根据用户使用小程序的行为对 session_key 进行续期。用户越频繁使用小程序，session_key 有效期越长。
 3.  开发者在 session_key 失效时，可以通过重新执行登录流程获取有效的 session_key。使用接口 [wx.checkSession](../../api/open-api/login/wx.checkSession.html)可以校验 session_key 是否有效，从而避免小程序反复执行登录流程。
 4.  当开发者在实现自定义登录态时，可以考虑以 session_key 有效期作为自身登录态有效期，也可以实现自定义的时效性策略。

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091218)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091218)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091218)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091415)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091415)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091415)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091218)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091218)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091218)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091415)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091415)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091415)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091218)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091218)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091415)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091415)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/project.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/project.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/project.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/project.html?t=18091415)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/project.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/project.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/project.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/project.html?t=18091415)
 
 </div>
 
@@ -160,7 +160,7 @@
 
 开发者可以在此选择任意基础库版本，用于开发和调试旧版本兼容问题。
 
-![clientlib](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/clientlib.png?t=18091218)
+![clientlib](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/clientlib.png?t=18091415)
 
 ## 项目设置
 
@@ -184,7 +184,7 @@
 
 正式发布的小程序的网络请求是需要校验合法域名以及域名的 TLS 版本，可以在 mp 管理后台进行配置。 在开发过程中可以开启此选项，开发工具将不会校验安全域名，以及 TLS 版本，帮助在开发过程中更方便的完成调试工作。
 
-![edit](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/righttools.png?t=18091218)
+![edit](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/righttools.png?t=18091415)
 
 ### 启用多核心编译
 
@@ -194,13 +194,13 @@
 
 将显示小程序的安全域名信息，合法域名可在 mp 管理后台进行设置。
 
-![host](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/host.png?t=18091218)
+![host](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/host.png?t=18091415)
 
 ## 腾讯云状态
 
 使用腾讯云功能，可以在这里看到腾讯云状态、开发环境信息和域名信息。
 
-![qcloud](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/qcloudinfo.png?t=18091218)
+![qcloud](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/qcloudinfo.png?t=18091415)
 
 </section>
 

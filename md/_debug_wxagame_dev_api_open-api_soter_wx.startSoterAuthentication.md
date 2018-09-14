@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091218)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091218)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091218)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091415)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091415)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091415)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091218)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091218)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091218)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091415)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091415)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091415)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091218)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091218)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091415)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091415)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/soter/wx.startSoterAuthentication.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/soter/wx.startSoterAuthentication.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/soter/wx.startSoterAuthentication.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/soter/wx.startSoterAuthentication.html?t=18091415)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/soter/wx.startSoterAuthentication.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/soter/wx.startSoterAuthentication.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/soter/wx.startSoterAuthentication.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/soter/wx.startSoterAuthentication.html?t=18091415)
 
 </div>
 
@@ -484,7 +484,7 @@
     *   [登录](../login/wx.login.html)
         *   [wx.login](../login/wx.login.html)
         *   [wx.checkSession](../login/wx.checkSession.html)
-        *   [code2accessToken](../login/code2accessToken.html)
+        *   [code2Session](../login/code2Session.html)
     *   [生物认证](./wx.checkIsSoterEnrolledInDevice.html)
         *   [wx.checkIsSoterEnrolledInDevice](./wx.checkIsSoterEnrolledInDevice.html)
         *   [wx.checkIsSupportSoterAuthentication](./wx.checkIsSupportSoterAuthentication.html)
@@ -940,15 +940,6 @@
 
 </table>
 
-#### 示例代码
-
-    wx.startSoterAuthentication({
-        requestAuthModes: ['fingerPrint'],
-        challenge: '123456',
-        authContent: '请用指纹解锁',
-        success(res) {}
-    })
-
 #### resultJSON 说明
 
 此数据为设备TEE中，将传入的challenge和TEE内其他安全信息组成的数据进行组装而来的JSON，对下述字段的解释如下表。例子如下：
@@ -1056,6 +1047,18 @@
       "cpu_id":"CPU Id",
       "uid":"21"
     }
+
+#### 示例代码
+
+[在开发者工具中预览效果](wechatide://minicode/q3tCKkmJ7g2e "在开发者工具中预览效果")
+
+    wx.startSoterAuthentication({
+       requestAuthModes: ['fingerPrint'],
+       challenge: '123456',
+       authContent: '请用指纹解锁',
+       success(res) {
+       }
+    })
 
 </section>
 

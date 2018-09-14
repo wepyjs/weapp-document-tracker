@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091218)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091218)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091218)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091415)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091415)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091415)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091218)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091218)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091218)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091415)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091415)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091415)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091218)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091218)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091415)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091415)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/ui/animation/Animation.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/ui/animation/Animation.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/ui/animation/Animation.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/ui/animation/Animation.html?t=18091415)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/ui/animation/Animation.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/ui/animation/Animation.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/ui/animation/Animation.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/ui/animation/Animation.html?t=18091415)
 
 </div>
 
@@ -484,7 +484,7 @@
     *   [登录](../../open-api/login/wx.login.html)
         *   [wx.login](../../open-api/login/wx.login.html)
         *   [wx.checkSession](../../open-api/login/wx.checkSession.html)
-        *   [code2accessToken](../../open-api/login/code2accessToken.html)
+        *   [code2Session](../../open-api/login/code2Session.html)
     *   [生物认证](../../open-api/soter/wx.checkIsSoterEnrolledInDevice.html)
         *   [wx.checkIsSoterEnrolledInDevice](../../open-api/soter/wx.checkIsSoterEnrolledInDevice.html)
         *   [wx.checkIsSupportSoterAuthentication](../../open-api/soter/wx.checkIsSupportSoterAuthentication.html)
@@ -678,7 +678,7 @@
 
 ##### [Array.<Object> Animation.export()](Animation.export.html)
 
-导出动画队列
+导出动画队列。**export 方法每次调用后会清掉之前的动画操作。**
 
 ##### [Animation.step(Object object)](Animation.step.html)
 
@@ -795,6 +795,62 @@
 ##### [Animation Animation.bottom(number|string value)](Animation.bottom.html)
 
 设置 bottom 值
+
+#### 示例代码
+
+[在开发者工具中预览效果](wechatide://minicode/Swab8kmW7v2V "在开发者工具中预览效果")
+
+    <view animation="{{animationData}}" style="background:red;height:100rpx;width:100rpx"></view>
+
+    Page({
+      data: {
+        animationData: {}
+      },
+      onShow: function(){
+        var animation = wx.createAnimation({
+          duration: 1000,
+      	  timingFunction: 'ease',
+        })
+
+        this.animation = animation
+
+        animation.scale(2,2).rotate(45).step()
+
+        this.setData({
+          animationData:animation.export()
+        })
+
+        setTimeout(function() {
+          animation.translate(30).step()
+          this.setData({
+            animationData:animation.export()
+          })
+        }.bind(this), 1000)
+      },
+      rotateAndScale: function () {
+        // 旋转同时放大
+        this.animation.rotate(45).scale(2, 2).step()
+        this.setData({
+          animationData: this.animation.export()
+        })
+      },
+      rotateThenScale: function () {
+        // 先旋转后放大
+        this.animation.rotate(45).step()
+        this.animation.scale(2, 2).step()
+        this.setData({
+          animationData: this.animation.export()
+        })
+      },
+      rotateAndScaleThenTranslate: function () {
+        // 先旋转同时放大，然后平移
+        this.animation.rotate(45).scale(2, 2).step()
+        this.animation.translate(100, 100).step({ duration: 1000 })
+        this.setData({
+          animationData: this.animation.export()
+        })
+      }
+    })
 
 </section>
 

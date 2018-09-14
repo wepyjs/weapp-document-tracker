@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091312)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091312)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091312)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091417)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091417)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091417)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091312)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091312)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091312)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091417)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091417)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091417)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091312)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091312)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091417)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091417)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/getting-started.html?t=18091312)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/getting-started.html?t=18091312)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/getting-started.html?t=18091417)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/getting-started.html?t=18091417)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/getting-started.html?t=18091312)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/getting-started.html?t=18091312)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/getting-started.html?t=18091417)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/getting-started.html?t=18091417)
 
 </div>
 
@@ -207,6 +207,7 @@
         *   [command.pop](../../reference-server-api/database/command.pop.html)
         *   [command.shift](../../reference-server-api/database/command.shift.html)
         *   [command.unshfit](../../reference-server-api/database/command.unshift.html)
+        *   [db.createCollection](../../reference-server-api/database/db.createCollection.html)
         *   [get](../../reference-server-api/database/get.html)
         *   [update](../../reference-server-api/database/update.html)
         *   [remove](../../reference-server-api/database/remove.html)
@@ -249,11 +250,11 @@
        "cloudfunctionRoot": "./functions/"
     }
 
-project.config.json 的其他配置，详见[文档](https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html?t=18091312)
+project.config.json 的其他配置，详见[文档](https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html?t=18091417)
 
 完成指定之后，云函数的根目录的图标会变成 “云目录图标”，云函数根目录下的第一级目录（云函数目录）是与云函数名字相同的，如果对应的线上环境存在该云函数，则我们会用一个特殊的 “云图标” 标明
 
-![](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/images/ide_function_icon.png?t=18091312)
+![](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/images/ide_function_icon.png?t=18091417)
 
 接着，我们在云函数根目录上右键，在右键菜单中，可以选择创建一个新的 Node.js 云函数，我们将该云函数命名为 add。开发者工具在本地创建出云函数目录和入口 index.js 文件，同时在线上环境中创建出对应的云函数。创建成功后，工具会提示是否立即本地安装依赖，确定后工具会自动安装 [`wx-server-sdk`](wx-server-sdk.html)。我们可以看到类似如下的一个云函数模板：
 

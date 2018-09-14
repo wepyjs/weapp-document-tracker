@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091218)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091218)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091218)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091415)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091415)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091415)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091218)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091218)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091218)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091415)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091415)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091415)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091218)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091218)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091415)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091415)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/qr-code.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/qr-code.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/qr-code.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/qr-code.html?t=18091415)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/qr-code.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/qr-code.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/qr-code.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/qr-code.html?t=18091415)
 
 </div>
 
@@ -204,11 +204,11 @@
 
 通过后台接口可以获取小程序任意页面的二维码，扫描该二维码可以直接进入小程序对应的页面，所有生成的二维码永久有效，可放心使用。目前微信支持两种二维码，小程序码（左），小程序二维码（右），如下所示：
 
-![](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/qrcode.png?t=18091218)
+![](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/qrcode.png?t=18091415)
 
 可以使用开发工具 1.02.1803130 及以后版本通过二维码编译功能调试所获得的二维码
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/qrcodecompile.png?t=18091218)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/qrcodecompile.png?t=18091415)
 
 为满足不同需求和场景，这里提供了三个接口，开发者可挑选适合自己的接口。
 

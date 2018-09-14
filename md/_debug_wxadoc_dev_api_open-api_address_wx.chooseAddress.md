@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091218)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091218)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091218)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091415)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091415)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091415)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091218)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091218)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091218)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091415)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091415)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091415)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091218)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091218)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091415)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091415)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/address/wx.chooseAddress.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/address/wx.chooseAddress.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/address/wx.chooseAddress.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/address/wx.chooseAddress.html?t=18091415)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/address/wx.chooseAddress.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/address/wx.chooseAddress.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/address/wx.chooseAddress.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/address/wx.chooseAddress.html?t=18091415)
 
 </div>
 
@@ -484,7 +484,7 @@
     *   [登录](../login/wx.login.html)
         *   [wx.login](../login/wx.login.html)
         *   [wx.checkSession](../login/wx.checkSession.html)
-        *   [code2accessToken](../login/code2accessToken.html)
+        *   [code2Session](../login/code2Session.html)
     *   [生物认证](../soter/wx.checkIsSoterEnrolledInDevice.html)
         *   [wx.checkIsSoterEnrolledInDevice](../soter/wx.checkIsSoterEnrolledInDevice.html)
         *   [wx.checkIsSupportSoterAuthentication](../soter/wx.checkIsSupportSoterAuthentication.html)
@@ -674,7 +674,7 @@
 
 > 支持版本 >= 1.1.0
 
-> 调用前需要 [用户授权](../../../framework/open-ability/authorize.html) scope.address。
+> 调用前需要 [用户授权](../../../framework/open-ability/authorize.html) scope.address
 
 调起用户编辑收货地址原生界面，并在编辑完成后返回用户选择的地址。
 
@@ -895,6 +895,10 @@
 </tbody>
 
 </table>
+
+#### 示例代码
+
+[在开发者工具中预览效果](wechatide://minicode/024hHnmd772y "在开发者工具中预览效果")
 
 </section>
 

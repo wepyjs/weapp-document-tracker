@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091218)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091218)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091218)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091415)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091415)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091415)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091218)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091218)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091218)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091415)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091415)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091415)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091218)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091218)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091415)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091415)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/union-id.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/union-id.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/union-id.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/union-id.html?t=18091415)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/union-id.html?t=18091218)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/union-id.html?t=18091218)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/union-id.html?t=18091415)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/union-id.html?t=18091415)
 
 </div>
 
@@ -210,9 +210,9 @@
 
 1.  调用接口 [wx.getUserInfo](../../api/open-api/user-info/wx.getUserInfo.html)，从解密数据中获取 UnionID。注意本接口需要用户授权，请开发者妥善处理用户拒绝授权后的情况。
 
-2.  如果开发者帐号下存在**同主体的**公众号，并且该用户已经关注了该公众号。开发者可以直接通过 [wx.login](../../api/open-api/login/wx.login.html) + [code2accessToken](../../api/open-api/login/code2accessToken.html) 获取到该用户 UnionID，无须用户再次授权。
+2.  如果开发者帐号下存在**同主体的**公众号，并且该用户已经关注了该公众号。开发者可以直接通过 [wx.login](../../api/open-api/login/wx.login.html) + [code2Session](../../api/open-api/login/code2Session.html) 获取到该用户 UnionID，无须用户再次授权。
 
-3.  如果开发者帐号下存在**同主体的**公众号或移动应用，并且该用户已经授权登录过该公众号或移动应用。开发者也可以直接通过 [wx.login](../../api/open-api/login/wx.login.html) + [code2accessToken](../../api/open-api/login/code2accessToken.html) 获取到该用户 UnionID ，无须用户再次授权。
+3.  如果开发者帐号下存在**同主体的**公众号或移动应用，并且该用户已经授权登录过该公众号或移动应用。开发者也可以直接通过 [wx.login](../../api/open-api/login/wx.login.html) + [code2Session](../../api/open-api/login/code2Session.html) 获取到该用户 UnionID ，无须用户再次授权。
 
 ### 微信开放平台绑定小程序流程
 
@@ -222,13 +222,13 @@
 
 登录[微信开放平台](https://open.weixin.qq.com) – 帐号中心 – 开发者资质认证
 
-![img](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/open.png?t=18091218)
+![img](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/open.png?t=18091415)
 
 #### 绑定流程：
 
 登录[微信开放平台](https://open.weixin.qq.com) — 管理中心 — 公众帐号 — 绑定公众帐号
 
-![img](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/union_bind.png?t=18091218)
+![img](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/union_bind.png?t=18091415)
 
 </section>
 

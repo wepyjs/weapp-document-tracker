@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091312)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091312)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091312)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091417)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091417)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091417)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091312)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091312)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091312)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091417)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091417)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091417)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091312)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091312)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091417)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091417)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/getting-started.html?t=18091312)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/getting-started.html?t=18091312)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/getting-started.html?t=18091417)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/getting-started.html?t=18091417)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/getting-started.html?t=18091312)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/getting-started.html?t=18091312)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/getting-started.html?t=18091417)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/getting-started.html?t=18091417)
 
 </div>
 
@@ -207,6 +207,7 @@
         *   [command.pop](../../reference-server-api/database/command.pop.html)
         *   [command.shift](../../reference-server-api/database/command.shift.html)
         *   [command.unshfit](../../reference-server-api/database/command.unshift.html)
+        *   [db.createCollection](../../reference-server-api/database/db.createCollection.html)
         *   [get](../../reference-server-api/database/get.html)
         *   [update](../../reference-server-api/database/update.html)
         *   [remove](../../reference-server-api/database/remove.html)
@@ -245,7 +246,7 @@
 
 打开控制台，选择 "数据库" 标签页，通过 "添加集合" 入口创建一个集合。假设我们要创建一个待办事项小程序，我们创建一个名为 `todos` 的集合。创建成功后，可以看到 `todos` 集合管理界面，界面中我们可以添加记录、查找记录、管理索引和管理权限。
 
-![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/console_database_ui.png?t=18091312)
+![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/console_database_ui.png?t=18091417)
 
 ### 创建第一条记录
 

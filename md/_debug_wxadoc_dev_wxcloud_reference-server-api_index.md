@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091312)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091312)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091312)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091417)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091417)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091417)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091312)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091312)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091312)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091417)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091417)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091417)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091312)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091312)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091417)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091417)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/index.html?t=18091312)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/index.html?t=18091312)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/index.html?t=18091417)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/index.html?t=18091417)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/index.html?t=18091312)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/index.html?t=18091312)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/index.html?t=18091417)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/index.html?t=18091417)
 
 </div>
 
@@ -207,6 +207,7 @@
         *   [command.pop](./database/command.pop.html)
         *   [command.shift](./database/command.shift.html)
         *   [command.unshfit](./database/command.unshift.html)
+        *   [db.createCollection](./database/db.createCollection.html)
         *   [get](./database/get.html)
         *   [update](./database/update.html)
         *   [remove](./database/remove.html)
@@ -246,6 +247,8 @@
     npm install --save wx-server-sdk
 
 在工具云函数根目录中创建云函数时，默认会创建一个定义了 `wx-server-sdk` 依赖的 `package.json`，并在创建成功时提示自动安装依赖。如果在你的环境中无法直接使用 `npm install`，比如需要走代理、使用自建的 `npm` 源站、使用其他包管理器如 `yarn` 等的情况，则不能使用工具的自动安装依赖，需手工执行相应依赖安装命令。
+
+需要**特别注意**的是，在 `wx-server-sdk` 中不再兼容 `success`、`fail`、`complete` 回调，总是只会返回 `Promise`。
 
 以下是 `wx-server-sdk` API 文档分类入口：
 
