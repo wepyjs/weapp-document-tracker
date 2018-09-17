@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091417)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091417)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091417)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091717)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091717)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091717)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091417)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091417)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091417)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091717)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091717)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091717)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091417)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091417)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091717)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091717)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/database/collection.count.html?t=18091417)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/collection.count.html?t=18091417)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/database/collection.count.html?t=18091717)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/collection.count.html?t=18091717)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/database/collection.count.html?t=18091417)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/collection.count.html?t=18091417)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/database/collection.count.html?t=18091717)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/collection.count.html?t=18091717)
 
 </div>
 
@@ -105,6 +105,7 @@
         *   [我的第一个云函数](../../guide/functions/getting-started.html)
         *   [获取小程序用户信息](../../guide/functions/userinfo.html)
         *   [异步返回结果](../../guide/functions/async.html)
+        *   [使用 npm](../../guide/functions/npm.html)
         *   [使用 wx-server-sdk](../../guide/functions/wx-server-sdk.html)
         *   [运行机制](../../guide/functions/mechanism.html)
         *   [注意事项](../../guide/functions/notice.html)
@@ -240,7 +241,7 @@
 
 ## Collection.count / Query.count
 
-统计集合记录数或统计查询语句对应的结果记录数，注意这与集合权限设置有关，一个用户仅能统计其有**读权限**的记录数。
+统计集合记录数或统计查询语句对应的结果记录数，云函数端因属于管理端，因此可以统计所有集合的记录数（小程序端统计会受限于权限，可见小程序端的 [count](../../reference-client-api/database/collection.count.html)）
 
 函数签名如下：
 
@@ -332,13 +333,9 @@ Promise 风格
     cloud.init()
     const db = cloud.database()
     exports.main = async (event, context) => {
-      try {
-        return await db.collection('todos').where({
-          _openid: 'xxx' // 填入当前用户 openid
-        }).count()
-      } catch(e) {
-        console.error(e)
-      }
+      return await db.collection('todos').where({
+        _openid: 'xxx' // 填入当前用户 openid
+      }).count()
     }
 
 </section>

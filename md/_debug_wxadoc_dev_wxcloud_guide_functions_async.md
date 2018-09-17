@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091417)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091417)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091417)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091717)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091717)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091717)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091417)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091417)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091417)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091717)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091717)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091717)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091417)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091417)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091717)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091717)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/async.html?t=18091417)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/async.html?t=18091417)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/async.html?t=18091717)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/async.html?t=18091717)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/async.html?t=18091417)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/async.html?t=18091417)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/async.html?t=18091717)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/async.html?t=18091717)
 
 </div>
 
@@ -105,6 +105,7 @@
         *   [我的第一个云函数](./getting-started.html)
         *   [获取小程序用户信息](./userinfo.html)
         *   [异步返回结果](./async.html)
+        *   [使用 npm](./npm.html)
         *   [使用 wx-server-sdk](./wx-server-sdk.html)
         *   [运行机制](./mechanism.html)
         *   [注意事项](./notice.html)
@@ -272,8 +273,6 @@
 
     callFunction test result: 3
 
-在[下一章节](async.html)，我们一起看看如何在云函数中使用 `wx-server-sdk` 操作数据库、存储和调用其他云函数。
-
 </section>
 
 </div>
@@ -313,6 +312,6 @@
 
 </div>
 
-[](./userinfo.html)[](./wx-server-sdk.html)</div>
+[](./userinfo.html)[](./npm.html)</div>
 
 </div>

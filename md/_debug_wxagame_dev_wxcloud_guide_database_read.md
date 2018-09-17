@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091417)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091417)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091417)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091717)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091717)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091717)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091417)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091417)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091417)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091717)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091717)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091717)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091417)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091417)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091717)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091717)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/read.html?t=18091417)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/read.html?t=18091417)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/read.html?t=18091717)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/read.html?t=18091717)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/read.html?t=18091417)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/read.html?t=18091417)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/read.html?t=18091717)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/read.html?t=18091717)
 
 </div>
 
@@ -105,6 +105,7 @@
         *   [我的第一个云函数](../functions/getting-started.html)
         *   [获取小程序用户信息](../functions/userinfo.html)
         *   [异步返回结果](../functions/async.html)
+        *   [使用 npm](../functions/npm.html)
         *   [使用 wx-server-sdk](../functions/wx-server-sdk.html)
         *   [运行机制](../functions/mechanism.html)
         *   [注意事项](../functions/notice.html)
@@ -342,7 +343,7 @@
 
 ### 获取一个集合的数据
 
-如果要获取一个集合的数据，比如获取 todos 集合上的所有记录，可以在集合上调用 `get` 方法获取，但通常不建议这么使用，在小程序中我们需要尽量避免一次性获取过量的数据，只应获取必要的数据。为了防止误操作以及保护小程序体验，在获取集合数据时服务器一次最多返回 20 条记录。开发者可以通过 `limit` 方法指定需要获取的记录数量，但不能超过 20 条。
+如果要获取一个集合的数据，比如获取 todos 集合上的所有记录，可以在集合上调用 `get` 方法获取，但通常不建议这么使用，在小程序中我们需要尽量避免一次性获取过量的数据，只应获取必要的数据。为了防止误操作以及保护小程序体验，小程序端在获取集合数据时服务器一次默认并且最多返回 20 条记录，云函数端这个数字则是 100。开发者可以通过 `limit` 方法指定需要获取的记录数量，但小程序端不能超过 20 条，云函数端不能超过 100 条。
 
     db.collection('todos').get({
       success: function(res) {
@@ -357,6 +358,33 @@
       // res.data 是一个包含集合中有权限访问的所有记录的数据，不超过 20 条
       console.log(res.data)
     })
+
+下面是在云函数端获取一个集合所有记录的例子，因为有最多一次取 100 条的限制，因此很可能一个请求无法取出所有数据，需要分批次取：
+
+    const cloud = require('wx-server-sdk')
+    cloud.init()
+    const db = cloud.database()
+    const MAX_LIMIT = 100
+    exports.main = async (event, context) => {
+      // 先取出集合记录总数
+      const countResult = await db.collection('todos').count()
+      const total = countResult.total
+      // 计算需分几次取
+      const batchTimes = Math.ceil(total / 100)
+      // 承载所有读操作的 promise 的数组
+      const tasks = []
+      for (let i = 0; i < batchTimes; i++) {
+        const promise = db.collection('todos').skip(i * MAX_LIMIT).limit(MAX_LIMIT).get()
+        tasks.push(promise)
+      }
+      // 等待所有
+      return (await Promise.all(tasks)).reduce((acc, cur) => {
+        return {
+          data: acc.data.concat(cur.data),
+          errMsg: acc.errMsg,
+        }
+      })
+    }
 
 在[下一个章节](query.html)，我们将学习如何使用进阶的查询条件来完成简单或复杂的查询。
 

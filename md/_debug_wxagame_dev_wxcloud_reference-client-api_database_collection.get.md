@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091417)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091417)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091417)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091717)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091717)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091717)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091417)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091417)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091417)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091717)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091717)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091717)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091417)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091417)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091717)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091717)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/database/collection.get.html?t=18091417)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-client-api/database/collection.get.html?t=18091417)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/database/collection.get.html?t=18091717)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-client-api/database/collection.get.html?t=18091717)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/database/collection.get.html?t=18091417)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-client-api/database/collection.get.html?t=18091417)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/database/collection.get.html?t=18091717)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-client-api/database/collection.get.html?t=18091717)
 
 </div>
 
@@ -105,6 +105,7 @@
         *   [我的第一个云函数](../../guide/functions/getting-started.html)
         *   [获取小程序用户信息](../../guide/functions/userinfo.html)
         *   [异步返回结果](../../guide/functions/async.html)
+        *   [使用 npm](../../guide/functions/npm.html)
         *   [使用 wx-server-sdk](../../guide/functions/wx-server-sdk.html)
         *   [运行机制](../../guide/functions/mechanism.html)
         *   [注意事项](../../guide/functions/notice.html)
@@ -240,7 +241,11 @@
 
 ## Collection.get / Query.get
 
-获取集合数据，或获取根据查询条件筛选后的集合数据
+获取集合数据，或获取根据查询条件筛选后的集合数据。
+
+如果没有指定 [limit](collection.limit.html)，则默认最多取 20 条记录。
+
+如果没有指定 [skip](collection.skip.html)，则默认从第 0 条记录开始取，skip 常用于分页，例子可见[第二个示例代码](#ex-pagination)。
 
 函数签名如下：
 
@@ -394,7 +399,7 @@
 
 </table>
 
-**示例代码**
+**示例代码 1**
 
 获取我的待办事项清单
 
@@ -417,6 +422,26 @@ Promise 风格
     }).get().then(res => {
       console.log(res.data)
     })
+
+<a id="ex-pagination"></a>**示例代码 2：分页取数据**
+
+获取我的第二页的待办事项清单，假设一页 10 条，现在要取第 2 页，则可以指定 skip 10 条记录
+
+    // Promise 风格
+    const db = wx.cloud.database()
+    db.collection('todos')
+      .where({
+        _openid: 'xxx', // 填入当前用户 openid
+      })
+      .skip(10) // 跳过结果集中的前 10 条，从第 11 条开始返回
+      .limit(10) // 限制返回数量为 10 条
+      .get()
+      .then(res => {
+        console.log(res.data)
+      })
+      .catch(err => {
+        console.error(err)
+      })
 
 </section>
 
