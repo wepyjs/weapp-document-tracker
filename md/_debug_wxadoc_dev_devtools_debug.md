@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091415)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091415)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091415)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091820)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091820)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091820)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091415)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091415)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091415)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091820)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091820)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091820)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091415)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091415)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091820)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091820)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/debug.html?t=18091415)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/debug.html?t=18091415)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/debug.html?t=18091820)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/debug.html?t=18091820)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/debug.html?t=18091415)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/debug.html?t=18091415)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/debug.html?t=18091820)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/debug.html?t=18091820)
 
 </div>
 
@@ -84,11 +84,9 @@
         *   [外观设置](./settings.html#外观设置)
         *   [编辑设置](./settings.html#编辑设置)
         *   [代理设置](./settings.html#代理设置)
-        *   [通知设置](./settings.html#通知设置)
     *   [项目页卡](./project.html)
         *   [项目设置](./project.html#项目设置)
         *   [域名信息](./project.html#域名信息)
-        *   [腾讯云状态](./project.html#腾讯云状态)
 *   [快捷键](./shortcut.html)
 *   [代码编辑](./edit.html)
     *   [文件格式](./edit.html#文件格式)
@@ -156,7 +154,7 @@
 
 模拟器模拟微信小程序在客户端真实的逻辑表现，对于绝大部分的 API 均能够在模拟器上呈现出正确的状态。
 
-![emulat](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/simulator.png?t=18091415)
+![emulat](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/simulator.png?t=18091820)
 
 ## 自定义编译
 
@@ -166,13 +164,13 @@
 
 **注：编译条件跟项目相关，每个项目可以保存自己相关的编译条件**
 
-![wxml](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/customcompile.png?t=18091415)
+![wxml](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/customcompile.png?t=18091820)
 
 ### 编译异常信息
 
 在预览或上传的过程中，可能会出现编译异常信息。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/compile-warnings.png?t=18091415)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/compile-warnings.png?t=18091820)
 
 忽略上传的文件：在项目文件夹下，某些文件可能不是小程序运行所需的，例如 readme 文档、`.gitignore` 文件等。为了优化大小，在预览和上传的过程中，这些文件将不会被打包。
 
@@ -180,7 +178,7 @@
 
 ## 自定义预处理
 
-![projectsetting](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/projectsetting.png?t=18091415)
+![projectsetting](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/projectsetting.png?t=18091820)
 
 在项目设置页卡，我们提供了以下几个默认的预处理，可以解决大部分的代码文件预处理的问题
 
@@ -205,7 +203,7 @@
 
 工具栏中前后台切换帮助开发者模拟一些客户端的环境操作。例如当用户从小程序中回到聊天窗口，会触发一个小程序被设置为后台的回调。
 
-![5](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/background.png?t=18091415)
+![5](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/background.png?t=18091820)
 
 ## 调试工具
 
@@ -215,13 +213,13 @@
 
 Wxml panel 用于帮助开发者开发 wxml 转化后的界面。在这里可以看到真实的页面结构以及结构对应的 wxss 属性，同时可以通过修改对应 wxss 属性，在模拟器中实时看到修改的情况（仅为实时预览，无法保存到文件）。通过调试模块左上角的选择器，还可以快速定位页面中组件对应的 wxml 代码。
 
-![wxml](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/wxml.gif?t=18091415)
+![wxml](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/wxml.gif?t=18091820)
 
 ### Sources panel
 
 Sources panel 用于显示当前项目的脚本文件，同浏览器开发不同，微信小程序框架会对脚本文件进行编译的工作，所以在 Sources panel 中开发者看到的文件是经过处理之后的脚本文件，开发者的代码都会被包裹在 define 函数中，并且对于 Page 代码，在尾部会有 require 的主动调用。
 
-![sources](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/source.png?t=18091415)
+![sources](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/source.png?t=18091820)
 
 **注：当代码运行到断点的时候，整个小程序都停止了，所以模拟器会出现白屏或者无法操作的情况**
 
@@ -229,7 +227,7 @@ Sources panel 用于显示当前项目的脚本文件，同浏览器开发不同
 
 AppData panel 用于显示当前项目运行时小程序 AppData 具体数据，实时地反映项目数据情况，可以在此处编辑数据，并及时地反馈到界面上。
 
-![appdata](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/appdata.gif?t=18091415)
+![appdata](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/appdata.gif?t=18091820)
 
 ### Storage panel
 
@@ -237,13 +235,13 @@ Storage panel 用于显示当前项目使用 `wx.setStorage` 或者 `wx.setStora
 
 可以直接在 Storage panel 上对数据进行删除（按 delete 键）、新增、修改
 
-![storage](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/storage.gif?t=18091415)
+![storage](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/storage.gif?t=18091820)
 
 ### Network panel
 
 Network Panel 用于观察和显示 request 和 socket 的请求情况
 
-![network](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/network.png?t=18091415)
+![network](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/network.png?t=18091820)
 
 **注：uploadFile 和 downloadFile 暂时不支持在 Network Panel 中查看**
 
@@ -253,11 +251,11 @@ Console panel 有两大功能：
 
 *   开发者可以在此输入和调试代码
 
-    ![console](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/console.gif?t=18091415)
+    ![console](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/console.gif?t=18091820)
 
 *   小程序的错误输出，会显示在此处
 
-    ![4](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/console.png?t=18091415)
+    ![4](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/console.png?t=18091820)
 
 *   在控制台中可以输入以下命令
 
@@ -279,27 +277,27 @@ Sensor panel 有两大功能：
 
 *   开发者可以在这里选择模拟地理位置
 
-    ![location](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/location.gif?t=18091415)
+    ![location](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/location.gif?t=18091820)
 
 *   开发可以在这里模拟移动设备表现，用于调试重力感应 API
 
-    ![4](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/accelerometerchange.gif?t=18091415)
+    ![4](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/accelerometerchange.gif?t=18091820)
 
 ## 自定义数据上报
 
-开发者工具上可以编辑和调试[自定义分析](https://mp.weixin.qq.com/debug/wxadoc/analysis/custom/?t=18091415)的数据上报功能，点击菜单栏中的 “工具 - 自定义分析” 即可弹窗打开自定义分析：
+开发者工具上可以编辑和调试[自定义分析](https://mp.weixin.qq.com/debug/wxadoc/analysis/custom/?t=18091820)的数据上报功能，点击菜单栏中的 “工具 - 自定义分析” 即可弹窗打开自定义分析：
 
-![8](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/event_list.png?t=18091415)
+![8](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/event_list.png?t=18091820)
 
 在页面中可以新建、查看或修改事件，在修改事件的页面中编辑完毕后，点击底部的保存并测试按钮将保存当前配置，同时工具将在调试器上提示收到最新配置，并展示配置信息，展示的内容包括事件的 ID 和名称，以及每个动作的触发条件和上报数据：
 
-![9](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/begin_test.png?t=18091415) ![10](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/on_app_config.png?t=18091415)
+![9](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/begin_test.png?t=18091820) ![10](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/on_app_config.png?t=18091820)
 
 接着可以在模拟器中操作和触发事件。在模拟器中刷新小程序也将获取该测试配置，除非窗口被关闭。窗口关闭后模拟器不会再收到配置。当事件被触发上报时，工具上会展示上报信息，包括事件 ID、触发页面、触发方式、触发时动作、以及上报的字段值和数据：
 
-![11](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/report_ide.png?t=18091415)
+![11](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/report_ide.png?t=18091820)
 
-同时可以在窗口中点击 “同步结果” 会同步显示上报的数据： ![12](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/report_mp.png?t=18091415)
+同时可以在窗口中点击 “同步结果” 会同步显示上报的数据： ![12](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/report_mp.png?t=18091820)
 
 关闭窗口后，配置将全部失效，模拟器不再收到配置并不再触发上报（小程序中使用 `wx.reportAnalytics` API 进行的数据上报仍会在工具中输出）。 测试成功后，可到小程序后台发布事件配置，即可正式生效收集所定义的事件数据。
 
@@ -309,7 +307,7 @@ Sensor panel 有两大功能：
 
 要使用自动预览功能，需要配合 6.6.7 及以上的微信客户端版本。
 
-![13](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/autopreview-toggle.png?t=18091415)
+![13](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/autopreview-toggle.png?t=18091820)
 
 要开始使用 “自动预览” 功能，可以在打开预览二维码的时候，点击 “自动预览” 标签以切换到自动预览模式。切换到自动预览模式后，只需按下预览快捷键，或者点击浮窗上的 “编译并预览” 按钮，即可触发自动预览。此时工具会上传代码，保持前台运行的微信客户端会自动刷新当前开发的小程序。
 
@@ -319,7 +317,7 @@ Sensor panel 有两大功能：
 
 用户可以在快捷键设置里自定义预览快捷键。
 
-![13](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/autopreview-shortcuts.png?t=18091415)
+![13](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/autopreview-shortcuts.png?t=18091820)
 
 </section>
 

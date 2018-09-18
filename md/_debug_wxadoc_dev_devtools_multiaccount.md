@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091415)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091415)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091415)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091820)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091820)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091820)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091415)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091415)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091415)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091820)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091820)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091820)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091415)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091415)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091820)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091820)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/multiaccount.html?t=18091415)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/multiaccount.html?t=18091415)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/multiaccount.html?t=18091820)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/multiaccount.html?t=18091820)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/multiaccount.html?t=18091415)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/multiaccount.html?t=18091415)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/multiaccount.html?t=18091820)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/multiaccount.html?t=18091820)
 
 </div>
 
@@ -84,11 +84,9 @@
         *   [外观设置](./settings.html#外观设置)
         *   [编辑设置](./settings.html#编辑设置)
         *   [代理设置](./settings.html#代理设置)
-        *   [通知设置](./settings.html#通知设置)
     *   [项目页卡](./project.html)
         *   [项目设置](./project.html#项目设置)
         *   [域名信息](./project.html#域名信息)
-        *   [腾讯云状态](./project.html#腾讯云状态)
 *   [快捷键](./shortcut.html)
 *   [代码编辑](./edit.html)
     *   [文件格式](./edit.html#文件格式)
@@ -160,17 +158,17 @@
 
 ## 如何使用
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/account_box.png?t=18091415)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/account_box.png?t=18091820)
 
 使用不同于主帐号的微信扫描二维码可以添加一个测试帐号，**如果该测试帐号登录了其他开发者工具客户端，登录态将失效**
 
 点击 ‘+’、‘-’ 我们可以添加多个测试号，或者删除已添加的测试号；按住 ‘ctrl’ 键，鼠标可以多选
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/account_box2.png?t=18091415)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/account_box2.png?t=18091820)
 
 我们可以同时勾选多个帐号，打开多个调试窗口来调试同一个项目；调试窗口与项目主窗口不同，只有模拟器和调试器；对项目代码编辑还是需要在项目主窗口进行，代码保存后，各个调试窗口可以同步执行最新的代码
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/account_box3.png?t=18091415)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/account_box3.png?t=18091820)
 
 </section>
 
