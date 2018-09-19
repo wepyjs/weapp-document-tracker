@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091415)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091415)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091415)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091911)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091911)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091911)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091415)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091415)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091415)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091911)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091911)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091911)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091415)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091415)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091911)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091911)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/qcloud/material.html?t=18091415)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/qcloud/material.html?t=18091415)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/qcloud/material.html?t=18091911)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/qcloud/material.html?t=18091911)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/qcloud/material.html?t=18091415)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/qcloud/material.html?t=18091415)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/qcloud/material.html?t=18091911)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/qcloud/material.html?t=18091911)
 
 </div>
 
@@ -84,11 +84,9 @@
         *   [外观设置](../devtools/settings.html#外观设置)
         *   [编辑设置](../devtools/settings.html#编辑设置)
         *   [代理设置](../devtools/settings.html#代理设置)
-        *   [通知设置](../devtools/settings.html#通知设置)
     *   [项目页卡](../devtools/project.html)
         *   [项目设置](../devtools/project.html#项目设置)
         *   [域名信息](../devtools/project.html#域名信息)
-        *   [腾讯云状态](../devtools/project.html#腾讯云状态)
 *   [快捷键](../devtools/shortcut.html)
 *   [代码编辑](../devtools/edit.html)
     *   [文件格式](../devtools/edit.html#文件格式)
@@ -152,7 +150,7 @@
 
 ## 素材管理
 
-![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/material.png?t=18091415)
+![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/material.png?t=18091911)
 
 素材管理将为你一键开通腾讯云的 "对象存储（COS）" 和 "内容分发网络（CDN）" 的产品功能：
 
@@ -199,18 +197,18 @@
 *   单击【腾讯云】，进入腾讯云工具页面，单击【开通】
 *   使用小程序绑定的微信扫码即可将小程序授权给腾讯云，开通之后会自动进去腾讯云微信小程序控制台，显示开发环境已开通，此时可以进行后续操作
 
-![进入微信公众平台后台](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/1.png?t=18091415)
+![进入微信公众平台后台](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/1.png?t=18091911)
 
-![开通腾讯云](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/2.png?t=18091415)
+![开通腾讯云](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/2.png?t=18091911)
 
 ### 二、前往腾讯云开通 素材管理 服务
 
 *   单击【腾讯云】logo 下方的 【后台管理】按钮，进入腾讯云管理界面
 *   进入小游戏服务页面 [https://console.cloud.tencent.com/lagame](https://console.cloud.tencent.com/lagame)，点击【开通服务】
 
-![单击后台管理按钮](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/enter.jpeg?t=18091415)
+![单击后台管理按钮](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/enter.jpeg?t=18091911)
 
-![开通素材管理服务](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/openmaterial.jpeg?t=18091415)
+![开通素材管理服务](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/openmaterial.jpeg?t=18091911)
 
 _注：小程序管理员在 mp 管理后台跳转到腾讯云管理界面后，浏览器中输入 https://console.cloud.tencent.com/lagame 跳转到开通页面_
 
