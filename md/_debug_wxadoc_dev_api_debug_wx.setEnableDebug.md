@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091911)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091911)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091911)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092019)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092019)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092019)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091911)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091911)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091911)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092019)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092019)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092019)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091911)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091911)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092019)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092019)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/debug/wx.setEnableDebug.html?t=18091911)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/debug/wx.setEnableDebug.html?t=18091911)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/debug/wx.setEnableDebug.html?t=18092019)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/debug/wx.setEnableDebug.html?t=18092019)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/debug/wx.setEnableDebug.html?t=18091911)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/debug/wx.setEnableDebug.html?t=18091911)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/debug/wx.setEnableDebug.html?t=18092019)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/debug/wx.setEnableDebug.html?t=18092019)
 
 </div>
 
@@ -628,11 +628,19 @@
 *   [调试](./wx.getLogManager.html)
     *   [wx.getLogManager](./wx.getLogManager.html)
     *   [wx.setEnableDebug](./wx.setEnableDebug.html)
-    *   [LogManager](./LogManager.html)
-    *   [LogManager.debug](./LogManager.debug.html)
-    *   [LogManager.info](./LogManager.info.html)
+    *   [console](./console.html)
     *   [LogManager.log](./LogManager.log.html)
     *   [LogManager.warn](./LogManager.warn.html)
+    *   [LogManager](./LogManager.html)
+    *   [LogManager.info](./LogManager.info.html)
+    *   [LogManager.debug](./LogManager.debug.html)
+    *   [console.debug](./console.debug.html)
+    *   [console.log](./console.log.html)
+    *   [console.info](./console.info.html)
+    *   [console.warn](./console.warn.html)
+    *   [console.error](./console.error.html)
+    *   [console.group](./console.group.html)
+    *   [console.groupEnd](./console.groupEnd.html)
 *   [基础](../base/wx.canIUse.html)
     *   [wx.canIUse](../base/wx.canIUse.html)
 *   [转发](../share/wx.getShareInfo.html)
@@ -827,6 +835,6 @@
 
 </div>
 
-[](./wx.getLogManager.html)[](./LogManager.html)</div>
+[](./wx.getLogManager.html)[](./console.html)</div>
 
 </div>

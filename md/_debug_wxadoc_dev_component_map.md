@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091911)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091911)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091911)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092019)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092019)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092019)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091911)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091911)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091911)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092019)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092019)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092019)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091911)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091911)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092019)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092019)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/map.html?t=18091911)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/map.html?t=18091911)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/map.html?t=18092019)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/map.html?t=18092019)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/map.html?t=18091911)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/map.html?t=18091911)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/map.html?t=18092019)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/map.html?t=18092019)
 
 </div>
 
@@ -135,7 +135,7 @@
 
 #### map
 
-地图。该组件是[原生组件](native-component.html)，使用时请注意相关限制。 个性化地图能力可在小程序后台“设置-开发者工具-腾讯地图服务”申请开通。 设置subkey后，小程序内的地图组件均会使用该底图效果，底图场景的切换会在后续版本提供。 详见[《小程序个性地图使用指南》](https://lbs.qq.com/product/miniapp/guide/)
+地图。该组件是[原生组件](native-component.html)，使用时请注意相关限制。 个性化地图能力可在小程序后台“设置-开发者工具-腾讯位置服务”申请开通。 设置subkey后，小程序内的地图组件均会使用该底图效果，底图场景的切换会在后续版本提供。 详见[《小程序个性地图使用指南》](https://lbs.qq.com/product/miniapp/guide/)
 
 <table>
 

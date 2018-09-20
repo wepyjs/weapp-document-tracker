@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091911)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091911)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091911)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092019)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092019)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092019)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091911)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091911)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091911)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092019)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092019)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092019)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091911)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091911)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092019)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092019)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/import.html?t=18091911)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/import.html?t=18091911)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/import.html?t=18092019)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/import.html?t=18092019)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/import.html?t=18091911)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/import.html?t=18091911)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/import.html?t=18092019)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/import.html?t=18092019)
 
 </div>
 
@@ -245,7 +245,7 @@
 
 要导入数据，需打开云开发控制台，切换到 “数据库” 标签页，并选择要导入数据的集合，点击 “导入” 按钮。
 
-![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/cloudconsole-database-import-dialog.jpg?t=18091911)
+![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/cloudconsole-database-import-dialog.jpg?t=18092019)
 
 选择要导入的 CSV 或者 JSON 文件，以及冲突处理模式，点击 “导入” 按钮即可开始导入。
 
@@ -288,7 +288,7 @@ CSV：
 
 导入完成后，可以在提示信息中看到本次导入记录的情况。
 
-![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/cloudconsole-database-import-success.jpg?t=18091911)
+![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/cloudconsole-database-import-success.jpg?t=18092019)
 
 </section>
 

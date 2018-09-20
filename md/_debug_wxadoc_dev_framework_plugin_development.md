@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091911)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091911)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091911)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092019)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092019)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092019)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091911)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091911)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091911)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092019)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092019)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092019)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091911)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091911)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092019)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092019)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/development.html?t=18091911)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/development.html?t=18091911)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/development.html?t=18092019)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/development.html?t=18092019)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/development.html?t=18091911)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/development.html?t=18091911)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/development.html?t=18092019)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/development.html?t=18092019)
 
 </div>
 
@@ -166,6 +166,15 @@
     *   [获取二维码](../open-ability/qr-code.html)
     *   [数据分析](../open-ability/data-analysis.html)
     *   [附近的小程序](../open-ability/nearby.html)
+*   [可用性](../usability/debug.html)
+    *   [调试](../usability/debug.html)
+    *   [运行环境](../details.html)
+        *   [平台差异](../details.html#平台差异)
+        *   [ES6 支持情况](../details.html#客户端-es6-api-支持情况)
+    *   [运行机制](../operating-mechanism.html)
+    *   [性能](../performance/)
+        *   [优化建议](../performance/tips.html)
+        *   [分析工具](../performance/tools.html)
 *   [基础库](../client-lib/)
     *   [版本分布](../client-lib/version.html)
     *   [与客户端版本对应关系](../client-lib/client.html)
@@ -174,13 +183,6 @@
         *   [v2.x版本](../release.html)
         *   [v1.x版本](../release/v1.html)
         *   [v0.x版本](../release/v0.html)
-*   [运行环境](../details.html)
-    *   [平台差异](../details.html#平台差异)
-    *   [ES6 支持情况](../details.html#客户端-es6-api-支持情况)
-*   [运行机制](../operating-mechanism.html)
-*   [性能](../performance/)
-    *   [优化建议](../performance/tips.html)
-    *   [分析工具](../performance/tools.html)
 
 </nav>
 
@@ -202,13 +204,13 @@
 
 # 开发插件
 
-开发插件前，请阅读了解[《小程序插件接入指南》](https://developers.weixin.qq.com/miniprogram/introduction/plugin.html?t=18091911)了解开通流程及开放范围，并开通插件功能。如果未开通插件功能，将无法上传插件。
+开发插件前，请阅读了解[《小程序插件接入指南》](https://developers.weixin.qq.com/miniprogram/introduction/plugin.html?t=18092019)了解开通流程及开放范围，并开通插件功能。如果未开通插件功能，将无法上传插件。
 
 ## 创建插件项目
 
 插件类型的项目可以在开发者工具中直接创建。[详情](../../devtools/plugin.html)
 
-![创建插件](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/createplugin.png?t=18091911)
+![创建插件](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/createplugin.png?t=18092019)
 
 新建插件类型的项目后，如果创建示例项目，则项目中将包含三个目录：
 
@@ -223,7 +225,7 @@
 1.  由于插件需要 appid 才能工作，请填入一个 appid；
 2.  由于当前代码片段的限制，打开该示例后请 **手动将 appid 填写到 `miniprogram/app.json` 中（如下图）使示例正常运行。**
 
-![手动填写 appid](https://developers.weixin.qq.com/miniprogram/dev/image/plugin_minicode_guide.png?t=18091911)
+![手动填写 appid](https://developers.weixin.qq.com/miniprogram/dev/image/plugin_minicode_guide.png?t=18092019)
 
 ## 插件目录结构
 
@@ -269,7 +271,7 @@
 
 插件可以定义若干个自定义组件，这些自定义组件都可以在插件内相互引用。但提供给第三方小程序使用的自定义组件必须在配置文件中列出（参考上文）。
 
-除去接口限制以外，自定义组件的编写和组织方式与一般的自定义组件相同，每个自定义组件由 `wxml`, `wxss`, `js` 和 `json` 四个文件组成。具体可以参考[自定义组件的文档](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/?t=18091911)。
+除去接口限制以外，自定义组件的编写和组织方式与一般的自定义组件相同，每个自定义组件由 `wxml`, `wxss`, `js` 和 `json` 四个文件组成。具体可以参考[自定义组件的文档](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/?t=18092019)。
 
 ### 页面
 

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091911)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091911)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091911)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092019)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092019)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092019)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091911)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091911)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091911)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092019)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092019)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092019)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091911)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091911)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092019)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092019)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html?t=18091911)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/page.html?t=18091911)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html?t=18092019)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/page.html?t=18092019)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html?t=18091911)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/page.html?t=18091911)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html?t=18092019)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/page.html?t=18092019)
 
 </div>
 
@@ -166,6 +166,15 @@
     *   [获取二维码](../open-ability/qr-code.html)
     *   [数据分析](../open-ability/data-analysis.html)
     *   [附近的小程序](../open-ability/nearby.html)
+*   [可用性](../usability/debug.html)
+    *   [调试](../usability/debug.html)
+    *   [运行环境](../details.html)
+        *   [平台差异](../details.html#平台差异)
+        *   [ES6 支持情况](../details.html#客户端-es6-api-支持情况)
+    *   [运行机制](../operating-mechanism.html)
+    *   [性能](../performance/)
+        *   [优化建议](../performance/tips.html)
+        *   [分析工具](../performance/tools.html)
 *   [基础库](../client-lib/)
     *   [版本分布](../client-lib/version.html)
     *   [与客户端版本对应关系](../client-lib/client.html)
@@ -174,13 +183,6 @@
         *   [v2.x版本](../release.html)
         *   [v1.x版本](../release/v1.html)
         *   [v0.x版本](../release/v0.html)
-*   [运行环境](../details.html)
-    *   [平台差异](../details.html#平台差异)
-    *   [ES6 支持情况](../details.html#客户端-es6-api-支持情况)
-*   [运行机制](../operating-mechanism.html)
-*   [性能](../performance/)
-    *   [优化建议](../performance/tips.html)
-    *   [分析工具](../performance/tools.html)
 
 </nav>
 
@@ -885,7 +887,7 @@
     <view>{{newField.text}}</view>
     <button bindtap="addNewField"> Add new data </button>
 
-    //index.js
+    // index.js
     Page({
       data: {
         text: 'init data',
@@ -896,19 +898,21 @@
         }
       },
       changeText: function() {
-        // this.data.text = 'changed data'  // bad, it can not work
+        // this.data.text = 'changed data' // 不要直接修改 this.data
+        // 应该使用 setData
         this.setData({
           text: 'changed data'
         })
       },
       changeNum: function() {
+        // 或者，可以修改 this.data 之后马上用 setData 设置一下修改了的字段
         this.data.num = 1
         this.setData({
           num: this.data.num
         })
       },
       changeItemInArray: function() {
-        // you can use this way to modify a danamic data path
+        // 对于对象或数组字段，可以直接修改一个其下的子字段，这样做通常比修改整个对象或数组更好
         this.setData({
           'array[0].text':'changed data'
         })
@@ -931,7 +935,7 @@
 
 下图说明了 Page 实例的生命周期。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/mina-lifecycle.png?t=18091911)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/mina-lifecycle.png?t=18092019)
 
 </section>
 
