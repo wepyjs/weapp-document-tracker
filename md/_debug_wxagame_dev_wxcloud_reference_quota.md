@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092019)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092019)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092019)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092115)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092115)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092115)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092019)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092019)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092019)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092115)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092115)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092115)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092019)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092019)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092115)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092115)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference/quota.html?t=18092019)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference/quota.html?t=18092019)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference/quota.html?t=18092115)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference/quota.html?t=18092115)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference/quota.html?t=18092019)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference/quota.html?t=18092019)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference/quota.html?t=18092115)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference/quota.html?t=18092115)
 
 </div>
 
@@ -467,7 +467,7 @@
 
 以上均是一个环境的配额，不是所有环境的总和限制。
 
-如需申请上调，开发者可以"申请调整小程序云开发调用资源上限"为主题，发送邮件至：[miniprogram@tencent.com](mailto:miniprogram@tencent.com?Subject=申请调整小程序云开发调用资源上限) 申请调整，并在正文中注明小程序帐号 AppID、需要调整的资源上限(仅限资源配额中所列内容)、小程序服务类目(可在小程序基本设置中查询)、资源调整原因以及产品计划上线时间。
+如需申请上调，开发者可以"申请调整小程序云开发调用资源上限"为主题，发送邮件至：[miniprogram@tencent.com](mailto:miniprogram@tencent.com?Subject=申请调整小程序云开发调用资源上限) 申请调整，并在正文中注明小程序帐号 AppID、需要调整的环境名称、需要调整的资源上限(仅限资源配额中所列内容)、小程序服务类目(可在小程序基本设置中查询)、资源调整原因以及产品计划上线时间。
 
 注：
 

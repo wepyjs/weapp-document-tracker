@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092019)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092019)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092019)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092022)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092022)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092022)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092019)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092019)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092019)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092022)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092022)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092022)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092019)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092019)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092022)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092022)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/image.html?t=18092019)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/image.html?t=18092019)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/image.html?t=18092022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/image.html?t=18092022)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/image.html?t=18092019)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/image.html?t=18092019)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/image.html?t=18092022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/image.html?t=18092022)
 
 </div>
 
@@ -113,6 +113,7 @@
     *   [open-data](./open-data.html)
     *   [web-view](./web-view.html)
     *   [ad](./ad.html)
+    *   [official-account](./official-account.html)
 *   [原生组件说明](./native-component.html)
 
 </nav>
@@ -458,79 +459,79 @@ mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。
 
 ##### 原图
 
-![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/0.jpg?t=18092019)
+![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/0.jpg?t=18092022)
 
 ##### scaleToFill
 
 不保持纵横比缩放图片，使图片完全适应
 
-![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/1.png?t=18092019)
+![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/1.png?t=18092022)
 
 ##### aspectFit
 
 保持纵横比缩放图片，使图片的长边能完全显示出来
 
-![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/2.png?t=18092019)
+![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/2.png?t=18092022)
 
 ##### aspectFill
 
 保持纵横比缩放图片，只保证图片的短边能完全显示出来
 
-![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/3.png?t=18092019)
+![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/3.png?t=18092022)
 
 ##### top
 
 不缩放图片，只显示图片的顶部区域
 
-![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/4.png?t=18092019)
+![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/4.png?t=18092022)
 
 ##### bottom
 
 不缩放图片，只显示图片的底部区域
 
-![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/5.png?t=18092019)
+![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/5.png?t=18092022)
 
 ##### center
 
 不缩放图片，只显示图片的中间区域
 
-![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/6.png?t=18092019)
+![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/6.png?t=18092022)
 
 ##### left
 
 不缩放图片，只显示图片的左边区域
 
-![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/7.png?t=18092019)
+![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/7.png?t=18092022)
 
 ##### right
 
 不缩放图片，只显示图片的右边边区域
 
-![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/8.png?t=18092019)
+![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/8.png?t=18092022)
 
 ##### top left
 
 不缩放图片，只显示图片的左上边区域
 
-![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/9.png?t=18092019)
+![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/9.png?t=18092022)
 
 ##### top right
 
 不缩放图片，只显示图片的右上边区域
 
-![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/10.png?t=18092019)
+![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/10.png?t=18092022)
 
 ##### bottom left
 
 不缩放图片，只显示图片的左下边区域
 
-![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/11.png?t=18092019)
+![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/11.png?t=18092022)
 
 ##### bottom right
 
 不缩放图片，只显示图片的右下边区域
 
-![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/12.png?t=18092019)
+![image](https://developers.weixin.qq.com/miniprogram/dev/image/cat/12.png?t=18092022)
 
 </section>
 

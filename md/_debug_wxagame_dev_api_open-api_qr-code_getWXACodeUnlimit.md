@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092019)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092019)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092019)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092022)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092022)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092022)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092019)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092019)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092019)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092022)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092022)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092022)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092019)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092019)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092022)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092022)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/qr-code/getWXACodeUnlimit.html?t=18092019)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/qr-code/getWXACodeUnlimit.html?t=18092019)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/qr-code/getWXACodeUnlimit.html?t=18092022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/qr-code/getWXACodeUnlimit.html?t=18092022)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/qr-code/getWXACodeUnlimit.html?t=18092019)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/qr-code/getWXACodeUnlimit.html?t=18092019)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/qr-code/getWXACodeUnlimit.html?t=18092022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/qr-code/getWXACodeUnlimit.html?t=18092022)
 
 </div>
 
@@ -811,6 +811,11 @@ auto_color 为 false 时生效，使用 rgb 设置颜色 例如 {"r":"xxx","g":"
 #### 返回值说明
 
 如果调用成功，会直接返回图片二进制内容，如果请求失败，会返回 JSON 格式的数据。
+
+#### 注意
+
+*   接口只能生成已发布的小程序的二维码
+*   调用分钟频率受限（5000次/分钟），如需大量小程序码，建议预生成
 
 #### 在小程序获取 scene 值
 

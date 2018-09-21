@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091316)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091316)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091316)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18083022)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18083022)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18083022)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091316)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091316)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091316)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18083022)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18083022)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18083022)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091316)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091316)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18083022)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18083022)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/database/collection.update.html?t=18091316)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-client-api/database/collection.update.html?t=18091316)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/database/collection.update.html?t=18083022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-client-api/database/collection.update.html?t=18083022)
 
 </div>
 
@@ -47,9 +47,10 @@
 *   [简易教程](../../../)
 *   [框架](../../../framework/MINA.html)
 *   [组件](../../../component/)
-*   [API](../../../api/network/download/wx.downloadFile.html)
+*   [API](../../../api/)
 *   [工具](../../../devtools/devtools.html)
 *   [小程序·云开发](../../basis/getting-started.html)
+*   [腾讯云支持](../../../qcloud/qcloud.html)
 
 </div>
 
@@ -59,8 +60,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/database/collection.update.html?t=18091316)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-client-api/database/collection.update.html?t=18091316)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/database/collection.update.html?t=18083022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-client-api/database/collection.update.html?t=18083022)
 
 </div>
 
@@ -80,7 +81,7 @@
         *   [云开发控制台](../../basis/getting-started.html#云开发控制台)
     *   [云开发能力](../../basis/capabilities.html)
         *   [数据库](../../basis/capabilities.html#数据库)
-        *   [存储](../../basis/capabilities.html#存储)
+        *   [文件存储](../../basis/capabilities.html#文件存储)
         *   [云函数](../../basis/capabilities.html#云函数)
 *   [开发指引](../../guide/)
     *   [指引](../../guide/)
@@ -97,8 +98,7 @@
         *   [更新数据](../../guide/database/update.html)
         *   [删除数据](../../guide/database/remove.html)
         *   [索引](../../guide/database/)
-        *   [导入](../../guide/database/import.html)
-    *   [存储](../../guide/storage.html)
+    *   [文件存储](../../guide/storage.html)
         *   [API](../../guide/storage/api.html)
         *   [管理文件](../../guide/storage/console.html)
     *   [云函数](../../guide/functions.html)
@@ -157,7 +157,7 @@
         *   [get](./get.html)
         *   [update](./update.html)
         *   [remove](./remove.html)
-    *   [存储](../storage/)
+    *   [文件存储](../storage/)
         *   [API 列表](../storage/)
         *   [wx.cloud.uploadFile](../storage/uploadFile.html)
         *   [wx.cloud.downloadFile](../storage/downloadFile.html)
@@ -211,7 +211,7 @@
         *   [get](../../reference-server-api/database/get.html)
         *   [update](../../reference-server-api/database/update.html)
         *   [remove](../../reference-server-api/database/remove.html)
-    *   [存储](../../reference-server-api/storage/)
+    *   [文件存储](../../reference-server-api/storage/)
         *   [API 列表](../../reference-server-api/storage/)
         *   [uploadFile](../../reference-server-api/storage/uploadFile.html)
         *   [downloadFile](../../reference-server-api/storage/downloadFile.html)
@@ -374,75 +374,7 @@
 
 **Result 说明**
 
-`success` 回调的结果及 `Promise` `resolve` 的结果 `Result` 是一个如下结构的对象：
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>字段</th>
-
-<th>类型</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>stats</td>
-
-<td>Object</td>
-
-<td>更新结果的统计，其中包含的字段见下方 stats 的定义</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-`stats` 对象是一个如下结构的对象：
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>字段</th>
-
-<th>类型</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>updated</td>
-
-<td>number</td>
-
-<td>成功更新的记录数量</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-> 注：API 调用成功不一定代表想要更新的记录已被更新，比如有可能指定的 where 筛选条件只能筛选出 0 条匹配的记录，所以会得到更新 API 调用成功但其实没有记录被更新的情况，这种情况可以通过 stats.updated 看出来
+`success` 回调的结果及 `Promise` `resolve` 的结果 `Result` 是一个空对象
 
 **示例代码**
 

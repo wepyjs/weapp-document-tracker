@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092019)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092019)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092019)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092115)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092115)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092115)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092019)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092019)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092019)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092115)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092115)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092115)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092019)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092019)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092115)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092115)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html?t=18092019)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/basis/getting-started.html?t=18092019)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html?t=18092115)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/basis/getting-started.html?t=18092115)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html?t=18092019)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/basis/getting-started.html?t=18092019)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html?t=18092115)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/basis/getting-started.html?t=18092115)
 
 </div>
 
@@ -283,7 +283,7 @@
 *   云函数：查看云函数列表、配置、日志和监控
 *   统计分析：查看云开发资源具体使用统计信息
 
-![云开发控制台](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/intro/console_main.png?t=18092019)
+![云开发控制台](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/intro/console_main.png?t=18092115)
 
 ## 资源环境
 

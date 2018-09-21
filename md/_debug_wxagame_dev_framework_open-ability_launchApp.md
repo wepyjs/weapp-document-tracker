@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092019)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092019)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092019)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092022)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092022)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092022)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092019)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092019)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092019)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092022)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092022)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092022)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092019)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092019)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092022)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092022)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/launchApp.html?t=18092019)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/launchApp.html?t=18092019)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/launchApp.html?t=18092022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/launchApp.html?t=18092022)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/launchApp.html?t=18092019)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/launchApp.html?t=18092019)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/launchApp.html?t=18092022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/launchApp.html?t=18092022)
 
 </div>
 
@@ -220,7 +220,7 @@
     *   1090（长按小程序右上角菜单唤出最近使用历史）
 *   当小程序从非以上陈列的场景打开时，该状态置为 false。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/launch-app.png?t=18092019)
+![](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/launch-app.png?t=18092022)
 
 ### 使用方法
 

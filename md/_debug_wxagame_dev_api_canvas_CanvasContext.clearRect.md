@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092019)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092019)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092019)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092022)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092022)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092022)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092019)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092019)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092019)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092022)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092022)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092022)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092019)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092019)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092022)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092022)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.clearRect.html?t=18092019)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/CanvasContext.clearRect.html?t=18092019)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.clearRect.html?t=18092022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/CanvasContext.clearRect.html?t=18092022)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.clearRect.html?t=18092019)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/CanvasContext.clearRect.html?t=18092019)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.clearRect.html?t=18092022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/CanvasContext.clearRect.html?t=18092022)
 
 </div>
 
@@ -714,7 +714,7 @@ clearRect 并非画一个白色的矩形在地址区域，而是清空，为了�
     ctx.clearRect(10, 10, 150, 75)
     ctx.draw()
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/clear-rect.png?t=18092019)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/clear-rect.png?t=18092022)
 
 </section>
 

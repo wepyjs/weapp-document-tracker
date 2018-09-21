@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091021)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091021)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091021)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18083022)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18083022)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18083022)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091021)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091021)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091021)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18083022)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18083022)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18083022)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091021)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091021)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18083022)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18083022)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/signature.html?t=18091021)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/signature.html?t=18091021)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/signature.html?t=18083022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/signature.html?t=18083022)
 
 </div>
 
@@ -50,6 +50,7 @@
 *   [API](.)
 *   [工具](../devtools/devtools.html)
 *   [小程序·云开发](../wxcloud/basis/getting-started.html)
+*   [腾讯云支持](../qcloud/qcloud.html)
 
 </div>
 
@@ -59,8 +60,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/signature.html?t=18091021)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/signature.html?t=18091021)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/signature.html?t=18083022)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/signature.html?t=18083022)
 
 </div>
 
@@ -397,7 +398,7 @@
         *   [wx.login](./api-login.html#wxloginobject)
         *   [wx.checkSession](./signature.html#wxchecksessionobject)
         *   [签名加密](./signature.html)
-    *   [授权](./authorize-)
+    *   [授权](./authorize-index.html)
         *   [wx.authorize](./authorize.html)
     *   [用户信息](./open.html)
         *   [wx.getUserInfo](./open.html#wxgetuserinfoobject)
@@ -411,7 +412,6 @@
         *   [使用说明](./notice.html#使用说明)
         *   [模版消息管理](./notice.html#模版消息管理)
         *   [发送模板消息](./notice.html#发送模板消息)
-    *   [统一服务消息](./notice-uniform.html)
     *   [客服消息](./custommsg/receive.html)
         *   [接收消息和事件](./custommsg/receive.html#接收消息和事件)
             *   [文本消息](./custommsg/receive.html#文本消息)
@@ -512,7 +512,7 @@
 
 小程序可以通过各种前端接口获取微信提供的开放数据。 考虑到开发者服务器也需要获取这些开放数据，微信会对这些数据做签名和加密处理。 开发者后台拿到开放数据后可以对数据进行校验签名和解密，来保证数据不被篡改。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/signature.jpg?t=18091021)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/signature.jpg?t=18083022)
 
 签名校验以及数据加解密涉及用户的会话密钥session_key。 开发者应该事先通过 [wx.login](api-login.html) 登录流程获取会话密钥 session_key 并保存在服务器。为了数据不被篡改，开发者不应该把session_key传到小程序客户端等服务器外的环境。
 
