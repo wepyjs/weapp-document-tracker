@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092115)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092115)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092115)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092610)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092610)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092610)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092115)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092115)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092115)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092610)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092610)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092610)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092115)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092115)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092610)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092610)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/database/index.html?t=18092115)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/index.html?t=18092115)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/database/index.html?t=18092610)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/index.html?t=18092610)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/database/index.html?t=18092115)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/index.html?t=18092115)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/database/index.html?t=18092610)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-server-api/database/index.html?t=18092610)
 
 </div>
 
@@ -653,7 +653,7 @@ Server 端的 API 与[小程序端](../../reference-client-api/database/index.ht
 
 <td>[nin](command.nin.html)</td>
 
-<td>字段是否大于指定值</td>
+<td>字段值是否不在指定数组中</td>
 
 </tr>
 
@@ -789,7 +789,7 @@ Server 端的 API 与[小程序端](../../reference-client-api/database/index.ht
 
 <td>number</td>
 
-<td>[错误码](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference/errcode.html?t=18092115)</td>
+<td>[错误码](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference/errcode.html?t=18092610)</td>
 
 </tr>
 

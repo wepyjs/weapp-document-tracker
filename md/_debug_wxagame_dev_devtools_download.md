@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092022)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092022)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092022)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092618)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092618)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092618)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092022)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092022)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092022)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092618)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092618)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092618)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092022)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092022)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092618)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092618)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html?t=18092022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/download.html?t=18092022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html?t=18092618)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/download.html?t=18092618)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html?t=18092022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/download.html?t=18092022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html?t=18092618)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/download.html?t=18092618)
 
 </div>
 
@@ -127,7 +127,6 @@
 *   [云测试](./monkey-test.html)
 *   [API 实现差异](./notsupport.html)
 *   [下载](./download.html)
-*   [Beta 版下载](./beta.html)
 *   [历史更新日志](./uplog.html)
 
 </nav>
@@ -148,31 +147,35 @@
 
 <section class="normal markdown-section">
 
-## 最新版本下载地址 (1.02.1809111)
+## 最新版本下载地址 (1.02.1809260)
 
 [Windows 64位](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) / [Windows 32位](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) / [Mac OS](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
 
 > Windows 仅支持 Windows 7 及以上版本。
 
-### 2018.09.11
+### 2018.09.26
 
-1.  `F` 修复 1.02.1809101 版本在32位 windows 机器出现 wxml 编译失败导致异常的问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000e6086cb49f86d8757f244a51000)
-
-### 2018.09.10
-
-1.  `A` 新增 小程序·云开发 [详情](../wxcloud/basis/getting-started.html)
-2.  `F` 修复 部分 windows 机器第一次点击预览会闪烁黑屏的问题
-3.  `F` 修复 WXS 的 switch case 负数报错 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000e00d6360240388a379e80f5b400)
-4.  `F` 修复 无法调试客服按钮 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000e820732467086d1373557151c00)
-5.  `F` 修复 开发者工具调用 `wx.getAccountInfoSync` 获取到的appid为空 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000ae876f94d50acfe2721d745b400)
-6.  `F` 修复 第三方平台调用 `wx.getAccountInfoSync` 返回的不是 extAppId [反馈详情](https://developers.weixin.qq.com/community/develop/doc/0000223050ca607748577774f51800)
-7.  `F` 修复 编译前预处理命令不生效 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/00046074f90e808ee8476382f5b000)
-8.  `F` 修复 packOptions.ignore 指定了在小程序目录内的文件的话会导致小程序无法启动 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000cac40978aa8c007d69f0055b400)
-
-对 Beta 版用户的额外更新说明（相对于 Beta 版工具的额外更新内容）：
-
-1.  `A` 新增 小游戏云开发 QuickStart
-2.  `F` 修复 云开发控制台数据库经纬度显示反了 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/00082c809f0f80872847f3f55568)
+1.  `A` 新增 项目详情页动态更新 AppID
+2.  `A` 新增 `project.config.json` packOptions.ignore / debugOptions.hidedInDevtools 支持 Glob 和 RegExp 规则
+3.  `A` 新增小游戏真机调试（需特定系统和客户端版本）[详情](remote-debug.html)
+4.  `U` 优化 编译器在调试器底部状态来显示编译的进度信息
+5.  `U` 优化 小游戏 JS 文件编译缓存，增加文件 MD5 校验
+6.  `U` 优化 云函数下载体验
+7.  `U` 优化 云函数上传成功后显示详情
+8.  `U` 优化 开发者工具菜单显示
+9.  `U` 优化 编辑器菜单的顺序
+10.  `U` 优化 编辑器全局搜索时默认不搜索 node_modules 目录
+11.  `F` 修复 云函数上传时没有保留源文件的操作权限的问题
+12.  `F` 修复 云开发控制台云函数测试中带有中文会调用失败的问题
+13.  `F` 修复 云开发控制台中添加 bool 数据类型异常的问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000480b36101a07b1a672cd2451400)
+14.  `F` 修复 上传云函数上传失败会报 `AuthFailure.TokenFailure` 的问题
+15.  `F` 修复 多帐号调试时 tabBar 图标不显示的问题
+16.  `F` 修复 `wx.getImageInfo` orientation 与客户端不一致的问题
+17.  `F` 修复 小游戏触摸事件中 Touch 对象与客户端不一致的问题
+18.  `F` 修复 开发者工具 offline 模拟时， `<web-view />` 组件还能发起请求的问题
+19.  `F` 修复 小游戏 `fs.readdir` 提示 `permission denied` 的问题
+20.  `F` 修复 CLI/HTTP 调用返回的 JSON 结果在浏览器显示乱码的问题
+21.  `F` 修复 预览二维码没有居中的问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000ae67cdd8b00529c571593951800)
 
 ## 历史更新日志
 
@@ -217,6 +220,6 @@
 
 </div>
 
-[](./notsupport.html)[](./beta.html)</div>
+[](./notsupport.html)[](./uplog.html)</div>
 
 </div>

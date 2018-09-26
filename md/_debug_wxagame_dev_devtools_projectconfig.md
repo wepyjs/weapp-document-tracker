@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092022)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092022)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092022)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092618)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092618)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092618)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092022)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092022)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092022)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092618)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092618)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092618)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092022)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092022)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092618)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092618)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html?t=18092022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/projectconfig.html?t=18092022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html?t=18092618)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/projectconfig.html?t=18092618)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html?t=18092022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/projectconfig.html?t=18092022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html?t=18092618)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/projectconfig.html?t=18092618)
 
 </div>
 
@@ -127,7 +127,6 @@
 *   [云测试](./monkey-test.html)
 *   [API 实现差异](./notsupport.html)
 *   [下载](./download.html)
-*   [Beta 版下载](./beta.html)
 *   [历史更新日志](./uplog.html)
 
 </nav>
@@ -464,7 +463,7 @@ scripts 中指定自定义预处理的命令
 
 <td>string</td>
 
-<td>路径或取值</td>
+<td>路径<sup><small>1</small></sup>或取值</td>
 
 </tr>
 
@@ -482,7 +481,11 @@ scripts 中指定自定义预处理的命令
 
 </table>
 
-其中，`type` 可以取的值为 `folder`、`file`、`suffix`、`prefix`，分别对应文件夹、文件、后缀、前缀。
+其中，`type` 可以取的值为 `folder`、`file`、`suffix`、`prefix`、`regexp`<sup><small>2</small></sup>、`glob`<sup><small>2</small></sup>，分别对应文件夹、文件、后缀、前缀、正则表达式、Glob 规则。所有规则值都会自动忽略大小写。
+
+**注 1**: `value` 字段的值若表示文件或文件夹路径，以小程序目录 (`miniprogramRoot`) 为根目录。
+
+**注 2**: `regexp`、`glob` 仅 1.02.1809260 及以上版本工具支持。
 
 示例配置如下。
 
@@ -500,11 +503,17 @@ scripts 中指定自定义预处理的命令
         }, {
           "type": "prefix",
           "value": "test-"
+        }, {
+          "type": "glob",
+          "value": "test/**/*.js"
+        }, {
+          "type": "regexp",
+          "value": "\\.jsx$"
         }]
       }
     }
 
-**注**: `value` 字段的值不支持通配符、正则表达式。若表示文件或文件夹路径，以小程序目录 (`miniprogramRoot`) 为根目录。
+**注**: 这部分设置的更改可能需要重新打开项目才能生效。
 
 ### debugOptions
 
@@ -531,7 +540,9 @@ scripts 中指定自定义预处理的命令
         "minified": true,
         "urlCheck": false
       },
-      "packOptions": {},
+      "packOptions": {
+        "ignore": []
+      },
       "debugOptions": {}
     }
 

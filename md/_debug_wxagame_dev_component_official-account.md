@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092022)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092022)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092022)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092610)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092610)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092610)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092022)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092022)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092022)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092610)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092610)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092610)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092022)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092022)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092610)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092610)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/official-account.html?t=18092022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/official-account.html?t=18092022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/official-account.html?t=18092610)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/official-account.html?t=18092610)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/official-account.html?t=18092022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/official-account.html?t=18092022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/official-account.html?t=18092610)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/official-account.html?t=18092610)
 
 </div>
 
@@ -142,9 +142,7 @@
 
 **Tips:**
 
-1.  使用组件前，需前往小程序后台，在“设置”->“接口设置”->“公众号关注组件”中设置要展示的公众号。
-
-    **注：设置的公众号需与小程序主体一致。**
+1.  使用组件前，需前往小程序后台，在“设置”->“接口设置”->“公众号关注组件”中设置要展示的公众号。 **注：设置的公众号需与小程序主体一致。**
 
 2.  在一个小程序的生命周期内，只有从以下场景进入小程序，才具有展示引导关注公众号组件的能力:
 
@@ -152,8 +150,7 @@
     *   当小程序从扫小程序码场景（场景值1047）打开时
     *   当小程序从聊天顶部场景（场景值1089）中的“最近使用”内打开时，若小程序之前未被销毁，则该组件保持上一次打开小程序时的状态
     *   当从其他小程序返回小程序（场景值1038）时，若小程序之前未被销毁，则该组件保持上一次打开小程序时的状态
-
-1.  每个页面只能配置一个该组件。
+3.  每个页面只能配置一个该组件。
 
 **示例：**
 

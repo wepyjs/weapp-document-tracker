@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092022)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092022)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092022)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092610)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092610)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092610)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092022)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092022)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092022)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092610)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092610)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092610)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092022)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092022)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092610)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092610)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.clip.html?t=18092022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/CanvasContext.clip.html?t=18092022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.clip.html?t=18092610)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/CanvasContext.clip.html?t=18092610)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.clip.html?t=18092022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/CanvasContext.clip.html?t=18092022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.clip.html?t=18092610)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/CanvasContext.clip.html?t=18092610)
 
 </div>
 
@@ -701,7 +701,7 @@ clip() 方法从原始画布中剪切任意形状和尺寸。一旦剪切了某�
       }
     })
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/clip.png?t=18092022)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/clip.png?t=18092610)
 
 </section>
 

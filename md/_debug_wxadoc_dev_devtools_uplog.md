@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092022)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092022)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092022)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092618)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092618)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092618)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092022)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092022)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092022)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092618)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092618)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092618)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092022)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092022)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092618)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092618)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/uplog.html?t=18092022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/uplog.html?t=18092022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/uplog.html?t=18092618)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/uplog.html?t=18092618)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/uplog.html?t=18092022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/uplog.html?t=18092022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/uplog.html?t=18092618)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/uplog.html?t=18092618)
 
 </div>
 
@@ -127,7 +127,6 @@
 *   [云测试](./monkey-test.html)
 *   [API 实现差异](./notsupport.html)
 *   [下载](./download.html)
-*   [Beta 版下载](./beta.html)
 *   [历史更新日志](./uplog.html)
 
 </nav>
@@ -152,7 +151,33 @@
 
 [查看基础库更新日志](../framework/release.html)
 
+### 2018.09.26
+
+1.  `A` 新增 项目详情页动态更新 AppID
+2.  `A` 新增 `project.config.json` packOptions.ignore / debugOptions.hidedInDevtools 支持 Glob 和 RegExp 规则
+3.  `A` 新增小游戏真机调试（需特定系统和客户端版本）[详情](remote-debug.html)
+4.  `U` 优化 编译器在调试器底部状态来显示编译的进度信息
+5.  `U` 优化 小游戏 JS 文件编译缓存，增加文件 MD5 校验
+6.  `U` 优化 云函数下载体验
+7.  `U` 优化 云函数上传成功后显示详情
+8.  `U` 优化 开发者工具菜单显示
+9.  `U` 优化 编辑器菜单的顺序
+10.  `U` 优化 编辑器全局搜索时默认不搜索 node_modules 目录
+11.  `F` 修复 云函数上传时没有保留源文件的操作权限的问题
+12.  `F` 修复 云开发控制台云函数测试中带有中文会调用失败的问题
+13.  `F` 修复 云开发控制台中添加 bool 数据类型异常的问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000480b36101a07b1a672cd2451400)
+14.  `F` 修复 上传云函数上传失败会报 `AuthFailure.TokenFailure` 的问题
+15.  `F` 修复 多帐号调试时 tabBar 图标不显示的问题
+16.  `F` 修复 `wx.getImageInfo` orientation 与客户端不一致的问题
+17.  `F` 修复 小游戏触摸事件中 Touch 对象与客户端不一致的问题
+18.  `F` 修复 开发者工具 offline 模拟时， `<web-view />` 组件还能发起请求的问题
+19.  `F` 修复 小游戏 `fs.readdir` 提示 `permission denied` 的问题
+20.  `F` 修复 CLI/HTTP 调用返回的 JSON 结果在浏览器显示乱码的问题
+21.  `F` 修复 预览二维码没有居中的问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000ae67cdd8b00529c571593951800)
+
 ### 2018.09.11
+
+[windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki&download_version=1021809111&version_type=1) 、 [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki&download_version=1021809111&version_type=1) 、 [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki&download_version=1021809111&version_type=1)
 
 1.  `F` 修复 1.02.1809101 版本在32位 windows 机器出现 wxml 编译失败导致异常的问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000e6086cb49f86d8757f244a51000)
 
@@ -174,9 +199,9 @@
 
 ### 2018.08.30
 
-1.  `A` 新增 版本管理 [详情](https://developers.weixin.qq.com/miniprogram/dev/devtools/git.html?t=18092022)
-2.  `A` 新增 体验评分 [详情](https://developers.weixin.qq.com/miniprogram/dev/devtools/audits.html?t=18092022)
-3.  `A` 新增 npm 支持 [详情](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html?t=18092022)
+1.  `A` 新增 版本管理 [详情](https://developers.weixin.qq.com/miniprogram/dev/devtools/git.html?t=18092618)
+2.  `A` 新增 体验评分 [详情](https://developers.weixin.qq.com/miniprogram/dev/devtools/audits.html?t=18092618)
+3.  `A` 新增 npm 支持 [详情](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html?t=18092618)
 4.  `A` 新增 英文版支持
 5.  `A` 新增 小程序分包预加载调试（需基础库2.3.0支持）
 6.  `A` 新增 小程序独立分包调试
@@ -184,7 +209,7 @@
 8.  `A` 新增 代码片段管理反选功能
 9.  `A` 新增 wxml 标签属性支持数字
 10.  `A` 新增 编辑器折叠所有文件夹功能
-11.  `A` 新增 项目配置支持 `debugOptions` 选项，可以隐藏指定源文件避免调试器不响应 [详情](https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html?t=18092022#debugOptions)
+11.  `A` 新增 项目配置支持 `debugOptions` 选项，可以隐藏指定源文件避免调试器不响应 [详情](https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html?t=18092618#debugOptions)
 12.  `F` 修复 部分 windows 机器无法启动开发工具的问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/0004c4298740e81bb127d41e954400)
 13.  `F` 修复 模拟器独立窗口后，最小化工具界面，页面刷新/切换后不渲染的问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000446757083286669f68863251400)
 14.  `F` 修复 tabBar 图标失效的问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/00062ec12788c8a36b47c845d56000)
@@ -545,7 +570,7 @@
 ### 2017.10.16
 
 1.  `F`: 修复 `wx.canvasToTempFilePath` 出错的问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/ca4670585cd9574e83fded98fb21f7c4)
-2.  `F`: 修复 创建项目时， `project.config.json` 没有兼容旧版 svr/client 字段的问题，新字段为 [qcloudRoot/miniprogramRoot](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/edit.html?t=18092022#%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
+2.  `F`: 修复 创建项目时， `project.config.json` 没有兼容旧版 svr/client 字段的问题，新字段为 [qcloudRoot/miniprogramRoot](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/edit.html?t=18092618#%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
 3.  `F`: 修复 `image` 组件 `src` 为空时有 404 提示的问题
 
 ### 2017.10.13
@@ -674,7 +699,7 @@
 
 1.  `A` 新增 申请测试报告功能 [详情](monkey-test.html)
 2.  `A` 新增 `WXS` 功能 [详情](../framework/view/wxs/index.html)
-3.  `A` 新增 发布腾讯云功能 [详情](https://mp.weixin.qq.com/debug/wxadoc/introduction/qcloud.html?t=18092022)
+3.  `A` 新增 发布腾讯云功能 [详情](https://mp.weixin.qq.com/debug/wxadoc/introduction/qcloud.html?t=18092618)
 4.  `U` 优化 全新的视觉和交互体验
 5.  `U` 优化 更新内核版本
 
@@ -1082,6 +1107,6 @@
 
 </div>
 
-[](./beta.html)</div>
+[](./download.html)</div>
 
 </div>

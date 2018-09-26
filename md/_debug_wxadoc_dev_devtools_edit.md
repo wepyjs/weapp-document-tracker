@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092022)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092022)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092022)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092618)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092618)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092618)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092022)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092022)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092022)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092618)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092618)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092618)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092022)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092022)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092618)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092618)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/edit.html?t=18092022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/edit.html?t=18092022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/edit.html?t=18092618)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/edit.html?t=18092618)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/edit.html?t=18092022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/edit.html?t=18092022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/edit.html?t=18092618)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/edit.html?t=18092618)
 
 </div>
 
@@ -127,7 +127,6 @@
 *   [云测试](./monkey-test.html)
 *   [API 实现差异](./notsupport.html)
 *   [下载](./download.html)
-*   [Beta 版下载](./beta.html)
 *   [历史更新日志](./uplog.html)
 
 </nav>
@@ -190,19 +189,19 @@
 
 js 补全
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/jsautocomplete2.gif?t=18092022)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/jsautocomplete2.gif?t=18092618)
 
 代码模板支持
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/jsautocomplete.gif?t=18092022)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/jsautocomplete.gif?t=18092618)
 
 json 补全
 
-![3](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/jsoncomplete.gif?t=18092022)
+![3](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/jsoncomplete.gif?t=18092618)
 
 wxml 补全
 
-![3](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/edit4.gif?t=18092022)
+![3](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/edit4.gif?t=18092618)
 
 ## Git 状态展示
 
@@ -214,7 +213,7 @@ wxml 补全
 
 文件图标状态的含义如下：
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/directory.jpg?t=18092022)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/directory.jpg?t=18092618)
 
 <table>
 
@@ -340,19 +339,19 @@ wxml 补全
 
 如果某一文件存在修改（Modified），可以右键点击此文件，并选择 “与上一版本比较”，则可以查看当前工作区文件与 HEAD 版本的比较。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/contextmenu.jpg?t=18092022)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/contextmenu.jpg?t=18092618)
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/diff.jpg?t=18092022)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/diff.jpg?t=18092618)
 
 ### 文件编辑
 
 存在 Git 仓库时，状态栏会展示此 Git 仓库目前的分支信息。例如，下图表明目前 Git 仓库处于 `v2` 分支。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/statusbar.jpg?t=18092022)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/statusbar.jpg?t=18092618)
 
 同时，编辑文件内容时，将会在所编辑代码左侧实时显示相对于上一版本内容的比较。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/linediff.jpg?t=18092022)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/linediff.jpg?t=18092618)
 
 样式说明如下：
 
@@ -408,7 +407,7 @@ wxml 补全
 
 勾选后，在编辑文件进行内容比较时，所有 Windows 风格的回车符将被当作 Unix 风格的回车符对待。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/windowsreturnsettings.jpg?t=18092022)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/windowsreturnsettings.jpg?t=18092618)
 
 </section>
 
