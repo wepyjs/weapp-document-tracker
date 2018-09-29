@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18083022)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18083022)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18083022)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090714)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18090714)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18090714)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18083022)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18083022)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18083022)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18090714)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18090714)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18090714)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18083022)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18083022)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090714)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18090714)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/ui-tabbar.html?t=18083022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/ui-tabbar.html?t=18083022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/ui-tabbar.html?t=18090714)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/ui-tabbar.html?t=18090714)
 
 </div>
 
@@ -60,8 +60,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/ui-tabbar.html?t=18083022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/ui-tabbar.html?t=18083022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/ui-tabbar.html?t=18090714)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/ui-tabbar.html?t=18090714)
 
 </div>
 
@@ -398,7 +398,7 @@
         *   [wx.login](./api-login.html#wxloginobject)
         *   [wx.checkSession](./signature.html#wxchecksessionobject)
         *   [签名加密](./signature.html)
-    *   [授权](./authorize-index.html)
+    *   [授权](./authorize-)
         *   [wx.authorize](./authorize.html)
     *   [用户信息](./open.html)
         *   [wx.getUserInfo](./open.html#wxgetuserinfoobject)
@@ -412,6 +412,7 @@
         *   [使用说明](./notice.html#使用说明)
         *   [模版消息管理](./notice.html#模版消息管理)
         *   [发送模板消息](./notice.html#发送模板消息)
+    *   [统一服务消息](./notice-uniform.html)
     *   [客服消息](./custommsg/receive.html)
         *   [接收消息和事件](./custommsg/receive.html#接收消息和事件)
             *   [文本消息](./custommsg/receive.html#文本消息)
@@ -510,7 +511,7 @@
 
 ### wx.setTabBarBadge(OBJECT)
 
-> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 为 tabBar 某一项的右上角添加文本
 
@@ -609,7 +610,7 @@
 
 ### wx.removeTabBarBadge(OBJECT)
 
-> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 移除 tabBar 某一项右上角的文本
 
@@ -689,7 +690,7 @@
 
 ### wx.showTabBarRedDot(OBJECT)
 
-> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 显示 tabBar 某一项的右上角的红点
 
@@ -769,7 +770,7 @@
 
 ### wx.hideTabBarRedDot(OBJECT)
 
-> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 隐藏 tabBar 某一项的右上角的红点
 
@@ -849,7 +850,7 @@
 
 ### onTabItemTap
 
-> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 点击 tab 时触发，见 [链接](../framework/app-service/page.html)
 
@@ -865,7 +866,7 @@
 
 ### wx.setTabBarStyle(OBJECT)
 
-> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 动态设置 tabBar 的整体样式
 
@@ -974,7 +975,7 @@
 
 ### wx.setTabBarItem(OBJECT)
 
-> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 动态设置 tabBar 某一项的内容
 
@@ -1099,7 +1100,7 @@
 
 ### wx.showTabBar(OBJECT)
 
-> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 显示 tabBar
 
@@ -1179,7 +1180,7 @@
 
 ### wx.hideTabBar(OBJECT)
 
-> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.9.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 隐藏 tabBar
 

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092610)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092610)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092610)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092914)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092914)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092914)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092610)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092610)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092610)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092914)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092914)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092914)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092610)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092610)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092914)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092914)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/performance/tools.html?t=18092610)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/performance/tools.html?t=18092610)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/performance/tools.html?t=18092914)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/performance/tools.html?t=18092914)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/performance/tools.html?t=18092610)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/performance/tools.html?t=18092610)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/performance/tools.html?t=18092914)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/performance/tools.html?t=18092914)
 
 </div>
 
@@ -216,13 +216,13 @@
 
 > 可以通过 `adb devices` 命令确定设备是否已和 PC 建立起连接
 
-![image](https://developers.weixin.qq.com/miniprogram/dev/image/performance/trace-tool.png?t=18092610)
+![image](https://developers.weixin.qq.com/miniprogram/dev/image/performance/trace-tool.png?t=18092914)
 
 # 性能面板
 
 从微信 6.5.8 开始，我们提供了性能面板让开发者了解小程序的性能。开发者可以在开发版小程序下打开性能面板，打开方法：进入开发版小程序，进入右上角更多按钮，点击「显示性能窗口」。
 
-![image](https://developers.weixin.qq.com/miniprogram/dev/image/performance/panel.jpg?t=18092610)
+![image](https://developers.weixin.qq.com/miniprogram/dev/image/performance/panel.jpg?t=18092914)
 
 ## 性能面板指标说明
 

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18083022)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18083022)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18083022)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090714)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18090714)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18090714)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18083022)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18083022)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18083022)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18090714)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18090714)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18090714)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18083022)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18083022)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090714)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18090714)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/getPhoneNumber.html?t=18083022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/getPhoneNumber.html?t=18083022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/getPhoneNumber.html?t=18090714)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/getPhoneNumber.html?t=18090714)
 
 </div>
 
@@ -60,8 +60,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/getPhoneNumber.html?t=18083022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/getPhoneNumber.html?t=18083022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/getPhoneNumber.html?t=18090714)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/getPhoneNumber.html?t=18090714)
 
 </div>
 
@@ -398,7 +398,7 @@
         *   [wx.login](./api-login.html#wxloginobject)
         *   [wx.checkSession](./signature.html#wxchecksessionobject)
         *   [签名加密](./signature.html)
-    *   [授权](./authorize-index.html)
+    *   [授权](./authorize-)
         *   [wx.authorize](./authorize.html)
     *   [用户信息](./open.html)
         *   [wx.getUserInfo](./open.html#wxgetuserinfoobject)
@@ -412,6 +412,7 @@
         *   [使用说明](./notice.html#使用说明)
         *   [模版消息管理](./notice.html#模版消息管理)
         *   [发送模板消息](./notice.html#发送模板消息)
+    *   [统一服务消息](./notice-uniform.html)
     *   [客服消息](./custommsg/receive.html)
         *   [接收消息和事件](./custommsg/receive.html#接收消息和事件)
             *   [文本消息](./custommsg/receive.html#文本消息)
@@ -512,7 +513,7 @@
 
 ## 说明
 
-获取微信用户绑定的手机号，需先调用[login](https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html?t=18083022#wxloginobject)接口。
+获取微信用户绑定的手机号，需先调用[login](https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html?t=18082915#wxloginobject)接口。
 
 因为需要用户主动触发才能发起获取手机号接口，所以该功能不由 API 来调用，需用 `<button>` 组件的点击来触发。
 
@@ -564,7 +565,7 @@
 
 <td>String</td>
 
-<td>包括敏感数据在内的完整用户信息的加密数据，详细见[加密数据解密算法](https://mp.weixin.qq.com/debug/wxadoc/dev/api/signature.html?t=18083022#%E5%8A%A0%E5%AF%86%E6%95%B0%E6%8D%AE%E8%A7%A3%E5%AF%86%E7%AE%97%E6%B3%95)</td>
+<td>包括敏感数据在内的完整用户信息的加密数据，详细见[加密数据解密算法](https://mp.weixin.qq.com/debug/wxadoc/dev/api/signature.html?t=18082915#%E5%8A%A0%E5%AF%86%E6%95%B0%E6%8D%AE%E8%A7%A3%E5%AF%86%E7%AE%97%E6%B3%95)</td>
 
 </tr>
 
@@ -574,7 +575,7 @@
 
 <td>String</td>
 
-<td>加密算法的初始向量，详细见[加密数据解密算法](https://mp.weixin.qq.com/debug/wxadoc/dev/api/signature.html?t=18083022#%E5%8A%A0%E5%AF%86%E6%95%B0%E6%8D%AE%E8%A7%A3%E5%AF%86%E7%AE%97%E6%B3%95)</td>
+<td>加密算法的初始向量，详细见[加密数据解密算法](https://mp.weixin.qq.com/debug/wxadoc/dev/api/signature.html?t=18082915#%E5%8A%A0%E5%AF%86%E6%95%B0%E6%8D%AE%E8%A7%A3%E5%AF%86%E7%AE%97%E6%B3%95)</td>
 
 </tr>
 
@@ -582,7 +583,7 @@
 
 </table>
 
-encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](https://mp.weixin.qq.com/debug/wxadoc/dev/api/signature.html?t=18083022#%E5%8A%A0%E5%AF%86%E6%95%B0%E6%8D%AE%E8%A7%A3%E5%AF%86%E7%AE%97%E6%B3%95)
+encryptedData 解密后为以下 json 结构，详见[加密数据解密算法](https://mp.weixin.qq.com/debug/wxadoc/dev/api/signature.html?t=18082915#%E5%8A%A0%E5%AF%86%E6%95%B0%E6%8D%AE%E8%A7%A3%E5%AF%86%E7%AE%97%E6%B3%95)
 
     {
         "phoneNumber": "13580006666",  

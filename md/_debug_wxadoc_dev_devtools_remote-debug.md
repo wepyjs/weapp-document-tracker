@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092618)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092618)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092618)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092914)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092914)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092914)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092618)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092618)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092618)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092914)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092914)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092914)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092618)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092618)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092914)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092914)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/remote-debug.html?t=18092618)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/remote-debug.html?t=18092618)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/remote-debug.html?t=18092914)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/remote-debug.html?t=18092914)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/remote-debug.html?t=18092618)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/remote-debug.html?t=18092618)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/remote-debug.html?t=18092914)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/remote-debug.html?t=18092914)
 
 </div>
 
@@ -155,7 +155,7 @@
 
 要发起一个真机远程调试流程，需要先点击开发者工具的工具栏上 “远程调试” 按钮。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/button.jpg?t=18092618)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/button.jpg?t=18092914)
 
 此时，工具会将本地代码进行处理打包并上传，就绪之后，使用手机客户端扫描二维码即可弹出调试窗口，开始远程调试。
 
@@ -165,7 +165,7 @@
 
 要结束调试，直接关闭此调试窗口，或点击右下角 “结束调试” 按钮即可。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/window.jpg?t=18092618)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/window.jpg?t=18092914)
 
 远程调试窗口分为两部分，分别是左侧的调试器视图、右侧的信息视图。开发者可以在调试器里直接进行代码的调试，并查看 Storage 情况；信息视图则可以查看目前与手机和服务器的连接情况，以及发生的错误信息等。
 
@@ -173,29 +173,29 @@
 
 在远程调试的调试器里，开发者可以在 Console 面板里对代码进行调试，在 Sources 面板里查看小程序的源代码并进行断点单步调试，在 Storage 面板里查看小程序的 Storage 使用情况等。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/console.jpg?t=18092618)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/console.jpg?t=18092914)
 
 注意，要在 Console 里对小程序进行调试，需要将调试的上下文切换到 VM Context 1，如图所示。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/context.jpg?t=18092618)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/context.jpg?t=18092914)
 
 在 Sources 面板查看源代码时，开发者所有的文件路径都是以 `weapp://` 开头的。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/sources.jpg?t=18092618)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/sources.jpg?t=18092914)
 
 除了可以在调试器进行单步调试，开发者还能在代码中手动插入 `debugger;` 语句进行断点调试。因此，如果想要在小程序启动的尽早时刻断点，可以在进入远程调试之前，编辑代码手动在需要断点处的代码插入 `debugger;` 语句来实现。
 
 WXML、AppData、Storage 面板的操作和开发者工具调试模拟器时的操作一致。注意，如果在右侧信息视图取消勾选了 “使用工具端的 Storage”，则所有的 Storage 数据将被存储在手机上，将不再出现 Storage 面板。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/storage.jpg?t=18092618)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/storage.jpg?t=18092914)
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/appdata.jpg?t=18092618)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/appdata.jpg?t=18092914)
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/wxml.jpg?t=18092618)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/wxml.jpg?t=18092914)
 
 ### 信息视图
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/info.jpg?t=18092618)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/info.jpg?t=18092914)
 
 右侧的信息视图展示了手机、网络连接的信息。手机信息展示手机的型号、系统、名称、微信版本等信息，以及通信延时。通信延时越小，与手机的通信越流畅。
 
@@ -209,7 +209,7 @@ WXML、AppData、Storage 面板的操作和开发者工具调试模拟器时的�
 
 > 当手机无网络或者进入了断点状态时，将会出现一个浮层提示并阻止进一步的操作。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/iphone.jpg?t=18092618)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/iphone.jpg?t=18092914)
 
 ## 小游戏远程调试
 
@@ -221,7 +221,7 @@ WXML、AppData、Storage 面板的操作和开发者工具调试模拟器时的�
 
 > 注：目前尚不支持 Storage 面板。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/game-debug-opts.jpg?t=18092618)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/remote-debug/game-debug-opts.jpg?t=18092914)
 
 </section>
 

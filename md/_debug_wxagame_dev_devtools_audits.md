@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092618)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092618)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092618)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092914)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092914)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092914)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092618)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092618)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092618)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092914)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092914)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092914)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092618)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092618)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092914)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092914)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/audits.html?t=18092618)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/audits.html?t=18092618)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/audits.html?t=18092914)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/audits.html?t=18092914)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/audits.html?t=18092618)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/audits.html?t=18092618)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/audits.html?t=18092914)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/audits.html?t=18092914)
 
 </div>
 
@@ -161,7 +161,7 @@
 3.  点击左上角”开始“按钮（见下图），然后自行操作小程序界面，运行过的页面就会被“体验评分”检测到
 4.  点击“Stop"停止分析，就会看到一份分析报告，之后便可根据分析报告进行相关优化
 
-![audits](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/audits.png?t=18092618)
+![audits](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/audits.png?t=18092914)
 
 </section>
 

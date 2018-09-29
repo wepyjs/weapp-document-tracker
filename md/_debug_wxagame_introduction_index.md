@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [小程序介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090718)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18090718)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18090718)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092711)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092711)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092711)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18090718)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18090718)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18090718)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092711)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092711)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092711)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090718)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18090718)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092711)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092711)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090718)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/index.html?t=18090718)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092711)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/index.html?t=18092711)
 
 </div>
 
@@ -57,8 +57,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090718)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/index.html?t=18090718)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092711)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/index.html?t=18092711)
 
 </div>
 
@@ -96,7 +96,7 @@
         *   [测试帐号](.#测试帐号)
         *   [完成提交](.#完成提交)
         *   [代码发布](.#代码发布)
-*   [开发者工具的使用](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html?t=18090718)
+*   [开发者工具的使用](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html?t=18092711)
 *   [小程序申请微信认证](.#小程序申请微信认证)
 *   [小程序申请微信支付](.#小程序申请微信支付)
 *   [小程序绑定微信开放平台帐号](.#小程序绑定微信开放平台帐号)
@@ -130,7 +130,7 @@
 
 在微信公众平台官网首页（[mp.weixin.qq.com](https://mp.weixin.qq.com/)）点击右上角的“立即注册”按钮。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/a.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/a.png?t=18092711)
 
 ## 选择注册的帐号类型
 
@@ -150,7 +150,7 @@
 
 ### 选择主体类型
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/03271.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/03271.png?t=18092711)
 
 主体类型说明如下：
 
@@ -228,23 +228,23 @@
     *   方式一：需要用公司的对公账户向腾讯公司打款来验证主体身份。打款信息在提交主体信息后可以查看到。
     *   方式二：通过微信认证验证主体身份，需支付300元认证费。认证通过前，小程序部分功能暂无法使用。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/2.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/2.png?t=18092711)
 
 *   政府、媒体、其他组织类型帐号，必须通过微信认证验证主体身份。认证通过前，小程序部分功能暂无法使用。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/3.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/3.png?t=18092711)
 
 *   微信认证入口：登录小程序 - 设置 - 微信认证详情
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/w.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/w.png?t=18092711)
 
 ### 填写管理员信息
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/4.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/4.png?t=18092711)
 
 ### 确认主体信息不可变更
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/5.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/5.png?t=18092711)
 
 ### 点击确认完成注册流程
 
@@ -252,7 +252,7 @@
 
 **注意：请在10天内完成汇款，否则将注册失败。**
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/6.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/6.png?t=18092711)
 
 选择通过微信认证验证主体身份的用户，完成注册流程后请尽快进行微信认证，认证完成之前部分功能暂不可使用。
 
@@ -262,7 +262,7 @@
 
 完成注册后，在微信公众平台官网首页（[mp.weixin.qq.com](https://mp.weixin.qq.com/)）的登录入口直接登录。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/a.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/a.png?t=18092711)
 
 ## 完善小程序信息
 
@@ -270,23 +270,23 @@
 
 选择对公打款的用户，完成汇款验证后，可以补充小程序名称信息，上传小程序头像，填写小程序介绍并选择服务范围。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/u.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/u.png?t=18092711)
 
-选择通过微信认证验证主体身份的用户，需先完成微信认证后，才可以补充小程序名称信息，上传小程序头像，填写小程序介绍并选择服务范围。 ![](https://developers.weixin.qq.com/miniprogram/introduction/image/7.png?t=18090718)
+选择通过微信认证验证主体身份的用户，需先完成微信认证后，才可以补充小程序名称信息，上传小程序头像，填写小程序介绍并选择服务范围。 ![](https://developers.weixin.qq.com/miniprogram/introduction/image/7.png?t=18092711)
 
 ## 小程序开放的服务类目
 
 ### 非个人主体小程序开放的服务类目
 
-非个人主体类型小程序，可参考当前已开放的服务类目[小程序开放的服务类目-非个人主体](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18090718#%E9%9D%9E%E4%B8%AA%E4%BA%BA%E4%B8%BB%E4%BD%93%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E6%94%BE%E7%9A%84%E6%9C%8D%E5%8A%A1%E7%B1%BB%E7%9B%AE)
+非个人主体类型小程序，可参考当前已开放的服务类目[小程序开放的服务类目-非个人主体](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18092711#%E9%9D%9E%E4%B8%AA%E4%BA%BA%E4%B8%BB%E4%BD%93%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E6%94%BE%E7%9A%84%E6%9C%8D%E5%8A%A1%E7%B1%BB%E7%9B%AE)
 
 ### 个人主体小程序开放的服务类目
 
-非个人主体类型小程序，可参考当前已开放的服务类目[小程序开放的服务类目-个人主体](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18090718#%E4%B8%AA%E4%BA%BA%E4%B8%BB%E4%BD%93%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E6%94%BE%E7%9A%84%E6%9C%8D%E5%8A%A1%E7%B1%BB%E7%9B%AE)
+个人主体类型小程序，可参考当前已开放的服务类目[小程序开放的服务类目-个人主体](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18092711#%E4%B8%AA%E4%BA%BA%E4%B8%BB%E4%BD%93%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E6%94%BE%E7%9A%84%E6%9C%8D%E5%8A%A1%E7%B1%BB%E7%9B%AE)
 
 ### 海外主体小程序开放的服务类目
 
-非个人主体类型小程序，可参考当前已开放的服务类目[小程序开放的服务类目-海外外主体](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18090718#%E6%B5%B7%E5%A4%96%E4%B8%BB%E4%BD%93%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E6%94%BE%E7%9A%84%E6%9C%8D%E5%8A%A1%E7%B1%BB%E7%9B%AE)
+海外主体类型小程序，可参考当前已开放的服务类目[小程序开放的服务类目-海外外主体](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18092711#%E6%B5%B7%E5%A4%96%E4%B8%BB%E4%BD%93%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E6%94%BE%E7%9A%84%E6%9C%8D%E5%8A%A1%E7%B1%BB%E7%9B%AE)
 
 ## 开发前准备
 
@@ -300,15 +300,15 @@
 
 已认证的小程序最多可绑定20个开发者，40个体验者。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/g.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/g.png?t=18092711)
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/h.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/h.png?t=18092711)
 
 ### 获取AppID
 
 进入“设置-开发设置”，获取AppID信息。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/i.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/i.png?t=18092711)
 
 # 代码审核与发布
 
@@ -316,7 +316,7 @@
 
 登录微信公众平台小程序，进入开发管理，开发版本中展示已上传的代码，管理员可提交审核或是删除代码。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/q.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/q.png?t=18092711)
 
 ## 审核信息填写
 
@@ -324,23 +324,23 @@
 
 填写重要业务页面的类目与标签，重要业务页面组数不多于5组。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/s.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/s.png?t=18092711)
 
 ### 测试帐号
 
 当小程序需要开发者提供测试帐号才能完成审核体验时，小程序在首次提交审核时将被打回，再次提交审核时将开放提供测试帐号的入口，该入口将由开发者提供帐号给微信审核人员审核微信小程序时登录使用。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/03272.jpg?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/03272.jpg?t=18092711)
 
 ### 完成提交
 
 提交审核完成后，开发管理页中审核版本模块展示审核进度。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/t.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/t.png?t=18092711)
 
 **提示：**
 
-*   开发者可参考[《微信小程序平台常见拒绝情形》](https://developers.weixin.qq.com/miniprogram/product/reject.html?t=18090718)，详细了解审核标准。
+*   开发者可参考[《微信小程序平台常见拒绝情形》](https://developers.weixin.qq.com/miniprogram/product/reject.html?t=18092711)，详细了解审核标准。
 
 ### 代码发布
 
@@ -358,13 +358,13 @@
 
 认证入口：登录小程序—设置—基本设置—微信认证—详情
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/x.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/x.png?t=18092711)
 
 # 小程序申请微信支付
 
 已认证的小程序可申请微信支付。
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/y.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/y.png?t=18092711)
 
 # 小程序绑定微信开放平台帐号
 
@@ -376,7 +376,7 @@
 
 **绑定小程序流程说明**：登录微信开放平台（[open.weixin.qq.com](https://open.weixin.qq.com/)）—管理中心—公众帐号—绑定公众帐号
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/z.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/z.png?t=18092711)
 
 注意：微信开放平台帐号必须完成开发者资质认证才可以绑定小程序。
 
@@ -395,9 +395,9 @@
 
 登录公众号后台-小程序-小程序管理-添加-关联小程序
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/06211.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/06211.png?t=18092711)
 
-![](https://developers.weixin.qq.com/miniprogram/introduction/image/06212.png?t=18090718)
+![](https://developers.weixin.qq.com/miniprogram/introduction/image/06212.png?t=18092711)
 
 </section>
 

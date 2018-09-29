@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092610)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092610)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092610)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092914)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092914)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092914)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092610)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092610)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092610)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092914)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092914)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092914)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092610)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092610)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092914)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092914)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/framework.html?t=18092610)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/quickstart/basic/framework.html?t=18092610)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/framework.html?t=18092914)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/quickstart/basic/framework.html?t=18092914)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/framework.html?t=18092610)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/quickstart/basic/framework.html?t=18092610)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/framework.html?t=18092914)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/quickstart/basic/framework.html?t=18092914)
 
 </div>
 
@@ -196,8 +196,8 @@
     wx.getLocation({
       type: 'wgs84',
       success: (res) => {
-        var latitude = res.latitude // 经度
-        var longitude = res.longitude // 纬度
+        var latitude = res.latitude // 纬度
+        var longitude = res.longitude // 经度
       }
     })
 

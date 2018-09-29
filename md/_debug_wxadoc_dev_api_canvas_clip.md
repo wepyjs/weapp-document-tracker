@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18083022)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18083022)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18083022)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090714)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18090714)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18090714)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18083022)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18083022)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18083022)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18090714)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18090714)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18090714)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18083022)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18083022)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090714)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18090714)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/clip.html?t=18083022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/clip.html?t=18083022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/clip.html?t=18090714)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/clip.html?t=18090714)
 
 </div>
 
@@ -60,8 +60,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/clip.html?t=18083022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/clip.html?t=18083022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/clip.html?t=18090714)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/clip.html?t=18090714)
 
 </div>
 
@@ -398,7 +398,7 @@
         *   [wx.login](../api-login.html#wxloginobject)
         *   [wx.checkSession](../signature.html#wxchecksessionobject)
         *   [签名加密](../signature.html)
-    *   [授权](../authorize-index.html)
+    *   [授权](../authorize-)
         *   [wx.authorize](../authorize.html)
     *   [用户信息](../open.html)
         *   [wx.getUserInfo](../open.html#wxgetuserinfoobject)
@@ -412,6 +412,7 @@
         *   [使用说明](../notice.html#使用说明)
         *   [模版消息管理](../notice.html#模版消息管理)
         *   [发送模板消息](../notice.html#发送模板消息)
+    *   [统一服务消息](../notice-uniform.html)
     *   [客服消息](../custommsg/receive.html)
         *   [接收消息和事件](../custommsg/receive.html#接收消息和事件)
             *   [文本消息](../custommsg/receive.html#文本消息)
@@ -510,7 +511,7 @@
 
 # canvasContext.clip
 
-> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../../framework/compatibility.html)。
+> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../../framework/compatibility.html)
 
 ### 定义
 
@@ -533,7 +534,7 @@ clip() 方法从原始画布中剪切任意形状和尺寸。一旦剪切了某�
       }
     })
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/clip.png?t=18083022)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/clip.png?t=18082915)
 
 </section>
 

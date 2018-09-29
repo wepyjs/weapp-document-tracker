@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18083022)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18083022)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18083022)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090714)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18090714)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18090714)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18083022)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18083022)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18083022)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18090714)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18090714)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18090714)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18083022)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18083022)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090714)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18090714)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/bluetooth.html?t=18083022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/bluetooth.html?t=18083022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/bluetooth.html?t=18090714)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/bluetooth.html?t=18090714)
 
 </div>
 
@@ -60,8 +60,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/bluetooth.html?t=18083022)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/bluetooth.html?t=18083022)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/bluetooth.html?t=18090714)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/bluetooth.html?t=18090714)
 
 </div>
 
@@ -398,7 +398,7 @@
         *   [wx.login](./api-login.html#wxloginobject)
         *   [wx.checkSession](./signature.html#wxchecksessionobject)
         *   [签名加密](./signature.html)
-    *   [授权](./authorize-index.html)
+    *   [授权](./authorize-)
         *   [wx.authorize](./authorize.html)
     *   [用户信息](./open.html)
         *   [wx.getUserInfo](./open.html#wxgetuserinfoobject)
@@ -412,6 +412,7 @@
         *   [使用说明](./notice.html#使用说明)
         *   [模版消息管理](./notice.html#模版消息管理)
         *   [发送模板消息](./notice.html#发送模板消息)
+    *   [统一服务消息](./notice-uniform.html)
     *   [客服消息](./custommsg/receive.html)
         *   [接收消息和事件](./custommsg/receive.html#接收消息和事件)
             *   [文本消息](./custommsg/receive.html#文本消息)
@@ -516,7 +517,7 @@
 
 ### wx.openBluetoothAdapter(OBJECT)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 初始化小程序蓝牙模块，生效周期为调用`wx.openBluetoothAdapter`至调用`wx.closeBluetoothAdapter`或小程序被销毁为止。 在小程序蓝牙适配器模块生效期间，开发者可以正常调用下面的小程序API，并会收到蓝牙模块相关的on回调。
 
@@ -599,7 +600,7 @@
 
 ### wx.closeBluetoothAdapter(OBJECT)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 关闭蓝牙模块，使其进入未初始化状态。调用该方法将断开所有已建立的链接并释放系统资源。建议在使用小程序蓝牙流程后调用，与`wx.openBluetoothAdapter`成对调用。
 
@@ -677,7 +678,7 @@
 
 ### wx.getBluetoothAdapterState(OBJECT)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 获取本机蓝牙适配器状态
 
@@ -809,7 +810,7 @@
 
 ### wx.onBluetoothAdapterStateChange(CALLBACK)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 监听蓝牙适配器状态变化事件
 
@@ -867,7 +868,7 @@
 
 ### wx.startBluetoothDevicesDiscovery(OBJECT)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 开始搜寻附近的蓝牙外围设备。注意，该操作比较耗费系统资源，请在搜索并连接到设备后调用 stop 方法停止搜索。
 
@@ -1019,7 +1020,7 @@
 
 ### wx.stopBluetoothDevicesDiscovery(OBJECT)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 停止搜寻附近的蓝牙外围设备。若已经找到需要的蓝牙设备并不需要继续搜索时，建议调用该接口停止蓝牙搜索。
 
@@ -1131,7 +1132,7 @@
 
 ### wx.getBluetoothDevices(OBJECT)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 获取在小程序蓝牙模块生效期间所有已发现的蓝牙设备，包括已经和本机处于连接状态的设备。
 
@@ -1369,7 +1370,7 @@
 
 ### wx.onBluetoothDeviceFound(CALLBACK)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 监听寻找到新设备的事件
 
@@ -1531,7 +1532,7 @@
 
 ### wx.getConnectedBluetoothDevices(OBJECT)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 根据 uuid 获取处于已连接状态的设备
 
@@ -1717,7 +1718,7 @@
 
 ### wx.createBLEConnection(OBJECT)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 连接低功耗蓝牙设备。
 
@@ -1863,7 +1864,7 @@
 
 ### wx.closeBLEConnection(OBJECT)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 断开与低功耗蓝牙设备的连接
 
@@ -1988,7 +1989,7 @@
 
 ### wx.onBLEConnectionStateChange(CALLBACK)
 
-> 基础库 1.1.1 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.1 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 监听低功耗蓝牙连接状态的改变事件，包括开发者主动连接或断开连接，设备丢失，连接异常断开等等
 
@@ -2047,7 +2048,7 @@
 
 ### wx.getBLEDeviceServices(OBJECT)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 获取蓝牙设备所有 service（服务）
 
@@ -2233,7 +2234,7 @@
 
 ### wx.getBLEDeviceCharacteristics(OBJECT)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 获取蓝牙设备某个服务中的所有 characteristic（特征值）
 
@@ -2498,7 +2499,7 @@
 
 ### wx.readBLECharacteristicValue(OBJECT)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 读取低功耗蓝牙设备的特征值的二进制数据值。注意：必须设备的特征值支持`read`才可以成功调用，具体参照 characteristic 的 properties 属性
 
@@ -2672,7 +2673,7 @@
 
 ### wx.writeBLECharacteristicValue(OBJECT)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 向低功耗蓝牙设备特征值中写入二进制数据。注意：必须设备的特征值支持`write`才可以成功调用，具体参照 characteristic 的 properties 属性
 
@@ -2854,7 +2855,7 @@ _tips: 并行调用多次读写接口存在读写失败的可能性_
 
 ### wx.notifyBLECharacteristicValueChange(OBJECT)
 
-> 基础库 1.1.1 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.1 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 启用低功耗蓝牙设备特征值变化时的 notify 功能，订阅特征值。注意：必须设备的特征值支持`notify`或者`indicate`才可以成功调用，具体参照 characteristic 的 properties 属性
 
@@ -3028,7 +3029,7 @@ _tips: 并行调用多次读写接口存在读写失败的可能性_
 
 ### wx.onBLECharacteristicValueChange(CALLBACK)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
 
 监听低功耗蓝牙设备的特征值变化。必须先启用`notify`接口才能接收到设备推送的notification。
 
