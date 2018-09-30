@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090714)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18090714)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18090714)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18093017)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18093017)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18093017)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18090714)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18090714)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18090714)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18093017)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18093017)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18093017)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090714)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18090714)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18093017)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18093017)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/navigateToMiniProgram.html?t=18090714)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/navigateToMiniProgram.html?t=18090714)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/navigateToMiniProgram.html?t=18093017)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/navigateToMiniProgram.html?t=18093017)
 
 </div>
 
@@ -50,7 +50,6 @@
 *   [API](.)
 *   [工具](../devtools/devtools.html)
 *   [小程序·云开发](../wxcloud/basis/getting-started.html)
-*   [腾讯云支持](../qcloud/qcloud.html)
 
 </div>
 
@@ -60,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/navigateToMiniProgram.html?t=18090714)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/navigateToMiniProgram.html?t=18090714)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/navigateToMiniProgram.html?t=18093017)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/navigateToMiniProgram.html?t=18093017)
 
 </div>
 
@@ -511,11 +510,11 @@
 
 ### wx.navigateToMiniProgram(OBJECT)
 
-> 基础库 1.3.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+> 基础库 1.3.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
 
 > 此接口即将废弃，请使用 [<navigator>](../component/navigator.html) 组件来使用此功能
 
-打开同一公众号下关联的另一个小程序。**（注：必须是同一公众号下，而非同个 open 账号下）**
+打开同一公众号下关联的另一个小程序。**（注：必须是同一公众号下，而非同个 open 帐号下）**
 
 **OBJECT参数说明：**
 
@@ -679,7 +678,7 @@
 
 1.  `tip`: 在开发者工具上调用此 API 并不会真实的跳转到另外的小程序，但是开发者工具会校验本次调用跳转是否成功[详情](../devtools/different.html#小程序跳转的调试支持)
 2.  `tip`: 开发者工具上支持被跳转的小程序处理接收参数的调试[详情](../devtools/different.html#小程序跳转的调试支持)
-3.  `tip`: 只有同一公众号下的关联的小程序之间才可相互跳转 [详情](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=18082915#%E5%85%AC%E4%BC%97%E5%8F%B7%E5%85%B3%E8%81%94%E5%B0%8F%E7%A8%8B%E5%BA%8F)
+3.  `tip`: 只有同一公众号下的关联的小程序之间才可相互跳转 [详情](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=18093017#%E5%85%AC%E4%BC%97%E5%8F%B7%E5%85%B3%E8%81%94%E5%B0%8F%E7%A8%8B%E5%BA%8F)
 
 </section>
 

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090714)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18090714)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18090714)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18093017)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18093017)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18093017)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18090714)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18090714)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18090714)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18093017)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18093017)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18093017)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090714)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18090714)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18093017)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18093017)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/monitor-report.html?t=18090714)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/monitor-report.html?t=18090714)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/monitor-report.html?t=18093017)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/monitor-report.html?t=18093017)
 
 </div>
 
@@ -50,7 +50,6 @@
 *   [API](.)
 *   [工具](../devtools/devtools.html)
 *   [小程序·云开发](../wxcloud/basis/getting-started.html)
-*   [腾讯云支持](../qcloud/qcloud.html)
 
 </div>
 
@@ -60,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/monitor-report.html?t=18090714)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/monitor-report.html?t=18090714)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/monitor-report.html?t=18093017)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/monitor-report.html?t=18093017)
 
 </div>
 
@@ -511,7 +510,7 @@
 
 ### wx.reportMonitor(name, value)
 
-> 基础库 2.0.1 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+> 基础库 2.0.1 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
 
 自定义业务数据监控上报接口。使用前，需要在小程序管理后台-运维中心-性能监控-业务数据监控中新建监控事件，配置监控描述与告警类型。每一个监控事件对应唯一的监控ID，开发者最多可以创建128个监控事件。
 

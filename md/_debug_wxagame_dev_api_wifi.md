@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090714)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18090714)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18090714)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18093017)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18093017)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18093017)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18090714)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18090714)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18090714)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18093017)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18093017)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18093017)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090714)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18090714)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18093017)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18093017)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/wifi.html?t=18090714)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/wifi.html?t=18090714)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/wifi.html?t=18093017)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/wifi.html?t=18093017)
 
 </div>
 
@@ -50,7 +50,6 @@
 *   [API](.)
 *   [工具](../devtools/devtools.html)
 *   [小程序·云开发](../wxcloud/basis/getting-started.html)
-*   [腾讯云支持](../qcloud/qcloud.html)
 
 </div>
 
@@ -60,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/wifi.html?t=18090714)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/wifi.html?t=18090714)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/wifi.html?t=18093017)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/wifi.html?t=18093017)
 
 </div>
 
@@ -532,7 +531,7 @@
 
 ### wx.startWifi(OBJECT)
 
-> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
 
 初始化 Wi-Fi 模块。
 
@@ -608,7 +607,7 @@
 
 ### wx.stopWifi(OBJECT)
 
-> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
 
 关闭 Wi-Fi 模块。
 
@@ -684,7 +683,7 @@
 
 ### wx.connectWifi(OBJECT)
 
-> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
 
 连接 Wi-Fi。若已知 Wi-Fi 信息，可以直接利用该接口连接。仅 Android 与 iOS 11 以上版本支持。
 
@@ -798,7 +797,7 @@
 
 ### wx.getWifiList(OBJECT)
 
-> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
 
 请求获取 Wi-Fi 列表，在 `onGetWifiList` 注册的回调中返回 wifiList 数据。iOS 将跳转到系统的 Wi-Fi 界面，Android 不会跳转。 **iOS 11.0 及 iOS 11.1 两个版本因系统问题，该方法失效。但在 iOS 11.2 中已修复。**
 
@@ -866,7 +865,7 @@
 
 ### wx.onGetWifiList(CALLBACK)
 
-> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
 
 监听在获取到 Wi-Fi 列表数据时的事件，在回调中将返回 wifiList。
 
@@ -970,7 +969,7 @@
 
 ### wx.setWifiList(OBJECT)
 
-> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
 
 **iOS特有接口** 在 `onGetWifiList` 回调后，利用接口设置 wifiList 中 AP 的相关信息。
 
@@ -1129,7 +1128,7 @@
 
 ### wx.onWifiConnected(CALLBACK)
 
-> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
 
 监听连接上 Wi-Fi 的事件。
 
@@ -1233,7 +1232,7 @@
 
 ### wx.getConnectedWifi(OBJECT)
 
-> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+> 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
 
 获取已连接中的 Wi-Fi 信息
 

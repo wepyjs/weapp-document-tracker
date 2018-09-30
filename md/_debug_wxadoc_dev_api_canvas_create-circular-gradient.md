@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090714)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18090714)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18090714)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18093017)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18093017)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18093017)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18090714)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18090714)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18090714)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18093017)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18093017)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18093017)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090714)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18090714)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18093017)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18093017)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/create-circular-gradient.html?t=18090714)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/create-circular-gradient.html?t=18090714)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/create-circular-gradient.html?t=18093017)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/create-circular-gradient.html?t=18093017)
 
 </div>
 
@@ -50,7 +50,6 @@
 *   [API](../)
 *   [工具](../../devtools/devtools.html)
 *   [小程序·云开发](../../wxcloud/basis/getting-started.html)
-*   [腾讯云支持](../../qcloud/qcloud.html)
 
 </div>
 
@@ -60,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/create-circular-gradient.html?t=18090714)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/create-circular-gradient.html?t=18090714)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/create-circular-gradient.html?t=18093017)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/create-circular-gradient.html?t=18093017)
 
 </div>
 
@@ -587,7 +586,7 @@
     ctx.fillRect(10, 10, 150, 80)
     ctx.draw()
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/circular-gradient.png?t=18082915)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/circular-gradient.png?t=18093017)
 
 </section>
 

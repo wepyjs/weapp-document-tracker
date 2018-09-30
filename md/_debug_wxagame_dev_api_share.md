@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18090714)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18090714)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18090714)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18093017)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18093017)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18093017)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18090714)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18090714)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18090714)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18093017)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18093017)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18093017)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18090714)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18090714)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18093017)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18093017)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/share.html?t=18090714)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/share.html?t=18090714)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/share.html?t=18093017)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/share.html?t=18093017)
 
 </div>
 
@@ -50,7 +50,6 @@
 *   [API](.)
 *   [工具](../devtools/devtools.html)
 *   [小程序·云开发](../wxcloud/basis/getting-started.html)
-*   [腾讯云支持](../qcloud/qcloud.html)
 
 </div>
 
@@ -60,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/share.html?t=18090714)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/share.html?t=18090714)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/share.html?t=18093017)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/share.html?t=18093017)
 
 </div>
 
@@ -515,7 +514,7 @@
 
 ## wx.showShareMenu(OBJECT)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
 
 显示当前页面的转发按钮
 
@@ -601,7 +600,7 @@
 
 ## wx.hideShareMenu(OBJECT)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
 
 隐藏转发按钮
 
@@ -673,7 +672,7 @@
 
 ## wx.updateShareMenu(OBJECT)
 
-> 基础库 1.2.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+> 基础库 1.2.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
 
 更新转发属性
 
@@ -761,7 +760,7 @@
 
 ## wx.getShareInfo(OBJECT)
 
-> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+> 基础库 1.1.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
 
 获取转发详细信息
 
@@ -955,7 +954,7 @@
 
 ## 页面内发起转发
 
-> 基础库 1.2.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)
+> 基础库 1.2.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
 
 通过给 `button` 组件设置属性 `open-type="share"`，可以在用户点击按钮后触发 `Page.onShareAppMessage()` 事件，如果当前页面没有定义此事件，则点击后无效果。相关组件：[button](../component/button.html)
 
@@ -966,9 +965,9 @@
 1.  含义清晰：明确、一目了然的图形按钮，将为用户减少理解的时间。在我们的资源下载中心，你可以找到这样的按钮素材并直接使用。或者你可以根据自己业务的设计风格，灵活设计含义清晰的按钮的样式。当然，你也可以直接使用带文案的按钮，“转发给好友”，它也足够明确。
 2.  方便点击：按钮点击热区不宜过小，亦不宜过大。同时，转发按钮与其他按钮一样，热区也不宜过密，以免用户误操作。
 3.  按需出现：并非所有页面都适合放置转发按钮，涉及用户隐私的非公开内容，或可能打断用户完成当前操作体验的场景，该功能并不推荐使用。同时，由于转发过程中，我们将截取用户屏幕图像作为配图，因此，需要注意帮助用户屏蔽个人信息。
-4.  尊重意愿：理所当然，并非所有的用户，都喜欢与朋友分享你的小程序。因此，它不应该成为一个诱导或强制行为，如转发后才能解锁某项功能等。请注意，这类做法不仅不被推荐，还可能违反我们的[《运营规范》](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=18082915)，我们强烈建议你在使用前阅读这部分内容。
+4.  尊重意愿：理所当然，并非所有的用户，都喜欢与朋友分享你的小程序。因此，它不应该成为一个诱导或强制行为，如转发后才能解锁某项功能等。请注意，这类做法不仅不被推荐，还可能违反我们的[《运营规范》](https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=18093017)，我们强烈建议你在使用前阅读这部分内容。
 
-以上，我们陈列了最重要的几点，如果你有时间，可以完整浏览[《设计指南》](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=18082915)，相信会有更多的收获。
+以上，我们陈列了最重要的几点，如果你有时间，可以完整浏览[《设计指南》](https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=18093017)，相信会有更多的收获。
 
 #### Bug & Tip
 
