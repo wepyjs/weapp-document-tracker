@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092914)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092914)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092914)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18100816)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18100816)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18100816)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092914)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092914)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092914)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18100816)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18100816)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18100816)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092914)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092914)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18100816)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18100816)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/ide.html?t=18092914)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/ide.html?t=18092914)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/ide.html?t=18100816)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/ide.html?t=18100816)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/ide.html?t=18092914)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/ide.html?t=18092914)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/ide.html?t=18100816)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/ide.html?t=18100816)
 
 </div>
 
@@ -287,7 +287,7 @@
 
 我们通过右键菜单的 “更多设置” 可以进入云函数的沉浸式交互场景，在这个场景里可以完成以上所有的云函数操作，在云目录上按 `ctrl` 可以进行多选批量操作
 
-![](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/images/ide_fnaction.png?t=18092914)
+![](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/images/ide_fnaction.png?t=18100816)
 
 在[下个章节](console.html)，我们一起看看如何在开发云函数时进行测试、查看日志、以及查看监控。
 

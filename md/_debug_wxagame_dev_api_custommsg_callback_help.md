@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18093017)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18093017)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18093017)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18100816)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18100816)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18100816)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18093017)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18093017)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18093017)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18100816)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18100816)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18100816)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18093017)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18093017)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18100816)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18100816)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/custommsg/callback_help.html?t=18093017)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/custommsg/callback_help.html?t=18093017)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/custommsg/callback_help.html?t=18100816)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/custommsg/callback_help.html?t=18100816)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/custommsg/callback_help.html?t=18093017)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/custommsg/callback_help.html?t=18093017)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/custommsg/callback_help.html?t=18100816)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/custommsg/callback_help.html?t=18100816)
 
 </div>
 
@@ -496,6 +496,8 @@
 
 <div class="book-body">
 
+<div style="text-align:center;background:rgba(255, 231, 232, 0.5);width:100%;height:60px;line-height:60px;font-size:1.2em;font-weight:bold;z-index:999;position:relative">本页面已暂停更新，请查看[最新文档](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/customer-message/customer-message.html)</div>
+
 <div class="body-inner">
 
 <div class="page-wrapper" tabindex="-1" role="main">
@@ -530,7 +532,7 @@ URL是开发者用来接收微信消息和事件的接口URL。 Token可由开�
 
 模式的选择与服务器配置在提交后都会立即生效，请开发者谨慎填写及选择。切换加密方式和数据格式需要提前配置好相关代码，详情请参考[消息加解密说明](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419318479&token=&lang=zh_CN)。
 
-![填写服务器配置](https://developers.weixin.qq.com/miniprogram/dev/image/callback_help.png?t=18093017)
+![填写服务器配置](https://developers.weixin.qq.com/miniprogram/dev/image/callback_help.png?t=18100816)
 
 #### 第二步：验证消息的确来自微信服务器
 

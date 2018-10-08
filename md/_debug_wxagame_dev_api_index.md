@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18093017)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18093017)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18093017)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18100817)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18100817)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18100817)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18093017)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18093017)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18093017)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18100817)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18100817)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18100817)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18093017)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18093017)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18100817)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18100817)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/index.html?t=18093017)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/index.html?t=18093017)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/index.html?t=18100817)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/index.html?t=18100817)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/index.html?t=18093017)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/index.html?t=18093017)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/index.html?t=18100817)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/index.html?t=18100817)
 
 </div>
 
@@ -72,423 +72,594 @@
 
 <nav role="navigation">
 
-*   [网络](./api-network.html)
-    *   [发起请求](./network-request.html)
-        *   [wx.request](./network-request.html#wxrequestobject)
-    *   [上传、下载](./network-file.html)
-        *   [wx.uploadFile](./network-file.html#wxuploadfileobject)
-        *   [wx.downloadFile](./network-file.html#wxdownloadfileobject)
-    *   [WebSocket](./network-socket.html)
-        *   [wx.connectSocket](./network-socket.html#wxconnectsocketobject)
-        *   [wx.onSocketOpen](./network-socket.html#wxonsocketopencallback)
-        *   [wx.onSocketError](./network-socket.html#wxonsocketerrorcallback)
-        *   [wx.sendSocketMessage](./network-socket.html#wxsendsocketmessageobject)
-        *   [wx.onSocketMessage](./network-socket.html#wxonsocketmessagecallback)
-        *   [wx.closeSocket](./network-socket.html#wxclosesocket)
-        *   [wx.onSocketClose](./network-socket.html#wxonsocketclosecallback)
-        *   [SocketTask](./socket-task.html)
-*   [媒体](./media-picture.html)
-    *   [图片](./media-picture.html)
-        *   [wx.chooseImage](./media-picture.html#wxchooseimageobject)
-        *   [wx.previewImage](./media-picture.html#wxpreviewimageobject)
-        *   [wx.getImageInfo](./media-picture.html#wxgetimageinfoobject)
-        *   [wx.saveImageToPhotosAlbum](./media-picture.html#wxsaveimagetophotosalbumobject)
-    *   [录音](./media-record.html)
-        *   [wx.startRecord](./media-record.html#wxstartrecordobject)
-        *   [wx.stopRecord](./media-record.html#wxstoprecord)
-    *   [录音管理](./getRecorderManager.html)
-        *   [wx.getRecorderManager](./getRecorderManager.html)
-    *   [音频播放控制](./media-voice.html)
-        *   [wx.playVoice](./media-voice.html#wxplayvoiceobject)
-        *   [wx.pauseVoice](./media-voice.html#wxpausevoice)
-        *   [wx.stopVoice](./media-voice.html#wxstopvoice)
-    *   [音乐播放控制](./media-background-audio.html)
-        *   [wx.getBackgroundAudioPlayerState](./media-background-audio.html#wxgetbackgroundaudioplayerstateobject)
-        *   [wx.playBackgroundAudio](./media-background-audio.html#wxplaybackgroundaudioobject)
-        *   [wx.pauseBackgroundAudio](./media-background-audio.html#wxpausebackgroundaudio)
-        *   [wx.seekBackgroundAudio](./media-background-audio.html#wxseekbackgroundaudioobject)
-        *   [wx.stopBackgroundAudio](./media-background-audio.html#wxstopbackgroundaudio)
-        *   [wx.onBackgroundAudioPlay](./media-background-audio.html#wxonbackgroundaudioplaycallback)
-        *   [wx.onBackgroundAudioPause](./media-background-audio.html#wxonbackgroundaudiopausecallback)
-        *   [wx.onBackgroundAudioStop](./media-background-audio.html#wxonbackgroundaudiostopcallback)
-    *   [背景音频播放管理](./getBackgroundAudioManager.html)
-        *   [wx.getBackgroundAudioManager](./getBackgroundAudioManager.html)
-    *   [音频组件控制](./api-audio.html)
-        *   [wx.createAudioContext](./api-audio.html#wxcreateaudiocontextaudioid)
-        *   [wx.createInnerAudioContext](./createInnerAudioContext.html)
-        *   [wx.getAvailableAudioSources](./getAvailableAudioSources.html)
-    *   [视频](./media-video.html)
-        *   [wx.chooseVideo](./media-video.html#wxchoosevideoobject)
-        *   [wx.saveVideoToPhotosAlbum](./media-video.html#wxsavevideotophotosalbumobject)
-    *   [视频组件控制](./api-video.html)
-        *   [wx.createVideoContext](./api-video.html#wxcreatevideocontextvideoid)
-    *   [相机组件控制](./api-camera.html)
-        *   [wx.createCameraContext](./api-camera.html)
-    *   [实时音视频](./api-live-player.html)
-        *   [wx.createLivePlayerContext](./api-live-player.html)
-        *   [wx.createLivePusherContext](./api-live-pusher.html)
-    *   [动态加载字体](./media-fontFace.html)
-        *   [wx.loadFontFace](./media-fontFace.html)
-*   [文件](./file.html)
-    *   [wx.saveFile](./file.html#wxsavefileobject)
-    *   [wx.getFileInfo](./getFileInfo.html)
-    *   [wx.getSavedFileList](./file.html#wxgetsavedfilelistobject)
-    *   [wx.getSavedFileInfo](./file.html#wxgetsavedfileinfoobject)
-    *   [wx.removeSavedFile](./file.html#wxremovesavedfileobject)
-    *   [wx.openDocument](./file.html#wxopendocumentobject)
-    *   [文件管理器](./file/FileSystemManager.html)
-        *   [FileSystemManager](./file/FileSystemManager.html)
-        *   [wx.getFileSystemManager](./file/wx.getFileSystemManager.html)
-        *   [FileSystemManager.appendFile](./file/FileSystemManager.appendFile.html)
-        *   [FileSystemManager.access](./file/FileSystemManager.access.html)
-        *   [FileSystemManager.accessSync](./file/FileSystemManager.accessSync.html)
-        *   [FileSystemManager.appendFileSync](./file/FileSystemManager.appendFileSync.html)
-        *   [FileSystemManager.copyFile](./file/FileSystemManager.copyFile.html)
-        *   [FileSystemManager.copyFileSync](./file/FileSystemManager.copyFileSync.html)
-        *   [FileSystemManager.getSavedFileList](./file/FileSystemManager.getSavedFileList.html)
-        *   [FileSystemManager.getFileInfo](./file/FileSystemManager.getFileInfo.html)
-        *   [FileSystemManager.mkdir](./file/FileSystemManager.mkdir.html)
-        *   [FileSystemManager.mkdirSync](./file/FileSystemManager.mkdirSync.html)
-        *   [FileSystemManager.removeSavedFile](./file/FileSystemManager.removeSavedFile.html)
-        *   [FileSystemManager.readFileSync](./file/FileSystemManager.readFileSync.html)
-        *   [FileSystemManager.renameSync](./file/FileSystemManager.renameSync.html)
-        *   [FileSystemManager.rmdirSync](./file/FileSystemManager.rmdirSync.html)
-        *   [FileSystemManager.readdir](./file/FileSystemManager.readdir.html)
-        *   [FileSystemManager.rename](./file/FileSystemManager.rename.html)
-        *   [FileSystemManager.readFile](./file/FileSystemManager.readFile.html)
-        *   [FileSystemManager.rmdir](./file/FileSystemManager.rmdir.html)
-        *   [FileSystemManager.readdirSync](./file/FileSystemManager.readdirSync.html)
-        *   [FileSystemManager.saveFile](./file/FileSystemManager.saveFile.html)
-        *   [FileSystemManager.saveFileSync](./file/FileSystemManager.saveFileSync.html)
-        *   [FileSystemManager.stat](./file/FileSystemManager.stat.html)
-        *   [FileSystemManager.statSync](./file/FileSystemManager.statSync.html)
-        *   [Stats](./file/Stats.html)
-        *   [Stats.isDirectory](./file/Stats.isDirectory.html)
-        *   [Stats.isFile](./file/Stats.isFile.html)
-        *   [FileSystemManager.unlink](./file/FileSystemManager.unlink.html)
-        *   [FileSystemManager.unzip](./file/FileSystemManager.unzip.html)
-        *   [FileSystemManager.unlinkSync](./file/FileSystemManager.unlinkSync.html)
-        *   [FileSystemManager.writeFile](./file/FileSystemManager.writeFile.html)
-        *   [FileSystemManager.writeFileSync](./file/FileSystemManager.writeFileSync.html)
-*   [数据缓存](./data.html)
-    *   [wx.setStorage](./data.html#wxsetstorageobject)
-    *   [wx.setStorageSync](./data.html#wxsetstoragesynckeydata)
-    *   [wx.getStorage](./data.html#wxgetstorageobject)
-    *   [wx.getStorageSync](./data.html#wxgetstoragesynckey)
-    *   [wx.getStorageInfo](./data.html#wxgetstorageinfoobject)
-    *   [wx.getStorageInfoSync](./data.html#wxgetstorageinfosync)
-    *   [wx.removeStorage](./data.html#wxremovestorageobject)
-    *   [wx.removeStorageSync](./data.html#wxremovestoragesynckey)
-    *   [wx.clearStorage](./data.html#wxclearstorage)
-    *   [wx.clearStorageSync](./data.html#wxclearstoragesync)
-*   [位置](./location.html)
-    *   [获取位置](./location.html)
-        *   [wx.getLocation](./location.html#wxgetlocationobject)
-        *   [wx.chooseLocation](./location.html#wxchooselocationobject)
-    *   [查看位置](./location.html#wxopenlocationobject)
-        *   [wx.openLocation](./location.html#wxopenlocationobject)
-    *   [地图组件控制](./api-map.html)
-        *   [wx.createMapContext](./api-map.html#wxcreatemapcontextmapid)
-*   [设备](./systeminfo.html)
-    *   [系统信息](./systeminfo.html)
-        *   [wx.getSystemInfo](./systeminfo.html#wxgetsysteminfoobject)
-        *   [wx.getSystemInfoSync](./systeminfo.html#wxgetsysteminfosync)
-        *   [wx.canIUse](./api-caniuse.html)
-    *   [内存](./memory.html)
-        *   [wx.onMemoryWarning](./memory.html)
-    *   [网络状态](./device.html)
-        *   [wx.getNetworkType](./device.html#wxgetnetworktypeobject)
-        *   [wx.onNetworkStatusChange](./device.html#wxonnetworkstatuschangecallback)
-    *   [加速度计](./accelerometer.html)
-        *   [wx.onAccelerometerChange](./accelerometer.html#wxonaccelerometerchangecallback)
-        *   [wx.startAccelerometer](./accelerometer.html#wxstartaccelerometerobject)
-        *   [wx.stopAccelerometer](./accelerometer.html#wxstopaccelerometerobject)
-    *   [罗盘](./compass.html)
-        *   [wx.onCompassChange](./compass.html#wxoncompasschangecallback)
-        *   [wx.startCompass](./compass.html#wxstartcompassobject)
-        *   [wx.stopCompass](./compass.html#wxstopcompassobject)
-    *   [拨打电话](./phonecall.html)
-        *   [wx.makePhoneCall](./phonecall.html#wxmakephonecallobject)
-    *   [扫码](./scancode.html)
-        *   [wx.scanCode](./scancode.html#wxscancodeobject)
-    *   [剪贴板](./clipboard.html)
-        *   [wx.setClipboardData](./clipboard.html#wxsetclipboarddataobject)
-        *   [wx.getClipboardData](./clipboard.html#wxgetclipboarddataobject)
-    *   [蓝牙](./bluetooth.html)
-        *   [wx.openBluetoothAdapter](./bluetooth.html#wxopenbluetoothadapterobject)
-        *   [wx.closeBluetoothAdapter](./bluetooth.html#wxclosebluetoothadapterobject)
-        *   [wx.getBluetoothAdapterState](./bluetooth.html#wxgetbluetoothadapterstateobject)
-        *   [wx.onBluetoothAdapterStateChange](./bluetooth.html#wxonbluetoothadapterstatechangecallback)
-        *   [wx.startBluetoothDevicesDiscovery](./bluetooth.html#wxstartbluetoothdevicesdiscoveryobject)
-        *   [wx.stopBluetoothDevicesDiscovery](./bluetooth.html#wxstopbluetoothdevicesdiscoveryobject)
-        *   [wx.getBluetoothDevices](./bluetooth.html#wxgetbluetoothdevicesobject)
-        *   [wx.getConnectedBluetoothDevices](./bluetooth.html#wxgetconnectedbluetoothdevicesobject)
-        *   [wx.onBluetoothDeviceFound](./bluetooth.html#wxonbluetoothdevicefoundcallback)
-        *   [wx.createBLEConnection](./bluetooth.html#wxcreatebleconnectionobject)
-        *   [wx.closeBLEConnection](./bluetooth.html#wxclosebleconnectionobject)
-        *   [wx.getBLEDeviceServices](./bluetooth.html#wxgetbledeviceservicesobject)
-        *   [wx.getBLEDeviceCharacteristics](./bluetooth.html#wxgetbledevicecharacteristicsobject)
-        *   [wx.readBLECharacteristicValue](./bluetooth.html#wxreadblecharacteristicvalueobject)
-        *   [wx.writeBLECharacteristicValue](./bluetooth.html#wxwriteblecharacteristicvalueobject)
-        *   [wx.notifyBLECharacteristicValueChange](./bluetooth.html#wxnotifyblecharacteristicvaluechangeobject)
-        *   [wx.onBLEConnectionStateChange](./bluetooth.html#wxonbleconnectionstatechangecallback)
-        *   [wx.onBLECharacteristicValueChange](./bluetooth.html#wxonblecharacteristicvaluechangecallback)
-        *   [错误码](./bluetooth.html#蓝牙错误码errcode列表)
-    *   [iBeacon](./iBeacon.html)
-        *   [wx.startBeaconDiscovery](./iBeacon.html#wxstartbeacondiscoveryobject)
-        *   [wx.stopBeaconDiscovery](./iBeacon.html#wxstopbeacondiscoveryobject)
-        *   [wx.getBeacons](./iBeacon.html#wxgetbeaconsobject)
-        *   [wx.onBeaconUpdate](./iBeacon.html#wxonbeaconupdatecallback)
-        *   [wx.onBeaconServiceChange](./iBeacon.html#wxonbeaconservicechangecallback)
-    *   [屏幕亮度](./device.html#wxsetscreenbrightnessobject)
-        *   [wx.setScreenBrightness](./device.html#wxsetscreenbrightnessobject)
-        *   [wx.getScreenBrightness](./device.html#wxgetscreenbrightnessobject)
-        *   [wx.setKeepScreenOn](./setKeepScreenOn.html)
-    *   [用户截屏事件](./onUserCaptureScreen.html)
-        *   [wx.onUserCaptureScreen](./onUserCaptureScreen.html)
-    *   [振动](./device.html#wxvibratelongobject)
-        *   [wx.vibrateLong](./device.html#wxvibratelongobject)
-        *   [wx.vibrateShort](./device.html#wxvibrateshortobject)
-    *   [手机联系人](./phone-contact.html)
-        *   [wx.addPhoneContact](./phone-contact.html#wxaddphonecontactobject)
-    *   [NFC](./nfc.html)
-        *   [wx.getHCEState](./nfc.html#wxgethcestateobject)
-        *   [wx.startHCE](./nfc.html#wxstarthceobject)
-        *   [wx.stopHCE](./nfc.html#wxstophceobject)
-        *   [wx.onHCEMessage](./nfc.html#wxonhcemessagecallback)
-        *   [wx.sendHCEMessage](./nfc.html#wxsendhcemessageobject)
-    *   [Wi-Fi](./wifi.html)
-        *   [wx.startWifi](./wifi.html#wxstartwifiobject)
-        *   [wx.stopWifi](./wifi.html#wxstopwifiobject)
-        *   [wx.connectWifi](./wifi.html#wxconnectwifiobject)
-        *   [wx.getWifiList](./wifi.html#wxgetwifilistobject)
-        *   [wx.onGetWifiList](./wifi.html#wxongetwifilistcallback)
-        *   [wx.setWifiList](./wifi.html#wxsetwifilistobject)
-        *   [wx.onWifiConnected](./wifi.html#wxonwificonnectedcallback)
-        *   [wx.getConnectedWifi](./wifi.html#wxgetconnectedwifiobject)
-*   [界面](./api-react.html)
-    *   [交互反馈](./api-react.html)
-        *   [wx.showToast](./api-react.html#wxshowtoastobject)
-        *   [wx.showLoading](./api-react.html#wxshowloadingobject)
-        *   [wx.hideToast](./api-react.html#wxhidetoast)
-        *   [wx.hideLoading](./api-react.html#wxhideloading)
-        *   [wx.showModal](./api-react.html#wxshowmodalobject)
-        *   [wx.showActionSheet](./api-react.html#wxshowactionsheetobject)
-    *   [设置导航条](./ui.html)
-        *   [wx.setNavigationBarTitle](./ui.html#wxsetnavigationbartitleobject)
-        *   [wx.showNavigationBarLoading](./ui.html#wxshownavigationbarloading)
-        *   [wx.hideNavigationBarLoading](./ui.html#wxhidenavigationbarloading)
-        *   [wx.setNavigationBarColor](./setNavigationBarColor.html)
-    *   [设置tabBar](./ui-tabbar.html)
-        *   [wx.setTabBarBadge](./ui-tabbar.html#wxsettabbarbadgeobject)
-        *   [wx.removeTabBarBadge](./ui-tabbar.html#wxremovetabbarbadgeobject)
-        *   [wx.showTabBarRedDot](./ui-tabbar.html#wxshowtabbarreddotobject)
-        *   [wx.hideTabBarRedDot](./ui-tabbar.html#wxhidetabbarreddotobject)
-        *   [wx.setTabBarStyle](./ui-tabbar.html#wxsettabbarstyleobject)
-        *   [wx.setTabBarItem](./ui-tabbar.html#wxsettabbaritemobject)
-        *   [wx.showTabBar](./ui-tabbar.html#wxshowtabbarobject)
-        *   [wx.hideTabBar](./ui-tabbar.html#wxhidetabbarobject)
-    *   [设置窗口背景](./ui-background.html)
-        *   [wx.setBackgroundColor](./ui-background.html#wxsetbackgroundcolor)
-        *   [wx.setBackgroundTextStyle](./ui-background.html#wxsetbackgroundtextstyle)
-    *   [设置置顶信息](./ui-topbar.html#wxsettopbartextobject)
-        *   [wx.setTopBarText](./ui-topbar.html#wxsettopbartextobject)
-    *   [导航](./ui-navigate.html)
-        *   [wx.navigateTo](./ui-navigate.html#wxnavigatetoobject)
-        *   [wx.redirectTo](./ui-navigate.html#wxredirecttoobject)
-        *   [wx.switchTab](./ui-navigate.html#wxswitchtabobject)
-        *   [wx.navigateBack](./ui-navigate.html#wxnavigatebackobject)
-        *   [wx.reLaunch](./ui-navigate.html#wxrelaunchobject)
-    *   [动画](./api-animation.html)
-        *   [wx.createAnimation](./api-animation.html#wxcreateanimationobject)
-    *   [位置](./scroll.html)
-        *   [wx.pageScrollTo](./scroll.html)
-    *   [绘图](./canvas/reference.html)
-        *   [intro](./canvas/intro.html)
-        *   [coordinates](./canvas/coordinates.html)
-        *   [gradient](./canvas/gradient.html)
-        *   [reference](./canvas/reference.html)
-        *   [color](./canvas/color.html)
-        *   [wx.createCanvasContext](./canvas/create-canvas-context.html)
-        *   [wx.createContext](./canvas/create-context.html)
-        *   [wx.drawCanvas](./canvas/draw-canvas.html)
-        *   [wx.canvasToTempFilePath](./canvas/temp-file.html)
-        *   [wx.canvasGetImageData](./canvas/get-image-data.html)
-        *   [wx.canvasPutImageData](./canvas/put-image-data.html)
-        *   [setFillStyle](./canvas/set-fill-style.html)
-        *   [setStrokeStyle](./canvas/set-stroke-style.html)
-        *   [setShadow](./canvas/set-shadow.html)
-        *   [createLinearGradient](./canvas/create-linear-gradient.html)
-        *   [createCircularGradient](./canvas/create-circular-gradient.html)
-        *   [addColorStop](./canvas/add-color-stop.html)
-        *   [setLineWidth](./canvas/set-line-width.html)
-        *   [setLineCap](./canvas/set-line-cap.html)
-        *   [setLineJoin](./canvas/set-line-join.html)
-        *   [setLineDash](./canvas/set-line-dash.html)
-        *   [setMiterLimit](./canvas/set-miter-limit.html)
-        *   [rect](./canvas/rect.html)
-        *   [fillRect](./canvas/fill-rect.html)
-        *   [strokeRect](./canvas/stroke-rect.html)
-        *   [clearRect](./canvas/clear-rect.html)
-        *   [fill](./canvas/fill.html)
-        *   [stroke](./canvas/stroke.html)
-        *   [beginPath](./canvas/begin-path.html)
-        *   [closePath](./canvas/close-path.html)
-        *   [moveTo](./canvas/move-to.html)
-        *   [lineTo](./canvas/line-to.html)
-        *   [arc](./canvas/arc.html)
-        *   [bezierCurveTo](./canvas/bezier-curve-to.html)
-        *   [quadraticCurveTo](./canvas/quadratic-curve-to.html)
-        *   [scale](./canvas/scale.html)
-        *   [rotate](./canvas/rotate.html)
-        *   [translate](./canvas/translate.html)
-        *   [clip](./canvas/clip.html)
-        *   [setFontSize](./canvas/set-font-size.html)
-        *   [fillText](./canvas/fill-text.html)
-        *   [setTextAlign](./canvas/set-text-align.html)
-        *   [setTextBaseline](./canvas/set-text-baseline.html)
-        *   [drawImage](./canvas/draw-image.html)
-        *   [setGlobalAlpha](./canvas/set-global-alpha.html)
-        *   [save](./canvas/save-restore.html)
-        *   [restore](./canvas/save-restore.html#restore)
-        *   [draw](./canvas/draw.html)
-        *   [getActions](./canvas/get-actions.html)
-        *   [clearActions](./canvas/clear-actions.html)
-        *   [measureText](./canvas/measure-text.html)
-        *   [globalCompositeOperation](./canvas/global-composite-operation.html)
-        *   [arcTo](./canvas/arc-to.html)
-        *   [strokeText](./canvas/stroke-text.html)
-        *   [lineDashOffset](./canvas/line-dash-offset.html)
-        *   [createPattern](./canvas/create-pattern.html)
-        *   [shadowBlur](./canvas/set-shadow.html#canvascontextshadowblur)
-        *   [shadowColor](./canvas/set-shadow.html#canvascontextshadowcolor)
-        *   [shadowOffsetX](./canvas/set-shadow.html#canvascontextshadowoffsetx)
-        *   [shadowOffsetY](./canvas/set-shadow.html#canvascontextshadowoffsety)
-        *   [font](./canvas/font.html)
-        *   [transform](./canvas/transform.html)
-        *   [setTransform](./canvas/set-transform.html)
-    *   [下拉刷新](./pulldown.html)
-        *   [Page.onPullDownRefresh](./pulldown.html#pageonpulldownrefresh)
-        *   [wx.startPullDownRefresh](./pulldown.html#wxstartpulldownrefresh)
-        *   [wx.stopPullDownRefresh](./pulldown.html#wxstoppulldownrefresh)
-    *   [WXML节点信息](./wxml-nodes-info.html)
-        *   [wx.createSelectorQuery](./wxml-nodes-info.html#wxcreateselectorquery)
-        *   [selectorQuery.in](./wxml-nodes-info.html#selectorqueryincomponent)
-        *   [selectorQuery.select](./wxml-nodes-info.html#selectorqueryselectselector)
-        *   [selectorQuery.selectAll](./wxml-nodes-info.html#selectorqueryselectallselector)
-        *   [selectorQuery.selectViewport](./wxml-nodes-info.html#selectorqueryselectviewport)
-        *   [nodesRef.boundingClientRect](./wxml-nodes-info.html#nodesrefboundingclientrectcallback)
-        *   [nodesRef.scrollOffset](./wxml-nodes-info.html#nodesrefscrolloffsetcallback)
-        *   [nodesRef.fields](./wxml-nodes-info.html#nodesreffieldsfieldscallback)
-        *   [selectorQuery.exec](./wxml-nodes-info.html#selectorqueryexeccallback)
-    *   [WXML节点布局相交状态](./intersection-observer.html)
-        *   [wx.createIntersectionObserver](./intersection-observer.html#wxcreateintersectionobserverthisoptions)
-        *   [intersectionObserver.relativeTo](./intersection-observer.html#intersectionobserverrelativetoselectormargins)
-        *   [intersectionObserver.relativeToViewport](./intersection-observer.html#intersectionobserverrelativetoviewportmargins)
-        *   [intersectionObserver.observe](./intersection-observer.html#intersectionobserverobservetargetselectorcallback)
-        *   [intersectionObserver.disconnect](./intersection-observer.html#intersectionobserverdisconnect)
-    *   [自定义组件](./custom-component.html)
-        *   [wx.nextTick](./custom-component.html#wxnexttickfunction)
-*   [第三方平台](./ext-api.html)
-    *   [wx.getExtConfig](./ext-api.html#wxgetextconfigobject)
-    *   [wx.getExtConfigSync](./ext-api.html#wxgetextconfigsync)
-*   [开放接口](./api-login.html)
-    *   [登录](./api-login.html)
-        *   [wx.login](./api-login.html#wxloginobject)
-        *   [wx.checkSession](./signature.html#wxchecksessionobject)
-        *   [签名加密](./signature.html)
-    *   [授权](./authorize-)
-        *   [wx.authorize](./authorize.html)
-    *   [用户信息](./open.html)
-        *   [wx.getUserInfo](./open.html#wxgetuserinfoobject)
-        *   [getPhoneNumber](./getPhoneNumber.html)
-        *   [UnionID机制说明](./unionID.html)
-    *   [微信支付](./api-pay.html)
-        *   [wx.requestPayment](./api-pay.html#wxrequestpaymentobject)
-    *   [接口调用凭证](./token.html)
-        *   [获取access token](./token.html#获取-accesstoken)
-    *   [模板消息](./notice.html)
-        *   [使用说明](./notice.html#使用说明)
-        *   [模版消息管理](./notice.html#模版消息管理)
-        *   [发送模板消息](./notice.html#发送模板消息)
-    *   [统一服务消息](./notice-uniform.html)
-    *   [客服消息](./custommsg/receive.html)
-        *   [接收消息和事件](./custommsg/receive.html#接收消息和事件)
-            *   [文本消息](./custommsg/receive.html#文本消息)
-            *   [图片消息](./custommsg/receive.html#图片消息)
-            *   [小程序卡片消息](./custommsg/receive.html#小程序卡片消息)
-            *   [进入会话事件](./custommsg/receive.html#进入会话事件)
-        *   [发送客服消息](./custommsg/conversation.html)
-        *   [转发消息](./custommsg/trans.html)
-        *   [临时素材接口](./custommsg/material.html)
-            *   [获取临时素材](./custommsg/material.html#获取临时素材)
-            *   [新增临时素材](./custommsg/material.html#新增临时素材)
-        *   [客服输入状态](./custommsg/typing.html)
-        *   [接入指引](./custommsg/callback_help.html)
-    *   [转发](./share.html)
-        *   [Page.onShareAppMessage](./share.html#pageonshareappmessageobject)
-        *   [wx.showShareMenu](./share.html#wxshowsharemenuobject)
-        *   [wx.hideShareMenu](./share.html#wxhidesharemenuobject)
-        *   [wx.updateShareMenu](./share.html#wxupdatesharemenuobject)
-        *   [wx.getShareInfo](./share.html#wxgetshareinfoobject)
-        *   [获取更多转发信息](./share.html#获取更多转发信息)
-        *   [页面内发起转发](./share.html#页面内发起转发)
-    *   [获取二维码](./qrcode.html)
-    *   [收货地址](./address.html)
-        *   [wx.chooseAddress](./address.html#wxchooseaddressobject)
-    *   [卡券](./card.html)
-        *   [wx.addCard](./card.html#wxaddcardobject)
-        *   [wx.openCard](./card.html#wxopencardobject)
-        *   [会员卡组件](./card.html#会员卡组件)
-    *   [设置](./setting.html)
-        *   [wx.openSetting](./setting.html#wxopensettingobject)
-        *   [wx.getSetting](./setting.html#wxgetsettingobject)
-    *   [微信运动](./we-run.html)
-        *   [wx.getWeRunData](./we-run.html#wxgetwerundataobject)
-    *   [当前帐号信息](./account-info.html)
-        *   [wx.getAccountInfoSync](./account-info.html#wxgetaccountinfosync)
-    *   [打开小程序](./navigateToMiniProgram.html)
-        *   [wx.navigateToMiniProgram](./navigateToMiniProgram.html)
-        *   [wx.navigateBackMiniProgram](./navigateBackMiniProgram.html)
-    *   [打开APP](./launchApp.html)
-        *   [launchApp](./launchApp.html)
-    *   [获取发票抬头](./chooseInvoiceTitle.html)
-        *   [wx.chooseInvoiceTitle](./chooseInvoiceTitle.html)
-    *   [生物认证](./checkIsSupportSoterAuthentication.html)
-        *   [wx.checkIsSupportSoterAuthentication](./checkIsSupportSoterAuthentication.html)
-        *   [wx.startSoterAuthentication](./startSoterAuthentication.html)
-        *   [wx.checkIsSoterEnrolledInDevice](./checkIsSoterEnrolledInDevice.html)
-    *   [附近](./nearby.html)
-        *   [添加地点](./nearby.html#添加地点)
-        *   [查看地点列表](./nearby.html#查看地点列表)
-        *   [删除地点](./nearby.html#删除地点)
-        *   [展示/取消展示附近小程序](./nearby.html#展示取消展示附近小程序)
-    *   [插件管理](./plugin.html)
-    *   [内容安全](./imgSecCheck.html)
-        *   [imgSecCheck](./imgSecCheck.html)
-        *   [msgSecCheck](./msgSecCheck.html)
-*   [数据](./analysis.html)
-    *   [常规分析](./analysis.html)
-        *   [概况](./analysis.html#概况)
-            *   [概况趋势](./analysis.html#概况趋势)
-        *   [访问分析](./analysis-visit.html)
-            *   [访问趋势](./analysis-visit.html#访问趋势)
-            *   [访问分布](./analysis-visit.html#访问分布)
-            *   [访问留存](./analysis-visit.html#访问留存)
-            *   [访问页面](./analysis-visit.html#访问页面)
-        *   [用户画像](./analysis-user.html)
-    *   [自定义分析](./analysis-report.html)
-        *   [自定义数据上报](./analysis-report.html)
-*   [更新](./getUpdateManager.html)
-    *   [wx.getUpdateManager](./getUpdateManager.html)
-*   [多线程](./createWorker.html)
-    *   [wx.createWorker](./createWorker.html)
-*   [监控](./monitor-report.html)
-    *   [监控数据上报](./monitor-report.html)
-*   [调试接口](./setEnableDebug.html)
-    *   [打开/关闭调试](./setEnableDebug.html)
-*   [日志](./getLogManager.html)
-    *   [wx.getLogManager](./getLogManager.html)
+*   [网络](./network/download/wx.downloadFile.html)
+    *   [下载](./network/download/wx.downloadFile.html)
+        *   [wx.downloadFile](./network/download/wx.downloadFile.html)
+        *   [DownloadTask](./network/download/DownloadTask.html)
+        *   [DownloadTask.onProgressUpdate](./network/download/DownloadTask.onProgressUpdate.html)
+        *   [DownloadTask.abort](./network/download/DownloadTask.abort.html)
+    *   [发起请求](./network/request/wx.request.html)
+        *   [wx.request](./network/request/wx.request.html)
+        *   [RequestTask](./network/request/RequestTask.html)
+        *   [RequestTask.abort](./network/request/RequestTask.abort.html)
+    *   [WebSocket](./network/websocket/wx.connectSocket.html)
+        *   [wx.connectSocket](./network/websocket/wx.connectSocket.html)
+        *   [wx.sendSocketMessage](./network/websocket/wx.sendSocketMessage.html)
+        *   [wx.onSocketOpen](./network/websocket/wx.onSocketOpen.html)
+        *   [wx.onSocketClose](./network/websocket/wx.onSocketClose.html)
+        *   [wx.onSocketMessage](./network/websocket/wx.onSocketMessage.html)
+        *   [wx.onSocketError](./network/websocket/wx.onSocketError.html)
+        *   [wx.closeSocket](./network/websocket/wx.closeSocket.html)
+        *   [SocketTask.onMessage](./network/websocket/SocketTask.onMessage.html)
+        *   [SocketTask.send](./network/websocket/SocketTask.send.html)
+        *   [SocketTask.close](./network/websocket/SocketTask.close.html)
+        *   [SocketTask.onOpen](./network/websocket/SocketTask.onOpen.html)
+        *   [SocketTask.onClose](./network/websocket/SocketTask.onClose.html)
+        *   [SocketTask.onError](./network/websocket/SocketTask.onError.html)
+        *   [SocketTask](./network/websocket/SocketTask.html)
+    *   [上传](./network/upload/wx.uploadFile.html)
+        *   [wx.uploadFile](./network/upload/wx.uploadFile.html)
+        *   [UploadTask](./network/upload/UploadTask.html)
+        *   [UploadTask.onProgressUpdate](./network/upload/UploadTask.onProgressUpdate.html)
+        *   [UploadTask.abort](./network/upload/UploadTask.abort.html)
+*   [媒体](./media/audio/wx.stopVoice.html)
+    *   [音频](./media/audio/wx.stopVoice.html)
+        *   [wx.stopVoice](./media/audio/wx.stopVoice.html)
+        *   [wx.createAudioContext](./media/audio/wx.createAudioContext.html)
+        *   [wx.createInnerAudioContext](./media/audio/wx.createInnerAudioContext.html)
+        *   [wx.getAvailableAudioSources](./media/audio/wx.getAvailableAudioSources.html)
+        *   [wx.setInnerAudioOption](./media/audio/wx.setInnerAudioOption.html)
+        *   [wx.playVoice](./media/audio/wx.playVoice.html)
+        *   [wx.pauseVoice](./media/audio/wx.pauseVoice.html)
+        *   [InnerAudioContext.offStop](./media/audio/InnerAudioContext.offStop.html)
+        *   [InnerAudioContext.onEnded](./media/audio/InnerAudioContext.onEnded.html)
+        *   [InnerAudioContext.offEnded](./media/audio/InnerAudioContext.offEnded.html)
+        *   [InnerAudioContext.onTimeUpdate](./media/audio/InnerAudioContext.onTimeUpdate.html)
+        *   [InnerAudioContext.offTimeUpdate](./media/audio/InnerAudioContext.offTimeUpdate.html)
+        *   [InnerAudioContext.onError](./media/audio/InnerAudioContext.onError.html)
+        *   [InnerAudioContext.offError](./media/audio/InnerAudioContext.offError.html)
+        *   [InnerAudioContext.onWaiting](./media/audio/InnerAudioContext.onWaiting.html)
+        *   [InnerAudioContext.offWaiting](./media/audio/InnerAudioContext.offWaiting.html)
+        *   [InnerAudioContext.onSeeking](./media/audio/InnerAudioContext.onSeeking.html)
+        *   [InnerAudioContext.offSeeking](./media/audio/InnerAudioContext.offSeeking.html)
+        *   [InnerAudioContext.onSeeked](./media/audio/InnerAudioContext.onSeeked.html)
+        *   [InnerAudioContext.offCanplay](./media/audio/InnerAudioContext.offCanplay.html)
+        *   [InnerAudioContext](./media/audio/InnerAudioContext.html)
+        *   [InnerAudioContext.play](./media/audio/InnerAudioContext.play.html)
+        *   [InnerAudioContext.pause](./media/audio/InnerAudioContext.pause.html)
+        *   [InnerAudioContext.stop](./media/audio/InnerAudioContext.stop.html)
+        *   [InnerAudioContext.seek](./media/audio/InnerAudioContext.seek.html)
+        *   [InnerAudioContext.destroy](./media/audio/InnerAudioContext.destroy.html)
+        *   [AudioContext](./media/audio/AudioContext.html)
+        *   [AudioContext.setSrc](./media/audio/AudioContext.setSrc.html)
+        *   [AudioContext.play](./media/audio/AudioContext.play.html)
+        *   [AudioContext.pause](./media/audio/AudioContext.pause.html)
+        *   [AudioContext.seek](./media/audio/AudioContext.seek.html)
+        *   [InnerAudioContext.onCanplay](./media/audio/InnerAudioContext.onCanplay.html)
+        *   [InnerAudioContext.onPlay](./media/audio/InnerAudioContext.onPlay.html)
+        *   [InnerAudioContext.offPlay](./media/audio/InnerAudioContext.offPlay.html)
+        *   [InnerAudioContext.onPause](./media/audio/InnerAudioContext.onPause.html)
+        *   [InnerAudioContext.offPause](./media/audio/InnerAudioContext.offPause.html)
+        *   [InnerAudioContext.onStop](./media/audio/InnerAudioContext.onStop.html)
+        *   [InnerAudioContext.offSeeked](./media/audio/InnerAudioContext.offSeeked.html)
+    *   [相机](./media/camera/wx.createCameraContext.html)
+        *   [wx.createCameraContext](./media/camera/wx.createCameraContext.html)
+        *   [CameraContext](./media/camera/CameraContext.html)
+        *   [CameraContext.takePhoto](./media/camera/CameraContext.takePhoto.html)
+        *   [CameraContext.startRecord](./media/camera/CameraContext.startRecord.html)
+        *   [CameraContext.stopRecord](./media/camera/CameraContext.stopRecord.html)
+    *   [实时音视频](./media/live/wx.createLivePusherContext.html)
+        *   [wx.createLivePusherContext](./media/live/wx.createLivePusherContext.html)
+        *   [wx.createLivePlayerContext](./media/live/wx.createLivePlayerContext.html)
+        *   [LivePlayerContext.stop](./media/live/LivePlayerContext.stop.html)
+        *   [LivePlayerContext.mute](./media/live/LivePlayerContext.mute.html)
+        *   [LivePlayerContext.pause](./media/live/LivePlayerContext.pause.html)
+        *   [LivePlayerContext.resume](./media/live/LivePlayerContext.resume.html)
+        *   [LivePlayerContext.requestFullScreen](./media/live/LivePlayerContext.requestFullScreen.html)
+        *   [LivePlayerContext.exitFullScreen](./media/live/LivePlayerContext.exitFullScreen.html)
+        *   [LivePlayerContext](./media/live/LivePlayerContext.html)
+        *   [LivePlayerContext.play](./media/live/LivePlayerContext.play.html)
+        *   [LivePusherContext.start](./media/live/LivePusherContext.start.html)
+        *   [LivePusherContext.stop](./media/live/LivePusherContext.stop.html)
+        *   [LivePusherContext.pause](./media/live/LivePusherContext.pause.html)
+        *   [LivePusherContext.resume](./media/live/LivePusherContext.resume.html)
+        *   [LivePusherContext.switchCamera](./media/live/LivePusherContext.switchCamera.html)
+        *   [LivePusherContext.snapshot](./media/live/LivePusherContext.snapshot.html)
+        *   [LivePusherContext.toggleTorch](./media/live/LivePusherContext.toggleTorch.html)
+        *   [LivePusherContext](./media/live/LivePusherContext.html)
+    *   [视频](./media/video/wx.saveVideoToPhotosAlbum.html)
+        *   [wx.saveVideoToPhotosAlbum](./media/video/wx.saveVideoToPhotosAlbum.html)
+        *   [wx.createVideoContext](./media/video/wx.createVideoContext.html)
+        *   [wx.chooseVideo](./media/video/wx.chooseVideo.html)
+        *   [VideoContext.stop](./media/video/VideoContext.stop.html)
+        *   [VideoContext.seek](./media/video/VideoContext.seek.html)
+        *   [VideoContext.sendDanmu](./media/video/VideoContext.sendDanmu.html)
+        *   [VideoContext.playbackRate](./media/video/VideoContext.playbackRate.html)
+        *   [VideoContext.play](./media/video/VideoContext.play.html)
+        *   [VideoContext.exitFullScreen](./media/video/VideoContext.exitFullScreen.html)
+        *   [VideoContext.showStatusBar](./media/video/VideoContext.showStatusBar.html)
+        *   [VideoContext.hideStatusBar](./media/video/VideoContext.hideStatusBar.html)
+        *   [VideoContext](./media/video/VideoContext.html)
+        *   [VideoContext.pause](./media/video/VideoContext.pause.html)
+        *   [VideoContext.requestFullScreen](./media/video/VideoContext.requestFullScreen.html)
+    *   [字体](./media/font/wx.loadFontFace.html)
+        *   [wx.loadFontFace](./media/font/wx.loadFontFace.html)
+    *   [图片](./media/image/wx.chooseImage.html)
+        *   [wx.chooseImage](./media/image/wx.chooseImage.html)
+        *   [wx.previewImage](./media/image/wx.previewImage.html)
+        *   [wx.getImageInfo](./media/image/wx.getImageInfo.html)
+        *   [wx.saveImageToPhotosAlbum](./media/image/wx.saveImageToPhotosAlbum.html)
+    *   [背景音频](./media/background-audio/wx.onBackgroundAudioStop.html)
+        *   [wx.onBackgroundAudioStop](./media/background-audio/wx.onBackgroundAudioStop.html)
+        *   [wx.getBackgroundAudioManager](./media/background-audio/wx.getBackgroundAudioManager.html)
+        *   [wx.getBackgroundAudioPlayerState](./media/background-audio/wx.getBackgroundAudioPlayerState.html)
+        *   [wx.playBackgroundAudio](./media/background-audio/wx.playBackgroundAudio.html)
+        *   [wx.pauseBackgroundAudio](./media/background-audio/wx.pauseBackgroundAudio.html)
+        *   [wx.seekBackgroundAudio](./media/background-audio/wx.seekBackgroundAudio.html)
+        *   [wx.stopBackgroundAudio](./media/background-audio/wx.stopBackgroundAudio.html)
+        *   [wx.onBackgroundAudioPlay](./media/background-audio/wx.onBackgroundAudioPlay.html)
+        *   [wx.onBackgroundAudioPause](./media/background-audio/wx.onBackgroundAudioPause.html)
+        *   [BackgroundAudioManager.onPause](./media/background-audio/BackgroundAudioManager.onPause.html)
+        *   [BackgroundAudioManager.onSeeking](./media/background-audio/BackgroundAudioManager.onSeeking.html)
+        *   [BackgroundAudioManager.onSeeked](./media/background-audio/BackgroundAudioManager.onSeeked.html)
+        *   [BackgroundAudioManager.onEnded](./media/background-audio/BackgroundAudioManager.onEnded.html)
+        *   [BackgroundAudioManager.play](./media/background-audio/BackgroundAudioManager.play.html)
+        *   [BackgroundAudioManager.onTimeUpdate](./media/background-audio/BackgroundAudioManager.onTimeUpdate.html)
+        *   [BackgroundAudioManager.onNext](./media/background-audio/BackgroundAudioManager.onNext.html)
+        *   [BackgroundAudioManager.onPrev](./media/background-audio/BackgroundAudioManager.onPrev.html)
+        *   [BackgroundAudioManager](./media/background-audio/BackgroundAudioManager.html)
+        *   [BackgroundAudioManager.pause](./media/background-audio/BackgroundAudioManager.pause.html)
+        *   [BackgroundAudioManager.seek](./media/background-audio/BackgroundAudioManager.seek.html)
+        *   [BackgroundAudioManager.stop](./media/background-audio/BackgroundAudioManager.stop.html)
+        *   [BackgroundAudioManager.onCanPlay](./media/background-audio/BackgroundAudioManager.onCanPlay.html)
+        *   [BackgroundAudioManager.onWaiting](./media/background-audio/BackgroundAudioManager.onWaiting.html)
+        *   [BackgroundAudioManager.onError](./media/background-audio/BackgroundAudioManager.onError.html)
+        *   [BackgroundAudioManager.onPlay](./media/background-audio/BackgroundAudioManager.onPlay.html)
+        *   [BackgroundAudioManager.onStop](./media/background-audio/BackgroundAudioManager.onStop.html)
+    *   [录音](./media/recorder/wx.stopRecord.html)
+        *   [wx.stopRecord](./media/recorder/wx.stopRecord.html)
+        *   [wx.getRecorderManager](./media/recorder/wx.getRecorderManager.html)
+        *   [wx.startRecord](./media/recorder/wx.startRecord.html)
+        *   [RecorderManager.resume](./media/recorder/RecorderManager.resume.html)
+        *   [RecorderManager.stop](./media/recorder/RecorderManager.stop.html)
+        *   [RecorderManager.onStart](./media/recorder/RecorderManager.onStart.html)
+        *   [RecorderManager.onResume](./media/recorder/RecorderManager.onResume.html)
+        *   [RecorderManager.onPause](./media/recorder/RecorderManager.onPause.html)
+        *   [RecorderManager.start](./media/recorder/RecorderManager.start.html)
+        *   [RecorderManager.onFrameRecorded](./media/recorder/RecorderManager.onFrameRecorded.html)
+        *   [RecorderManager.onError](./media/recorder/RecorderManager.onError.html)
+        *   [RecorderManager.onInterruptionBegin](./media/recorder/RecorderManager.onInterruptionBegin.html)
+        *   [RecorderManager.onInterruptionEnd](./media/recorder/RecorderManager.onInterruptionEnd.html)
+        *   [RecorderManager](./media/recorder/RecorderManager.html)
+        *   [RecorderManager.pause](./media/recorder/RecorderManager.pause.html)
+        *   [RecorderManager.onStop](./media/recorder/RecorderManager.onStop.html)
+*   [文件](./file/wx.saveFile.html)
+    *   [wx.saveFile](./file/wx.saveFile.html)
+    *   [wx.openDocument](./file/wx.openDocument.html)
+    *   [wx.getSavedFileList](./file/wx.getSavedFileList.html)
+    *   [wx.getSavedFileInfo](./file/wx.getSavedFileInfo.html)
+    *   [wx.removeSavedFile](./file/wx.removeSavedFile.html)
+    *   [wx.getFileInfo](./file/wx.getFileInfo.html)
+    *   [wx.getFileSystemManager](./file/wx.getFileSystemManager.html)
+    *   [FileSystemManager.mkdir](./file/FileSystemManager.mkdir.html)
+    *   [FileSystemManager.getSavedFileList](./file/FileSystemManager.getSavedFileList.html)
+    *   [FileSystemManager.appendFileSync](./file/FileSystemManager.appendFileSync.html)
+    *   [FileSystemManager.saveFile](./file/FileSystemManager.saveFile.html)
+    *   [FileSystemManager.removeSavedFile](./file/FileSystemManager.removeSavedFile.html)
+    *   [FileSystemManager.saveFileSync](./file/FileSystemManager.saveFileSync.html)
+    *   [FileSystemManager.copyFile](./file/FileSystemManager.copyFile.html)
+    *   [FileSystemManager.copyFileSync](./file/FileSystemManager.copyFileSync.html)
+    *   [FileSystemManager.getFileInfo](./file/FileSystemManager.getFileInfo.html)
+    *   [FileSystemManager.access](./file/FileSystemManager.access.html)
+    *   [FileSystemManager.appendFile](./file/FileSystemManager.appendFile.html)
+    *   [FileSystemManager](./file/FileSystemManager.html)
+    *   [FileSystemManager.accessSync](./file/FileSystemManager.accessSync.html)
+    *   [FileSystemManager.mkdirSync](./file/FileSystemManager.mkdirSync.html)
+    *   [FileSystemManager.readFile](./file/FileSystemManager.readFile.html)
+    *   [FileSystemManager.readFileSync](./file/FileSystemManager.readFileSync.html)
+    *   [FileSystemManager.readdir](./file/FileSystemManager.readdir.html)
+    *   [FileSystemManager.readdirSync](./file/FileSystemManager.readdirSync.html)
+    *   [FileSystemManager.rename](./file/FileSystemManager.rename.html)
+    *   [FileSystemManager.renameSync](./file/FileSystemManager.renameSync.html)
+    *   [FileSystemManager.rmdir](./file/FileSystemManager.rmdir.html)
+    *   [FileSystemManager.rmdirSync](./file/FileSystemManager.rmdirSync.html)
+    *   [Stats](./file/Stats.html)
+    *   [Stats.isDirectory](./file/Stats.isDirectory.html)
+    *   [Stats.isFile](./file/Stats.isFile.html)
+    *   [FileSystemManager.stat](./file/FileSystemManager.stat.html)
+    *   [FileSystemManager.statSync](./file/FileSystemManager.statSync.html)
+    *   [FileSystemManager.unlink](./file/FileSystemManager.unlink.html)
+    *   [FileSystemManager.unlinkSync](./file/FileSystemManager.unlinkSync.html)
+    *   [FileSystemManager.unzip](./file/FileSystemManager.unzip.html)
+    *   [FileSystemManager.writeFile](./file/FileSystemManager.writeFile.html)
+    *   [FileSystemManager.writeFileSync](./file/FileSystemManager.writeFileSync.html)
+*   [数据缓存](./storage/wx.getStorage.html)
+    *   [wx.getStorage](./storage/wx.getStorage.html)
+    *   [wx.getStorageSync](./storage/wx.getStorageSync.html)
+    *   [wx.setStorage](./storage/wx.setStorage.html)
+    *   [wx.setStorageSync](./storage/wx.setStorageSync.html)
+    *   [wx.removeStorage](./storage/wx.removeStorage.html)
+    *   [wx.removeStorageSync](./storage/wx.removeStorageSync.html)
+    *   [wx.clearStorage](./storage/wx.clearStorage.html)
+    *   [wx.clearStorageSync](./storage/wx.clearStorageSync.html)
+    *   [wx.getStorageInfo](./storage/wx.getStorageInfo.html)
+    *   [wx.getStorageInfoSync](./storage/wx.getStorageInfoSync.html)
+*   [位置](./location/wx.getLocation.html)
+    *   [wx.getLocation](./location/wx.getLocation.html)
+    *   [wx.openLocation](./location/wx.openLocation.html)
+    *   [wx.chooseLocation](./location/wx.chooseLocation.html)
+*   [设备](./device/network/wx.getNetworkType.html)
+    *   [网络](./device/network/wx.getNetworkType.html)
+        *   [wx.getNetworkType](./device/network/wx.getNetworkType.html)
+        *   [wx.onNetworkStatusChange](./device/network/wx.onNetworkStatusChange.html)
+    *   [加速计](./device/accelerometer/wx.startAccelerometer.html)
+        *   [wx.startAccelerometer](./device/accelerometer/wx.startAccelerometer.html)
+        *   [wx.stopAccelerometer](./device/accelerometer/wx.stopAccelerometer.html)
+        *   [wx.onAccelerometerChange](./device/accelerometer/wx.onAccelerometerChange.html)
+    *   [剪贴板](./device/clipboard/wx.getClipboardData.html)
+        *   [wx.getClipboardData](./device/clipboard/wx.getClipboardData.html)
+        *   [wx.setClipboardData](./device/clipboard/wx.setClipboardData.html)
+    *   [罗盘](./device/compass/wx.startCompass.html)
+        *   [wx.startCompass](./device/compass/wx.startCompass.html)
+        *   [wx.stopCompass](./device/compass/wx.stopCompass.html)
+        *   [wx.onCompassChange](./device/compass/wx.onCompassChange.html)
+    *   [联系人](./device/contact/wx.addPhoneContact.html)
+        *   [wx.addPhoneContact](./device/contact/wx.addPhoneContact.html)
+    *   [陀螺仪](./device/gyroscope/wx.startGyroscope.html)
+        *   [wx.startGyroscope](./device/gyroscope/wx.startGyroscope.html)
+        *   [wx.stopGyroscope](./device/gyroscope/wx.stopGyroscope.html)
+        *   [wx.onGyroscopeChange](./device/gyroscope/wx.onGyroscopeChange.html)
+    *   [iBeacon](./device/ibeacon/wx.startBeaconDiscovery.html)
+        *   [wx.startBeaconDiscovery](./device/ibeacon/wx.startBeaconDiscovery.html)
+        *   [wx.stopBeaconDiscovery](./device/ibeacon/wx.stopBeaconDiscovery.html)
+        *   [wx.getBeacons](./device/ibeacon/wx.getBeacons.html)
+        *   [wx.onBeaconUpdate](./device/ibeacon/wx.onBeaconUpdate.html)
+        *   [wx.onBeaconServiceChange](./device/ibeacon/wx.onBeaconServiceChange.html)
+        *   [IBeaconInfo](./device/ibeacon/IBeaconInfo.html)
+    *   [设备方向](./device/motion/wx.startDeviceMotionListening.html)
+        *   [wx.startDeviceMotionListening](./device/motion/wx.startDeviceMotionListening.html)
+        *   [wx.stopDeviceMotionListening](./device/motion/wx.stopDeviceMotionListening.html)
+        *   [wx.onDeviceMotionChange](./device/motion/wx.onDeviceMotionChange.html)
+    *   [电量](./device/battery/wx.getBatteryInfo.html)
+        *   [wx.getBatteryInfo](./device/battery/wx.getBatteryInfo.html)
+        *   [wx.getBatteryInfoSync](./device/battery/wx.getBatteryInfoSync.html)
+    *   [电话](./device/phone/wx.makePhoneCall.html)
+        *   [wx.makePhoneCall](./device/phone/wx.makePhoneCall.html)
+    *   [扫码](./device/scan/wx.scanCode.html)
+        *   [wx.scanCode](./device/scan/wx.scanCode.html)
+    *   [振动](./device/vibrate/wx.vibrateShort.html)
+        *   [wx.vibrateShort](./device/vibrate/wx.vibrateShort.html)
+        *   [wx.vibrateLong](./device/vibrate/wx.vibrateLong.html)
+    *   [性能](./device/performance/wx.onMemoryWarning.html)
+        *   [wx.onMemoryWarning](./device/performance/wx.onMemoryWarning.html)
+    *   [蓝牙](./device/bluetooth/wx.onBLECharacteristicValueChange.html)
+        *   [wx.onBLECharacteristicValueChange](./device/bluetooth/wx.onBLECharacteristicValueChange.html)
+        *   [wx.closeBLEConnection](./device/bluetooth/wx.closeBLEConnection.html)
+        *   [wx.createBLEConnection](./device/bluetooth/wx.createBLEConnection.html)
+        *   [wx.getBLEDeviceCharacteristics](./device/bluetooth/wx.getBLEDeviceCharacteristics.html)
+        *   [wx.getBLEDeviceServices](./device/bluetooth/wx.getBLEDeviceServices.html)
+        *   [wx.getBluetoothAdapterState](./device/bluetooth/wx.getBluetoothAdapterState.html)
+        *   [wx.getBluetoothDevices](./device/bluetooth/wx.getBluetoothDevices.html)
+        *   [wx.getConnectedBluetoothDevices](./device/bluetooth/wx.getConnectedBluetoothDevices.html)
+        *   [wx.notifyBLECharacteristicValueChange](./device/bluetooth/wx.notifyBLECharacteristicValueChange.html)
+        *   [wx.closeBluetoothAdapter](./device/bluetooth/wx.closeBluetoothAdapter.html)
+        *   [wx.onBLEConnectionStateChange](./device/bluetooth/wx.onBLEConnectionStateChange.html)
+        *   [wx.onBluetoothAdapterStateChange](./device/bluetooth/wx.onBluetoothAdapterStateChange.html)
+        *   [wx.onBluetoothDeviceFound](./device/bluetooth/wx.onBluetoothDeviceFound.html)
+        *   [wx.openBluetoothAdapter](./device/bluetooth/wx.openBluetoothAdapter.html)
+        *   [wx.readBLECharacteristicValue](./device/bluetooth/wx.readBLECharacteristicValue.html)
+        *   [wx.startBluetoothDevicesDiscovery](./device/bluetooth/wx.startBluetoothDevicesDiscovery.html)
+        *   [wx.stopBluetoothDevicesDiscovery](./device/bluetooth/wx.stopBluetoothDevicesDiscovery.html)
+        *   [wx.writeBLECharacteristicValue](./device/bluetooth/wx.writeBLECharacteristicValue.html)
+    *   [NFC](./device/nfc/wx.getHCEState.html)
+        *   [wx.getHCEState](./device/nfc/wx.getHCEState.html)
+        *   [wx.onHCEMessage](./device/nfc/wx.onHCEMessage.html)
+        *   [wx.sendHCEMessage](./device/nfc/wx.sendHCEMessage.html)
+        *   [wx.startHCE](./device/nfc/wx.startHCE.html)
+        *   [wx.stopHCE](./device/nfc/wx.stopHCE.html)
+    *   [屏幕](./device/screen/wx.getScreenBrightness.html)
+        *   [wx.getScreenBrightness](./device/screen/wx.getScreenBrightness.html)
+        *   [wx.onUserCaptureScreen](./device/screen/wx.onUserCaptureScreen.html)
+        *   [wx.setKeepScreenOn](./device/screen/wx.setKeepScreenOn.html)
+        *   [wx.setScreenBrightness](./device/screen/wx.setScreenBrightness.html)
+    *   [Wi-Fi](./device/wifi/wx.connectWifi.html)
+        *   [wx.connectWifi](./device/wifi/wx.connectWifi.html)
+        *   [wx.getConnectedWifi](./device/wifi/wx.getConnectedWifi.html)
+        *   [wx.getWifiList](./device/wifi/wx.getWifiList.html)
+        *   [wx.onGetWifiList](./device/wifi/wx.onGetWifiList.html)
+        *   [wx.onWifiConnected](./device/wifi/wx.onWifiConnected.html)
+        *   [wx.setWifiList](./device/wifi/wx.setWifiList.html)
+        *   [wx.startWifi](./device/wifi/wx.startWifi.html)
+        *   [wx.stopWifi](./device/wifi/wx.stopWifi.html)
+        *   [WifiInfo](./device/wifi/WifiInfo.html)
+*   [界面](./ui/pull-down-refresh/wx.startPullDownRefresh.html)
+    *   [下拉刷新](./ui/pull-down-refresh/wx.startPullDownRefresh.html)
+        *   [wx.startPullDownRefresh](./ui/pull-down-refresh/wx.startPullDownRefresh.html)
+        *   [wx.stopPullDownRefresh](./ui/pull-down-refresh/wx.stopPullDownRefresh.html)
+    *   [自定义组件](./ui/custom-component/wx.nextTick.html)
+        *   [wx.nextTick](./ui/custom-component/wx.nextTick.html)
+    *   [菜单](./ui/menu/wx.getMenuButtonBoundingClientRect.html)
+        *   [wx.getMenuButtonBoundingClientRect](./ui/menu/wx.getMenuButtonBoundingClientRect.html)
+    *   [交互](./ui/interaction/wx.showModal.html)
+        *   [wx.showModal](./ui/interaction/wx.showModal.html)
+        *   [wx.showToast](./ui/interaction/wx.showToast.html)
+        *   [wx.hideToast](./ui/interaction/wx.hideToast.html)
+        *   [wx.showLoading](./ui/interaction/wx.showLoading.html)
+        *   [wx.hideLoading](./ui/interaction/wx.hideLoading.html)
+        *   [wx.showActionSheet](./ui/interaction/wx.showActionSheet.html)
+    *   [滚动](./ui/scroll/wx.pageScrollTo.html)
+        *   [wx.pageScrollTo](./ui/scroll/wx.pageScrollTo.html)
+    *   [动画](./ui/animation/wx.createAnimation.html)
+        *   [wx.createAnimation](./ui/animation/wx.createAnimation.html)
+        *   [Animation](./ui/animation/Animation.html)
+        *   [Animation.step](./ui/animation/Animation.step.html)
+        *   [Animation.matrix](./ui/animation/Animation.matrix.html)
+        *   [Animation.matrix3d](./ui/animation/Animation.matrix3d.html)
+        *   [Animation.rotate](./ui/animation/Animation.rotate.html)
+        *   [Animation.rotate3d](./ui/animation/Animation.rotate3d.html)
+        *   [Animation.rotateX](./ui/animation/Animation.rotateX.html)
+        *   [Animation.rotateY](./ui/animation/Animation.rotateY.html)
+        *   [Animation.rotateZ](./ui/animation/Animation.rotateZ.html)
+        *   [Animation.scale](./ui/animation/Animation.scale.html)
+        *   [Animation.scale3d](./ui/animation/Animation.scale3d.html)
+        *   [Animation.scaleX](./ui/animation/Animation.scaleX.html)
+        *   [Animation.scaleY](./ui/animation/Animation.scaleY.html)
+        *   [Animation.scaleZ](./ui/animation/Animation.scaleZ.html)
+        *   [Animation.skew](./ui/animation/Animation.skew.html)
+        *   [Animation.export](./ui/animation/Animation.export.html)
+        *   [Animation.skewY](./ui/animation/Animation.skewY.html)
+        *   [Animation.translate](./ui/animation/Animation.translate.html)
+        *   [Animation.translate3d](./ui/animation/Animation.translate3d.html)
+        *   [Animation.translateX](./ui/animation/Animation.translateX.html)
+        *   [Animation.translateY](./ui/animation/Animation.translateY.html)
+        *   [Animation.translateZ](./ui/animation/Animation.translateZ.html)
+        *   [Animation.opacity](./ui/animation/Animation.opacity.html)
+        *   [Animation.backgroundColor](./ui/animation/Animation.backgroundColor.html)
+        *   [Animation.width](./ui/animation/Animation.width.html)
+        *   [Animation.height](./ui/animation/Animation.height.html)
+        *   [Animation.left](./ui/animation/Animation.left.html)
+        *   [Animation.right](./ui/animation/Animation.right.html)
+        *   [Animation.top](./ui/animation/Animation.top.html)
+        *   [Animation.bottom](./ui/animation/Animation.bottom.html)
+        *   [Animation.skewX](./ui/animation/Animation.skewX.html)
+    *   [窗口](./ui/window/wx.onWindowResize.html)
+        *   [wx.onWindowResize](./ui/window/wx.onWindowResize.html)
+        *   [wx.offWindowResize](./ui/window/wx.offWindowResize.html)
+    *   [背景](./ui/background/wx.setBackgroundColor.html)
+        *   [wx.setBackgroundColor](./ui/background/wx.setBackgroundColor.html)
+        *   [wx.setBackgroundTextStyle](./ui/background/wx.setBackgroundTextStyle.html)
+    *   [Tab Bar](./ui/tab-bar/wx.setTabBarBadge.html)
+        *   [wx.setTabBarBadge](./ui/tab-bar/wx.setTabBarBadge.html)
+        *   [wx.removeTabBarBadge](./ui/tab-bar/wx.removeTabBarBadge.html)
+        *   [wx.showTabBarRedDot](./ui/tab-bar/wx.showTabBarRedDot.html)
+        *   [wx.hideTabBarRedDot](./ui/tab-bar/wx.hideTabBarRedDot.html)
+        *   [wx.showTabBar](./ui/tab-bar/wx.showTabBar.html)
+        *   [wx.hideTabBar](./ui/tab-bar/wx.hideTabBar.html)
+        *   [wx.setTabBarStyle](./ui/tab-bar/wx.setTabBarStyle.html)
+        *   [wx.setTabBarItem](./ui/tab-bar/wx.setTabBarItem.html)
+    *   [置顶](./ui/sticky/wx.setTopBarText.html)
+        *   [wx.setTopBarText](./ui/sticky/wx.setTopBarText.html)
+    *   [导航栏](./ui/navigation-bar/wx.setNavigationBarTitle.html)
+        *   [wx.setNavigationBarTitle](./ui/navigation-bar/wx.setNavigationBarTitle.html)
+        *   [wx.showNavigationBarLoading](./ui/navigation-bar/wx.showNavigationBarLoading.html)
+        *   [wx.hideNavigationBarLoading](./ui/navigation-bar/wx.hideNavigationBarLoading.html)
+        *   [wx.setNavigationBarColor](./ui/navigation-bar/wx.setNavigationBarColor.html)
+*   [开放接口](./open-api/setting/wx.getSetting.html)
+    *   [设置](./open-api/setting/wx.getSetting.html)
+        *   [wx.getSetting](./open-api/setting/wx.getSetting.html)
+        *   [wx.openSetting](./open-api/setting/wx.openSetting.html)
+        *   [AuthSetting](./open-api/setting/AuthSetting.html)
+    *   [当前账号信息](./open-api/account-info/wx.getAccountInfoSync.html)
+        *   [wx.getAccountInfoSync](./open-api/account-info/wx.getAccountInfoSync.html)
+    *   [收货地址](./open-api/address/wx.chooseAddress.html)
+        *   [wx.chooseAddress](./open-api/address/wx.chooseAddress.html)
+    *   [授权](./open-api/authorize/wx.authorize.html)
+        *   [wx.authorize](./open-api/authorize/wx.authorize.html)
+    *   [卡券](./open-api/card/wx.addCard.html)
+        *   [wx.addCard](./open-api/card/wx.addCard.html)
+        *   [wx.openCard](./open-api/card/wx.openCard.html)
+    *   [发票](./open-api/invoice/wx.chooseInvoice.html)
+        *   [wx.chooseInvoice](./open-api/invoice/wx.chooseInvoice.html)
+        *   [wx.chooseInvoiceTitle](./open-api/invoice/wx.chooseInvoiceTitle.html)
+    *   [支付](./open-api/payment/wx.faceVerifyForPay.html)
+        *   [wx.faceVerifyForPay](./open-api/payment/wx.faceVerifyForPay.html)
+        *   [wx.requestPayment](./open-api/payment/wx.requestPayment.html)
+    *   [用户信息](./open-api/user-info/wx.getUserInfo.html)
+        *   [wx.getUserInfo](./open-api/user-info/wx.getUserInfo.html)
+        *   [UserInfo](./open-api/user-info/UserInfo.html)
+    *   [微信运动](./open-api/werun/wx.getWeRunData.html)
+        *   [wx.getWeRunData](./open-api/werun/wx.getWeRunData.html)
+    *   [数据分析](./open-api/data-analysis/wx.reportAnalytics.html)
+        *   [wx.reportAnalytics](./open-api/data-analysis/wx.reportAnalytics.html)
+        *   [getAnalysisWeeklyVisitTrend](./open-api/data-analysis/getAnalysisWeeklyVisitTrend.html)
+        *   [getAnalysisDailySummary](./open-api/data-analysis/getAnalysisDailySummary.html)
+        *   [getAnalysisDailyVisitTrend](./open-api/data-analysis/getAnalysisDailyVisitTrend.html)
+        *   [getAnalysisMonthlyRetain](./open-api/data-analysis/getAnalysisMonthlyRetain.html)
+        *   [getAnalysisDailyRetain](./open-api/data-analysis/getAnalysisDailyRetain.html)
+        *   [getAnalysisUserPortrait](./open-api/data-analysis/getAnalysisUserPortrait.html)
+        *   [getAnalysisVisitDistribution](./open-api/data-analysis/getAnalysisVisitDistribution.html)
+        *   [getAnalysisVisitPage](./open-api/data-analysis/getAnalysisVisitPage.html)
+        *   [getAnalysisWeeklyRetain](./open-api/data-analysis/getAnalysisWeeklyRetain.html)
+        *   [getAnalysisMonthlyVisitTrend](./open-api/data-analysis/getAnalysisMonthlyVisitTrend.html)
+    *   [登录](./open-api/login/wx.login.html)
+        *   [wx.login](./open-api/login/wx.login.html)
+        *   [wx.checkSession](./open-api/login/wx.checkSession.html)
+        *   [code2Session](./open-api/login/code2Session.html)
+    *   [生物认证](./open-api/soter/wx.checkIsSoterEnrolledInDevice.html)
+        *   [wx.checkIsSoterEnrolledInDevice](./open-api/soter/wx.checkIsSoterEnrolledInDevice.html)
+        *   [wx.checkIsSupportSoterAuthentication](./open-api/soter/wx.checkIsSupportSoterAuthentication.html)
+        *   [wx.startSoterAuthentication](./open-api/soter/wx.startSoterAuthentication.html)
+    *   [小程序跳转](./open-api/miniprogram-navigate/wx.navigateBackMiniProgram.html)
+        *   [wx.navigateBackMiniProgram](./open-api/miniprogram-navigate/wx.navigateBackMiniProgram.html)
+        *   [wx.navigateToMiniProgram](./open-api/miniprogram-navigate/wx.navigateToMiniProgram.html)
+    *   [接口调用凭证](./open-api/access-token/getAccessToken.html)
+        *   [getAccessToken](./open-api/access-token/getAccessToken.html)
+    *   [统一服务消息](./open-api/uniform-message/sendUniformMessage.html)
+        *   [sendUniformMessage](./open-api/uniform-message/sendUniformMessage.html)
+    *   [客服消息](./open-api/customer-message/customerTyping.html)
+        *   [customerTyping](./open-api/customer-message/customerTyping.html)
+        *   [getTempMedia](./open-api/customer-message/getTempMedia.html)
+        *   [sendCustomerMessage](./open-api/customer-message/sendCustomerMessage.html)
+        *   [uploadTempMedia](./open-api/customer-message/uploadTempMedia.html)
+    *   [附近的小程序](./open-api/nearby-poi/addNearbyPoi.html)
+        *   [addNearbyPoi](./open-api/nearby-poi/addNearbyPoi.html)
+        *   [deleteNearbyPoi](./open-api/nearby-poi/deleteNearbyPoi.html)
+        *   [getNearbyPoiList](./open-api/nearby-poi/getNearbyPoiList.html)
+        *   [setNearbyPoiShowStatus](./open-api/nearby-poi/setNearbyPoiShowStatus.html)
+    *   [插件管理](./open-api/plugin-management/applyPlugin.html)
+        *   [applyPlugin](./open-api/plugin-management/applyPlugin.html)
+        *   [getPluginDevApplyList](./open-api/plugin-management/getPluginDevApplyList.html)
+        *   [getPluginList](./open-api/plugin-management/getPluginList.html)
+        *   [setDevPluginApplyStatus](./open-api/plugin-management/setDevPluginApplyStatus.html)
+        *   [unbindPlugin](./open-api/plugin-management/unbindPlugin.html)
+    *   [二维码](./open-api/qr-code/createWXAQRCode.html)
+        *   [createWXAQRCode](./open-api/qr-code/createWXAQRCode.html)
+        *   [getWXACode](./open-api/qr-code/getWXACode.html)
+        *   [getWXACodeUnlimit](./open-api/qr-code/getWXACodeUnlimit.html)
+    *   [内容安全](./open-api/sec-check/imgSecCheck.html)
+        *   [imgSecCheck](./open-api/sec-check/imgSecCheck.html)
+        *   [msgSecCheck](./open-api/sec-check/msgSecCheck.html)
+    *   [模板消息](./open-api/template-message/addTemplate.html)
+        *   [addTemplate](./open-api/template-message/addTemplate.html)
+        *   [deleteTemplate](./open-api/template-message/deleteTemplate.html)
+        *   [getTemplateLibraryById](./open-api/template-message/getTemplateLibraryById.html)
+        *   [getTemplateLibraryList](./open-api/template-message/getTemplateLibraryList.html)
+        *   [getTemplateList](./open-api/template-message/getTemplateList.html)
+        *   [sendTemplateMessage](./open-api/template-message/sendTemplateMessage.html)
+*   [更新](./update/wx.getUpdateManager.html)
+    *   [wx.getUpdateManager](./update/wx.getUpdateManager.html)
+    *   [UpdateManager](./update/UpdateManager.html)
+    *   [UpdateManager.onCheckForUpdate](./update/UpdateManager.onCheckForUpdate.html)
+    *   [UpdateManager.onUpdateReady](./update/UpdateManager.onUpdateReady.html)
+    *   [UpdateManager.onUpdateFailed](./update/UpdateManager.onUpdateFailed.html)
+    *   [UpdateManager.applyUpdate](./update/UpdateManager.applyUpdate.html)
+*   [Worker](./worker/wx.createWorker.html)
+    *   [wx.createWorker](./worker/wx.createWorker.html)
+    *   [Worker](./worker/Worker.html)
+    *   [Worker.postMessage](./worker/Worker.postMessage.html)
+    *   [Worker.onMessage](./worker/Worker.onMessage.html)
+    *   [Worker.terminate](./worker/Worker.terminate.html)
+*   [数据上报](./report/wx.reportMonitor.html)
+    *   [wx.reportMonitor](./report/wx.reportMonitor.html)
+*   [WXML](./wxml/wx.createIntersectionObserver.html)
+    *   [wx.createIntersectionObserver](./wxml/wx.createIntersectionObserver.html)
+    *   [wx.createSelectorQuery](./wxml/wx.createSelectorQuery.html)
+    *   [NodesRef.scrollOffset](./wxml/NodesRef.scrollOffset.html)
+    *   [IntersectionObserver.relativeTo](./wxml/IntersectionObserver.relativeTo.html)
+    *   [IntersectionObserver.observe](./wxml/IntersectionObserver.observe.html)
+    *   [IntersectionObserver.disconnect](./wxml/IntersectionObserver.disconnect.html)
+    *   [NodesRef](./wxml/NodesRef.html)
+    *   [NodesRef.fields](./wxml/NodesRef.fields.html)
+    *   [IntersectionObserver](./wxml/IntersectionObserver.html)
+    *   [IntersectionObserver.relativeToViewport](./wxml/IntersectionObserver.relativeToViewport.html)
+    *   [SelectorQuery](./wxml/SelectorQuery.html)
+    *   [SelectorQuery.in](./wxml/SelectorQuery.in.html)
+    *   [SelectorQuery.select](./wxml/SelectorQuery.select.html)
+    *   [SelectorQuery.selectAll](./wxml/SelectorQuery.selectAll.html)
+    *   [SelectorQuery.selectViewport](./wxml/SelectorQuery.selectViewport.html)
+    *   [SelectorQuery.exec](./wxml/SelectorQuery.exec.html)
+    *   [NodesRef.boundingClientRect](./wxml/NodesRef.boundingClientRect.html)
+*   [地图](./map/wx.createMapContext.html)
+    *   [wx.createMapContext](./map/wx.createMapContext.html)
+    *   [MapContext](./map/MapContext.html)
+    *   [MapContext.getCenterLocation](./map/MapContext.getCenterLocation.html)
+    *   [MapContext.moveToLocation](./map/MapContext.moveToLocation.html)
+    *   [MapContext.translateMarker](./map/MapContext.translateMarker.html)
+    *   [MapContext.includePoints](./map/MapContext.includePoints.html)
+    *   [MapContext.getRegion](./map/MapContext.getRegion.html)
+    *   [MapContext.getScale](./map/MapContext.getScale.html)
+*   [系统](./system/system-info/wx.getSystemInfo.html)
+    *   [系统信息](./system/system-info/wx.getSystemInfo.html)
+        *   [wx.getSystemInfo](./system/system-info/wx.getSystemInfo.html)
+        *   [wx.getSystemInfoSync](./system/system-info/wx.getSystemInfoSync.html)
+*   [第三方平台](./ext/wx.getExtConfig.html)
+    *   [wx.getExtConfig](./ext/wx.getExtConfig.html)
+    *   [wx.getExtConfigSync](./ext/wx.getExtConfigSync.html)
+*   [画布](./canvas/wx.canvasGetImageData.html)
+    *   [wx.canvasGetImageData](./canvas/wx.canvasGetImageData.html)
+    *   [wx.canvasToTempFilePath](./canvas/wx.canvasToTempFilePath.html)
+    *   [wx.createCanvasContext](./canvas/wx.createCanvasContext.html)
+    *   [wx.canvasPutImageData](./canvas/wx.canvasPutImageData.html)
+    *   [CanvasContext](./canvas/CanvasContext.html)
+    *   [CanvasContext.draw](./canvas/CanvasContext.draw.html)
+    *   [CanvasContext.createLinearGradient](./canvas/CanvasContext.createLinearGradient.html)
+    *   [CanvasContext.createCircularGradient](./canvas/CanvasContext.createCircularGradient.html)
+    *   [CanvasGradient](./canvas/CanvasGradient.html)
+    *   [CanvasGradient.addColorStop](./canvas/CanvasGradient.addColorStop.html)
+    *   [CanvasContext.createPattern](./canvas/CanvasContext.createPattern.html)
+    *   [CanvasContext.measureText](./canvas/CanvasContext.measureText.html)
+    *   [CanvasContext.save](./canvas/CanvasContext.save.html)
+    *   [CanvasContext.restore](./canvas/CanvasContext.restore.html)
+    *   [CanvasContext.beginPath](./canvas/CanvasContext.beginPath.html)
+    *   [CanvasContext.moveTo](./canvas/CanvasContext.moveTo.html)
+    *   [CanvasContext.lineTo](./canvas/CanvasContext.lineTo.html)
+    *   [CanvasContext.quadraticCurveTo](./canvas/CanvasContext.quadraticCurveTo.html)
+    *   [CanvasContext.bezierCurveTo](./canvas/CanvasContext.bezierCurveTo.html)
+    *   [CanvasContext.arc](./canvas/CanvasContext.arc.html)
+    *   [CanvasContext.rect](./canvas/CanvasContext.rect.html)
+    *   [CanvasContext.arcTo](./canvas/CanvasContext.arcTo.html)
+    *   [CanvasContext.clip](./canvas/CanvasContext.clip.html)
+    *   [CanvasContext.fillRect](./canvas/CanvasContext.fillRect.html)
+    *   [CanvasContext.strokeRect](./canvas/CanvasContext.strokeRect.html)
+    *   [Color](./canvas/Color.html)
+    *   [CanvasContext.fill](./canvas/CanvasContext.fill.html)
+    *   [CanvasContext.stroke](./canvas/CanvasContext.stroke.html)
+    *   [CanvasContext.closePath](./canvas/CanvasContext.closePath.html)
+    *   [CanvasContext.scale](./canvas/CanvasContext.scale.html)
+    *   [CanvasContext.rotate](./canvas/CanvasContext.rotate.html)
+    *   [CanvasContext.translate](./canvas/CanvasContext.translate.html)
+    *   [CanvasContext.drawImage](./canvas/CanvasContext.drawImage.html)
+    *   [CanvasContext.strokeText](./canvas/CanvasContext.strokeText.html)
+    *   [CanvasContext.transform](./canvas/CanvasContext.transform.html)
+    *   [CanvasContext.setTransform](./canvas/CanvasContext.setTransform.html)
+    *   [CanvasContext.setFillStyle](./canvas/CanvasContext.setFillStyle.html)
+    *   [CanvasContext.setStrokeStyle](./canvas/CanvasContext.setStrokeStyle.html)
+    *   [CanvasContext.setShadow](./canvas/CanvasContext.setShadow.html)
+    *   [CanvasContext.setGlobalAlpha](./canvas/CanvasContext.setGlobalAlpha.html)
+    *   [CanvasContext.setLineWidth](./canvas/CanvasContext.setLineWidth.html)
+    *   [CanvasContext.setLineJoin](./canvas/CanvasContext.setLineJoin.html)
+    *   [CanvasContext.setLineCap](./canvas/CanvasContext.setLineCap.html)
+    *   [CanvasContext.setLineDash](./canvas/CanvasContext.setLineDash.html)
+    *   [CanvasContext.setMiterLimit](./canvas/CanvasContext.setMiterLimit.html)
+    *   [CanvasContext.fillText](./canvas/CanvasContext.fillText.html)
+    *   [CanvasContext.setFontSize](./canvas/CanvasContext.setFontSize.html)
+    *   [CanvasContext.setTextAlign](./canvas/CanvasContext.setTextAlign.html)
+    *   [CanvasContext.setTextBaseline](./canvas/CanvasContext.setTextBaseline.html)
+    *   [CanvasContext.clearRect](./canvas/CanvasContext.clearRect.html)
+*   [调试](./debug/wx.getLogManager.html)
+    *   [wx.getLogManager](./debug/wx.getLogManager.html)
+    *   [wx.setEnableDebug](./debug/wx.setEnableDebug.html)
+    *   [console](./debug/console.html)
+    *   [LogManager.log](./debug/LogManager.log.html)
+    *   [LogManager.warn](./debug/LogManager.warn.html)
+    *   [LogManager](./debug/LogManager.html)
+    *   [LogManager.info](./debug/LogManager.info.html)
+    *   [LogManager.debug](./debug/LogManager.debug.html)
+    *   [console.debug](./debug/console.debug.html)
+    *   [console.log](./debug/console.log.html)
+    *   [console.info](./debug/console.info.html)
+    *   [console.warn](./debug/console.warn.html)
+    *   [console.error](./debug/console.error.html)
+    *   [console.group](./debug/console.group.html)
+    *   [console.groupEnd](./debug/console.groupEnd.html)
+*   [基础](./base/wx.canIUse.html)
+    *   [wx.canIUse](./base/wx.canIUse.html)
+*   [转发](./share/wx.getShareInfo.html)
+    *   [wx.getShareInfo](./share/wx.getShareInfo.html)
+    *   [wx.hideShareMenu](./share/wx.hideShareMenu.html)
+    *   [wx.showShareMenu](./share/wx.showShareMenu.html)
+    *   [wx.updateShareMenu](./share/wx.updateShareMenu.html)
+*   [路由](./route/wx.redirectTo.html)
+    *   [wx.redirectTo](./route/wx.redirectTo.html)
+    *   [wx.reLaunch](./route/wx.reLaunch.html)
+    *   [wx.navigateTo](./route/wx.navigateTo.html)
+    *   [wx.switchTab](./route/wx.switchTab.html)
+    *   [wx.navigateBack](./route/wx.navigateBack.html)
+*   [定时器](./timer/setTimeout.html)
+    *   [setTimeout](./timer/setTimeout.html)
+    *   [clearTimeout](./timer/clearTimeout.html)
+    *   [setInterval](./timer/setInterval.html)
+    *   [clearInterval](./timer/clearInterval.html)
 
 </nav>
 
@@ -510,7 +681,41 @@
 
 # API
 
-**网络 API 列表：**
+小程序开发框架提供丰富的微信原生 API，可以方便的调起微信提供的能力，如获取用户信息，本地存储，支付功能等。详细介绍请参考 [API 文档](network/download/wx.downloadFile.html)。
+
+通常，在小程序 API 有以下几种类型：
+
+## 事件监听 API
+
+我们约定，以 `on` 开头的 API 用来监听某个事件是否触发，如：`wx.onSocketOpen`，`wx.onCompassChange` 等。
+
+这类 API 接受一个回调函数作为参数，当事件触发时会调用这个回调函数，并将相关数据以参数形式传入。
+
+**代码示例**
+
+    wx.onCompassChange(function (res) {
+      console.log(res.direction)
+    })
+
+## 同步 API
+
+我们约定，以 `Sync` 结尾的 API 都是同步 API， 如 `wx.setStorageSync`，`wx.getSystemInfoSync` 等。此外，也有一些其他的同步 API，如 `wx.createWorker`，`wx.getBackgroundAudioManager` 等，详情参见 API 文档中的说明。
+
+同步 API 的执行结果可以通过函数返回值直接获取，如果执行出错会抛出异常。
+
+**代码示例**
+
+    try {
+      wx.setStorageSync('key', 'value')
+    } catch (e) {
+      console.error(e)
+    }
+
+## 异步 API
+
+大多数 API 都是异步 API，如 `wx.request`，`wx.login` 等。这类 API 接口通常都接受一个 `Object` 类型的参数，这个参数都支持按需指定以下字段来接收接口调用结果：
+
+**Object 参数说明**
 
 <table>
 
@@ -518,7 +723,11 @@
 
 <tr>
 
-<th>API</th>
+<th>参数名</th>
+
+<th>类型</th>
+
+<th>必填</th>
 
 <th>说明</th>
 
@@ -530,81 +739,49 @@
 
 <tr>
 
-<td>[wx.request](network-request.html)</td>
+<td>success</td>
 
-<td>发起网络请求</td>
+<td>function</td>
 
-</tr>
+<td>否</td>
 
-<tr>
-
-<td>[wx.uploadFile](network-file.html#wxuploadfileobject)</td>
-
-<td>上传文件</td>
+<td>接口调用成功的回调函数</td>
 
 </tr>
 
 <tr>
 
-<td>[wx.downloadFile](network-file.html#wxdownloadfileobject)</td>
+<td>fail</td>
 
-<td>下载文件</td>
+<td>function</td>
 
-</tr>
+<td>否</td>
 
-<tr>
-
-<td>[wx.connectSocket](network-socket.html#wxconnectsocketobject)</td>
-
-<td>创建 WebSocket 连接</td>
+<td>接口调用失败的回调函数</td>
 
 </tr>
 
 <tr>
 
-<td>[wx.onSocketOpen](network-socket.html#wxonsocketopencallback)</td>
+<td>complete</td>
 
-<td>监听 WebSocket 打开</td>
+<td>function</td>
 
-</tr>
+<td>否</td>
 
-<tr>
-
-<td>[wx.onSocketError](network-socket.html#wxonsocketerrorcallback)</td>
-
-<td>监听 WebSocket 错误</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
 
 </tr>
 
 <tr>
 
-<td>[wx.sendSocketMessage](network-socket.html#wxsendsocketmessageobject)</td>
+<td>其他</td>
 
-<td>发送 WebSocket 消息</td>
+<td>Any</td>
 
-</tr>
+<td>-</td>
 
-<tr>
-
-<td>[wx.onSocketMessage](network-socket.html#wxonsocketmessagecallback)</td>
-
-<td>接受 WebSocket 消息</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.closeSocket](network-socket.html#wxclosesocket)</td>
-
-<td>关闭 WebSocket 连接</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.onSocketClose](network-socket.html#wxonsocketclosecallback)</td>
-
-<td>监听 WebSocket 关闭</td>
+<td>接口定义的其他参数</td>
 
 </tr>
 
@@ -612,7 +789,9 @@
 
 </table>
 
-**媒体 API 列表：**
+**回调函数的参数**
+
+`success`，`fail`，`complete` 函数调用时会传入一个 `Object` 类型参数，包含以下字段：
 
 <table>
 
@@ -620,7 +799,9 @@
 
 <tr>
 
-<th>API</th>
+<th>属性</th>
+
+<th>类型</th>
 
 <th>说明</th>
 
@@ -632,137 +813,31 @@
 
 <tr>
 
-<td>[wx.chooseImage](media-picture.html#wxchooseimageobject)</td>
+<td>errMsg</td>
 
-<td>从相册选择图片，或者拍照</td>
+<td>string</td>
 
-</tr>
-
-<tr>
-
-<td>[wx.previewImage](media-picture.html#wxpreviewimageobject)</td>
-
-<td>预览图片</td>
+<td>错误信息，如果调用成功返回 `${apiName}:ok`</td>
 
 </tr>
 
 <tr>
 
-<td>[wx.startRecord](media-record.html#wxstartrecordobject)</td>
+<td>errCode</td>
 
-<td>开始录音</td>
+<td>number</td>
 
-</tr>
-
-<tr>
-
-<td>[wx.stopRecord](media-record.html#wxstoprecord)</td>
-
-<td>结束录音</td>
+<td>错误码，仅部分 API 支持，具体含义请参考对应 API 文档，成功时为 `0`。</td>
 
 </tr>
 
 <tr>
 
-<td>[wx.playVoice](media-voice.html#wxplayvoice)</td>
+<td>其他</td>
 
-<td>播放语音</td>
+<td>Any</td>
 
-</tr>
-
-<tr>
-
-<td>[wx.pauseVoice](media-voice.html#wxpausevoice)</td>
-
-<td>暂停播放语音</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.stopVoice](media-voice.html#wxstopvoice)</td>
-
-<td>结束播放语音</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.getBackgroundAudioPlayerState](media-background-audio.html#wxgetbackgroundaudioplayerstateobject)</td>
-
-<td>获取音乐播放状态</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.playBackgroundAudio](media-background-audio.html#wxplaybackgroundaudioobject)</td>
-
-<td>播放音乐</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.pauseBackgroundAudio](media-background-audio.html#wxpausebackgroundaudio)</td>
-
-<td>暂停播放音乐</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.seekBackgroundAudio](media-background-audio.html#wxstopbackgroundaudio)</td>
-
-<td>控制音乐播放进度</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.stopBackgroundAudio](media-background-audio.html#wxstopbackgroundaudio)</td>
-
-<td>停止播放音乐</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.onBackgroundAudioPlay](media-background-audio.html#wxonbackgroundaudioplaycallback)</td>
-
-<td>监听音乐开始播放</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.onBackgroundAudioPause](media-background-audio.html#wxonbackgroundaudiopausecallback)</td>
-
-<td>监听音乐暂停</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.onBackgroundAudioStop](media-background-audio.html#wxonbackgroundaudiostopcallback)</td>
-
-<td>监听音乐结束</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.chooseVideo](media-video.html)</td>
-
-<td>从相册选择视频，或者拍摄</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.loadFontFace](media-fontFace.html)</td>
-
-<td>动态加载字体</td>
+<td>接口返回的其他数据</td>
 
 </tr>
 
@@ -770,757 +845,15 @@
 
 </table>
 
-**文件 API 列表：**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>API</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>[wx.saveFile](file.html)</td>
-
-<td>保存文件</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.getSavedFileList](file.html#wxgetsavedfilelistobject)</td>
-
-<td>获取已保存的文件列表</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.getSavedFileInfo](file.html#wxgetsavedfileinfoobject)</td>
-
-<td>获取已保存的文件信息</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.removeSavedFile](file.html#wxremovesavedfileobject)</td>
-
-<td>删除已保存的文件信息</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.openDocument](file.html#wxopendocumentobject)</td>
-
-<td>打开文件</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**数据 API 列表：**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>API</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>[wx.getStorage](data.html#wxgetstorageobject)</td>
-
-<td>获取本地数据缓存</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.getStorageSync](data.html#wxgetstoragesynckey)</td>
-
-<td>获取本地数据缓存</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.setStorage](data.html#wxsetstorageobject)</td>
-
-<td>设置本地数据缓存</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.setStorageSync](data.html#wxsetstoragesynckeydata)</td>
-
-<td>设置本地数据缓存</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.getStorageInfo](data.html#wxgetstorageinfoobject)</td>
-
-<td>获取本地缓存的相关信息</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.getStorageInfoSync](data.html#wxgetstorageinfosync)</td>
-
-<td>获取本地缓存的相关信息</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.removeStorage](data.html#wxremovestorageobject)</td>
-
-<td>删除本地缓存内容</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.removeStorageSync](data.html#wxremovestoragesynckey)</td>
-
-<td>删除本地缓存内容</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.clearStorage](data.html#wxclearstorageobject)</td>
-
-<td>清理本地数据缓存</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.clearStorageSync](data.html#wxclearstoragesync)</td>
-
-<td>清理本地数据缓存</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**位置 API 列表：**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>API</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>[wx.getLocation](location.html#wxgetlocationobject)</td>
-
-<td>获取当前位置</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.chooseLocation](location.html#wxchooselocationobject)</td>
-
-<td>打开地图选择位置</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.openLocation](location.html#wxopenlocationobject)</td>
-
-<td>打开内置地图</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.createMapContext](api-map.html#wxcreatemapcontextmapid)</td>
-
-<td>地图组件控制</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**设备 API 列表：**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>API</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>[wx.getNetworkType](device.html#wxgetnetworktypeobject)</td>
-
-<td>获取网络类型</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.onNetworkStatusChange](device.html#wxonnetworkstatuschangecallback)</td>
-
-<td>监听网络状态变化</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.getSystemInfo](systeminfo.html#wxgetsysteminfoobject)</td>
-
-<td>获取系统信息</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.getSystemInfoSync](systeminfo.html#wxgetsysteminfosync)</td>
-
-<td>获取系统信息</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.onAccelerometerChange](accelerometer.html#wxonaccelerometerchangecallback)</td>
-
-<td>监听加速度数据</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.startAccelerometer](accelerometer.html#wxstartaccelerometerobject)</td>
-
-<td>开始监听加速度数据</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.stopAccelerometer](accelerometer.html#wxstopaccelerometerobject)</td>
-
-<td>停止监听加速度数据</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.onCompassChange](compass.html#wxoncompasschangecallback)</td>
-
-<td>监听罗盘数据</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.startCompass](compass.html#wxstartcompassobject)</td>
-
-<td>开始监听罗盘数据</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.stopCompass](compass.html#wxstopcompassobject)</td>
-
-<td>停止监听罗盘数据</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.setClipboardData](clipboard.html#wxsetclipboarddataobject)</td>
-
-<td>设置剪贴板内容</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.getClipboardData](clipboard.html#wxgetclipboarddataobject)</td>
-
-<td>获取剪贴板内容</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.makePhoneCall](phonecall.html#wxmakephonecallobject)</td>
-
-<td>拨打电话</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.scanCode](scancode.html#wxscancodeobject)</td>
-
-<td>扫码</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**界面 API 列表：**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>API</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>[wx.showToast](api-react.html#wxshowtoastobject)</td>
-
-<td>显示提示框</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.showLoading](api-react.html#wxshowloadingobject)</td>
-
-<td>显示加载提示框</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.hideToast](api-react.html#wxhidetoast)</td>
-
-<td>隐藏提示框</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.hideLoading](api-react.html#wxhideloading)</td>
-
-<td>隐藏提示框</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.showModal](api-react.html#wxshowmodalobject)</td>
-
-<td>显示模态弹窗</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.showActionSheet](api-react.html#wxshowactionsheetobject)</td>
-
-<td>显示菜单列表</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.setNavigationBarTitle](ui.html#wxsetnavigationbartitleobject)</td>
-
-<td>设置当前页面标题</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.showNavigationBarLoading](ui.html#wxshownavigationbarloading)</td>
-
-<td>显示导航条加载动画</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.hideNavigationBarLoading](ui.html#wxhidenavigationbarloading)</td>
-
-<td>隐藏导航条加载动画</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.setBackgroundColor](ui-background.html#wxsetbackgroundcolor)</td>
-
-<td>动态设置窗口的背景色</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.setBackgroundTextStyle](ui-background.html#wxsetbackgroundtextstyle)</td>
-
-<td>动态设置下拉背景字体、loading 图的样式</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.navigateTo](ui-navigate.html#wxnavigatetoobject)</td>
-
-<td>新窗口打开页面</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.redirectTo](ui-navigate.html#wxredirecttoobject)</td>
-
-<td>原窗口打开页面</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.switchTab](ui-navigate.html#wxswitchtabobject)</td>
-
-<td>切换到 tabbar 页面</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.navigateBack](ui-navigate.html#wxnavigateback)</td>
-
-<td>退回上一个页面</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.createAnimation](api-animation.html)</td>
-
-<td>动画</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.createContext](canvas/create-canvas-context.html)</td>
-
-<td>创建绘图上下文</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.drawCanvas](canvas/draw-canvas.html)</td>
-
-<td>绘图</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.stopPullDownRefresh](pulldown.html#wxstoppulldownrefresh)</td>
-
-<td>停止下拉刷新动画</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**WXML节点信息 API 列表：**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>API</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>[wx.createSelectorQuery](wxml-nodes-info.html#wxcreateselectorquery)</td>
-
-<td>创建查询请求</td>
-
-</tr>
-
-<tr>
-
-<td>[selectorQuery.in](wxml-nodes-info.html#selectorqueryincomponent)</td>
-
-<td>指定在哪个自定义组件中选取节点</td>
-
-</tr>
-
-<tr>
-
-<td>[selectorQuery.select](wxml-nodes-info.html#selectorqueryselectselector)</td>
-
-<td>根据选择器选择单个节点</td>
-
-</tr>
-
-<tr>
-
-<td>[selectorQuery.selectAll](wxml-nodes-info.html#selectorqueryselectallselector)</td>
-
-<td>根据选择器选择全部节点</td>
-
-</tr>
-
-<tr>
-
-<td>[selectorQuery.selectViewport](wxml-nodes-info.html#selectorqueryselectviewport)</td>
-
-<td>选择显示区域</td>
-
-</tr>
-
-<tr>
-
-<td>[nodesRef.boundingClientRect](wxml-nodes-info.html#nodesrefboundingclientrectcallback)</td>
-
-<td>获取布局位置和尺寸</td>
-
-</tr>
-
-<tr>
-
-<td>[nodesRef.scrollOffset](wxml-nodes-info.html#nodesrefscrolloffsetcallback)</td>
-
-<td>获取滚动位置</td>
-
-</tr>
-
-<tr>
-
-<td>[nodesRef.fields](wxml-nodes-info.html#nodesreffieldsfieldscallback)</td>
-
-<td>获取任意字段</td>
-
-</tr>
-
-<tr>
-
-<td>[selectorQuery.exec](wxml-nodes-info.html#selectorqueryexeccallback)</td>
-
-<td>执行查询请求</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**WXML节点布局相交状态：**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>API</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>[wx.createIntersectionObserver](intersection-observer.html#wxcreateintersectionobserverthisoptions)</td>
-
-<td>创建 IntersectionObserver 对象</td>
-
-</tr>
-
-<tr>
-
-<td>[intersectionObserver.relativeTo](intersection-observer.html#intersectionobserverrelativetoselectormargins)</td>
-
-<td>指定参照节点</td>
-
-</tr>
-
-<tr>
-
-<td>[intersectionObserver.relativeToViewport](intersection-observer.html#intersectionobserverrelativetoviewportmargins)</td>
-
-<td>指定页面显示区域作为参照区域</td>
-
-</tr>
-
-<tr>
-
-<td>[intersectionObserver.observe](intersection-observer.html#intersectionobserverobservetargetselectorcallback)</td>
-
-<td>指定目标节点并开始监听</td>
-
-</tr>
-
-<tr>
-
-<td>[intersectionObserver.disconnect](intersection-observer.html#intersectionobserverdisconnect)</td>
-
-<td>停止监听</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**开放接口：**
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>API</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>[wx.login](api-login.html)</td>
-
-<td>登录</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.getUserInfo](open.html#wxgetuserinfoobject)</td>
-
-<td>获取用户信息</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.chooseAddress](address.html#wxchooseaddressobject)</td>
-
-<td>获取用户收货地址</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.requestPayment](api-pay.html#wxrequestpaymentobject)</td>
-
-<td>发起微信支付</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.addCard](card.html#wxaddcardobject)</td>
-
-<td>添加卡券</td>
-
-</tr>
-
-<tr>
-
-<td>[wx.openCard](card.html#wxopencardobject)</td>
-
-<td>打开卡券</td>
-
-</tr>
-
-</tbody>
-
-</table>
+异步 API 的执行结果需要通过 `Object` 类型的参数中传入的对应回调函数获取。部分异步 API 也会有返回值，可以用来实现更丰富的功能，如 `wx.request`，`wx.connectSockets` 等。
+
+**代码示例**
+
+    wx.login({
+      success(res) {
+        console.log(res.code)
+      }
+    })
 
 </section>
 

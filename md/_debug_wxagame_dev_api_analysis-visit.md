@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18093017)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18093017)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18093017)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18100816)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18100816)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18100816)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18093017)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18093017)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18093017)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18100816)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18100816)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18100816)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18093017)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18093017)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18100816)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18100816)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/analysis-visit.html?t=18093017)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/analysis-visit.html?t=18093017)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/analysis-visit.html?t=18100816)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/analysis-visit.html?t=18100816)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/analysis-visit.html?t=18093017)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/analysis-visit.html?t=18093017)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/analysis-visit.html?t=18100816)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/analysis-visit.html?t=18100816)
 
 </div>
 
@@ -496,6 +496,8 @@
 
 <div class="book-body">
 
+<div style="text-align:center;background:rgba(255, 231, 232, 0.5);width:100%;height:60px;line-height:60px;font-size:1.2em;font-weight:bold;z-index:999;position:relative">本页面已暂停更新，请查看[最新文档](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/data-analysis/getAnalysisDailyVisitTrend.html)</div>
+
 <div class="body-inner">
 
 <div class="page-wrapper" tabindex="-1" role="main">
@@ -510,7 +512,7 @@
 
 ### 访问分析
 
-获取小程序访问分析数据，数据说明参见[访问分析](https://mp.weixin.qq.com/debug/wxadoc/analysis/regular/?t=18093017#%E8%AE%BF%E9%97%AE%E5%88%86%E6%9E%90)
+获取小程序访问分析数据，数据说明参见[访问分析](https://mp.weixin.qq.com/debug/wxadoc/analysis/regular/?t=18100816#%E8%AE%BF%E9%97%AE%E5%88%86%E6%9E%90)
 
 #### 访问趋势
 
@@ -1224,7 +1226,7 @@
 
 访问来源：(index="access_source_session_cnt")
 
-场景值说明参见[场景值](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/scene.html?t=18093017)
+场景值说明参见[场景值](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/scene.html?t=18100816)
 
 <table>
 

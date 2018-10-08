@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092914)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092914)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092914)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18100816)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18100816)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18100816)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092914)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092914)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092914)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18100816)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18100816)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18100816)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092914)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092914)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18100816)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18100816)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/official-account.html?t=18092914)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/official-account.html?t=18092914)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/official-account.html?t=18100816)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/official-account.html?t=18100816)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/official-account.html?t=18092914)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/official-account.html?t=18092914)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/official-account.html?t=18100816)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/official-account.html?t=18100816)
 
 </div>
 
@@ -151,6 +151,170 @@
     *   当小程序从聊天顶部场景（场景值1089）中的“最近使用”内打开时，若小程序之前未被销毁，则该组件保持上一次打开小程序时的状态
     *   当从其他小程序返回小程序（场景值1038）时，若小程序之前未被销毁，则该组件保持上一次打开小程序时的状态
 3.  每个页面只能配置一个该组件。
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>属性名</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>bindload</td>
+
+<td>EventHandle</td>
+
+<td>组件加载成功时触发</td>
+
+</tr>
+
+<tr>
+
+<td>binderror</td>
+
+<td>EventHandle</td>
+
+<td>组件加载失败时触发</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+#### detail对象
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>属性名</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>status</td>
+
+<td>Number</td>
+
+<td>状态码</td>
+
+</tr>
+
+<tr>
+
+<td>errMsg</td>
+
+<td>String</td>
+
+<td>错误信息</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+#### 状态码
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>值</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>-2</td>
+
+<td>网络错误</td>
+
+</tr>
+
+<tr>
+
+<td>-1</td>
+
+<td>数据解析错误</td>
+
+</tr>
+
+<tr>
+
+<td>0</td>
+
+<td>加载成功</td>
+
+</tr>
+
+<tr>
+
+<td>1</td>
+
+<td>小程序关注公众号功能被封禁</td>
+
+</tr>
+
+<tr>
+
+<td>2</td>
+
+<td>关联公众号被封禁</td>
+
+</tr>
+
+<tr>
+
+<td>3</td>
+
+<td>关联关系解除或未选中关联公众号</td>
+
+</tr>
+
+<tr>
+
+<td>4</td>
+
+<td>未开启关注公众号功能</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 **示例：**
 

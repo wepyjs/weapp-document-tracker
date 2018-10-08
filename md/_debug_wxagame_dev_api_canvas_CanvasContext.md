@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18092914)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18092914)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18092914)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18100816)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18100816)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18100816)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18092914)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18092914)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18092914)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18100816)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18100816)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18100816)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18092914)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18092914)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18100816)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18100816)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.html?t=18092914)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/CanvasContext.html?t=18092914)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.html?t=18100816)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/CanvasContext.html?t=18100816)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.html?t=18092914)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/CanvasContext.html?t=18092914)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.html?t=18100816)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/CanvasContext.html?t=18100816)
 
 </div>
 
@@ -189,23 +189,50 @@
         *   [wx.previewImage](../media/image/wx.previewImage.html)
         *   [wx.getImageInfo](../media/image/wx.getImageInfo.html)
         *   [wx.saveImageToPhotosAlbum](../media/image/wx.saveImageToPhotosAlbum.html)
-    *   [录音](../media/recorder/wx.startRecord.html)
-        *   [wx.startRecord](../media/recorder/wx.startRecord.html)
-        *   [wx.getRecorderManager](../media/recorder/wx.getRecorderManager.html)
+    *   [背景音频](../media/background-audio/wx.onBackgroundAudioStop.html)
+        *   [wx.onBackgroundAudioStop](../media/background-audio/wx.onBackgroundAudioStop.html)
+        *   [wx.getBackgroundAudioManager](../media/background-audio/wx.getBackgroundAudioManager.html)
+        *   [wx.getBackgroundAudioPlayerState](../media/background-audio/wx.getBackgroundAudioPlayerState.html)
+        *   [wx.playBackgroundAudio](../media/background-audio/wx.playBackgroundAudio.html)
+        *   [wx.pauseBackgroundAudio](../media/background-audio/wx.pauseBackgroundAudio.html)
+        *   [wx.seekBackgroundAudio](../media/background-audio/wx.seekBackgroundAudio.html)
+        *   [wx.stopBackgroundAudio](../media/background-audio/wx.stopBackgroundAudio.html)
+        *   [wx.onBackgroundAudioPlay](../media/background-audio/wx.onBackgroundAudioPlay.html)
+        *   [wx.onBackgroundAudioPause](../media/background-audio/wx.onBackgroundAudioPause.html)
+        *   [BackgroundAudioManager.onPause](../media/background-audio/BackgroundAudioManager.onPause.html)
+        *   [BackgroundAudioManager.onSeeking](../media/background-audio/BackgroundAudioManager.onSeeking.html)
+        *   [BackgroundAudioManager.onSeeked](../media/background-audio/BackgroundAudioManager.onSeeked.html)
+        *   [BackgroundAudioManager.onEnded](../media/background-audio/BackgroundAudioManager.onEnded.html)
+        *   [BackgroundAudioManager.play](../media/background-audio/BackgroundAudioManager.play.html)
+        *   [BackgroundAudioManager.onTimeUpdate](../media/background-audio/BackgroundAudioManager.onTimeUpdate.html)
+        *   [BackgroundAudioManager.onNext](../media/background-audio/BackgroundAudioManager.onNext.html)
+        *   [BackgroundAudioManager.onPrev](../media/background-audio/BackgroundAudioManager.onPrev.html)
+        *   [BackgroundAudioManager](../media/background-audio/BackgroundAudioManager.html)
+        *   [BackgroundAudioManager.pause](../media/background-audio/BackgroundAudioManager.pause.html)
+        *   [BackgroundAudioManager.seek](../media/background-audio/BackgroundAudioManager.seek.html)
+        *   [BackgroundAudioManager.stop](../media/background-audio/BackgroundAudioManager.stop.html)
+        *   [BackgroundAudioManager.onCanPlay](../media/background-audio/BackgroundAudioManager.onCanPlay.html)
+        *   [BackgroundAudioManager.onWaiting](../media/background-audio/BackgroundAudioManager.onWaiting.html)
+        *   [BackgroundAudioManager.onError](../media/background-audio/BackgroundAudioManager.onError.html)
+        *   [BackgroundAudioManager.onPlay](../media/background-audio/BackgroundAudioManager.onPlay.html)
+        *   [BackgroundAudioManager.onStop](../media/background-audio/BackgroundAudioManager.onStop.html)
+    *   [录音](../media/recorder/wx.stopRecord.html)
         *   [wx.stopRecord](../media/recorder/wx.stopRecord.html)
-        *   [RecorderManager.onPause](../media/recorder/RecorderManager.onPause.html)
-        *   [RecorderManager.start](../media/recorder/RecorderManager.start.html)
+        *   [wx.getRecorderManager](../media/recorder/wx.getRecorderManager.html)
+        *   [wx.startRecord](../media/recorder/wx.startRecord.html)
         *   [RecorderManager.resume](../media/recorder/RecorderManager.resume.html)
         *   [RecorderManager.stop](../media/recorder/RecorderManager.stop.html)
         *   [RecorderManager.onStart](../media/recorder/RecorderManager.onStart.html)
-        *   [RecorderManager](../media/recorder/RecorderManager.html)
-        *   [RecorderManager.pause](../media/recorder/RecorderManager.pause.html)
-        *   [RecorderManager.onStop](../media/recorder/RecorderManager.onStop.html)
+        *   [RecorderManager.onResume](../media/recorder/RecorderManager.onResume.html)
+        *   [RecorderManager.onPause](../media/recorder/RecorderManager.onPause.html)
+        *   [RecorderManager.start](../media/recorder/RecorderManager.start.html)
         *   [RecorderManager.onFrameRecorded](../media/recorder/RecorderManager.onFrameRecorded.html)
         *   [RecorderManager.onError](../media/recorder/RecorderManager.onError.html)
         *   [RecorderManager.onInterruptionBegin](../media/recorder/RecorderManager.onInterruptionBegin.html)
         *   [RecorderManager.onInterruptionEnd](../media/recorder/RecorderManager.onInterruptionEnd.html)
-        *   [RecorderManager.onResume](../media/recorder/RecorderManager.onResume.html)
+        *   [RecorderManager](../media/recorder/RecorderManager.html)
+        *   [RecorderManager.pause](../media/recorder/RecorderManager.pause.html)
+        *   [RecorderManager.onStop](../media/recorder/RecorderManager.onStop.html)
 *   [文件](../file/wx.saveFile.html)
     *   [wx.saveFile](../file/wx.saveFile.html)
     *   [wx.openDocument](../file/wx.openDocument.html)
@@ -228,10 +255,10 @@
     *   [FileSystemManager](../file/FileSystemManager.html)
     *   [FileSystemManager.accessSync](../file/FileSystemManager.accessSync.html)
     *   [FileSystemManager.mkdirSync](../file/FileSystemManager.mkdirSync.html)
-    *   [FileSystemManager.readdir](../file/FileSystemManager.readdir.html)
-    *   [FileSystemManager.readdirSync](../file/FileSystemManager.readdirSync.html)
     *   [FileSystemManager.readFile](../file/FileSystemManager.readFile.html)
     *   [FileSystemManager.readFileSync](../file/FileSystemManager.readFileSync.html)
+    *   [FileSystemManager.readdir](../file/FileSystemManager.readdir.html)
+    *   [FileSystemManager.readdirSync](../file/FileSystemManager.readdirSync.html)
     *   [FileSystemManager.rename](../file/FileSystemManager.rename.html)
     *   [FileSystemManager.renameSync](../file/FileSystemManager.renameSync.html)
     *   [FileSystemManager.rmdir](../file/FileSystemManager.rmdir.html)
@@ -514,32 +541,6 @@
     *   [Worker.terminate](../worker/Worker.terminate.html)
 *   [数据上报](../report/wx.reportMonitor.html)
     *   [wx.reportMonitor](../report/wx.reportMonitor.html)
-*   [地图](../map/wx.createMapContext.html)
-    *   [wx.createMapContext](../map/wx.createMapContext.html)
-    *   [MapContext](../map/MapContext.html)
-    *   [MapContext.getCenterLocation](../map/MapContext.getCenterLocation.html)
-    *   [MapContext.moveToLocation](../map/MapContext.moveToLocation.html)
-    *   [MapContext.translateMarker](../map/MapContext.translateMarker.html)
-    *   [MapContext.includePoints](../map/MapContext.includePoints.html)
-    *   [MapContext.getRegion](../map/MapContext.getRegion.html)
-    *   [MapContext.getScale](../map/MapContext.getScale.html)
-*   [调试](../debug/wx.getLogManager.html)
-    *   [wx.getLogManager](../debug/wx.getLogManager.html)
-    *   [wx.setEnableDebug](../debug/wx.setEnableDebug.html)
-    *   [LogManager](../debug/LogManager.html)
-    *   [LogManager.debug](../debug/LogManager.debug.html)
-    *   [LogManager.info](../debug/LogManager.info.html)
-    *   [LogManager.log](../debug/LogManager.log.html)
-    *   [LogManager.warn](../debug/LogManager.warn.html)
-*   [定时器](../timer/setTimeout.html)
-    *   [setTimeout](../timer/setTimeout.html)
-    *   [clearTimeout](../timer/clearTimeout.html)
-    *   [setInterval](../timer/setInterval.html)
-    *   [clearInterval](../timer/clearInterval.html)
-*   [系统](../system/system-info/wx.getSystemInfo.html)
-    *   [系统信息](../system/system-info/wx.getSystemInfo.html)
-        *   [wx.getSystemInfo](../system/system-info/wx.getSystemInfo.html)
-        *   [wx.getSystemInfoSync](../system/system-info/wx.getSystemInfoSync.html)
 *   [WXML](../wxml/wx.createIntersectionObserver.html)
     *   [wx.createIntersectionObserver](../wxml/wx.createIntersectionObserver.html)
     *   [wx.createSelectorQuery](../wxml/wx.createSelectorQuery.html)
@@ -558,6 +559,22 @@
     *   [SelectorQuery.selectViewport](../wxml/SelectorQuery.selectViewport.html)
     *   [SelectorQuery.exec](../wxml/SelectorQuery.exec.html)
     *   [NodesRef.boundingClientRect](../wxml/NodesRef.boundingClientRect.html)
+*   [地图](../map/wx.createMapContext.html)
+    *   [wx.createMapContext](../map/wx.createMapContext.html)
+    *   [MapContext](../map/MapContext.html)
+    *   [MapContext.getCenterLocation](../map/MapContext.getCenterLocation.html)
+    *   [MapContext.moveToLocation](../map/MapContext.moveToLocation.html)
+    *   [MapContext.translateMarker](../map/MapContext.translateMarker.html)
+    *   [MapContext.includePoints](../map/MapContext.includePoints.html)
+    *   [MapContext.getRegion](../map/MapContext.getRegion.html)
+    *   [MapContext.getScale](../map/MapContext.getScale.html)
+*   [系统](../system/system-info/wx.getSystemInfo.html)
+    *   [系统信息](../system/system-info/wx.getSystemInfo.html)
+        *   [wx.getSystemInfo](../system/system-info/wx.getSystemInfo.html)
+        *   [wx.getSystemInfoSync](../system/system-info/wx.getSystemInfoSync.html)
+*   [第三方平台](../ext/wx.getExtConfig.html)
+    *   [wx.getExtConfig](../ext/wx.getExtConfig.html)
+    *   [wx.getExtConfigSync](../ext/wx.getExtConfigSync.html)
 *   [画布](./wx.canvasGetImageData.html)
     *   [wx.canvasGetImageData](./wx.canvasGetImageData.html)
     *   [wx.canvasToTempFilePath](./wx.canvasToTempFilePath.html)
@@ -583,8 +600,8 @@
     *   [CanvasContext.arcTo](./CanvasContext.arcTo.html)
     *   [CanvasContext.clip](./CanvasContext.clip.html)
     *   [CanvasContext.fillRect](./CanvasContext.fillRect.html)
-    *   [CanvasContext.setTextBaseline](./CanvasContext.setTextBaseline.html)
-    *   [CanvasContext.clearRect](./CanvasContext.clearRect.html)
+    *   [CanvasContext.strokeRect](./CanvasContext.strokeRect.html)
+    *   [Color](./Color.html)
     *   [CanvasContext.fill](./CanvasContext.fill.html)
     *   [CanvasContext.stroke](./CanvasContext.stroke.html)
     *   [CanvasContext.closePath](./CanvasContext.closePath.html)
@@ -607,7 +624,24 @@
     *   [CanvasContext.fillText](./CanvasContext.fillText.html)
     *   [CanvasContext.setFontSize](./CanvasContext.setFontSize.html)
     *   [CanvasContext.setTextAlign](./CanvasContext.setTextAlign.html)
-    *   [CanvasContext.strokeRect](./CanvasContext.strokeRect.html)
+    *   [CanvasContext.setTextBaseline](./CanvasContext.setTextBaseline.html)
+    *   [CanvasContext.clearRect](./CanvasContext.clearRect.html)
+*   [调试](../debug/wx.getLogManager.html)
+    *   [wx.getLogManager](../debug/wx.getLogManager.html)
+    *   [wx.setEnableDebug](../debug/wx.setEnableDebug.html)
+    *   [console](../debug/console.html)
+    *   [LogManager.log](../debug/LogManager.log.html)
+    *   [LogManager.warn](../debug/LogManager.warn.html)
+    *   [LogManager](../debug/LogManager.html)
+    *   [LogManager.info](../debug/LogManager.info.html)
+    *   [LogManager.debug](../debug/LogManager.debug.html)
+    *   [console.debug](../debug/console.debug.html)
+    *   [console.log](../debug/console.log.html)
+    *   [console.info](../debug/console.info.html)
+    *   [console.warn](../debug/console.warn.html)
+    *   [console.error](../debug/console.error.html)
+    *   [console.group](../debug/console.group.html)
+    *   [console.groupEnd](../debug/console.groupEnd.html)
 *   [基础](../base/wx.canIUse.html)
     *   [wx.canIUse](../base/wx.canIUse.html)
 *   [转发](../share/wx.getShareInfo.html)
@@ -621,9 +655,11 @@
     *   [wx.navigateTo](../route/wx.navigateTo.html)
     *   [wx.switchTab](../route/wx.switchTab.html)
     *   [wx.navigateBack](../route/wx.navigateBack.html)
-*   [第三方平台](../ext/wx.getExtConfig.html)
-    *   [wx.getExtConfig](../ext/wx.getExtConfig.html)
-    *   [wx.getExtConfigSync](../ext/wx.getExtConfigSync.html)
+*   [定时器](../timer/setTimeout.html)
+    *   [setTimeout](../timer/setTimeout.html)
+    *   [clearTimeout](../timer/clearTimeout.html)
+    *   [setInterval](../timer/setInterval.html)
+    *   [clearInterval](../timer/clearInterval.html)
 
 </nav>
 
@@ -713,7 +749,7 @@ canvas 组件的绘图上下文
 
 > 支持版本 >= 1.9.90
 
-虚线偏移量
+虚线偏移量，初始值为0
 
 ##### string font
 
@@ -729,7 +765,12 @@ canvas 组件的绘图上下文
 
 > 支持版本 >= 1.9.90
 
-在绘制新形状时应用的合成操作的类型。目前安卓版本只适用于 fill 填充块的合成，用于 stroke 线段的合成效果都是 source-over。
+在绘制新形状时应用的合成操作的类型。目前安卓版本只适用于 `fill` 填充块的合成，用于 `stroke` 线段的合成效果都是 `source-over`。
+
+目前支持的操作有
+
+*   安卓：xor, source-over, source-atop, destination-out, lighter, overlay, darken, lighten, hard-light
+*   iOS：xor, source-over, source-atop, destination-over, destination-out, lighter, multiply, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, saturation, luminosity
 
 #### 方法
 
@@ -739,11 +780,11 @@ canvas 组件的绘图上下文
 
 ##### [CanvasGradient CanvasContext.createLinearGradient(number x0, number y0, number x1, number y1)](CanvasContext.createLinearGradient.html)
 
-创建一个线性的渐变颜色。返回的渐变对象需要使用 [CanvasGradient.addColorStop()](CanvasGradient.addColorStop.html) 来指定渐变点，至少要两个。
+创建一个线性的渐变颜色。返回的`CanvasGradient`对象需要使用 [CanvasGradient.addColorStop()](CanvasGradient.addColorStop.html) 来指定渐变点，至少要两个。
 
-##### [CanvasGradient CanvasContext.createCircularGradient(number x0, number y0, number x1, number y1)](CanvasContext.createCircularGradient.html)
+##### [CanvasGradient CanvasContext.createCircularGradient(number x, number y, number r)](CanvasContext.createCircularGradient.html)
 
-创建一个圆形的渐变颜色。起点在圆心，终点在圆环。返回的渐变对象需要使用 [CanvasGradient.addColorStop()](CanvasGradient.addColorStop.html) 来指定渐变点，至少要两个。
+创建一个圆形的渐变颜色。起点在圆心，终点在圆环。返回的`CanvasGradient`对象需要使用 [CanvasGradient.addColorStop()](CanvasGradient.addColorStop.html) 来指定渐变点，至少要两个。
 
 ##### [CanvasContext.createPattern(string image, string repetition)](CanvasContext.createPattern.html)
 
@@ -763,31 +804,37 @@ canvas 组件的绘图上下文
 
 ##### [CanvasContext.beginPath()](CanvasContext.beginPath.html)
 
-开始创建一个路径，需要调用 fill 或者 stroke 才会使用路径进行填充或描边
+开始创建一个路径，需要调用 `fill` 或者 `stroke` 才会使用路径进行填充或描边
+
+*   在最开始的时候相当于调用了一次 `beginPath`。
+*   同一个路径内的多次 `setFillStyle`、`setStrokeStyle`、`setLineWidth`等设置，以最后一次设置为准。
 
 ##### [CanvasContext.moveTo(number x, number y)](CanvasContext.moveTo.html)
 
-把路径移动到画布中的指定点，不创建线条。
+把路径移动到画布中的指定点，不创建线条。用 `stroke` 方法来画线条
 
 ##### [CanvasContext.lineTo(number x, number y)](CanvasContext.lineTo.html)
 
-lineTo 方法增加一个新点，然后创建一条从上次指定点到目标点的线。
+lineTo 方法增加一个新点，然后创建一条从上次指定点到目标点的线。用 `stroke` 方法来画线条
 
 ##### [CanvasContext.quadraticCurveTo(number cpx, number cpy, number x, number y)](CanvasContext.quadraticCurveTo.html)
 
-创建二次贝塞尔曲线路径
+创建二次贝塞尔曲线路径。曲线的起始点为路径中前一个点。
 
 ##### [CanvasContext.bezierCurveTo()](CanvasContext.bezierCurveTo.html)
 
-创建三次方贝塞尔曲线路径。
+创建三次方贝塞尔曲线路径。曲线的起始点为路径中前一个点。
 
 ##### [CanvasContext.arc(number x, number y, number r, number sAngle, number eAngle, number counterclockwise)](CanvasContext.arc.html)
 
-画一条弧线。
+创建一条弧线。
+
+*   创建一个圆可以指定起始弧度为 0，终止弧度为 2 * Math.PI。
+*   用 `stroke` 或者 `fill` 方法来在 `canvas` 中画弧线。
 
 ##### [CanvasContext.rect(number x, number y, number width, number height)](CanvasContext.rect.html)
 
-创建一个矩形路径。
+创建一个矩形路径。需要用 [`fill`](CanvasContext.fill.html) 或者 [`stroke`](CanvasContext.stroke.html) 方法将矩形真正的画到 `canvas` 中
 
 ##### [CanvasContext.arcTo(number x1, number y1, number x2, number y2, number radius)](CanvasContext.arcTo.html)
 
@@ -795,15 +842,15 @@ lineTo 方法增加一个新点，然后创建一条从上次指定点到目标�
 
 ##### [CanvasContext.clip()](CanvasContext.clip.html)
 
-clip() 方法从原始画布中剪切任意形状和尺寸。一旦剪切了某个区域，则所有之后的绘图都会被限制在被剪切的区域内（不能访问画布上的其他区域）。可以在使用 clip() 方法前通过使用 save() 方法对当前画布区域进行保存，并在以后的任意时间对其进行恢复（通过 restore() 方法）。
+从原始画布中剪切任意形状和尺寸。一旦剪切了某个区域，则所有之后的绘图都会被限制在被剪切的区域内（不能访问画布上的其他区域）。可以在使用 `clip` 方法前通过使用 `save` 方法对当前画布区域进行保存，并在以后的任意时间通过`restore`方法对其进行恢复。
 
 ##### [CanvasContext.fillRect(number x, number y, number width, number height)](CanvasContext.fillRect.html)
 
-填充一个矩形
+填充一个矩形。用 [`setFillStyle`](CanvasContext.setFillStyle.html) 设置矩形的填充色，如果没设置默认是黑色。
 
 ##### [CanvasContext.strokeRect(number x, number y, number width, number height)](CanvasContext.strokeRect.html)
 
-画一个矩形(非填充)
+画一个矩形(非填充)。 用 [`setStrokeStyle`](CanvasContext.setStrokeStyle.html) 设置矩形线条的颜色，如果没设置默认是黑色。
 
 ##### [CanvasContext.clearRect(number x, number y, number width, number height)](CanvasContext.clearRect.html)
 
@@ -819,15 +866,15 @@ clip() 方法从原始画布中剪切任意形状和尺寸。一旦剪切了某�
 
 ##### [CanvasContext.closePath()](CanvasContext.closePath.html)
 
-关闭一个路径
+关闭一个路径。会连接起点和终点。如果关闭路径后没有调用 `fill` 或者 `stroke` 并开启了新的路径，那之前的路径将不会被渲染。
 
 ##### [CanvasContext.scale(number scaleWidth, number scaleHeight)](CanvasContext.scale.html)
 
-在调用 scale() 方法后，之后创建的路径其横纵坐标会被缩放。多次调用 scale()，倍数会相乘。
+在调用后，之后创建的路径其横纵坐标会被缩放。多次调用倍数会相乘。
 
 ##### [CanvasContext.rotate(number rotate)](CanvasContext.rotate.html)
 
-以原点为中心，原点可以用 translate() 方法修改。顺时针旋转当前坐标轴。多次调用 rotate()，旋转的角度会叠加。
+以原点为中心顺时针旋转当前坐标轴。多次调用旋转的角度会叠加。原点可以用 `translate` 方法修改。
 
 ##### [CanvasContext.translate(number x, number y)](CanvasContext.translate.html)
 
@@ -841,27 +888,27 @@ clip() 方法从原始画布中剪切任意形状和尺寸。一旦剪切了某�
 
 给定的 (x, y) 位置绘制文本描边的方法
 
-##### [CanvasContext.transform(number scaleX, number skewX, number skewY, number scaleY, number translateX, number translateY)](CanvasContext.transform.html)
+##### [CanvasContext.transform(number scaleX, number scaleY, number skewX, number skewY, number translateX, number translateY)](CanvasContext.transform.html)
 
 使用矩阵多次叠加当前变换的方法
 
-##### [CanvasContext.setTransform(number scaleX, number skewX, number skewY, number scaleY, number translateX, number translateY)](CanvasContext.setTransform.html)
+##### [CanvasContext.setTransform(number scaleX, number scaleY, number skewX, number skewY, number translateX, number translateY)](CanvasContext.setTransform.html)
 
 使用矩阵重新设置（覆盖）当前变换的方法
 
-##### [CanvasContext.setFillStyle(string color)](CanvasContext.setFillStyle.html)
+##### [CanvasContext.setFillStyle(Color color)](CanvasContext.setFillStyle.html)
 
-设置填充色。默认颜色为 black。
+设置填充色。
 
-##### [CanvasContext.setStrokeStyle(string color)](CanvasContext.setStrokeStyle.html)
+##### [CanvasContext.setStrokeStyle(Color color)](CanvasContext.setStrokeStyle.html)
 
-设置描边颜色。默认颜色为 black。
+设置描边颜色。
 
 ##### [CanvasContext.setShadow(number offsetX, number offsetY, number blur, string color)](CanvasContext.setShadow.html)
 
-设定阴影样式。如果没有设置，offsetX 默认值为 0， offsetY 默认值为 0， blur 默认值为 0，color 默认值为 black。
+设定阴影样式。
 
-##### [CanvasContext.setGlobalAlpha(number 透明度。范围)](CanvasContext.setGlobalAlpha.html)
+##### [CanvasContext.setGlobalAlpha(number alpha)](CanvasContext.setGlobalAlpha.html)
 
 设置全局画笔透明度。
 
@@ -879,7 +926,7 @@ clip() 方法从原始画布中剪切任意形状和尺寸。一旦剪切了某�
 
 ##### [CanvasContext.setLineDash(Array.<number> pattern, number offset)](CanvasContext.setLineDash.html)
 
-设置虚线样式的方法。
+设置虚线样式。
 
 ##### [CanvasContext.setMiterLimit(number miterLimit)](CanvasContext.setMiterLimit.html)
 
