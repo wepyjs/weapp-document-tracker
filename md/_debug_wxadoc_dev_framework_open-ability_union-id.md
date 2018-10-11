@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18100816)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18100816)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18100816)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101112)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101112)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101112)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18100816)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18100816)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18100816)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101112)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101112)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101112)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18100816)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18100816)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101112)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101112)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/union-id.html?t=18100816)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/union-id.html?t=18100816)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/union-id.html?t=18101112)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/union-id.html?t=18101112)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/union-id.html?t=18100816)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/union-id.html?t=18100816)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/union-id.html?t=18101112)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/union-id.html?t=18101112)
 
 </div>
 
@@ -108,7 +108,7 @@
         *   [语句](../view/wxs/05statement.html)
         *   [数据类型](../view/wxs/06datatype.html)
         *   [基础类库](../view/wxs/07basiclibrary.html)
-    *   [WXML节点布局相交状态](../view/intersection-observer.html)
+    *   [获取界面上的节点信息](../view/selector.html)
     *   [响应显示区域变化](../view/resizable.html)
 *   [自定义组件](../custom-component/)
     *   [组件模版和样式](../custom-component/wxml-wxss.html)
@@ -225,13 +225,13 @@
 
 登录[微信开放平台](https://open.weixin.qq.com) – 帐号中心 – 开发者资质认证
 
-![img](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/open.png?t=18100816)
+![img](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/open.png?t=18101112)
 
 #### 绑定流程：
 
 登录[微信开放平台](https://open.weixin.qq.com) — 管理中心 — 公众帐号 — 绑定公众帐号
 
-![img](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/union_bind.png?t=18100816)
+![img](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/union_bind.png?t=18101112)
 
 </section>
 

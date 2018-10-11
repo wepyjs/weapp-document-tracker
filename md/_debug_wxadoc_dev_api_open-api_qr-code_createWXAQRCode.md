@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18100816)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18100816)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18100816)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101112)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101112)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101112)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18100816)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18100816)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18100816)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101112)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101112)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101112)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18100816)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18100816)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101112)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101112)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/qr-code/createWXAQRCode.html?t=18100816)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/qr-code/createWXAQRCode.html?t=18100816)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/qr-code/createWXAQRCode.html?t=18101112)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/qr-code/createWXAQRCode.html?t=18101112)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/qr-code/createWXAQRCode.html?t=18100816)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/qr-code/createWXAQRCode.html?t=18100816)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/qr-code/createWXAQRCode.html?t=18101112)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/qr-code/createWXAQRCode.html?t=18101112)
 
 </div>
 
@@ -699,7 +699,7 @@
 
 ##### number width
 
-二维码的宽度，默认 430px
+二维码的宽度，默认 430px，最小 280px，最大 1280px
 
 #### 返回值
 
@@ -791,7 +791,8 @@
 
 #### 注意
 
-*   接口只能生成已发布的小程序的二维码
+*   POST 参数需要转成 JSON 字符串，不支持 form 表单提交。
+*   接口只能生成已发布的小程序的二维码。开发版的带参二维码可以在开发者工具预览时生成。
 *   与 [getWXACode](getWXACode.html) 总共生成的码数量限制为 100,000，请谨慎调用。
 
 </section>

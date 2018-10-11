@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18100816)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18100816)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18100816)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101112)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101112)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101112)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18100816)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18100816)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18100816)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101112)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101112)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101112)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18100816)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18100816)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101112)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101112)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/qr-code/getWXACodeUnlimit.html?t=18100816)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/qr-code/getWXACodeUnlimit.html?t=18100816)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/qr-code/getWXACodeUnlimit.html?t=18101112)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/qr-code/getWXACodeUnlimit.html?t=18101112)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/qr-code/getWXACodeUnlimit.html?t=18100816)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/qr-code/getWXACodeUnlimit.html?t=18100816)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/qr-code/getWXACodeUnlimit.html?t=18101112)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/qr-code/getWXACodeUnlimit.html?t=18101112)
 
 </div>
 
@@ -695,15 +695,15 @@
 
 ##### string scene
 
-最大32个可见字符，只支持数字，大小写英文以及部分特殊字符：`!#><'()*+,/:;=?@-._~`，其它字符请自行编码为合法字符（因不支持%，中文无法使用 urlencode 处理，请使用其他编码方式）
+最大32个可见字符，只支持数字，大小写英文以及部分特殊字符：`!#><'()*+,/:;=?@-._~`，其它字符请自行编码为合法字符（因不支持`%`，中文无法使用 `urlencode` 处理，请使用其他编码方式）
 
 ##### string page
 
-必须是已经发布的小程序存在的页面（否则报错），例如 `pages/index/index` ,根路径前不要填加 `/`,不能携带参数（参数请放在scene字段里），如果不填写这个字段，默认跳主页面
+必须是已经发布的小程序存在的页面（否则报错），例如 `pages/index/index`, 根路径前不要填加 `/`,不能携带参数（参数请放在scene字段里），如果不填写这个字段，默认跳主页面
 
 ##### number width
 
-二维码的宽度，默认为 430px
+二维码的宽度，默认为 430px，最小 280px，最大 1280px
 
 ##### boolean auto_color
 
@@ -711,11 +711,11 @@
 
 ##### Object line_color
 
-auto_color 为 false 时生效，使用 rgb 设置颜色 例如 {"r":"xxx","g":"xxx","b":"xxx"} 十进制表示，默认全0
+auto_color 为 false 时生效，使用 rgb 设置颜色 例如 `{"r":"xxx","g":"xxx","b":"xxx"}` 十进制表示，默认全 0
 
 ##### boolean is_hyaline
 
-是否需要透明底色，为true时，生成透明底色的小程序码，默认false
+是否需要透明底色，为 true 时，生成透明底色的小程序码，默认 false
 
 #### 返回值
 
@@ -815,6 +815,7 @@ auto_color 为 false 时生效，使用 rgb 设置颜色 例如 {"r":"xxx","g":"
 
 #### 注意
 
+*   POST 参数需要转成 JSON 字符串，不支持 form 表单提交。
 *   接口只能生成已发布的小程序的二维码
 *   调用分钟频率受限（5000次/分钟），如需大量小程序码，建议预生成
 
