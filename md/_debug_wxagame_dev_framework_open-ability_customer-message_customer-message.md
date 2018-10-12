@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101112)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101112)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101112)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101220)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101220)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101220)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101112)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101112)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101112)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101220)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101220)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101220)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101112)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101112)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101220)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101220)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/customer-message/customer-message.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/customer-message/customer-message.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/customer-message/customer-message.html?t=18101220)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/customer-message/customer-message.html?t=18101220)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/customer-message/customer-message.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/customer-message/customer-message.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/customer-message/customer-message.html?t=18101220)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/customer-message/customer-message.html?t=18101220)
 
 </div>
 
@@ -111,7 +111,7 @@
     *   [获取界面上的节点信息](../../view/selector.html)
     *   [响应显示区域变化](../../view/resizable.html)
 *   [自定义组件](../../custom-component/)
-    *   [组件模版和样式](../../custom-component/wxml-wxss.html)
+    *   [组件模板和样式](../../custom-component/wxml-wxss.html)
     *   [Component构造器](../../custom-component/component.html)
     *   [组件事件](../../custom-component/events.html)
     *   [behaviors](../../custom-component/behaviors.html)
@@ -152,7 +152,7 @@
     *   [转发](../share.html)
     *   [打开App](../launchApp.html)
     *   [消息](../template-message.html)
-        *   [模版消息](../template-message.html)
+        *   [模板消息](../template-message.html)
         *   [统一服务消息](../uniform-message.html)
         *   [客服消息](./customer-message.html)
             *   [概述](./customer-message.html)
@@ -205,6 +205,67 @@
 
 ## 客服消息
 
+### 在页面使用客服消息
+
+需要将 `<button>` 组件 `open-type` 的值设置为 `contact`，当用户点击后就会进入客服会话，如果用户在会话中点击了小程序消息，则会返回到小程序，开发者可以通过 `bindcontact` 事件回调获取到用户所点消息的页面路径 `path` 和对应的参数 `query`。
+
+#### 代码示例
+
+    <button open-type="contact" bindcontact="handleContact"></button> 
+
+    Page({
+        handleContact (e) {
+            console.log(e.path)
+            console.log(e.query)
+        }
+    })
+
+#### 返回参数说明
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>参数</th>
+
+<th>类型</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>path</td>
+
+<td>String</td>
+
+<td>小程序消息指定的路径</td>
+
+</tr>
+
+<tr>
+
+<td>query</td>
+
+<td>Object</td>
+
+<td>小程序消息指定的查询参数</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+### 后台接入消息服务
+
 接入微信小程序消息服务，开发者需要按照如下步骤完成：
 
 1.  填写服务器配置
@@ -223,7 +284,7 @@
 
 模式的选择与服务器配置在提交后都会立即生效，请开发者谨慎填写及选择。切换加密方式和数据格式需要提前配置好相关代码，详情请参考 [消息加解密说明](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419318479&token=&lang=zh_CN)。
 
-![填写服务器配置](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/callback_help.png?t=18101112)
+![填写服务器配置](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/callback_help.png?t=18101220)
 
 #### 第二步：验证消息的确来自微信服务器
 

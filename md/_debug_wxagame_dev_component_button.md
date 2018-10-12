@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101112)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101112)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101112)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101220)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101220)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101220)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101112)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101112)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101112)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101220)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101220)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101220)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101112)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101112)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101220)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101220)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/button.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/button.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/button.html?t=18101220)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/button.html?t=18101220)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/button.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/button.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/button.html?t=18101220)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/button.html?t=18101220)
 
 </div>
 
@@ -685,7 +685,7 @@
 
 <td>contact</td>
 
-<td>打开客服会话</td>
+<td>打开客服会话，如果用户在会话中点击消息卡片后返回小程序，可以从 bindcontact 回调中获得具体信息，[具体说明](../framework/open-ability/customer-message/customer-message.html)</td>
 
 <td>[1.1.0](../framework/compatibility.html "基础库 1.1.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -828,7 +828,7 @@
 
     Page(pageObject)
 
-![button](https://developers.weixin.qq.com/miniprogram/dev/image/pic/button.png?t=18101112)
+![button](https://developers.weixin.qq.com/miniprogram/dev/image/pic/button.png?t=18101220)
 
 ##### Bug & Tip
 

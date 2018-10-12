@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101112)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101112)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101112)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101214)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101214)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101214)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101112)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101112)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101112)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101214)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101214)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101214)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101112)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101112)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101214)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101214)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/plugin-management/getPluginDevApplyList.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/plugin-management/getPluginDevApplyList.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/plugin-management/getPluginDevApplyList.html?t=18101214)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/plugin-management/getPluginDevApplyList.html?t=18101214)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/plugin-management/getPluginDevApplyList.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/plugin-management/getPluginDevApplyList.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/plugin-management/getPluginDevApplyList.html?t=18101214)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/plugin-management/getPluginDevApplyList.html?t=18101214)
 
 </div>
 
@@ -841,6 +841,54 @@
 
 </tr>
 
+<tr>
+
+<td>categories</td>
+
+<td>Array.<Object></td>
+
+<td>使用者的类目</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>create_time</td>
+
+<td>string</td>
+
+<td>使用者的申请时间</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>apply_url</td>
+
+<td>string</td>
+
+<td>使用者的小程序码</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>reason</td>
+
+<td>string</td>
+
+<td>使用者的申请说明</td>
+
+<td></td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -1039,6 +1087,25 @@
       "action":"dev_apply_list",
       "page": 1,
       "num": 10
+    }
+
+#### 返回数据示例
+
+    {
+      "errcode": 0,
+      "errmsg": "ok",
+      "apply_list": [{
+        "appid": "xxxxxxxxxxxxx",
+        "status": 1,
+        "nickname": "名称",
+        "headimgurl": "**********",
+        "reason": "polo has gone",
+        "apply_url": "*******",
+        "create_time": "1536305096",
+        "categories": [{
+          "first": "IT科技",
+          "second": "硬件与设备"
+        }],
     }
 
 </section>
