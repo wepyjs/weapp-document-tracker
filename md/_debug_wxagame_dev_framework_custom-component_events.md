@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101112)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101112)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101112)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101112)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101112)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101112)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101112)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101112)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/events.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/events.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/events.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/events.html?t=18101520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/events.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/events.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/events.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/events.html?t=18101520)
 
 </div>
 
@@ -111,7 +111,7 @@
     *   [获取界面上的节点信息](../view/selector.html)
     *   [响应显示区域变化](../view/resizable.html)
 *   [自定义组件](.)
-    *   [组件模版和样式](./wxml-wxss.html)
+    *   [组件模板和样式](./wxml-wxss.html)
     *   [Component构造器](./component.html)
     *   [组件事件](./events.html)
     *   [behaviors](./behaviors.html)
@@ -152,7 +152,7 @@
     *   [转发](../open-ability/share.html)
     *   [打开App](../open-ability/launchApp.html)
     *   [消息](../open-ability/template-message.html)
-        *   [模版消息](../open-ability/template-message.html)
+        *   [模板消息](../open-ability/template-message.html)
         *   [统一服务消息](../open-ability/uniform-message.html)
         *   [客服消息](../open-ability/customer-message/customer-message.html)
             *   [概述](../open-ability/customer-message/customer-message.html)
@@ -209,7 +209,7 @@
 
 组件间的基本通信方式有以下几种。
 
-*   WXML 数据绑定：用于父组件向子组件的指定属性设置数据，仅能设置 JSON 兼容数据（自基础库版本 [2.0.9](../compatibility.html "基础库 2.0.9 开始支持，低版本需做兼容处理。") 开始，还可以在数据中包含函数）。具体在 [组件模版和样式](wxml-wxss.html) 章节中介绍。
+*   WXML 数据绑定：用于父组件向子组件的指定属性设置数据，仅能设置 JSON 兼容数据（自基础库版本 [2.0.9](../compatibility.html "基础库 2.0.9 开始支持，低版本需做兼容处理。") 开始，还可以在数据中包含函数）。具体在 [组件模板和样式](wxml-wxss.html) 章节中介绍。
 *   事件：用于子组件向父组件传递数据，可以传递任意数据。
 *   如果以上两种方式不足以满足需要，父组件还可以通过 `this.selectComponent` 方法获取子组件实例对象，这样就可以直接访问组件的任意数据和方法。
 

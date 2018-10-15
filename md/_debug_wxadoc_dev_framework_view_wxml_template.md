@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101112)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101112)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101112)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101112)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101112)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101112)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101112)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101112)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/template.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/view/wxml/template.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/template.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/view/wxml/template.html?t=18101520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/template.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/view/wxml/template.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/template.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/view/wxml/template.html?t=18101520)
 
 </div>
 
@@ -111,7 +111,7 @@
     *   [获取界面上的节点信息](../selector.html)
     *   [响应显示区域变化](../resizable.html)
 *   [自定义组件](../../custom-component/)
-    *   [组件模版和样式](../../custom-component/wxml-wxss.html)
+    *   [组件模板和样式](../../custom-component/wxml-wxss.html)
     *   [Component构造器](../../custom-component/component.html)
     *   [组件事件](../../custom-component/events.html)
     *   [behaviors](../../custom-component/behaviors.html)
@@ -152,7 +152,7 @@
     *   [转发](../../open-ability/share.html)
     *   [打开App](../../open-ability/launchApp.html)
     *   [消息](../../open-ability/template-message.html)
-        *   [模版消息](../../open-ability/template-message.html)
+        *   [模板消息](../../open-ability/template-message.html)
         *   [统一服务消息](../../open-ability/uniform-message.html)
         *   [客服消息](../../open-ability/customer-message/customer-message.html)
             *   [概述](../../open-ability/customer-message/customer-message.html)
@@ -254,7 +254,7 @@ is 属性可以使用 Mustache 语法，来动态决定具体需要渲染哪个�
 
 ### 模板的作用域
 
-模板拥有自己的作用域，只能使用 data 传入的数据以及模版定义文件中定义的 `<wxs />` 模块。
+模板拥有自己的作用域，只能使用 data 传入的数据以及模板定义文件中定义的 `<wxs />` 模块。
 
 </section>
 

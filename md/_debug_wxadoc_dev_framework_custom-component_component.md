@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101112)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101112)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101112)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101112)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101112)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101112)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101112)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101112)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/component.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/component.html?t=18101520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/component.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/component.html?t=18101520)
 
 </div>
 
@@ -111,7 +111,7 @@
     *   [获取界面上的节点信息](../view/selector.html)
     *   [响应显示区域变化](../view/resizable.html)
 *   [自定义组件](.)
-    *   [组件模版和样式](./wxml-wxss.html)
+    *   [组件模板和样式](./wxml-wxss.html)
     *   [Component构造器](./component.html)
     *   [组件事件](./events.html)
     *   [behaviors](./behaviors.html)
@@ -152,7 +152,7 @@
     *   [转发](../open-ability/share.html)
     *   [打开App](../open-ability/launchApp.html)
     *   [消息](../open-ability/template-message.html)
-        *   [模版消息](../open-ability/template-message.html)
+        *   [模板消息](../open-ability/template-message.html)
         *   [统一服务消息](../open-ability/uniform-message.html)
         *   [客服消息](../open-ability/customer-message/customer-message.html)
             *   [概述](../open-ability/customer-message/customer-message.html)
@@ -253,7 +253,7 @@ Component构造器可用于定义组件，调用Component构造器时可以指�
 
 <td>否</td>
 
-<td>组件的内部数据，和 `properties` 一同用于组件的模版渲染</td>
+<td>组件的内部数据，和 `properties` 一同用于组件的模板渲染</td>
 
 <td></td>
 
@@ -640,7 +640,7 @@ Component构造器可用于定义组件，调用Component构造器时可以指�
         },
         myProperty2: String // 简化的定义方式
       },
-      data: {}, // 私有数据，可用于模版渲染
+      data: {}, // 私有数据，可用于模板渲染
 
       lifetimes: {
         // 生命周期函数，可以为函数，或一个在methods段中定义的方法名
@@ -713,7 +713,8 @@ Component构造器可用于定义组件，调用Component构造器时可以指�
 *   使用 `this.data` 可以获取内部数据和属性值，但不要直接修改它们，应使用 `setData` 修改。
 *   生命周期函数无法在组件方法中通过 `this` 访问到。
 *   属性名应避免以 data 开头，即不要命名成 `dataXyz` 这样的形式，因为在 WXML 中， `data-xyz=""` 会被作为节点 dataset 来处理，而不是组件属性。
-*   在一个组件的定义和使用时，组件的属性名和data字段相互间都不能冲突（尽管它们位于不同的定义段中）。
+*   在一个组件的定义和使用时，组件的属性名和 data 字段相互间都不能冲突（尽管它们位于不同的定义段中）。
+*   从基础库 [2.0.9](../compatibility.html "基础库 2.0.9 开始支持，低版本需做兼容处理。") 开始，对象类型的属性和 data 字段中可以包含函数类型的子字段，即可以通过对象类型的属性字段来传递函数。低于这一版本的基础库不支持这一特性。
 *   `bug` : 对于 type 为 Object 或 Array 的属性，如果通过该组件自身的 this.setData 来改变属性值的一个子字段，则依旧会触发属性 observer ，且 observer 接收到的 `newVal` 是变化的那个子字段的值， `oldVal` 为空， `changedPath` 包含子字段的字段名相关信息。
 
 </section>

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101112)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101112)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101112)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101112)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101112)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101112)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101112)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101112)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/different.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/different.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/different.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/different.html?t=18101520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/different.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/different.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/different.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/different.html?t=18101520)
 
 </div>
 
@@ -169,13 +169,13 @@
 
 例如下图是选择进入页面是 `page/API/index`，参数 是 `name=can`
 
-![args](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/pathquery.png?t=18101112)
+![args](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/pathquery.png?t=18101520)
 
 ## 进入场景值
 
 在微信客户端中，用户可能在各个场景下打开小程序 [详情](../framework/app-service/scene.html#场景值) ，然而在开发者工具中是没有真实的环境去模拟这些场景的。开发者可以通过条件编译的方式来达到调试不同场景的目的。
 
-![sence](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/scene.png?t=18101112)
+![sence](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/scene.png?t=18101520)
 
 ## 普通的转发
 
@@ -187,13 +187,13 @@
 
 调用 `wx.showShareMenu` 的参数 `withShareTicket` 为 `true` 时，点击模拟器右上角菜单后出现的转发按钮，会出现一个测试群列表，如图：
 
-![withShareTicket](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/group.png?t=18101112)
+![withShareTicket](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/group.png?t=18101520)
 
 开发者点击选取任何一个群，可以通过接口的回包获取到 `shareTicket` ，通过调用 `wx.getShareInfo` 可以获取到相关转发的信息
 
 当开发者需要调试从某一个群点开，并且带有 `shareTicket` 的场景时，可以使用自定义编译中的 `1044:群聊会话中的小程序消息卡片（带 shareTicket）` 同时可以选择任一模拟测试群，如图
 
-![withShareTicket](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/shareticket.png?t=18101112)
+![withShareTicket](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/shareticket.png?t=18101520)
 
 ## 预览使用自定义编译条件
 
@@ -211,11 +211,11 @@
 
 选择 **自定义编译** 进入场景选择 **1037 从小程序进入** 可以调试小程序被打开时候是否接收到了正确的参数并做了相关处理。
 
-![navigateToMiniProgram](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/navigateminiprogram.png?t=18101112)
+![navigateToMiniProgram](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/navigateminiprogram.png?t=18101520)
 
 选择 **自定义编译** 进入场景选择 **1038 从小程序返回** 可以调试小程序返回时候是否接收到了正确的参数并做了相关处理。
 
-![navigateToMiniProgram](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/navigateminiprogramback.png?t=18101112)
+![navigateToMiniProgram](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/navigateminiprogramback.png?t=18101520)
 
 </section>
 

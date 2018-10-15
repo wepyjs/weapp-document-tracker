@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101112)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101112)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101112)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101112)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101112)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101112)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101112)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101112)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/template-message.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/template-message.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/template-message.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/template-message.html?t=18101520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/template-message.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/template-message.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/template-message.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/template-message.html?t=18101520)
 
 </div>
 
@@ -111,7 +111,7 @@
     *   [获取界面上的节点信息](../view/selector.html)
     *   [响应显示区域变化](../view/resizable.html)
 *   [自定义组件](../custom-component/)
-    *   [组件模版和样式](../custom-component/wxml-wxss.html)
+    *   [组件模板和样式](../custom-component/wxml-wxss.html)
     *   [Component构造器](../custom-component/component.html)
     *   [组件事件](../custom-component/events.html)
     *   [behaviors](../custom-component/behaviors.html)
@@ -152,7 +152,7 @@
     *   [转发](./share.html)
     *   [打开App](./launchApp.html)
     *   [消息](./template-message.html)
-        *   [模版消息](./template-message.html)
+        *   [模板消息](./template-message.html)
         *   [统一服务消息](./uniform-message.html)
         *   [客服消息](./customer-message/customer-message.html)
             *   [概述](./customer-message/customer-message.html)
@@ -219,12 +219,12 @@
 
 有两个方法可以获取模板 ID：
 
-1.  通过模版消息管理接口获取模版 ID（详见 [模版消息管理](#模板消息管理)）
-2.  在微信公众平台手动配置获取模版 ID
+1.  通过模板消息管理接口获取模板 ID（详见 [模板消息管理](#模板消息管理)）
+2.  在微信公众平台手动配置获取模板 ID
 
 登录 https://mp.weixin.qq.com 获取模板，如果没有合适的模板，可以申请添加新模板，审核通过后可使用，详见 [模板审核说明](#审核说明)
 
-![](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/mp-notice.jpg?t=18101112)
+![](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/mp-notice.jpg?t=18101520)
 
 ##### 步骤二：页面的 [`<form/>`](../../component/form.html) 组件，属性 `report-submit` 为 `true` 时，可以声明为需要发送模板消息，此时点击按钮提交表单可以获取 `formId`，用于发送模板消息。或者当用户完成 [支付行为](../../api/open-api/payment/wx.requestPayment.html)，可以获取 `prepay_id` 用于发送模板消息。
 
@@ -232,7 +232,7 @@
 
 **使用效果**
 
-![](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/notice.png?t=18101112)
+![](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/notice.png?t=18101520)
 
 ### 模板消息管理
 

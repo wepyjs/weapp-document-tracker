@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101112)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101112)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101112)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101112)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101112)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101112)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101112)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101112)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/functional-pages/user-info.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/functional-pages/user-info.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/functional-pages/user-info.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/functional-pages/user-info.html?t=18101520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/functional-pages/user-info.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/functional-pages/user-info.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/functional-pages/user-info.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/functional-pages/user-info.html?t=18101520)
 
 </div>
 
@@ -111,7 +111,7 @@
     *   [获取界面上的节点信息](../../view/selector.html)
     *   [响应显示区域变化](../../view/resizable.html)
 *   [自定义组件](../../custom-component/)
-    *   [组件模版和样式](../../custom-component/wxml-wxss.html)
+    *   [组件模板和样式](../../custom-component/wxml-wxss.html)
     *   [Component构造器](../../custom-component/component.html)
     *   [组件事件](../../custom-component/events.html)
     *   [behaviors](../../custom-component/behaviors.html)
@@ -152,7 +152,7 @@
     *   [转发](../../open-ability/share.html)
     *   [打开App](../../open-ability/launchApp.html)
     *   [消息](../../open-ability/template-message.html)
-        *   [模版消息](../../open-ability/template-message.html)
+        *   [模板消息](../../open-ability/template-message.html)
         *   [统一服务消息](../../open-ability/uniform-message.html)
         *   [客服消息](../../open-ability/customer-message/customer-message.html)
             *   [概述](../../open-ability/customer-message/customer-message.html)
@@ -209,7 +209,7 @@
 
 ## 调用参数
 
-用户信息功能页使用 `<functional-page-navigator>` 进行跳转时，对应的参数 name 应为固定值 `loginAndGetUserInfo`，其余参数与 [`wx.getUserInfo`](https://developers.weixin.qq.com/miniprogram/dev/api/open.html?t=18101112#wxgetuserinfoobject) 相同，具体来说：
+用户信息功能页使用 `<functional-page-navigator>` 进行跳转时，对应的参数 name 应为固定值 `loginAndGetUserInfo`，其余参数与 [`wx.getUserInfo`](https://developers.weixin.qq.com/miniprogram/dev/api/open.html?t=18101520#wxgetuserinfoobject) 相同，具体来说：
 
 **args参数说明：**
 
@@ -497,14 +497,14 @@
 
 用户点击该 `navigator` 后，将跳转到如下的用户信息功能页：
 
-![用户信息功能页](https://developers.weixin.qq.com/miniprogram/dev/image/user-info-functional-page.png?t=18101112)
+![用户信息功能页](https://developers.weixin.qq.com/miniprogram/dev/image/user-info-functional-page.png?t=18101520)
 
 [在微信开发者工具中查看示例](wechatide://minicode/Uof4Iomt731Z)：
 
 1.  由于插件需要 appid 才能工作，请填入一个 appid；
 2.  由于当前代码片段的限制，打开该示例后请 **手动将 appid 填写到 `miniprogram/app.json` 中（如下图）使示例正常运行。**
 
-![手动填写 appid](https://developers.weixin.qq.com/miniprogram/dev/image/plugin_minicode_guide.png?t=18101112)
+![手动填写 appid](https://developers.weixin.qq.com/miniprogram/dev/image/plugin_minicode_guide.png?t=18101520)
 
 </section>
 

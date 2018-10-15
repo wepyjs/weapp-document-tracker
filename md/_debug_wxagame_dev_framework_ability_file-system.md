@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101112)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101112)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101112)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101112)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101112)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101112)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101112)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101112)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/file-system.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/ability/file-system.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/file-system.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/ability/file-system.html?t=18101520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/file-system.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/ability/file-system.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/file-system.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/ability/file-system.html?t=18101520)
 
 </div>
 
@@ -111,7 +111,7 @@
     *   [获取界面上的节点信息](../view/selector.html)
     *   [响应显示区域变化](../view/resizable.html)
 *   [自定义组件](../custom-component/)
-    *   [组件模版和样式](../custom-component/wxml-wxss.html)
+    *   [组件模板和样式](../custom-component/wxml-wxss.html)
     *   [Component构造器](../custom-component/component.html)
     *   [组件事件](../custom-component/events.html)
     *   [behaviors](../custom-component/behaviors.html)
@@ -152,7 +152,7 @@
     *   [转发](../open-ability/share.html)
     *   [打开App](../open-ability/launchApp.html)
     *   [消息](../open-ability/template-message.html)
-        *   [模版消息](../open-ability/template-message.html)
+        *   [模板消息](../open-ability/template-message.html)
         *   [统一服务消息](../open-ability/uniform-message.html)
         *   [客服消息](../open-ability/customer-message/customer-message.html)
             *   [概述](../open-ability/customer-message/customer-message.html)
@@ -217,8 +217,8 @@
 其中本地文件又分为三种：
 
 1.  本地临时文件：临时产生，随时会被回收的文件。不限制存储大小。
-2.  本地缓存文件：小程序通过接口把本地临时文件缓存后产生的文件，不能自定义目录和文件名。除非用户主动删除小程序，否则不会被删除。跟本地用户文件共计最多可存储 50MB 文件。
-3.  本地用户文件：小程序通过接口把本地临时文件缓存后产生的文件，允许自定义目录和文件名。除非用户主动删除小程序，否则不会被删除。跟本地用户文件共计最多可存储 50MB 文件。
+2.  本地缓存文件：小程序通过接口把本地临时文件缓存后产生的文件，不能自定义目录和文件名。除非用户主动删除小程序，否则不会被删除。跟本地用户文件共计，普通小程序最多可存储 10MB，游戏类目的小程序最多可存储 50MB。
+3.  本地用户文件：小程序通过接口把本地临时文件缓存后产生的文件，允许自定义目录和文件名。除非用户主动删除小程序，否则不会被删除。跟本地用户文件共计，普通小程序最多可存储 10MB，游戏类目的小程序最多可存储 50MB。
 
 ### 代码包文件
 
@@ -226,7 +226,7 @@
 
 #### 访问代码包文件
 
-代码包文件的访问方式是从项目根目录开始写文件路径，不支持相对路径的写法。 ![image.png](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/image/code-package.png?t=18101112)
+代码包文件的访问方式是从项目根目录开始写文件路径，不支持相对路径的写法。 ![image.png](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/image/code-package.png?t=18101520)
 
 #### 修改代码包文件
 
@@ -234,7 +234,7 @@
 
 ### 本地文件
 
-本地文件指的是小程序被用户添加到手机后，会有一块独立的文件存储区域，以用户维度隔离。即同一台手机，每个微信用户不能访问到其他登录用户的文件，同一个用户不同 appId 之间的文件也不能互相访问。 ![本地文件沙盒.png](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/image/file-sandbox.png?t=18101112)
+本地文件指的是小程序被用户添加到手机后，会有一块独立的文件存储区域，以用户维度隔离。即同一台手机，每个微信用户不能访问到其他登录用户的文件，同一个用户不同 appId 之间的文件也不能互相访问。 ![本地文件沙盒.png](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/image/file-sandbox.png?t=18101520)
 
 本地文件的文件路径均为以下格式：
 

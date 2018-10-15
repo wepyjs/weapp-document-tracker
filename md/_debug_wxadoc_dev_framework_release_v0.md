@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101112)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101112)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101112)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101112)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101112)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101112)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101112)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101112)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/release/v0.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/release/v0.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/release/v0.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/release/v0.html?t=18101520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/release/v0.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/release/v0.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/release/v0.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/release/v0.html?t=18101520)
 
 </div>
 
@@ -111,7 +111,7 @@
     *   [获取界面上的节点信息](../view/selector.html)
     *   [响应显示区域变化](../view/resizable.html)
 *   [自定义组件](../custom-component/)
-    *   [组件模版和样式](../custom-component/wxml-wxss.html)
+    *   [组件模板和样式](../custom-component/wxml-wxss.html)
     *   [Component构造器](../custom-component/component.html)
     *   [组件事件](../custom-component/events.html)
     *   [behaviors](../custom-component/behaviors.html)
@@ -152,7 +152,7 @@
     *   [转发](../open-ability/share.html)
     *   [打开App](../open-ability/launchApp.html)
     *   [消息](../open-ability/template-message.html)
-        *   [模版消息](../open-ability/template-message.html)
+        *   [模板消息](../open-ability/template-message.html)
         *   [统一服务消息](../open-ability/uniform-message.html)
         *   [客服消息](../open-ability/customer-message/customer-message.html)
             *   [概述](../open-ability/customer-message/customer-message.html)
@@ -252,7 +252,7 @@
 7.  `A` 新增 框架方法 `App.onError` [详情](../../framework/app-service/app.html)
 8.  `A` 新增 页面配置 `disabelScroll` [详情](../../framework/config.html#页面配置)
 9.  `A` 新增 `<picker-view/>` 组件 [详情](../../component/picker-view.html)
-10.  `A` 新增 `<contact-button/>` 组件，用于显示客服会话按钮 [详情](https://developers.weixin.qq.com/miniprogram/dev/component/contact-button.html?t=18101112)
+10.  `A` 新增 `<contact-button/>` 组件，用于显示客服会话按钮 [详情](https://developers.weixin.qq.com/miniprogram/dev/component/contact-button.html?t=18101520)
 11.  `A` 新增 `<navigator/>` 组件属性 openType [详情](../../component/navigator.html)
 12.  `A` 新增 `<switch/>` `<checkbox/>` `<radio/>` 组件属性 color
 13.  `A` 新增 `<video/>` 组件属性 objectFit [详情](../../component/video.html)

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101112)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101112)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101112)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101112)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101112)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101112)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101112)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101112)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/wxml-wxss.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/wxml-wxss.html?t=18101520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html?t=18101112)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/wxml-wxss.html?t=18101112)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/wxml-wxss.html?t=18101520)
 
 </div>
 
@@ -111,7 +111,7 @@
     *   [获取界面上的节点信息](../view/selector.html)
     *   [响应显示区域变化](../view/resizable.html)
 *   [自定义组件](.)
-    *   [组件模版和样式](./wxml-wxss.html)
+    *   [组件模板和样式](./wxml-wxss.html)
     *   [Component构造器](./component.html)
     *   [组件事件](./events.html)
     *   [behaviors](./behaviors.html)
@@ -152,7 +152,7 @@
     *   [转发](../open-ability/share.html)
     *   [打开App](../open-ability/launchApp.html)
     *   [消息](../open-ability/template-message.html)
-        *   [模版消息](../open-ability/template-message.html)
+        *   [模板消息](../open-ability/template-message.html)
         *   [统一服务消息](../open-ability/uniform-message.html)
         *   [客服消息](../open-ability/customer-message/customer-message.html)
             *   [概述](../open-ability/customer-message/customer-message.html)
@@ -203,13 +203,13 @@
 
 <section class="normal markdown-section">
 
-# 组件模版和样式
+# 组件模板和样式
 
-类似于页面，自定义组件拥有自己的 `wxml` 模版和 `wxss` 样式。
+类似于页面，自定义组件拥有自己的 `wxml` 模板和 `wxss` 样式。
 
-### 组件模版
+### 组件模板
 
-组件模版的写法与页面模板相同。组件模版与组件数据结合后生成的节点树，将被插入到组件的引用位置上。
+组件模板的写法与页面模板相同。组件模板与组件数据结合后生成的节点树，将被插入到组件的引用位置上。
 
 在组件模板中可以提供一个 `<slot>` 节点，用于承载组件引用时提供的子节点。
 
@@ -223,7 +223,7 @@
       <slot></slot>
     </view>
 
-    <!-- 引用组件的页面模版 -->
+    <!-- 引用组件的页面模板 -->
     <view>
       <component-tag-name>
         <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
@@ -231,15 +231,15 @@
       </component-tag-name>
     </view>
 
-注意，在模版中引用到的自定义组件及其对应的节点名需要在 `json` 文件中显式定义，否则会被当作一个无意义的节点。除此以外，节点名也可以被声明为[抽象节点](generics.html)。
+注意，在模板中引用到的自定义组件及其对应的节点名需要在 `json` 文件中显式定义，否则会被当作一个无意义的节点。除此以外，节点名也可以被声明为[抽象节点](generics.html)。
 
-### 模版数据绑定
+### 模板数据绑定
 
-与普通的 WXML 模版类似，可以使用数据绑定，这样就可以向子组件的属性传递动态数据。
+与普通的 WXML 模板类似，可以使用数据绑定，这样就可以向子组件的属性传递动态数据。
 
 **代码示例：**
 
-    <!-- 引用组件的页面模版 -->
+    <!-- 引用组件的页面模板 -->
     <view>
       <component-tag-name prop-a="{{dataFieldA}}" prop-b="{{dataFieldB}}">
         <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
@@ -276,7 +276,7 @@
 
 使用时，用 `slot` 属性来将节点插入到不同的slot上。
 
-    <!-- 引用组件的页面模版 -->
+    <!-- 引用组件的页面模板 -->
     <view>
       <component-tag-name>
         <!-- 这部分内容将被放置在组件 <slot name="before"> 的位置上 -->

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101214)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101214)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101214)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101214)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101214)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101214)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101214)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101214)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/role.html?t=18101214)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/quickstart/basic/role.html?t=18101214)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/role.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/quickstart/basic/role.html?t=18101520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/role.html?t=18101214)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/quickstart/basic/role.html?t=18101214)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/role.html?t=18101520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/quickstart/basic/role.html?t=18101520)
 
 </div>
 
@@ -127,7 +127,7 @@
 
 管理入口位于：[小程序管理后台](https://mp.weixin.qq.com) - 用户身份 – 成员管理
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/quickstart/role.jpg?t=18101214)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/quickstart/role.jpg?t=18101520)
 
 <table>
 
@@ -270,7 +270,7 @@
 
 可以使用小程序开发者助手方便快捷的预览和体验线上版本，体验版本以及开发版本。
 
-![mydev](https://developers.weixin.qq.com/miniprogram/dev/image/quickstart/mydev.jpg?t=18101214)
+![mydev](https://developers.weixin.qq.com/miniprogram/dev/image/quickstart/mydev.jpg?t=18101520)
 
 在[下个章节](release.html)，我们来看看如何发布一个小程序，让你的成果被所有的微信用户所使用到。
 
