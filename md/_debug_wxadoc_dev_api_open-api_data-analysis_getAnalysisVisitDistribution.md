@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101611)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101611)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101611)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101611)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101611)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101611)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101611)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101611)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/data-analysis/getAnalysisVisitDistribution.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/data-analysis/getAnalysisVisitDistribution.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/data-analysis/getAnalysisVisitDistribution.html?t=18101611)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/data-analysis/getAnalysisVisitDistribution.html?t=18101611)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/data-analysis/getAnalysisVisitDistribution.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/data-analysis/getAnalysisVisitDistribution.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/data-analysis/getAnalysisVisitDistribution.html?t=18101611)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/data-analysis/getAnalysisVisitDistribution.html?t=18101611)
 
 </div>
 
@@ -879,7 +879,7 @@
 
 <td>number</td>
 
-<td>场景 id</td>
+<td>场景 id，场景值说明参见 [场景值](../../../framework/app-service/scene.html)</td>
 
 <td></td>
 
@@ -891,7 +891,7 @@
 
 <td>number</td>
 
-<td>该场景访问pv</td>
+<td>该场景访问 pv</td>
 
 <td></td>
 
@@ -1030,6 +1030,534 @@
         }
       ]
     }
+
+#### key 对应关系
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>key</th>
+
+<th>访问来源</th>
+
+<th>对应场景值</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>1</td>
+
+<td>小程序历史列表</td>
+
+<td>1001</td>
+
+</tr>
+
+<tr>
+
+<td>2</td>
+
+<td>搜索</td>
+
+<td>1005 1006 1027 1042 1053</td>
+
+</tr>
+
+<tr>
+
+<td>3</td>
+
+<td>会话</td>
+
+<td>1007 1008 1044 1096</td>
+
+</tr>
+
+<tr>
+
+<td>4</td>
+
+<td>扫一扫二维码</td>
+
+<td>1011 1047</td>
+
+</tr>
+
+<tr>
+
+<td>5</td>
+
+<td>公众号主页</td>
+
+<td>1020</td>
+
+</tr>
+
+<tr>
+
+<td>6</td>
+
+<td>聊天顶部</td>
+
+<td>1022</td>
+
+</tr>
+
+<tr>
+
+<td>7</td>
+
+<td>系统桌面</td>
+
+<td>1023</td>
+
+</tr>
+
+<tr>
+
+<td>8</td>
+
+<td>小程序主页</td>
+
+<td>1024</td>
+
+</tr>
+
+<tr>
+
+<td>9</td>
+
+<td>附近的小程序</td>
+
+<td>1026 1068</td>
+
+</tr>
+
+<tr>
+
+<td>11</td>
+
+<td>模板消息</td>
+
+<td>1014 1043</td>
+
+</tr>
+
+<tr>
+
+<td>13</td>
+
+<td>公众号菜单</td>
+
+<td>1035</td>
+
+</tr>
+
+<tr>
+
+<td>14</td>
+
+<td>APP分享</td>
+
+<td>1036</td>
+
+</tr>
+
+<tr>
+
+<td>15</td>
+
+<td>支付完成页</td>
+
+<td>1034</td>
+
+</tr>
+
+<tr>
+
+<td>16</td>
+
+<td>长按识别二维码</td>
+
+<td>1012 1048</td>
+
+</tr>
+
+<tr>
+
+<td>17</td>
+
+<td>相册选取二维码</td>
+
+<td>1013 1049</td>
+
+</tr>
+
+<tr>
+
+<td>18</td>
+
+<td>公众号文章</td>
+
+<td>1058</td>
+
+</tr>
+
+<tr>
+
+<td>19</td>
+
+<td>钱包</td>
+
+<td>1019</td>
+
+</tr>
+
+<tr>
+
+<td>20</td>
+
+<td>卡包</td>
+
+<td>1028</td>
+
+</tr>
+
+<tr>
+
+<td>21</td>
+
+<td>小程序内卡券</td>
+
+<td>1029</td>
+
+</tr>
+
+<tr>
+
+<td>22</td>
+
+<td>其他小程序</td>
+
+<td>1037</td>
+
+</tr>
+
+<tr>
+
+<td>23</td>
+
+<td>其他小程序返回</td>
+
+<td>1038</td>
+
+</tr>
+
+<tr>
+
+<td>24</td>
+
+<td>卡券适用门店列表</td>
+
+<td>1052</td>
+
+</tr>
+
+<tr>
+
+<td>25</td>
+
+<td>搜索框快捷入口</td>
+
+<td>1054</td>
+
+</tr>
+
+<tr>
+
+<td>26</td>
+
+<td>小程序客服消息</td>
+
+<td>1073 1081</td>
+
+</tr>
+
+<tr>
+
+<td>27</td>
+
+<td>公众号下发</td>
+
+<td>1074 1082</td>
+
+</tr>
+
+<tr>
+
+<td>29</td>
+
+<td>任务栏-最近使用</td>
+
+<td>1089</td>
+
+</tr>
+
+<tr>
+
+<td>30</td>
+
+<td>长按小程序菜单圆点</td>
+
+<td>1090</td>
+
+</tr>
+
+<tr>
+
+<td>31</td>
+
+<td>连wifi成功页</td>
+
+<td>1078</td>
+
+</tr>
+
+<tr>
+
+<td>32</td>
+
+<td>城市服务</td>
+
+<td>1092</td>
+
+</tr>
+
+<tr>
+
+<td>33</td>
+
+<td>微信广告</td>
+
+<td>1045 1046 1067 1084</td>
+
+</tr>
+
+<tr>
+
+<td>34</td>
+
+<td>其他移动应用</td>
+
+<td>1069</td>
+
+</tr>
+
+<tr>
+
+<td>35</td>
+
+<td>发现入口-我的小程序（基础库2.2.4版本起1103场景值废弃，不影响此处统计结果）</td>
+
+<td>1103</td>
+
+</tr>
+
+<tr>
+
+<td>36</td>
+
+<td>任务栏-我的小程序（基础库2.2.4版本起1104场景值废弃，不影响此处统计结果）</td>
+
+<td>1104</td>
+
+</tr>
+
+<tr>
+
+<td>10</td>
+
+<td>其他</td>
+
+<td>除上述外其余场景值</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+#### 访问时长
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>key</th>
+
+<th>访问时长</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>1</td>
+
+<td>0-2s</td>
+
+</tr>
+
+<tr>
+
+<td>2</td>
+
+<td>3-5s</td>
+
+</tr>
+
+<tr>
+
+<td>3</td>
+
+<td>6-10s</td>
+
+</tr>
+
+<tr>
+
+<td>4</td>
+
+<td>11-20s</td>
+
+</tr>
+
+<tr>
+
+<td>5</td>
+
+<td>20-30s</td>
+
+</tr>
+
+<tr>
+
+<td>6</td>
+
+<td>30-50s</td>
+
+</tr>
+
+<tr>
+
+<td>7</td>
+
+<td>50-100s</td>
+
+</tr>
+
+<tr>
+
+<td>8</td>
+
+<td>>100s</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+#### 平均访问深度
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>key</th>
+
+<th>访问时长</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>1</td>
+
+<td>1 页</td>
+
+</tr>
+
+<tr>
+
+<td>2</td>
+
+<td>2 页</td>
+
+</tr>
+
+<tr>
+
+<td>3</td>
+
+<td>3 页</td>
+
+</tr>
+
+<tr>
+
+<td>4</td>
+
+<td>4 页</td>
+
+</tr>
+
+<tr>
+
+<td>5</td>
+
+<td>5 页</td>
+
+</tr>
+
+<tr>
+
+<td>6</td>
+
+<td>6-10 页</td>
+
+</tr>
+
+<tr>
+
+<td>7</td>
+
+<td>>10 页</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 </section>
 
