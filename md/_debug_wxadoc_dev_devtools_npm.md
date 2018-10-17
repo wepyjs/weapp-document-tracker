@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101715)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101715)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101715)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101715)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101715)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101715)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101715)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101715)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/npm.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html?t=18101715)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/npm.html?t=18101715)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/npm.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html?t=18101715)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/npm.html?t=18101715)
 
 </div>
 
@@ -122,7 +122,6 @@
 *   [代码片段](./minicode.html)
 *   [第三方平台](./ext.html)
 *   [小程序插件开发](./plugin.html)
-*   [素材管理](../qcloud/material.html)
 *   [代码托管](../qcloud/tgit.html)
 *   [云测试](./monkey-test.html)
 *   [API 实现差异](./notsupport.html)
@@ -164,10 +163,10 @@
 > PS：此处请务必使用`--production`选项，可以减少安装一些业务无关的 npm 包，从而减少整个小程序包的大小。
 
 1.  点击开发者工具中的菜单栏：工具 --> 构建 npm  
-    ![construction](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/framework/construction.png?t=18101520)
+    ![construction](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/framework/construction.png?t=18101715)
 
 2.  勾选“使用 npm 模块”选项：  
-    ![use npm](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/framework/use_npm.png?t=18101520)
+    ![use npm](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/framework/use_npm.png?t=18101715)
 
 3.  构建完成后即可使用 npm 包。
 

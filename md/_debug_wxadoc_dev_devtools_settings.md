@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101715)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101715)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101715)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101715)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101715)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101715)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101715)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101715)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/settings.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/settings.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/settings.html?t=18101715)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/settings.html?t=18101715)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/settings.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/settings.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/settings.html?t=18101715)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/settings.html?t=18101715)
 
 </div>
 
@@ -122,7 +122,6 @@
 *   [代码片段](./minicode.html)
 *   [第三方平台](./ext.html)
 *   [小程序插件开发](./plugin.html)
-*   [素材管理](../qcloud/material.html)
 *   [代码托管](../qcloud/tgit.html)
 *   [云测试](./monkey-test.html)
 *   [API 实现差异](./notsupport.html)
@@ -160,7 +159,7 @@
 *   字号
 *   行距
 
-![appearance](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/setting_appearance.png?t=18101520)
+![appearance](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/setting_appearance.png?t=18101715)
 
 ### 编辑设置
 
@@ -176,13 +175,13 @@
 
 如果选中了 “总是在新标签页打开文件”，则在编辑器目录树点击文件时，总是会在一个新标签页中打开此文件，而非在临时标签页中打开。
 
-![edit](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/setting_edit.png?t=18101520)
+![edit](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/setting_edit.png?t=18101715)
 
 ### 代理设置
 
 可以配置不使用代理，或使用系统代理，或使用自定义代理。
 
-![proxy](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/setting_proxy.png?t=18101520)
+![proxy](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/setting_proxy.png?t=18101715)
 
 </section>
 
