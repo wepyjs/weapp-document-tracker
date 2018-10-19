@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101919)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101919)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101919)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101919)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101919)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101919)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101919)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101919)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/subpackages/basic.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/subpackages/basic.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/subpackages/basic.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/subpackages/basic.html?t=18101919)
 
 </div>
 
@@ -47,7 +47,7 @@
 *   [简易教程](../../)
 *   [框架](../MINA.html)
 *   [组件](../../component/)
-*   [API](../../api/network/download/wx.downloadFile.html)
+*   [API](../../api/network/upload/wx.uploadFile.html)
 *   [工具](../../devtools/devtools.html)
 *   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/subpackages/basic.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/subpackages/basic.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/subpackages/basic.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/subpackages/basic.html?t=18101919)
 
 </div>
 
@@ -225,14 +225,16 @@
     │   └── logs
     └── utils
 
-开发者通过在 app.json `subPackages` 字段声明项目分包结构：
+开发者通过在 app.json `subpackages` 字段声明项目分包结构：
+
+> 写成 subPackages 也支持。
 
     {
       "pages":[
         "pages/index",
         "pages/logs"
       ],
-      "subPackages": [
+      "subpackages": [
         {
           "root": "packageA",
           "pages": [
@@ -250,7 +252,7 @@
       ]
     }
 
-`subPackages` 中，每个分包的配置有以下几项：
+`subpackages` 中，每个分包的配置有以下几项：
 
 <table>
 
@@ -316,9 +318,9 @@
 
 ### 打包原则
 
-*   声明 `subPackages` 后，将按 `subPackages` 配置路径进行打包，`subPackages` 配置路径外的目录将被打包到 app（主包） 中
+*   声明 `subpackages` 后，将按 `subpackages` 配置路径进行打包，`subpackages` 配置路径外的目录将被打包到 app（主包） 中
 *   app（主包）也可以有自己的 pages（即最外层的 pages 字段）
-*   `subPackage` 的根目录不能是另外一个 `subPackage` 内的子目录
+*   `subpackage` 的根目录不能是另外一个 `subpackage` 内的子目录
 *   `tabBar` 页面必须在 app（主包）内
 
 ### 引用原则
@@ -329,7 +331,7 @@
 
 ### 低版本兼容
 
-由微信后台编译来处理旧版本客户端的兼容，后台会编译两份代码包，一份是分包后代码，另外一份是整包的兼容代码。 新客户端用分包，老客户端还是用的整包，完整包会把各个 `subPackage` 里面的路径放到 pages 中。
+由微信后台编译来处理旧版本客户端的兼容，后台会编译两份代码包，一份是分包后代码，另外一份是整包的兼容代码。 新客户端用分包，老客户端还是用的整包，完整包会把各个 `subpackage` 里面的路径放到 pages 中。
 
 ### 示例项目
 

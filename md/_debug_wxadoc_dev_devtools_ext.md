@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101715)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101715)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101715)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101919)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101919)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101919)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101715)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101715)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101715)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101919)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101919)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101919)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101715)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101715)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101919)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101919)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/ext.html?t=18101715)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/ext.html?t=18101715)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/ext.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/ext.html?t=18101919)
 
 </div>
 
@@ -47,7 +47,7 @@
 *   [简易教程](../)
 *   [框架](../framework/MINA.html)
 *   [组件](../component/)
-*   [API](../api/network/download/wx.downloadFile.html)
+*   [API](../api/network/upload/wx.uploadFile.html)
 *   [工具](./devtools.html)
 *   [小程序·云开发](../wxcloud/basis/getting-started.html)
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/ext.html?t=18101715)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/ext.html?t=18101715)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/ext.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/ext.html?t=18101919)
 
 </div>
 
@@ -170,7 +170,7 @@
 
 对于第三方平台小程序，可以在项目页卡查看到相关的 open3rd 信息以及当前的第三方的 3rdMiniProgramAppid ，如若项目配置了相关的 extAppid ，那么项目页卡中也会有相关信息。
 
-![ext](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/ext.png?t=18101715)
+![ext](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/ext.png?t=18101919)
 
 ## 小程序模板开发
 

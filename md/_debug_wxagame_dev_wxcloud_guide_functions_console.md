@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101919)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101919)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101919)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101919)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101919)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101919)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101919)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101919)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/console.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/console.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/console.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/console.html?t=18101919)
 
 </div>
 
@@ -47,7 +47,7 @@
 *   [简易教程](../../../)
 *   [框架](../../../framework/MINA.html)
 *   [组件](../../../component/)
-*   [API](../../../api/network/download/wx.downloadFile.html)
+*   [API](../../../api/network/upload/wx.uploadFile.html)
 *   [工具](../../../devtools/devtools.html)
 *   [小程序·云开发](../../basis/getting-started.html)
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/console.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/console.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/console.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/console.html?t=18101919)
 
 </div>
 
@@ -245,7 +245,7 @@
 
 云开发提供了云函数测试功能，可以方便地调试你的代码。在控制台的对应云函数的管理面板中，点击 “测试” 按钮即可打开测试弹窗。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/functions/function_test.png?t=18101520)
+![](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/functions/function_test.png?t=18101919)
 
 测试弹窗
 
@@ -257,13 +257,13 @@
 
 在这里可以查看云函数的调用日志，方便开发者对开发调试。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/functions/function_log.png?t=18101520)
+![](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/functions/function_log.png?t=18101919)
 
 ### 监控
 
 在这里可以查看云函数的调用次数、运行时间、错误次数。并支持将这些数据导出。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/functions/function_monitor.png?t=18101520)
+![](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/functions/function_monitor.png?t=18101919)
 
 </section>
 

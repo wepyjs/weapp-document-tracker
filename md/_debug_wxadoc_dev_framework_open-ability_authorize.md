@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101919)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101919)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101919)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101919)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101919)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101919)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101919)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101919)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/authorize.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/authorize.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/authorize.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/authorize.html?t=18101919)
 
 </div>
 
@@ -47,7 +47,7 @@
 *   [简易教程](../../)
 *   [框架](../MINA.html)
 *   [组件](../../component/)
-*   [API](../../api/network/download/wx.downloadFile.html)
+*   [API](../../api/network/upload/wx.uploadFile.html)
 *   [工具](../../devtools/devtools.html)
 *   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/authorize.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/authorize.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/authorize.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/authorize.html?t=18101919)
 
 </div>
 
@@ -219,7 +219,7 @@
 
 ### 打开设置界面
 
-用户可以在小程序设置界面（右上角 - 关于 - 右上角 - 设置）中控制对该小程序的授权状态。
+用户可以在小程序设置界面（「右上角」 - 「关于」 - 「右上角」 - 「设置」）中控制对该小程序的授权状态。
 
 开发者可以调用 [wx.openSetting](../../api/open-api/setting/wx.openSetting.html) 打开设置界面，引导用户开启授权。
 
@@ -321,7 +321,7 @@
 
 <td>scope.camera</td>
 
-<td><camera /> 组件</td>
+<td>[`<camera />`](../../component/camera.html) 组件</td>
 
 <td>摄像头</td>
 
@@ -331,7 +331,7 @@
 
 </table>
 
-**注意：wx.authorize({scope: "scope.userInfo"})，无法弹出授权窗口，请使用 [<button open-type="getUserInfo"></button>](../../component/button.html)**
+**注意：`wx.authorize({scope: "scope.userInfo"})`，无法弹出授权窗口，请使用 [`<button open-type="getUserInfo"/>`](../../component/button.html)**
 
 </section>
 

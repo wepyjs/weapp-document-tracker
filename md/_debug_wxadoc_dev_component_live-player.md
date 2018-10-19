@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101919)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101919)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101919)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101919)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101919)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101919)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101919)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101919)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/live-player.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/live-player.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/live-player.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/live-player.html?t=18101919)
 
 </div>
 
@@ -47,7 +47,7 @@
 *   [简易教程](../)
 *   [框架](../framework/MINA.html)
 *   [组件](.)
-*   [API](../api/network/download/wx.downloadFile.html)
+*   [API](../api/network/upload/wx.uploadFile.html)
 *   [工具](../devtools/devtools.html)
 *   [小程序·云开发](../wxcloud/basis/getting-started.html)
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/live-player.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/live-player.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/live-player.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/live-player.html?t=18101919)
 
 </div>
 
@@ -246,7 +246,7 @@
 
 <td>live</td>
 
-<td>live（直播），RTC（实时通话）</td>
+<td>live（直播），RTC（实时通话，该模式时延更低）</td>
 
 <td></td>
 
@@ -330,7 +330,7 @@
 
 <td>1</td>
 
-<td>最小缓冲区，单位s</td>
+<td>最小缓冲区，单位s（RTC 模式推荐 0.2s）</td>
 
 <td></td>
 
@@ -344,7 +344,7 @@
 
 <td>3</td>
 
-<td>最大缓冲区，单位s</td>
+<td>最大缓冲区，单位s（RTC 模式推荐 0.8s）</td>
 
 <td></td>
 

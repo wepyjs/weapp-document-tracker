@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101715)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101715)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101715)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101919)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101919)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101919)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101715)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101715)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101715)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101919)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101919)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101919)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101715)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101715)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101919)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101919)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/project.html?t=18101715)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/project.html?t=18101715)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/project.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/project.html?t=18101919)
 
 </div>
 
@@ -47,7 +47,7 @@
 *   [简易教程](../)
 *   [框架](../framework/MINA.html)
 *   [组件](../component/)
-*   [API](../api/network/download/wx.downloadFile.html)
+*   [API](../api/network/upload/wx.uploadFile.html)
 *   [工具](./devtools.html)
 *   [小程序·云开发](../wxcloud/basis/getting-started.html)
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/project.html?t=18101715)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/project.html?t=18101715)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/project.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/project.html?t=18101919)
 
 </div>
 
@@ -156,7 +156,7 @@
 
 开发者可以在此选择任意基础库版本，用于开发和调试旧版本兼容问题。
 
-![clientlib](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/clientlib.png?t=18101715)
+![clientlib](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/clientlib.png?t=18101919)
 
 ## 项目设置
 
@@ -174,13 +174,24 @@
 
 ### 压缩代码
 
-开启此选项，开发工具在上传代码时候将会帮助开发者压缩 `javascript` 代码，减小代码包体积。
+开启此选项，开发者工具在上传代码时候将会帮助开发者压缩和混淆 `javascript` 代码，减小代码包体积。
+
+### 代码保护
+
+开启此选项，开发者工具会尝试对项目代码进行保护，主要是对文件进行扁平化处理并替换 `require` 引用的文件名，以下情况不适合使用此功能
+
+1.  对于小程序只有简单页面的情况下，开启此功能效果不佳
+2.  有文件超过 500kb，且其中有使用 `require` 引用项目中的文件的情况，在运行时可能会报文件没有找到
+3.  动态引用的情况，如 `var a = 'somefile.js'; require(a);`
+4.  将 `require` 函数赋值给其他变量的情况，如 `var a = require; a('somefile.js');`
+5.  将 `require` 作为二元运算符的参数的情况，如 `require + 1;`
+6.  使用 `...` 运算符且未开启 ES6 转 ES5 的情况
 
 ### 不校验请求域名及 TLS 版本
 
 正式发布的小程序的网络请求是需要校验合法域名以及域名的 TLS 版本，可以在 mp 管理后台进行配置。 在开发过程中可以开启此选项，开发工具将不会校验安全域名，以及 TLS 版本，帮助在开发过程中更方便的完成调试工作。
 
-![edit](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/righttools.png?t=18101715)
+![edit](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/righttools.png?t=18101919)
 
 ### 启用多核心编译
 
@@ -190,7 +201,7 @@
 
 将显示小程序的安全域名信息，合法域名可在 mp 管理后台进行设置。
 
-![host](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/host.png?t=18101715)
+![host](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/host.png?t=18101919)
 
 </section>
 

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091711)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091711)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091711)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101915)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101915)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101915)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091711)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091711)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091711)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101915)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101915)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101915)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091711)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091711)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101915)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101915)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/product/renzheng.html?t=18091711)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/renzheng.html?t=18091711)
+*   [中文](https://developers.weixin.qq.com/miniprogram/product/renzheng.html?t=18101915)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/renzheng.html?t=18101915)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/product/renzheng.html?t=18091711)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/renzheng.html?t=18091711)
+*   [中文](https://developers.weixin.qq.com/miniprogram/product/renzheng.html?t=18101915)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/renzheng.html?t=18101915)
 
 </div>
 
@@ -114,21 +114,21 @@
 
 入口一：“设置->基本信息->微信认证” 点击 “详情” 进入。
 
-![](https://developers.weixin.qq.com/miniprogram/product/image/a.png?t=18091711)
+![](https://developers.weixin.qq.com/miniprogram/product/image/a.png?t=18101915)
 
 入口二：小程序发布流程页（政府、媒体、其他组织类帐号）
 
-![](https://developers.weixin.qq.com/miniprogram/product/image/c.png?t=18091711)
+![](https://developers.weixin.qq.com/miniprogram/product/image/c.png?t=18101915)
 
 ## 二、申请微信认证操作流程
 
 #### 1\. 签署《微信公众平台认证服务协议》，勾选同意，点击下一步。
 
-![](https://developers.weixin.qq.com/miniprogram/product/image/d.png?t=18091711)
+![](https://developers.weixin.qq.com/miniprogram/product/image/d.png?t=18101915)
 
 #### 2\. 填写资料：选择认证主体类型，提交相应的认证材料。
 
-![](https://developers.weixin.qq.com/miniprogram/product/image/e.png?t=18091711)
+![](https://developers.weixin.qq.com/miniprogram/product/image/e.png?t=18101915)
 
 选择完类型后进入填写认证资料页面，各类型需要提交的资质材料包括但不限于：
 
@@ -150,13 +150,13 @@
 
 用户可选择开具普通发票（定额发票）、增值税专用发票。其中增值税专用发票还需提交《税务登记证》（办理三证合一的企业直接上传新的营业执照）、《银行开户证明》，审核公司会对资质进行审核。资质审核通过后由腾讯公司开具并寄送发票。
 
-![](https://developers.weixin.qq.com/miniprogram/product/image/g.png?t=18091711)
+![](https://developers.weixin.qq.com/miniprogram/product/image/g.png?t=18101915)
 
 #### 4\. 支付审核费用，目前仅支持微信支付。
 
 微信支付过程如下：
 
-![](https://developers.weixin.qq.com/miniprogram/product/image/h.png?t=18091711)
+![](https://developers.weixin.qq.com/miniprogram/product/image/h.png?t=18101915)
 
 #### 5\. 支付完成后，进入认证审核。
 

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101919)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101919)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101919)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101919)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101919)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101919)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101919)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101919)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/qcloud/tgit.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/qcloud/tgit.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/qcloud/tgit.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/qcloud/tgit.html?t=18101919)
 
 </div>
 
@@ -47,7 +47,7 @@
 *   [简易教程](../)
 *   [框架](../framework/MINA.html)
 *   [组件](../component/)
-*   [API](../api/network/download/wx.downloadFile.html)
+*   [API](../api/network/upload/wx.uploadFile.html)
 *   [工具](../devtools/devtools.html)
 *   [小程序·云开发](../wxcloud/basis/getting-started.html)
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/qcloud/tgit.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/qcloud/tgit.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/qcloud/tgit.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/qcloud/tgit.html?t=18101919)
 
 </div>
 
@@ -122,7 +122,6 @@
 *   [代码片段](../devtools/minicode.html)
 *   [第三方平台](../devtools/ext.html)
 *   [小程序插件开发](../devtools/plugin.html)
-*   [素材管理](./material.html)
 *   [代码托管](./tgit.html)
 *   [云测试](../devtools/monkey-test.html)
 *   [API 实现差异](../devtools/notsupport.html)
@@ -159,7 +158,7 @@
 
 开发者可登录小程序管理后台，在 “设置-开发者工具” 内开通 TGit 功能。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/tgit/tgit1.png?t=18101520)
+![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/tgit/tgit1.png?t=18101919)
 
 2.配置项目信息、管理员信息
 
@@ -167,39 +166,39 @@
 
 **用户名配置完成后，会生成完整的 TGit 用户名，用于在 TGit 内验证身份，可在权限控制页面查看完整用户名。**
 
-![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/tgit/tgit3.png?t=18101520)
+![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/tgit/tgit3.png?t=18101919)
 
 提交后，查看完整的 TGit 用户名，TGit 内验证身份需要填写完整用户名。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/tgit/tgit8.png?t=18101520)
+![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/tgit/tgit8.png?t=18101919)
 
 ​
 
 3.开通后，进入“查看权限”，可查看和配置 TGit 项目成员信息
 
-![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/tgit/tgit6.png?t=18101520)
+![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/tgit/tgit6.png?t=18101919)
 
 4.添加 TGit 项目成员
 
 (1)选择成员：通过微信号搜索，选择小程序的一个开发者添加到项目中。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/tgit/tgit7.png?t=18101520)
+![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/tgit/tgit7.png?t=18101919)
 
 (2)填写 TGit 用户名
 
 填写用户名，**注意：在添加成员后，可在成员配置页面查看成员完整的用户名，使用 git clone 命令时需要使用完整的用户名进行验证。**
 
-![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/tgit/tgit9.png?t=18101520)
+![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/tgit/tgit9.png?t=18101919)
 
 **注：开通 TGit，添加项目成员操作耗时较久，请耐心等待**
 
 ## 微信开发者工具
 
-![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/tgit/toolbar.png?t=18101520)
+![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/tgit/toolbar.png?t=18101919)
 
 在微信开发者工具的工具栏上可以通过 “代码仓库” 按钮快速进入 TGit 管理后台
 
-![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/tgit/devmaster.png?t=18101520)
+![](https://developers.weixin.qq.com/miniprogram/dev/qcloud/image/tgit/devmaster.png?t=18101919)
 
 ## 如何使用
 
@@ -247,6 +246,6 @@
 
 </div>
 
-[](./material.html)[](../devtools/monkey-test.html)</div>
+[](../devtools/plugin.html)[](../devtools/monkey-test.html)</div>
 
 </div>

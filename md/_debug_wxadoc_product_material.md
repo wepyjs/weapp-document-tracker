@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101519)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101519)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101519)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101915)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101915)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101915)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101519)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101519)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101519)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101915)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101915)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101915)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101519)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101519)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101915)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101915)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18101519)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/material.html?t=18101519)
+*   [中文](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18101915)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/material.html?t=18101915)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18101519)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/material.html?t=18101519)
+*   [中文](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18101915)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/material.html?t=18101915)
 
 </div>
 
@@ -1139,7 +1139,7 @@
 
 <td width="301" valign="center">/</td>
 
-<td width="302" valign="center">全国中小企业股份转让系统有限责任公司的书面许可和《增值电信业务经营许可备案》（截图）</td>
+<td width="302" valign="center">全国中小企业股份转让系统有限责任公司的书面许可和《非经营性互联网信息服务备案核准》</td>
 
 <td width="303" valign="center">
 
@@ -1155,7 +1155,7 @@
 
 <td width="301" valign="center">/</td>
 
-<td width="302" valign="center">《增值电信业务经营许可备案》（截图）</td>
+<td width="302" valign="center">《非经营性互联网信息服务备案核准》</td>
 
 <td width="303" valign="center">
 
@@ -1171,7 +1171,7 @@
 
 <td width="301" valign="center">/</td>
 
-<td width="302" valign="center">《增值电信业务经营许可证》且核准服务项目包含“财经投资类互联网电子公告服务” 和 深圳证券交易所《深圳交易所专有信息经营许可合同》 和上海证券交易所《上证所证券信息经营许可合同》</td>
+<td width="302" valign="center">《增值电信业务经营许可证》 和 深圳证券交易所《深圳交易所专有信息经营许可合同》 和上海证券交易所《上证所证券信息经营许可合同》</td>
 
 <td width="303" valign="center">
 
@@ -1831,9 +1831,7 @@
 
 <td width="302" valign="center">
 
-《增值电信业务经营许可证》或
-
-《电信与信息服务业务经营许可证》
+《增值电信业务经营许可证》
 
 </td>
 
@@ -2101,7 +2099,7 @@
 
 新闻服务商：《互联网新闻信息服务许可证》
 
-政府或监管机构：《增值电信业务经营许可备案》（截图）和《组织机构代码证》
+政府或监管机构：《非经营性互联网信息服务备案核准》和《组织机构代码证》
 
 </td>
 
@@ -2931,7 +2929,7 @@
 
 <td width="301" valign="center">/</td>
 
-<td width="302" valign="center">《增值电信业务经营许可备案》（截图）和《拍卖经营批准证书》和《营业执照》</td>
+<td width="302" valign="center">《非经营性互联网信息服务备案核准》和《拍卖经营批准证书》和《营业执照》</td>
 
 <td width="303" valign="center">/</td>
 
@@ -2943,7 +2941,7 @@
 
 <td width="301" valign="center">/</td>
 
-<td width="302" valign="center">《增值电信业务经营许可备案》（截图）和《拍卖经营批准证书》和《文物拍卖许可证》和《营业执照》</td>
+<td width="302" valign="center">《非经营性互联网信息服务备案核准》和《拍卖经营批准证书》和《文物拍卖许可证》和《营业执照》</td>
 
 <td width="303" valign="center">/</td>
 
@@ -2979,7 +2977,7 @@
 
 <td width="301" valign="center">/</td>
 
-<td width="302" valign="center">《典当经营许可证》和《特种行业许可证》和《增值电信业务经营许可备案》（截图）</td>
+<td width="302" valign="center">《典当经营许可证》和《特种行业许可证》和《非经营性互联网信息服务备案核准》</td>
 
 <td width="303" valign="center">/</td>
 
@@ -3179,9 +3177,7 @@
 
 <td width="302" valign="center" rowspan="2">
 
-《增值电信业务经营许可证》或
-
-《电信与信息服务业务经营许可证》
+《增值电信业务经营许可证》
 
 </td>
 
@@ -3203,7 +3199,7 @@
 
 <td width="301" valign="center">/</td>
 
-<td width="302" valign="center">《增值电信业务经营许可备案》（截图）</td>
+<td width="302" valign="center">《非经营性互联网信息服务备案核准》</td>
 
 </tr>
 
@@ -3229,7 +3225,7 @@
 
 <td width="301" valign="center">/</td>
 
-<td width="302" valign="center">《增值电信业务经营许可备案》（截图）</td>
+<td width="302" valign="center">《非经营性互联网信息服务备案核准》</td>
 
 </tr>
 
@@ -3241,9 +3237,7 @@
 
 <td width="302" valign="center">
 
-《增值电信业务经营许可证》或
-
-《电信与信息服务业务经营许可证》
+《增值电信业务经营许可证》
 
 </td>
 
@@ -3255,7 +3249,7 @@
 
 <td width="301" valign="center">/</td>
 
-<td width="302" valign="center">《增值电信业务经营许可备案》（截图）</td>
+<td width="302" valign="center">《非经营性互联网信息服务备案核准》</td>
 
 </tr>
 
@@ -3265,7 +3259,7 @@
 
 <td width="301" valign="center">/</td>
 
-<td width="302" valign="center">《增值电信业务经营许可备案截图》</td>
+<td width="302" valign="center">《信息网络传播视听节目许可证》</td>
 
 </tr>
 
@@ -3435,7 +3429,7 @@
 
 <td width="301" valign="center">/</td>
 
-<td width="302" valign="center">《增值电信业务经营许可备案》（截图）和《医疗机构执业许可证》</td>
+<td width="302" valign="center">《非经营性互联网信息服务备案核准》和《医疗机构执业许可证》</td>
 
 <td width="303" valign="center">/</td>
 
@@ -3477,7 +3471,7 @@
 
 <td width="301" valign="center">/</td>
 
-<td width="302" valign="center">《增值电信业务经营许可备案》（截图）和《医疗机构执业许可证》</td>
+<td width="302" valign="center">《非经营性互联网信息服务备案核准》和《医疗机构执业许可证》</td>
 
 <td width="303" valign="center">/</td>
 
@@ -3489,7 +3483,7 @@
 
 <td width="301" valign="center">/</td>
 
-<td width="302" valign="center">《增值电信业务经营许可备案》（截图）</td>
+<td width="302" valign="center">《非经营性互联网信息服务备案核准》</td>
 
 <td width="303" valign="center">/</td>
 
@@ -3569,7 +3563,7 @@
 
 <td width="301" valign="center">/</td>
 
-<td width="302" valign="center">《卫计委批文》+《增值电信业务经营许可》（备案）+合作医院《医疗机构执业许可证》（涉及线上交易提交增值电信业务经营许可证）</td>
+<td width="302" valign="center">《卫计委批文》+《非经营性互联网信息服务备案核准》+合作医院《医疗机构执业许可证》（涉及线上交易提交增值电信业务经营许可证）</td>
 
 <td width="303" valign="center">/</td>
 

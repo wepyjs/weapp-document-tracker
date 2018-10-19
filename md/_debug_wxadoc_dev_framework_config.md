@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101919)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101919)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101919)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101919)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101919)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101919)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101919)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101919)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/config.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/config.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/config.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/config.html?t=18101919)
 
 </div>
 
@@ -47,7 +47,7 @@
 *   [简易教程](../)
 *   [框架](./MINA.html)
 *   [组件](../component/)
-*   [API](../api/network/download/wx.downloadFile.html)
+*   [API](../api/network/upload/wx.uploadFile.html)
 *   [工具](../devtools/devtools.html)
 *   [小程序·云开发](../wxcloud/basis/getting-started.html)
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/config.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/config.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/config.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/config.html?t=18101919)
 
 </div>
 
@@ -205,7 +205,9 @@
 
 # 全局配置
 
-`app.json`文件用来对微信小程序进行全局配置，决定页面文件的路径、窗口表现、设置网络超时时间、设置多 tab 等。
+小程序根目录下的 `app.json` 文件用来对微信小程序进行全局配置，决定页面文件的路径、窗口表现、设置网络超时时间、设置多 tab 等。
+
+## 配置示例
 
 以下是一个包含了部分常用配置选项的 `app.json` ：
 
@@ -233,7 +235,7 @@
       "debug": true
     }
 
-#### app.json 配置项列表
+## app.json 配置项列表
 
 <table>
 
@@ -343,7 +345,7 @@
 
 <tr>
 
-<td>[subPackages](#subpackages)</td>
+<td>[subpackages](#subpackages)</td>
 
 <td>Object Array</td>
 
@@ -429,7 +431,7 @@
 
 </table>
 
-#### pages
+### pages
 
 用于指定小程序由哪些页面组成，每一项都对应一个页面的 路径+文件名 信息。文件名不需要写文件后缀，框架会自动去寻找对于位置的 `.json`, `.js`, `.wxml`, `.wxss` 四个文件进行处理。
 
@@ -652,7 +654,7 @@
       }
     }
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/config.jpg?t=18101520)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/config.jpg?t=18101919)
 
 ### tabBar
 
@@ -844,7 +846,7 @@
 
 </table>
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/tabbar.png?t=18101520)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/tabbar.png?t=18101919)
 
 ### networkTimeout
 
@@ -882,7 +884,7 @@
 
 <td>60000</td>
 
-<td>[wx.request](../api/network/request/wx.request.html) 的超时时间，单位毫秒。</td>
+<td>[wx.request](../api/network/request/wx.request.html) 的超时时间，单位：毫秒。</td>
 
 </tr>
 
@@ -896,7 +898,7 @@
 
 <td>60000</td>
 
-<td>[wx.connectSocket](../api/network/websocket/wx.connectSocket.html) 的超时时间，单位毫秒。</td>
+<td>[wx.connectSocket](../api/network/websocket/wx.connectSocket.html) 的超时时间，单位：毫秒。</td>
 
 </tr>
 
@@ -910,7 +912,7 @@
 
 <td>60000</td>
 
-<td>[wx.uploadFile](../api/network/upload/wx.uploadFile.html) 的超时时间，单位毫秒。</td>
+<td>[wx.uploadFile](../api/network/upload/wx.uploadFile.html) 的超时时间，单位：毫秒。</td>
 
 </tr>
 
@@ -924,7 +926,7 @@
 
 <td>60000</td>
 
-<td>[wx.downloadFile](../api/network/download/wx.downloadFile.html) 的超时时间，单位毫秒。</td>
+<td>[wx.downloadFile](../api/network/download/wx.downloadFile.html) 的超时时间，单位：毫秒。</td>
 
 </tr>
 
@@ -942,11 +944,13 @@
 
 启用[插件功能页](plugin/functional-pages.html)时，插件所有者小程序需要设置其 `functionalPages` 为 `true`。
 
-### subPackages
+### subpackages
 
 > 微信客户端 6.6.0 ，基础库 1.7.3 及以上版本支持
 
 启用[分包加载](subpackages.html)时，声明项目分包结构。
+
+> 写成 subPackages 也支持。
 
 ### workers
 
@@ -995,7 +999,17 @@
 
 页面的配置只能设置 `app.json` 中部分 `window` 配置项的内容，页面中配置项会覆盖 `app.json` 的 `window` 中相同的配置项。
 
-#### 页面配置项列表
+## 配置示例
+
+    {
+      "navigationBarBackgroundColor": "#ffffff",
+      "navigationBarTextStyle": "black",
+      "navigationBarTitleText": "微信接口功能演示",
+      "backgroundColor": "#eeeeee",
+      "backgroundTextStyle": "light"
+    }
+
+## 页面配置项列表
 
 <table>
 
@@ -1118,14 +1132,6 @@
 </tbody>
 
 </table>
-
-    {
-      "navigationBarBackgroundColor": "#ffffff",
-      "navigationBarTextStyle": "black",
-      "navigationBarTitleText": "微信接口功能演示",
-      "backgroundColor": "#eeeeee",
-      "backgroundTextStyle": "light"
-    }
 
 > 页面的`.json`只能设置 `window` 相关的配置项，以决定本页面的窗口表现，所以无需写 `window` 这个键。
 

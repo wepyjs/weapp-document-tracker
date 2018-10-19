@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101919)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101919)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101919)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101919)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101919)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101919)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101919)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101919)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/release.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/quickstart/basic/release.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/release.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/quickstart/basic/release.html?t=18101919)
 
 </div>
 
@@ -47,7 +47,7 @@
 *   [简易教程](../../)
 *   [框架](../../framework/MINA.html)
 *   [组件](../../component/)
-*   [API](../../api/network/download/wx.downloadFile.html)
+*   [API](../../api/network/upload/wx.uploadFile.html)
 *   [工具](../../devtools/devtools.html)
 *   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/release.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/quickstart/basic/release.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/release.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/quickstart/basic/release.html?t=18101919)
 
 </div>
 
@@ -137,7 +137,7 @@
 
 ## 运营数据
 
-有两种方式可以方便的看到小程序的[运营数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
+有两种方式可以方便的看到小程序的[运营数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101919)
 
 方法一：
 
@@ -149,7 +149,7 @@
 
 使用小程序数据助手，在微信中方便的查看运营数据
 
-![mydev](https://developers.weixin.qq.com/miniprogram/dev/image/quickstart/mydata.jpeg?t=18101520)
+![mydev](https://developers.weixin.qq.com/miniprogram/dev/image/quickstart/mydata.jpeg?t=18101919)
 
 </section>
 

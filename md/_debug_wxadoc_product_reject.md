@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18091711)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18091711)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18091711)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101915)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101915)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101915)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18091711)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18091711)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18091711)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101915)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101915)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101915)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18091711)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18091711)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101915)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101915)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/product/reject.html?t=18091711)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/reject.html?t=18091711)
+*   [中文](https://developers.weixin.qq.com/miniprogram/product/reject.html?t=18101915)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/reject.html?t=18101915)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/product/reject.html?t=18091711)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/reject.html?t=18091711)
+*   [中文](https://developers.weixin.qq.com/miniprogram/product/reject.html?t=18101915)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/reject.html?t=18101915)
 
 </div>
 

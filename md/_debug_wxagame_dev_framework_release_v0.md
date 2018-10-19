@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101520)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101520)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101520)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101919)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101919)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101919)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101520)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101520)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101520)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101919)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101919)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101919)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101520)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101520)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101919)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101919)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/release/v0.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/release/v0.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/release/v0.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/release/v0.html?t=18101919)
 
 </div>
 
@@ -47,7 +47,7 @@
 *   [简易教程](../../)
 *   [框架](../MINA.html)
 *   [组件](../../component/)
-*   [API](../../api/network/download/wx.downloadFile.html)
+*   [API](../../api/network/upload/wx.uploadFile.html)
 *   [工具](../../devtools/devtools.html)
 *   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/release/v0.html?t=18101520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/release/v0.html?t=18101520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/release/v0.html?t=18101919)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/release/v0.html?t=18101919)
 
 </div>
 
@@ -252,7 +252,7 @@
 7.  `A` 新增 框架方法 `App.onError` [详情](../../framework/app-service/app.html)
 8.  `A` 新增 页面配置 `disabelScroll` [详情](../../framework/config.html#页面配置)
 9.  `A` 新增 `<picker-view/>` 组件 [详情](../../component/picker-view.html)
-10.  `A` 新增 `<contact-button/>` 组件，用于显示客服会话按钮 [详情](https://developers.weixin.qq.com/miniprogram/dev/component/contact-button.html?t=18101520)
+10.  `A` 新增 `<contact-button/>` 组件，用于显示客服会话按钮 [详情](https://developers.weixin.qq.com/miniprogram/dev/component/contact-button.html?t=18101919)
 11.  `A` 新增 `<navigator/>` 组件属性 openType [详情](../../component/navigator.html)
 12.  `A` 新增 `<switch/>` `<checkbox/>` `<radio/>` 组件属性 color
 13.  `A` 新增 `<video/>` 组件属性 objectFit [详情](../../component/video.html)
