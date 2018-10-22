@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101919)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101919)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101919)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102216)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102216)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102216)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101919)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101919)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101919)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102216)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102216)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102216)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101919)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101919)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102216)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102216)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/usability/debug.html?t=18101919)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/usability/debug.html?t=18101919)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/usability/debug.html?t=18102216)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/usability/debug.html?t=18102216)
 
 </div>
 
@@ -47,7 +47,7 @@
 *   [简易教程](../../)
 *   [框架](../MINA.html)
 *   [组件](../../component/)
-*   [API](../../api/network/upload/wx.uploadFile.html)
+*   [API](../../api/)
 *   [工具](../../devtools/devtools.html)
 *   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/usability/debug.html?t=18101919)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/usability/debug.html?t=18101919)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/usability/debug.html?t=18102216)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/usability/debug.html?t=18102216)
 
 </div>
 
@@ -209,7 +209,7 @@
 
 在真机上，如果想要查看 `console` API 输出的日志内容和额外的调试信息，需要在点击屏幕右上角的按钮打开的菜单里选择「打开调试」。此时小程序/小游戏会退出，重新打开后会右下角会出现一个 `vConsole` 按钮。点击 `vConsole` 按钮可以打开日志面板。
 
-小程序和小游戏的 vConsole 展示内容会有一定差别，下图左边是小程序 vConsole，右边是小游戏 vConsole ![](https://developers.weixin.qq.com/miniprogram/dev/framework/usability/image/vConsole-app.jpg?t=18101919) ![](https://developers.weixin.qq.com/miniprogram/dev/framework/usability/image/vConsole-game.jpg?t=18101919)
+小程序和小游戏的 vConsole 展示内容会有一定差别，下图左边是小程序 vConsole，右边是小游戏 vConsole ![](https://developers.weixin.qq.com/miniprogram/dev/framework/usability/image/vConsole-app.jpg?t=18102216) ![](https://developers.weixin.qq.com/miniprogram/dev/framework/usability/image/vConsole-game.jpg?t=18102216)
 
 #### vConsole 使用说明
 
@@ -236,7 +236,7 @@
 
 在工具中进行代码压缩和打包时，会生成 Source Map 的 `.map` 文件。**开发版**小程序中，基础库会使用代码包中的 `.map` 文件，对 vConsole 中展示的错误信息堆栈进行重新映射（只对开发者代码文件进行）。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/framework/usability/image/sourceMap.jpg?t=18101919)
+![](https://developers.weixin.qq.com/miniprogram/dev/framework/usability/image/sourceMap.jpg?t=18102216)
 
 > 开发版代码包中由于包含了 `.map` 文件，代码包大小会比体验版和正式版大。
 

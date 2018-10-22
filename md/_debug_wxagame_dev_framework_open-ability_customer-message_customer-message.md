@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101919)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101919)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101919)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102216)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102216)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102216)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101919)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101919)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101919)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102216)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102216)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102216)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101919)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101919)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102216)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102216)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/customer-message/customer-message.html?t=18101919)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/customer-message/customer-message.html?t=18101919)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/customer-message/customer-message.html?t=18102216)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/customer-message/customer-message.html?t=18102216)
 
 </div>
 
@@ -47,7 +47,7 @@
 *   [简易教程](../../../)
 *   [框架](../../MINA.html)
 *   [组件](../../../component/)
-*   [API](../../../api/network/upload/wx.uploadFile.html)
+*   [API](../../../api/)
 *   [工具](../../../devtools/devtools.html)
 *   [小程序·云开发](../../../wxcloud/basis/getting-started.html)
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/customer-message/customer-message.html?t=18101919)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/customer-message/customer-message.html?t=18101919)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/customer-message/customer-message.html?t=18102216)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/customer-message/customer-message.html?t=18102216)
 
 </div>
 
@@ -284,7 +284,7 @@
 
 模式的选择与服务器配置在提交后都会立即生效，请开发者谨慎填写及选择。切换加密方式和数据格式需要提前配置好相关代码，详情请参考 [消息加解密说明](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419318479&token=&lang=zh_CN)。
 
-![填写服务器配置](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/callback_help.png?t=18101919)
+![填写服务器配置](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/callback_help.png?t=18102216)
 
 #### 第二步：验证消息的确来自微信服务器
 

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101919)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101919)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101919)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102216)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102216)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102216)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101919)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101919)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101919)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102216)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102216)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102216)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101919)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101919)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102216)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102216)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/sandbox.html?t=18101919)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/sandbox.html?t=18101919)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/sandbox.html?t=18102216)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/sandbox.html?t=18102216)
 
 </div>
 
@@ -47,7 +47,7 @@
 *   [简易教程](../)
 *   [框架](../framework/MINA.html)
 *   [组件](../component/)
-*   [API](../api/network/upload/wx.uploadFile.html)
+*   [API](../api/)
 *   [工具](./devtools.html)
 *   [小程序·云开发](../wxcloud/basis/getting-started.html)
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/sandbox.html?t=18101919)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/sandbox.html?t=18101919)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/sandbox.html?t=18102216)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/sandbox.html?t=18102216)
 
 </div>
 
@@ -152,23 +152,23 @@
 
 申请测试号的过程非常简单。只需访问 [申请地址](https://developers.weixin.qq.com/sandbox) ，并扫码登录后，即可查看到已为自己分配好的测试帐号信息。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/sandbox/sandbox-manage-game.jpg?t=18101919)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/sandbox/sandbox-manage-game.jpg?t=18102216)
 
 ## 创建测试号项目
 
 在得到了测试号的帐号信息之后，可以在开发者工具中使用此帐号信息创建项目进行开发。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/sandbox/sandbox-create-project.jpg?t=18101919)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/sandbox/sandbox-create-project.jpg?t=18102216)
 
 如图所示，打开工具并新建一个小程序项目，填入测试帐号的 appid，即可创建测试项目。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/sandbox/sandbox-program.jpg?t=18101919)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/sandbox/sandbox-program.jpg?t=18102216)
 
 如果需要跳过网络请求域名的校验，可勾选项目设置里的 “不校验合法域名、web-view（业务域名）、TLS 版本以及 HTTPS 证书” 选项。
 
 点击工具栏上的预览按钮即可在真机上预览体验。在真机上如需跳过网络请求域名的校验，需要点击右上角选项，选择 “打开调试” 即可。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/sandbox/sandbox-enable-debug.jpg?t=18101919)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/sandbox/sandbox-enable-debug.jpg?t=18102216)
 
 </section>
 

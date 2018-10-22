@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101919)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101919)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101919)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102216)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102216)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102216)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101919)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101919)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101919)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102216)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102216)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102216)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101919)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101919)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102216)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102216)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/api-limit.html?t=18101919)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/api-limit.html?t=18101919)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/api-limit.html?t=18102216)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/api-limit.html?t=18102216)
 
 </div>
 
@@ -47,7 +47,7 @@
 *   [简易教程](../../)
 *   [框架](../MINA.html)
 *   [组件](../../component/)
-*   [API](../../api/network/upload/wx.uploadFile.html)
+*   [API](../../api/)
 *   [工具](../../devtools/devtools.html)
 *   [小程序·云开发](../../wxcloud/basis/getting-started.html)
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/api-limit.html?t=18101919)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/api-limit.html?t=18101919)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/api-limit.html?t=18102216)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/api-limit.html?t=18102216)
 
 </div>
 
@@ -1626,7 +1626,7 @@
 
 <tr>
 
-<td>[`wx.writeBLECharacteristicValue`](../../api/device/bluetooth/wx.writeBLECharacteristicValue.html)</td>
+<td>[`wx.writeBLECharacteristicValue`](../../api/device/bluetooth-ble/wx.writeBLECharacteristicValue.html)</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
 
@@ -1656,7 +1656,7 @@
 
 <tr>
 
-<td>[`wx.notifyBLECharacteristicValueChange`](../../api/device/bluetooth/wx.notifyBLECharacteristicValueChange.html)</td>
+<td>[`wx.notifyBLECharacteristicValueChange`](../../api/device/bluetooth-ble/wx.notifyBLECharacteristicValueChange.html)</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
 
@@ -1676,7 +1676,7 @@
 
 <tr>
 
-<td>[`wx.readBLECharacteristicValue`](../../api/device/bluetooth/wx.readBLECharacteristicValue.html)</td>
+<td>[`wx.readBLECharacteristicValue`](../../api/device/bluetooth-ble/wx.readBLECharacteristicValue.html)</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
 
@@ -1696,7 +1696,7 @@
 
 <tr>
 
-<td>[`wx.getBLEDeviceCharacteristics`](../../api/device/bluetooth/wx.getBLEDeviceCharacteristics.html)</td>
+<td>[`wx.getBLEDeviceCharacteristics`](../../api/device/bluetooth-ble/wx.getBLEDeviceCharacteristics.html)</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
 
@@ -1716,7 +1716,7 @@
 
 <tr>
 
-<td>[`wx.onBLEConnectionStateChange`](../../api/device/bluetooth/wx.onBLEConnectionStateChange.html)</td>
+<td>[`wx.onBLEConnectionStateChange`](../../api/device/bluetooth-ble/wx.onBLEConnectionStateChange.html)</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
 
@@ -1756,7 +1756,7 @@
 
 <tr>
 
-<td>[`wx.getBLEDeviceServices`](../../api/device/bluetooth/wx.getBLEDeviceServices.html)</td>
+<td>[`wx.getBLEDeviceServices`](../../api/device/bluetooth-ble/wx.getBLEDeviceServices.html)</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
 
@@ -1766,7 +1766,7 @@
 
 <tr>
 
-<td>[`wx.onBLECharacteristicValueChange`](../../api/device/bluetooth/wx.onBLECharacteristicValueChange.html)</td>
+<td>[`wx.onBLECharacteristicValueChange`](../../api/device/bluetooth-ble/wx.onBLECharacteristicValueChange.html)</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
 
@@ -1776,7 +1776,7 @@
 
 <tr>
 
-<td>[`wx.createBLEConnection`](../../api/device/bluetooth/wx.createBLEConnection.html)</td>
+<td>[`wx.createBLEConnection`](../../api/device/bluetooth-ble/wx.createBLEConnection.html)</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
 
@@ -1796,7 +1796,7 @@
 
 <tr>
 
-<td>[`wx.closeBLEConnection`](../../api/device/bluetooth/wx.closeBLEConnection.html)</td>
+<td>[`wx.closeBLEConnection`](../../api/device/bluetooth-ble/wx.closeBLEConnection.html)</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
 
@@ -1806,7 +1806,7 @@
 
 <tr>
 
-<td>[`wx.notifyBLECharacteristicValueChange`](../../api/device/bluetooth/wx.notifyBLECharacteristicValueChange.html)</td>
+<td>[`wx.notifyBLECharacteristicValueChange`](../../api/device/bluetooth-ble/wx.notifyBLECharacteristicValueChange.html)</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
 
@@ -1816,7 +1816,7 @@
 
 <tr>
 
-<td>[`wx.onBLEConnectionStateChange`](../../api/device/bluetooth/wx.onBLEConnectionStateChange.html)</td>
+<td>[`wx.onBLEConnectionStateChange`](../../api/device/bluetooth-ble/wx.onBLEConnectionStateChange.html)</td>
 
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
 

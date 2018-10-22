@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101919)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101919)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101919)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102221)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102221)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102221)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101919)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101919)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101919)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102221)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102221)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102221)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101919)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101919)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102221)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102221)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/config.html?t=18101919)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/config.html?t=18101919)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/config.html?t=18102221)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/config.html?t=18102221)
 
 </div>
 
@@ -47,7 +47,7 @@
 *   [简易教程](../)
 *   [框架](./MINA.html)
 *   [组件](../component/)
-*   [API](../api/network/upload/wx.uploadFile.html)
+*   [API](../api/)
 *   [工具](../devtools/devtools.html)
 *   [小程序·云开发](../wxcloud/basis/getting-started.html)
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/config.html?t=18101919)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/config.html?t=18101919)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/config.html?t=18102221)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/config.html?t=18102221)
 
 </div>
 
@@ -375,7 +375,7 @@
 
 <td>[requiredBackgroundModes](#requiredbackgroundmodes)</td>
 
-<td>Array</td>
+<td>String Array</td>
 
 <td>否</td>
 
@@ -424,6 +424,20 @@
 <td>iPad 小程序是否支持屏幕旋转，默认关闭</td>
 
 <td>[2.3.0](compatibility.html "基础库 2.3.0 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>[navigateToMiniProgramAppIdList](#navigatetominiprogramappidlist)</td>
+
+<td>String Array</td>
+
+<td>否</td>
+
+<td>需要跳转的小程序列表，详见 [wx.navigateToMiniProgram](../api/open-api/miniprogram-navigate/wx.navigateToMiniProgram.html)</td>
+
+<td>[2.4.0](compatibility.html "基础库 2.4.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -654,7 +668,7 @@
       }
     }
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/config.jpg?t=18101919)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/config.jpg?t=18102221)
 
 ### tabBar
 
@@ -846,7 +860,7 @@
 
 </table>
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/tabbar.png?t=18101919)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/tabbar.png?t=18102221)
 
 ### networkTimeout
 
@@ -992,6 +1006,12 @@
 > 基础库 2.3.0 开始支持，低版本需做[兼容处理](compatibility.html)。
 
 在 iPad 上运行的小程序可以设置支持[屏幕旋转](view/resizable.html)。
+
+### navigateToMiniProgramAppIdList
+
+> 基础库 2.4.0 开始支持，低版本需做[兼容处理](compatibility.html)。
+
+当小程序需要使用 [wx.navigateToMiniProgram](../api/open-api/miniprogram-navigate/wx.navigateToMiniProgram.html) 接口跳转到其他小程序时，需要先在配置文件中声明需要跳转的小程序 appId 列表，最多允许填写 10 个。
 
 # 页面配置
 

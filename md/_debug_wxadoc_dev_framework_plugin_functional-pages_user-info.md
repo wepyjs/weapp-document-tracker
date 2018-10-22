@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101919)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101919)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101919)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102216)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102216)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102216)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101919)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101919)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101919)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102216)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102216)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102216)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101919)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101919)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102216)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102216)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/functional-pages/user-info.html?t=18101919)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/functional-pages/user-info.html?t=18101919)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/functional-pages/user-info.html?t=18102216)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/functional-pages/user-info.html?t=18102216)
 
 </div>
 
@@ -47,7 +47,7 @@
 *   [简易教程](../../../)
 *   [框架](../../MINA.html)
 *   [组件](../../../component/)
-*   [API](../../../api/network/upload/wx.uploadFile.html)
+*   [API](../../../api/)
 *   [工具](../../../devtools/devtools.html)
 *   [小程序·云开发](../../../wxcloud/basis/getting-started.html)
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/functional-pages/user-info.html?t=18101919)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/functional-pages/user-info.html?t=18101919)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/functional-pages/user-info.html?t=18102216)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/functional-pages/user-info.html?t=18102216)
 
 </div>
 
@@ -209,7 +209,7 @@
 
 ## 调用参数
 
-用户信息功能页使用 `<functional-page-navigator>` 进行跳转时，对应的参数 name 应为固定值 `loginAndGetUserInfo`，其余参数与 [`wx.getUserInfo`](https://developers.weixin.qq.com/miniprogram/dev/api/open.html?t=18101919#wxgetuserinfoobject) 相同，具体来说：
+用户信息功能页使用 `<functional-page-navigator>` 进行跳转时，对应的参数 name 应为固定值 `loginAndGetUserInfo`，其余参数与 [`wx.getUserInfo`](https://developers.weixin.qq.com/miniprogram/dev/api/open.html?t=18102216#wxgetuserinfoobject) 相同，具体来说：
 
 **args参数说明：**
 
@@ -497,14 +497,14 @@
 
 用户点击该 `navigator` 后，将跳转到如下的用户信息功能页：
 
-![用户信息功能页](https://developers.weixin.qq.com/miniprogram/dev/image/user-info-functional-page.png?t=18101919)
+![用户信息功能页](https://developers.weixin.qq.com/miniprogram/dev/image/user-info-functional-page.png?t=18102216)
 
 [在微信开发者工具中查看示例](wechatide://minicode/Uof4Iomt731Z)：
 
 1.  由于插件需要 appid 才能工作，请填入一个 appid；
 2.  由于当前代码片段的限制，打开该示例后请 **手动将 appid 填写到 `miniprogram/app.json` 中（如下图）使示例正常运行。**
 
-![手动填写 appid](https://developers.weixin.qq.com/miniprogram/dev/image/plugin_minicode_guide.png?t=18101919)
+![手动填写 appid](https://developers.weixin.qq.com/miniprogram/dev/image/plugin_minicode_guide.png?t=18102216)
 
 </section>
 
