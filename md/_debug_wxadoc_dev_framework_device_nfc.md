@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102216)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102216)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102216)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102320)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102320)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102320)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102216)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102216)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102216)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102320)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102320)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102320)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102216)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102216)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102320)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102320)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/device/nfc.html?t=18102216)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/device/nfc.html?t=18102216)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/device/nfc.html?t=18102320)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/device/nfc.html?t=18102320)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/device/nfc.html?t=18102216)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/device/nfc.html?t=18102216)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/device/nfc.html?t=18102320)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/device/nfc.html?t=18102320)
 
 </div>
 
@@ -207,9 +207,9 @@
 
 暂仅支持 HCE（基于主机的卡模拟）模式，即将安卓手机模拟成实体智能卡。
 
-*   适用机型：支持 NFC 功能，且系统版本为Android5.0及以上的手机
+*   适用机型：支持 NFC 功能，且系统版本为 Android 5.0 及以上的手机
 
-*   适用卡范围：符合ISO 14443-4标准的CPU卡
+*   适用卡范围：符合ISO 14443-4 标准的 CPU 卡
 
 </section>
 

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102216)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102216)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102216)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102320)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102320)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102320)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102216)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102216)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102216)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102320)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102320)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102320)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102216)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102216)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102320)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102320)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/client-lib/version.html?t=18102216)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/client-lib/version.html?t=18102216)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/client-lib/version.html?t=18102320)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/client-lib/version.html?t=18102320)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/client-lib/version.html?t=18102216)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/client-lib/version.html?t=18102216)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/client-lib/version.html?t=18102320)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/client-lib/version.html?t=18102320)
 
 </div>
 
@@ -207,7 +207,7 @@
 
 更新时间：<span id="update-time"></span>
 
-> 占比低于 0.01% 的版本已隐藏，占比低于 1% 的版本以灰色显示。
+> 占比低于 0.01% 的版本已隐藏，占比低于 1% 的版本以灰色显示。灰度发布中的版本占比将在灰度完成后显示。
 
 #### 全部
 

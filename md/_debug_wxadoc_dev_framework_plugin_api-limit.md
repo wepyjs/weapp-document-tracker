@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102216)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102216)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102216)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102320)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102320)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102320)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102216)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102216)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102216)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102320)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102320)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102320)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102216)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102216)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102320)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102320)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/api-limit.html?t=18102216)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/api-limit.html?t=18102216)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/api-limit.html?t=18102320)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/api-limit.html?t=18102320)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/api-limit.html?t=18102216)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/api-limit.html?t=18102216)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/api-limit.html?t=18102320)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/api-limit.html?t=18102320)
 
 </div>
 
@@ -2140,9 +2140,9 @@
 
 <tr>
 
-<td>[`wx.redirectTo`](../../api/route/wx.redirectTo.html)</td>
+<td>[`wx.navigateBack`](../../api/route/wx.navigateBack.html)</td>
 
-<td>[2.2.2](../compatibility.html "基础库 2.2.2 开始支持，低版本需做兼容处理。")</td>
+<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
 
 <td>仅限插件页面中调用</td>
 
@@ -2160,9 +2160,29 @@
 
 <tr>
 
-<td>[`wx.navigateBack`](../../api/route/wx.navigateBack.html)</td>
+<td>[`wx.redirectTo`](../../api/route/wx.redirectTo.html)</td>
 
-<td>[2.1.0](../compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+<td>[2.2.2](../compatibility.html "基础库 2.2.2 开始支持，低版本需做兼容处理。")</td>
+
+<td>仅限插件页面中调用</td>
+
+</tr>
+
+<tr>
+
+<td>[`wx.switchTab`](../../api/route/wx.switchTab.html)</td>
+
+<td>[2.3.1](../compatibility.html "基础库 2.3.1 开始支持，低版本需做兼容处理。")</td>
+
+<td>仅限插件页面中调用</td>
+
+</tr>
+
+<tr>
+
+<td>[`wx.reLaunch`](../../api/route/wx.reLaunch.html)</td>
+
+<td>[2.3.1](../compatibility.html "基础库 2.3.1 开始支持，低版本需做兼容处理。")</td>
 
 <td>仅限插件页面中调用</td>
 
@@ -2473,6 +2493,52 @@
 <td>[1.9.6](../compatibility.html "基础库 1.9.6 开始支持，低版本需做兼容处理。")</td>
 
 <td>见下方备注</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+### 登录和获取用户信息
+
+**这一组接口仅限在用户信息功能页中获得用户授权之后调用。否则将返回 fail 。详见 [用户信息功能页](functional-pages/user-info.html) 。**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>API</th>
+
+<th>最低版本</th>
+
+<th>备注</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>[`wx.login`](../../api/open-api/login/wx.login.html)</td>
+
+<td>[2.3.1](../compatibility.html "基础库 2.3.1 开始支持，低版本需做兼容处理。")</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>[`wx.getUserInfo`](../../api/open-api/user-info/wx.getUserInfo.html)</td>
+
+<td>[2.3.1](../compatibility.html "基础库 2.3.1 开始支持，低版本需做兼容处理。")</td>
+
+<td></td>
 
 </tr>
 

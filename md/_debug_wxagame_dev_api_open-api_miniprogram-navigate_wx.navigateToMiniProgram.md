@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102221)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102221)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102221)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102320)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102320)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102320)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102221)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102221)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102221)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102320)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102320)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102320)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102221)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102221)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102320)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102320)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/miniprogram-navigate/wx.navigateToMiniProgram.html?t=18102221)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/miniprogram-navigate/wx.navigateToMiniProgram.html?t=18102221)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/miniprogram-navigate/wx.navigateToMiniProgram.html?t=18102320)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/miniprogram-navigate/wx.navigateToMiniProgram.html?t=18102320)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/miniprogram-navigate/wx.navigateToMiniProgram.html?t=18102221)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/miniprogram-navigate/wx.navigateToMiniProgram.html?t=18102221)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/miniprogram-navigate/wx.navigateToMiniProgram.html?t=18102320)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/miniprogram-navigate/wx.navigateToMiniProgram.html?t=18102320)
 
 </div>
 
@@ -878,15 +878,15 @@
 
 #### 使用限制
 
-### 需要用户触发跳转
+##### 需要用户触发跳转
 
 从 2.3.0 版本开始，若用户未点击小程序页面任意位置，则开发者将无法调用此接口自动跳转至其他小程序。
 
-### 需要用户确认跳转
+##### 需要用户确认跳转
 
 从 2.3.0 版本开始，在跳转至其他小程序前，将统一增加弹窗，询问是否跳转，用户确认后才可以跳转其他小程序。如果用户点击取消，则回调 `fail cancel`。
 
-### 每个小程序可跳转的其他小程序数量限制为不超过 10 个
+##### 每个小程序可跳转的其他小程序数量限制为不超过 10 个
 
 从 2.4.0 版本以及指定日期（具体待定）开始，开发者提交新版小程序代码时，如使用了跳转其他小程序功能，则需要在代码配置中声明将要跳转的小程序名单，限定不超过 10 个，否则将无法通过审核。该名单可在发布新版时更新，不支持动态修改。配置方法详见 [配置](../../../framework/config.html)。调用此接口时，所跳转的 appId 必须在配置列表中，否则回调 `fail appId "${appId}" is not in navigateToMiniProgramAppIdList`。
 
@@ -894,6 +894,20 @@
 
 *   在开发者工具上调用此 API 并不会真实的跳转到另外的小程序，但是开发者工具会校验本次调用跳转是否成功。[详情](../../../devtools/different.html#跳转小程序调试支持)
 *   开发者工具上支持被跳转的小程序处理接收参数的调试。[详情](../../../devtools/different.html#跳转小程序调试支持)
+
+#### 示例代码
+
+    wx.navigateToMiniProgram({
+      appId: '',
+      path: 'page/index/index?id=123',
+      extraData: {
+        foo: 'bar'
+      },
+      envVersion: 'develop',
+      success(res) {
+        // 打开成功
+      }
+    })
 
 </section>
 

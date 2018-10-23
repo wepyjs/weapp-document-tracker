@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102216)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102216)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102216)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102320)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102320)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102320)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102216)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102216)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102216)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102320)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102320)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102320)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102216)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102216)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102320)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102320)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/release.html?t=18102216)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/release.html?t=18102216)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/release.html?t=18102320)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/release.html?t=18102320)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/release.html?t=18102216)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/release.html?t=18102216)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/release.html?t=18102320)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/release.html?t=18102320)
 
 </div>
 
@@ -207,6 +207,38 @@
 
 [查看开发者工具更新日志](../devtools/uplog.html)
 
+### v2.3.1 (2018.10.22)
+
+1.  `A` 新增 组件 `<picker-view>` 增加开始滚动的事件 [详情](../component/picker-view.html)
+2.  `A` 新增 组件 `<progress>` 支持定义圆角、自定义字体 [详情](../component/progress.html)
+3.  `U` 更新 调试 vConsole 支持打印更多类型的日志数据 [详情](usability/debug.html#vconsole)
+4.  `U` 更新 框架 tabBar 右上角添加文本限制为4个字符，超出显示省略号
+5.  `U` 更新 API `wx.navigateToMiniProgram` 在调用时会弹窗询问用户是否允许打开目标小程序 [详情](../api/open-api/miniprogram-navigate/wx.navigateToMiniProgram.html)
+6.  `U` 更新 组件 `<navigator>` 在打开小程序时会弹窗询问用户是否允许打开目标小程序 [详情](../component/navigator.html)
+7.  `U` 更新 插件 支持调用 `switchTab` 和 `switchTab` [详情](plugin/api-limit.html)
+8.  `U` 更新 插件 用户在登录功能页中授权后，插件可以调用 `wx.login` 和 `wx.getUserInfo` [详情](plugin/api-limit.html)
+9.  `F` 修复 框架 附近小程序获取的场景值错误问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000c88d5eb84085c8b072f59456000)
+10.  `F` 修复 API 安卓 `getSystemInfo` 错误返回 `benchmarkLevel` 问题
+11.  `F` 修复 API 支付完无法调用 `wx.navigateToMiniProgram` 的问题
+12.  `F` 修复 API `SelectorQuery` 在开发者工具的首个页面上可能失效问题
+13.  `F` 修复 API `wx.cloud.downloadFile` 会报 statusCode 404 失败问题
+14.  `F` 修复 API `wx.getBackgroundAudioManager` 调用 stop 方法后 paused 状态为 false 问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/00060c1df1c39051d2b64aa755b400)
+15.  `F` 修复 小游戏 API `wx.onShow` query 解析错误问题
+16.  `F` 修复 组件 `<map>` 颜色值不支持3位缩写的问题
+17.  `F` 修复 组件 `<input>` 设置百分比宽度时，组件宽度异常问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/00080ad37c8010582f47858525b800)
+18.  `F` 修复 组件 `<cover-image>` iOS 下加载非法 src 无法触发 error 事件问题。
+19.  `F` 修复 组件 `<textarea的auto>` 在开发者工具上设置 auto-height 出现滚动条问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000a6abc4508680fa95759f6856c00)
+20.  `F` 修复 组件 `<input>` 中添加搜索图标，使用 padding-left 出现两个图标的问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000888805747d8b19857f9ed256c00)
+21.  `F` 修复 组件 `<image>` 的 `lazyload` 已经加载过仍会触发 load 事件问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000480450e0518c7c12749b2a56c00)
+22.  `F` 修复 组件 `<swiper>` 中使用 `<scroll-view>`，导致 `<swiper>` 无法滑动问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/0008cee0f18160a927471e9cb56c00)
+23.  `F` 修复 组件 `<radio>` 设置 `disabled: true`之后，color 还起作用的问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000682a813046801ee271670d5bc00)
+24.  `F` 修复 组件 `<video>` 某些情况下渲染位置异常问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000ca8cfed4d18c59a57d4e4156800)
+25.  `F` 修复 组件 `<video>` 退出全屏时会错位问题
+26.  `F` 修复 自定义组件 多次更新同一组件的时候数据更新异常问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/00026ea17e08983f395788c2b56400)
+27.  `F` 修复 组件 `<canvas>` touch 事件参数名称错误问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/0002865da4c2504319479caad53c00)
+28.  `F` 修复 组件 `<map>` 在开发者工具上点击标记点不显示气泡问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/000884dfdc0768a614a60b0c951400)
+29.  `F` 修复 组件 `<textarea>` 工具上linechange事件不准确问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/00040a49a7c550aacd1785ce45b000)
+
 ### v2.3.0 (2018.09.10)
 
 1.  `A` 新增 框架 分包加载支持独立分包 [详情](subpackages/independent.html)
@@ -300,8 +332,8 @@
 
 ### v2.2.3 (2018.08.19)
 
-1.  `A` 新增 小程序·云开发 SDK [详情](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html?t=18102216)
-2.  `A` 新增 `<image>` `<video>` `<cover-image>` `previewImage` `getBackgroundAudioManager` `createInnerAudio` 支持云文件ID [详情](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/storage/?t=18102216)
+1.  `A` 新增 小程序·云开发 SDK [详情](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html?t=18102320)
+2.  `A` 新增 `<image>` `<video>` `<cover-image>` `previewImage` `getBackgroundAudioManager` `createInnerAudio` 支持云文件ID [详情](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/storage/?t=18102320)
 3.  `A` 新增 自定义组件 全局样式类功能 [详情](custom-component/wxml-wxss.html#全局样式类)
 4.  `A` 新增 自定义组件 `lifetimes` 定义段，用于收归现有生命周期 [详情](custom-component/component.html)
 5.  `A` 新增 自定义组件 `pageLifetimes` 定义段，用于获取当前所在页面的生命周期 [详情](custom-component/component.html)
@@ -345,7 +377,7 @@
 
 ### v2.2.0 (2018.07.12)
 
-1.  `A` 新增 API 小游戏跳小程序 `wx.navigateToMiniProgram` [详情](https://developers.weixin.qq.com/minigame/dev/document/open-api/miniprogram-navigate/wx.navigateToMiniProgram.html?t=18102216)
+1.  `A` 新增 API 小游戏跳小程序 `wx.navigateToMiniProgram` [详情](https://developers.weixin.qq.com/minigame/dev/document/open-api/miniprogram-navigate/wx.navigateToMiniProgram.html?t=18102320)
 2.  `F` 修复 API `wx.scanCode` 在安卓平台返回 `scanType` 错误问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/0002e4ac33ca70c771f6fe87855c00)
 
 ### v2.1.3 (2018.07.09)
@@ -363,12 +395,12 @@
 5.  `U` 更新 API `wx.scanCode` 返回参数新增 `rawData` 字段 [详情](../api/device/scan/wx.scanCode.html)
 6.  `U` 更新 API `wx.createLivePusherContext` 新增 `toggleTorch` 方法支持切换闪光灯 [详情](../api/media/live/wx.createLivePusherContext.html)
 7.  `A` 新增 API `wx.getAvailableAudioSources` 获取当前可用的音频输入源 [详情](../api/media/audio/wx.getAvailableAudioSources.html)
-8.  `A` 新增 API `wx.getMenuButtonBoundingClientRect` 获取菜单按钮布局信息接口 [详情](https://developers.weixin.qq.com/minigame/dev/document/ui/wx.getMenuButtonBoundingClientRect.html?t=18102216)
-9.  `A` 新增 API `wx.onDeviceOrientationChange` 监听屏幕方向的改变 [详情](https://developers.weixin.qq.com/minigame/dev/document/device/orientation/wx.onDeviceOrientationChange.html?t=18102216)
-10.  `A` 新增 API `FileSystemManager.appendFile` 追加文件内容 [详情](https://developers.weixin.qq.com/minigame/dev/document/file/FileSystemManager.appendFile.html?t=18102216)
+8.  `A` 新增 API `wx.getMenuButtonBoundingClientRect` 获取菜单按钮布局信息接口 [详情](https://developers.weixin.qq.com/minigame/dev/document/ui/wx.getMenuButtonBoundingClientRect.html?t=18102320)
+9.  `A` 新增 API `wx.onDeviceOrientationChange` 监听屏幕方向的改变 [详情](https://developers.weixin.qq.com/minigame/dev/document/device/orientation/wx.onDeviceOrientationChange.html?t=18102320)
+10.  `A` 新增 API `FileSystemManager.appendFile` 追加文件内容 [详情](https://developers.weixin.qq.com/minigame/dev/document/file/FileSystemManager.appendFile.html?t=18102320)
 11.  `A` 新增 API `wx.setBackgroundColor` 和 `wx.setBackgroundTextStyle` 动态设置背景相关信息 [详情](../api/ui/background/wx.setBackgroundColor.html)
-12.  `A` 新增小游戏 API `wx.updateKeyboard` 更新键盘 [详情](https://developers.weixin.qq.com/minigame/dev/document/ui/keyboard/wx.updateKeyboard.html?t=18102216)
-13.  `A` 新增小游戏 API `wx.loadSubpackage` 加载分包 [详情](https://developers.weixin.qq.com/minigame/dev/tutorial/base/subpackages.html?t=18102216)
+12.  `A` 新增小游戏 API `wx.updateKeyboard` 更新键盘 [详情](https://developers.weixin.qq.com/minigame/dev/document/ui/keyboard/wx.updateKeyboard.html?t=18102320)
+13.  `A` 新增小游戏 API `wx.loadSubpackage` 加载分包 [详情](https://developers.weixin.qq.com/minigame/dev/tutorial/base/subpackages.html?t=18102320)
 14.  `U` 更新 组件 `<button />` 可以嵌套在原生组件内，显示在原生组件之上 [详情](../component/button.html)
 15.  `U` 更新 组件 `<button />` 新增 `open-type` 值为 `feedback`，打开“意见反馈”页面 [详情](../component/button.html)
 16.  `U` 更新 组件 `<cover-view />` `<cover-image />` 新增 `scroll-top` 属性 [详情](../component/cover-view.html)
@@ -401,7 +433,7 @@
 2.  `U` **仅针对开发工具**，废弃小程序 `wx.navigateToMiniProgram` 接口
 3.  `U` 更新小程序组件 `<button>` 新增 `open-type` 属性有效值 `openSetting` [详情](../component/button.html)
 4.  `U` 更新小程序组件 `<navigator>` 新增 `target` 属性可跳转到绑定的小程序 [详情](../component/navigator.html)
-5.  `A` 新增小游戏接口 `wx.createOpenSettingButton` 接口 [详情](https://developers.weixin.qq.com/minigame/dev/document/open-api/setting/wx.createOpenSettingButton.html?t=18102216)
+5.  `A` 新增小游戏接口 `wx.createOpenSettingButton` 接口 [详情](https://developers.weixin.qq.com/minigame/dev/document/open-api/setting/wx.createOpenSettingButton.html?t=18102320)
 
 ### v2.0.6 (2018.05.11)
 

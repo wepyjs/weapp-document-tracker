@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102216)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102216)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102216)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102320)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102320)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102320)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102216)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102216)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102216)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102320)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102320)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102320)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102216)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102216)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102320)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102320)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/progress.html?t=18102216)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/progress.html?t=18102216)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/progress.html?t=18102320)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/progress.html?t=18102320)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/progress.html?t=18102216)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/progress.html?t=18102216)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/progress.html?t=18102320)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/progress.html?t=18102320)
 
 </div>
 
@@ -190,6 +190,34 @@
 
 <tr>
 
+<td>border-radius</td>
+
+<td>Number</td>
+
+<td>0</td>
+
+<td>圆角大小</td>
+
+<td>[2.3.1](../framework/compatibility.html "基础库 2.3.1 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
+<td>font-size</td>
+
+<td>Number</td>
+
+<td>16</td>
+
+<td>右侧百分比字体大小</td>
+
+<td>[2.3.1](../framework/compatibility.html "基础库 2.3.1 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+<tr>
+
 <td>stroke-width</td>
 
 <td>Number</td>
@@ -285,7 +313,7 @@
     <progress percent="60" color="pink" />
     <progress percent="80" active />
 
-![progress](https://developers.weixin.qq.com/miniprogram/dev/image/pic/progress.png?t=18102216)
+![progress](https://developers.weixin.qq.com/miniprogram/dev/image/pic/progress.png?t=18102320)
 
 </section>
 
