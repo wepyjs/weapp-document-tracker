@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102320)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102320)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102320)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102320)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102320)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102320)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102320)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102320)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/scene.html?t=18102320)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/scene.html?t=18102320)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/scene.html?t=18102520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/scene.html?t=18102520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/scene.html?t=18102320)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/scene.html?t=18102320)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/scene.html?t=18102520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/scene.html?t=18102520)
 
 </div>
 
@@ -229,7 +229,7 @@
 
 <td>1001</td>
 
-<td>发现栏小程序主入口，“最近使用”列表（基础库2.2.4版本起将包含“我的小程序”列表）</td>
+<td>发现栏小程序主入口，「最近使用」列表（基础库2.2.4版本起包含「我的小程序」列表）</td>
 
 </tr>
 
@@ -365,7 +365,7 @@
 
 <td>1027</td>
 
-<td>顶部搜索框搜索结果页“使用过的小程序”列表</td>
+<td>顶部搜索框搜索结果页「使用过的小程序」列表</td>
 
 </tr>
 
@@ -693,7 +693,7 @@
 
 <td>1089</td>
 
-<td>微信聊天主界面下拉，“最近使用”栏（基础库2.2.4版本起将包含“我的小程序”栏）</td>
+<td>微信聊天主界面下拉，「最近使用」栏（基础库2.2.4版本起包含「我的小程序」栏）</td>
 
 </tr>
 
@@ -765,7 +765,7 @@
 
 <td>1103</td>
 
-<td>发现栏小程序主入口，“我的小程序”列表（基础库2.2.4版本起该场景值废弃）</td>
+<td>发现栏小程序主入口，「我的小程序」列表（基础库2.2.4版本起废弃）</td>
 
 </tr>
 
@@ -773,7 +773,7 @@
 
 <td>1104</td>
 
-<td>微信聊天主界面下拉，“我的小程序”栏（基础库2.2.4版本起该场景值废弃）</td>
+<td>微信聊天主界面下拉，「我的小程序」栏（基础库2.2.4版本起废弃）</td>
 
 </tr>
 

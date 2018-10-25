@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102320)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102320)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102320)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102320)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102320)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102320)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102320)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102320)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/git.html?t=18102320)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/git.html?t=18102320)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/git.html?t=18102520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/git.html?t=18102520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/git.html?t=18102320)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/git.html?t=18102320)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/git.html?t=18102520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/git.html?t=18102520)
 
 </div>
 
@@ -156,57 +156,57 @@
 
 在 “工作区” 可以查看到目前工作目录的变更及对比，并直接通过勾选文件前面的复选框将其添加到暂存区。右键点击工作区或者此文件，可以丢弃修改。输入提交标题和详情，点击提交按钮即可以提交本次的变更。在标题栏上点击右键可以使用常用的 Gitmoji 符号。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/commit.jpg?t=18102320)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/commit.jpg?t=18102520)
 
 ### 查看历史
 
 点击历史或者某个分支，可以查看到当前分支的最新提交记录。每个提交记录都可以看到变更的内容以及目录树详情。展开目录树后，在文件上右键点击，可以保存该提交版本的文件完整内容，或者检出该版本的文件。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/history.jpg?t=18102320)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/history.jpg?t=18102520)
 
 ### 查看文件修改历史
 
 在提交记录的目录树文件上右键点击，可以查看到某个文件截至该提交的所有变更记录，并可直接查看文件内容，方便排查问题。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/file-history.jpg?t=18102320)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/file-history.jpg?t=18102520)
 
 ### 检出和创建分支
 
 要检出某分支，直接在分支上点击右键选择 “检出” 即可。要创建分支，可以在要创建的提交记录或者分支名上右键，选择 “创建分支” 即可。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/create-branch.jpg?t=18102320)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/create-branch.jpg?t=18102520)
 
 ### 拉取，推送和抓取
 
 通过工具栏上的拉取，推送和抓取按钮，可以很方便地对远程仓库执行各种操作。某些远程仓库可能需要身份验证或者网络代理配置，可以在 “设置” 页中 “网络和认证” 中配置这些信息。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/pull.jpg?t=18102320)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/pull.jpg?t=18102520)
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/push.jpg?t=18102320)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/push.jpg?t=18102520)
 
 ### 网络和认证设置
 
 如果连接远程仓库需要代理或者用户身份验证的设置，可以在设置 “网络和认证” 中配置。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/network-setting.jpg?t=18102320)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/network-setting.jpg?t=18102520)
 
 ### 用户设置
 
 在设置页面可以对用户名进行配置。配置完成后，下次提交时，将会使用此用户名和邮箱进行提交。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/user-setting.jpg?t=18102320)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/user-setting.jpg?t=18102520)
 
 ### 子模块
 
 如果项目包含子模块 (Submodule)，可以在子模块列表下查看到子模块的信息。目前不支持对子模块进行更多的操作。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/submodule.jpg?t=18102320)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/submodule.jpg?t=18102520)
 
 ### 初始化 Git 仓库
 
 如果所在的项目文件夹下没有找到 Git 仓库，可以根据提示初始化一个仓库，并可选择是否立即提交所有文件，以及自动生成一个 .gitignore 文件模板。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/init-repo.jpg?t=18102320)
+![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/git/init-repo.jpg?t=18102520)
 
 </section>
 

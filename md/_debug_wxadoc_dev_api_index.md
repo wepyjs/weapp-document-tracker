@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102320)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102320)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102320)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102320)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102320)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102320)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102320)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102320)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/index.html?t=18102320)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/index.html?t=18102320)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/index.html?t=18102520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/index.html?t=18102520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/index.html?t=18102320)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/index.html?t=18102320)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/index.html?t=18102520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/index.html?t=18102520)
 
 </div>
 
@@ -507,16 +507,16 @@
         *   [deleteNearbyPoi](./open-api/nearby-poi/deleteNearbyPoi.html)
         *   [getNearbyPoiList](./open-api/nearby-poi/getNearbyPoiList.html)
         *   [setNearbyPoiShowStatus](./open-api/nearby-poi/setNearbyPoiShowStatus.html)
+    *   [二维码](./open-api/qr-code/createWXAQRCode.html)
+        *   [createWXAQRCode](./open-api/qr-code/createWXAQRCode.html)
+        *   [getWXACode](./open-api/qr-code/getWXACode.html)
+        *   [getWXACodeUnlimit](./open-api/qr-code/getWXACodeUnlimit.html)
     *   [插件管理](./open-api/plugin-management/applyPlugin.html)
         *   [applyPlugin](./open-api/plugin-management/applyPlugin.html)
         *   [getPluginDevApplyList](./open-api/plugin-management/getPluginDevApplyList.html)
         *   [getPluginList](./open-api/plugin-management/getPluginList.html)
         *   [setDevPluginApplyStatus](./open-api/plugin-management/setDevPluginApplyStatus.html)
         *   [unbindPlugin](./open-api/plugin-management/unbindPlugin.html)
-    *   [二维码](./open-api/qr-code/createWXAQRCode.html)
-        *   [createWXAQRCode](./open-api/qr-code/createWXAQRCode.html)
-        *   [getWXACode](./open-api/qr-code/getWXACode.html)
-        *   [getWXACodeUnlimit](./open-api/qr-code/getWXACodeUnlimit.html)
     *   [内容安全](./open-api/sec-check/imgSecCheck.html)
         *   [imgSecCheck](./open-api/sec-check/imgSecCheck.html)
         *   [msgSecCheck](./open-api/sec-check/msgSecCheck.html)
@@ -4560,7 +4560,7 @@
 
 <td>[wx.navigateToMiniProgram](open-api/miniprogram-navigate/wx.navigateToMiniProgram.html)</td>
 
-<td>打开**同一公众号下关联**的另一个小程序</td>
+<td>打开另一个小程序</td>
 
 </tr>
 
@@ -5196,6 +5196,52 @@
 
 </table>
 
+### 二维码
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>API</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>[createWXAQRCode](open-api/qr-code/createWXAQRCode.html)</td>
+
+<td>获取小程序二维码，适用于需要的码数量较少的业务场景</td>
+
+</tr>
+
+<tr>
+
+<td>[getWXACode](open-api/qr-code/getWXACode.html)</td>
+
+<td>获取小程序码，适用于需要的码数量较少的业务场景</td>
+
+</tr>
+
+<tr>
+
+<td>[getWXACodeUnlimit](open-api/qr-code/getWXACodeUnlimit.html)</td>
+
+<td>获取小程序码，适用于需要的码数量极多的业务场景</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
 ### 插件管理
 
 <table>
@@ -5251,52 +5297,6 @@
 <td>[unbindPlugin](open-api/plugin-management/unbindPlugin.html)</td>
 
 <td>删除已添加的插件</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-### 二维码
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>API</th>
-
-<th>说明</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>[createWXAQRCode](open-api/qr-code/createWXAQRCode.html)</td>
-
-<td>获取小程序二维码，适用于需要的码数量较少的业务场景</td>
-
-</tr>
-
-<tr>
-
-<td>[getWXACode](open-api/qr-code/getWXACode.html)</td>
-
-<td>获取小程序码，适用于需要的码数量较少的业务场景</td>
-
-</tr>
-
-<tr>
-
-<td>[getWXACodeUnlimit](open-api/qr-code/getWXACodeUnlimit.html)</td>
-
-<td>获取小程序码，适用于需要的码数量极多的业务场景</td>
 
 </tr>
 

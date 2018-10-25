@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102320)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102320)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102320)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102320)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102320)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102320)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102320)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102320)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/index.html?t=18102320)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/index.html?t=18102320)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/index.html?t=18102520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/index.html?t=18102520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/index.html?t=18102320)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/index.html?t=18102320)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/index.html?t=18102520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/index.html?t=18102520)
 
 </div>
 
@@ -211,7 +211,9 @@
 
 插件开发者可以像开发小程序一样编写一个插件并上传代码，在插件发布之后，其他小程序方可调用。小程序平台会托管插件代码，其他小程序调用时，上传的插件代码会随小程序一起下载运行。
 
-相对于普通 js 文件或自定义组件，插件拥有更强的独立性，拥有独立的 API 接口、域名列表等，但同时会受到一些限制，如[一些 API 无法调用或功能受限](api-limit.html)。对于一些特殊的接口，如 `wx.login` 和 `wx.requestPayment` ，虽然插件不能直接调用，但可以使用 [插件功能页](functional-pages.html) 来间接实现。
+相对于普通 js 文件或自定义组件，插件拥有更强的独立性，拥有独立的 API 接口、域名列表等，但同时会受到一些限制，如[一些 API 无法调用或功能受限](api-limit.html)。还有个别特殊的接口，虽然插件不能直接调用，但可以使用 [插件功能页](functional-pages.html) 来间接实现。
+
+同时，框架会对小程序和小程序使用的每个插件进行数据安全保护，保证它们之间不能窃取其他任何一方的数据（除非数据被主动传递给另一方）。
 
 对于插件开发者，请阅读[开发插件](development.html)章节；对于插件使用者，请阅读[使用插件](using.html)章节。
 

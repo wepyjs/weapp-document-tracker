@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102320)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102320)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102320)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102320)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102320)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102320)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102320)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102320)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/canvas.html?t=18102320)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/ability/canvas.html?t=18102320)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/canvas.html?t=18102520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/ability/canvas.html?t=18102520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/canvas.html?t=18102320)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/ability/canvas.html?t=18102320)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/canvas.html?t=18102520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/ability/canvas.html?t=18102520)
 
 </div>
 
@@ -246,7 +246,7 @@ CanvasContext 是小程序内建的一个对象，有一些绘图的方法：
 
 **结果：**
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/fill-rect.png?t=18102320)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/fill-rect.png?t=18102520)
 
 ## 坐标系
 
@@ -298,7 +298,7 @@ canvas 是在一个二维的网格当中。左上角的坐标为`(0, 0)`。
 
 当你把手指放到 canvas 中，就会在下边显示出触碰点的坐标：
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/coordinates.gif?t=18102320)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/coordinates.gif?t=18102520)
 
 ## 渐变
 
@@ -329,7 +329,7 @@ canvas 是在一个二维的网格当中。左上角的坐标为`(0, 0)`。
     ctx.fillRect(10, 10, 150, 80)
     ctx.draw()
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/linear-gradient.png?t=18102320)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/linear-gradient.png?t=18102520)
 
 **使用 `createCircularGradient()`**
 
@@ -345,7 +345,7 @@ canvas 是在一个二维的网格当中。左上角的坐标为`(0, 0)`。
     ctx.fillRect(10, 10, 150, 80)
     ctx.draw()
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/circular-gradient.png?t=18102320)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/circular-gradient.png?t=18102520)
 
 </section>
 

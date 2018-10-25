@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102320)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102320)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102320)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102320)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102320)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102320)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102320)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102320)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/operating-mechanism.html?t=18102320)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/operating-mechanism.html?t=18102320)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/operating-mechanism.html?t=18102520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/operating-mechanism.html?t=18102520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/operating-mechanism.html?t=18102320)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/operating-mechanism.html?t=18102320)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/operating-mechanism.html?t=18102520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/operating-mechanism.html?t=18102520)
 
 </div>
 
@@ -223,7 +223,75 @@
 
 用户打开小程序的预期有以下两类场景：
 
-A. 打开首页： [场景值](app-service/scene.html)有 1001, 1019, 1022, 1023, 1038, 1056
+A. 打开首页： [场景值](app-service/scene.html)有以下几项：
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>场景值ID</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>1001</td>
+
+<td>发现栏小程序主入口，「最近使用」列表（基础库2.2.4版本起包含「我的小程序」列表）</td>
+
+</tr>
+
+<tr>
+
+<td>1019</td>
+
+<td>微信钱包</td>
+
+</tr>
+
+<tr>
+
+<td>1022</td>
+
+<td>聊天顶部置顶小程序入口</td>
+
+</tr>
+
+<tr>
+
+<td>1023</td>
+
+<td>安卓系统桌面图标</td>
+
+</tr>
+
+<tr>
+
+<td>1038</td>
+
+<td>从另一个小程序返回</td>
+
+</tr>
+
+<tr>
+
+<td>1056</td>
+
+<td>音乐播放器菜单</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 B. 打开小程序指定的某个页面： 场景值为除 A 以外的其他
 

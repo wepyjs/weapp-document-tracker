@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102320)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102320)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102320)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102320)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102320)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102320)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102320)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102320)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/debug/wx.getLogManager.html?t=18102320)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/debug/wx.getLogManager.html?t=18102320)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/debug/wx.getLogManager.html?t=18102520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/debug/wx.getLogManager.html?t=18102520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/debug/wx.getLogManager.html?t=18102320)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/debug/wx.getLogManager.html?t=18102320)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/debug/wx.getLogManager.html?t=18102520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/debug/wx.getLogManager.html?t=18102520)
 
 </div>
 
@@ -507,16 +507,16 @@
         *   [deleteNearbyPoi](../open-api/nearby-poi/deleteNearbyPoi.html)
         *   [getNearbyPoiList](../open-api/nearby-poi/getNearbyPoiList.html)
         *   [setNearbyPoiShowStatus](../open-api/nearby-poi/setNearbyPoiShowStatus.html)
+    *   [二维码](../open-api/qr-code/createWXAQRCode.html)
+        *   [createWXAQRCode](../open-api/qr-code/createWXAQRCode.html)
+        *   [getWXACode](../open-api/qr-code/getWXACode.html)
+        *   [getWXACodeUnlimit](../open-api/qr-code/getWXACodeUnlimit.html)
     *   [插件管理](../open-api/plugin-management/applyPlugin.html)
         *   [applyPlugin](../open-api/plugin-management/applyPlugin.html)
         *   [getPluginDevApplyList](../open-api/plugin-management/getPluginDevApplyList.html)
         *   [getPluginList](../open-api/plugin-management/getPluginList.html)
         *   [setDevPluginApplyStatus](../open-api/plugin-management/setDevPluginApplyStatus.html)
         *   [unbindPlugin](../open-api/plugin-management/unbindPlugin.html)
-    *   [二维码](../open-api/qr-code/createWXAQRCode.html)
-        *   [createWXAQRCode](../open-api/qr-code/createWXAQRCode.html)
-        *   [getWXACode](../open-api/qr-code/getWXACode.html)
-        *   [getWXACodeUnlimit](../open-api/qr-code/getWXACodeUnlimit.html)
     *   [内容安全](../open-api/sec-check/imgSecCheck.html)
         *   [imgSecCheck](../open-api/sec-check/imgSecCheck.html)
         *   [msgSecCheck](../open-api/sec-check/msgSecCheck.html)
@@ -680,11 +680,19 @@
 
 <section class="normal markdown-section">
 
-### [LogManager](LogManager.html) wx.getLogManager()
+### [LogManager](LogManager.html) wx.getLogManager(number level)
 
 > 支持版本 >= [2.1.0](../../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")
 
 获取日志管理器对象。
+
+#### 参数
+
+##### number level
+
+> 支持版本 >= [2.3.2](../../framework/compatibility.html "基础库 2.3.2 开始支持，低版本需做兼容处理。")
+
+取值为0/1，取值为0表示是否会把 `App`、`Page` 的生命周期函数和 `wx` 命名空间下的函数调用写入日志，取值为1则不会。默认值是 0
 
 #### 返回值
 

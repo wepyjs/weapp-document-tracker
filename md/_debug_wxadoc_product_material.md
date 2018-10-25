@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101915)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101915)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101915)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102515)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102515)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102515)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101915)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101915)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101915)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102515)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102515)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102515)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101915)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101915)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102515)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102515)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18101915)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/material.html?t=18101915)
+*   [中文](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18102515)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/material.html?t=18102515)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18101915)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/material.html?t=18101915)
+*   [中文](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18102515)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/material.html?t=18102515)
 
 </div>
 
@@ -3415,7 +3415,7 @@
 
 <td width="302" valign="center">
 
-《医疗机构执业许可证》和《组织机构代码证》
+《医疗机构执业许可证》和《事业单位法人证书》
 
 </td>
 

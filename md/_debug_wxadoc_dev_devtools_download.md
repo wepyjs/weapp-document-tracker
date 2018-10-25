@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102421)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102421)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102421)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102520)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102520)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102520)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102421)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102421)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102421)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102520)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102520)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102520)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102421)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102421)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102520)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102520)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html?t=18102421)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/download.html?t=18102421)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html?t=18102520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/download.html?t=18102520)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html?t=18102421)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/download.html?t=18102421)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html?t=18102520)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/download.html?t=18102520)
 
 </div>
 
@@ -146,15 +146,16 @@
 
 <section class="normal markdown-section">
 
-## 最新版本下载地址 (1.02.1810240)
+## 最新版本下载地址 (1.02.1810250)
 
 [Windows 64位](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki) / [Windows 32位](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki) / [Mac OS](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki)
 
 > Windows 仅支持 Windows 7 及以上版本。
 
-### 2018.10.24
+### 2018.10.25
 
-1.  `F` 修复 2.3.1 基础库打开小游戏加载异常的问题
+1.  `F` 修复 extAppid 与 appid 一致时导致 ext.json 上传时被忽略的问题 [反馈详情](https://developers.weixin.qq.com/community/develop/doc/0000a8590fcdd8fecb87bf8a551800)
+2.  `F` 修复 2.3.1 基础库打开小游戏加载异常的问题
 
 ### 2018.10.19
 
