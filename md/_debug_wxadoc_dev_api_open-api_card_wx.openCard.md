@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102520)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102520)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102520)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102614)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102614)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102614)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102520)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102520)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102520)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102614)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102614)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102614)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102520)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102520)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102614)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102614)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/card/wx.openCard.html?t=18102520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/card/wx.openCard.html?t=18102520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/card/wx.openCard.html?t=18102614)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/card/wx.openCard.html?t=18102614)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/card/wx.openCard.html?t=18102520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/card/wx.openCard.html?t=18102520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/card/wx.openCard.html?t=18102614)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/card/wx.openCard.html?t=18102614)
 
 </div>
 
@@ -684,7 +684,7 @@
 
 > 支持版本 >= [1.1.0](../../../framework/compatibility.html "基础库 1.1.0 开始支持，低版本需做兼容处理。")
 
-查看微信卡包中的卡券。只有通过 [认证](https://developers.weixin.qq.com/miniprogram/product/renzheng.html?t=18102520) 的小程序才能使用。更多文档请参考 [微信卡券接口文档](https://mp.weixin.qq.com/cgi-bin/announce?action=getannouncement&key=1490190158&version=1&lang=zh_CN&platform=2)。
+查看微信卡包中的卡券。只有通过 [认证](https://developers.weixin.qq.com/miniprogram/product/renzheng.html?t=18102614) 的小程序才能使用。更多文档请参考 [微信卡券接口文档](https://mp.weixin.qq.com/cgi-bin/announce?action=getannouncement&key=1490190158&version=1&lang=zh_CN&platform=2)。
 
 #### 参数
 

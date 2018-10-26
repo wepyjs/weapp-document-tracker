@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102520)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102520)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102520)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102614)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102614)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102614)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102520)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102520)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102520)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102614)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102614)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102614)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102520)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102520)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102614)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102614)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/audio.html?t=18102520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/audio.html?t=18102520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/audio.html?t=18102614)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/audio.html?t=18102614)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/audio.html?t=18102520)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/audio.html?t=18102520)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/audio.html?t=18102614)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/audio.html?t=18102614)
 
 </div>
 
@@ -99,16 +99,16 @@
     *   [navigator](./navigator.html)
     *   [functional-page-navigator](./functional-page-navigator.html)
 *   [媒体组件](./audio.html)
-    *   [audio](./audio.html#audio)
+    *   [audio](./audio.html)
     *   [image](./image.html)
     *   [video](./video.html)
     *   [camera](./camera.html)
     *   [live-player](./live-player.html)
     *   [live-pusher](./live-pusher.html)
 *   [地图](./map.html)
-    *   [map](./map.html#map)
+    *   [map](./map.html)
 *   [画布](./canvas.html)
-    *   [canvas](./canvas.html#canvas)
+    *   [canvas](./canvas.html)
 *   [开放能力](./open-data.html)
     *   [open-data](./open-data.html)
     *   [web-view](./web-view.html)
@@ -400,7 +400,7 @@
       }
     })
 
-![audio](https://developers.weixin.qq.com/miniprogram/dev/image/pic/audio.png?t=18102520)
+![audio](https://developers.weixin.qq.com/miniprogram/dev/image/pic/audio.png?t=18102614)
 
 相关api：[wx.createAudioContext](../api/media/audio/wx.createAudioContext.html)
 
