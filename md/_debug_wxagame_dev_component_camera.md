@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102614)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102614)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102614)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110517)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110517)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110517)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102614)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102614)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102614)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110517)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110517)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110517)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102614)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102614)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110517)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110517)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/camera.html?t=18102614)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/camera.html?t=18102614)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/camera.html?t=18110517)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/camera.html?t=18110517)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/camera.html?t=18102614)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/camera.html?t=18102614)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/camera.html?t=18110517)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/camera.html?t=18110517)
 
 </div>
 
@@ -138,7 +138,7 @@
 
 > 基础库 1.6.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
 
-系统相机。该组件是[原生组件](native-component.html)，使用时请注意相关限制。
+系统相机。该组件是[原生组件](native-component.html)，使用时请注意相关限制。 扫码二维码功能，需升级微信客户端至6.7.3。
 
 需要[用户授权](../framework/open-ability/authorize.html) scope.camera
 
@@ -242,9 +242,9 @@
 
 <td></td>
 
-<td>在成功识别到一维码时触发，仅在 mode="scanCode" 时生效</td>
+<td>在扫码识别成功时触发，仅在 mode="scanCode" 时生效</td>
 
-<td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
+<td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")支持一维码，[2.4.0](../framework/compatibility.html "基础库 2.4.0 开始支持，低版本需做兼容处理。")支持二维码</td>
 
 </tr>
 

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101915)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101915)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101915)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110219)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110219)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110219)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101915)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101915)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101915)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110219)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110219)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110219)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18101915)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18101915)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110219)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110219)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101915)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/index.html?t=18101915)
+*   [中文](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110219)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/index.html?t=18110219)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18101915)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/index.html?t=18101915)
+*   [中文](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110219)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/index.html?t=18110219)
 
 </div>
 
@@ -127,7 +127,7 @@
 
 ​微信团队一直致力于将微信打造成一个强大的、全方位的服务工具。在此基础上，我们推出了微信小程序这个产品，提供给微信小程序的开发者在微信内搭建和实现特定服务、功能的平台。通过全面开放的能力，我们将更多连接的可能给予企业和服务提供者，并为微信小程序提供基础的接入能力、运营环境和规则体系，进而帮助更多的企业和服务提供者建立自己的品牌，将商业机会带给整个微信产业链。
 
-​在开始微信小程序的开发前，我们希望微信小程序开发者（以下也称为“你”）已经仔细阅读了[《微信小程序接入指南》](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18101915)、[《微信小程序设计规范》](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18101915)、[《微信小程序开发指南》](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18101915)等，如果你选择了游戏类目，你还需仔细阅读[《微信小游戏接入指南》](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18101915)、[《微信小游戏开发指南》](https://developers.weixin.qq.com/minigame/dev/index.html?t=18101915)等；同时，我们也为你准备了微信小程序平台常见拒绝情形。希望这些指南和规范，能够一定程度上帮助你解决开发、运营微信小程序过程中所遇到的疑问。
+​在开始微信小程序的开发前，我们希望微信小程序开发者（以下也称为“你”）已经仔细阅读了[《微信小程序接入指南》](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110219)、[《微信小程序设计规范》](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110219)、[《微信小程序开发指南》](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110219)等，如果你选择了游戏类目，你还需仔细阅读[《微信小游戏接入指南》](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110219)、[《微信小游戏开发指南》](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110219)等；同时，我们也为你准备了微信小程序平台常见拒绝情形。希望这些指南和规范，能够一定程度上帮助你解决开发、运营微信小程序过程中所遇到的疑问。
 
 ​我们希望你提交的微信小程序，能够符合微信团队一直以来的价值观，那就是：一切以用户价值为依归、让创造发挥价值、好的产品是用完即走，以及让商业化存在于无形之中。在切实符合用户的合理需求和利益的前提下，通过微信小程序所提供的功能和服务，为海量微信用户提供具有持续价值和高品质的服务。我们期待你来提交你的微信小程序。
 
@@ -159,7 +159,7 @@
 
 ​<span id="2.4">2.4 微信小程序的名称、icon、简介等基本信息，相互之间必须有所关联。</span>
 
-​<span id="2.5">2.5 微信小程序的名称和简介、描述中，不得混有商业化用语、热门公众号或小程序名称、热门应用名称、流行用语、“国家级”、“最高级”等新广告法明令禁止等其他与小程序功能或内容无关的词语，从而干扰搜索结果。</span>
+​<span id="2.5">2.5 微信小程序的名称和简介、描述中，不得混有商业化用语、热门公众号或小程序名称、热门应用名称、流行用语、关键词堆砌、“国家级”、“最高级”等新广告法明令禁止等其他与小程序功能或内容无关的词语，从而干扰搜索结果。</span>
 
 <span id="2.6">2.6 微信小程序的名称不得以电话、邮件、日历、斗地主、麻将等广义归纳类、普遍且不具有识别性的词汇来命名，从而干扰搜索结果。</span>
 
@@ -192,6 +192,8 @@
 <span id="3.9">3.9 未经允许或未经腾讯公司授权的情况下，小程序功能的使用，不得依赖于其他微信小程序，即不得以使用其他微信小程序为条件，也不得依赖于其他应用程序，即不得以使用其他应用程序为条件；未经允许或未经腾讯公司授权的情况下，也不得展示或者推荐其他微信小程序或公众号。</span>
 
 <span id="3.10">3.10 微信小程序应设置侵权投诉机制，处理用户间的权益纠纷。</span>
+
+<span id="3.11">3.11 微信小程序应按照国家法律、法规等政策的规定，及相关操作终端设备系统、应用程序商店或市场的要求，对可能涉及不宜未成年人接触的内容或服务予以提醒或处理，保护未成年人的身心健康和合法权益。</span>
 
 ### 4\. 主体规范
 
@@ -563,7 +565,7 @@
 
 <span id="17.8">17.8 小程序卡片页的分享样式、内容、结构、外观等，均不得以任何形式与腾讯官方提供的红包等功能的样式图片、文字文案产生相同、相似或引起混淆的效果。</span>
 
-![](https://developers.weixin.qq.com/miniprogram/product/image/i.png?t=18101915)
+![](https://developers.weixin.qq.com/miniprogram/product/image/i.png?t=18110219)
 
 ## 三、小游戏特别规范
 

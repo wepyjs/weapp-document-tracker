@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102614)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102614)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102614)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110517)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110517)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110517)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102614)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102614)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102614)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110517)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110517)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110517)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102614)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102614)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110517)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110517)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/view/resizable.html?t=18102614)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/view/resizable.html?t=18102614)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/view/resizable.html?t=18110517)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/view/resizable.html?t=18110517)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/view/resizable.html?t=18102614)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/view/resizable.html?t=18102614)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/view/resizable.html?t=18110517)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/view/resizable.html?t=18110517)
 
 </div>
 
@@ -127,8 +127,11 @@
     *   [插件功能页](../plugin/functional-pages.html)
         *   [用户信息功能页](../plugin/functional-pages/user-info.html)
         *   [支付功能页](../plugin/functional-pages/request-payment.html)
+        *   [收货地址功能页](../plugin/functional-pages/choose-address.html)
 *   [基础能力](../ability/network.html)
     *   [网络](../ability/network.html)
+        *   [使用说明](../ability/network.html)
+        *   [局域网通信](../ability/mDNS.html)
     *   [存储](../ability/storage.html)
     *   [文件系统](../ability/file-system.html)
     *   [画布](../ability/canvas.html)
@@ -150,6 +153,8 @@
         *   [获取手机号](../open-ability/getPhoneNumber.html)
         *   [生物认证](../open-ability/bio-auth.html)
     *   [转发](../open-ability/share.html)
+        *   [转发](../open-ability/share.html)
+        *   [动态消息](../open-ability/share/updatable-message.html)
     *   [打开App](../open-ability/launchApp.html)
     *   [消息](../open-ability/template-message.html)
         *   [模板消息](../open-ability/template-message.html)
@@ -181,7 +186,7 @@
     *   [与客户端版本对应关系](../client-lib/client.html)
     *   [旧版本兼容](../compatibility.html)
     *   [更新日志](../release.html)
-        *   [v2.x版本](../release.html)
+        *   [v2.x版本](../release/v2.html)
         *   [v1.x版本](../release/v1.html)
         *   [v0.x版本](../release/v0.html)
 
@@ -207,7 +212,23 @@
 
 ## 显示区域尺寸
 
-显示区域指小程序界面中可以自由布局展示的区域。在默认情况下，小程序显示区域的尺寸自页面初始化起就不会发生变化。
+显示区域指小程序界面中可以自由布局展示的区域。在默认情况下，小程序显示区域的尺寸自页面初始化起就不会发生变化。但以下两种方式都可以改变这一默认行为。
+
+### 在手机上启用屏幕旋转支持
+
+从小程序基础库版本 [2.4.0](../compatibility.html "基础库 2.4.0 开始支持，低版本需做兼容处理。") 开始，小程序在手机上支持屏幕旋转。使小程序中的页面支持屏幕旋转的方法是：在 `app.json` 的 `window` 段中设置 `"pageOrientation": "auto"` ，或在页面 json 文件中配置 `"pageOrientation": "auto"` 。
+
+以下是在单个页面 json 文件中启用屏幕旋转的示例。
+
+**代码示例：**
+
+    {
+      "pageOrientation": "auto"
+    }
+
+如果页面添加了上述声明，则在屏幕旋转时，这个页面将随之旋转，显示区域尺寸也会随着屏幕旋转而变化。
+
+### 在 iPad 上启用屏幕旋转支持
 
 从小程序基础库版本 [2.3.0](../compatibility.html "基础库 2.3.0 开始支持，低版本需做兼容处理。") 开始，在 iPad 上运行的小程序可以支持屏幕旋转。使小程序支持 iPad 屏幕旋转的方法是：在 `app.json` 中添加 `"resizable": true` 。
 
@@ -217,7 +238,7 @@
       "resizable": true
     }
 
-如果小程序添加了上述声明，则在屏幕旋转时，小程序将随之旋转，显示区域尺寸也会随着屏幕旋转而变化。
+如果小程序添加了上述声明，则在屏幕旋转时，小程序将随之旋转，显示区域尺寸也会随着屏幕旋转而变化。注意：在 iPad 上不能单独配置某个页面是否支持屏幕旋转。
 
 ## Media Query
 
@@ -242,21 +263,34 @@
 
 在 js 中读取页面的显示区域尺寸，可以使用 [selectorQuery.selectViewport](../../api/wxml/SelectorQuery.selectViewport.html) 。
 
-页面尺寸发生改变的事件，可以使用 `wx.onWindowResize` 来监听。回调函数中将返回显示区域的尺寸信息。
+页面尺寸发生改变的事件，可以使用 `wx.onWindowResize` 页面的 `onResize` 来监听。对于自定义组件，可以使用 resize 生命周期来监听。回调函数中将返回显示区域的尺寸信息。
 
 **代码示例：**
 
     wx.onWindowResize(function(res) {
       res.size.windowWidth // 新的显示区域宽度
       res.size.windowHeight // 新的显示区域高度
+    })
 
-      // 触发当前页面的 resized 方法
-      var currentPages = getCurrentPages()
-      var currentPage = currentPages[currentPages.length - 1]
-      if (currentPage != null && typeof currentPage.resized === 'function') {
-        currentPage.resized(res.size)
+    Page({
+      onResize(res) {
+        res.size.windowWidth // 新的显示区域宽度
+        res.size.windowHeight // 新的显示区域高度
       }
     })
+
+    Component({
+      pageLifetimes: {
+        resize(res) {
+          res.size.windowWidth // 新的显示区域宽度
+          res.size.windowHeight // 新的显示区域高度
+        }
+      }
+    })
+
+**Bug & tips:**
+
+*   Bug： Android 微信版本 6.7.3 中， `live-pusher` 组件在屏幕旋转时方向异常。
 
 </section>
 

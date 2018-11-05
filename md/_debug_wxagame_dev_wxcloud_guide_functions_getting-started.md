@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102614)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102614)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102614)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110517)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110517)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110517)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102614)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102614)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102614)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110517)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110517)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110517)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102614)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102614)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110517)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110517)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/getting-started.html?t=18102614)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/getting-started.html?t=18102614)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/getting-started.html?t=18110517)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/getting-started.html?t=18110517)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/getting-started.html?t=18102614)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/getting-started.html?t=18102614)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/getting-started.html?t=18110517)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/functions/getting-started.html?t=18110517)
 
 </div>
 
@@ -114,6 +114,10 @@
 *   [参考信息](../../reference/errcode.html)
     *   [错误码](../../reference/errcode.html)
     *   [配额](../../reference/quota.html)
+    *   [更新日志](../../reference/changelog.html)
+        *   [基础库](../../reference/changelog-cloud-sdk.html)
+        *   [wx-server-sdk](../../reference/changelog-server-sdk.html)
+        *   [IDE & 控制台](../../reference/changelog-ide.html)
 *   [小程序端 API 文档](../../reference-client-api/)
     *   [初始化](../../reference-client-api/init.html)
     *   [数据库](../../reference-client-api/database/)
@@ -134,6 +138,7 @@
         *   [collection.skip](../../reference-client-api/database/collection.skip.html)
         *   [collection.field](../../reference-client-api/database/collection.field.html)
         *   [db.command](../../reference-client-api/database/db.command.html)
+        *   [db.regexp](../../reference-client-api/database/db.regexp.html)
         *   [db.serverDate](../../reference-client-api/database/db.serverDate.html)
         *   [db.Geo](../../reference-client-api/database/db.geo.html)
         *   [command.eq](../../reference-client-api/database/command.eq.html)
@@ -168,6 +173,8 @@
     *   [组件支持](../../reference-client-api/component/)
 *   [服务端 API 文档](../../reference-server-api/)
     *   [初始化](../../reference-server-api/init.html)
+    *   [工具类](../../reference-server-api/utils/)
+        *   [getWXContext](../../reference-server-api/utils/getWXContext.html)
     *   [数据库](../../reference-server-api/database/)
         *   [API 列表](../../reference-server-api/database/)
         *   [database](../../reference-server-api/database/database.html)
@@ -188,6 +195,7 @@
         *   [collection.skip](../../reference-server-api/database/collection.skip.html)
         *   [collection.field](../../reference-server-api/database/collection.field.html)
         *   [db.command](../../reference-server-api/database/db.command.html)
+        *   [db.regexp](../../reference-client-api/database/db.regexp.html)
         *   [db.serverDate](../../reference-server-api/database/db.serverDate.html)
         *   [db.Geo](../../reference-server-api/database/db.geo.html)
         *   [command.eq](../../reference-server-api/database/command.eq.html)
@@ -251,11 +259,11 @@
        "cloudfunctionRoot": "./functions/"
     }
 
-project.config.json 的其他配置，详见[文档](https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html?t=18102614)
+project.config.json 的其他配置，详见[文档](https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html?t=18110517)
 
 完成指定之后，云函数的根目录的图标会变成 “云目录图标”，云函数根目录下的第一级目录（云函数目录）是与云函数名字相同的，如果对应的线上环境存在该云函数，则我们会用一个特殊的 “云图标” 标明
 
-![](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/images/ide_function_icon.png?t=18102614)
+![](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/images/ide_function_icon.png?t=18110517)
 
 接着，我们在云函数根目录上右键，在右键菜单中，可以选择创建一个新的 Node.js 云函数，我们将该云函数命名为 add。开发者工具在本地创建出云函数目录和入口 index.js 文件，同时在线上环境中创建出对应的云函数。创建成功后，工具会提示是否立即本地安装依赖，确定后工具会自动安装 [`wx-server-sdk`](wx-server-sdk.html)。我们可以看到类似如下的一个云函数模板：
 

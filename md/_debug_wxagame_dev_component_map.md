@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102614)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102614)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102614)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110517)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110517)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110517)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102614)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102614)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102614)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110517)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110517)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110517)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102614)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102614)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110517)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110517)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/map.html?t=18102614)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/map.html?t=18102614)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/map.html?t=18110517)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/map.html?t=18110517)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/map.html?t=18102614)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/map.html?t=18102614)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/map.html?t=18110517)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/map.html?t=18110517)
 
 </div>
 
@@ -678,11 +678,11 @@
 
 <td>标注图标宽度</td>
 
-<td>Number</td>
+<td>Number / String</td>
 
 <td>否</td>
 
-<td>默认为图片实际宽度</td>
+<td>默认为图片实际宽度（单位px或rpx，默认为px）</td>
 
 <td></td>
 
@@ -694,11 +694,11 @@
 
 <td>标注图标高度</td>
 
-<td>Number</td>
+<td>Number / String</td>
 
 <td>否</td>
 
-<td>默认为图片实际高度</td>
+<td>默认为图片实际高度（单位px或rpx，默认为px）</td>
 
 <td></td>
 
@@ -808,7 +808,7 @@
 
 <td>文字大小</td>
 
-<td>Number</td>
+<td>Number / String</td>
 
 <td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -820,7 +820,7 @@
 
 <td>边框圆角</td>
 
-<td>Number</td>
+<td>Number / String</td>
 
 <td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -832,7 +832,7 @@
 
 <td>边框宽度</td>
 
-<td>Number</td>
+<td>Number / String</td>
 
 <td>[2.3.0](../framework/compatibility.html "基础库 2.3.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -868,7 +868,7 @@
 
 <td>文本边缘留白</td>
 
-<td>Number</td>
+<td>Number / String</td>
 
 <td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -954,7 +954,7 @@
 
 <td>文字大小</td>
 
-<td>Number</td>
+<td>Number / String</td>
 
 <td>[1.2.0](../framework/compatibility.html "基础库 1.2.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -990,7 +990,7 @@
 
 <td>label的坐标，原点是 marker 对应的经纬度</td>
 
-<td>Number</td>
+<td>Number / String</td>
 
 <td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -1002,7 +1002,7 @@
 
 <td>label的坐标，原点是 marker 对应的经纬度</td>
 
-<td>Number</td>
+<td>Number / String</td>
 
 <td>[2.1.0](../framework/compatibility.html "基础库 2.1.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -1014,7 +1014,7 @@
 
 <td>边框宽度</td>
 
-<td>Number</td>
+<td>Number / String</td>
 
 <td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -1038,7 +1038,7 @@
 
 <td>边框圆角</td>
 
-<td>Number</td>
+<td>Number / String</td>
 
 <td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
 
@@ -1062,7 +1062,7 @@
 
 <td>文本边缘留白</td>
 
-<td>Number</td>
+<td>Number / String</td>
 
 <td>[1.6.0](../framework/compatibility.html "基础库 1.6.0 开始支持，低版本需做兼容处理。")</td>
 

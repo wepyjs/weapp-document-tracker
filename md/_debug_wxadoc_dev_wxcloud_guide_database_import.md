@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102614)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102614)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102614)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110517)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110517)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110517)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102614)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102614)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102614)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110517)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110517)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110517)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102614)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102614)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110517)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110517)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/import.html?t=18102614)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/import.html?t=18102614)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/import.html?t=18110517)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/import.html?t=18110517)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/import.html?t=18102614)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/import.html?t=18102614)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/import.html?t=18110517)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/import.html?t=18110517)
 
 </div>
 
@@ -114,6 +114,10 @@
 *   [参考信息](../../reference/errcode.html)
     *   [错误码](../../reference/errcode.html)
     *   [配额](../../reference/quota.html)
+    *   [更新日志](../../reference/changelog.html)
+        *   [基础库](../../reference/changelog-cloud-sdk.html)
+        *   [wx-server-sdk](../../reference/changelog-server-sdk.html)
+        *   [IDE & 控制台](../../reference/changelog-ide.html)
 *   [小程序端 API 文档](../../reference-client-api/)
     *   [初始化](../../reference-client-api/init.html)
     *   [数据库](../../reference-client-api/database/)
@@ -134,6 +138,7 @@
         *   [collection.skip](../../reference-client-api/database/collection.skip.html)
         *   [collection.field](../../reference-client-api/database/collection.field.html)
         *   [db.command](../../reference-client-api/database/db.command.html)
+        *   [db.regexp](../../reference-client-api/database/db.regexp.html)
         *   [db.serverDate](../../reference-client-api/database/db.serverDate.html)
         *   [db.Geo](../../reference-client-api/database/db.geo.html)
         *   [command.eq](../../reference-client-api/database/command.eq.html)
@@ -168,6 +173,8 @@
     *   [组件支持](../../reference-client-api/component/)
 *   [服务端 API 文档](../../reference-server-api/)
     *   [初始化](../../reference-server-api/init.html)
+    *   [工具类](../../reference-server-api/utils/)
+        *   [getWXContext](../../reference-server-api/utils/getWXContext.html)
     *   [数据库](../../reference-server-api/database/)
         *   [API 列表](../../reference-server-api/database/)
         *   [database](../../reference-server-api/database/database.html)
@@ -188,6 +195,7 @@
         *   [collection.skip](../../reference-server-api/database/collection.skip.html)
         *   [collection.field](../../reference-server-api/database/collection.field.html)
         *   [db.command](../../reference-server-api/database/db.command.html)
+        *   [db.regexp](../../reference-client-api/database/db.regexp.html)
         *   [db.serverDate](../../reference-server-api/database/db.serverDate.html)
         *   [db.Geo](../../reference-server-api/database/db.geo.html)
         *   [command.eq](../../reference-server-api/database/command.eq.html)
@@ -245,7 +253,7 @@
 
 要导入数据，需打开云开发控制台，切换到 “数据库” 标签页，并选择要导入数据的集合，点击 “导入” 按钮。
 
-![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/cloudconsole-database-import-dialog.jpg?t=18102614)
+![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/cloudconsole-database-import-dialog.jpg?t=18110517)
 
 选择要导入的 CSV 或者 JSON 文件，以及冲突处理模式，点击 “导入” 按钮即可开始导入。
 
@@ -288,7 +296,7 @@ CSV：
 
 导入完成后，可以在提示信息中看到本次导入记录的情况。
 
-![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/cloudconsole-database-import-success.jpg?t=18102614)
+![数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/res/guide/database/cloudconsole-database-import-success.jpg?t=18110517)
 
 </section>
 

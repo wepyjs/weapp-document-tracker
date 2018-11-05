@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102614)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102614)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102614)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110517)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110517)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110517)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102614)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102614)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102614)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110517)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110517)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110517)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102614)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102614)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110517)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110517)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/functional-pages.html?t=18102614)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/functional-pages.html?t=18102614)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/functional-pages.html?t=18110517)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/functional-pages.html?t=18110517)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/functional-pages.html?t=18102614)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/functional-pages.html?t=18102614)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/functional-pages.html?t=18110517)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/plugin/functional-pages.html?t=18110517)
 
 </div>
 
@@ -127,8 +127,11 @@
     *   [插件功能页](./functional-pages.html)
         *   [用户信息功能页](./functional-pages/user-info.html)
         *   [支付功能页](./functional-pages/request-payment.html)
+        *   [收货地址功能页](./functional-pages/choose-address.html)
 *   [基础能力](../ability/network.html)
     *   [网络](../ability/network.html)
+        *   [使用说明](../ability/network.html)
+        *   [局域网通信](../ability/mDNS.html)
     *   [存储](../ability/storage.html)
     *   [文件系统](../ability/file-system.html)
     *   [画布](../ability/canvas.html)
@@ -150,6 +153,8 @@
         *   [获取手机号](../open-ability/getPhoneNumber.html)
         *   [生物认证](../open-ability/bio-auth.html)
     *   [转发](../open-ability/share.html)
+        *   [转发](../open-ability/share.html)
+        *   [动态消息](../open-ability/share/updatable-message.html)
     *   [打开App](../open-ability/launchApp.html)
     *   [消息](../open-ability/template-message.html)
         *   [模板消息](../open-ability/template-message.html)
@@ -181,7 +186,7 @@
     *   [与客户端版本对应关系](../client-lib/client.html)
     *   [旧版本兼容](../compatibility.html)
     *   [更新日志](../release.html)
-        *   [v2.x版本](../release.html)
+        *   [v2.x版本](../release/v2.html)
         *   [v1.x版本](../release/v1.html)
         *   [v0.x版本](../release/v0.html)
 
@@ -210,7 +215,8 @@
 某些接口不能在插件中直接调用（如 `wx.login`），但插件开发者可以使用插件功能页的方式来实现功能。目前，插件功能页包括：
 
 *   获取用户信息，包括 `openid` 和昵称等（相当于 `wx.login` 和 `wx.getUserInfo` 的功能），详见[用户信息功能页](functional-pages/user-info.html)；
-*   支付（相当于 `wx.requestPayment`），详见[支付功能页](functional-pages/request-payment.html)。
+*   支付（相当于 `wx.requestPayment`），详见[支付功能页](functional-pages/request-payment.html)；
+*   获取收货地址（相当于 `wx.chooseAddress`），详见[收货地址功能页](functional-pages/choose-address.html)。
 
 要使用插件功能页，需要先激活功能页特性，配置对应的功能页函数，再使用 `<functional-page-navigator>` 组件跳转到插件功能页，从而实现对应的功能。详情请参考下文。
 
@@ -246,6 +252,8 @@
 
 `<functional-page-navigator>` 的参数和详细使用方法可以参考[组件说明](../../component/functional-page-navigator.html) 。
 
+从小程序基础库版本 [2.4.0](../compatibility.html "基础库 2.4.0 开始支持，低版本需做兼容处理。") 开始，支持插件所有者小程序跳转到自己的功能页。在基础库版本低于 [2.4.0](../compatibility.html "基础库 2.4.0 开始支持，低版本需做兼容处理。") 时，点击跳转到自己的功能页的 `<functional-page-navigator>` 将没有任何反应。
+
 ## 真机开发测试的常规步骤
 
 目前，功能页的跳转目前不支持在开发者工具中调试，请在真机上测试。初次进行真机开发测试时，通常步骤如下：
@@ -269,7 +277,7 @@
 
 #### 点击 `<functional-page-navigator>` 之后没有任何反应。
 
-*   请检查引用插件的小程序和插件本身是不是同一个 AppID ，如果是，这种情况下使用 `<functional-page-navigator>` 不会有任何反应。
+*   请检查引用插件的小程序和插件本身是不是同一个 AppID ，如果是，跳转到自己的功能页需要基础库 [2.4.0](../compatibility.html "基础库 2.4.0 开始支持，低版本需做兼容处理。") 支持，否则使用 `<functional-page-navigator>` 不会有任何反应。
 
 #### 点击 `<functional-page-navigator>` 之后，展示了一个页面提示“页面不存在”。
 
@@ -297,7 +305,6 @@
 
 #### Bugs & Tips
 
-*   如果使用插件的小程序就是插件所有者小程序，插件功能页不能使用。
 *   功能页是插件所有者小程序中的一个特殊页面，开发者不能自定义这个页面的外观。
 *   在功能页展示时，一些与界面展示相关的接口将被禁用（接口调用返回 `fail` ）。
 *   `<functional-page-navigator>` 可以在开发者工具中使用，但功能页的跳转目前不支持在开发者工具中调试，请在真机上测试。

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102515)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102515)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102515)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110211)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110211)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110211)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102515)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102515)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102515)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110211)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110211)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110211)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102515)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102515)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110211)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110211)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18102515)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/material.html?t=18102515)
+*   [中文](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18110211)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/material.html?t=18110211)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18102515)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/material.html?t=18102515)
+*   [中文](https://developers.weixin.qq.com/miniprogram/product/material.html?t=18110211)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/material.html?t=18110211)
 
 </div>
 
@@ -319,9 +319,7 @@
 
 <td width="302" valign="center">
 
-非广东省：《因私出入境中介机构经营许可证》
-
-广东省：《营业执照》
+《营业执照》且经营范围包含：提供出国探亲访友等信息咨询服务
 
 </td>
 
@@ -1767,11 +1765,11 @@
 
 <tr>
 
-<td width="149" valign="center">票务</td>
+<td width="149" valign="center">营业性演出票务</td>
 
 <td width="301" valign="center">/</td>
 
-<td width="302" valign="center">/</td>
+<td width="302" valign="center">《营业性演出许可证》</td>
 
 <td width="303" valign="center">/</td>
 

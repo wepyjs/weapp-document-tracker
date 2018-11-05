@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102614)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102614)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102614)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110517)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110517)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110517)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102614)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102614)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102614)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110517)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110517)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110517)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102614)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102614)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110517)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110517)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/capabilities.html?t=18102614)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/basis/capabilities.html?t=18102614)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/capabilities.html?t=18110517)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/basis/capabilities.html?t=18110517)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/capabilities.html?t=18102614)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/basis/capabilities.html?t=18102614)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/capabilities.html?t=18110517)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/basis/capabilities.html?t=18110517)
 
 </div>
 
@@ -114,6 +114,10 @@
 *   [参考信息](../reference/errcode.html)
     *   [错误码](../reference/errcode.html)
     *   [配额](../reference/quota.html)
+    *   [更新日志](../reference/changelog.html)
+        *   [基础库](../reference/changelog-cloud-sdk.html)
+        *   [wx-server-sdk](../reference/changelog-server-sdk.html)
+        *   [IDE & 控制台](../reference/changelog-ide.html)
 *   [小程序端 API 文档](../reference-client-api/)
     *   [初始化](../reference-client-api/init.html)
     *   [数据库](../reference-client-api/database/)
@@ -134,6 +138,7 @@
         *   [collection.skip](../reference-client-api/database/collection.skip.html)
         *   [collection.field](../reference-client-api/database/collection.field.html)
         *   [db.command](../reference-client-api/database/db.command.html)
+        *   [db.regexp](../reference-client-api/database/db.regexp.html)
         *   [db.serverDate](../reference-client-api/database/db.serverDate.html)
         *   [db.Geo](../reference-client-api/database/db.geo.html)
         *   [command.eq](../reference-client-api/database/command.eq.html)
@@ -168,6 +173,8 @@
     *   [组件支持](../reference-client-api/component/)
 *   [服务端 API 文档](../reference-server-api/)
     *   [初始化](../reference-server-api/init.html)
+    *   [工具类](../reference-server-api/utils/)
+        *   [getWXContext](../reference-server-api/utils/getWXContext.html)
     *   [数据库](../reference-server-api/database/)
         *   [API 列表](../reference-server-api/database/)
         *   [database](../reference-server-api/database/database.html)
@@ -188,6 +195,7 @@
         *   [collection.skip](../reference-server-api/database/collection.skip.html)
         *   [collection.field](../reference-server-api/database/collection.field.html)
         *   [db.command](../reference-server-api/database/db.command.html)
+        *   [db.regexp](../reference-client-api/database/db.regexp.html)
         *   [db.serverDate](../reference-server-api/database/db.serverDate.html)
         *   [db.Geo](../reference-server-api/database/db.geo.html)
         *   [command.eq](../reference-server-api/database/command.eq.html)
@@ -392,20 +400,21 @@
 
 云函数是一段运行在云端的代码，无需管理服务器，在开发工具内编写、一键上传部署即可运行后端代码。
 
-小程序内提供了专门用于云函数调用的 API。开发者可以在云函数内获取到每次调用的上下文（`appid`、`openid` 等），无需维护复杂的鉴权机制，即可获取天然可信任的用户登录态（`openid`）。
+小程序内提供了专门用于云函数调用的 API。开发者可以在云函数内使用 [`wx-server-sdk`](../guide/functions/wx-server-sdk.html) 提供的 [`getWXContext`](../reference-server-api/utils/getWXContext.html) 方法获取到每次调用的上下文（`appid`、`openid` 等），无需维护复杂的鉴权机制，即可获取天然可信任的用户登录态（`openid`）。
 
 比如我们如下定义一个云函数，命名为 add ，功能是将传入的两个参数 a 和 b 相加：
 
     // index.js 是入口文件，云函数被调用时会执行该文件导出的 main 方法
-    // event 包含了调用端（小程序端）调用该函数时传过来的参数，同时还包含了用户登录态 `openId` 和小程序 `appId` 信息
+    // event 包含了调用端（小程序端）调用该函数时传过来的参数，同时还包含了可以通过 getWXContext 方法获取的用户登录态 `openId` 和小程序 `appId` 信息
+    const cloud = require('wx-server-sdk')
     exports.main = (event, context) => {
       let { userInfo, a, b} = event
-      let { openId, appId} = userInfo // 这里获取到的 openId 和 appId 是可信的
+      let { OPENID, APPID } = cloud.getWXContext() // 这里获取到的 openId 和 appId 是可信的
       let sum = a + b
 
       return {
-        openId,
-        appId,
+        OPENID,
+        APPID,
         sum
       }
     }

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18102614)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18102614)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18102614)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110517)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110517)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110517)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18102614)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18102614)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18102614)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110517)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110517)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110517)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18102614)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18102614)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110517)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110517)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html?t=18102614)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/component.html?t=18102614)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html?t=18110517)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/component.html?t=18110517)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html?t=18102614)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/component.html?t=18102614)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html?t=18110517)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/component.html?t=18110517)
 
 </div>
 
@@ -127,8 +127,11 @@
     *   [插件功能页](../plugin/functional-pages.html)
         *   [用户信息功能页](../plugin/functional-pages/user-info.html)
         *   [支付功能页](../plugin/functional-pages/request-payment.html)
+        *   [收货地址功能页](../plugin/functional-pages/choose-address.html)
 *   [基础能力](../ability/network.html)
     *   [网络](../ability/network.html)
+        *   [使用说明](../ability/network.html)
+        *   [局域网通信](../ability/mDNS.html)
     *   [存储](../ability/storage.html)
     *   [文件系统](../ability/file-system.html)
     *   [画布](../ability/canvas.html)
@@ -150,6 +153,8 @@
         *   [获取手机号](../open-ability/getPhoneNumber.html)
         *   [生物认证](../open-ability/bio-auth.html)
     *   [转发](../open-ability/share.html)
+        *   [转发](../open-ability/share.html)
+        *   [动态消息](../open-ability/share/updatable-message.html)
     *   [打开App](../open-ability/launchApp.html)
     *   [消息](../open-ability/template-message.html)
         *   [模板消息](../open-ability/template-message.html)
@@ -181,7 +186,7 @@
     *   [与客户端版本对应关系](../client-lib/client.html)
     *   [旧版本兼容](../compatibility.html)
     *   [更新日志](../release.html)
-        *   [v2.x版本](../release.html)
+        *   [v2.x版本](../release/v2.html)
         *   [v1.x版本](../release/v1.html)
         *   [v0.x版本](../release/v0.html)
 
@@ -421,9 +426,9 @@ Component构造器可用于定义组件，调用Component构造器时可以指�
 
 <td>否</td>
 
-<td>组件所在页面的生命周期声明对象，目前仅支持页面的`show`和`hide`两个生命周期</td>
+<td>组件所在页面的生命周期声明对象，支持页面的 `show` 、 `hide` 、 `resize` 生命周期</td>
 
-<td>[2.2.3](../compatibility.html "基础库 2.2.3 开始支持，低版本需做兼容处理。")</td>
+<td>[2.2.3](../compatibility.html "基础库 2.2.3 开始支持，低版本需做兼容处理。") ； `resize` 为 [2.4.0](../compatibility.html "基础库 2.4.0 开始支持，低版本需做兼容处理。")</td>
 
 </tr>
 
@@ -617,6 +622,16 @@ Component构造器可用于定义组件，调用Component构造器时可以指�
 
 </tr>
 
+<tr>
+
+<td>groupSetData</td>
+
+<td>Function `callback`</td>
+
+<td>立刻执行 `callback` ，其中的多个 `setData` 之间不会触发界面绘制（只有某些特殊场景中需要，如用于在不同组件同时 setData 时进行界面绘制同步）</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -656,6 +671,8 @@ Component构造器可用于定义组件，调用Component构造器时可以指�
       pageLifetimes: {
         // 组件所在页面的生命周期函数
         show: function () { },
+        hide: function () { },
+        resize: function () { },
       },
 
       methods: {
