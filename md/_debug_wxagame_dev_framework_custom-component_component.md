@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110517)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110517)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110517)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110517)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110517)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110517)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110517)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110517)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html?t=18110517)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/component.html?t=18110517)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html?t=18110616)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/component.html?t=18110616)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html?t=18110517)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/component.html?t=18110517)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html?t=18110616)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/component.html?t=18110616)
 
 </div>
 
@@ -702,6 +702,8 @@ Component构造器可用于定义组件，调用Component构造器时可以指�
 事实上，小程序的页面也可以视为自定义组件。因而，页面也可以使用 `Component` 构造器构造，拥有与普通组件一样的定义段与实例方法。但此时要求对应 json 文件中包含 `usingComponents` 定义段。
 
 此时，组件的属性可以用于接收页面的参数，如访问页面 `/pages/index/index?paramA=123&paramB=xyz` ，如果声明有属性 `paramA` 或 `paramB` ，则它们会被赋值为 `123` 或 `xyz` 。
+
+页面的生命周期方法（即 `on` 开头的方法），应写在 `methods` 定义段中。
 
 **代码示例：**
 

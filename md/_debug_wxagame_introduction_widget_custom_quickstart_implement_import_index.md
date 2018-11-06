@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [小程序介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110117)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110117)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110117)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110117)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110117)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110117)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110117)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110117)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/implement/import/index.html?t=18110117)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/implement/import/index.html?t=18110117)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/implement/import/index.html?t=18110616)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/implement/import/index.html?t=18110616)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/implement/import/index.html?t=18110117)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/implement/import/index.html?t=18110117)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/implement/import/index.html?t=18110616)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/implement/import/index.html?t=18110616)
 
 </div>
 
@@ -84,10 +84,11 @@
             *   [删除“想买清单”](../../../../order/quickstart/cartlist/delete.html)
         *   [商品数据](../../../../order/quickstart/goods/update.html)
             *   [更新商品信息](../../../../order/quickstart/goods/update.html)
+        *   [细节运营](../../../../order/quickstart/manage/shoppingcart_path.html)
+            *   [设置购物车源路径](../../../../order/quickstart/manage/shoppingcart_path.html)
         *   [附录](../../../../order/quickstart/example/userteach.html)
             *   [用户教育示例](../../../../order/quickstart/example/userteach.html)
             *   [订单评价示例](../../../../order/quickstart/example/ordercomment.html)
-            *   [场景值](../../../../order/quickstart/scene.html)
     *   [功能直达](../../../../func-widget/)
         *   [接入流程](../../../../func-widget/guide/overview.html)
         *   [配置接入](../../../../func-widget/guide/)
@@ -157,7 +158,7 @@
 
 另外，在“配置”中同意添加微信官方测试人员到当前小程序体验者权限，以便测试人员验收具体搜索效果。测试人员并不占用已有小程序体验人数名额。
 
-![导入抽样数据](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/implement/import/image/import_data.png?t=18110117 "导入抽样数据")
+![导入抽样数据](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/implement/import/image/import_data.png?t=18110616 "导入抽样数据")
 
 开发者在导入抽样数据后，可通过微信客户端-小程序搜索，搜索测试集数据相关的query，测试自定义模板的展示。
 

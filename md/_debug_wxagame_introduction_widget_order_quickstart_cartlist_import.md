@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [小程序介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110117)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110117)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110117)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110117)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110117)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110117)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110117)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110117)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/order/quickstart/cartlist/import.html?t=18110117)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/order/quickstart/cartlist/import.html?t=18110117)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/order/quickstart/cartlist/import.html?t=18110616)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/order/quickstart/cartlist/import.html?t=18110616)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/order/quickstart/cartlist/import.html?t=18110117)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/order/quickstart/cartlist/import.html?t=18110117)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/order/quickstart/cartlist/import.html?t=18110616)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/order/quickstart/cartlist/import.html?t=18110616)
 
 </div>
 
@@ -84,10 +84,11 @@
             *   [删除“想买清单”](./delete.html)
         *   [商品数据](../goods/update.html)
             *   [更新商品信息](../goods/update.html)
+        *   [细节运营](../manage/shoppingcart_path.html)
+            *   [设置购物车源路径](../manage/shoppingcart_path.html)
         *   [附录](../example/userteach.html)
             *   [用户教育示例](../example/userteach.html)
             *   [订单评价示例](../example/ordercomment.html)
-            *   [场景值](../scene.html)
     *   [功能直达](../../../func-widget/)
         *   [接入流程](../../../func-widget/guide/overview.html)
         *   [配置接入](../../../func-widget/guide/)
@@ -367,7 +368,7 @@
 
 <td style="text-align:left">string array</td>
 
-<td style="text-align:left">商品类目列表</td>
+<td style="text-align:left">商品类目列表，用于搜索排序</td>
 
 </tr>
 

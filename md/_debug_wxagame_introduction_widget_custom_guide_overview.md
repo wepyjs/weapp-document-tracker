@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [小程序介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110117)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110117)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110117)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110117)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110117)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110117)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110117)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110117)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/guide/overview.html?t=18110117)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/guide/overview.html?t=18110117)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/guide/overview.html?t=18110616)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/guide/overview.html?t=18110616)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/guide/overview.html?t=18110117)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/guide/overview.html?t=18110117)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/guide/overview.html?t=18110616)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/guide/overview.html?t=18110616)
 
 </div>
 
@@ -84,10 +84,11 @@
             *   [删除“想买清单”](../../order/quickstart/cartlist/delete.html)
         *   [商品数据](../../order/quickstart/goods/update.html)
             *   [更新商品信息](../../order/quickstart/goods/update.html)
+        *   [细节运营](../../order/quickstart/manage/shoppingcart_path.html)
+            *   [设置购物车源路径](../../order/quickstart/manage/shoppingcart_path.html)
         *   [附录](../../order/quickstart/example/userteach.html)
             *   [用户教育示例](../../order/quickstart/example/userteach.html)
             *   [订单评价示例](../../order/quickstart/example/ordercomment.html)
-            *   [场景值](../../order/quickstart/scene.html)
     *   [功能直达](../../func-widget/)
         *   [接入流程](../../func-widget/guide/overview.html)
         *   [配置接入](../../func-widget/guide/)
@@ -151,7 +152,7 @@
 
 # 接入流程
 
-![接入流程](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/guide/image/pipeline.png?t=18110117 "接入流程")
+![接入流程](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/guide/image/pipeline.png?t=18110616 "接入流程")
 
 ## 接入条件
 
@@ -168,7 +169,7 @@
 
 ## 实现模板
 
-使用用于申请自定义模板的小程序账号登录[微信公众平台小程序后台](https://mp.weixin.qq.com)，并在“设置-开发设置选项卡”中启用并设置消息推送配置。配置指引可参考[接入概述](https://developers.weixin.qq.com/miniprogram/dev/api/custommsg/callback_help.html?t=18110117)。
+使用用于申请自定义模板的小程序账号登录[微信公众平台小程序后台](https://mp.weixin.qq.com)，并在“设置-开发设置选项卡”中启用并设置消息推送配置。配置指引可参考[接入概述](https://developers.weixin.qq.com/miniprogram/dev/api/custommsg/callback_help.html?t=18110616)。
 
 微信后台会将用户触发的搜索请求推送给开发者，开发者需按照约定的数据格式响应请求。关于后台开发的详细指引，参见[开发后台接口/整体开发流程](../quickstart/implement/server/overview.html#整体开发流程)。
 
@@ -184,7 +185,7 @@
 
 服务上线后，可以登录[微信公众平台公众号后台](https://mp.weixin.qq.com)[查看数据](../quickstart/dataview/index.html)。
 
-![搜索开放平台](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/guide/image/guide1.png?t=18110117 "搜索开放平台")
+![搜索开放平台](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/guide/image/guide1.png?t=18110616 "搜索开放平台")
 
 <table>
 
@@ -238,7 +239,7 @@
 
 </table>
 
-![自定义模板](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/guide/image/guide2.png?t=18110117 "自定义模板")
+![自定义模板](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/guide/image/guide2.png?t=18110616 "自定义模板")
 
 <table>
 

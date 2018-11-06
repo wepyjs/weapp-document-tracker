@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110517)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110517)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110517)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110517)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110517)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110517)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110517)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110517)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html?t=18110517)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/page.html?t=18110517)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html?t=18110616)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/page.html?t=18110616)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html?t=18110517)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/page.html?t=18110517)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html?t=18110616)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/page.html?t=18110616)
 
 </div>
 
@@ -210,7 +210,7 @@
 
 # 页面 Page
 
-## Page(Object)
+## Page(Object) 构造器
 
 `Page(Object)` 函数用来注册一个页面。接受一个 `Object` 类型参数，其指定页面的初始数据、生命周期回调、事件处理函数等。
 
@@ -368,8 +368,6 @@
 
 </table>
 
-**Object 内容在页面加载时会进行一次深拷贝，需考虑数据大小对页面加载的开销**
-
 **示例代码：**
 
     //index.js
@@ -424,6 +422,8 @@
         hi: 'MINA'
       }
     })
+
+除了 `Page` ，作为高级用法，页面可以像自定义组件一样使用 `Component` 来创建，这样就可以使用自定义组件的特性，如 `behaviors` 等。具体细节请阅读 [`Component` 构造器](http://git.code.oa.com/wxweb/document/blob/master/miniprogram/cn/dev/framework/custom-component/component.md) 章节。
 
 ### data
 
@@ -954,7 +954,7 @@
 
 下图说明了 Page 实例的生命周期。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/mina-lifecycle.png?t=18110517)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/mina-lifecycle.png?t=18110616)
 
 </section>
 

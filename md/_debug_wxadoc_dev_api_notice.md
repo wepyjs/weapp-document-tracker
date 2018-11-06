@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18100816)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18100816)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18100816)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110615)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110615)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110615)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18100816)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18100816)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18100816)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110615)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110615)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110615)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18100816)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18100816)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110615)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110615)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/notice.html?t=18100816)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/notice.html?t=18100816)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/notice.html?t=18110615)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/notice.html?t=18110615)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/notice.html?t=18100816)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/notice.html?t=18100816)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/notice.html?t=18110615)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/notice.html?t=18110615)
 
 </div>
 
@@ -529,7 +529,7 @@
 
 登录[https://mp.weixin.qq.com](https://mp.weixin.qq.com) 获取模板，如果没有合适的模板，可以申请添加新模板，审核通过后可使用，详见[模板审核说明](#审核说明)
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/mp-notice.png?t=18100816)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/mp-notice.png?t=18110615)
 
 步骤二：页面的 [`<form/>`](../component/form.html) 组件，属性`report-submit`为`true`时，可以声明为需发模板消息，此时点击按钮提交表单可以获取`formId`，用于发送模板消息。或者当用户完成[支付行为](api-pay.html)，可以获取`prepay_id`用于发送模板消息。
 
@@ -1348,7 +1348,7 @@
 
 **使用效果：**
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/notice.png?t=18100816)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/notice.png?t=18110615)
 
 ### 下发条件说明
 

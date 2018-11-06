@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [小程序介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110117)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110117)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110117)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110117)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110117)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110117)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110117)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110117)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/test/stresstest.html?t=18110117)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/test/stresstest.html?t=18110117)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/test/stresstest.html?t=18110616)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/test/stresstest.html?t=18110616)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/test/stresstest.html?t=18110117)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/test/stresstest.html?t=18110117)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/test/stresstest.html?t=18110616)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/test/stresstest.html?t=18110616)
 
 </div>
 
@@ -84,10 +84,11 @@
             *   [删除“想买清单”](../../../order/quickstart/cartlist/delete.html)
         *   [商品数据](../../../order/quickstart/goods/update.html)
             *   [更新商品信息](../../../order/quickstart/goods/update.html)
+        *   [细节运营](../../../order/quickstart/manage/shoppingcart_path.html)
+            *   [设置购物车源路径](../../../order/quickstart/manage/shoppingcart_path.html)
         *   [附录](../../../order/quickstart/example/userteach.html)
             *   [用户教育示例](../../../order/quickstart/example/userteach.html)
             *   [订单评价示例](../../../order/quickstart/example/ordercomment.html)
-            *   [场景值](../../../order/quickstart/scene.html)
     *   [功能直达](../../../func-widget/)
         *   [接入流程](../../../func-widget/guide/overview.html)
         *   [配置接入](../../../func-widget/guide/)
@@ -151,7 +152,7 @@
 
 # 后台性能测试
 
-![后台性能测试](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/test/image/server_test.png?t=18110117 "后台性能测试")
+![后台性能测试](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/test/image/server_test.png?t=18110616 "后台性能测试")
 
 开发者在完成后台开发后，在“自定义模板-模板管理-开发中模板-提交测试-后台性能测试”提交如下内容：
 
@@ -343,7 +344,7 @@
 
 ## 3.压测时间 && 压测服务器
 
-开发者选择合适的时间段（当多家服务提供者申请在同一时间段内压测时，微信侧可能会进行分批测试。为了保证测试的质量，此处建议尽可能选择较长的时间段），微信侧将在该时间段内对生产环境（生产环境的配置见[接入概述](https://developers.weixin.qq.com/miniprogram/dev/api/custommsg/callback_help.html?t=18110117)）进行为期半小时的压力测试，测试结果将在“模板申请单”中展示。
+开发者选择合适的时间段（当多家服务提供者申请在同一时间段内压测时，微信侧可能会进行分批测试。为了保证测试的质量，此处建议尽可能选择较长的时间段），微信侧将在该时间段内对生产环境（生产环境的配置见[接入概述](https://developers.weixin.qq.com/miniprogram/dev/api/custommsg/callback_help.html?t=18110616)）进行为期半小时的压力测试，测试结果将在“模板申请单”中展示。
 
 </section>
 

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [小程序介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110117)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110117)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110117)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110117)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110117)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110117)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110117)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110117)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/func-widget/guide/index.html?t=18110117)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/func-widget/guide/index.html?t=18110117)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/func-widget/guide/index.html?t=18110616)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/func-widget/guide/index.html?t=18110616)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/func-widget/guide/index.html?t=18110117)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/func-widget/guide/index.html?t=18110117)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/func-widget/guide/index.html?t=18110616)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/func-widget/guide/index.html?t=18110616)
 
 </div>
 
@@ -84,10 +84,11 @@
             *   [删除“想买清单”](../../order/quickstart/cartlist/delete.html)
         *   [商品数据](../../order/quickstart/goods/update.html)
             *   [更新商品信息](../../order/quickstart/goods/update.html)
+        *   [细节运营](../../order/quickstart/manage/shoppingcart_path.html)
+            *   [设置购物车源路径](../../order/quickstart/manage/shoppingcart_path.html)
         *   [附录](../../order/quickstart/example/userteach.html)
             *   [用户教育示例](../../order/quickstart/example/userteach.html)
             *   [订单评价示例](../../order/quickstart/example/ordercomment.html)
-            *   [场景值](../../order/quickstart/scene.html)
     *   [功能直达](../)
         *   [接入流程](./overview.html)
         *   [配置接入](.)
@@ -149,29 +150,29 @@
 
 <section class="normal markdown-section">
 
-# 配置功能
+# 配置接入
 
-登录[微信公众平台公众号后台](https://mp.weixin.qq.com/)，进入“搜索开放平台-功能组件-搜索Widget”，按照“功能直达”接入流程进行配置和开发。
+登录[微信公众平台公众号后台](https://mp.weixin.qq.com/)，进入“搜索开放平台-服务搜索-功能直达”，点击“开通”。
 
-![编辑](https://developers.weixin.qq.com/miniprogram/introduction/widget/func-widget/guide/image/nav.png?t=18110117 "导航")
+![编辑](https://developers.weixin.qq.com/miniprogram/introduction/widget/func-widget/guide/image/nav.png?t=18110616 "导航")
 
 开通功能直达后，点击“编辑”新建功能。
 
-![编辑](https://developers.weixin.qq.com/miniprogram/introduction/widget/func-widget/guide/image/main.jpg?t=18110117 "编辑")
+![编辑](https://developers.weixin.qq.com/miniprogram/introduction/widget/func-widget/guide/image/main.jpg?t=18110616 "编辑")
 
 在编辑页完成小程序绑定与功能配置后，点击“提交”添加新功能。
 
-![编辑](https://developers.weixin.qq.com/miniprogram/introduction/widget/func-widget/guide/image/new.jpg?t=18110117 "提交")
+![编辑](https://developers.weixin.qq.com/miniprogram/introduction/widget/func-widget/guide/image/new.jpg?t=18110616 "提交")
 
 功能添加完成后，可在功能直达主页对已添加的功能进行查看与管理。
 
-![添加功能](https://developers.weixin.qq.com/miniprogram/introduction/widget/func-widget/guide/image/manage.jpg?t=18110117 "服务管理")
+![添加功能](https://developers.weixin.qq.com/miniprogram/introduction/widget/func-widget/guide/image/manage.png?t=18110616 "服务管理")
 
 # 查看数据
 
 服务能力上线后, 可登录“[微信公众平台公众号后台](https://mp.weixin.qq.com/)-搜索开放平台”，在“服务搜索-功能直达-数据概况”入口查看整体数据和每项服务的业务数据，如曝光次数、点击次数和点击率等。
 
-![查看业务数据](https://developers.weixin.qq.com/miniprogram/introduction/widget/func-widget/guide/image/data.jpg?t=18110117 "查看业务数据")
+![查看业务数据](https://developers.weixin.qq.com/miniprogram/introduction/widget/func-widget/guide/image/data.jpg?t=18110616 "查看业务数据")
 
 </section>
 

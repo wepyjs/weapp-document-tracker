@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18100816)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18100816)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18100816)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110615)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110615)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110615)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18100816)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18100816)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18100816)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110615)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110615)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110615)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18100816)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18100816)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110615)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110615)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/draw.html?t=18100816)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/draw.html?t=18100816)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/draw.html?t=18110615)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/draw.html?t=18110615)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/draw.html?t=18100816)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/draw.html?t=18100816)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/draw.html?t=18110615)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/canvas/draw.html?t=18110615)
 
 </div>
 
@@ -578,7 +578,7 @@
     ctx.fillRect(50, 50, 150, 100)
     ctx.draw()
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/un-reserve.png?t=18100816)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/un-reserve.png?t=18110615)
 
 ### 例子
 
@@ -590,7 +590,7 @@
     ctx.fillRect(50, 50, 150, 100)
     ctx.draw(true)
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/reserve.png?t=18100816)
+![](https://developers.weixin.qq.com/miniprogram/dev/image/canvas/reserve.png?t=18110615)
 
 </section>
 

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [小程序介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110117)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110117)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110117)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110117)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110117)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110117)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110117)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110117)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/index.html?t=18110117)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/index.html?t=18110117)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/index.html?t=18110616)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/index.html?t=18110616)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/index.html?t=18110117)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/index.html?t=18110117)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/index.html?t=18110616)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/index.html?t=18110616)
 
 </div>
 
@@ -84,10 +84,11 @@
             *   [删除“想买清单”](./order/quickstart/cartlist/delete.html)
         *   [商品数据](./order/quickstart/goods/update.html)
             *   [更新商品信息](./order/quickstart/goods/update.html)
+        *   [细节运营](./order/quickstart/manage/shoppingcart_path.html)
+            *   [设置购物车源路径](./order/quickstart/manage/shoppingcart_path.html)
         *   [附录](./order/quickstart/example/userteach.html)
             *   [用户教育示例](./order/quickstart/example/userteach.html)
             *   [订单评价示例](./order/quickstart/example/ordercomment.html)
-            *   [场景值](./order/quickstart/scene.html)
     *   [功能直达](./func-widget/)
         *   [接入流程](./func-widget/guide/overview.html)
         *   [配置接入](./func-widget/guide/)
@@ -162,19 +163,19 @@
 
 购物单是微信提供的小程序购物车和订单管理工具。小程序接入购物单后，购物车和订单商品将同步至购物单的“想买清单”和“已购订单”，同时也可以被微信用户搜索到。[查看接入文档](order/index.html)
 
-![示例](https://developers.weixin.qq.com/miniprogram/introduction/widget/order/image/overview.png?t=18110117)
+![示例](https://developers.weixin.qq.com/miniprogram/introduction/widget/order/image/overview.png?t=18110616)
 
 ### 功能直达
 
 功能直达，是指用户通过搜索直达小程序服务的一种搜索形态。小程序接入“功能直达”后，将出现在相关服务词的搜索结果中，同时获得服务入口外置的展现机会。可以搜索“快递”、“名片”体验。[查看接入文档](func-widget/index.html)
 
-![示例](https://developers.weixin.qq.com/miniprogram/introduction/widget/func-widget/image/overview.png?t=18110117)
+![示例](https://developers.weixin.qq.com/miniprogram/introduction/widget/func-widget/image/overview.png?t=18110616)
 
 ### 自定义模板
 
 开发者可通过各类自定义模板，将小程序内的服务和内容信息以API形式接入微信平台，便于用户搜索直达。开发完成后，开发者可在微信客户端进行体验，暂不能发布上线。[查看接入文档](custom/index.html)
 
-![示例](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/image/overview.png?t=18110117)
+![示例](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/image/overview.png?t=18110616)
 
 </section>
 
