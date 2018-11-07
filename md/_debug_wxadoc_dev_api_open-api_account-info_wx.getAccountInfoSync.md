@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110719)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110719)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110719)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110719)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110719)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110719)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110719)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110719)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/account-info/wx.getAccountInfoSync.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/account-info/wx.getAccountInfoSync.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/account-info/wx.getAccountInfoSync.html?t=18110719)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/account-info/wx.getAccountInfoSync.html?t=18110719)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/account-info/wx.getAccountInfoSync.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/account-info/wx.getAccountInfoSync.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/account-info/wx.getAccountInfoSync.html?t=18110719)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/account-info/wx.getAccountInfoSync.html?t=18110719)
 
 </div>
 
@@ -465,7 +465,7 @@
 *   [开放接口](../access-token/getAccessToken.html)
     *   [接口调用凭证](../access-token/getAccessToken.html)
         *   [getAccessToken](../access-token/getAccessToken.html)
-    *   [当前账号信息](./wx.getAccountInfoSync.html)
+    *   [帐号信息](./wx.getAccountInfoSync.html)
         *   [wx.getAccountInfoSync](./wx.getAccountInfoSync.html)
     *   [收货地址](../address/wx.chooseAddress.html)
         *   [wx.chooseAddress](../address/wx.chooseAddress.html)
@@ -703,13 +703,13 @@
 
 > 支持版本 >= [2.2.2](../../../framework/compatibility.html "基础库 2.2.2 开始支持，低版本需做兼容处理。")
 
-获取当前账号信息
+获取当前帐号信息
 
 #### 返回值
 
 ##### Object
 
-账号信息
+帐号信息
 
 <table>
 
@@ -737,7 +737,7 @@
 
 <td>Object</td>
 
-<td>小程序账号信息</td>
+<td>小程序帐号信息</td>
 
 <td></td>
 
@@ -749,7 +749,7 @@
 
 <td>Object</td>
 
-<td>插件账号信息（仅在插件中调用时包含这一项）</td>
+<td>插件帐号信息（仅在插件中调用时包含这一项）</td>
 
 <td></td>
 

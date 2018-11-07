@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110719)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110719)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110719)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110719)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110719)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110719)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110719)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110719)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/updatable-message/setUpdatableMsg.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/updatable-message/setUpdatableMsg.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/updatable-message/setUpdatableMsg.html?t=18110719)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/updatable-message/setUpdatableMsg.html?t=18110719)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/updatable-message/setUpdatableMsg.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/updatable-message/setUpdatableMsg.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/updatable-message/setUpdatableMsg.html?t=18110719)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/updatable-message/setUpdatableMsg.html?t=18110719)
 
 </div>
 
@@ -465,7 +465,7 @@
 *   [开放接口](../access-token/getAccessToken.html)
     *   [接口调用凭证](../access-token/getAccessToken.html)
         *   [getAccessToken](../access-token/getAccessToken.html)
-    *   [当前账号信息](../account-info/wx.getAccountInfoSync.html)
+    *   [帐号信息](../account-info/wx.getAccountInfoSync.html)
         *   [wx.getAccountInfoSync](../account-info/wx.getAccountInfoSync.html)
     *   [收货地址](../address/wx.chooseAddress.html)
         *   [wx.chooseAddress](../address/wx.chooseAddress.html)
@@ -701,7 +701,7 @@
 
 ### setUpdatableMsg
 
-修改被分享的动态消息。
+修改被分享的动态消息。详见[动态消息](../../../framework/open-ability/share/updatable-message.html)。
 
 #### 请求地址
 
@@ -711,15 +711,53 @@
 
 ##### string access_token
 
-接口调用凭证。
+[接口调用凭证](../access-token/getAccessToken.html)
 
 ##### string activity_id
 
-动态消息的 ID。
+动态消息的 ID，通过 [createActivityId](createActivityId.html) 接口获取
 
 ##### number target_state
 
-动态消息修改后的状态
+动态消息修改后的状态（具体含义见后文）
+
+**target_state 的合法值**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>值</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>0</td>
+
+<td>未开始</td>
+
+</tr>
+
+<tr>
+
+<td>1</td>
+
+<td>已开始</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 ##### Object template_info
 
@@ -797,7 +835,7 @@
 
 <tr>
 
-<td>parameter_name</td>
+<td>name</td>
 
 <td>string</td>
 
@@ -805,7 +843,7 @@
 
 <td>是</td>
 
-<td>修改的参数名</td>
+<td>要修改的参数名</td>
 
 <td></td>
 
@@ -813,7 +851,7 @@
 
 <tr>
 
-<td>parameter_value</td>
+<td>value</td>
 
 <td>string</td>
 
@@ -831,11 +869,67 @@
 
 </table>
 
+**name 的合法值**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>值</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>member_count</td>
+
+<td>`target_state = 0` 时有效，文字内容模板中 `member_count` 的值</td>
+
+</tr>
+
+<tr>
+
+<td>room_limit</td>
+
+<td>`target_state = 0` 时有效，文字内容模板中 `room_limit` 的值</td>
+
+</tr>
+
+<tr>
+
+<td>path</td>
+
+<td>`target_state = 1` 时有效，点击「进入」启动小程序时使用的路径。  
+对于小游戏，没有页面的概念，可以用于传递查询字符串（query），如 `"?foo=bar"`</td>
+
+</tr>
+
+<tr>
+
+<td>version_type</td>
+
+<td>`target_state = 1` 时有效，点击「进入」启动小程序时使用的版本。  
+有效参数值为：`develop`（开发版），`trial`（体验版），`release`（正式版）</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
 #### 返回值
 
 ##### Object
 
-返回的 JSON 数据包。
+返回的 JSON 数据包
 
 <table>
 
@@ -907,7 +1001,7 @@
 
 <td>0</td>
 
-<td>请求成功。</td>
+<td>请求成功</td>
 
 </tr>
 
@@ -915,7 +1009,7 @@
 
 <td>-1</td>
 
-<td>系统繁忙，此时请开发者稍候再试。··</td>
+<td>系统繁忙。此时请开发者稍候再试</td>
 
 </tr>
 
@@ -923,7 +1017,7 @@
 
 <td>42001</td>
 
-<td>由于access_token过期而修改失败。</td>
+<td>access_token 过期</td>
 
 </tr>
 
@@ -931,7 +1025,7 @@
 
 <td>44002</td>
 
-<td>由于post数据为空而修改失败。</td>
+<td>post 数据为空</td>
 
 </tr>
 
@@ -939,7 +1033,7 @@
 
 <td>47001</td>
 
-<td>由于post数据中参数缺失而修改失败。</td>
+<td>post 数据中参数缺失</td>
 
 </tr>
 
@@ -947,7 +1041,7 @@
 
 <td>47501</td>
 
-<td>由于参数activity_id错误而修改失败。</td>
+<td>参数 activity_id 错误</td>
 
 </tr>
 
@@ -955,7 +1049,7 @@
 
 <td>47502</td>
 
-<td>由于参数target_state错误而修改失败。</td>
+<td>参数 target_state 错误</td>
 
 </tr>
 
@@ -963,7 +1057,7 @@
 
 <td>47503</td>
 
-<td>由于参数version_type错误而修改失败。</td>
+<td>参数 version_type 错误</td>
 
 </tr>
 
@@ -971,7 +1065,7 @@
 
 <td>47504</td>
 
-<td>由于activity_id过期而获取失败。</td>
+<td>activity_id 过期</td>
 
 </tr>
 
@@ -979,9 +1073,66 @@
 
 </table>
 
+#### 消息状态
+
+消息有两个状态（target_state），分别有其对应的文字内容和颜色。文字内容模板和颜色不支持变更。
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>状态</th>
+
+<th>文字内容</th>
+
+<th>颜色</th>
+
+<th>允许转移的状态</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>0</td>
+
+<td>"成员正在加入，当前 {member_count}/{room_limit} 人"</td>
+
+<td>#FA9D39</td>
+
+<td>0, 1</td>
+
+</tr>
+
+<tr>
+
+<td>1</td>
+
+<td>"已开始"</td>
+
+<td>#CCCCCC</td>
+
+<td>无</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+活动的默认有效期是 24 小时。活动结束后，消息内容会变成统一的样式：
+
+*   文字内容：“已结束”
+*   文字颜色：`#00ff00`
+
 #### curl 调用示例
 
-    curl -d '{ "activity_id": "966_NGiqKR2V8nkfpBuZt1oxm8qLv092NAwG5W0-F4zo1j0qyKOYH2wTxVeFOQ8~n4XstT0DQLwxBE33BlwX",  "target_state": 0, "template_info": {	"parameter_list": [ {"name":"member_count", "value" : "2"}, { "name":"room_limit", "value"  : "5" } ] } }' \
+    curl -d '{"activity_id": "966_NGiqxxxxxxxxx...xxxxxxxxE33BlwX", "target_state": 0, "template_info": {"parameter_list": [{"name": "member_count", "value": "2"}, {"name":"room_limit", "value": "5"} ] } }' \
     'https://api.weixin.qq.com/cgi-bin/message/wxopen/updatablemsg/send?access_token=ACCESS_TOKEN'
 
 </section>

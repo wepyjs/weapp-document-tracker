@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110719)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110719)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110719)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110719)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110719)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110719)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110719)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110719)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/web-view.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html?t=18110719)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/web-view.html?t=18110719)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/web-view.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html?t=18110719)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/web-view.html?t=18110719)
 
 </div>
 
@@ -318,7 +318,7 @@ web-view 组件是一个可以用来承载网页的容器，会自动铺满整�
 
 示例代码：
 
-[在开发者工具中预览效果](wechatide://minicode/aRVmcimz66Yb "在开发者工具中预览效果")
+[在开发者工具中预览效果](https://developers.weixin.qq.com/s/aRVmcimz66Yb "在开发者工具中预览效果")
 
     <!-- html -->
     <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>

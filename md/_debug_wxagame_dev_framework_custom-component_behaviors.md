@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110719)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110719)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110719)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110719)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110719)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110719)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110719)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110719)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/behaviors.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/behaviors.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/behaviors.html?t=18110719)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/behaviors.html?t=18110719)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/behaviors.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/behaviors.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/behaviors.html?t=18110719)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/behaviors.html?t=18110719)
 
 </div>
 
@@ -241,7 +241,7 @@
 
 **代码示例：**
 
-[在开发者工具中预览效果](wechatide://minicode/6SfsUKmE6iZC "在开发者工具中预览效果")
+[在开发者工具中预览效果](https://developers.weixin.qq.com/s/6SfsUKmE6iZC "在开发者工具中预览效果")
 
     // my-component.js
     var myBehavior = require('my-behavior')
@@ -277,7 +277,7 @@
 
 **代码示例：**
 
-[在开发者工具中预览效果](wechatide://minicode/JgF61qmL69YR "在开发者工具中预览效果")
+[在开发者工具中预览效果](https://developers.weixin.qq.com/s/JgF61qmL69YR "在开发者工具中预览效果")
 
     Component({
       behaviors: ['wx://form-field']
@@ -341,7 +341,7 @@
 
 ### wx://component-export
 
-[在开发者工具中预览效果](wechatide://minicode/ZtosuRmK741Y "在开发者工具中预览效果")
+[在开发者工具中预览效果](https://developers.weixin.qq.com/s/ZtosuRmK741Y "在开发者工具中预览效果")
 
 从基础库版本 [2.2.3](../compatibility.html "基础库 2.2.3 开始支持，低版本需做兼容处理。") 开始提供支持。
 

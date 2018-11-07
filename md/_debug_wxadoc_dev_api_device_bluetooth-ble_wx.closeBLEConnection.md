@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110719)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110719)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110719)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110719)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110719)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110719)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110719)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110719)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/device/bluetooth-ble/wx.closeBLEConnection.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/device/bluetooth-ble/wx.closeBLEConnection.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/device/bluetooth-ble/wx.closeBLEConnection.html?t=18110719)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/device/bluetooth-ble/wx.closeBLEConnection.html?t=18110719)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/device/bluetooth-ble/wx.closeBLEConnection.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/device/bluetooth-ble/wx.closeBLEConnection.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/device/bluetooth-ble/wx.closeBLEConnection.html?t=18110719)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/device/bluetooth-ble/wx.closeBLEConnection.html?t=18110719)
 
 </div>
 
@@ -465,7 +465,7 @@
 *   [开放接口](../../open-api/access-token/getAccessToken.html)
     *   [接口调用凭证](../../open-api/access-token/getAccessToken.html)
         *   [getAccessToken](../../open-api/access-token/getAccessToken.html)
-    *   [当前账号信息](../../open-api/account-info/wx.getAccountInfoSync.html)
+    *   [帐号信息](../../open-api/account-info/wx.getAccountInfoSync.html)
         *   [wx.getAccountInfoSync](../../open-api/account-info/wx.getAccountInfoSync.html)
     *   [收货地址](../../open-api/address/wx.chooseAddress.html)
         *   [wx.chooseAddress](../../open-api/address/wx.chooseAddress.html)
@@ -937,7 +937,7 @@
 
 #### 示例代码
 
-[在开发者工具中预览效果](wechatide://minicode/pQU51zmz7a3K "在开发者工具中预览效果")
+[在开发者工具中预览效果](https://developers.weixin.qq.com/s/pQU51zmz7a3K "在开发者工具中预览效果")
 
     wx.closeBLEConnection({
       deviceId,

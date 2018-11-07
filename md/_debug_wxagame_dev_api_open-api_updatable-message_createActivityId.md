@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110719)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110719)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110719)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110719)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110719)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110719)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110719)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110719)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/updatable-message/createActivityId.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/updatable-message/createActivityId.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/updatable-message/createActivityId.html?t=18110719)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/updatable-message/createActivityId.html?t=18110719)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/updatable-message/createActivityId.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/updatable-message/createActivityId.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/updatable-message/createActivityId.html?t=18110719)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/updatable-message/createActivityId.html?t=18110719)
 
 </div>
 
@@ -465,7 +465,7 @@
 *   [开放接口](../access-token/getAccessToken.html)
     *   [接口调用凭证](../access-token/getAccessToken.html)
         *   [getAccessToken](../access-token/getAccessToken.html)
-    *   [当前账号信息](../account-info/wx.getAccountInfoSync.html)
+    *   [帐号信息](../account-info/wx.getAccountInfoSync.html)
         *   [wx.getAccountInfoSync](../account-info/wx.getAccountInfoSync.html)
     *   [收货地址](../address/wx.chooseAddress.html)
         *   [wx.chooseAddress](../address/wx.chooseAddress.html)
@@ -701,7 +701,7 @@
 
 ### createActivityId
 
-获取activity_id。小程序可以通过本接口修改被分享的动态消息所对应的activity_id。
+创建被分享动态消息的 activity_id。详见[动态消息](../../../framework/open-ability/share/updatable-message.html)。
 
 #### 请求地址
 
@@ -711,13 +711,13 @@
 
 ##### string access_token
 
-接口调用凭证。
+[接口调用凭证](../access-token/getAccessToken.html)
 
 #### 返回值
 
 ##### Object
 
-返回的 JSON 数据包。
+返回的 JSON 数据包
 
 <table>
 
@@ -745,7 +745,7 @@
 
 <td>string</td>
 
-<td>动态消息的 ID。</td>
+<td>动态消息的 ID</td>
 
 <td></td>
 
@@ -757,7 +757,7 @@
 
 <td>number</td>
 
-<td>activity_id 的过期时间戳</td>
+<td>activity_id 的过期时间戳。默认24小时后过期。</td>
 
 <td></td>
 
@@ -801,7 +801,7 @@
 
 <td>0</td>
 
-<td>请求成功。</td>
+<td>请求成功</td>
 
 </tr>
 
@@ -809,7 +809,7 @@
 
 <td>-1</td>
 
-<td>系统繁忙，此时请开发者稍候再试。</td>
+<td>系统繁忙。此时请开发者稍候再试</td>
 
 </tr>
 
@@ -817,7 +817,7 @@
 
 <td>42001</td>
 
-<td>由于access_token过期而获取失败。</td>
+<td>access_token 过期</td>
 
 </tr>
 

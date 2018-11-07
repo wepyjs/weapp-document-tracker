@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110719)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110719)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110719)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110719)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110719)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110719)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110719)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110719)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/share/updatable-message.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/share/updatable-message.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/share/updatable-message.html?t=18110719)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/share/updatable-message.html?t=18110719)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/share/updatable-message.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/share/updatable-message.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/share/updatable-message.html?t=18110719)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/share/updatable-message.html?t=18110719)
 
 </div>
 
@@ -212,7 +212,7 @@
 
 从基础库 [2.4.0](../../compatibility.html "基础库 2.4.0 开始支持，低版本需做兼容处理。") 开始，支持转发动态消息。动态消息对比普通消息，有以下特点：
 
-1.  消息发出去之后，开发者可以通过后台接口修改 **部分** 消息内容。
+1.  消息发出去之后，开发者可以通过后台接口修改**部分**消息内容。
 2.  消息有对应的提醒按钮，用户点击提醒按钮可以订阅提醒，开发者可以通过后台修改消息状态并推送一次提醒消息给订阅了提醒的用户
 
 ### 消息属性
@@ -247,7 +247,7 @@
 
 <td>0</td>
 
-<td>“成员正在加入，当前 {member_count}/{room_limit} 人”</td>
+<td>"成员正在加入，当前 {member_count}/{room_limit} 人"</td>
 
 <td>#FA9D39</td>
 
@@ -259,7 +259,7 @@
 
 <td>1</td>
 
-<td>“已开始”</td>
+<td>"已开始"</td>
 
 <td>#CCCCCC</td>
 
@@ -299,7 +299,7 @@
 
 <td>string</td>
 
-<td>状态 0 时有效，文字内容变量值</td>
+<td>状态 0 时有效，文字内容模板中 `member_count` 的值</td>
 
 </tr>
 
@@ -309,7 +309,7 @@
 
 <td>string</td>
 
-<td>状态 0 时有效，文字内容变量值</td>
+<td>状态 0 时有效，文字内容模板中 `room_limit` 的值</td>
 
 </tr>
 
@@ -319,7 +319,7 @@
 
 <td>string</td>
 
-<td>状态 1 时有效，点击“进入”启动游戏时使用的路径，对于小游戏，没有页面的概念，可以用于传递查询字符串，如 “?foo=bar”</td>
+<td>状态 1 时有效，点击「进入」启动小程序时使用的路径。对于小游戏，没有页面的概念，可以用于传递查询字符串（query），如 `"?foo=bar"`</td>
 
 </tr>
 
@@ -329,7 +329,7 @@
 
 <td>string</td>
 
-<td>状态 1 时有效，点击“进入”启动游戏时使用的小游戏版本。有效值 develop（开发版），trial（体验版），release（正式版）</td>
+<td>状态 1 时有效，状态 1 时有效，点击「进入」启动小程序时使用的版本。有效参数值为：`develop`（开发版），`trial`（体验版），`release`（正式版）</td>
 
 </tr>
 
@@ -353,21 +353,18 @@
 通过调用 [wx.updateShareMenu](../../../api/share/wx.updateShareMenu.html) 接口，传入 `isUpdatableMessage: true`，以及 `templateInfo`、`activityId` 参数。其中 `activityId` 从步骤一中获得。
 
     wx.updateShareMenu({
-        withShareTicket: true,
-        isUpdatableMessage: true,
-        activityId: '', // 活动 ID
-        templateInfo: {
-            parameterLis: [
-                {
-                    name: 'member_count',
-                    value: '1'
-                },
-                {
-                    name: 'room_limit',
-                    value: '3'
-                }
-            ]
-        }
+      withShareTicket: true,
+      isUpdatableMessage: true,
+      activityId: '', // 活动 ID
+      templateInfo: {
+        parameterList: [{
+          name: 'member_count',
+          value: '1'
+        }, {
+          name: 'room_limit',
+          value: '3'
+        }]
+      }
     })
 
 #### 三、修改动态消息内容
