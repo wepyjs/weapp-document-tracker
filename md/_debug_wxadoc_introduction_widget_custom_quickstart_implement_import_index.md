@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [小程序介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111219)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111219)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111219)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111219)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111219)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111219)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111219)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111219)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/implement/import/index.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/implement/import/index.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/implement/import/index.html?t=18111219)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/implement/import/index.html?t=18111219)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/implement/import/index.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/implement/import/index.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/implement/import/index.html?t=18111219)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/implement/import/index.html?t=18111219)
 
 </div>
 
@@ -112,22 +112,21 @@
         *   [展示效果测试](../../test/uitest.html)
     *   [发布上线](../../release.html)
     *   [查看数据](../../dataview/)
-    *   [模板总览](../../../../template/category.html)
-        *   [快递业与邮政](../../../../template/dest/class0.html)
-        *   [教育](../../../../template/dest/class1.html)
-        *   [金融业](../../../../template/dest/class3.html)
-        *   [出行与交通](../../../../template/dest/class4.html)
-        *   [房地产](../../../../template/dest/class5.html)
-        *   [生活服务](../../../../template/dest/class6.html)
-        *   [IT科技](../../../../template/dest/class7.html)
-        *   [餐饮](../../../../template/dest/class8.html)
-        *   [旅游](../../../../template/dest/class9.html)
-        *   [文娱](../../../../template/dest/class11.html)
-        *   [工具](../../../../template/dest/class12.html)
-        *   [商家自营](../../../../template/dest/class14.html)
-        *   [商业服务](../../../../template/dest/class15.html)
-        *   [体育](../../../../template/dest/class19.html)
-        *   [汽车](../../../../template/dest/class20.html)
+    *   [模板总览](../../../../template/custom.html)
+        *   [快递业与邮政](../../../../template/class/1.html)
+        *   [教育](../../../../template/class/8.html)
+        *   [政务民生](../../../../template/class/52.html)
+        *   [金融业](../../../../template/class/99.html)
+        *   [出行与交通](../../../../template/class/110.html)
+        *   [房地产](../../../../template/class/135.html)
+        *   [生活服务](../../../../template/class/150.html)
+        *   [IT科技](../../../../template/class/210.html)
+        *   [餐饮](../../../../template/class/220.html)
+        *   [旅游](../../../../template/class/231.html)
+        *   [文娱](../../../../template/class/275.html)
+        *   [工具](../../../../template/class/287.html)
+        *   [体育](../../../../template/class/674.html)
+        *   [汽车](../../../../template/class/882.html)
 *   [附录](../../../../appendix/feedback.html)
     *   [问题反馈](../../../../appendix/feedback.html)
     *   [运营规则](../../../../appendix/rule.html)
@@ -156,9 +155,11 @@
 
 抽样数据可选取20%的优质部分进行导入，且总量不得超过10万条。导入的优质数据将有利于微信平台分析与挖掘，以更好理解开发者的服务，并最终应用在搜索场景上。真实、优质的抽样数据，将获得更佳的用户展现效果及更多精准流量。反之，若开发者导入低质、甚至是恶意引流的抽样数据，平台侧将会根据违规程度做出相应惩罚。
 
-另外，在“配置”中同意添加微信官方测试人员到当前小程序体验者权限，以便测试人员验收具体搜索效果。测试人员并不占用已有小程序体验人数名额。
+注：开发者每次导入的抽样数据将覆盖之前所导入的数据，因此每次都需要进行全量的导入。
 
-![导入抽样数据](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/implement/import/image/import_data.png?t=18110616 "导入抽样数据")
+在“配置”中同意添加微信官方测试人员到当前小程序体验者权限，以便测试人员验收具体搜索效果。测试人员并不占用已有小程序体验人数名额。
+
+![导入抽样数据](./image/import_data.png "导入抽样数据")
 
 开发者在导入抽样数据后，可通过微信客户端-小程序搜索，搜索测试集数据相关的query，测试自定义模板的展示。
 

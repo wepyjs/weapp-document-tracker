@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110719)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110719)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110719)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111222)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111222)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111222)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110719)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110719)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110719)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111222)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111222)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111222)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110719)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110719)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111222)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111222)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/index.html?t=18110719)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/index.html?t=18110719)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/index.html?t=18111222)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/index.html?t=18111222)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/index.html?t=18110719)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/index.html?t=18110719)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/index.html?t=18111222)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/index.html?t=18111222)
 
 </div>
 
@@ -164,7 +164,7 @@
         *   [wx.seekBackgroundAudio](./media/background-audio/wx.seekBackgroundAudio.html)
         *   [wx.stopBackgroundAudio](./media/background-audio/wx.stopBackgroundAudio.html)
         *   [BackgroundAudioManager](./media/background-audio/BackgroundAudioManager.html)
-            *   [.onCanPlay](./media/background-audio/BackgroundAudioManager.onCanPlay.html)
+            *   [.onCanplay](./media/background-audio/BackgroundAudioManager.onCanplay.html)
             *   [.onEnded](./media/background-audio/BackgroundAudioManager.onEnded.html)
             *   [.onError](./media/background-audio/BackgroundAudioManager.onError.html)
             *   [.onNext](./media/background-audio/BackgroundAudioManager.onNext.html)
@@ -1023,7 +1023,7 @@
 
 <td>[wx.closeSocket](network/websocket/wx.closeSocket.html)</td>
 
-<td>关闭 WeSocket 连接</td>
+<td>关闭 WebSocket 连接</td>
 
 </tr>
 
@@ -1619,7 +1619,7 @@
 
 <tr>
 
-<td>[BackgroundAudioManager.onCanPlay](media/background-audio/BackgroundAudioManager.onCanPlay.html)</td>
+<td>[BackgroundAudioManager.onCanplay](media/background-audio/BackgroundAudioManager.onCanplay.html)</td>
 
 <td>监听背景音频进入可以播放状态</td>
 
@@ -2439,7 +2439,7 @@
 
 <td>[VideoContext.sendDanmu](media/video/VideoContext.sendDanmu.html)</td>
 
-<td>播放视频</td>
+<td>发送弹幕</td>
 
 </tr>
 

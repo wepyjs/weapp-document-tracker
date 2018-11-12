@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [小程序介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111219)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111219)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111219)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111219)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111219)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111219)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111219)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111219)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/order/quickstart/example/userteach.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/order/quickstart/example/userteach.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/order/quickstart/example/userteach.html?t=18111219)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/order/quickstart/example/userteach.html?t=18111219)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/order/quickstart/example/userteach.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/order/quickstart/example/userteach.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/order/quickstart/example/userteach.html?t=18111219)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/order/quickstart/example/userteach.html?t=18111219)
 
 </div>
 
@@ -112,22 +112,21 @@
         *   [展示效果测试](../../../custom/quickstart/test/uitest.html)
     *   [发布上线](../../../custom/quickstart/release.html)
     *   [查看数据](../../../custom/quickstart/dataview/)
-    *   [模板总览](../../../template/category.html)
-        *   [快递业与邮政](../../../template/dest/class0.html)
-        *   [教育](../../../template/dest/class1.html)
-        *   [金融业](../../../template/dest/class3.html)
-        *   [出行与交通](../../../template/dest/class4.html)
-        *   [房地产](../../../template/dest/class5.html)
-        *   [生活服务](../../../template/dest/class6.html)
-        *   [IT科技](../../../template/dest/class7.html)
-        *   [餐饮](../../../template/dest/class8.html)
-        *   [旅游](../../../template/dest/class9.html)
-        *   [文娱](../../../template/dest/class11.html)
-        *   [工具](../../../template/dest/class12.html)
-        *   [商家自营](../../../template/dest/class14.html)
-        *   [商业服务](../../../template/dest/class15.html)
-        *   [体育](../../../template/dest/class19.html)
-        *   [汽车](../../../template/dest/class20.html)
+    *   [模板总览](../../../template/custom.html)
+        *   [快递业与邮政](../../../template/class/1.html)
+        *   [教育](../../../template/class/8.html)
+        *   [政务民生](../../../template/class/52.html)
+        *   [金融业](../../../template/class/99.html)
+        *   [出行与交通](../../../template/class/110.html)
+        *   [房地产](../../../template/class/135.html)
+        *   [生活服务](../../../template/class/150.html)
+        *   [IT科技](../../../template/class/210.html)
+        *   [餐饮](../../../template/class/220.html)
+        *   [旅游](../../../template/class/231.html)
+        *   [文娱](../../../template/class/275.html)
+        *   [工具](../../../template/class/287.html)
+        *   [体育](../../../template/class/674.html)
+        *   [汽车](../../../template/class/882.html)
 *   [附录](../../../appendix/feedback.html)
     *   [问题反馈](../../../appendix/feedback.html)
     *   [运营规则](../../../appendix/rule.html)
@@ -156,7 +155,7 @@
 
 ## 1\. 用户教育示例
 
-请在购物车列表页下方、订单列表页下方增加小程序调用示例，须包括购物单logo及调用说明文案，如图1、2； 小程序调用示例须支持点击并跳转至购物单教育页，如图3； ![](https://developers.weixin.qq.com/miniprogram/introduction/widget/order/image/userteach.png?t=18110616)
+请在购物车列表页下方、订单列表页下方增加小程序调用示例，须包括购物单logo及调用说明文案，如图1、2； 小程序调用示例须支持点击并跳转至购物单教育页，如图3； ![](../../image/userteach.png)
 
 ## 2\. 规范要求
 
@@ -166,7 +165,7 @@ a. 文案：已同步至购物单
 
 b. 购物单logo：[点击下载](http://wxapp.tc.qq.com/204/20304/stodownload?filekey=30340201010420301e020200cc040253480410a5c7c1c52f9b0d8327591c0a7a9dbb2902021785040d00000004627466730000000131&hy=SH&storeid=32303138303932363131353031373030303236613737303532343332643330386361373136343030303030306363&bizid=1023)
 
-c. 教育页路径：使用小程序[_<navigator_>](https://developers.weixin.qq.com/miniprogram/dev/component/navigator.html?t=18110616)组件进行跳转（无需公众号关联）
+c. 教育页路径：使用小程序[_<navigator_>](https://developers.weixin.qq.com/miniprogram/dev/component/navigator.html?t=18111219)组件进行跳转（无需公众号关联）
 
     appid：wx56c8f077de74b07c
     path：/open/function-introduction/function-introduction

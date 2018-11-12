@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [小程序介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111219)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111219)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111219)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111219)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111219)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111219)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111219)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111219)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/guide/overview.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/guide/overview.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/guide/overview.html?t=18111219)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/guide/overview.html?t=18111219)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/guide/overview.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/guide/overview.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/guide/overview.html?t=18111219)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/guide/overview.html?t=18111219)
 
 </div>
 
@@ -112,22 +112,21 @@
         *   [展示效果测试](../quickstart/test/uitest.html)
     *   [发布上线](../quickstart/release.html)
     *   [查看数据](../quickstart/dataview/)
-    *   [模板总览](../../template/category.html)
-        *   [快递业与邮政](../../template/dest/class0.html)
-        *   [教育](../../template/dest/class1.html)
-        *   [金融业](../../template/dest/class3.html)
-        *   [出行与交通](../../template/dest/class4.html)
-        *   [房地产](../../template/dest/class5.html)
-        *   [生活服务](../../template/dest/class6.html)
-        *   [IT科技](../../template/dest/class7.html)
-        *   [餐饮](../../template/dest/class8.html)
-        *   [旅游](../../template/dest/class9.html)
-        *   [文娱](../../template/dest/class11.html)
-        *   [工具](../../template/dest/class12.html)
-        *   [商家自营](../../template/dest/class14.html)
-        *   [商业服务](../../template/dest/class15.html)
-        *   [体育](../../template/dest/class19.html)
-        *   [汽车](../../template/dest/class20.html)
+    *   [模板总览](../../template/custom.html)
+        *   [快递业与邮政](../../template/class/1.html)
+        *   [教育](../../template/class/8.html)
+        *   [政务民生](../../template/class/52.html)
+        *   [金融业](../../template/class/99.html)
+        *   [出行与交通](../../template/class/110.html)
+        *   [房地产](../../template/class/135.html)
+        *   [生活服务](../../template/class/150.html)
+        *   [IT科技](../../template/class/210.html)
+        *   [餐饮](../../template/class/220.html)
+        *   [旅游](../../template/class/231.html)
+        *   [文娱](../../template/class/275.html)
+        *   [工具](../../template/class/287.html)
+        *   [体育](../../template/class/674.html)
+        *   [汽车](../../template/class/882.html)
 *   [附录](../../appendix/feedback.html)
     *   [问题反馈](../../appendix/feedback.html)
     *   [运营规则](../../appendix/rule.html)
@@ -152,7 +151,7 @@
 
 # 接入流程
 
-![接入流程](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/guide/image/pipeline.png?t=18110616 "接入流程")
+![接入流程](./image/pipeline.png "接入流程")
 
 ## 接入条件
 
@@ -169,7 +168,7 @@
 
 ## 实现模板
 
-使用用于申请自定义模板的小程序账号登录[微信公众平台小程序后台](https://mp.weixin.qq.com)，并在“设置-开发设置选项卡”中启用并设置消息推送配置。配置指引可参考[接入概述](https://developers.weixin.qq.com/miniprogram/dev/api/custommsg/callback_help.html?t=18110616)。
+使用用于申请自定义模板的小程序帐号登录[微信公众平台小程序后台](https://mp.weixin.qq.com)，并在“设置-开发设置选项卡”中启用并设置消息推送配置。配置指引可参考[接入概述](https://developers.weixin.qq.com/miniprogram/dev/api/custommsg/callback_help.html?t=18111219)。
 
 微信后台会将用户触发的搜索请求推送给开发者，开发者需按照约定的数据格式响应请求。关于后台开发的详细指引，参见[开发后台接口/整体开发流程](../quickstart/implement/server/overview.html#整体开发流程)。
 
@@ -185,7 +184,7 @@
 
 服务上线后，可以登录[微信公众平台公众号后台](https://mp.weixin.qq.com)[查看数据](../quickstart/dataview/index.html)。
 
-![搜索开放平台](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/guide/image/guide1.png?t=18110616 "搜索开放平台")
+![搜索开放平台](./image/guide1.png "搜索开放平台")
 
 <table>
 
@@ -239,7 +238,7 @@
 
 </table>
 
-![自定义模板](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/guide/image/guide2.png?t=18110616 "自定义模板")
+![自定义模板](./image/guide2.png "自定义模板")
 
 <table>
 

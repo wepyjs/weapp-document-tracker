@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110719)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110719)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110719)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111222)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111222)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111222)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110719)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110719)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110719)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111222)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111222)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111222)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110719)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110719)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111222)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111222)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/edit.html?t=18110719)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/edit.html?t=18110719)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/edit.html?t=18111222)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/edit.html?t=18111222)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/edit.html?t=18110719)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/edit.html?t=18110719)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/edit.html?t=18111222)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/edit.html?t=18111222)
 
 </div>
 
@@ -188,19 +188,29 @@
 
 js 补全
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/jsautocomplete2.gif?t=18110719)
+![](./image/devtools2/jsautocomplete2.gif)
 
 代码模板支持
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/jsautocomplete.gif?t=18110719)
+![](./image/devtools2/jsautocomplete.gif)
 
 json 补全
 
-![3](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/jsoncomplete.gif?t=18110719)
+![3](./image/devtools2/jsoncomplete.gif)
 
 wxml 补全
 
-![3](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools/edit4.gif?t=18110719)
+![3](./image/devtools/edit4.gif)
+
+## TypeScript 支持
+
+如果项目需要使用 TypeScript 语言开发，开发者工具在创建项目选择快速启动模板时，提供了使用 TypeScript 语言的 QuickStart 项目，可以选择创建此项目并进行后续开发。
+
+要构建并使用 TypeScript 项目，可能需要安装 [npm](https://www.npmjs.com/get-npm)。通过[配置编译前的预置命令](debug.html#自定义预处理)，可以实现在编译前运行 `tsc` 以将其编译到 js 文件。
+
+如需配置 TypeScript 编译选项，请参考 [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) 的配置。
+
+> 注：小程序仅支持运行 JS 文件，因此所有的 TS 文件都默认不会被打包上传。
 
 ## Git 状态展示
 
@@ -212,7 +222,7 @@ wxml 补全
 
 文件图标状态的含义如下：
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/directory.jpg?t=18110719)
+![](./image/devtools2/git/directory.jpg)
 
 <table>
 
@@ -338,19 +348,19 @@ wxml 补全
 
 如果某一文件存在修改（Modified），可以右键点击此文件，并选择 “与上一版本比较”，则可以查看当前工作区文件与 HEAD 版本的比较。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/contextmenu.jpg?t=18110719)
+![](./image/devtools2/git/contextmenu.jpg)
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/diff.jpg?t=18110719)
+![](./image/devtools2/git/diff.jpg)
 
 ### 文件编辑
 
 存在 Git 仓库时，状态栏会展示此 Git 仓库目前的分支信息。例如，下图表明目前 Git 仓库处于 `v2` 分支。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/statusbar.jpg?t=18110719)
+![](./image/devtools2/git/statusbar.jpg)
 
 同时，编辑文件内容时，将会在所编辑代码左侧实时显示相对于上一版本内容的比较。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/linediff.jpg?t=18110719)
+![](./image/devtools2/git/linediff.jpg)
 
 样式说明如下：
 
@@ -406,7 +416,7 @@ wxml 补全
 
 勾选后，在编辑文件进行内容比较时，所有 Windows 风格的回车符将被当作 Unix 风格的回车符对待。
 
-![](https://developers.weixin.qq.com/miniprogram/dev/devtools/image/devtools2/git/windowsreturnsettings.jpg?t=18110719)
+![](./image/devtools2/git/windowsreturnsettings.jpg)
 
 </section>
 

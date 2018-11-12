@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [小程序介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111219)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111219)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111219)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111219)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111219)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111219)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111219)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111219)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/test/stresstest.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/test/stresstest.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/test/stresstest.html?t=18111219)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/test/stresstest.html?t=18111219)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/test/stresstest.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/test/stresstest.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/test/stresstest.html?t=18111219)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/test/stresstest.html?t=18111219)
 
 </div>
 
@@ -112,22 +112,21 @@
         *   [展示效果测试](./uitest.html)
     *   [发布上线](../release.html)
     *   [查看数据](../dataview/)
-    *   [模板总览](../../../template/category.html)
-        *   [快递业与邮政](../../../template/dest/class0.html)
-        *   [教育](../../../template/dest/class1.html)
-        *   [金融业](../../../template/dest/class3.html)
-        *   [出行与交通](../../../template/dest/class4.html)
-        *   [房地产](../../../template/dest/class5.html)
-        *   [生活服务](../../../template/dest/class6.html)
-        *   [IT科技](../../../template/dest/class7.html)
-        *   [餐饮](../../../template/dest/class8.html)
-        *   [旅游](../../../template/dest/class9.html)
-        *   [文娱](../../../template/dest/class11.html)
-        *   [工具](../../../template/dest/class12.html)
-        *   [商家自营](../../../template/dest/class14.html)
-        *   [商业服务](../../../template/dest/class15.html)
-        *   [体育](../../../template/dest/class19.html)
-        *   [汽车](../../../template/dest/class20.html)
+    *   [模板总览](../../../template/custom.html)
+        *   [快递业与邮政](../../../template/class/1.html)
+        *   [教育](../../../template/class/8.html)
+        *   [政务民生](../../../template/class/52.html)
+        *   [金融业](../../../template/class/99.html)
+        *   [出行与交通](../../../template/class/110.html)
+        *   [房地产](../../../template/class/135.html)
+        *   [生活服务](../../../template/class/150.html)
+        *   [IT科技](../../../template/class/210.html)
+        *   [餐饮](../../../template/class/220.html)
+        *   [旅游](../../../template/class/231.html)
+        *   [文娱](../../../template/class/275.html)
+        *   [工具](../../../template/class/287.html)
+        *   [体育](../../../template/class/674.html)
+        *   [汽车](../../../template/class/882.html)
 *   [附录](../../../appendix/feedback.html)
     *   [问题反馈](../../../appendix/feedback.html)
     *   [运营规则](../../../appendix/rule.html)
@@ -152,7 +151,7 @@
 
 # 后台性能测试
 
-![后台性能测试](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/test/image/server_test.png?t=18110616 "后台性能测试")
+![后台性能测试](./image/server_test.png "后台性能测试")
 
 开发者在完成后台开发后，在“自定义模板-模板管理-开发中模板-提交测试-后台性能测试”提交如下内容：
 
@@ -344,7 +343,7 @@
 
 ## 3.压测时间 && 压测服务器
 
-开发者选择合适的时间段（当多家服务提供者申请在同一时间段内压测时，微信侧可能会进行分批测试。为了保证测试的质量，此处建议尽可能选择较长的时间段），微信侧将在该时间段内对生产环境（生产环境的配置见[接入概述](https://developers.weixin.qq.com/miniprogram/dev/api/custommsg/callback_help.html?t=18110616)）进行为期半小时的压力测试，测试结果将在“模板申请单”中展示。
+开发者选择合适的时间段（当多家服务提供者申请在同一时间段内压测时，微信侧可能会进行分批测试。为了保证测试的质量，此处建议尽可能选择较长的时间段），微信侧将在该时间段内对生产环境（生产环境的配置见[接入概述](https://developers.weixin.qq.com/miniprogram/dev/api/custommsg/callback_help.html?t=18111219)）进行为期半小时的压力测试，测试结果将在“模板申请单”中展示。
 
 </section>
 

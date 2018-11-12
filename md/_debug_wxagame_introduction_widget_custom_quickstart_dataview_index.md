@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [小程序介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110616)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110616)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110616)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111219)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111219)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111219)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110616)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110616)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110616)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111219)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111219)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111219)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110616)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110616)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111219)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111219)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/dataview/index.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/dataview/index.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/dataview/index.html?t=18111219)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/dataview/index.html?t=18111219)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/dataview/index.html?t=18110616)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/dataview/index.html?t=18110616)
+*   [中文](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/dataview/index.html?t=18111219)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/introduction/widget/custom/quickstart/dataview/index.html?t=18111219)
 
 </div>
 
@@ -112,22 +112,21 @@
         *   [展示效果测试](../test/uitest.html)
     *   [发布上线](../release.html)
     *   [查看数据](.)
-    *   [模板总览](../../../template/category.html)
-        *   [快递业与邮政](../../../template/dest/class0.html)
-        *   [教育](../../../template/dest/class1.html)
-        *   [金融业](../../../template/dest/class3.html)
-        *   [出行与交通](../../../template/dest/class4.html)
-        *   [房地产](../../../template/dest/class5.html)
-        *   [生活服务](../../../template/dest/class6.html)
-        *   [IT科技](../../../template/dest/class7.html)
-        *   [餐饮](../../../template/dest/class8.html)
-        *   [旅游](../../../template/dest/class9.html)
-        *   [文娱](../../../template/dest/class11.html)
-        *   [工具](../../../template/dest/class12.html)
-        *   [商家自营](../../../template/dest/class14.html)
-        *   [商业服务](../../../template/dest/class15.html)
-        *   [体育](../../../template/dest/class19.html)
-        *   [汽车](../../../template/dest/class20.html)
+    *   [模板总览](../../../template/custom.html)
+        *   [快递业与邮政](../../../template/class/1.html)
+        *   [教育](../../../template/class/8.html)
+        *   [政务民生](../../../template/class/52.html)
+        *   [金融业](../../../template/class/99.html)
+        *   [出行与交通](../../../template/class/110.html)
+        *   [房地产](../../../template/class/135.html)
+        *   [生活服务](../../../template/class/150.html)
+        *   [IT科技](../../../template/class/210.html)
+        *   [餐饮](../../../template/class/220.html)
+        *   [旅游](../../../template/class/231.html)
+        *   [文娱](../../../template/class/275.html)
+        *   [工具](../../../template/class/287.html)
+        *   [体育](../../../template/class/674.html)
+        *   [汽车](../../../template/class/882.html)
 *   [附录](../../../appendix/feedback.html)
     *   [问题反馈](../../../appendix/feedback.html)
     *   [运营规则](../../../appendix/rule.html)
@@ -156,7 +155,7 @@
 
 服务能力上线后, 可登录“[微信公众平台公众号后台](https://mp.weixin.qq.com/)-搜索开放平台”，在“自定义模板-数据概况”入口查看整体数据和每项服务的业务数据，如曝光次数、点击次数和新老用户占比等。
 
-![查看业务数据](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/dataview/image/service_data.png?t=18110616 "查看业务数据")
+![查看业务数据](./image/service_data.png "查看业务数据")
 
 ## 查看运维数据
 
@@ -166,7 +165,7 @@
 
 在告警设置tab下选中“搜索Widget告警群”，页面会出现告警群的二维码，错误告警通过微信群来通知，每个搜索Widget对应唯一的告警群，扫码加入后即可接收告警通知。
 
-![告警群设置](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/dataview/image/monitor_qrcode.png?t=18110616 "告警群设置")
+![告警群设置](./image/monitor_qrcode.png "告警群设置")
 
 #### 告警项设置：
 
@@ -174,7 +173,7 @@
 
 在“异常项目”中可展开几个常规的告警项，如后台调用次数、调用失败次数等，展开后可查看对应的数据曲线、当前总数、昨日总数、偏差比例，以及设置是否微信通知，当打开了微信通知开关后，告警项的数据偏差或曲线变化超过一定阈值时，告警群中就会推送告警信息，及时知会到相关人员。
 
-![告警项设置](https://developers.weixin.qq.com/miniprogram/introduction/widget/custom/quickstart/dataview/image/monitor_setting.png?t=18110616 "告警项设置")
+![告警项设置](./image/monitor_setting.png "告警项设置")
 
 </section>
 
@@ -215,6 +214,6 @@
 
 </div>
 
-[](../release.html)[](../../../template/category.html)</div>
+[](../release.html)[](../../../template/custom.html)</div>
 
 </div>

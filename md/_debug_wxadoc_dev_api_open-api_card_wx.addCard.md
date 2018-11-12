@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110719)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110719)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110719)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111222)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111222)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111222)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110719)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110719)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110719)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111222)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111222)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111222)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110719)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110719)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111222)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111222)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/card/wx.addCard.html?t=18110719)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/card/wx.addCard.html?t=18110719)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/card/wx.addCard.html?t=18111222)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/card/wx.addCard.html?t=18111222)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/card/wx.addCard.html?t=18110719)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/card/wx.addCard.html?t=18110719)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/card/wx.addCard.html?t=18111222)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/card/wx.addCard.html?t=18111222)
 
 </div>
 
@@ -164,7 +164,7 @@
         *   [wx.seekBackgroundAudio](../../media/background-audio/wx.seekBackgroundAudio.html)
         *   [wx.stopBackgroundAudio](../../media/background-audio/wx.stopBackgroundAudio.html)
         *   [BackgroundAudioManager](../../media/background-audio/BackgroundAudioManager.html)
-            *   [.onCanPlay](../../media/background-audio/BackgroundAudioManager.onCanPlay.html)
+            *   [.onCanplay](../../media/background-audio/BackgroundAudioManager.onCanplay.html)
             *   [.onEnded](../../media/background-audio/BackgroundAudioManager.onEnded.html)
             *   [.onError](../../media/background-audio/BackgroundAudioManager.onError.html)
             *   [.onNext](../../media/background-audio/BackgroundAudioManager.onNext.html)
@@ -703,7 +703,7 @@
 
 > 支持版本 >= [1.1.0](../../../framework/compatibility.html "基础库 1.1.0 开始支持，低版本需做兼容处理。")
 
-批量添加卡券。只有通过 [认证](https://developers.weixin.qq.com/miniprogram/product/renzheng.html?t=18110719) 的小程序才能使用。更多文档请参考 [微信卡券接口文档](https://mp.weixin.qq.com/cgi-bin/announce?action=getannouncement&key=1490190158&version=1&lang=zh_CN&platform=2)。
+批量添加卡券。只有通过 [认证](https://developers.weixin.qq.com/miniprogram/product/renzheng.html?t=18111222) 的小程序才能使用。更多文档请参考 [微信卡券接口文档](https://mp.weixin.qq.com/cgi-bin/announce?action=getannouncement&key=1490190158&version=1&lang=zh_CN&platform=2)。
 
 #### 参数
 

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110719)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110719)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110719)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111222)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111222)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111222)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110719)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110719)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110719)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111222)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111222)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111222)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110719)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110719)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111222)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111222)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/config.html?t=18110719)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/config.html?t=18110719)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/config.html?t=18111222)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/config.html?t=18111222)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/config.html?t=18110719)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/config.html?t=18110719)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/config.html?t=18111222)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/config.html?t=18111222)
 
 </div>
 
@@ -449,6 +449,20 @@
 
 </tr>
 
+<tr>
+
+<td>[usingComponents](#usingcomponents)</td>
+
+<td>Object</td>
+
+<td>否</td>
+
+<td>全局自定义组件配置，开发者工具 1.02.1810190 及以上版本支持此字段</td>
+
+<td></td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -690,7 +704,7 @@
       }
     }
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/config.jpg?t=18110719)
+![](../image/config.jpg)
 
 ### tabBar
 
@@ -882,7 +896,7 @@
 
 </table>
 
-![](https://developers.weixin.qq.com/miniprogram/dev/image/tabbar.png?t=18110719)
+![](../image/tabbar.png)
 
 ### networkTimeout
 
@@ -1034,6 +1048,10 @@
 > 基础库 2.4.0 开始支持，低版本需做[兼容处理](compatibility.html)。
 
 当小程序需要使用 [wx.navigateToMiniProgram](../api/open-api/miniprogram-navigate/wx.navigateToMiniProgram.html) 接口跳转到其他小程序时，需要先在配置文件中声明需要跳转的小程序 appId 列表，最多允许填写 10 个。
+
+### usingComponents
+
+开发者工具 1.02.1810190 及以上版本支持 usingComponents 字段，在此处声明的自定义组件视为全局自定义组件，在小程序内的页面或自定义组件中可以直接使用而无需再声明。
 
 # 页面配置
 

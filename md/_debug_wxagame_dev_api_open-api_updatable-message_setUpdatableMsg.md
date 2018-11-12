@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110719)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110719)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110719)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111222)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111222)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111222)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110719)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110719)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110719)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111222)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111222)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111222)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110719)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110719)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111222)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111222)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/updatable-message/setUpdatableMsg.html?t=18110719)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/updatable-message/setUpdatableMsg.html?t=18110719)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/updatable-message/setUpdatableMsg.html?t=18111222)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/updatable-message/setUpdatableMsg.html?t=18111222)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/updatable-message/setUpdatableMsg.html?t=18110719)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/updatable-message/setUpdatableMsg.html?t=18110719)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/updatable-message/setUpdatableMsg.html?t=18111222)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/updatable-message/setUpdatableMsg.html?t=18111222)
 
 </div>
 
@@ -164,7 +164,7 @@
         *   [wx.seekBackgroundAudio](../../media/background-audio/wx.seekBackgroundAudio.html)
         *   [wx.stopBackgroundAudio](../../media/background-audio/wx.stopBackgroundAudio.html)
         *   [BackgroundAudioManager](../../media/background-audio/BackgroundAudioManager.html)
-            *   [.onCanPlay](../../media/background-audio/BackgroundAudioManager.onCanPlay.html)
+            *   [.onCanplay](../../media/background-audio/BackgroundAudioManager.onCanplay.html)
             *   [.onEnded](../../media/background-audio/BackgroundAudioManager.onEnded.html)
             *   [.onError](../../media/background-audio/BackgroundAudioManager.onError.html)
             *   [.onNext](../../media/background-audio/BackgroundAudioManager.onNext.html)
@@ -891,7 +891,7 @@
 
 <td>member_count</td>
 
-<td>`target_state = 0` 时有效，文字内容模板中 `member_count` 的值</td>
+<td>`target_state = 0` 时必填，文字内容模板中 `member_count` 的值</td>
 
 </tr>
 
@@ -899,7 +899,7 @@
 
 <td>room_limit</td>
 
-<td>`target_state = 0` 时有效，文字内容模板中 `room_limit` 的值</td>
+<td>`target_state = 0` 时必填，文字内容模板中 `room_limit` 的值</td>
 
 </tr>
 
@@ -907,7 +907,7 @@
 
 <td>path</td>
 
-<td>`target_state = 1` 时有效，点击「进入」启动小程序时使用的路径。  
+<td>`target_state = 1` 时必填，点击「进入」启动小程序时使用的路径。  
 对于小游戏，没有页面的概念，可以用于传递查询字符串（query），如 `"?foo=bar"`</td>
 
 </tr>
@@ -916,7 +916,7 @@
 
 <td>version_type</td>
 
-<td>`target_state = 1` 时有效，点击「进入」启动小程序时使用的版本。  
+<td>`target_state = 1` 时必填，点击「进入」启动小程序时使用的版本。  
 有效参数值为：`develop`（开发版），`trial`（体验版），`release`（正式版）</td>
 
 </tr>
