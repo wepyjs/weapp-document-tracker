@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111222)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111222)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111222)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111420)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111420)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111420)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111222)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111222)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111222)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111420)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111420)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111420)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111222)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111222)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111420)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111420)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/launchApp.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/launchApp.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/launchApp.html?t=18111420)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/launchApp.html?t=18111420)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/launchApp.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/launchApp.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/launchApp.html?t=18111420)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/launchApp.html?t=18111420)
 
 </div>
 
@@ -218,13 +218,15 @@
 
 在小程序的生命周期内，这个状态的初始值为 false，之后会随着小程序的每次打开（无论是启动还是切到前台）而改变：
 
-*   当小程序从 1036（App 分享消息卡片） 打开时，该状态置为 true。
-*   当小程序从 1069（App 打开小程序） 打开时，该状态置为 true。
-*   当小程序从以下场景打开时， 该状态不变，即保持上一次打开小程序时该状态的值：
-    *   1038（从小程序返回，基础库 2.2.4 及以上版本支持）
-    *   1089（微信聊天主界面下拉）
-    *   1090（长按小程序右上角菜单唤出最近使用历史）
-*   当小程序从非以上陈列的场景打开时，该状态置为 false。
+在一个小程序的生命周期内，只有从以下场景进入小程序，才具有打开 APP 的能力，该状态置为 true:
+
+*   当小程序从 App 分享消息卡片（场景值1036）打开时
+*   当小程序从 App 打开小程序（场景值1069）打开时
+*   当小程序从以下场景打开时，保持上一次打开小程序时打开 App 能力的状态：
+    *   从其他小程序返回小程序（场景值1038）时（基础库 2.2.4 及以上版本支持）
+    *   小程序从聊天顶部场景（场景值1089）中的「最近使用」内打开时
+    *   长按小程序右上角菜单唤出最近使用历史（场景值1090）打开时
+*   当小程序从非以上场景打开时，不具有打开 APP 的能力该状态置为 false。
 
 ![](./image/launch-app.png)
 

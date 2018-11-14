@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111222)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111222)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111222)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111421)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111421)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111421)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111222)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111222)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111222)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111421)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111421)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111421)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111222)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111222)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111421)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111421)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/index.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/index.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/index.html?t=18111421)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/index.html?t=18111421)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/index.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/index.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/index.html?t=18111421)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/guide/database/index.html?t=18111421)
 
 </div>
 
@@ -98,6 +98,7 @@
         *   [删除数据](./remove.html)
         *   [索引](.)
         *   [导入](./import.html)
+        *   [导出](./export.html)
     *   [存储](../storage.html)
         *   [API](../storage/api.html)
         *   [管理文件](../storage/console.html)
@@ -282,6 +283,14 @@
     B: 降序
 
 那么当我们查询需要对 A, B 进行排序时，可以指定排序结果为 A 升序 B 降序或 A 降序 B 升序，但不能指定为 A 升序 B 升序或 A 降序 B 降序。
+
+### 索引属性
+
+#### 唯一性限制
+
+创建索引时可以指定增加唯一性限制，具有唯一性限制的索引会要求被索引集合不能存在被索引字段值都相同的两个记录。即对任意具有唯一性限制的索引 `I`，假设其索引字段为 `<F1, F2, ..., Fn>`，则对集合 `S` 中任意的两个记录 `R1` 和 `R2`，必须满足条件 `R1.F1 != R2.F1 && R1.F2 != R2.F2 && ... && R1.Fn != R2.Fn`。需**特别注意**的是，假如记录中不存在某个字段，则对索引字段来说其值默认为 `null`，如果索引有唯一性限制，则不允许存在两个或以上的该字段为空 / 不存在该字段的记录。
+
+在创建索引的时候索引属性选择 `唯一` 即可添加唯一性限制。
 
 </section>
 

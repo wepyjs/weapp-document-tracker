@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111222)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111222)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111222)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111420)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111420)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111420)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111222)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111222)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111222)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111420)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111420)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111420)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111222)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111222)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111420)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111420)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/setting/AuthSetting.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/setting/AuthSetting.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/setting/AuthSetting.html?t=18111420)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/setting/AuthSetting.html?t=18111420)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/setting/AuthSetting.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/setting/AuthSetting.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/setting/AuthSetting.html?t=18111420)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/setting/AuthSetting.html?t=18111420)
 
 </div>
 
@@ -701,41 +701,45 @@
 
 ### AuthSetting
 
-用户授权设置信息
+用户授权设置信息，详情参考[权限](../../../framework/open-ability/authorize.html)
 
 #### 属性
 
 ##### boolean scope.userInfo
 
-是否授权用户信息，对应接口 wx.getUserInfo
+是否授权用户信息，对应接口 [wx.getUserInfo](../user-info/wx.getUserInfo.html)
 
 ##### boolean scope.userLocation
 
-是否授权地理位置，对应接口 wx.getLocation wx.chooseLocation
+是否授权地理位置，对应接口 [wx.getLocation](../../location/wx.getLocation.html), [wx.chooseLocation](../../location/wx.chooseLocation.html), [wx.openLocation](../../location/wx.openLocation.html)
 
 ##### boolean scope.address
 
-是否授权通讯地址，对应接口 wx.chooseAddress
+是否授权通讯地址，对应接口 [wx.chooseAddress](../address/wx.chooseAddress.html)
 
 ##### boolean scope.invoiceTitle
 
-是否授权发票抬头，对应接口 wx.chooseInvoiceTitle
+是否授权发票抬头，对应接口 [wx.chooseInvoiceTitle](../invoice/wx.chooseInvoiceTitle.html)
+
+##### boolean scope.invoice
+
+是否授权获取发票，对应接口 [wx.chooseInvoice](../invoice/wx.chooseInvoice.html)
 
 ##### boolean scope.werun
 
-是否授权微信运动步数，对应接口 wx.getWeRunData
+是否授权微信运动步数，对应接口 [wx.getWeRunData](../werun/wx.getWeRunData.html)
 
 ##### boolean scope.record
 
-是否授权录音功能，对应接口 wx.startRecord
+是否授权录音功能，对应接口 [wx.startRecord](../../media/recorder/wx.startRecord.html)
 
 ##### boolean scope.writePhotosAlbum
 
-是否授权保存到相册 wx.saveImageToPhotosAlbum, wx.saveVideoToPhotosAlbum
+是否授权保存到相册 [wx.saveImageToPhotosAlbum](../../media/image/wx.saveImageToPhotosAlbum.html), [wx.saveVideoToPhotosAlbum](../../media/video/wx.saveVideoToPhotosAlbum.html)
 
 ##### boolean scope.camera
 
-是否授权摄像头
+是否授权摄像头，对应[`<camera />`](../../../component/camera.html) 组件
 
 </section>
 

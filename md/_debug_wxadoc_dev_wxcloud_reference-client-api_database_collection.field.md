@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111222)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111222)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111222)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111421)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111421)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111421)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111222)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111222)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111222)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111421)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111421)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111421)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111222)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111222)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111421)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111421)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/database/collection.field.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-client-api/database/collection.field.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/database/collection.field.html?t=18111421)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-client-api/database/collection.field.html?t=18111421)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/database/collection.field.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-client-api/database/collection.field.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/database/collection.field.html?t=18111421)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference-client-api/database/collection.field.html?t=18111421)
 
 </div>
 
@@ -98,6 +98,7 @@
         *   [删除数据](../../guide/database/remove.html)
         *   [索引](../../guide/database/)
         *   [导入](../../guide/database/import.html)
+        *   [导出](../../guide/database/export.html)
     *   [存储](../../guide/storage.html)
         *   [API](../../guide/storage/api.html)
         *   [管理文件](../../guide/storage/console.html)

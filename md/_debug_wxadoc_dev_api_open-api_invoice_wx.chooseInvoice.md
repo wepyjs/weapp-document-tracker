@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111222)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111222)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111222)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111420)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111420)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111420)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111222)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111222)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111222)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111420)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111420)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111420)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111222)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111222)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111420)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111420)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/invoice/wx.chooseInvoice.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/invoice/wx.chooseInvoice.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/invoice/wx.chooseInvoice.html?t=18111420)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/invoice/wx.chooseInvoice.html?t=18111420)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/invoice/wx.chooseInvoice.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/invoice/wx.chooseInvoice.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/invoice/wx.chooseInvoice.html?t=18111420)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/invoice/wx.chooseInvoice.html?t=18111420)
 
 </div>
 
@@ -869,7 +869,7 @@
 
 <td>string</td>
 
-<td>所选发票卡券的加密 code，报销方可以通过 cardId 和 encryptCode 获得报销发票的信息</td>
+<td>所选发票卡券的加密 code，报销方可以通过 cardId 和 encryptCode 获得报销发票的信息。</td>
 
 <td></td>
 
@@ -890,6 +890,10 @@
 </tbody>
 
 </table>
+
+#### 通过 cardId 和 encryptCode 获得报销发票的信息
+
+请参考[微信电子发票文档](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=21517918939oae3U)中，「查询报销发票信息」部分。 其中 `access_token` 的获取请参考[getAccessToken](../access-token/getAccessToken.html)文档
 
 </section>
 

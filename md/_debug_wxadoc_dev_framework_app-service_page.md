@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111222)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111222)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111222)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111420)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111420)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111420)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111222)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111222)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111222)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111420)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111420)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111420)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111222)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111222)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111420)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111420)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/page.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html?t=18111420)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/page.html?t=18111420)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/page.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html?t=18111420)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/app-service/page.html?t=18111420)
 
 </div>
 
@@ -336,11 +336,11 @@
 
 <tr>
 
-<td>[onResize](#onpagescrollobject)</td>
+<td>[onResize](#onresize)</td>
 
 <td>Function</td>
 
-<td>页面尺寸改变时触发，详见 [响应显示区域变化](../view/resizable.html)</td>
+<td>页面尺寸改变时触发，详见 [响应显示区域变化](../view/resizable.html#在手机上启用屏幕旋转支持)</td>
 
 </tr>
 
@@ -712,6 +712,12 @@
         }
       }
     })
+
+#### onResize(object)
+
+> 基础库 2.4.0 开始支持，低版本需做[兼容处理](../compatibility.html)。
+
+小程序屏幕旋转时触发。详见 [响应显示区域变化](../view/resizable.html#在手机上启用屏幕旋转支持)
 
 #### onTabItemTap(Object)
 

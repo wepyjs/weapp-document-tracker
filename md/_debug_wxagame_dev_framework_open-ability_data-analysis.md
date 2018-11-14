@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111222)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111222)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111222)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111420)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111420)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111420)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111222)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111222)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111222)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111420)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111420)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111420)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111222)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111222)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111420)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111420)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/data-analysis.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/data-analysis.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/data-analysis.html?t=18111420)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/data-analysis.html?t=18111420)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/data-analysis.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/data-analysis.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/data-analysis.html?t=18111420)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/data-analysis.html?t=18111420)
 
 </div>
 
@@ -210,7 +210,7 @@
 
 ## 数据分析接口
 
-开发者通过数据分析接口，可获取到小程序的各项数据指标，便于进行数据存储和整理。数据分析详细功能介绍及指标解释参见[数据分析文档](https://mp.weixin.qq.com/debug/wxadoc/analysis/?t=18111222)。
+开发者通过数据分析接口，可获取到小程序的各项数据指标，便于进行数据存储和整理。数据分析详细功能介绍及指标解释参见[数据分析文档](https://mp.weixin.qq.com/debug/wxadoc/analysis/?t=18111420)。
 
 ### 相关接口
 

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111222)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111222)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111222)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111420)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111420)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111420)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111222)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111222)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111222)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111420)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111420)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111420)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111222)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111222)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111420)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111420)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/access-token/getAccessToken.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/access-token/getAccessToken.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/access-token/getAccessToken.html?t=18111420)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/access-token/getAccessToken.html?t=18111420)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/access-token/getAccessToken.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/access-token/getAccessToken.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/access-token/getAccessToken.html?t=18111420)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/open-api/access-token/getAccessToken.html?t=18111420)
 
 </div>
 
@@ -701,7 +701,7 @@
 
 ### getAccessToken
 
-获取小程序 [access_token](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421140183)
+获取小程序全局唯一后台接口调用凭据（`access_token`）。**调用各后台接口时都需使用 access_token，开发者需要进行妥善保存。**
 
 #### 请求地址
 
@@ -715,11 +715,11 @@
 
 ##### string appid
 
-小程序 appId
+小程序唯一凭证，即 AppID，可在「[微信公众平台](https://mp.weixin.qq.com) - 设置 - 开发设置」页中获得。（需要已经成为开发者，且帐号没有异常状态）
 
 ##### string secret
 
-小程序 appSecret
+小程序唯一凭证密钥，即 AppSecret，获取方式同 appid
 
 #### 返回值
 
@@ -765,7 +765,7 @@
 
 <td>number</td>
 
-<td>凭证有效时间，单位：秒</td>
+<td>凭证有效时间，单位：秒。目前是7200秒之内的值。</td>
 
 <td></td>
 
@@ -837,7 +837,7 @@
 
 <td>40001</td>
 
-<td>AppSecret错误或者AppSecret不属于这个小程序，请开发者确认AppSecret的正确性</td>
+<td>AppSecret 错误或者 AppSecret 不属于这个小程序，请开发者确认 AppSecret 的正确性</td>
 
 </tr>
 
@@ -845,21 +845,45 @@
 
 <td>40002</td>
 
-<td>请确保grant_type字段值为client_credential</td>
+<td>请确保 grant_type 字段值为 client_credential</td>
 
 </tr>
 
 <tr>
 
-<td>40164</td>
+<td>40013</td>
 
-<td>调用接口的IP地址不在白名单中，请在接口IP白名单中进行设置</td>
+<td>不合法的 AppID，请开发者检查 AppID 的正确性，避免异常字符，注意大小写</td>
 
 </tr>
 
 </tbody>
 
 </table>
+
+#### 返回数据示例
+
+正常返回
+
+    {"access_token":"ACCESS_TOKEN","expires_in":7200}
+
+错误时返回
+
+    {"errcode":40013,"errmsg":"invalid appid"}
+
+#### access_token 的存储与更新
+
+*   `access_token` 的存储至少要保留 512 个字符空间；
+*   `access_token` 的有效期目前为 **2 个小时**，需定时刷新，重复获取将导致上次获取的 `access_token` 失效；
+*   建议开发者使用中控服务器统一获取和刷新 `access_token`，其他业务逻辑服务器所使用的 `access_token` 均来自于该中控服务器，不应该各自去刷新，否则容易造成冲突，导致 `access_token` 覆盖而影响业务；
+*   `access_token` 的有效期通过返回的 `expire_in` 来传达，目前是7200秒之内的值，中控服务器需要根据这个有效时间提前去刷新。在刷新过程中，中控服务器可对外继续输出的老 `access_token`，此时公众平台后台会保证在5分钟内，新老 `access_token` 都可用，这保证了第三方业务的平滑过渡；
+*   `access_token` 的有效时间可能会在未来有调整，所以中控服务器不仅需要内部定时主动刷新，还需要提供被动刷新 `access_token` 的接口，这样便于业务服务器在API调用获知 `access_token` 已超时的情况下，可以触发 `access_token` 的刷新流程。
+
+> 详情可参考微信公众平台文档 [《获取access_token》](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421140183)
+
+#### 在线调试
+
+开发者可以使用[网页调试工具](https://mp.weixin.qq.com/debug/cgi-bin/apiinfo?t=index&type=%E5%9F%BA%E7%A1%80%E6%94%AF%E6%8C%81&form=%E8%8E%B7%E5%8F%96access_token%E6%8E%A5%E5%8F%A3%20/token&token=&lang=zh_CN)调试该接口
 
 </section>
 

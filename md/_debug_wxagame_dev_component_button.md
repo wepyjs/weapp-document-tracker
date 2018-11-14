@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111222)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111222)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111222)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111420)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111420)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111420)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111222)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111222)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111222)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111420)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111420)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111420)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111222)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111222)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111420)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111420)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/button.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/button.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/button.html?t=18111420)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/button.html?t=18111420)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/button.html?t=18111222)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/button.html?t=18111222)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/button.html?t=18111420)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/button.html?t=18111420)
 
 </div>
 
@@ -770,11 +770,11 @@
     }
 
     <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
-    		disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover"> default </button>
+            disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover"> default </button>
     <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
-    		disabled="{{disabled}}" bindtap="primary"> primary </button>
+            disabled="{{disabled}}" bindtap="primary"> primary </button>
     <button type="warn" size="{{warnSize}}" loading="{{loading}}" plain="{{plain}}"
-    		disabled="{{disabled}}" bindtap="warn"> warn </button>
+            disabled="{{disabled}}" bindtap="warn"> warn </button>
     <button bindtap="setDisabled">点击设置以上按钮disabled属性</button>
     <button bindtap="setPlain">点击设置以上按钮plain属性</button>
     <button bindtap="setLoading">点击设置以上按钮loading属性</button>
