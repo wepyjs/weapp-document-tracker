@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111421)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111421)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111421)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111511)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111511)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111511)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111421)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111421)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111421)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111511)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111511)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111511)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111421)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111421)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111511)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111511)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/cli.html?t=18111421)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/cli.html?t=18111421)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/cli.html?t=18111511)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/cli.html?t=18111511)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/cli.html?t=18111421)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/cli.html?t=18111421)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/cli.html?t=18111511)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/cli.html?t=18111511)
 
 </div>
 
@@ -177,6 +177,8 @@ Windows: `<安装路径>/cli.bat`
 
 **`--login-qr-output [format[@path]]`**: 指定二维码输出形式，format 可选值包括 terminal（命令行输出）, base64, image。如果有填 path，表示结果输出到指定路径的文件中。如果没填 path，表示将结果输出到命令行。不使用此选项或使用了但没有填 format 的话则默认为命令行打印。
 
+**`--login-result-output <path>`**: 输出登录结果到指定文件
+
 示例：
 
     # 登录，在终端中打印登录二维码
@@ -185,6 +187,8 @@ Windows: `<安装路径>/cli.bat`
     cli -l --login-qr-output base64
     # 登录，二维码转成 base64 并存到文件 /Users/username/code.txt 
     cli -l --login-qr-output base64@/Users/username/code.txt
+    # 登录，并输出登录结果到文件 /Users/username/result.json
+    cli -l --login-result-output base64@/Users/username/result.json
 
 ### 3\. 命令行提交预览
 
@@ -196,6 +200,8 @@ Windows: `<安装路径>/cli.bat`
 
 **`--preview-info-ouput <path>`**: 指定后，会将本次预览的额外信息以 json 格式输出至指定路径，如代码包大小、分包大小信息。
 
+**`--compile-condition '<json>'`**: 指定自定义编译条件，json 条件可指定两个字段，`pathName` 表示打开的页面，不填表示首页，`query` 表示页面参数
+
 示例：
 
     # 预览，在终端中打印登录二维码
@@ -204,6 +210,8 @@ Windows: `<安装路径>/cli.bat`
     cli -p /Users/username/demo --preview-qr-output base64@/Users/username/code.txt
     # 预览，并将预览代码包大小等信息存入 /Users/username/info.json
     cli -p /Users/username/demo --preview-info-output /Users/username/info.json
+    # 预览，指定自定义编译条件，pathName
+    cli --compile-condition '{"pathName":"pages/index/index","query":"x=1&y=2"}'
 
 ### 4\. 命令行上传代码
 
@@ -224,7 +232,17 @@ Windows: `<安装路径>/cli.bat`
     # 上传并将代码包大小等信息存入 /Users/username/info.json
     cli -u 1.0.0@/Users/username/demo --upload-desc 'initial release' --preview-info-output /Users/username/info.json
 
-### 5\. 支持自动化测试
+### 5\. 构建 npm
+
+命令行触发 npm 构建。
+
+**`--build-npm <project_root>`**: 按照 project.config.json 中的配置构建，行为和菜单栏的构建 NPM 一致 **`--build-npm-compile-type <type>`**：手动指定编译类型（"miniprogram" | "plugin"），用于指定走 miniprogramRoot 还是 pluginRoot，优先级比 project.config.json 中的高
+
+示例：
+
+    cli --build-npm /Users/username/demo 
+
+### 6\. 支持自动化测试
 
 **`-t, --test <project_root>`**: 提交自动化测试，project_root 指定项目根路径。
 

@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110819)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110819)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110819)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111602)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111602)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111602)
 *   [开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110819)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110819)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110819)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111602)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111602)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111602)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18110819)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18110819)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111602)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111602)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110819)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/index.html?t=18110819)
+*   [中文](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111602)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/index.html?t=18111602)
 
 </div>
 
@@ -58,8 +58,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18110819)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/index.html?t=18110819)
+*   [中文](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111602)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/product/index.html?t=18111602)
 
 </div>
 
@@ -127,7 +127,7 @@
 
 ​微信团队一直致力于将微信打造成一个强大的、全方位的服务工具。在此基础上，我们推出了微信小程序这个产品，提供给微信小程序的开发者在微信内搭建和实现特定服务、功能的平台。通过全面开放的能力，我们将更多连接的可能给予企业和服务提供者，并为微信小程序提供基础的接入能力、运营环境和规则体系，进而帮助更多的企业和服务提供者建立自己的品牌，将商业机会带给整个微信产业链。
 
-​在开始微信小程序的开发前，我们希望微信小程序开发者（以下也称为“你”）已经仔细阅读了[《微信小程序接入指南》](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18110819)、[《微信小程序设计规范》](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18110819)、[《微信小程序开发指南》](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18110819)等，如果你选择了游戏类目，你还需仔细阅读[《微信小游戏接入指南》](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18110819)、[《微信小游戏开发指南》](https://developers.weixin.qq.com/minigame/dev/index.html?t=18110819)等；同时，我们也为你准备了微信小程序平台常见拒绝情形。希望这些指南和规范，能够一定程度上帮助你解决开发、运营微信小程序过程中所遇到的疑问。
+​在开始微信小程序的开发前，我们希望微信小程序开发者（以下也称为“你”）已经仔细阅读了[《微信小程序接入指南》](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111602)、[《微信小程序设计规范》](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111602)、[《微信小程序开发指南》](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111602)等，如果你选择了游戏类目，你还需仔细阅读[《微信小游戏接入指南》](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111602)、[《微信小游戏开发指南》](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111602)等；同时，我们也为你准备了微信小程序平台常见拒绝情形。希望这些指南和规范，能够一定程度上帮助你解决开发、运营微信小程序过程中所遇到的疑问。
 
 ​我们希望你提交的微信小程序，能够符合微信团队一直以来的价值观，那就是：一切以用户价值为依归、让创造发挥价值、好的产品是用完即走，以及让商业化存在于无形之中。在切实符合用户的合理需求和利益的前提下，通过微信小程序所提供的功能和服务，为海量微信用户提供具有持续价值和高品质的服务。我们期待你来提交你的微信小程序。
 
@@ -237,7 +237,7 @@
 
 <span id="5.9">5.9 不得通过微信小程序实施多级分销欺诈行为，发布分销信息诱导用户进行添加、分享或直接参与。一经发现存在此类行为，微信有权对其进行限制功能直至封禁处理，并有权拒绝再向该主体提供服务。</span>
 
-<span id="5.10">5.10 未经腾讯书面同意，任何开发者不得自行或与其他第三方共同利用腾讯的服务对微信小程序进行推荐、推广、排行或集中设立跳转、添加平台服务，也不得为上述行为提供任何协助或便利。否则，腾讯有权对相关微信小程序采取限制功能直至封禁处理，并有权拒绝再向该主体提供服务。</span>
+<span id="5.10">5.10 在苹果（Apple）iOS 系统下，任何开发者不得自行或与其他第三方共同利用腾讯的服务对微信小程序进行排行或集中设立跳转、添加平台服务，也不得为上述行为提供任何协助或便利；在其他系统下，未经腾讯同意亦不得从事上述行为。否则，腾讯有权对相关微信小程序采取限制功能直至封禁处理，并有权拒绝再向该主体提供服务。具体请参阅《Apple Developer Program 许可协议》《App Store 审核指南》 等终端设备系统、应用程序商店、市场等的协议规范。</span>
 
 <span id="5.11">5.11 开发者应当正当使用腾讯提供的服务，不得自行或与其他第三方共同对腾讯提供的服务进行干扰或不正当使用，包括但不限于替换跳转页面、流量劫持等。否则，一经发现，腾讯有权对相关微信小程序采取限制功能直至封禁处理，并有权拒绝再向该主体提供服务。</span>
 
@@ -453,7 +453,7 @@
 
   15.2.8 若你的微信小程序主体被第三方收购或合并，则你从微信和微信小程序接收的数据仅能在你的微信小程序内继续使用。
 
-  15.2.9 未经腾讯同意，不得通过微信小程序服务收集、存储、抓取、获得或要求用户提供包括但不限于微信或其服务平台的信息内容、用户数据等腾讯认为属于敏感信息范畴的数据（包括但不限于微信帐号、微信密码、QQ号码、QQ密码、用户关系链、好友列表数据、银行帐号和密码等），也不得将所合法获得的前述数据自行或提供给其用户、客户用于创建、补充或维护自身关系链。
+  15.2.9 未经腾讯同意，不得通过微信小程序服务收集、存储、抓取、获得或要求用户提供包括但不限于微信或其服务平台的信息内容、用户数据等腾讯认为属于敏感信息范畴的数据（包括但不限于微信帐号、微信密码、QQ号码、QQ密码、用户关系链、好友列表数据、银行账号和密码等），也不得将所合法获得的前述数据自行或提供给其用户、客户用于创建、补充或维护自身关系链。
 
 <span id="15.3">15.3 数据安全</span>
 

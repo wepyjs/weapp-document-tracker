@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111421)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111421)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111421)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111511)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111511)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111511)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111421)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111421)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111421)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111511)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111511)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111511)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111421)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111421)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111511)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111511)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/http.html?t=18111421)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/http.html?t=18111421)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/http.html?t=18111511)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/http.html?t=18111511)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/http.html?t=18111421)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/http.html?t=18111421)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/devtools/http.html?t=18111511)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/devtools/http.html?t=18111511)
 
 </div>
 
@@ -256,6 +256,16 @@ HTTP 方法：GET
 
 </tr>
 
+<tr>
+
+<td style="text-align:center">resultoutput</td>
+
+<td>否</td>
+
+<td>指定输出登录结果文件路径</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -268,6 +278,8 @@ HTTP 方法：GET
     http://127.0.0.1:端口号/login?format=base64
     # 登录，取 base64 格式二维码，并写入 /Users/username/logincode.txt
     http://127.0.0.1:端口号/login?format=base64&qroutput=%2FUsers%2Fusername%2Flogincode.txt
+    # 登录，并写入登录结果到 /Users/username/loginresult.json
+    http://127.0.0.1:端口号/login?resultoutput=%2FUsers%2Fusername%2Floginresult.json
 
 ### 3\. 预览
 
@@ -331,7 +343,17 @@ HTTP 方法：GET
 
 <td>否</td>
 
-<td>指指定后，会将本次预览的额外信息以 json 格式输出至指定路径，如代码包大小、分包大小信息。</td>
+<td>指定后，会将本次预览的额外信息以 json 格式输出至指定路径，如代码包大小、分包大小信息。</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:center">compilecondition</td>
+
+<td>否</td>
+
+<td>指定自定义编译条件，值为 json 字符串，条件可指定两个字段，`pathName` 表示打开的页面，不填表示首页，`query` 表示页面参数</td>
 
 </tr>
 
@@ -349,6 +371,8 @@ HTTP 方法：GET
     http://127.0.0.1:端口号/preview?projectpath=%2FUsers%2Fusername%2Fdemo&format=base64&qroutput=%2FUsers%2Fusername%2Flogincode.txt
     # 预览路径为 /Users/username/demo 的项目，返回图片格式的二维码，并将预览信息输出至 /Users/username/info.json
     http://127.0.0.1:端口号/preview?projectpath=%2FUsers%2Fusername%2Fdemo&infooutput=%2Users%2username%2info.json
+    # 预览路径为 /Users/username/demo 的项目，指定自定义编译条件，启动页为 pages/index/index，参数为 x=1&y=2
+    http://127.0.0.1:端口号/preview?projectpath=%2FUsers%2Fusername%2Fdemo&compilecondition={"pathName":"pages/index/index","query":"a3=1"}
 
 ### 4\. 上传
 
@@ -429,7 +453,62 @@ HTTP 方法：GET
     # 上传路径为 /Users/username/demo 的项目，指定版本号为 v1.0.0，并将上传信息输出至 /Users/username/info.json 
     http://127.0.0.1:端口号/upload?projectpath=%2FUsers%2Fusername%2Fdemo&version=v1.0.0&infooutput=%2Users%2username%2info.json
 
-### 5\. 自动化测试
+### 5\. 构建 npm
+
+接口定义：
+
+URL：/buildnpm
+
+HTTP 方法：GET
+
+<table>
+
+<thead>
+
+<tr>
+
+<th style="text-align:center">URL 参数</th>
+
+<th>必填</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:center">projectpath</td>
+
+<td>是</td>
+
+<td>上传指定路径中的项目</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:center">compiletype</td>
+
+<td>否</td>
+
+<td>编译类型，`miniprogram` (默认) 或 `plugin`</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+示例：
+
+    # 构建路径为 /Users/username/demo 的项目
+    http://127.0.0.1:端口号/buildnpm?projectpath=%2FUsers%2Fusername%2Fdemo&compiletype=miniprogram
+
+### 6\. 自动化测试
 
 接口定义：
 
