@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111421)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111421)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111421)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111620)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111620)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111620)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111421)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111421)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111421)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111620)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111620)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111620)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111421)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111421)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111620)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111620)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference/changelog.html?t=18111421)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference/changelog.html?t=18111421)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference/changelog.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference/changelog.html?t=18111620)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference/changelog.html?t=18111421)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference/changelog.html?t=18111421)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference/changelog.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/reference/changelog.html?t=18111620)
 
 </div>
 
@@ -263,6 +263,11 @@
 #### wx-server-sdk 0.0.24（2018.10.29）
 
 1.  `A` 新增 数据库支持正则查询
+
+#### IDE 云开发及云控制台（2018.11.15）
+
+1.  `A` 新增 云数据库索引可以增加唯一性限制 [详情](../guide/database/index.html#唯一性限制)
+2.  `A` 新增 云数据库导出 [详情](../guide/database/export.html)
 
 </section>
 

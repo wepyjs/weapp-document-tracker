@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111420)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111420)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111420)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111620)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111620)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111620)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111420)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111420)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111420)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111620)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111620)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111620)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111420)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111420)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111620)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111620)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/movable-view.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/movable-view.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/movable-view.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/movable-view.html?t=18111620)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/movable-view.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/movable-view.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/movable-view.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/movable-view.html?t=18111620)
 
 </div>
 
@@ -77,7 +77,9 @@
     *   [scroll-view](./scroll-view.html)
     *   [swiper](./swiper.html)
     *   [movable-view](./movable-view.html)
+        *   [movable-area](./movable-view.html#movable-area)
     *   [cover-view](./cover-view.html)
+    *   [cover-image](./cover-view.html#cover-image)
 *   [基础内容](./icon.html)
     *   [icon](./icon.html)
     *   [text](./text.html)
@@ -133,54 +135,6 @@
 <div class="search-noresults">
 
 <section class="normal markdown-section">
-
-#### movable-area
-
-> 基础库 1.2.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
-
-`movable-view` 的可移动区域
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>属性名</th>
-
-<th>类型</th>
-
-<th>默认值</th>
-
-<th>说明</th>
-
-<th>最低版本</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>scale-area</td>
-
-<td>Boolean</td>
-
-<td>false</td>
-
-<td>当里面的movable-view设置为支持双指缩放时，设置此值可将缩放手势生效区域修改为整个movable-area</td>
-
-<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-**注意：movable-area 必须设置width和height属性，不设置默认为10px**
 
 #### movable-view
 
@@ -471,10 +425,60 @@
 > movable-view 必须设置width和height属性，不设置默认为10px
 > 
 > movable-view 默认为绝对定位，top和left属性为0px
-> 
-> 当movable-view小于movable-area时，movable-view的移动范围是在movable-area内；当movable-view大于movable-area时，movable-view的移动范围必须包含movable-area（x轴方向和y轴方向分开考虑）
 
 **注意**：movable-view必须在`<movable-area/>`组件中，并且必须是直接子节点，否则不能移动。
+
+#### movable-area
+
+> 基础库 1.2.0 开始支持，低版本需做[兼容处理](../framework/compatibility.html)。
+
+`movable-view` 的可移动区域
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>属性名</th>
+
+<th>类型</th>
+
+<th>默认值</th>
+
+<th>说明</th>
+
+<th>最低版本</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>scale-area</td>
+
+<td>Boolean</td>
+
+<td>false</td>
+
+<td>当里面的movable-view设置为支持双指缩放时，设置此值可将缩放手势生效区域修改为整个movable-area</td>
+
+<td>[1.9.90](../framework/compatibility.html "基础库 1.9.90 开始支持，低版本需做兼容处理。")</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**注意：movable-area 必须设置width和height属性，不设置默认为10px**
+
+> 当movable-view小于movable-area时，movable-view的移动范围是在movable-area内；
+> 
+> 当movable-view大于movable-area时，movable-view的移动范围必须包含movable-area（x轴方向和y轴方向分开考虑）
 
 **示例代码：**
 

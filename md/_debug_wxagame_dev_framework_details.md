@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111420)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111420)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111420)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111620)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111620)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111620)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111420)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111420)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111420)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111620)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111620)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111620)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111420)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111420)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111620)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111620)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/details.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/details.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/details.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/details.html?t=18111620)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/details.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/details.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/details.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/details.html?t=18111620)
 
 </div>
 
@@ -184,7 +184,7 @@
 *   [基础库](./client-lib/)
     *   [版本分布](./client-lib/version.html)
     *   [与客户端版本对应关系](./client-lib/client.html)
-    *   [旧版本兼容](./compatibility.html)
+    *   [低版本兼容](./compatibility.html)
     *   [更新日志](./release.html)
         *   [v2.x版本](./release/v2.html)
         *   [v1.x版本](./release/v1.html)
@@ -224,6 +224,13 @@
 
 *   在 开发工具上，小程序逻辑层的 javascript 代码是运行在 [NW.js](https://nwjs.io/) 中，视图层是由 Chromium 60 Webview 来渲染的。
 
+### 运行限制
+
+基于安全考虑，小程序中不支持动态执行 JS 代码，即：
+
+*   不支持使用 `eval` 执行 JS 代码
+*   不支持使用 `new Function` 创建函数
+
 ## 平台差异
 
 尽管三端的环境是十分相似的，但是还是有些许区别：
@@ -240,6 +247,8 @@
 
 1.  `tip`: `Array.values` 不支持
 2.  `tip`: `Proxy` 不支持
+
+<div class="thin-table-wrapper">
 
 <table>
 
@@ -1138,6 +1147,8 @@
 </tbody>
 
 </table>
+
+</div>
 
 </section>
 

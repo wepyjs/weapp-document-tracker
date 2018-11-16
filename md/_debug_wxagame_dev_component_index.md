@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111420)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111420)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111420)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111620)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111620)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111620)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111420)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111420)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111420)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111620)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111620)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111620)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111420)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111420)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111620)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111620)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/index.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/index.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/index.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/index.html?t=18111620)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/index.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/index.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/component/index.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/component/index.html?t=18111620)
 
 </div>
 
@@ -77,7 +77,9 @@
     *   [scroll-view](./scroll-view.html)
     *   [swiper](./swiper.html)
     *   [movable-view](./movable-view.html)
+        *   [movable-area](./movable-view.html#movable-area)
     *   [cover-view](./cover-view.html)
+    *   [cover-image](./cover-view.html#cover-image)
 *   [基础内容](./icon.html)
     *   [icon](./icon.html)
     *   [text](./text.html)
@@ -136,8 +138,6 @@
 
 # 基础组件
 
-基础组件分为以下七大类：
-
 **视图容器(View Container)：**
 
 <table>
@@ -177,6 +177,30 @@
 <td>[swiper](swiper.html)</td>
 
 <td>滑块视图容器</td>
+
+</tr>
+
+<tr>
+
+<td>[movable-view](movable-view.html)/[movable-aera](movable-view.html#movable-area)</td>
+
+<td>可移动的视图容器</td>
+
+</tr>
+
+<tr>
+
+<td>[cover-view](cover-view.html)</td>
+
+<td>覆盖在原生组件之上的文本视图</td>
+
+</tr>
+
+<tr>
+
+<td>[cover-image](cover-view.html#cover-image)</td>
+
+<td>覆盖在原生组件之上的图片视图</td>
 
 </tr>
 
@@ -220,6 +244,14 @@
 
 <tr>
 
+<td>[rich-text](rich-text.html)</td>
+
+<td>富文本</td>
+
+</tr>
+
+<tr>
+
 <td>[progress](progress.html)</td>
 
 <td>进度条</td>
@@ -258,6 +290,14 @@
 
 <tr>
 
+<td>[checkbox](checkbox.html)</td>
+
+<td>多项选择器</td>
+
+</tr>
+
+<tr>
+
 <td>[form](form.html)</td>
 
 <td>表单</td>
@@ -274,17 +314,9 @@
 
 <tr>
 
-<td>[checkbox](checkbox.html)</td>
+<td>[label](label.html)</td>
 
-<td>多项选择器</td>
-
-</tr>
-
-<tr>
-
-<td>[radio](radio.html)</td>
-
-<td>单项选择器</td>
+<td>标签</td>
 
 </tr>
 
@@ -306,6 +338,14 @@
 
 <tr>
 
+<td>[radio](radio.html)</td>
+
+<td>单项选择器</td>
+
+</tr>
+
+<tr>
+
 <td>[slider](slider.html)</td>
 
 <td>滚动选择器</td>
@@ -322,9 +362,9 @@
 
 <tr>
 
-<td>[label](label.html)</td>
+<td>[textarea](textarea.html)</td>
 
-<td>标签</td>
+<td>多行输入框</td>
 
 </tr>
 
@@ -354,7 +394,15 @@
 
 <td>[navigator](navigator.html)</td>
 
-<td>应用链接</td>
+<td>页面链接</td>
+
+</tr>
+
+<tr>
+
+<td>[functional-page-navigator](functional-page-navigator.html)</td>
+
+<td>跳转到插件功能页</td>
 
 </tr>
 
@@ -401,6 +449,30 @@
 <td>[video](video.html)</td>
 
 <td>视频</td>
+
+</tr>
+
+<tr>
+
+<td>[camera](camera.html)</td>
+
+<td>系统相机</td>
+
+</tr>
+
+<tr>
+
+<td>[live-player](live-player.html)</td>
+
+<td>实时音视频播放</td>
+
+</tr>
+
+<tr>
+
+<td>[live-pusher](live-pusher.html)</td>
+
+<td>实时音视频录制</td>
 
 </tr>
 
@@ -461,6 +533,60 @@
 <td>[canvas](canvas.html)</td>
 
 <td>画布</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+**开放能力(Open Ability)：**
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>组件名</th>
+
+<th>说明</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>[open-data](open-data.html)</td>
+
+<td>展示微信开放的数据</td>
+
+</tr>
+
+<tr>
+
+<td>[web-view](web-view.html)</td>
+
+<td>承载网页的容器</td>
+
+</tr>
+
+<tr>
+
+<td>[ad](ad.html)</td>
+
+<td>广告</td>
+
+</tr>
+
+<tr>
+
+<td>[official-account](official-account.html)</td>
+
+<td>关注公众号</td>
 
 </tr>
 

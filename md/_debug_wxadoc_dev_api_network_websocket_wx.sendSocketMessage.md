@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111420)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111420)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111420)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111620)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111620)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111620)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111420)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111420)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111420)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111620)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111620)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111620)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111420)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111420)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111620)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111620)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/network/websocket/wx.sendSocketMessage.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/network/websocket/wx.sendSocketMessage.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/network/websocket/wx.sendSocketMessage.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/network/websocket/wx.sendSocketMessage.html?t=18111620)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/network/websocket/wx.sendSocketMessage.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/network/websocket/wx.sendSocketMessage.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/network/websocket/wx.sendSocketMessage.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/network/websocket/wx.sendSocketMessage.html?t=18111620)
 
 </div>
 
@@ -77,6 +77,9 @@
         *   [wx.downloadFile](../download/wx.downloadFile.html)
         *   [DownloadTask](../download/DownloadTask.html)
             *   [.abort](../download/DownloadTask.abort.html)
+            *   [.offHeadersReceived](../download/DownloadTask.offHeadersReceived.html)
+            *   [.offProgressUpdate](../download/DownloadTask.offProgressUpdate.html)
+            *   [.onHeadersReceived](../download/DownloadTask.onHeadersReceived.html)
             *   [.onProgressUpdate](../download/DownloadTask.onProgressUpdate.html)
     *   [mDNS](../mdns/wx.offLocalServiceDiscoveryStop.html)
         *   [wx.offLocalServiceDiscoveryStop](../mdns/wx.offLocalServiceDiscoveryStop.html)
@@ -93,10 +96,15 @@
         *   [wx.request](../request/wx.request.html)
         *   [RequestTask](../request/RequestTask.html)
             *   [.abort](../request/RequestTask.abort.html)
+            *   [.offHeadersReceived](../request/RequestTask.offHeadersReceived.html)
+            *   [.onHeadersReceived](../request/RequestTask.onHeadersReceived.html)
     *   [上传](../upload/wx.uploadFile.html)
         *   [wx.uploadFile](../upload/wx.uploadFile.html)
         *   [UploadTask](../upload/UploadTask.html)
             *   [.abort](../upload/UploadTask.abort.html)
+            *   [.offHeadersReceived](../upload/UploadTask.offHeadersReceived.html)
+            *   [.offProgressUpdate](../upload/UploadTask.offProgressUpdate.html)
+            *   [.onHeadersReceived](../upload/UploadTask.onHeadersReceived.html)
             *   [.onProgressUpdate](../upload/UploadTask.onProgressUpdate.html)
     *   [WebSocket](./wx.closeSocket.html)
         *   [wx.closeSocket](./wx.closeSocket.html)

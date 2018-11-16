@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111420)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111420)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111420)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111620)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111620)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111620)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111420)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111420)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111420)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111620)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111620)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111620)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111420)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111420)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111620)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111620)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/compatibility.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/compatibility.html?t=18111620)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/compatibility.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/compatibility.html?t=18111620)
 
 </div>
 
@@ -184,7 +184,7 @@
 *   [基础库](./client-lib/)
     *   [版本分布](./client-lib/version.html)
     *   [与客户端版本对应关系](./client-lib/client.html)
-    *   [旧版本兼容](./compatibility.html)
+    *   [低版本兼容](./compatibility.html)
     *   [更新日志](./release.html)
         *   [v2.x版本](./release/v2.html)
         *   [v1.x版本](./release/v1.html)
@@ -253,7 +253,7 @@
 
 ### 兼容方式 - 接口
 
-对于新增的 API，可以用以下代码来判断是否支持用户的手机。
+对于新增的 API，可以用以下代码来判断是否支持用户使用的微信客户端。
 
     if (wx.openBluetoothAdapter) {
       wx.openBluetoothAdapter()
@@ -290,6 +290,20 @@
     <video controls="{{!canIUse}}">
       <cover-view wx:if="{{canIUse}}">play</cover-view>
     </video>
+
+## 设置最低基础库版本
+
+> 需要 iOS 6.5.8 / 安卓 6.5.7 及以上版本微信客户端支持
+
+为便于开发者解决低版本基础库无法兼容小程序的新功能的问题，开发者可设置小程序最低基础库版本要求。
+
+开发者可以登录小程序管理后台，进入「设置 - 基本设置 - 基础库最低版本设置」进行配置。在配置前，开发者可查看近 30 天内访问当前小程序的用户所使用的基础库版本占比，以帮助开发者了解当前用户使用的情况。
+
+![](./image/least-version-config.png)
+
+设置后，若用户基础库版本低于设置值，则无法正常打开小程序，并提示用户更新客户端版本。
+
+![](./image/least-version-tips.jpg)
 
 </section>
 

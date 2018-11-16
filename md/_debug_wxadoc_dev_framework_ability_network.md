@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111420)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111420)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111420)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111620)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111620)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111620)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111420)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111420)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111420)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111620)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111620)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111620)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111420)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111420)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111620)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111620)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/network.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/ability/network.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/network.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/ability/network.html?t=18111620)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/network.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/ability/network.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/network.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/ability/network.html?t=18111620)
 
 </div>
 
@@ -184,7 +184,7 @@
 *   [基础库](../client-lib/)
     *   [版本分布](../client-lib/version.html)
     *   [与客户端版本对应关系](../client-lib/client.html)
-    *   [旧版本兼容](../compatibility.html)
+    *   [低版本兼容](../compatibility.html)
     *   [更新日志](../release.html)
         *   [v2.x版本](../release/v2.html)
         *   [v1.x版本](../release/v1.html)
@@ -252,7 +252,7 @@
 
 #### HTTPS 证书
 
-**小程序必须使用 HTTPS 发起网络请求**。请求时系统会对服务器域名使用的 HTTPS 证书进行校验，如果校验失败，则请求不能成功发起。由于系统限制，不同平台对于证书要求的严格程度不同。为了保证小程序的兼容性，建议开发者按照最高标准进行证书配置，并使用相关工具检查现有证书是否符合要求。
+**小程序必须使用 HTTPS/WSS 发起网络请求**。请求时系统会对服务器域名使用的 HTTPS 证书进行校验，如果校验失败，则请求不能成功发起。由于系统限制，不同平台对于证书要求的严格程度不同。为了保证小程序的兼容性，建议开发者按照最高标准进行证书配置，并使用相关工具检查现有证书是否符合要求。
 
 对证书要求如下：
 
@@ -269,7 +269,7 @@
 
 > 证书有效性可以使用 `openssl s_client -connect example.com:443` 命令验证，也可以使用其他[在线工具](https://myssl.com/ssl.html)。
 
-**除了网络请求 API 外，小程序中其他 `HTTPS` 请求如果出现异常，也请按上述流程进行检查。如 https 的图片无法加载等。**
+**除了网络请求 API 外，小程序中其他 `HTTPS` 请求如果出现异常，也请按上述流程进行检查。如 https 的图片无法加载、音视频无法播放等。**
 
 #### 跳过域名校验
 

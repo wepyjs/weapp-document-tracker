@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111420)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111420)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111420)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111620)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111620)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111620)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111420)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111420)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111420)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111620)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111620)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111620)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111420)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111420)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111620)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111620)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/workers.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/workers.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/workers.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/workers.html?t=18111620)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/workers.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/workers.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/workers.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/workers.html?t=18111620)
 
 </div>
 
@@ -184,7 +184,7 @@
 *   [基础库](./client-lib/)
     *   [版本分布](./client-lib/version.html)
     *   [与客户端版本对应关系](./client-lib/client.html)
-    *   [旧版本兼容](./compatibility.html)
+    *   [低版本兼容](./compatibility.html)
     *   [更新日志](./release.html)
         *   [v2.x版本](./release/v2.html)
         *   [v1.x版本](./release/v1.html)
@@ -210,13 +210,15 @@
 
 ## 多线程 Worker
 
-一些异步处理的任务，可以放置于 Worker 中运行，待运行结束后，再把结果返回到小程序主线程。Worker 运行于一个单独的全局上下文与线程中，不能直接调用主线程的方法。 Worker 与主线程之间的数据传输，双方使用 [Worker.postMessage()](../api/worker/Worker.postMessage.html) 来发送数据，[Worker.onMessage()](../api/worker/Worker.onMessage.html) 来接收数据，传输的数据并不是直接共享，而是被复制的。
+一些异步处理的任务，可以放置于 Worker 中运行，待运行结束后，再把结果返回到小程序主线程。Worker 运行于一个单独的全局上下文与线程中，不能直接调用主线程的方法。
 
-#### 步骤
+Worker 与主线程之间的数据传输，双方使用 [Worker.postMessage()](../api/worker/Worker.postMessage.html) 来发送数据，[Worker.onMessage()](../api/worker/Worker.onMessage.html) 来接收数据，传输的数据并不是直接共享，而是被复制的。
+
+## 使用流程
 
 [在开发者工具中预览效果](https://developers.weixin.qq.com/s/akaQknmy6ZY6 "在开发者工具中预览效果")
 
-##### 1\. 配置 Worker 信息
+### 1\. 配置 Worker 信息
 
 在 `app.json` 中可配置 `Worker` 代码放置的目录，目录下的代码将被打包成一个文件：
 
@@ -226,7 +228,7 @@
       "workers": "workers"
     }
 
-##### 2\. 添加 Worker 代码文件
+### 2\. 添加 Worker 代码文件
 
 根据步骤 1 中的配置，在代码目录下新建以下两个入口文件：
 
@@ -246,24 +248,24 @@
         └── response
             └── index.js
 
-#### 3\. 编写 Worker 代码
+### 3\. 编写 Worker 代码
 
 在 `workers/request/index.js` 编写 Worker 响应代码
 
-    var utils = require('./utils')
+    const utils = require('./utils')
 
-    // 在 Worker 线程执行上下文会全局暴露一个 `worker` 对象，直接调用 worker.onMeesage/postMessage 即可
+    // 在 Worker 线程执行上下文会全局暴露一个 worker 对象，直接调用 worker.onMeesage/postMessage 即可
     worker.onMessage(function (res) {
       console.log(res)
     })
 
-#### 4\. 在主线程中初始化 Worker
+### 4\. 在主线程中初始化 Worker
 
 在主线程的代码 app.js 中初始化 Worker
 
-    var worker = wx.createWorker('workers/request/index.js') // 文件名指定 worker 的入口文件路径，绝对路径
+    const worker = wx.createWorker('workers/request/index.js') // 文件名指定 worker 的入口文件路径，绝对路径
 
-#### 5\. 主线程向 Worker 发送消息
+### 5\. 主线程向 Worker 发送消息
 
     worker.postMessage({
       msg: 'hello worker'
@@ -271,7 +273,7 @@
 
 worker 对象的其它接口请看 [worker接口说明](../api/worker/wx.createWorker.html)
 
-#### Tips
+### 注意事项
 
 1.  Worker 最大并发数量限制为 1 个，创建下一个前请用 [Worker.terminate()](../api/worker/Worker.terminate.html) 结束当前 Worker
 2.  Worker 内代码只能 require 指定 Worker 路径内的文件，无法引用其它路径

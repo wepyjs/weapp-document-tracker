@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111421)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111421)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111421)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111620)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111620)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111620)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111421)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111421)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111421)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111620)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111620)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111620)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111421)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111421)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111620)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111620)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html?t=18111421)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/basis/getting-started.html?t=18111421)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/basis/getting-started.html?t=18111620)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html?t=18111421)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/basis/getting-started.html?t=18111421)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/wxcloud/basis/getting-started.html?t=18111620)
 
 </div>
 
@@ -264,7 +264,7 @@
 
 新建项目选择一个空目录，填入 AppID（使用云开发能力必须填写 AppID），勾选创建 “云开发 QuickStart 项目”，点击创建即可得到一个展示云开发基础能力的示例小程序。该小程序与普通 QuickStart 小程序有以下不同需注意：
 
-*   无游客模式、也不可以使用 [测试号](https://developers.weixin.qq.com/miniprogram/dev/devtools/sandbox.html?t=18111421)
+*   无游客模式、也不可以使用 [测试号](https://developers.weixin.qq.com/miniprogram/dev/devtools/sandbox.html?t=18111620)
 *   `project.config.json` 中增加了字段 `cloudfunctionRoot` 用于指定存放云函数的目录
 *   `cloudfunctionRoot` 指定的目录有特殊的图标
 *   云开发能力从基础库 2.2.3 开始支持

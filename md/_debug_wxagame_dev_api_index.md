@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111420)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111420)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111420)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111620)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111620)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111620)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111420)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111420)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111420)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111620)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111620)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111620)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111420)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111420)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111620)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111620)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/index.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/index.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/index.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/index.html?t=18111620)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/index.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/index.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/api/index.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/api/index.html?t=18111620)
 
 </div>
 
@@ -77,6 +77,9 @@
         *   [wx.downloadFile](./network/download/wx.downloadFile.html)
         *   [DownloadTask](./network/download/DownloadTask.html)
             *   [.abort](./network/download/DownloadTask.abort.html)
+            *   [.offHeadersReceived](./network/download/DownloadTask.offHeadersReceived.html)
+            *   [.offProgressUpdate](./network/download/DownloadTask.offProgressUpdate.html)
+            *   [.onHeadersReceived](./network/download/DownloadTask.onHeadersReceived.html)
             *   [.onProgressUpdate](./network/download/DownloadTask.onProgressUpdate.html)
     *   [mDNS](./network/mdns/wx.offLocalServiceDiscoveryStop.html)
         *   [wx.offLocalServiceDiscoveryStop](./network/mdns/wx.offLocalServiceDiscoveryStop.html)
@@ -93,10 +96,15 @@
         *   [wx.request](./network/request/wx.request.html)
         *   [RequestTask](./network/request/RequestTask.html)
             *   [.abort](./network/request/RequestTask.abort.html)
+            *   [.offHeadersReceived](./network/request/RequestTask.offHeadersReceived.html)
+            *   [.onHeadersReceived](./network/request/RequestTask.onHeadersReceived.html)
     *   [上传](./network/upload/wx.uploadFile.html)
         *   [wx.uploadFile](./network/upload/wx.uploadFile.html)
         *   [UploadTask](./network/upload/UploadTask.html)
             *   [.abort](./network/upload/UploadTask.abort.html)
+            *   [.offHeadersReceived](./network/upload/UploadTask.offHeadersReceived.html)
+            *   [.offProgressUpdate](./network/upload/UploadTask.offProgressUpdate.html)
+            *   [.onHeadersReceived](./network/upload/UploadTask.onHeadersReceived.html)
             *   [.onProgressUpdate](./network/upload/UploadTask.onProgressUpdate.html)
     *   [WebSocket](./network/websocket/wx.closeSocket.html)
         *   [wx.closeSocket](./network/websocket/wx.closeSocket.html)
@@ -761,6 +769,30 @@
 
 <tr>
 
+<td>[DownloadTask.offHeadersReceived](network/download/DownloadTask.offHeadersReceived.html)</td>
+
+<td>取消监听HTTP Response Header 事件，会比请求完成事件更早</td>
+
+</tr>
+
+<tr>
+
+<td>[DownloadTask.offProgressUpdate](network/download/DownloadTask.offProgressUpdate.html)</td>
+
+<td>取消监听下载进度变化事件</td>
+
+</tr>
+
+<tr>
+
+<td>[DownloadTask.onHeadersReceived](network/download/DownloadTask.onHeadersReceived.html)</td>
+
+<td>监听HTTP Response Header 事件，会比请求完成事件更早</td>
+
+</tr>
+
+<tr>
+
 <td>[DownloadTask.onProgressUpdate](network/download/DownloadTask.onProgressUpdate.html)</td>
 
 <td>监听下载进度变化事件</td>
@@ -929,6 +961,22 @@
 
 </tr>
 
+<tr>
+
+<td>[RequestTask.offHeadersReceived](network/request/RequestTask.offHeadersReceived.html)</td>
+
+<td>取消监听HTTP Response Header 事件，会比请求完成事件更早</td>
+
+</tr>
+
+<tr>
+
+<td>[RequestTask.onHeadersReceived](network/request/RequestTask.onHeadersReceived.html)</td>
+
+<td>监听HTTP Response Header 事件，会比请求完成事件更早</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -986,6 +1034,30 @@
 <td>[UploadTask.abort](network/upload/UploadTask.abort.html)</td>
 
 <td>中断上传任务</td>
+
+</tr>
+
+<tr>
+
+<td>[UploadTask.offHeadersReceived](network/upload/UploadTask.offHeadersReceived.html)</td>
+
+<td>取消监听HTTP Response Header 事件，会比请求完成事件更早</td>
+
+</tr>
+
+<tr>
+
+<td>[UploadTask.offProgressUpdate](network/upload/UploadTask.offProgressUpdate.html)</td>
+
+<td>取消监听上传进度变化事件</td>
+
+</tr>
+
+<tr>
+
+<td>[UploadTask.onHeadersReceived](network/upload/UploadTask.onHeadersReceived.html)</td>
+
+<td>监听HTTP Response Header 事件，会比请求完成事件更早</td>
 
 </tr>
 
@@ -4353,7 +4425,7 @@
 
 <td>[wx.getMenuButtonBoundingClientRect](ui/menu/wx.getMenuButtonBoundingClientRect.html)</td>
 
-<td>获取菜单按钮的布局置信息</td>
+<td>获取菜单按钮（右上角胶囊按钮）的布局位置信息</td>
 
 </tr>
 

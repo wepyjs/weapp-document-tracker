@@ -9,20 +9,20 @@
 <div class="header_ctrls">
 
 *   [介绍](javascript:;)
-    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111420)
-    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111420)
-*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111420)
+    *   [小程序介绍](https://developers.weixin.qq.com/miniprogram/introduction/index.html?t=18111620)
+    *   [小游戏介绍](https://developers.weixin.qq.com/minigame/introduction/index.html?t=18111620)
+*   [设计](https://developers.weixin.qq.com/miniprogram/design/index.html?t=18111620)
 *   [小程序开发](javascript:;)
-    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111420)
-    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111420)
-*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111420)
+    *   [小程序开发](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=18111620)
+    *   [小游戏开发](https://developers.weixin.qq.com/minigame/dev/index.html?t=18111620)
+*   [运营](https://developers.weixin.qq.com/miniprogram/product/index.html?t=18111620)
 *   [数据](javascript:;)
-    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111420)
-    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111420)
+    *   [小程序数据](https://developers.weixin.qq.com/miniprogram/analysis/index.html?t=18111620)
+    *   [小游戏数据](https://developers.weixin.qq.com/minigame/analysis/index.html?t=18111620)
 *   [社区](https://developers.weixin.qq.com/)
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/union-id.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/union-id.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/union-id.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/union-id.html?t=18111620)
 
 </div>
 
@@ -59,8 +59,8 @@
 
 </div>
 
-*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/union-id.html?t=18111420)<span class="split-line">/</span>
-*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/union-id.html?t=18111420)
+*   [中文](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/union-id.html?t=18111620)<span class="split-line">/</span>
+*   [EN](https://developers.weixin.qq.com/miniprogram/en/dev/framework/open-ability/union-id.html?t=18111620)
 
 </div>
 
@@ -184,7 +184,7 @@
 *   [基础库](../client-lib/)
     *   [版本分布](../client-lib/version.html)
     *   [与客户端版本对应关系](../client-lib/client.html)
-    *   [旧版本兼容](../compatibility.html)
+    *   [低版本兼容](../compatibility.html)
     *   [更新日志](../release.html)
         *   [v2.x版本](../release/v2.html)
         *   [v1.x版本](../release/v1.html)
@@ -222,7 +222,7 @@
 
 3.  如果开发者帐号下存在**同主体的**公众号或移动应用，并且该用户已经授权登录过该公众号或移动应用。开发者也可以直接通过 [wx.login](../../api/open-api/login/wx.login.html) + [code2Session](../../api/open-api/login/code2Session.html) 获取到该用户 UnionID ，无须用户再次授权。
 
-4.  小程序端调用[云函数](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/capabilities.html?t=18111420#%E4%BA%91%E5%87%BD%E6%95%B0)时，当满足 UnionID 获取条件时可在云函数中通过 [cloud.getWXContext](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/utils/getWXContext.html?t=18111420) 获取 UnionID
+4.  小程序端调用[云函数](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/capabilities.html?t=18111620#%E4%BA%91%E5%87%BD%E6%95%B0)时，当满足 UnionID 获取条件时可在云函数中通过 [cloud.getWXContext](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/utils/getWXContext.html?t=18111620) 获取 UnionID
 
 ### 微信开放平台绑定小程序流程
 
